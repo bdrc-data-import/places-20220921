@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4364 {
+    bda:G4364  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4364 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "5e/G4364.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4364 ;
+        adm:logEntry        bda:LG3E6A41610F9F05E0 , bda:LG8E2F5D2145220945 , bda:LGBFBA1021C2A548F5 , bda:LGEF1FD01E3D536A6F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3E6A41610F9F05E0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8E2F5D2145220945
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T15:53:11.235Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type to grwaTshang"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBFBA1021C2A548F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-29T12:16:58.132Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEF1FD01E3D536A6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4364  a            :Place ;
+        skos:prefLabel      "bstan srid gling dus 'khor grwa tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT714AC0DFC242C544 ;
+        :placeLocatedIn     bdr:G584 ;
+        :placeType          bdr:PT0040 .
+    
+    bdr:NT714AC0DFC242C544
+        a                   :Note ;
+        :noteText           "kalacakra college, probably located somewhere withing mongolia"@en .
+}

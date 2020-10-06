@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR28 {
+    bda:G1KR28  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR28 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3d/G1KR28.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR28 ;
+        adm:logEntry        bda:LG622416C1B97E19FF , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513226100:89" ;
+        adm:place_id_lex    "513226100:89" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG622416C1B97E19FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-09T09:56:51.469Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV3A9D34391CD25648
+        a                   :PlaceFounded ;
+        :onYear             "1499"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1KR28  a           :Place ;
+        skos:altLabel       "在 州志 和 宗教史要 中无相应寺名"@zh-hans ;
+        skos:prefLabel      "skya pa'i dgon/"@bo-x-ewts , "？"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDADDAAF4ACB4EA868 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV3A9D34391CD25648 ;
+        :placeGonpaPerEcumen  "45.62" ;
+        :placeLat           "31.47671" ;
+        :placeLocatedIn     bdr:G2335 ;
+        :placeLong          "102.06352" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDADDAAF4ACB4EA868
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR28" .
+}

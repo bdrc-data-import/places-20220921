@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G231 {
+    bda:G231  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G231 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "1e/G231.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G231 ;
+        adm:logEntry        bda:LG2654BAECE83E5B9A , bda:LG450A35E16D2C16D4 , bda:LGDE54DD229A490515 , bda:LGF838222B298A8094 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2654BAECE83E5B9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-19T14:27:49.955Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG450A35E16D2C16D4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDE54DD229A490515
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T14:52:38.805Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF838222B298A8094
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T15:20:10.834Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS info from wikipedia"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV07DC4E8CBFA1B962
+        a                   :PlaceFounded ;
+        :onYear             "1831"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G231  a             :Place ;
+        skos:altLabel       "dbu ma byang chub gling /"@bo-x-ewts , "dga' ldan 'phel rgyas gling /"@bo-x-ewts , "ri rdzong bshad sgrub gling /"@bo-x-ewts ;
+        skos:prefLabel      "ri rdzong dgon pa/"@bo-x-ewts , "Rizong monastery"@en ;
+        :isRoot             true ;
+        :note               bdr:NT03A381013E2EE9AB , bdr:NT0D23A0458FD6C620 ;
+        :placeContains      bdr:G3JT12620 ;
+        :placeEvent         bdr:EV07DC4E8CBFA1B962 ;
+        :placeLat           "34.269167" ;
+        :placeLocatedIn     bdr:G3182 ;
+        :placeLong          "77.107222" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT03A381013E2EE9AB
+        a                   :Note ;
+        :noteText           "dge lugs pa monastery in la dwags founded by tshul khrims nyi ma"@en .
+    
+    bdr:NT0D23A0458FD6C620
+        a                   :Note ;
+        :contentLocationStatement  "v.1, p. 244" ;
+        :noteSource         bdr:MW23895 ;
+        :noteText           "དགོན་འདིའི་ལོ་རྒྱུས་མཚན་གྱི་རྣམ་གྲངས་དང་བཅས་པ་གསལ།"@bo .
+}

@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3JT12418 {
+    bda:G3JT12418  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3JT12418 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "60/G3JT12418.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3JT12418 ;
+        adm:logEntry        bda:LG938BDD3E8E280911 , bda:LGA1D5C94ABFA04454 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1164 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG938BDD3E8E280911
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-03-28T11:51:28.849Z"^^xsd:dateTime ;
+        adm:logMessage      "new place"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGA1D5C94ABFA04454
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-04-17T09:45:28.539Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1164"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3JT12418  a        :Place ;
+        skos:prefLabel      "co ne/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT28EF32C49186DD02 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT28EF32C49186DD02
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1164"@en .
+}

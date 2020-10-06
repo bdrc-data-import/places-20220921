@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G85 {
+    bda:G85  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G85 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "67/G85.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G85 ;
+        adm:logEntry        bda:LG3160CC7EDB6306EE , bda:LGIM454E022964 , bda:LGIMAF5F209484 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3160CC7EDB6306EE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM454E022964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T17:05:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:gzimsKhang to khamsTshan"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMAF5F209484
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:21:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from residentialHouse to gzimsKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G85  a              :Place ;
+        skos:altLabel       "pra nye khams tshan (dga' ldan byang rtse)"@bo-x-ewts ;
+        skos:prefLabel      "bra nye khams tshan (dga' ldan byang rtse)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE86AB680B4911AC9 ;
+        :placeLocatedIn     bdr:G77 ;
+        :placeType          bdr:PT0039 .
+    
+    bdr:NTE86AB680B4911AC9
+        a                   :Note ;
+        :contentLocationStatement  "p. 29, 38" ;
+        :noteSource         bdr:MW20212 ;
+        :noteText           "residential college of dga' ldan byang rtse\nalso spelled: pra nye khams tshan\nresidents of this khams tshan came from a mdo zha lhad dgon and dga' mdo khag gcig gi thog, bar lam nas byang rtse grwa tshang gi mtha' rgyas gzhis kyi mi ser sogs nye 'khor ba khag gcig yod"@en .
+}

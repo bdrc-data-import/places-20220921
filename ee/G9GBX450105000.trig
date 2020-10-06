@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX450105000 {
+    bda:G9GBX450105000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX450105000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "ee/G9GBX450105000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX450105000 ;
+        adm:logEntry        bda:LGF948423B7F9C28CF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGF948423B7F9C28CF
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX450105000
+        a                   :Place ;
+        skos:altLabel       "jiang nan qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Gangnam"@en , "江南区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX450105001 , bdr:G9GBX450105002 , bdr:G9GBX450105003 , bdr:G9GBX450105004 , bdr:G9GBX450105005 , bdr:G9GBX450105102 , bdr:G9GBX450105103 , bdr:G9GBX450105104 , bdr:G9GBX450105105 , bdr:G9GBX450105450 , bdr:G9GBX450105451 ;
+        :placeGB2260-2013   "450105000" ;
+        :placeLat           "22.7951337" ;
+        :placeLocatedIn     bdr:G9GBX450100000 ;
+        :placeLong          "108.3158612" ;
+        :placeType          bdr:PT0011 .
+}

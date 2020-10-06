@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3505 {
+    bda:G3505  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3505 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "78/G3505.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3505 ;
+        adm:logEntry        bda:LG6906F025D7D304CE , bda:LGDF38CE035B5C20C3 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6906F025D7D304CE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDF38CE035B5C20C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-12T14:19:51.79Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, Near & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3505  a            :Place ;
+        skos:prefLabel      "pad nang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5E5878BF0C602E78 ;
+        :placeIsNear        bdr:G3157 ;
+        :placeLocatedIn     bdr:G2174 ;
+        :placeType          bdr:PT0020 .
+    
+    bdr:NT5E5878BF0C602E78
+        a                   :Note ;
+        :contentLocationStatement  "p. 203" ;
+        :noteSource         bdr:MW23724 ;
+        :noteText           "a location in gtsang near the chos grwa dga' ba gdong\nit was here that byams pa dpal ldan bzang po was born"@en .
+}

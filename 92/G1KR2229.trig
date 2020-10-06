@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2229 {
+    bda:G1KR2229  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2229 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "92/G1KR2229.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2229 ;
+        adm:logEntry        bda:LG68DE72495A974491 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632126206:143" ;
+        adm:place_id_lex    "632126206:563" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG68DE72495A974491
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-13T12:52:20.419Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV92AE18D862BAA2E4
+        a                   :PlaceFounded ;
+        :note               bdr:NTBAD3E66E0054D604 .
+    
+    bdr:G1KR2229  a         :Place ;
+        skos:altLabel       "sanshifo dian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zhong song lha khang /"@bo-x-ewts , "三世佛殿"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8CDFFE250FF73C71 ;
+        :isRoot             true ;
+        :note               bdr:NT6ACE8C7FFF053804 ;
+        :placeEvent         bdr:EV92AE18D862BAA2E4 ;
+        :placeGonpaPerEcumen  "47.28" ;
+        :placeLat           "36.70000" ;
+        :placeLocatedIn     bdr:G1PD96101 ;
+        :placeLong          "102.13000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID8CDFFE250FF73C71
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2229" .
+    
+    bdr:NT6ACE8C7FFF053804
+        a                   :Note ;
+        :noteText           "dgon ming zur chag ste/ dus gsum sangs rgyas kyi lha khang zhes pa'i don du snang /"@bo-x-ewts .
+    
+    bdr:NTBAD3E66E0054D604
+        a                   :Note ;
+        :noteText           "tuzu"@en .
+}

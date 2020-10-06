@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3557 {
+    bda:G3557  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3557 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ab/G3557.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3557 ;
+        adm:logEntry        bda:LGBEA7021DF3F08B3C , bda:LGFE2D026FC9500ADD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBEA7021DF3F08B3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T15:26:58.241Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFE2D026FC9500ADD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G3557  a            :Place ;
+        skos:prefLabel      "stag mo shar shang (bzhad mthong smon)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0D50F3DDBB44CCC6 ;
+        :placeLocatedIn     bdr:G2164 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT0D50F3DDBB44CCC6
+        a                   :Note ;
+        :contentLocationStatement  "p. 48" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "name of a township seat in bzhad mthong smon rdzong"@en .
+}

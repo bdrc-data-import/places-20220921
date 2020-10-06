@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G529 {
+    bda:G529  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G529 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "08/G529.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G529 ;
+        adm:logEntry        bda:LG5645BCE3C7FEF3BD , bda:LG8C8DB143B98CC1F5 , bda:LGC6B656F8B17D0508 , bda:LGEBCBA1C66BC433D1 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5645BCE3C7FEF3BD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8C8DB143B98CC1F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-02T11:55:35.959Z"^^xsd:dateTime ;
+        adm:logMessage      "afflilated with jonang"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGC6B656F8B17D0508
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-07T16:01:33.519Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGEBCBA1C66BC433D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-24T17:00:55.019Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2nd note in tibetan"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV863EF8A3D1DA5DC1
+        a                   :PlaceFounded ;
+        :onYear             "1425"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionJonang .
+    
+    bdr:EVAA6DA91EAED5BDBD
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P8878 ;
+        :onYear             "1425"^^xsd:gYear .
+    
+    bdr:G529  a             :Place ;
+        skos:prefLabel      "'dzam thang dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1512150CB0C00D23 , bdr:NT94265BDDEF52CA2C ;
+        :placeEvent         bdr:EV863EF8A3D1DA5DC1 , bdr:EVAA6DA91EAED5BDBD ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1512150CB0C00D23
+        a                   :Note ;
+        :contentLocationStatement  "pp. 104-112" ;
+        :noteSource         bdr:MW19816 ;
+        :noteText           "'dzam thang\n founded 1425 (shing sbrul) by drung pa 01 ratna dpal"@en .
+    
+    bdr:NT94265BDDEF52CA2C
+        a                   :Note ;
+        :noteText           "འཛམ་ཐང་དགོན་པ་ནི་གཙང་བ་དགོན་པ་དང་ཆོས་རྗེ་དགོན་པ། ཚེས་བཅུ་དགོན་པ་གསུམ་གྱི་སྤྱི་མིང་ཡིན་ལ། དེའི་ནང་ནས་གཙང་བ་དགོན་པ་ནི་ཇོ་ནང་གི་དགོན་ཆེན་གྲགས་ཅན་ཞིག་ཡིན་ལ་འཛམ་ཐང་རྫོང་ཁོངས་རང་དུ་དགོན་ལག་དྲུག་ཙམ་ཡོད།"@bo .
+}

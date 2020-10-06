@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2382 {
+    bda:G2382  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2382 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "67/G2382.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2382 ;
+        adm:logEntry        bda:LG13DF0A3C8A009A02 , bda:LG2FB6B4AFB44200BC , bda:LG70844C99F17E5CE4 , bda:LGA3850DC3E088D1BC , bda:LGE6D4E8B470FA1988 , bda:LGIM0A2D5DA707 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG13DF0A3C8A009A02
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR2387"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG2FB6B4AFB44200BC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG70844C99F17E5CE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-10T11:26:39.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA3850DC3E088D1BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from county to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE6D4E8B470FA1988
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T10:13:23.271Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:sngarGyiRdzong to rdzong"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0A2D5DA707
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rdzong to sngarGyiRdzong"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2382  a            :Place ;
+        skos:altLabel       "haiyan xian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mda' bzhi rdzong /"@bo-x-ewts , "海晏县"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT1A2B418BBE215357 ;
+        :placeContains      bdr:G1KR2387 ;
+        :placeLocatedIn     bdr:G2312 ;
+        :placeType          bdr:PT0011 .
+    
+    bdr:NT1A2B418BBE215357
+        a                   :Note ;
+        :noteText           "administrative county (rdzong) in qinghai province"@en .
+}

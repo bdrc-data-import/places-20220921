@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G631 {
+    bda:G631  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G631 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "96/G631.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G631 ;
+        adm:logEntry        bda:LG92B2327842E83E50 , bda:LGA532D1C75193D045 , bda:LGB89BA2E8F7E21F6E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG92B2327842E83E50
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA532D1C75193D045
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-14T14:58:06.91Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB89BA2E8F7E21F6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-13T12:48:50.112Z"^^xsd:dateTime ;
+        adm:logMessage      "added location with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G631  a             :Place ;
+        skos:altLabel       "'khrigs lung ri khrod/"@bo-x-ewts ;
+        skos:prefLabel      "'brug lang dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF43D58FC2C3AFB35 ;
+        :placeLocatedIn     bdr:G621 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTF43D58FC2C3AFB35
+        a                   :Note ;
+        :noteText           "འདི་དཀར་མཛེས་རྫོང་ཁོངས་སུ་གནས་སྐབས་བཞག་མོད། ཡང་སྙིང་དཀར་མཛེས་ཁུལ་གྱི་རྫོང་གང་ཞིག་གི་འོག་ན་གནས་མིན་དཔྱད་རྒྱུ་སྟེ། སྤྱིར་དཀར་མཛེས་རྫོང་གི་བྲག་དཀར་ཇོ་མོ་དགོན་ནི་ཁམས་ཕྱོགས་དགེ་ལྡན་པའི་ཇོ་དགོན་ཕལ་ཆེར་གྱི་མ་དགོན་ཡིན་པས་དེར་འབྲེལ་བ་ཡོད་པ་ནི་སྨྲོས་མེད་ཡིན།"@bo .
+}

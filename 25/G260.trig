@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G260 {
+    bda:G260  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G260 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "25/G260.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G260 ;
+        adm:logEntry        bda:LG7B607C95A75B60BA , bda:LGEE8AD65F5A5C0691 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7B607C95A75B60BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-17T15:08:17.254Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, type, Near & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEE8AD65F5A5C0691
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVE9148D9641ED5239
+        a                   :PlaceFounded ;
+        :onYear             "1561"^^xsd:gYear .
+    
+    bdr:G260  a             :Place ;
+        skos:altLabel       "sman lung phreng ba can dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "sman lung phreng ba can/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDF5B188E421D149A ;
+        :placeEvent         bdr:EVE9148D9641ED5239 ;
+        :placeIsNear        bdr:G1360 ;
+        :placeLocatedIn     bdr:G546 ;
+        :placeType          bdr:PT0023 .
+    
+    bdr:NTDF5B188E421D149A
+        a                   :Note ;
+        :noteText           "location from where practiced a lineage of tibetan physicians; must have been located near sa skya in the tibetan autonomous region"@en .
+}

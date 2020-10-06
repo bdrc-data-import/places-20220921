@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1881 {
+    bda:G1KR1881  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1881 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "f7/G1KR1881.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1881 ;
+        adm:logEntry        bda:LG79A6BAD0F76BE803 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542625100:539" ;
+        adm:place_id_lex    "542625100:541" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG79A6BAD0F76BE803
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-07T11:27:48.341Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note in tibetan, added info from G2931(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV0529A3893A78034C
+        a                   :PlaceFounded ;
+        :onYear             "0640"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:EV1504506040B9609F
+        a                   :PlaceRebuilt ;
+        :onYear             "1464"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1KR1881  a         :Place ;
+        skos:altLabel       "be 'bur dgon byams pa gling /"@bo-x-ewts , "be 'bur lha khang /"@bo-x-ewts , "chos rdzong byams pa gling /"@bo-x-ewts , "松宗寺 ?"@zh-hans , "quzong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "spo bo chos rdzong dgon/"@bo-x-ewts , "曲宗寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID651208E9BEAD7A04 ;
+        :isRoot             true ;
+        :note               bdr:NT6A47BC96917FFB1B , bdr:NT964B795D4BC4B010 , bdr:NTF864157289AE16CE ;
+        :placeEvent         bdr:EV0529A3893A78034C , bdr:EV1504506040B9609F ;
+        :placeGonpaPerEcumen  "6.2" ;
+        :placeLat           "29.73333" ;
+        :placeLocatedIn     bdr:G2944 , bdr:G2951 ;
+        :placeLong          "96.11667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID651208E9BEAD7A04
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1881" .
+    
+    bdr:NT6A47BC96917FFB1B
+        a                   :Note ;
+        :contentLocationStatement  "p. 79, 126" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "dge lugs pa monastery in rdo rje chus, spo bo rdzong\nfounded in about 1464 by sho po chos kyi grags pa\n\n----note moved from G2931(dup.)"@en .
+    
+    bdr:NT964B795D4BC4B010
+        a                   :Note ;
+        :contentLocationStatement  "p. 79-87" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "སྔར་༦༤༠ལོ་ཙམ་ནས་ཀོང་ཇོའི་ལོ་རྒྱུས་དང་འབྲེལ་ནས་ལྷ་སའི་ཇོ་བོའི་སྐུ་བཞུགས་ཙམ་གནང་བར་གྲགས་པའི་བེ་འབུར་ལྷ་ཁང་བཞེངས་ཡོད་ཅིང་། བར་དུ་༡༤༦༤ལོར་ཤོ་པོ་ཆོས་གྲགས་ཀྱིས་སྔར་ཡོད་བེ་འབུར་ལྷ་ཁང་གཞིར་བྱས་ནས་རྒྱ་བསྐྱེད་གསར་བཞེངས་དུ་མ་མཛད་རྗེས་དར་རྒྱས་རིམ་བཞིན་བྱུང་ལ། ཕྱིས་སུ་དགོན་འདིར་སྤྲུལ་སྐུ་བཞི་ཙམ་བྱུང་བ་ནི། ཚངས་སྤྲུལ་དང་། བྲག་སྤྲུལ། རྟ་སྤྲུལ། སྤ་སྤྲུལ་བཅས་ཡིན་པ་སོགས་ལོ་རྒྱུས་གནད་བསྡུས་གསལ།"@bo .
+    
+    bdr:NTF864157289AE16CE
+        a                   :Note ;
+        :contentLocationStatement  "v. 18, p. 259" ;
+        :noteSource         bdr:MW19813 ;
+        :noteText           "dge lugs pa monastery regarded as an affiliate of chab mdo\nis this the same as the monastery in rdo rje chus in spo bo rdzong?\n\n----note moved from G2931(dup.)"@en .
+}

@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN220 {
+    bda:G2CN220  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN220 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "c3/G2CN220.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN220 ;
+        adm:logEntry        bda:LG8CA829819976DEB9 , bda:LGBFF80459646E37DC , bda:LGD6B18F8CC27E8B90 , bda:LGF2343C5871D7676D , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8CA829819976DEB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-12-01T12:45:48.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added location, cleanup dup. record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBFF80459646E37DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-05T14:06:46.843Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language coding"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD6B18F8CC27E8B90
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-10-14T16:37:04.83Z"^^xsd:dateTime ;
+        adm:logMessage      "added record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2343C5871D7676D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-16T10:09:53.765Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2CN220  a          :Place ;
+        skos:altLabel       "dza lan d+ha ra/"@bo-x-ewts , "Jalandhara"@en ;
+        skos:prefLabel      "dzA lan d+ha ra/"@bo-x-ewts , "Jalandhar"@en ;
+        :isRoot             true ;
+        :note               bdr:NT482E392B4BA83A80 , bdr:NTF74B7B7887FFF3EC ;
+        :placeLocatedIn     bdr:G3CN1563 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT482E392B4BA83A80
+        a                   :Note ;
+        :contentLocationStatement  "p. 68" ;
+        :noteSource         bdr:MW1KG4528 ;
+        :noteText           "ཧཱི་མ་ཅཱལ་མངའ་ཁོངས་ཀཱང་ར་བྱ་བ་དེ་གནས་ཆེན་ཉེར་བཞིའི་ནང་གི་ནུབ་ཕྱོགས་ཛ་ལན་དྷ་ར་བྱ་བ་དེ་ཡིན་པར་འཁོད།"@bo .
+    
+    bdr:NTF74B7B7887FFF3EC
+        a                   :Note ;
+        :noteText           "rgyud las gsungs pa'i yul nyer bzhi'i bye brag gcig te mkha' spyod thugs kyi 'khor lo rdo rje lus kyi spyi gtsug yin par 'khod/"@bo-x-ewts .
+}

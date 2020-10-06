@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3115 {
+    bda:G3115  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3115 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "1a/G3115.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3115 ;
+        adm:logEntry        bda:LG4F888D593D532912 , bda:LG759EE51E384490F8 , bda:LG8E849190F832A66C , bda:LGBF69E18D4639BD11 , bda:LGDF3941998FDC7815 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4F888D593D532912
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T15:49:30.727Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG759EE51E384490F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-05T09:31:19.903Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8E849190F832A66C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T15:52:50.984Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBF69E18D4639BD11
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G3106"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGDF3941998FDC7815
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3115  a            :Place ;
+        skos:altLabel       "spo rong sbra chen/"@bo-x-ewts ;
+        skos:prefLabel      "sbra chen/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3288B2CFF2A8E71F ;
+        :placeLocatedIn     bdr:G3106 ;
+        :placeType          bdr:PT0048 .
+    
+    bdr:NT3288B2CFF2A8E71F
+        a                   :Note ;
+        :noteText           "settlement in the spo rong area of southwestern tibet"@en .
+}

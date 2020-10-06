@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1AG38 {
+    bda:G1AG38  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1AG38 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cf/G1AG38.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1AG38 ;
+        adm:logEntry        bda:LG1D69C2E7B9A7683D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1D69C2E7B9A7683D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-07-29T11:40:38.611Z"^^xsd:dateTime ;
+        adm:logMessage      "created P1AG38"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:EVB4832F79BEEE6350
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P4892 ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear .
+    
+    bdr:EVEB42B71506C20111
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear .
+    
+    bdr:G1AG38  a           :Place ;
+        skos:prefLabel      "mkha' skyong brag"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVB4832F79BEEE6350 , bdr:EVEB42B71506C20111 ;
+        :placeLocatedIn     bdr:G1291 .
+}

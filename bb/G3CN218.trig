@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN218 {
+    bda:G3CN218  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN218 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "bb/G3CN218.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN218 ;
+        adm:logEntry        bda:LG05884FEDB347B1F0 , bda:LGFB3916E53FF6A402 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG05884FEDB347B1F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-04-28T15:27:00.44Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & linked with sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFB3916E53FF6A402
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T15:00:20.352Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV43855D05C5212F1A
+        a                   :PlaceFounded ;
+        :onYear             "0800"^^xsd:gYear .
+    
+    bdr:EVCB18B9780C034EBD
+        a                   :PlaceFounded ;
+        :onYear             "0810"^^xsd:gYear .
+    
+    bdr:G3CN218  a          :Place ;
+        skos:altLabel       "kong po de mo'i bka' gtsigs brag brkos ma/"@bo-x-ewts ;
+        skos:prefLabel      "kong po g.yung drung 'dzin gyi rdo brkos/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC25043B11F034AA6 ;
+        :placeEvent         bdr:EV43855D05C5212F1A , bdr:EVCB18B9780C034EBD ;
+        :placeLocatedIn     bdr:G640 ;
+        :placeType          bdr:PT0054 .
+    
+    bdr:NTC25043B11F034AA6
+        a                   :Note ;
+        :contentLocationStatement  "p. 61-62" ;
+        :noteSource         bdr:MW1KG5344 ;
+        :noteText           "kong yul gyi g.yung drung 'dzin zhes pa'i grong sde'i nye 'gram du mchis tshul sogs gsal/"@bo-x-ewts .
+}

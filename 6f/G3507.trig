@@ -1,0 +1,111 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3507 {
+    bda:G3507  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3507 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "6f/G3507.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3507 ;
+        adm:logEntry        bda:LG1F50ACD5766FF342 , bda:LG23F821E537ED5895 , bda:LG2CEA92D6DB2A0697 , bda:LG5B880DFF901B3A92 , bda:LGCD061EF3E94DEF83 , bda:LGCF9388DFA827D5F8 , bda:LGE15826E1151B79F7 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542223104:542223101" ;
+        adm:place_id_lex    "542223104:542223101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1F50ACD5766FF342
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:21:19.519Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & GIS ID & 4 of note in tibetan"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG23F821E537ED5895
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2CEA92D6DB2A0697
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from templeComplex to lhaKhang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG5B880DFF901B3A92
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-31T11:52:10.939Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as dgon pa"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCD061EF3E94DEF83
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-14T10:07:47.608Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGCF9388DFA827D5F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-15T16:43:41.144Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE15826E1151B79F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-17T15:06:50.508Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV8CA5F2FFC08FB5A3
+        a                   :PlaceFounded ;
+        :onYear             "0750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVEA9B64A782A46A4A
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3507  a            :Place ;
+        skos:altLabel       "gu ru'i sgrub phug nam mkha' lding /"@bo-x-ewts , "lcags zam bla brang /"@bo-x-ewts , "lcags zam chu bo ri tshe chu sgrub sde/"@bo-x-ewts , "次久珠丹寺"@zh-hans , "cijiu zhudan si"@zh-latn-pinyin-x-ndia , "cijiu zhude si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tshe chu sgrub sde/"@bo-x-ewts , "Tshechu Drubde"@en-x-mixed , "次久珠德寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID261C44D3B1EADB92 ;
+        :isRoot             true ;
+        :note               bdr:NT8210F872F12977DB , bdr:NTF489633B161D18E9 ;
+        :placeEvent         bdr:EV8CA5F2FFC08FB5A3 , bdr:EVEA9B64A782A46A4A ;
+        :placeGonpaPerEcumen  "2.74" ;
+        :placeLat           "29.30206" ;
+        :placeLocatedIn     bdr:G2135 , bdr:G3320 ;
+        :placeLong          "90.73485" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID261C44D3B1EADB92
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3507" .
+    
+    bdr:NT8210F872F12977DB
+        a                   :Note ;
+        :contentLocationStatement  "v. 18, p. 327" ;
+        :noteSource         bdr:MW21807 ;
+        :noteText           "ལྕགས་ཟམ་ཆུ་བོ་རིའི་ཚེ་ཆུ་སྒྲུབ་སྡེ་ནི་ཐང་སྟོང་པས་བཏབ། ཐུགས་སྲས་སྐྱོབ་པ་བཟང་པོའི་ཡང་སྲིད་ལྕགས་ཟམ་སྤྲུལ་སྐུ་རིམ་བྱོན་གྱི་གདན་ས་མཛད་ཅིང་། བསྟན་འཛིན་ཡེ་ཤེས་ལྷུན་གྲུབ་སོགས་མཁས་གྲུབ་ཆེན་པོ་མང་དུ་བྱོན། ཞེས་འཇམ་དབྱངས་མཁྱེན་བརྩེ་དབང་པོའི་གསུང་འབུམ་འདིར་ཞལ་གསལ་དུ་གསུངས།"@bo .
+    
+    bdr:NTF489633B161D18E9
+        a                   :Note ;
+        :contentLocationStatement  "p. 137-141" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "ཀ་ཐོག་སི་ཏུ་ཆོས་ཀྱི་རྒྱ་མཚོས་མཛད་པའི་དབུས་གཙང་གནས་ཡིག་ནང་དུ། དཔལ་ཆུ་བོ་རིའི་ལྕགས་ཟམ་བླ་བྲང་ནས་གཙོས། གུ་རུའི་སྒྲུབ་ཕུག་ནམ་མཁའ་ལྡིང་།(gu ru'i sgrub phug nam mkha' lding ) ཚེ་ཆུ་སྒྲུབ་སྡེ་བཅས་ཀྱི་སྐོར་ཅུང་ཟད་ཞིབ་པར་གསལ། གདན་ས་འདིར་སྤྱིར་སྐུ་གསུང་ཐུགས་རྟེན་ཅི་བཞུགས་དང་། ཁྱད་པར་རྡོའི་མཆོད་རྟེན་ཐོག་སོ་ལྔ་པའི་བུམ་པའི་ནང་གྲུབ་ཐོབ་ཆེན་པོའི་སྐུ་སྨུག་པོ་ང་འདྲ་མ་བཞུགས་པ་སོགས་ནས་གཙོས། ཐུགས་སྲས་བསྟན་འཛིན་རིན་པོ་ཆེའི་སྐུ་ཕྲེང་དགུའི་འདྲ་ཞལ་བཞུགས་ཁྲི་བཅས་བཞུགས་ཡོད་པ་དང་། དཔེ་མཛོད་ནང་བླ་མ་དགོངས་འདུས། བྱང་གཏེར། ཤངས་ཆོས་སོགས་པོད་ཉིས་བརྒྱ་ཙམ་བཞུགས་པ་སོགས་ཞིབ་ཆ་ཆེ་ཙམ་འཁོད།"@bo .
+}

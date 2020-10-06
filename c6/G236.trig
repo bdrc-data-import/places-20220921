@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G236 {
+    bda:G236  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G236 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "c6/G236.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G236 ;
+        adm:logEntry        bda:LG10E953099B39DE1D , bda:LG2319129FF742268B , bda:LG2F3366A78153C68D , bda:LG36314E6AB739968B , bda:LG3DD0119FAE77114D , bda:LG3E5D1CF96EB471F1 , bda:LGC28F169B7B3741CF , bda:LGC3A24C58A98641E9 , bda:LGF9F65062E3E4A03B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG10E953099B39DE1D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T11:20:14.299Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2319129FF742268B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T11:45:21.647Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG2F3366A78153C68D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:35:41.39Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG36314E6AB739968B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG3DD0119FAE77114D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-02T14:03:15.078Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from bshadGrwa to grwaTshang"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3E5D1CF96EB471F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T13:54:34.593Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains (5 khang tshan)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC28F169B7B3741CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T12:29:26.584Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC3A24C58A98641E9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF9F65062E3E4A03B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-24T16:16:33.487Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV352D56E39E30E7A9
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P995 ;
+        :onYear             "1474"^^xsd:gYear .
+    
+    bdr:EVBD34FFB1F7AE5238
+        a                   :PlaceFounded ;
+        :onYear             "1474"^^xsd:gYear .
+    
+    bdr:G236  a             :Place ;
+        skos:altLabel       "dpal ldan stod rgyud grwa tshang /"@bo-x-ewts , "rgyud stod grwa tshang /"@bo-x-ewts , "Gyuto College"@en , "shang miyuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyud stod/"@bo-x-ewts , "Gyuto Dratsang"@en , "上密院"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT985C0E5531AD0B3F ;
+        :placeContains      bdr:G2CN10864 , bdr:G2CN11049 , bdr:G2CN11050 , bdr:G2CN11051 , bdr:G2CN11052 , bdr:G2CN11053 ;
+        :placeEvent         bdr:EV352D56E39E30E7A9 , bdr:EVBD34FFB1F7AE5238 ;
+        :placeLocatedIn     bdr:G2800 , bdr:G4552 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT985C0E5531AD0B3F
+        a                   :Note ;
+        :contentLocationStatement  "p. 28" ;
+        :noteSource         bdr:MW20212 ;
+        :noteText           "one of the two major dge lugs pa tantric colleges located in lha sa khul, tar, affiliated to dga' ldan\nfounded by rgyud chen kun dga' don grub, a student of rje shes rab sengge\n1959. mkhan po was dga' ldan shar rtse phu khang khams tshan dge bshes blo bzang dpal ldan"@en .
+}

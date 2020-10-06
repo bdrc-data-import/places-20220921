@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3038 {
+    bda:G3038  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3038 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "23/G3038.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3038 ;
+        adm:logEntry        bda:LG4E1439E1E20D65CD , bda:LG51B503C790214B24 , bda:LG681CB67FBEF9BCB1 , bda:LG78FA43B1721D11A6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4E1439E1E20D65CD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG51B503C790214B24
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG681CB67FBEF9BCB1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-04T16:19:58.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG78FA43B1721D11A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T10:26:57.193Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV42AC529B66EBE37E
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3038  a            :Place ;
+        skos:prefLabel      "bsam gtan gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT827C53B6448514DB , bdr:NT90878D52369A6B0D ;
+        :placeEvent         bdr:EV42AC529B66EBE37E ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3117 , bdr:G3375 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NT827C53B6448514DB
+        a                   :Note ;
+        :contentLocationStatement  "p. 128" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "gelug nunnery in thang dkar chus, zhog phu shang of stag rtse rdzong.\nfounded by two nuns of the rdo ring family.\nfunded by the rdo ring family\nin 1959 had 20 nuns.\nnow has 3 nuns."@en .
+    
+    bdr:NT90878D52369A6B0D
+        a                   :Note ;
+        :contentLocationStatement  "p. 50" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "dge lugs pa nunnery in dmag rkang grong tsho, zhogs shang, stag rtse rdzong, lha sa prefecture\nfounded by two nuns from the rdo ring family in the 18th century\nfunded by the rdo ring family\nformerly had 20 nuns"@en .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1426 {
+    bda:G1426  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1426 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d3/G1426.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1426 ;
+        adm:logEntry        bda:LG176CE570C6C1A622 , bda:LG6CAA6809DDE1168F , bda:LGB038C4ACFB213270 , bda:LGF23D89801F32497F , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG176CE570C6C1A622
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6CAA6809DDE1168F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-30T09:42:55.633Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized name & changed location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB038C4ACFB213270
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T16:26:21.89Z"^^xsd:dateTime ;
+        adm:logMessage      "new place type assigned"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF23D89801F32497F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-27T17:30:37.766Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G4625 to G4196"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1426  a            :Place ;
+        skos:altLabel       "lho lha khang khul zam mkhar/"@bo-x-ewts ;
+        skos:prefLabel      "zam mkhar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT72CCB9037723CEDB ;
+        :placeLocatedIn     bdr:G2104 ;
+        :placeType          bdr:PT0025 .
+    
+    bdr:NT72CCB9037723CEDB
+        a                   :Note ;
+        :noteText           "place located in lha khang rdzong, lho brag, in the tibetan autonomous region"@en .
+}

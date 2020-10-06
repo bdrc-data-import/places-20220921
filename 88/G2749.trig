@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2749 {
+    bda:G2749  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2749 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "88/G2749.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2749 ;
+        adm:logEntry        bda:LG4E35EC01D1346B43 , bda:LG69E20B03930B4E0E , bda:LGD3AA6FABA6F46B6E , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623025207:623025109" ;
+        adm:place_id_lex    "623025207:623025109" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4E35EC01D1346B43
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-13T14:55:56.828Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG69E20B03930B4E0E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD3AA6FABA6F46B6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T13:42:35.647Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV3B745903A7EEB8F3
+        a                   :PlaceFounded ;
+        :onYear             "1750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2749  a            :Place ;
+        skos:altLabel       "dga' ldan bkra shis chos 'phel gling /"@bo-x-ewts , "dge ldan bkra shis chos 'phel gling /"@bo-x-ewts , "mtshan sgrogs dgon dga' ldan bkra shis chos 'phel gling /"@bo-x-ewts , "玛曲参智合寺"@zh-hans , "canzhihe Si"@zh-latn-pinyin-x-ndia , "maqu canzhihe Si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mtshan sgrogs dgon/"@bo-x-ewts , "TsanDrok Gon Ganden Tashi Chopeling"@en , "参智合寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF43C54662ED830C3 ;
+        :isRoot             true ;
+        :note               bdr:NT0106747954046673 , bdr:NT617000D7897331A0 , bdr:NT7945E35E3CFBE086 , bdr:NTF37F84C2B7BF08BD ;
+        :placeEvent         bdr:EV3B745903A7EEB8F3 ;
+        :placeGonpaPerEcumen  "1.49" ;
+        :placeLat           "33.72681" ;
+        :placeLocatedIn     bdr:G2202 ;
+        :placeLong          "102.20386" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF43C54662ED830C3
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2749" .
+    
+    bdr:NT0106747954046673
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, foldout" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "dge lugs pa monastery in kan lho prefecture\nseat of the lha rams pa incarnation lineage"@en .
+    
+    bdr:NT617000D7897331A0
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 200" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "monastery in the kan lho autonomous tibetan prefecture"@en .
+    
+    bdr:NT7945E35E3CFBE086
+        a                   :Note ;
+        :contentLocationStatement  "1991-4 (38), p. 67" ;
+        :noteSource         bdr:MW22362 ;
+        :noteText           "dge lugs pa monastery in rma chu rdzong, kan lho prefecture"@en .
+    
+    bdr:NTF37F84C2B7BF08BD
+        a                   :Note ;
+        :contentLocationStatement  "pp. 26-32" ;
+        :noteSource         bdr:MW29487 ;
+        :noteText           "1981. opened after restoration\nnotes the restoration of the dga' ldan gser gdung\n1982. the pan chen inspects the restorations at mtshan sgrogs dgon\n1985. revival of the great mandala festival of mngon byang\n1986. institution of the great festival of vajrapani in the mahacakra form"@en .
+}

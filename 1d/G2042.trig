@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2042 {
+    bda:G2042  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2042 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1d/G2042.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2042 ;
+        adm:logEntry        bda:LG1B85DA13AD3E64C5 , bda:LGC41510A773A497B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1B85DA13AD3E64C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T09:05:59.107Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type & normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC41510A773A497B1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2042  a            :Place ;
+        skos:altLabel       "mal gro gung dkar rdzong thar pa ri btsun dgon/"@bo-x-ewts ;
+        skos:prefLabel      "thar pa ri btsun dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8D4E5340E09EDC26 ;
+        :placeLocatedIn     bdr:G2021 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NT8D4E5340E09EDC26
+        a                   :Note ;
+        :contentLocationStatement  "p. 37" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa monastery in nyi ma lcang ra shang, mal gro gung dkar rdzong, founded in 1581 by sga lo tsA ba\naffiliated to se ra byes\nhad 1 monk in 1959\nnot restored"@en .
+}

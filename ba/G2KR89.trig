@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KR89 {
+    bda:G2KR89  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KR89 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ba/G2KR89.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KR89 ;
+        adm:logEntry        bda:LGIM335E72436E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM335E72436E
+        a                   adm:UpdateData ;
+        adm:logAgent        "mongol import" ;
+        adm:logDate         "2013-12-03T23:23:40.962Z"^^xsd:dateTime ;
+        adm:logMessage      "created by mongol import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV41BEF33D560BB02F
+        a                   :PlaceFounded ;
+        :onYear             "1677"^^xsd:gYear .
+    
+    bdr:G2KR89  a           :Place ;
+        skos:altLabel       "mergen sum-e"@mn-x-trans , "Mergen süme"@mn-x-trans , "广法寺"@zh-hans , "梅力更召"@zh-hans , "Guangfa si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Mergen süm"@mn-x-trans , "Meiligeng zhao"@zh-latn-pinyin-x-ndia ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV41BEF33D560BB02F ;
+        :placeLocatedIn     bdr:G603 ;
+        :placeType          bdr:PT0037 .
+}

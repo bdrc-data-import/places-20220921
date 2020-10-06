@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1601 {
+    bda:G1KR1601  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1601 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "0b/G1KR1601.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1601 ;
+        adm:logEntry        bda:LG877D30CB4E685DCB , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542328202:542328112" ;
+        adm:place_id_lex    "542328202:542328112" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG877D30CB4E685DCB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-07T16:41:21.324Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV6A451188ED091BAF
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVB15B1B87E185EBCC
+        a                   :PlaceFounded ;
+        :onYear             "1500"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G1KR1601  a         :Place ;
+        skos:altLabel       "ri gud chos sde_[?]"@bo-x-ewts , "rigui qude si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ri gud chos sde/"@bo-x-ewts , "Rigyal Chode"@en , "日贵曲德寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA47F1592A0E76A0E ;
+        :isRoot             true ;
+        :note               bdr:NT99991C47E9BE3135 , bdr:NTB27CB8DA16075272 ;
+        :placeEvent         bdr:EV6A451188ED091BAF , bdr:EVB15B1B87E185EBCC ;
+        :placeGonpaPerEcumen  "4.89" ;
+        :placeLat           "29.38333" ;
+        :placeLocatedIn     bdr:G2164 ;
+        :placeLong          "88.58334" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA47F1592A0E76A0E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1601" .
+    
+    bdr:NT99991C47E9BE3135
+        a                   :Note ;
+        :noteText           "branch of Tashilhunpo"@en .
+    
+    bdr:NTB27CB8DA16075272
+        a                   :Note ;
+        :noteText           "missing orginal name in tibetan\ndgon ming dngos ji yin dwogs gnas yod pas rjes sor rgyu cha rnyed rim bzhin kha skong bya rgyu/"@en .
+}

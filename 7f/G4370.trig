@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4370 {
+    bda:G4370  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4370 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/G4370.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4370 ;
+        adm:logEntry        bda:LG4E138691F8F08981 , bda:LGA3D5DE66B15FE13E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4E138691F8F08981
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA3D5DE66B15FE13E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-29T16:54:27.094Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4370  a            :Place ;
+        skos:altLabel       "ljang shu bham dgon/"@bo-x-ewts ;
+        skos:prefLabel      "shu bham dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1CCEAB89DED906B6 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1CCEAB89DED906B6
+        a                   :Note ;
+        :contentLocationStatement  "p. 561" ;
+        :noteSource         bdr:MW20850 ;
+        :noteText           "a dgon lag of mtshur phu in ljang: ljang shu bham dgon"@en .
+}

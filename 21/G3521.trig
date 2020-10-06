@@ -1,0 +1,113 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3521 {
+    bda:G3521  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3521 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "21/G3521.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3521 ;
+        adm:logEntry        bda:LG133009724D3E6353 , bda:LG792923432FCFB272 , bda:LGE55ECC145F4AB2D0 , bda:LGF69B5087DC2D4B3F , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542222201:542222122" ;
+        adm:place_id_lex    "542222201:542222122" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG133009724D3E6353
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG792923432FCFB272
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-18T15:44:17.324Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE55ECC145F4AB2D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T12:54:14.885Z"^^xsd:dateTime ;
+        adm:logMessage      "added info with G3522 & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF69B5087DC2D4B3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:48.711Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2C692E719D08E606
+        a                   :PlaceFounded ;
+        :onYear             "1224"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVAF7560433FE7AFBD
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2624 ;
+        :onYear             "1224"^^xsd:gYear .
+    
+    bdr:G3521  a            :Place ;
+        skos:altLabel       "gyang gling tshogs pa/"@bo-x-ewts , "jielin cuoba si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyal gling tshogs pa/"@bo-x-ewts , "Gyaling Chokpa"@en-x-mixed , "结林措巴寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID828EE0E12C77E577 ;
+        :isRoot             true ;
+        :note               bdr:NT0181A5300F12C907 , bdr:NT374CB4A019E52AE6 , bdr:NTAC1825BFE1747BAA , bdr:NTFFA1E063A3307940 ;
+        :placeContains      bdr:G2CN10889 ;
+        :placeEvent         bdr:EV2C692E719D08E606 , bdr:EVAF7560433FE7AFBD ;
+        :placeGonpaPerEcumen  "12.25" ;
+        :placeLat           "29.19799" ;
+        :placeLocatedIn     bdr:G799 ;
+        :placeLong          "91.30387" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID828EE0E12C77E577
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3521" .
+    
+    bdr:NT0181A5300F12C907
+        a                   :Note ;
+        :noteText           "added from Chan's Guide"@en .
+    
+    bdr:NT374CB4A019E52AE6
+        a                   :Note ;
+        :contentLocationStatement  "p. 159-160" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "gyang ging tshogs pa zhes thog pa sogs lo rgyus gsal/"@bo-x-ewts .
+    
+    bdr:NTAC1825BFE1747BAA
+        a                   :Note ;
+        :contentLocationStatement  "p. 2285" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1224. kha che paN chen gyi dngos slob mkhan chen byang chub dpal gyis tshogs sde bzhi'i ya gyal gra nang rgyal gling tshogs pa 'dzugs par gnang/ dgon pa 'dir rga gar ka ling ka rgyal po'i gdung skal bcom ldan 'das kyi tshems che ba bzhi'i grags gcig nang rten du bzhugs"@en .
+    
+    bdr:NTFFA1E063A3307940
+        a                   :Note ;
+        :contentLocationStatement  "p. 26-28" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "རྒྱལ་གླིང་ཚོགས་པ་ནི་དགའ་ཚལ་སྦུག་༼G3522༽དང་འབྲེལ་ནས་ཆགས་ཡོད་དེ། སྤྱིར་གནས་དེ་ནི་རྒྱལ་བ་ཡར་རྒྱབ་པའི་ཕ་གཞིས་ཡིན་པས་རྒྱལ་གླིང་ཞེས་གྲགས་པ་དང་། རྒྱལ་གླིང་ཚོགས་པ་ནི་ཁ་ཆེ་པཎ་ཆེན་གྱིས་ཕྱག་བཏབ་པའི་ཚོགས་པ་སྡེ་བཞིའི་ཡ་གྱལ་དུ་གྲགས་ལ་ནང་རྟེན་ཡང་ཁ་ཆེ་པཎ་ཆེན་གྱི་རྫ་སྐུ་སོགས་བཞུགས། དེ་དང་ཐག་ཉེར་དགའ་ཚལ་སྦུག་ཆགས་ཡོད་པར་འཁོད།"@bo .
+}

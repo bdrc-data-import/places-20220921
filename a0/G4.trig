@@ -1,0 +1,152 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4 {
+    bda:G4  a               adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4 ;
+        adm:facetIndex      20 ;
+        adm:gitPath         "a0/G4.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4 ;
+        adm:logEntry        bda:LG01321D74CC96A1F3 , bda:LG145B9876E3DF261A , bda:LG21616C4E6FB78816 , bda:LG3C8FEF5930CF22C5 , bda:LG58C07015DDFFD344 , bda:LG6ABC28DB5D6989BA , bda:LGB305F5064D9E6D0B , bda:LGDF5E9451A59D1D2E , bda:LGEFDBAB61E7CE1BB6 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542322206:542322108" ;
+        adm:place_id_lex    "542322206:542322108" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG01321D74CC96A1F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T16:25:03.458Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & Gis Coords & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG145B9876E3DF261A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-12T10:27:53.26Z"^^xsd:dateTime ;
+        adm:logMessage      "added dbus gtsang"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LG21616C4E6FB78816
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-19T16:14:20.778Z"^^xsd:dateTime ;
+        adm:logMessage      "added pinyin & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3C8FEF5930CF22C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-11T16:28:48.116Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG58C07015DDFFD344
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-25T12:49:03.231Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6ABC28DB5D6989BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-25T15:39:03.712Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB305F5064D9E6D0B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDF5E9451A59D1D2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-12T10:37:43.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added sman ri dgon pa'i par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGEFDBAB61E7CE1BB6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T17:02:18.912Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4913485D88968BB2
+        a                   :PlaceFounded ;
+        :notAfter           "1405"^^xsd:gYear ;
+        :notBefore          "1404"^^xsd:gYear .
+    
+    bdr:EV7E3B44E5EC037968
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1675 ;
+        :onYear             "1405"^^xsd:gYear .
+    
+    bdr:EV899F84F2B3EE768A
+        a                   :PlaceFounded ;
+        :onYear             "1393"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G4  a               :Place ;
+        rdfs:comment        "See also the branch monastery Menriling (G2CN11149)." ;
+        skos:altLabel       "bkra shis sman ri/"@bo-x-ewts , "thob rgyal sman ri dgon/"@bo-x-ewts , "门日寺"@zh-hans , "meiri si"@zh-latn-pinyin-x-ndia , "menri si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sman ri dgon/"@bo-x-ewts , "Menri Gon"@en-x-mixed , "梅日寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5A7DC3AEEE4F42FF ;
+        :contentLocationStatement  "Coordinates: latitude 29°26,772 longitude 89°32,238 Altitude: 4734(m) (sheehy_tibet_coordinates_2014)" ;
+        :isRoot             true ;
+        :note               bdr:NT6CC2237DE5326DBA , bdr:NT81702EB99178C95D , bdr:NTC2B1292B06EA23AB , bdr:NTFD48B3AAB782D92D ;
+        :placeContains      bdr:G3JT12591 ;
+        :placeEvent         bdr:EV4913485D88968BB2 , bdr:EV7E3B44E5EC037968 , bdr:EV899F84F2B3EE768A ;
+        :placeGonpaPerEcumen  "10.69" ;
+        :placeLat           "29.446108" ;
+        :placeLocatedIn     bdr:G2171 , bdr:G3531 , bdr:G563 ;
+        :placeLong          "89.537805" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID5A7DC3AEEE4F42FF
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4" .
+    
+    bdr:NT6CC2237DE5326DBA
+        a                   :Note ;
+        :contentLocationStatement  "p. 246-257" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "བོད་ཡུལ་ཡོངས་སུ་གྲགས་པ་ཆེ་བའི་བོན་གྱི་མ་དགོན་ཞིག་ཡིན་ཏེ། དེར་གྲྭ་ཚང་གླིང་སྟོད་དང་། གླིང་སྨད། གླིང་སྐད། གླིང་ཟུར་བཅས་བཞི་རུ་དབྱེ། གསུང་རབ་མང་པོ་དང་། བླ་གྲྭ་ལྔ་བརྒྱ་སྐོར་བཞུགས་པ་སོགས་ལོ་རྒྱུས་གནད་བསྡུས་གསལ།\nམཉམ་མེད་ཤེས་རབ་རྒྱལ་མཚན་གྱིས་༡༣༩༣ལོར་ཕྱག་བཏབ་པར་གསལ་བ་རྒྱུ་ཆ་འདི་རང་(w25095. p22)ལ་ཡང་བཤད་ཚུལ་གཉིས་འཁོད་པ་དཔྱད་རྒྱུ།"@bo .
+    
+    bdr:NT81702EB99178C95D
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 65" ;
+        :noteSource         bdr:MW21509 ;
+        :noteText           "paramount bon po monastery in dbus gtsang\nfounded by mnyam med shes rab rgyal mtshan in 1404"@en .
+    
+    bdr:NTC2B1292B06EA23AB
+        a                   :Note ;
+        :contentLocationStatement  "p. 22" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "རྒྱལ་རིགས་བྲུ་ཡི་དགོན་གནས་ཀྱི་གྲས་ཏེ། བོན་དགོན་འགངས་ཆེན་ཞིག་ཡིན་པ་གསལ།\nམཉམ་མེད་ཤེས་རབ་རྒྱལ་མཚན་གྱིས་༡༤༠༥ལོར་ཕྱག་བཏབ་པར་གསལ་ཡང་དེབ་འདི་རང་གི་ཤོག་ངོས་༢༤༦ལ་༡༣༩༣ལོར་བཏབ་ཅེས་ཀྱང་གསལ།།"@bo .
+    
+    bdr:NTFD48B3AAB782D92D
+        a                   :Note ;
+        :contentLocationStatement  "p. 29" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "description of the monastery, founded in 1405; restoration began in 1984"@en .
+}

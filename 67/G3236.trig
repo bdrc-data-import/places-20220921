@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3236 {
+    bda:G3236  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3236 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "67/G3236.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3236 ;
+        adm:logEntry        bda:LG04065D73AFB9B148 , bda:LGE544638B6C7AE6C7 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04065D73AFB9B148
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE544638B6C7AE6C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-11T13:02:25.152Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3236  a            :Place ;
+        skos:altLabel       "zla nyin kha la rong sgo"@bo-x-ewts ;
+        skos:prefLabel      "kha la rong sgo"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT52DE8A057B70F2A1 , bdr:NTD17AD2E4829238EB ;
+        :placeLocatedIn     bdr:G4144 ;
+        :placeType          bdr:PT0080 .
+    
+    bdr:NT52DE8A057B70F2A1
+        a                   :Note ;
+        :contentLocationStatement  "pp. 173-182" ;
+        :noteSource         bdr:MW8751 ;
+        :noteText           "གཏེར་ཆེན་མཆོག་གྱུར་གླིང་པའི་གཏེར་གནས་གྲགས་ཅན་ཞིག་ཏེ་ཁམས་ནང་ཆེན་རྒྱུད་དུ་ཡོད།"@bo .
+    
+    bdr:NTD17AD2E4829238EB
+        a                   :Note ;
+        :noteSource         bdr:MW22643 ;
+        :noteText           "this locality is connected with the 8th of mchog gyur gling pa's gter ma revelations and is the subject of the kha la rong sgo'i dkar chag"@en .
+}

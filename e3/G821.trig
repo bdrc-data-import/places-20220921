@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G821 {
+    bda:G821  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G821 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e3/G821.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G821 ;
+        adm:logEntry        bda:LG2A077464B68472E7 , bda:LGC10A7E670A1E8677 , bda:LGE329EA8E11146FB9 , bda:LGF81FA1B25297D2F4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2A077464B68472E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-30T14:04:15.704Z"^^xsd:dateTime ;
+        adm:logMessage      "zhu dag"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC10A7E670A1E8677
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE329EA8E11146FB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-02T15:42:19.879Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF81FA1B25297D2F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-18T15:19:27.642Z"^^xsd:dateTime ;
+        adm:logMessage      "added type and located in"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:G821  a             :Place ;
+        skos:prefLabel      "thed gzhung nor bu sgang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G54 ;
+        :placeType          bdr:PT0083 .
+}

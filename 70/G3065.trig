@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3065 {
+    bda:G3065  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3065 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "70/G3065.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3065 ;
+        adm:logEntry        bda:LG366DB8EDCCA8C855 , bda:LG4ABB1573879F31CF , bda:LG9318FA1FAB3A2B1B , bda:LGC2DF19172F549D30 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG366DB8EDCCA8C855
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T11:26:56.137Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4ABB1573879F31CF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9318FA1FAB3A2B1B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:25:06.7Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from stupa to mchodRten"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC2DF19172F549D30
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-05T16:47:54.519Z"^^xsd:dateTime ;
+        adm:logMessage      "added near G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3065  a            :Place ;
+        skos:prefLabel      "'brom thod mchod rten/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT548F5EE95C6B2279 ;
+        :placeIsNear        bdr:G3007 ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3049 ;
+        :placeType          bdr:PT0072 .
+    
+    bdr:NT548F5EE95C6B2279
+        a                   :Note ;
+        :contentLocationStatement  "p. 61" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "this mchod rten located on the edge of 'brom thod grong tsho is supposed to enshrine the skull (dbu thod) of 'brom rgyal ba'i 'byung gnas\nduring the time of the cultural revolution, the stupa was destroyed but an individual of the area secretly concealed the skullcup of 'bromn in lha sa until 1986 when the stupa was restored"@en .
+}

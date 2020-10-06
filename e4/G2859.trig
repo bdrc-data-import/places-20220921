@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2859 {
+    bda:G2859  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2859 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e4/G2859.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2859 ;
+        adm:logEntry        bda:LGD1786C929DC109C0 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD1786C929DC109C0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2859  a            :Place ;
+        skos:altLabel       "lho rdzong 'og gzhi 'gram dgon/"@bo-x-ewts ;
+        skos:prefLabel      "'og gzhi 'gram dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2659D581BE6955E7 ;
+        :placeLocatedIn     bdr:G2187 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT2659D581BE6955E7
+        a                   :Note ;
+        :contentLocationStatement  "p. 43" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "a dgon lag of chab mdo monastery\none had a major maitreya chapel and over a hundred monks\nlocated in lho rong rdzong of chab mdo prefecture"@en .
+}

@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3445 {
+    bda:G3445  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3445 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "26/G3445.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3445 ;
+        adm:logEntry        bda:LGB876D1C564E94E76 , bda:LGFB0794869DE60E31 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGB876D1C564E94E76
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-27T14:51:16.162Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFB0794869DE60E31
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3445  a            :Place ;
+        skos:prefLabel      "'ba' tshags dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8F8C13F7ECEC3B7F ;
+        :placeLocatedIn     bdr:G1516 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8F8C13F7ECEC3B7F
+        a                   :Note ;
+        :contentLocationStatement  "p. 125" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "gelug monastery located in stag rtse rdzong of lha sa prefecture.\nfounded by sems dpa' chen po rgyal mtshan grags bzang.\nis this a lo sems dpa' sprul sku?\nhad 24 monks according to the dbus khul dgon khang gzhung khra.\nconnected with rgyud stod.\nmonks went to dga' ldan nyag rong khams tshan, 'bras spungs sgo mang grwa tshang, and se ra smad grwa tshang."@en .
+}

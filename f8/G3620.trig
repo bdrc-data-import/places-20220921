@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3620 {
+    bda:G3620  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3620 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f8/G3620.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3620 ;
+        adm:logEntry        bda:LG2066BF5701D5F409 , bda:LG7F38AA219B1DDC86 , bda:LGDF51AFE3302BD215 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2066BF5701D5F409
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7F38AA219B1DDC86
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-09T13:47:32.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDF51AFE3302BD215
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:hermitage to riKhrod"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3620  a            :Place ;
+        skos:prefLabel      "bde chen ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeType          bdr:PT0021 .
+}

@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3488 {
+    bda:G3488  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3488 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "69/G3488.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3488 ;
+        adm:logEntry        bda:LG3FB46D43014386F5 , bda:LGA44DE1AA79F8C6EB , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3FB46D43014386F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-03T10:27:22.049Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA44DE1AA79F8C6EB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1C7EA34B2E6CDBCA
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P395 ;
+        :notAfter           "1599"^^xsd:gYear ;
+        :notBefore          "1500"^^xsd:gYear .
+    
+    bdr:G3488  a            :Place ;
+        skos:altLabel       "nyang po phan bde chos sde/"@bo-x-ewts ;
+        skos:prefLabel      "phan bde chos sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8AB0F0BC4B8A058B , bdr:NTAB272C31738763FC ;
+        :placeEvent         bdr:EV1C7EA34B2E6CDBCA ;
+        :placeLocatedIn     bdr:G1042 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8AB0F0BC4B8A058B
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 551" ;
+        :noteSource         bdr:MW22378 ;
+        :noteText           "dge lugs pa monastery founded by 'phags pa sangs rgyas\nhad a connection with sde srid 'phrin las rgya mtsho"@en .
+    
+    bdr:NTAB272C31738763FC
+        a                   :Note ;
+        :contentLocationStatement  "p. 2327" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1604. sprul sku shAkya lha dbang phan bde'i gdan sar phebs"@en .
+}

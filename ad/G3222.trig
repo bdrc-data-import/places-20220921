@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3222 {
+    bda:G3222  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3222 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "ad/G3222.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3222 ;
+        adm:logEntry        bda:LG1C926A70E41B52B2 , bda:LG52A292379C952375 , bda:LG9DA7E299E32C011E , bda:LGB2EAC99D1D311C36 , bda:LGE0B29167EBC159A8 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632127216:194" ;
+        adm:place_id_lex    "632127216:171" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1C926A70E41B52B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-14T14:11:32.587Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG52A292379C952375
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T10:48:19.991Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9DA7E299E32C011E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB2EAC99D1D311C36
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-18T12:29:23.54Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE0B29167EBC159A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:30.807Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV973D877794A1B4B9
+        a                   :PlaceFounded ;
+        :onYear             "1640"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3222  a            :Place ;
+        skos:altLabel       "dan tig mthu ba dgon/"@bo-x-ewts , "mthu ba dgon bkra shis chos sde/"@bo-x-ewts , "秃哇仓寺/土挖寺/徒哇寺"@zh-hans , "tuwacang si/tuwa si"@zh-latn-pinyin-x-ndia , "tuwa si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mthu ba dgon/"@bo-x-ewts , "土哇寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDADDFC3581FFD6ED5 ;
+        :isRoot             true ;
+        :note               bdr:NT6FD0B4961EB08BE5 , bdr:NTAA35AC7F3701D759 ;
+        :placeEvent         bdr:EV973D877794A1B4B9 ;
+        :placeGonpaPerEcumen  "96.76" ;
+        :placeLat           "36.05000" ;
+        :placeLocatedIn     bdr:G1PD96109 ;
+        :placeLong          "102.52220" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDADDFC3581FFD6ED5
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3222" .
+    
+    bdr:NT6FD0B4961EB08BE5
+        a                   :Note ;
+        :noteText           "name of a monastery in dan tig: mdo smad dan tig nye 'khor mthu ba dgon bkra shis chos sde; one of the six kha ba drug monasteries under the tutelage of tshe tan zhabs drung"@en .
+    
+    bdr:NTAA35AC7F3701D759
+        a                   :Note ;
+        :contentLocationStatement  "p. 109" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་ཚེ་ཏན་དགོན་དགའ་ལྡན་བཤད་སྒྲུབ་གླིང་གི་དགོན་ལག་ཡིན།"@bo .
+}

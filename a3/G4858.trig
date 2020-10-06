@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4858 {
+    bda:G4858  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4858 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "a3/G4858.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4858 ;
+        adm:logEntry        bda:LG0D9165D6830E82E5 , bda:LG21D57B2DDCAEF600 , bda:LG3C9C56FACECF7DA8 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623022204:623022114" ;
+        adm:place_id_lex    "623022204:623022114" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D9165D6830E82E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-08T15:54:19.028Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG21D57B2DDCAEF600
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3C9C56FACECF7DA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2199"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0E3E09AF9A227207
+        a                   :PlaceConverted ;
+        :onYear             "1688"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV8B9754E7913F49CC
+        a                   :PlaceFounded ;
+        :onYear             "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G4858  a            :Place ;
+        skos:altLabel       "dga' ldan phun tshogs gling /"@bo-x-ewts , "klu chung stag tshang dgon dga' ldan phun tshogs gling /"@bo-x-ewts , "stag tshang dgon/"@bo-x-ewts ;
+        skos:prefLabel      "klu chung stag tshang dgon/"@bo-x-ewts , "Luchung"@en-x-mixed ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBB2C58160FE23B84 ;
+        :isRoot             true ;
+        :note               bdr:NTD7D617BC10074AC8 ;
+        :placeEvent         bdr:EV0E3E09AF9A227207 , bdr:EV8B9754E7913F49CC ;
+        :placeGonpaPerEcumen  "16.96" ;
+        :placeLat           "34.59929" ;
+        :placeLocatedIn     bdr:G2199 , bdr:G2203 ;
+        :placeLong          "103.10802" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDBB2C58160FE23B84
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4858" .
+    
+    bdr:NTD7D617BC10074AC8
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 120" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "originally a bon monastery in kan lho; later converted in 1688 to a dge lugs institution fhrough by 10th dpon po (lord) of co ne blo bzang don grub and bde thang mkhan po tshangs dbyangs"@en .
+}

@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1676 {
+    bda:G1676  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1676 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "68/G1676.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1676 ;
+        adm:logEntry        bda:LG3440EFEDA4BF0D00 , bda:LG64E3AF28E1080AA2 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330213:164" ;
+        adm:place_id_lex    "513330213:164" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3440EFEDA4BF0D00
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-15T16:51:10.43Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG64E3AF28E1080AA2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV18EBDD8F835D4FC9
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2943 ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:EV936F1B3B3C57D91C
+        a                   :PlaceFounded ;
+        :onYear             "1775"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1676  a            :Place ;
+        skos:altLabel       "bkra shis mdo sngags dar rgyas gling /"@bo-x-ewts , "rtswa shul dgon/"@bo-x-ewts , "sde dge rtsa shul dgon/"@bo-x-ewts ;
+        skos:prefLabel      "rtsa shul dgon/"@bo-x-ewts , "tashi monastery"@en , "扎西寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD694C038ECD04364 ;
+        :isRoot             true ;
+        :note               bdr:NT11071AFDEB3788EC , bdr:NT29E545A1D4A847BF ;
+        :placeEvent         bdr:EV18EBDD8F835D4FC9 , bdr:EV936F1B3B3C57D91C ;
+        :placeGonpaPerEcumen  "3.34" ;
+        :placeLat           "31.88333" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "99.33334" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD694C038ECD04364
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1676" .
+    
+    bdr:NT11071AFDEB3788EC
+        a                   :Note ;
+        :contentLocationStatement  "p. 120" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "rnying ma monastery located in sde dge territory; founded in 1790 (rab byung 13 lcags khyi) by dge rtse paN+Di ta 'gyur med tshe dbang mchog grub; because of water damage (flooding) moved in 1998 through the efforts of rig 'dzin klong gsal snying po yang sprul, grub dbang lung rtogs bstan pa'i rgyal mtshan and others.\n\nformerly there were more than 130 monks; now there are about 90."@en .
+    
+    bdr:NT29E545A1D4A847BF
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 526" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery"@en .
+}

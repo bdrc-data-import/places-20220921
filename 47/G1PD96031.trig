@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD96031 {
+    bda:G1PD96031  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD96031 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "47/G1PD96031.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD96031 ;
+        adm:logEntry        bda:LG541DBD1F05CEA1C5 , bda:LG5CEEA4106D185DF6 , bda:LG774D57C31A16167A , bda:LG807F721843282FB2 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632122103:61" ;
+        adm:place_id_lex    "632122103:10" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG541DBD1F05CEA1C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T14:33:18.331Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG5CEEA4106D185DF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T12:11:50.731Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG774D57C31A16167A
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-30T17:21:11.74Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG807F721843282FB2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-11-30T15:03:29.732Z"^^xsd:dateTime ;
+        adm:logMessage      "གསར་དུ་བཅུག"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV00C3875914C31927
+        a                   :PlaceConverted ;
+        :onYear             "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV06B6E92E8F4ED931
+        a                   :PlaceFounded ;
+        :note               bdr:NTDFAADA1F84E79794 ;
+        :onYear             "1100"^^xsd:gYear .
+    
+    bdr:G1PD96031  a        :Place ;
+        skos:altLabel       "Chinkya"@bo-x-phon-en , "祭骨寺"@zh-hans , "秦家寺"@zh-hans , "qinjia si"@zh-latn-pinyin-x-ndia , "qin jia si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "chin kya zi/"@bo-x-ewts , "秦家寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3CB40743B705CCF8 ;
+        :isRoot             true ;
+        :note               bdr:NTDC7465F45863F4EA ;
+        :placeEvent         bdr:EV00C3875914C31927 , bdr:EV06B6E92E8F4ED931 ;
+        :placeGonpaPerEcumen  "101.22" ;
+        :placeLat           "35.88000" ;
+        :placeLocatedIn     bdr:G1PD95976 ;
+        :placeLong          "102.82000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID3CB40743B705CCF8
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD96031" .
+    
+    bdr:NTDC7465F45863F4EA
+        a                   :Note ;
+        :contentLocationStatement  "p. ༤༡" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "སུང་རྒྱལ་རབས་ཀྱི་སྐབས་སུ་ཕྱག་བཏབ།"@bo .
+    
+    bdr:NTDFAADA1F84E79794
+        a                   :Note ;
+        :noteText           "no-sect"@en .
+}

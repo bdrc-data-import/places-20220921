@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G558 {
+    bda:G558  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G558 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "83/G558.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G558 ;
+        adm:logEntry        bda:LG1020580E80496839 , bda:LGCA57FD2AD64F4E03 , bda:LGCCBC14BAB99608EB , bda:LGFA96EE824BB51C35 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1020580E80496839
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-23T12:03:44.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCA57FD2AD64F4E03
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-20T14:10:06.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & desc."@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCCBC14BAB99608EB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFA96EE824BB51C35
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-15T15:14:15.624Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G558  a             :Place ;
+        skos:prefLabel      "kha rag rtsa'i sil ma/"@bo-x-ewts ;
+        :contentLocationStatement  "jo mo kha rag dang thag nyer gnas min sogs mu mthud dpyad rgyu/" ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2GS1064 ;
+        :placeType          bdr:PT0085 .
+}

@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3191 {
+    bda:G3191  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3191 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "aa/G3191.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3191 ;
+        adm:logEntry        bda:LG0439D3CE61BCCF74 , bda:LG0967A06965A7CEAC , bda:LG116256753B0E164C , bda:LG331D0C2A45EB7CA2 , bda:LG46534E039D39F1DE , bda:LG4B4F55EB2DB9A54B , bda:LG8194623CB2316C2D , bda:LG905EEC6C048317C8 , bda:LGA2C878454454123D , bda:LGD4D82390C1FBCCEA , bda:LGEE8E6EBA8B3A7F44 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0439D3CE61BCCF74
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-23T17:07:12.837Z"^^xsd:dateTime ;
+        adm:logMessage      "edited or newly created; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LG0967A06965A7CEAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-05T09:17:49.858Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location (from rnga ba rdzong to rnga ba)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG116256753B0E164C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-23T23:07:55.502Z"^^xsd:dateTime ;
+        adm:logMessage      "edited located in fields; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LG331D0C2A45EB7CA2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T16:34:18.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG46534E039D39F1DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T15:24:35.064Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4B4F55EB2DB9A54B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2331"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG8194623CB2316C2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG905EEC6C048317C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-01T17:44:05.043Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G00JR693 to G1KR9"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA2C878454454123D
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-24T11:07:23.484Z"^^xsd:dateTime ;
+        adm:logMessage      "edited; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGD4D82390C1FBCCEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-21T12:16:30.583Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEE8E6EBA8B3A7F44
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G3191  a            :Place ;
+        skos:altLabel       "a mdo shar khog"@bo-x-ewts ;
+        skos:prefLabel      "shar khog"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFA5C4421D1C9E24F ;
+        :placeContains      bdr:G00JR691 , bdr:G00JR692 , bdr:G00JR693 , bdr:G00JR694 , bdr:G00JR695 , bdr:G1KR9 , bdr:G4491 , bdr:G4492 , bdr:G4494 , bdr:G4495 ;
+        :placeLocatedIn     bdr:G1196 , bdr:G2331 ;
+        :placeType          bdr:PT0029 .
+    
+    bdr:NTFA5C4421D1C9E24F
+        a                   :Note ;
+        :noteText           "region of southern a mdo located in present-day zungchu rdzong (ch. songpan xian), rnga ba prefecture, sichuan; toni huber and mona schrempf have each written numerous ethnographic research articles about shar khog"@en .
+}

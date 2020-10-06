@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00KG09974 {
+    bda:G00KG09974  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00KG09974 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "02/G00KG09974.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00KG09974 ;
+        adm:logEntry        bda:LG4ED4417D357BD235 , bda:LGAF38CD6641C64068 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4ED4417D357BD235
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-01T09:48:04.925Z"^^xsd:dateTime ;
+        adm:logMessage      "created place"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGAF38CD6641C64068
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-13T14:25:53.853Z"^^xsd:dateTime ;
+        adm:logMessage      "added note of location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G00KG09974  a       :Place ;
+        skos:altLabel       "brda dgon/"@bo-x-ewts , "khrom brda khol dgon rig 'dzin grub brnyes yongs 'dus dga' tshal rtag brtan bde mchog gling /"@bo-x-ewts , "khrom brda khol dgon rig 'dzin grub pa'i dga' tshal rtag brtan bde mchog gling gi gdan rabs/"@bo-x-ewts , "klu brgyad 'dus pa'i pho brang /"@bo-x-ewts ;
+        skos:prefLabel      "khrom brda khol dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT46C58B6F2DA5BB11 , bdr:NT55EC71A6007D6F2B ;
+        :placeLocatedIn     bdr:G2300 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT46C58B6F2DA5BB11
+        a                   :Note ;
+        :noteText           "Nyingma monastery"@en .
+    
+    bdr:NT55EC71A6007D6F2B
+        a                   :Note ;
+        :contentLocationStatement  "p. 0" ;
+        :noteSource         bdr:MW00KG09972 ;
+        :noteText           "དགོན་འདི་ནི་དཔལ་ཡུལ་རྫོང་ཨ་ཚབ་ཤང་ཁོངས་སུ་ཡོད་པར་འཁོད།"@bo .
+}

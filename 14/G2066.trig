@@ -1,0 +1,107 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2066 {
+    bda:G2066  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2066 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "14/G2066.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2066 ;
+        adm:logEntry        bda:LG0B14ED548ABB197D , bda:LG66C0B0526C918C89 , bda:LGD20D97F49E469E40 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540127202:540127118" ;
+        adm:place_id_lex    "540127202:540127118" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B14ED548ABB197D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG66C0B0526C918C89
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-26T10:20:51.224Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD20D97F49E469E40
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-26T09:26:01.688Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note from G414(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV262295A19BF993C3
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P3447 ;
+        :notAfter           "1142"^^xsd:gYear ;
+        :notBefore          "1141"^^xsd:gYear .
+    
+    bdr:EV8EEA082EAD9E46BC
+        a                   :PlaceConverted ;
+        :onYear             "1500"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVB5738A604D497ECA
+        a                   :PlaceFounded ;
+        :onYear             "1150"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G2066  a            :Place ;
+        skos:altLabel       "'chad kha rnying pa/"@bo-x-ewts , "mal gro 'chad kha rnying ma/"@bo-x-ewts , "qieka si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'chad kha dgon/"@bo-x-ewts , "Chaka Gonpa"@en-x-mixed , "怯喀寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD4E0826A1C4F755C ;
+        :isRoot             true ;
+        :note               bdr:NT067AAC41644E37F4 , bdr:NT3CECF2162CEE9FD9 , bdr:NTBF7E2380C4E2A9ED ;
+        :placeEvent         bdr:EV262295A19BF993C3 , bdr:EV8EEA082EAD9E46BC , bdr:EVB5738A604D497ECA ;
+        :placeGonpaPerEcumen  "5.68" ;
+        :placeLat           "29.82363" ;
+        :placeLocatedIn     bdr:G2014 , bdr:G2031 ;
+        :placeLong          "91.86028" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD4E0826A1C4F755C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2066" .
+    
+    bdr:NT067AAC41644E37F4
+        a                   :Note ;
+        :contentLocationStatement  "note moved from G414(dup.)" ;
+        :noteText           "bka' gdams monastery located in the mal gro area of the tibetan autonomous region"@en .
+    
+    bdr:NT3CECF2162CEE9FD9
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 225" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTBF7E2380C4E2A9ED
+        a                   :Note ;
+        :contentLocationStatement  "p. 39" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa monastery in bya ra mdo shang of mal gro gung dkar rdzong\nfounded by dge bshes 'chad kha ba\naffiliated to \"'bras bod gzhung mi tshan\"\nhad 60 monks in 1959\nrestored"@en .
+}

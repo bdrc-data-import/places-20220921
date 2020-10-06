@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1473 {
+    bda:G1473  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1473 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "57/G1473.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1473 ;
+        adm:logEntry        bda:LG206013EDB484E1BB , bda:LG3149959BF5321C88 , bda:LG32F576B01FE29FAC , bda:LG5AB12636C463D788 , bda:LG7028724ACABC54E8 , bda:LG971C783B2275A733 , bda:LGCD4425B7E9B44CB0 , bda:LGF413330F2AF6D693 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG206013EDB484E1BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-08-30T11:36:11.9Z"^^xsd:dateTime ;
+        adm:logMessage      "added glang chen 'gying ri"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3149959BF5321C88
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-29T09:56:57.798Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & contains  (2 rang skyong khul)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG32F576B01FE29FAC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5AB12636C463D788
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-16T11:14:57.474Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7028724ACABC54E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-26T12:51:20.695Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG971C783B2275A733
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:20:47.523Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:province to zhingChen"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGCD4425B7E9B44CB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-27T13:22:19.674Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF413330F2AF6D693
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-11-05T12:11:58.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added namme \"si khron zhing chen\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1473  a            :Place ;
+        skos:altLabel       "zi khron zhing chen/"@bo-x-ewts , "sichuan sheng"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "si khron zhing chen/"@bo-x-ewts , "Sichuan Province"@en , "四川省"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G10MS19724 , bdr:G1538 , bdr:G1712 , bdr:G3CN2966 , bdr:G636 ;
+        :placeType          bdr:PT0060 .
+}

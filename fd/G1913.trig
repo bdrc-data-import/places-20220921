@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1913 {
+    bda:G1913  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1913 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "fd/G1913.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1913 ;
+        adm:logEntry        bda:LG10BB9008C4D69017 , bda:LG3686AD4ED2B9AFAC , bda:LG961F570792D304E2 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632523202:332" ;
+        adm:place_id_lex    "632523202:124" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG10BB9008C4D69017
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3686AD4ED2B9AFAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T15:07:35.4Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG961F570792D304E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T14:00:16.636Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV26CEABD244604B61
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P3347 ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:EV2D1185F4BA6FCAF8
+        a                   :PlaceFounded ;
+        :onYear             "1616"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1913  a            :Place ;
+        skos:altLabel       "bkra shis chos rdzong /"@bo-x-ewts , "dga' ldan bkra shis gsung rab gling /"@bo-x-ewts , "this pa dgon bkra shis chos rdzong /"@bo-x-ewts , "this pa dgon dga' ldan bkra shis gsung rab gling /"@bo-x-ewts , "铁哇寺"@zh-hans , "tiewa si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "this pa dgon/"@bo-x-ewts , "Tipa Gon Ganden Tashi Sung-rab Ling"@en , "铁瓦寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0F3413624F1AE868 ;
+        :isRoot             true ;
+        :note               bdr:NT7F557EC861B7C8A1 , bdr:NTCC613AF0D349B772 ;
+        :placeEvent         bdr:EV26CEABD244604B61 , bdr:EV2D1185F4BA6FCAF8 ;
+        :placeGonpaPerEcumen  "39.16" ;
+        :placeLat           "35.86175" ;
+        :placeLocatedIn     bdr:G1715 ;
+        :placeLong          "101.45303" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID0F3413624F1AE868
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1913" .
+    
+    bdr:NT7F557EC861B7C8A1
+        a                   :Note ;
+        :contentLocationStatement  "p. 139" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "dge lugs pa monastery in khri ka rdzong, mtsho lho bod rigs rang skyong khul\nlocated 22 km. to the south of the administrative seat of khri ka rdzong, 6 km. southeast of tung gug zhang"@en .
+    
+    bdr:NTCC613AF0D349B772
+        a                   :Note ;
+        :contentLocationStatement  "p. 301" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "this pa dgon bkra shis chos rdzong \n'di ni lcang skya gong ma'i drung yig mthil ba blo bzang nyi mas btab/ dpon slob gser khang pas 'di pa'i zhabs la gtugs/ khri chen bsod nams grags pa nas brgyud pa'i gcod dbang gsan/ de'i sprul sku blo bzang bstan pa'i rgyal mtshan shing sprel la gcan tsha'i dpon rgyud du 'khrungs/ bde chen du thugs gnyer dang khri mdzad/ dbus su phebs/ da lta dgung lo zhe gnyis la sleb/"@bo-x-ewts .
+}

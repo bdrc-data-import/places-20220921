@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KG6224 {
+    bda:G1KG6224  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KG6224 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "5f/G1KG6224.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KG6224 ;
+        adm:logEntry        bda:LG39CDBFB128301B19 , bda:LG79092BE3B6AB5195 , bda:LGA0D813CF65C3763D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG39CDBFB128301B19
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-12-16T11:55:41.733Z"^^xsd:dateTime ;
+        adm:logMessage      "create place"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG79092BE3B6AB5195
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-13T10:49:41.919Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & location & event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA0D813CF65C3763D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-14T12:33:22.183Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8BB1385AE7575554
+        a                   :PlaceFounded ;
+        :onYear             "1808"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1KG6224  a         :Place ;
+        skos:altLabel       "lto lag gnas nang snga 'gyur mdo sngags rig pa'i dga' tshal gling /"@bo-x-ewts , "lto lag spen pa gnas nang snga 'gyur mdo sngags rig pa'i dga' tshal gling /"@bo-x-ewts , "mdo sngags rig pa'i dga' tshal gling /"@bo-x-ewts ;
+        skos:prefLabel      "lto lag gnas nang dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT700442AF17B40B5E , bdr:NTB0F5B6737C11473B ;
+        :placeEvent         bdr:EV8BB1385AE7575554 ;
+        :placeLocatedIn     bdr:G2181 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT700442AF17B40B5E
+        a                   :Note ;
+        :contentLocationStatement  "p. 34-36" ;
+        :noteSource         bdr:MW00EGS1016761 ;
+        :noteText           "དགོན་མིང་དང་གནས་ཡུལ་བཏབ་ལོ་སོགས་གསལ།"@bo .
+    
+    bdr:NTB0F5B6737C11473B
+        a                   :Note ;
+        :noteText           "rnying ma monastery in chamdo prefecture"@en .
+}

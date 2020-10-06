@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1293 {
+    bda:G2GS1293  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1293 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "95/G2GS1293.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1293 ;
+        adm:logEntry        bda:LG2C9F9A58BA40820B , bda:LG50A54F3ACB7BAF0E , bda:LGEE701D256758543C , bda:LGFD4EEF4E51C7A186 , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542335101:542335104" ;
+        adm:place_id_lex    "542335101:542335104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C9F9A58BA40820B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-07T10:42:42.932Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG50A54F3ACB7BAF0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-08T16:29:52.621Z"^^xsd:dateTime ;
+        adm:logMessage      "added location, names & 2 notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEE701D256758543C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-15T16:57:10.342Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFD4EEF4E51C7A186
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-09-14T16:01:19.592Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV55D151579A34E1C7
+        a                   :PlaceFounded ;
+        :onYear             "0650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:G2GS1293  a         :Place ;
+        skos:altLabel       "byang sprin lha khang /"@bo-x-ewts , "byang sprin yid 'ong dge rgyas/"@bo-x-ewts , "mang yul byams sprin lha khang /"@bo-x-ewts , "qiangzhen si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "byams sprin lha khang /"@bo-x-ewts , "Jamdrin Lhakhang"@en-x-mixed , "强真寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC0F019E8D0E987A0 ;
+        :isRoot             true ;
+        :note               bdr:NT07F16007C5EE5907 , bdr:NT90C20BC362904019 , bdr:NT9AF066494357208C , bdr:NTFD718FBB27D5242C ;
+        :placeEvent         bdr:EV55D151579A34E1C7 ;
+        :placeGonpaPerEcumen  "6.08" ;
+        :placeLat           "28.41667" ;
+        :placeLocatedIn     bdr:G2161 , bdr:G3166 , bdr:G3CN366 ;
+        :placeLong          "85.28333" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:IDC0F019E8D0E987A0
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2GS1293" .
+    
+    bdr:NT07F16007C5EE5907
+        a                   :Note ;
+        :contentLocationStatement  "p. 284-286" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "ཡང་འདུལ་བཞི་ལས། \"རྐང་མཐིལ་གཡས་པ་ལ། མང་ཡུལ་བྱང་(བྱམས་)སྤྲིན་དུ་ཡིད་འོང་དགེ་རྒྱས་དང་།\" ཞེས་གསལ།"@bo .
+    
+    bdr:NT90C20BC362904019
+        a                   :Note ;
+        :noteText           "4-storey pagoda temple, called Jamtrin Gegye Lhakhang in Dorje's handbook."@en .
+    
+    bdr:NT9AF066494357208C
+        a                   :Note ;
+        :contentLocationStatement  "p. 61" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "ancient temple in mang yul founded by srong btsan sgam po.\n\n \"gzhis ka rtse sa khul skyid grong rje grong gi sa khongs su yod pa yin/ mang yul ni seng+ge kha 'bab kyi nub rgyud zangs dkar sog ngos 'dzin dgos pa ni <<lho rong chos 'byung>> shog grangs 724 l gzigs par zhu\""@en .
+    
+    bdr:NTFD718FBB27D5242C
+        a                   :Note ;
+        :contentLocationStatement  "p. 123" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "ཡང་འདུལ་བཞི་ལས། \"པུས་མོ་གཡས་པལ་ནུབ་བྱ་དམར་པོའི་སྐས་སྟེང་དུ་དགེ་རྒྱས།\" ཞེས་གསལ།"@bo .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1791 {
+    bda:G1791  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1791 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "0e/G1791.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1791 ;
+        adm:logEntry        bda:LG1A49031EBB9D2B59 , bda:LG6B6D570E6AF2C6C1 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632624205:494" ;
+        adm:place_id_lex    "632624205:485" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1A49031EBB9D2B59
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T14:35:38.843Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG6B6D570E6AF2C6C1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV610383AE5E641B9B
+        a                   :PlaceFounded ;
+        :onYear             "1940"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1791  a            :Place ;
+        skos:altLabel       "Doruwa Gon/"@bo-x-ewts , "rdo ri khrod dbang mdzad bzhad pa'i dkyil 'khor/"@bo-x-ewts , "多贡寺"@zh-hans , "duo riwa si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdo ru ba dgon/"@bo-x-ewts , "多日瓦寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3254EAAFDC50E351 ;
+        :isRoot             true ;
+        :note               bdr:NT2A388C55D6F48E49 ;
+        :placeEvent         bdr:EV610383AE5E641B9B ;
+        :placeGonpaPerEcumen  "7.08" ;
+        :placeLat           "33.73000" ;
+        :placeLocatedIn     bdr:G1783 ;
+        :placeLong          "99.43000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID3254EAAFDC50E351
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1791" .
+    
+    bdr:NT2A388C55D6F48E49
+        a                   :Note ;
+        :contentLocationStatement  "p. 195" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "dge lugs pa monastery belonging to the incarnation lineage of rdo bla 'jam dbyangs nyi ma\ngiven name dbang mdzad bzhad pa'i dkyil 'khor by a mdo dge bshes 'jam dpal rol ba'i blo gros"@en .
+}

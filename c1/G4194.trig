@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4194 {
+    bda:G4194  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4194 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c1/G4194.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4194 ;
+        adm:logEntry        bda:LG13B182658CDD8082 , bda:LG17C78F6AF4FF6B8F , bda:LG1A8E058B2CFC4971 , bda:LG90FDE66CB4312D35 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG13B182658CDD8082
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from dzong to sngarGyiRdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG17C78F6AF4FF6B8F
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-04T12:01:06.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2nd note & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1A8E058B2CFC4971
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-04T11:16:35.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added note with G1510"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG90FDE66CB4312D35
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G4194  a            :Place ;
+        skos:altLabel       "mon kha seng ge rdzong /"@bo-x-ewts , "seng ge rdzong /"@bo-x-ewts ;
+        skos:prefLabel      "mon kha seng rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2AB5DD420DAF3D2B , bdr:NTAF10DB9CFDCFA1F2 ;
+        :placeLocatedIn     bdr:G3CN58 ;
+        :placeType          bdr:PT0056 .
+    
+    bdr:NT2AB5DD420DAF3D2B
+        a                   :Note ;
+        :contentLocationStatement  "1 ff." ;
+        :noteSource         bdr:MW3CN1365 ;
+        :noteText           "གུ་རུ་རིན་པོ་ཆེ་མོན་ཁ་སེང་གེ་རྫོང་གི་ཕུག་པ་ན་བཞུགས་དུས་ཇོ་མོ་མཁར་ཆེན་མཚོ་རྒྱལ་ལ་གདམས་པ་གནང་སྐོར་གསལ་བ་ལས། ས་མིང་འདི་དུས་རབས་བརྒྱད་པའི་སྐབས་ལ་ཡང་ཡོད་པ་བསྟན།"@bo .
+    
+    bdr:NTAF10DB9CFDCFA1F2
+        a                   :Note ;
+        :contentLocationStatement  "p. 275" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "located near mdo mkhar lhun grub pho brang and lho brag mkhar chu"@en .
+}

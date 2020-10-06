@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1594 {
+    bda:G1594  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1594 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ec/G1594.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1594 ;
+        adm:logEntry        bda:LG0798000471DF438F , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513329200:215" ;
+        adm:place_id_lex    "513329200:215" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0798000471DF438F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5B366BEF9621267A
+        a                   :PlaceFounded ;
+        :onYear             "0750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1594  a            :Place ;
+        skos:altLabel       "nyag rong sa stod zhi ba dgon/"@bo-x-ewts , "e ba si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sa stod zhi ba dgon/"@bo-x-ewts , "俄巴寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID250AA3AAE02A3E2A ;
+        :isRoot             true ;
+        :note               bdr:NT1D1DF31A9B22EB52 , bdr:NTDA2232A7C90276DB ;
+        :placeEvent         bdr:EV5B366BEF9621267A ;
+        :placeGonpaPerEcumen  "5.31" ;
+        :placeLat           "31.46667" ;
+        :placeLocatedIn     bdr:G1246 ;
+        :placeLong          "100.11667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID250AA3AAE02A3E2A
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1594" .
+    
+    bdr:NT1D1DF31A9B22EB52
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 275" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma pa monastery"@en .
+    
+    bdr:NTDA2232A7C90276DB
+        a                   :Note ;
+        :contentLocationStatement  "p. 166" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "a subsidiary monastery of kaH thog in 'the east\" according to the list of kaH thog si tu chos kyi rgya mtsho:\nhere called sa stod only"@en .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4237 {
+    bda:G4237  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4237 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "c6/G4237.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4237 ;
+        adm:logEntry        bda:LG1608CED1A8399B6D , bda:LG1FC9A6073A00C424 , bda:LG2489913BA3CFF35A , bda:LG3DF499632920BC41 , bda:LG5F2B919517FE5972 , bda:LGB8566B7A19B2091D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1608CED1A8399B6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-12T15:04:44.279Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rgyalKhab to phyiRgyal"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG1FC9A6073A00C424
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2489913BA3CFF35A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-13T12:44:26.892Z"^^xsd:dateTime ;
+        adm:logMessage      "added note (need New type as sdePa-principality)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3DF499632920BC41
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:22:12.981Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from principality to rgyalKhab"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG5F2B919517FE5972
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T14:22:43.873Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB8566B7A19B2091D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-03T14:06:49.743Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type as \"gzhis ka\", but have quastion"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G4237  a            :Place ;
+        skos:altLabel       "yar rgyab sde pa/"@bo-x-ewts ;
+        skos:prefLabel      "yar rgyab/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE58992197F475B7D , bdr:NTFFC15411F6F34AB5 ;
+        :placeType          bdr:PT0058 .
+    
+    bdr:NTE58992197F475B7D
+        a                   :Note ;
+        :contentLocationStatement  "p. 437-438" ;
+        :noteSource         bdr:MW22281 ;
+        :noteText           "འདི་ནི་ཆོས་བློན་ཐོན་མིའི་གདུང་བརྒྱུད་དུ་གྲགས་ཤིང་། ཡར་རྒྱབ་དཔོན་ཆེན་གྲལ་ལྔ་ནས་བཟུང་ཡར་རྒྱབ་དཔོན་ཆེན་གྱི་གོ་གནས་ཐོབ་ལ་གོང་དཀར་དུ་སྡེ་དགོན་བཏབ་ཅིང་། འདི་ཉིད་ཀྱི་དབོན་སྲས་ནས་བཟུང་སྟེ་སྡེ་པ་རྣམ་རྒྱལ་བ་སྐུ་མཆེད་ཀྱི་བར་དུ་མངའ་ཐང་ཡར་རྒྱས་སུ་གནས་ཚུལ་གསལ།"@bo .
+    
+    bdr:NTFFC15411F6F34AB5
+        a                   :Note ;
+        :contentLocationStatement  "p. 2324, 2328" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1570. yar rgyab pa dang sku rab pa gnyis bsdebs nas 'phyog rgyas su dmag drangs\n1608. yar rgyab dang gtsang pa sde srid gnyis kyis po ta lar mkhar rdzong gsar rgyag thog/ rje zhwa dmar ba chos kyi dbang phyug rab gnas su gdan drangs/ pho brang gi ming phun tshogs rab brtan du btags/ lha sa gtsug lag khang gi mdun du gtsang dar smyon du grags pa yang btsugs"@en .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN545 {
+    bda:G3CN545  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN545 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "54/G3CN545.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN545 ;
+        adm:logEntry        bda:LG2B930B6B5ADDEBDE , bda:LGB0D4D9A57DD4EB0D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2B930B6B5ADDEBDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-10T12:53:49.499Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB0D4D9A57DD4EB0D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-31T14:45:54.835Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVCA694273BD25926E
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0684"^^xsd:gYear .
+    
+    bdr:G3CN545  a          :Place ;
+        skos:altLabel       "shangs kyi rab ka tshal/"@bo-x-ewts , "shangs kyi rab kha tshal/"@bo-x-ewts ;
+        skos:prefLabel      "rab ka tshal/"@bo-x-ewts , "Rabka"@en ;
+        :isRoot             true ;
+        :note               bdr:NT30767B3D6BCE6CD3 ;
+        :placeEvent         bdr:EVCA694273BD25926E ;
+        :placeLocatedIn     bdr:G4684 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT30767B3D6BCE6CD3
+        a                   :Note ;
+        :contentLocationStatement  "p. 339" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"སྤྲེའུ་ལོ་ ༦༨༤ ལ་བབ་སྟེ། བཙན་པོ་ཉེན་ཀར་ན་བཞུགས་ཤིང་། བློན་ཆེན་པོ་བཙན་སྙས་ ་་་  ཁྲི་བོམས་སུ། གོར་ཤའི་ལྟོང་བརྒྱུས་ནས། དགུན་འདུན་ཤངས་ཀྱི་རབ་ཁ་ཚལ་དུ་འདུས་ནས། གཙང་ཆེན་གྱི་མངན་བཞི་ལས། གཉིས་སུ་བཅོས་པར་ལོ་གཅིག་\" ཅེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོའི་སྐབས་ཀྱི་འདུན་ས་ཆེན་པོ་ཞིག་ཡིན་ཏེ། སྤྱི་ལོ་ ༦༧༣ ལ་བཙན་པོའི་ཕོ་བྲང་ཡང་བྱེད་མྱོང་བ་ཞིག་གོ།"@bo .
+}

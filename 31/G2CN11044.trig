@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11044 {
+    bda:G2CN11044  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11044 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "31/G2CN11044.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11044 ;
+        adm:logEntry        bda:LG1D82289410294942 , bda:LG4D9AC9F9D436F3E5 , bda:LGB465C4F417B8CA60 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1D82289410294942
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-22T15:54:54.282Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG4D9AC9F9D436F3E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-22T16:00:34.077Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGB465C4F417B8CA60
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-05-22T15:50:51.777Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV4AD650038ACABDA5
+        a                   :PlaceFounded ;
+        :onYear             "1639"^^xsd:gYear .
+    
+    bdr:G2CN11044  a        :Place ;
+        skos:altLabel       "Ulaγanbaγatur"@mn , "wulan batuo"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "u lan dpa' thul/"@bo-x-ewts , "Ulan Bator"@en , "Улаанбаатар"@mn , "乌兰巴托"@zh-hans ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV4AD650038ACABDA5 ;
+        :placeIsNear        bdr:G3JT12519 ;
+        :placeLat           "47.921357" ;
+        :placeLocatedIn     bdr:G584 ;
+        :placeLong          "106.905515" ;
+        :placeType          bdr:PT0008 .
+}

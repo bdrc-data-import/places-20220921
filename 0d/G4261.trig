@@ -1,0 +1,136 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4261 {
+    bda:G4261  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4261 ;
+        adm:facetIndex      18 ;
+        adm:gitPath         "0d/G4261.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4261 ;
+        adm:logEntry        bda:LG0786CDF0D290E82E , bda:LG1515F9626DC2C46A , bda:LG38530EB19260CCBF , bda:LG610B6526E38824C8 , bda:LG67D8675870B02D4A , bda:LG68A34FDA76870BEE , bda:LG742EBA1CEFB7620C , bda:LGB0A27A40598CE68D , bda:LGD28BF506F6EF2A8B , bda:LGDA814B9743E4713E , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540102004:540101102" ;
+        adm:place_id_lex    "540102004:540101102" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0786CDF0D290E82E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-04T13:45:41.875Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG1515F9626DC2C46A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-16T10:20:59.05Z"^^xsd:dateTime ;
+        adm:logMessage      "added G2CN10930"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG38530EB19260CCBF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-03T15:40:32.654Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG610B6526E38824C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-15T09:38:19.466Z"^^xsd:dateTime ;
+        adm:logMessage      "added near G3JT12530"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG67D8675870B02D4A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-11T10:29:32.55Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & added info from G3777(withdrawn)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG68A34FDA76870BEE
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from templecomplex to lhaKhang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG742EBA1CEFB7620C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-08T10:11:08.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB0A27A40598CE68D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-03T11:13:00.664Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD28BF506F6EF2A8B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDA814B9743E4713E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-24T14:40:51.716Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV4654106644427D3B
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1KG5401 .
+    
+    bdr:EVE0616A3143A7FF2D
+        a                   :PlaceFounded ;
+        :onYear             "0639"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:G4261  a            :Place ;
+        skos:altLabel       "jo khang /"@bo-x-ewts , "ra sa 'phrul snang gi gtsug lag khang /"@bo-x-ewts , "ra sa 'phrul snang gtsug lag khang /"@bo-x-ewts , "祖拉康"@zh-hans , "觉康"@zh-hans , "dazhao si"@zh-latn-pinyin-x-ndia , "juekang"@zh-latn-pinyin-x-ndia , "zulakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lha sa gtsug lag khang /"@bo-x-ewts , "Jokhang Temple"@en , "大昭寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1CE08EB3C1188E98 ;
+        :isRoot             true ;
+        :note               bdr:NT3C0E007350447B0D , bdr:NT55A588B55725D046 , bdr:NTD8E0225687409F49 ;
+        :placeContains      bdr:G3CN207 , bdr:G3JT12530 ;
+        :placeEvent         bdr:EV4654106644427D3B , bdr:EVE0616A3143A7FF2D ;
+        :placeGonpaPerEcumen  "448.77" ;
+        :placeIsNear        bdr:G2CN10930 , bdr:G3JT12530 , bdr:G3JT12588 ;
+        :placeLat           "29.65300" ;
+        :placeLocatedIn     bdr:G2800 ;
+        :placeLong          "91.13102" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID1CE08EB3C1188E98
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4261" .
+    
+    bdr:NT3C0E007350447B0D
+        a                   :Note ;
+        :contentLocationStatement  "v. 2,  pp. 8-15" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT55A588B55725D046
+        a                   :Note ;
+        :contentLocationStatement  "p. 2331" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1623. paN chen rin po ches lha sa gtsug lag khang thugs rje lha khang gi gser thog bzhengs"@en .
+    
+    bdr:NTD8E0225687409F49
+        a                   :Note ;
+        :noteSource         bdr:MW25139 ;
+        :noteText           "pilgrimage guide"@en .
+}

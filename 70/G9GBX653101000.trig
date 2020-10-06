@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX653101000 {
+    bda:G9GBX653101000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX653101000 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "70/G9GBX653101000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX653101000 ;
+        adm:logEntry        bda:LG459B299E42FBAF75 , bda:LGIME5430EC046 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG459B299E42FBAF75
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME5430EC046
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-27T19:58:07.021Z"^^xsd:dateTime ;
+        adm:logMessage      "updating geometry for modern county"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX653101000
+        a                   :Place ;
+        skos:altLabel       "ke shen shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Kashi City"@en , "喀什市"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX653101001 , bdr:G9GBX653101002 , bdr:G9GBX653101003 , bdr:G9GBX653101004 , bdr:G9GBX653101100 , bdr:G9GBX653101101 , bdr:G9GBX653101202 , bdr:G9GBX653101203 , bdr:G9GBX653101204 , bdr:G9GBX653101205 , bdr:G9GBX653101206 , bdr:G9GBX653101207 , bdr:G9GBX653101208 ;
+        :placeGB2260-2013   "653101000" ;
+        :placeLat           "39.4676901" ;
+        :placeLocatedIn     bdr:G9GBX653100000 ;
+        :placeLong          "75.9937942" ;
+        :placeRegionPoly    "{\"type\":\"Feature\",\"geometry\": { \"type\": \"Polygon\", \"coordinates\": [ [ [ 75.995903015469892, 39.436420441402653 ], [ 75.984992980855807, 39.441246032795675 ], [ 75.975257874583491, 39.442176818898488 ], [ 75.94426727303518, 39.444732665709772 ], [ 75.928039551346544, 39.454826354957596 ], [ 75.928047179486612, 39.460552215635772 ], [ 75.932182312236478, 39.470169066839183 ], [ 75.939277648873485, 39.486881255659988 ], [ 75.955245972041368, 39.509532927722695 ], [ 75.960273742353934, 39.516399384327265 ], [ 75.968559264549725, 39.533794403345027 ], [ 75.974777222238217, 39.542259215797074 ], [ 75.979217529115417, 39.54591751104693 ], [ 75.984245300287711, 39.548656463902724 ], [ 75.993400574240184, 39.545894622892611 ], [ 76.000190735009014, 39.539245605187176 ], [ 76.004020691602037, 39.53122329683719 ], [ 76.01049804697135, 39.518157958616356 ], [ 76.017860413056553, 39.506008147958845 ], [ 76.022872925072662, 39.499355316123939 ], [ 76.038772583253873, 39.476425171160926 ], [ 76.039352416690548, 39.468639373860235 ], [ 76.042846679554174, 39.443668364970463 ], [ 76.038406372010954, 39.440700530655803 ], [ 75.995903015469892, 39.436420441402653 ] ] ] } }" ;
+        :placeType          bdr:PT0011 ;
+        :placeWB2000        "251477" ;
+        :placeWB2010        "460232" ;
+        :placeWBArea        "76.858456" .
+}

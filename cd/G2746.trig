@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2746 {
+    bda:G2746  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2746 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "cd/G2746.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2746 ;
+        adm:logEntry        bda:LG2BDB7402653CEF25 , bda:LG33662DD509353FC2 , bda:LG4A40151A4BF7DC87 , bda:LG6D7E8D5912A32A37 , bda:LGCFE96D5F5105E439 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG2BDB7402653CEF25
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG33662DD509353FC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T13:40:55.555Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG4A40151A4BF7DC87
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-30T15:17:39.554Z"^^xsd:dateTime ;
+        adm:logMessage      "withdawn in fafor of G2530"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6D7E8D5912A32A37
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T16:53:41.761Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCFE96D5F5105E439
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2746  a            :Place ;
+        skos:prefLabel      "kha gya smad dgon/"@bo-x-ewts , "Kagyame Gon"@en ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2199 ;
+        :placeType          bdr:PT0037 .
+}

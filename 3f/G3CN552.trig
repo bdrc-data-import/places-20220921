@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN552 {
+    bda:G3CN552  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN552 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3f/G3CN552.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN552 ;
+        adm:logEntry        bda:LG04EE786E1D15835F , bda:LGBB0A1F5DF03DB26C , bda:LGC23AD8CA12F9CC9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04EE786E1D15835F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-10T12:54:50.6Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBB0A1F5DF03DB26C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-03T12:57:38.639Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC23AD8CA12F9CC9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-03T14:02:35.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV4057CC0A2D3674AE
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0690"^^xsd:gYear .
+    
+    bdr:G3CN552  a          :Place ;
+        skos:altLabel       "rtsang gyi gling kar tshal/"@bo-x-ewts ;
+        skos:prefLabel      "gtsang gi gling kar tshal/"@bo-x-ewts , "Lingkartshal"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT37C170062B431B4F ;
+        :placeEvent         bdr:EV4057CC0A2D3674AE ;
+        :placeLocatedIn     bdr:G3CN137 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT37C170062B431B4F
+        a                   :Note ;
+        :contentLocationStatement  "p. 340" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"སྟག་གི་ལོ་ ༦༩༠ ལ་བབ་སྟེ། དབྱརད་བཙན་པོ་བལ་པོར་བཞུགས་ཤིང་། བོན་ཆེ་ཁྲི་འབྲིང་གིས་འོ་ཡུགི་ཚ་སྟེངས་མུན་མགི་རྩིས་མགོ་བགྱིས་པ་དང་། དགུན་བཙན་པོ་འོན་གྱི་འ་ག་ཙལ་བཞུགས་ཤིང་། དབོན་ད་རྒྱལ་དང་བློན་ཆེ་ཁྲི་འབྲིང་གིས། ཙང་གྱི་(གཙང་གི་)གླིང་ཀར་ག་ཚལ་དུ་བསྡུས་ཏེ། གཙང་ཆེན་པོའི་ཁྲམ་དམར་པོ་བཏབ་པ་དང་།\" ཞེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་འདུས་སྲོང་མང་རྗེའི་སྐབས་ཀྱི་འདུན་ས་ཆེན་པོ་ཞིག་ཡིན་པ་རྟོགས་སོ།"@bo .
+}

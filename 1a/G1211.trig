@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1211 {
+    bda:G1211  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1211 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1a/G1211.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1211 ;
+        adm:logEntry        bda:LG21548C7ECC8936F1 , bda:LGB85EA9C71044376F , bda:LGE23D907C81FE0B8A , bda:LGE4D90C742DD7B59E , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG21548C7ECC8936F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-30T10:33:51.693Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB85EA9C71044376F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-30T10:41:45.352Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE23D907C81FE0B8A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE4D90C742DD7B59E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-25T10:49:11.58Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1211  a            :Place ;
+        skos:altLabel       "gong po/"@bo-x-ewts ;
+        skos:prefLabel      "e gong po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6CB90BBAFFD35446 ;
+        :placeLocatedIn     bdr:G2358 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT6CB90BBAFFD35446
+        a                   :Note ;
+        :noteText           "in this region the skyo rigs was to be found"@en .
+}

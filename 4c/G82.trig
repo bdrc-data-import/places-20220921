@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G82 {
+    bda:G82  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G82 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "4c/G82.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G82 ;
+        adm:logEntry        bda:LGED6A5BEE70DBB33C , bda:LGIM454E022964 , bda:LGIMAF5F209484 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGED6A5BEE70DBB33C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM454E022964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T17:05:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:gzimsKhang to khamsTshan"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMAF5F209484
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:21:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from residentialHouse to gzimsKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G82  a              :Place ;
+        skos:altLabel       "gser kong khams tshan (dga' ldan byang rtse)"@bo-x-ewts ;
+        skos:prefLabel      "gser khang khams tshan (dga' ldan byang rtse)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3E2A2DAFDFB8A4F1 ;
+        :placeLocatedIn     bdr:G77 ;
+        :placeType          bdr:PT0039 .
+    
+    bdr:NT3E2A2DAFDFB8A4F1
+        a                   :Note ;
+        :contentLocationStatement  "p. 29, 38" ;
+        :noteSource         bdr:MW20212 ;
+        :noteText           "residential house of dga' ldan byang rtse college\nthis khams tshan was comprised of three mi tshan:\nli thang\nbsam gling\n'phyong rgyas\nthe three khams tshan enumerated on p. 29 must certainly be in error\nresidents of this khams tshan came from and were distributed:\nli thang mi tshan: people from li thang\nsog po mi tshan: people from outer mongolia (phyi sog)\nma ra mi tshan: nye 'khor ba"@en .
+}

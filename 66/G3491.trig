@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3491 {
+    bda:G3491  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3491 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "66/G3491.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3491 ;
+        adm:logEntry        bda:LG1195B94807F80E67 , bda:LG28E1FAF3B8C6290B , bda:LG7DF77C47EF2940ED , bda:LGB5B4716DAC444A56 , bda:LGF1EDB3BA4B55021D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1195B94807F80E67
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-12T16:23:42.761Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG28E1FAF3B8C6290B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7DF77C47EF2940ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-12T09:09:59.232Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB5B4716DAC444A56
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-19T16:48:43.941Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF1EDB3BA4B55021D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-03T11:00:24.022Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & type & contain & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3491  a            :Place ;
+        skos:prefLabel      "long po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4102B9DDDE3436E1 ;
+        :placeContains      bdr:G3492 , bdr:G882 ;
+        :placeLocatedIn     bdr:G640 ;
+        :placeType          bdr:PT0029 .
+    
+    bdr:NT4102B9DDDE3436E1
+        a                   :Note ;
+        :contentLocationStatement  "p. 284-289" ;
+        :noteSource         bdr:MW8224 ;
+        :noteText           "ཉང་པོ་དང་ལོང་པོ་གཉིས་ནི་ཀོང་པོ་དང་ས་མཚམས་སྦྲེལ་ནས་ཡོད་པར་མངོན། དེ་ཡང་ཡུལ་གྲུ་འདིའི་ལོ་རྒྱུས་དེ་ཙམ་གྲགས་མི་ཆེ་མོད་ཀློང་རྡོལ་བླ་མས་བོད་ཀྱི་ཡུལ་ལུང་ཆེན་པོའི་ནང་དུ་དྲངས་སོ།"@bo .
+}

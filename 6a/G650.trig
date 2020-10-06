@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G650 {
+    bda:G650  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G650 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6a/G650.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G650 ;
+        adm:logEntry        bda:LG2501D090620739F1 , bda:LG5BE83EECC08FECE0 , bda:LG6F5CFB05345C0318 , bda:LG7A06D8BE64A4BF4D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2501D090620739F1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5BE83EECC08FECE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6F5CFB05345C0318
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-03T11:14:09.287Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language encoding & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7A06D8BE64A4BF4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-25T12:41:45.316Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G650  a             :Place ;
+        skos:prefLabel      "je 'phel thog"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB9C4FEBB78906161 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NTB9C4FEBB78906161
+        a                   :Note ;
+        :noteText           "'di mdo smad khul du yin nges las zhib cha yul gang gi khongs yin mu mthud rtsad rgyu/"@bo-x-ewts .
+}

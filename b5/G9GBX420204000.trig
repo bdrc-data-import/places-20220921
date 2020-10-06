@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX420204000 {
+    bda:G9GBX420204000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX420204000 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b5/G9GBX420204000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX420204000 ;
+        adm:logEntry        bda:LGEE0D2ACC3389B78A , bda:LGIME5430EC046 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGEE0D2ACC3389B78A
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME5430EC046
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-27T19:58:07.021Z"^^xsd:dateTime ;
+        adm:logMessage      "updating geometry for modern county"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX420204000
+        a                   :Place ;
+        skos:altLabel       "xia lu qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "under the land area"@en , "下陆区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX420204070 , bdr:G9GBX420204400 , bdr:G9GBX420204401 , bdr:G9GBX420204402 ;
+        :placeGB2260-2013   "420204000" ;
+        :placeLat           "30.1933508" ;
+        :placeLocatedIn     bdr:G9GBX420200000 ;
+        :placeLong          "114.9678254" ;
+        :placeRegionPoly    "{\"type\":\"Feature\",\"geometry\": { \"type\": \"Polygon\", \"coordinates\": [ [ [ 114.931762694829814, 30.214868545610894 ], [ 114.935752868896842, 30.211910247617368 ], [ 114.941841124933276, 30.209878922423364 ], [ 114.946876526197087, 30.20738601669391 ], [ 114.94901275628375, 30.206478119194273 ], [ 114.952980041504489, 30.206043243076618 ], [ 114.956680297601366, 30.20652008102271 ], [ 114.95905303975924, 30.209054946802219 ], [ 114.975196838197789, 30.209463120184171 ], [ 114.980415344359628, 30.212163925359775 ], [ 114.984382629206024, 30.204219817660558 ], [ 115.018363952952384, 30.20508384709737 ], [ 115.033874511873321, 30.192117691416144 ], [ 115.060676574991945, 30.190540314049738 ], [ 115.074623108091743, 30.184885024926849 ], [ 115.068931579722076, 30.181301117403901 ], [ 115.06391906703422, 30.178527831929795 ], [ 115.059440613022488, 30.176443100288179 ], [ 115.053367614583053, 30.174581527986316 ], [ 115.048606872735576, 30.173871994220988 ], [ 115.040161132706828, 30.173143387102591 ], [ 115.033012390539056, 30.173797607036665 ], [ 115.019798279443847, 30.173274994229619 ], [ 115.010551452985879, 30.173000335687366 ], [ 114.991767882615108, 30.174741744847555 ], [ 114.988853454678804, 30.17564201433769 ], [ 114.984352111819177, 30.17653656034047 ], [ 114.97855377160613, 30.174900055094394 ], [ 114.975120544493549, 30.173049926839106 ], [ 114.971168518427419, 30.17119407715434 ], [ 114.964317322223337, 30.167032242102319 ], [ 114.95693206777689, 30.166076660447068 ], [ 114.941818236563691, 30.177795410213676 ], [ 114.931762694829814, 30.214868545610894 ] ] ] } }" ;
+        :placeType          bdr:PT0011 ;
+        :placeWB2000        "110310" ;
+        :placeWB2010        "151686" ;
+        :placeWBArea        "39.787851" .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3016 {
+    bda:G3016  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3016 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "7d/G3016.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3016 ;
+        adm:logEntry        bda:LG608F70E646D03247 , bda:LG8FAFBA9EA1E5019A , bda:LG91B0A9DF0BB14EC3 , bda:LGC6499F47E98B8595 , bda:LGCE47196068A2240C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG608F70E646D03247
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T16:07:56.999Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8FAFBA9EA1E5019A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T11:46:20.801Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG91B0A9DF0BB14EC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T16:14:48.488Z"^^xsd:dateTime ;
+        adm:logMessage      "re added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC6499F47E98B8595
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCE47196068A2240C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G3028"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G3016  a            :Place ;
+        skos:prefLabel      "'brom thod chus (stag rtse rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT99ACBF7587087114 ;
+        :placeContains      bdr:G3027 , bdr:G3029 , bdr:G3049 , bdr:G3064 , bdr:G3066 , bdr:G3372 ;
+        :placeLocatedIn     bdr:G1516 ;
+        :placeType          bdr:PT0012 .
+    
+    bdr:NT99ACBF7587087114
+        a                   :Note ;
+        :contentLocationStatement  "p. 30" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "one of the four chus into which stag rtse county, lha sa prefecture is divided\nthis chus had four kung hre:\nyer pa kung hre\ngling lnga kung hre\n'brom thod kung hre\nge re kung hre"@en .
+}

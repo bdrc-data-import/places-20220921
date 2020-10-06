@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G973 {
+    bda:G973  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G973 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "e7/G973.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G973 ;
+        adm:logEntry        bda:LG127DAE3DB2035F71 , bda:LG5822CC43B8148469 , bda:LGA9CC910B054140FF , bda:LGBB0D896938836C46 , bda:LGIM61A98BA6 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542224202:542224103" ;
+        adm:place_id_lex    "542224202:542224103" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG127DAE3DB2035F71
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-10T09:10:52.844Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & normalized names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5822CC43B8148469
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-15T15:39:15.354Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA9CC910B054140FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-10T09:33:03.005Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBB0D896938836C46
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV6FFC7E539906DED9
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVE0450BCA47F1594D
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G973  a             :Place ;
+        skos:altLabel       "'ol dga' rdzing phyi/"@bo-x-ewts , "zhenqi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdzing phyi chos sde/"@bo-x-ewts , "Dzingchi Chode"@en-x-mixed , "真起寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDE268BF666BB53E9 ;
+        :isRoot             true ;
+        :note               bdr:NT6DF9C4171C22F914 ;
+        :placeEvent         bdr:EV6FFC7E539906DED9 , bdr:EVE0450BCA47F1594D ;
+        :placeGonpaPerEcumen  "4.02" ;
+        :placeLat           "29.44823" ;
+        :placeLocatedIn     bdr:G1379 , bdr:G2130 ;
+        :placeLong          "92.35815" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDDE268BF666BB53E9
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G973" .
+    
+    bdr:NT6DF9C4171C22F914
+        a                   :Note ;
+        :contentLocationStatement  "pp. 400-401" ;
+        :noteSource         bdr:MW29401 ;
+        :noteText           "traditional place located at the foot of 'ol kha lha ri"@en .
+}

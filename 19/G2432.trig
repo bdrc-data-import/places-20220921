@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2432 {
+    bda:G2432  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2432 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "19/G2432.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2432 ;
+        adm:logEntry        bda:LG5E2D89D7F0FFD9E1 , bda:LG800D7FDF1305DDBF , bda:LG86D1C19E9549BB91 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5E2D89D7F0FFD9E1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG800D7FDF1305DDBF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T15:04:12.619Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG86D1C19E9549BB91
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2432  a            :Place ;
+        skos:prefLabel      "'jang phu dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0994B375D31A434B ;
+        :placeLocatedIn     bdr:G2128 , bdr:G2449 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0994B375D31A434B
+        a                   :Note ;
+        :contentLocationStatement  "p. 37" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "dge lugs pa monastery located in gnam shang, chu shur rdzong, tar\nfounded in the one 'jang phu mngon mkhyen pa, but the dates are unknown\nconnected with rwa ba stod with considerable fame as a monastery for the study of debating\nnow no monks reside here"@en .
+}

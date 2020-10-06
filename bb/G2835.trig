@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2835 {
+    bda:G2835  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2835 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "bb/G2835.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2835 ;
+        adm:logEntry        bda:LG4B30E729FCFEB471 , bda:LG951F28151C6AA373 , bda:LG9DA0191733A65FE2 , bda:LGB838CC4C869B1C89 , bda:LGF93A82754BFAB520 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542225100:542225105" ;
+        adm:place_id_lex    "542225100:542225105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4B30E729FCFEB471
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-06T14:58:33.855Z"^^xsd:dateTime ;
+        adm:logMessage      "added 3rd note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG951F28151C6AA373
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-15T17:02:56.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS and name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9DA0191733A65FE2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB838CC4C869B1C89
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-24T16:19:33.515Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF93A82754BFAB520
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:30:48.412Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from tombComplex to bangSo"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVD7B28A156B2E858E
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G2835  a            :Place ;
+        skos:altLabel       "'phyong rgyas srong btsan bang so/"@bo-x-ewts , "smug ri smug po/"@bo-x-ewts , "srong btsan lha khang /"@bo-x-ewts , "红庙"@zh-hans , "钟木赞拉康"@zh-hans , "hongmiao"@zh-latn-pinyin-x-ndia , "songzan ganbu lingmu"@zh-latn-pinyin-x-ndia , "zhongmuzan lakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "srong btsan bang so/"@bo-x-ewts , "songtsen bangso"@en-x-mixed , "松赞干布陵墓"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID781AF9EDFA794314 ;
+        :isRoot             true ;
+        :note               bdr:NTA3717B56297982D2 , bdr:NTA5151B6783B8E4A6 , bdr:NTD90EE4D3C02690A0 ;
+        :placeEvent         bdr:EVD7B28A156B2E858E ;
+        :placeGonpaPerEcumen  "9.94" ;
+        :placeLat           "29.02345" ;
+        :placeLocatedIn     bdr:G2133 ;
+        :placeLong          "91.69498" ;
+        :placeType          bdr:PT0076 .
+    
+    bdr:ID781AF9EDFA794314
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2835" .
+    
+    bdr:NTA3717B56297982D2
+        a                   :Note ;
+        :contentLocationStatement  "p. 206" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "description\ntomb complex located in the 'phyong rgyas valley\n'jigs med gling pa has described this complex in his gtam tshogs"@en .
+    
+    bdr:NTA5151B6783B8E4A6
+        a                   :Note ;
+        :contentLocationStatement  "pp. 257-258" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "description\nkaH thog si tu refers to 'jigs med gling pa's description;\n'jigs med gling pa was active in work here"@en .
+    
+    bdr:NTD90EE4D3C02690A0
+        a                   :Note ;
+        :contentLocationStatement  "p. 117-118" ;
+        :noteSource         bdr:MW20831 ;
+        :noteText           "ལྡེའུ་ཆོས་འབྱུང་ལས། ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོས། \"བོད་འབངས་བདེ་ལ་བཀོད་ནས། ཆབ་སྲིད་ལོ་དྲུག་བཅུ་རྩ་དགུར་བཟུང་ནས། མཐར་དགུང་ལོ་བརྒྱ་བཅུ་གྱ་བཞི་ལ་འཕན་ཡུལ་ཟབ་མོའི་འཚལ་དུ་གུང་དུ་གཤེགས་ཁར་བློན་པོ་འགར་ལ་ཞལ་ཆེམས་བཞག་ནས་གཤེགས་སོ། བང་སོ་མཆོང་༼མཆིམས་༽ཕུའི་མདའ་རུ་བརྩིགས་ནས་ཆེ་ཆུང་ཚད་ནི་དཔག་ཆེན་མདའ་རྒྱང་གང་། མཆད་པ་གྲུ་བཞིར་བརྩིགས་པ་དེ་ནས་བྱུང་། མིང་སྨུག་རི་སྨུག་པོ་བྱ་བར་གྲགས། ནང་ན་ལྷ་ཁང་བཞི་ཡོད་ཟེར་རོ།\" ཞེས་གསལ།"@bo .
+}

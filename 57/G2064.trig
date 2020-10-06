@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2064 {
+    bda:G2064  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2064 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "57/G2064.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2064 ;
+        adm:logEntry        bda:LG3808BCEE89BFA6FD , bda:LGA1B358949981F2C0 , bda:LGD74438B1A8432DE5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540127202:540127116" ;
+        adm:place_id_lex    "540127202:540127116" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3808BCEE89BFA6FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T10:16:45.056Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA1B358949981F2C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-26T10:16:25.225Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD74438B1A8432DE5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV33BAA6113B1EAF41
+        a                   :PlaceConverted ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV93F0A5117CA565D6
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G2064  a            :Place ;
+        skos:altLabel       "mal gro gung dkar spang sa dgon/"@bo-x-ewts , "spangs sa dgon/"@bo-x-ewts , "邦萨寺"@zh-hans , "bangsa gongba"@zh-latn-pinyin-x-ndia , "bangsa si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "spang sa dgon/"@bo-x-ewts , "Pangsa"@en-x-mixed , "邦萨贡巴"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF1D9DC0C28EEB263 ;
+        :isRoot             true ;
+        :note               bdr:NTBB1B9740A7B42CB7 , bdr:NTD086DD4E684F9895 ;
+        :placeEvent         bdr:EV33BAA6113B1EAF41 , bdr:EV93F0A5117CA565D6 ;
+        :placeGonpaPerEcumen  "5.68" ;
+        :placeLat           "29.79600" ;
+        :placeLocatedIn     bdr:G2014 , bdr:G2029 ;
+        :placeLong          "91.91836" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF1D9DC0C28EEB263
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2064" .
+    
+    bdr:NTBB1B9740A7B42CB7
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 221-223" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTD086DD4E684F9895
+        a                   :Note ;
+        :contentLocationStatement  "p. 39" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa monastery in bkra shis sgang shang of mal gro gung dkar rdzong\nfounded by rtogs ldan 'jam dpal rgya mtsho\naffiliated to glang ru dwags po grwa tshang\nhad 30 monks in 1959\nrestored"@en .
+}

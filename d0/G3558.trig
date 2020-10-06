@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3558 {
+    bda:G3558  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3558 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d0/G3558.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3558 ;
+        adm:logEntry        bda:LG64BD890CA6203A02 , bda:LGEF187C0D74B072C5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG64BD890CA6203A02
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEF187C0D74B072C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T15:27:16.673Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3558  a            :Place ;
+        skos:prefLabel      "tsho bzhi shang (bzhad mthong smon)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2D56FD45DAA7C072 ;
+        :placeLocatedIn     bdr:G2164 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT2D56FD45DAA7C072
+        a                   :Note ;
+        :contentLocationStatement  "p. 48" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "name of a township seat in bzhad mthong smon rdzong"@en .
+}

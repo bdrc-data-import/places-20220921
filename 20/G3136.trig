@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3136 {
+    bda:G3136  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3136 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "20/G3136.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3136 ;
+        adm:logEntry        bda:LG925F6DA89BC3BF03 , bda:LGD1EB6C7CBEE4D55E , bda:LGE1BEFA28ACA1F4CC , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG925F6DA89BC3BF03
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-10T12:01:31.064Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD1EB6C7CBEE4D55E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE1BEFA28ACA1F4CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-18T15:26:15.785Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3136  a            :Place ;
+        skos:altLabel       "rtsib ri me mo/"@bo-x-ewts ;
+        skos:prefLabel      "me mo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAF1B9BCC4ECA199F ;
+        :placeLocatedIn     bdr:G3140 ;
+        :placeType          bdr:PT0020 .
+    
+    bdr:NTAF1B9BCC4ECA199F
+        a                   :Note ;
+        :noteText           "settlement in the rtsib ri area of southwest tibet"@en .
+}

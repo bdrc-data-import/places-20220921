@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1294 {
+    bda:G2GS1294  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1294 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "10/G2GS1294.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1294 ;
+        adm:logEntry        bda:LG04E82FE5320D9AE0 , bda:LG7AFB6C06D51B2971 , bda:LG854A44D7307C5039 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04E82FE5320D9AE0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-09-20T15:10:44.525Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7AFB6C06D51B2971
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-21T10:28:16.621Z"^^xsd:dateTime ;
+        adm:logMessage      "restored"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG854A44D7307C5039
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-15T16:58:00.518Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2GS1294  a         :Place ;
+        skos:prefLabel      "nga 'du dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE7BCC059F7C1B4B3 ;
+        :placeLocatedIn     bdr:G2187 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTE7BCC059F7C1B4B3
+        a                   :Note ;
+        :contentLocationStatement  "p. 219" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "dge lugs monastery founded by rgya ra sangs rgyas ye shes in lho rong rdzong; in 1698 had 130 monks.\nrgya ra sangs rgyas ye shes was a student of tsong kha pa according to the spo bo'i lo rgyus. this monastery was one of the rdzi ngom gnyis, that is rdzi tho and ngom 'du monasteries; it is described as located in ngom du shang, lho  rong rdzong, in  \"ngom zhes pa'i dgon grong 'dres ma zhig yin\""@en .
+}

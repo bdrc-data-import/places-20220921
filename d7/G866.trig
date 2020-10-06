@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G866 {
+    bda:G866  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G866 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d7/G866.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G866 ;
+        adm:logEntry        bda:LG7C9BC6092EA3E680 , bda:LGA8CD593EDAC914C3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G850 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG7C9BC6092EA3E680
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-05-20T12:58:05.286Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G850"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA8CD593EDAC914C3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G866  a             :Place ;
+        skos:prefLabel      "tre shod stag bzang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT377BA9D5669DE7EF ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT377BA9D5669DE7EF
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G850"@en .
+}

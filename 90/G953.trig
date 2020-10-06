@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G953 {
+    bda:G953  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G953 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "90/G953.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G953 ;
+        adm:logEntry        bda:LG02DBCA1F90B6C1ED , bda:LG6B1DB6640C99A005 , bda:LG7FBD5F5EC52FC294 , bda:LGBE737413888B7013 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02DBCA1F90B6C1ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-28T13:00:40.519Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6B1DB6640C99A005
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7FBD5F5EC52FC294
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-14T13:58:46.75Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBE737413888B7013
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-28T13:54:35.164Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G953  a             :Place ;
+        skos:altLabel       "gtsang shab smad/"@bo-x-ewts ;
+        skos:prefLabel      "shab smad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDFE443FE5A761981 ;
+        :placeContains      bdr:G574 ;
+        :placeLocatedIn     bdr:G546 ;
+        :placeType          bdr:PT0031 .
+    
+    bdr:NTDFE443FE5A761981
+        a                   :Note ;
+        :noteText           "see C2CN11026"@en .
+}

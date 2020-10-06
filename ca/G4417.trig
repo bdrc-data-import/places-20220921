@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4417 {
+    bda:G4417  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4417 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ca/G4417.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4417 ;
+        adm:logEntry        bda:LGA96AA0E3A27A5F7B , bda:LGE309B488CCA605C4 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA96AA0E3A27A5F7B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE309B488CCA605C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T10:28:12.809Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4D17F46EDFDF0FCA
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P426 ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:G4417  a            :Place ;
+        skos:prefLabel      "byams gling lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA7BDE82752925424 ;
+        :placeEvent         bdr:EV4D17F46EDFDF0FCA ;
+        :placeLocatedIn     bdr:G2129 , bdr:G3290 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NTA7BDE82752925424
+        a                   :Note ;
+        :contentLocationStatement  "p. 44" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "gelug establishment in gzhu smad shang, snye mo rdzong\nfounded in the 15th century by one mkhas btsun yon tan rgya mtsho\nunder the administration of rgyal byed dgon\n2 nuns as caretakers"@en .
+}

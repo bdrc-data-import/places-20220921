@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3034 {
+    bda:G3034  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3034 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a1/G3034.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3034 ;
+        adm:logEntry        bda:LG51B343924FAAD088 , bda:LG540B8171D5E51927 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG51B343924FAAD088
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG540B8171D5E51927
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T16:21:42.172Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from kungHre to shang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3034  a            :Place ;
+        skos:prefLabel      "shing tshang kung hre (stag rtse rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT305D4DFFE6241DA9 ;
+        :placeLocatedIn     bdr:G3014 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT305D4DFFE6241DA9
+        a                   :Note ;
+        :contentLocationStatement  "p. 35" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "one of the six  kung hre in bde chen chus, stag rtse county, lha sa prefecture\nthis kung hre had eight ru khag  and villages/monasteries\n1   bde mchog 'bab lha\n     benefice of rgyud smad grwa tshang\n2   gnyen dkar\n     \"chos byang\"\n3   la sgang 'og, rgya ri khang gsang\n     benefice of the dga' ldan bla spyi\n4   snye gzhi, spang 'og, kha tshang\n     benefice of the dga' ldan bla spyi\n5   shing tshang gzhis ka, lcang ra khang gsar, chu 'khor rgyud\n     benefice of the dga' ldan bla spyi\n6   spang rtsig grong gsar\n     benefice of the dga' ldan bla spyi\n7   shing sbug ('brog sde)\n     benefices of the dga' ldan bla spyi, khri byang bla brang, bla      phyag\n8   chang tshul ('brog sde)\n     benefices of khri byang bla brang and the bla phyag"@en .
+}

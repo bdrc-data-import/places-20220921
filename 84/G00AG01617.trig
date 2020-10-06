@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00AG01617 {
+    bda:G00AG01617  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00AG01617 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "84/G00AG01617.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00AG01617 ;
+        adm:logEntry        bda:LG061E03C554CEFD9B , bda:LG3D59F9F098F52EC4 , bda:LG975EE7FEDDC0FAF6 , bda:LGE1DAB737EABB3A5D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG061E03C554CEFD9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T09:21:56.083Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3D59F9F098F52EC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-08T12:42:14.328Z"^^xsd:dateTime ;
+        adm:logMessage      "added guru bkra shis reference"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG975EE7FEDDC0FAF6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-02-07T13:20:32.026Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGE1DAB737EABB3A5D
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-08T12:10:38.696Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:G00AG01617  a       :Place ;
+        skos:altLabel       "bde 'grol gsang sngags chos gling /"@bo-x-ewts ;
+        skos:prefLabel      "bde grol gsang sngags chos gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCF608A6FF737EE90 , bdr:NTDD0D1C32A597187E ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTCF608A6FF737EE90
+        a                   :Note ;
+        :noteText           "see gu ru bkra shis p. 664, mkhyen brtse'i dbang po's gdan rabs pp. 322-323."@en .
+    
+    bdr:NTDD0D1C32A597187E
+        a                   :Note ;
+        :noteText           "a sa skya monastery below mtsho skya bo in gtsang. it was the seat of mes ston kun dga' snying po"@en .
+}

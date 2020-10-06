@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS516 {
+    bda:G2LS516  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS516 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "bb/G2LS516.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS516 ;
+        adm:logEntry        bda:LG9B19D4DF54871270 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542521100:52" ;
+        adm:place_id_lex    "542521100:52" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9B19D4DF54871270
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:50:20.231Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVAE8ED57B5FFD882A
+        a                   :PlaceConverted ;
+        :note               bdr:NT2557C3321C2EBE9E .
+    
+    bdr:EVBDB9E15838195B50
+        a                   :PlaceFounded ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionDrigungKagyu .
+    
+    bdr:G2LS516  a          :Place ;
+        skos:altLabel       "dgung 'phur dgon/"@bo-x-ewts ;
+        skos:prefLabel      "dgung 'phur dgon/"@bo-x-ewts , "贡普寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB9FFAEB077A9B780 ;
+        :isRoot             true ;
+        :note               bdr:NTAE30BCE0222D3B2A ;
+        :placeEvent         bdr:EVAE8ED57B5FFD882A , bdr:EVBDB9E15838195B50 ;
+        :placeGonpaPerEcumen  "2.54" ;
+        :placeLat           "30.30000" ;
+        :placeLocatedIn     bdr:G2154 ;
+        :placeLong          "81.17000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDB9FFAEB077A9B780
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2LS516" .
+    
+    bdr:NT2557C3321C2EBE9E
+        a                   :Note ;
+        :noteText           "SAME"@en .
+    
+    bdr:NTAE30BCE0222D3B2A
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 9" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "drikung kagyud tradition and branch of gyang dak monastery"@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2909 {
+    bda:G2909  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2909 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "15/G2909.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2909 ;
+        adm:logEntry        bda:LG54A9E368AEA83D66 , bda:LG7488B9B776ABB51B , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1KR1891 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG54A9E368AEA83D66
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-11-06T10:51:40.125Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1KR1891"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7488B9B776ABB51B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2909  a            :Place ;
+        skos:altLabel       "srung gling dgon/"@bo-x-ewts ;
+        skos:prefLabel      "bsam gling dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT68E717757C49CA72 , bdr:NTD5960434E125A750 ;
+        :placeLocatedIn     bdr:G2948 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT68E717757C49CA72
+        a                   :Note ;
+        :contentLocationStatement  "p. 117, 125" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "rnying ma pa monastery in yid 'ong zhing ra, spo bo rdzong\nvarying orthographies:\np. 117 srung gling dgon\np. 125 bsam gling dgon"@en .
+    
+    bdr:NTD5960434E125A750
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR1891"@en .
+}

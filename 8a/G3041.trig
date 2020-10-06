@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3041 {
+    bda:G3041  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3041 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "8a/G3041.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3041 ;
+        adm:logEntry        bda:LG10B5B80F4ED3847C , bda:LG870D861B52CDAAEA , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540126203:540126111" ;
+        adm:place_id_lex    "540126203:540126111" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG10B5B80F4ED3847C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG870D861B52CDAAEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T16:31:47.818Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV6C3693451A0E7975
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P3473 ;
+        :onYear             "1095"^^xsd:gYear .
+    
+    bdr:EVE0E10F8EC64A67CF
+        a                   :PlaceFounded ;
+        :onYear             "1150"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G3041  a            :Place ;
+        skos:altLabel       "洛寺"@zh-hans , "luopu si"@zh-latn-pinyin-x-ndia , "luo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lo dgon pa/"@bo-x-ewts , "Lo Gonpa"@en-x-mixed , "洛普寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID505DCE7D6A54BD67 ;
+        :isRoot             true ;
+        :note               bdr:NTEED2B1D7373AFE5E , bdr:NTF3687ACBF46B0189 , bdr:NTF6939E2BE77838EC ;
+        :placeEvent         bdr:EV6C3693451A0E7975 , bdr:EVE0E10F8EC64A67CF ;
+        :placeGonpaPerEcumen  "8.75" ;
+        :placeLat           "29.92658" ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3374 ;
+        :placeLong          "91.60416" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID505DCE7D6A54BD67
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3041" .
+    
+    bdr:NTEED2B1D7373AFE5E
+        a                   :Note ;
+        :contentLocationStatement  "p. 50" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "dge lugs pa monastery located in grong tsho bcu drug, thang dkar shang, stag rtse county, lha sa prefecture\nfounded in the 11th century by dge bshes spyan snga ba\nunder the control of the sems dpa' sprul sku\nhad 115 monks\nrestored"@en .
+    
+    bdr:NTF3687ACBF46B0189
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 248-249" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTF6939E2BE77838EC
+        a                   :Note ;
+        :contentLocationStatement  "p. 110" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "gelug monastery located in lo phu shang of stag rtse county\nfounded in 1095 by spyan snga tshul khrims 'bar\nthis became the seat of the lo sems dpa' sprul sku line\nin 1959 had a monk population of 150\nrestored through the efforts of lo sems dpa' sprul sku 'phrin las chos bzang and eight senior monks\nafter restoration the monastic population was more than 50"@en .
+}

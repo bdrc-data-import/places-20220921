@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2771 {
+    bda:G2771  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2771 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fc/G2771.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2771 ;
+        adm:logEntry        bda:LG3790CBA02A504376 , bda:LGD953EA9A844B58E8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3790CBA02A504376
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:16:32.085Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from municipality to grongRdal"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD953EA9A844B58E8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2771  a            :Place ;
+        skos:altLabel       "ho dbyi grong rdal (khri ka rdzong)"@bo-x-ewts ;
+        skos:prefLabel      "ho yun grong rdal (khri ka rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5F361A4DCF265AA5 ;
+        :placeLocatedIn     bdr:G1715 ;
+        :placeType          bdr:PT0045 .
+    
+    bdr:NT5F361A4DCF265AA5
+        a                   :Note ;
+        :contentLocationStatement  "p. 26" ;
+        :noteSource         bdr:MW20381 ;
+        :noteText           "one of the 8 zhang and grong rdal of khri ka rdzong, mtsho lho khul (1990)"@en .
+}

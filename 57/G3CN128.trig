@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN128 {
+    bda:G3CN128  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN128 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "57/G3CN128.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN128 ;
+        adm:logEntry        bda:LG653EADD3DE9EFC3D , bda:LG826A01E00E776DCB , bda:LGC65E4B4057D0CF8B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG653EADD3DE9EFC3D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T09:25:17.14Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG826A01E00E776DCB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-21T11:00:02.382Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC65E4B4057D0CF8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-27T16:57:10.406Z"^^xsd:dateTime ;
+        adm:logMessage      "added shad"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV3D0362CB29309E3C
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN128  a          :Place ;
+        skos:prefLabel      "zangs dkar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT029621E7638E2528 , bdr:NT5A5A905A24ED7A4C ;
+        :placeEvent         bdr:EV3D0362CB29309E3C ;
+        :placeLocatedIn     bdr:G3174 ;
+        :placeType          bdr:PT0001 .
+    
+    bdr:NT029621E7638E2528
+        a                   :Note ;
+        :contentLocationStatement  "p. 206" ;
+        :noteSource         bdr:MW1KG16696 ;
+        :noteText           "ཟངས་དཀར་ཞེས་པ་(གཡས་རུའི་ཡུལ་སྡེ་)འདི་ནི་ངམ་རིང་གི་བྱང་ཤར་ཕྱོགས་ན་གནས་ཏེ། དེ་ཡང་མུས་ཀྱི་མདའ་ན་ཆགས་ཡོད་ཅེས་འཁོད།"@bo .
+    
+    bdr:NT5A5A905A24ED7A4C
+        a                   :Note ;
+        :contentLocationStatement  "p. 257" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོའི་སྐབས་ནས་བཟུང་བོད་བཙན་པོའི་རྒྱལ་རབས་སྐབས་སུ། བོད་རུ་རེ་རེའི་ཡུལ་སྡེ་བྱེ་བྲག་པ་རྣམས་ལ་ཡུལ་དཔོན་བཅུ་དྲུག་རེ་ཡོད་པ་ལས། འདི་ནི་གཡས་རུའི་ཡུལ་དཔོན་ཚན་བཅུ་དྲུག་གི་ནང་ཚན་ཡུལ་སྡེ་གསུམ་པ་དེ་ཡིན་པར་གསལ།"@bo .
+}

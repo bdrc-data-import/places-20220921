@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00AG01696 {
+    bda:G00AG01696  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00AG01696 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "05/G00AG01696.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00AG01696 ;
+        adm:logEntry        bda:LG29E8FC4C60742CD3 , bda:LG59168AF6A2FB76EB , bda:LG67FAEDFF62E6065F , bda:LG6E5B953EACF7AC5E , bda:LG7C45CC8D47AA58E6 , bda:LGCB95F6113EBC2D10 , bda:LGDD7F6E8BF9CD9104 , bda:LGEECE7AF8BB5F9E78 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG29E8FC4C60742CD3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-01T16:08:21.106Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo \"bdud dpung\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG59168AF6A2FB76EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-13T16:07:09.543Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG67FAEDFF62E6065F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-08T09:21:39.579Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6E5B953EACF7AC5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T16:23:57.342Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7C45CC8D47AA58E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-22T16:54:32.517Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCB95F6113EBC2D10
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T16:25:48.584Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDD7F6E8BF9CD9104
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-02-12T12:43:53.674Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGEECE7AF8BB5F9E78
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2162"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G00AG01696  a       :Place ;
+        skos:altLabel       "phung po ri bo che bdud dpung zil gnon gling /"@bo-x-ewts ;
+        skos:prefLabel      "phung po ri bo che dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5B3D70385569AAD7 , bdr:NT6820054FA3F3915A ;
+        :placeLocatedIn     bdr:G2162 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT5B3D70385569AAD7
+        a                   :Note ;
+        :contentLocationStatement  "vol. 18, p. 324" ;
+        :noteSource         bdr:MW21807 ;
+        :noteText           "a rnying ma monastery in lower gtsang founded by the fifth dalai lama. see guru bkra shis p. 667 and mkhyen brtse gdan rabs p. 324"@en .
+    
+    bdr:NT6820054FA3F3915A
+        a                   :Note ;
+        :noteText           "འདི་གཙང་སྨད་དུ་ཡོད་ན་གཞིས་རྩེ་གྲོང་ཁྱེར་ཁོངས་གཏོགས་ཤར་ཕྱོགས་གཙང་འགྲམ་གྱི་དེའུ་འབུར་ཞིག་ན་ཡོད་པ་དེ་ཡིན་པར་དྭོགས་པ་རྒྱུ་ཆ་ངེས་གཏན་རྙེད་རིམ་བཞིན་བསྒྱུར་བཅོས་བྱ་རྒྱུ།"@bo .
+}

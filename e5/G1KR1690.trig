@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1690 {
+    bda:G1KR1690  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1690 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "e5/G1KR1690.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1690 ;
+        adm:logEntry        bda:LG35A06B396AAD9364 , bda:LGD59530E361892899 , bda:LGF480CBC4CA91569B , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542423209:435" ;
+        adm:place_id_lex    "542423209:435" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG35A06B396AAD9364
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-08T16:30:15.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD59530E361892899
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-08T10:35:47.165Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in tibetan & Gis Coords & events & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF480CBC4CA91569B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-20T15:12:01.701Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVC49917FFF7CC3D0D
+        a                   :PlaceRebuilt ;
+        :onYear             "1928"^^xsd:gYear .
+    
+    bdr:EVFB02A4907562C665
+        a                   :PlaceFounded ;
+        :onYear             "1440"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1690  a         :Place ;
+        skos:altLabel       "g.yang shod dgon/"@bo-x-ewts , "sen tsha dgon rnam rgyal kun grags gling /"@bo-x-ewts , "sen tsha nang zhu tshang g.yang shod dgon/"@bo-x-ewts , "shenzha si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sen tsha dgon/"@bo-x-ewts , "申扎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID40977469D0CEA0DC ;
+        :isRoot             true ;
+        :note               bdr:NT6A0EA0B43B3E33A9 , bdr:NT9DABC6A8A4BE46C9 , bdr:NTFCE5DFA809232C88 ;
+        :placeEvent         bdr:EVC49917FFF7CC3D0D , bdr:EVFB02A4907562C665 ;
+        :placeGonpaPerEcumen  "2.7" ;
+        :placeLat           "31.207373" ;
+        :placeLocatedIn     bdr:G1364 , bdr:G2386 ;
+        :placeLong          "93.964289" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID40977469D0CEA0DC
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1690" .
+    
+    bdr:NT6A0EA0B43B3E33A9
+        a                   :Note ;
+        :noteSource         bdr:MW23671 .
+    
+    bdr:NT9DABC6A8A4BE46C9
+        a                   :Note ;
+        :noteText           "Founded by Kun dga’ dbang ldan of the Bru family, a disciple of Mnyam med Shes rab rgyal mtshan. Approximately 55 monks. NOTE: See also G3423 nearby."@en .
+    
+    bdr:NTFCE5DFA809232C88
+        a                   :Note ;
+        :contentLocationStatement  "p. 85" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "དགོན་འདི་འབྲི་རུ་རྫོང་གཡང་ཤོད་ཤང་སེན་ཚ་གྲོང་དུ་གནས། ༡༤༤༠ལོའི་གཡས་གཡོན་དུ་རྒྱལ་རིགས་བྲུ་ཡི་བླ་ཆེན་ཀུན་དགའ་དབང་ལྡན་གྱིས་བཞེངས་ཤིང་ཕྱིས་སུ་གནས་སྤོས། སླར་༡༩༢༨ལོར་གནས་སྤོས་ནས་སྤོ་ར་དགོན་རྣམ་རྒྱལ་ཀུན་གྲགས་གླིང་ཞེས་པ་ཕྱག་བཏབ། ཁྱད་པར་གྱི་གསུང་རྟེན་མདོ་རིགས་ནག་ཤོག་གསེར་བྲིས་མ། དེ་བཞིན་བཀའ་རྟེན་ཆ་ཚང་དང་གསུང་རབ་དུ་མ་ཡོད་པ་སོགས་གསལ།"@bo .
+}

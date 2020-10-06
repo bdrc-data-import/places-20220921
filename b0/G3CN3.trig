@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN3 {
+    bda:G3CN3  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN3 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b0/G3CN3.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN3 ;
+        adm:logEntry        bda:LGAD08F5B341957A09 , bda:LGB7EFF4EBCAEFAA83 , bda:LGD261575560DB0F5F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGAD08F5B341957A09
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-11-08T10:51:16.079Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB7EFF4EBCAEFAA83
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-08T10:55:25.569Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD261575560DB0F5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-08T11:06:54.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added 3 of contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN3  a            :Place ;
+        skos:altLabel       "mkha' spyod g.yu ri yon tan gyi gnas/"@bo-x-ewts ;
+        skos:prefLabel      "g.yu ri/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT73AECA80212C2C6E ;
+        :placeContains      bdr:G1KR1888 , bdr:G2888 , bdr:G2900 ;
+        :placeLocatedIn     bdr:G2944 , bdr:G3CN1 , bdr:G655 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT73AECA80212C2C6E
+        a                   :Note ;
+        :contentLocationStatement  "p. 90" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "གངས་ཅན་བོད་ཡུལ་འདིར་དབྱིངས་ཕྱུག་རྒྱལ་མོའི་སྐུའི་བཀོད་པ་ཚང་བར་གནས་ལྔ་རང་བྱུང་དུ་གྲུབ་ཡོད་པ་ལས། ལྟེ་བར་མཁའ་སྤྱོད་གཡུ་རི་ཡོན་ཏན་གནས་ཞེས་བོད་ལ་གནས་ཆེན་ལྔ་ཡོད་པའི་ནང་ཚན་གཅིག་ཏེ། གནས་རི་འདིའི་ཉིན་སྲིབ་གཉིས་སུ་གཡུ་རི་གླིང་དྲུག་དགོན་དང་། སྤང་དཀར་དགོན་ཐོག་མར་ཆགས་ཤིང་། དེ་རྗེས་ཁམས་གྲགས་དགོན་དང་། གངས་སོ་དགོན་པ། ཁུ་ཚུག་དགོན། དཀར་པོ་དགོན་པ་སོགས་ཆགས་ཡོད་དེ། བཀའ་བརྒྱུད་ཀྱི་བསྟན་པ་དང་འབྲེལ་ཆེ་ལ། \"གཡུ་སྤང་གངས་གསུམ་\"གྱི་ཐ་སྙད་ཀྱང་བྱུང་ཡོད་ཚུལ་སོགས་གསལ།"@bo .
+}

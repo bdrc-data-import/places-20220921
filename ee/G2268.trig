@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2268 {
+    bda:G2268  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2268 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ee/G2268.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2268 ;
+        adm:logEntry        bda:LG588E44929B432EDE , bda:LG8B58C9AE6FCE656A , bda:LG9E1A28BB0481181E , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG588E44929B432EDE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T12:42:29.447Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8B58C9AE6FCE656A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T15:40:58.703Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9E1A28BB0481181E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVAE508BBC66DD1E44
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2268  a            :Place ;
+        skos:altLabel       "o byang lha khang /"@bo-x-ewts ;
+        skos:prefLabel      "o byang btsan khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF38AAD9101F53EB3 ;
+        :placeEvent         bdr:EVAE508BBC66DD1E44 ;
+        :placeLocatedIn     bdr:G2156 , bdr:G2291 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NTF38AAD9101F53EB3
+        a                   :Note ;
+        :contentLocationStatement  "p. 11, 173" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "dge lugs pa temple located in ru thog chus, ru thog rdzong, mnga' ris prefecture\n\"deng sang grong tshos do dam gnang gi yod/ slad grwa tshad gcig go\""@en .
+}

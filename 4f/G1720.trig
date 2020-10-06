@@ -1,0 +1,116 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1720 {
+    bda:G1720  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1720 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "4f/G1720.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1720 ;
+        adm:logEntry        bda:LG766C03DA27794E10 , bda:LGC90A0983DC052CC6 , bda:LGE64C03C6423EC776 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632622206:510" ;
+        adm:place_id_lex    "632622206:45" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG766C03DA27794E10
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-22T14:55:50.332Z"^^xsd:dateTime ;
+        adm:logMessage      "edited dates and updated notes"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC90A0983DC052CC6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE64C03C6423EC776
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T14:33:26.971Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV48C306D8EAA652B2
+        a                   :PlaceConverted ;
+        :onYear             "1716"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionJonang .
+    
+    bdr:EV4D4914343CA860CB
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P6478 ;
+        :onYear             "1493"^^xsd:gYear .
+    
+    bdr:EV7976F568EA1AF784
+        a                   :PlaceFounded ;
+        :onYear             "1367"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1720  a            :Place ;
+        skos:altLabel       "a skyong rgya dgon pa mdo sngags bshad sgrub gling /"@bo-x-ewts , "a skyong rgya dgon pa nges don rtag brtan bshad sgrub 'phel rgyas gling /"@bo-x-ewts , "a skyong yar thang dgon nges don bshad sgrub gling /"@bo-x-ewts , "brag dkar mgo dgon/"@bo-x-ewts , "yar thang rgya dgon pa/"@bo-x-ewts , "Akyong Yartang"@bo-x-phon-en , "Yartang Gya Gonpa"@bo-x-phon-en-m-tbrc , "江日堂贾贡巴"@zh-hans , "ashi jiangjia gong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "a skyong yar thang dgon/"@bo-x-ewts , "阿什姜贾贡寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID10D51DED8A67A330 ;
+        :isRoot             true ;
+        :note               bdr:NT42ECFE499F4D0578 , bdr:NT54CD1AD2165203E3 , bdr:NT54F70E90ED858754 , bdr:NT8664C6F562EDE6F8 , bdr:NTD1362BCB6D7D7E42 , bdr:NTE27CDD8FB82A63E8 ;
+        :placeEvent         bdr:EV48C306D8EAA652B2 , bdr:EV4D4914343CA860CB , bdr:EV7976F568EA1AF784 ;
+        :placeGonpaPerEcumen  "3.32" ;
+        :placeLat           "32.90000" ;
+        :placeLocatedIn     bdr:G1721 ;
+        :placeLong          "100.78000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID10D51DED8A67A330
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1720" .
+    
+    bdr:NT42ECFE499F4D0578
+        a                   :Note ;
+        :contentLocationStatement  "p. 140" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "monastery founded in 1493 by mgo log bla ma chos 'bum at the smar gyi a khyung sgang and given the name brag dkar mgo dgon; originally a rnying ma pa monastery of the kaH thog pa tradition; now jo nang pa"@en .
+    
+    bdr:NT54CD1AD2165203E3
+        a                   :Note ;
+        :noteText           "in 1716 became a jo nang pa establishment after gtsang ba ngag dbang bstan 'dzin rnam rgyal was invited by a skyong bstan 'dzin dar rgyas and tom tsa bla ma kun dga' bkra shis"@en .
+    
+    bdr:NT54F70E90ED858754
+        a                   :Note ;
+        :noteText           "alternative founding date, 1367"@en .
+    
+    bdr:NT8664C6F562EDE6F8
+        a                   :Note ;
+        :noteText           "jo nang monastery in the territory of the a skyong chieftain in mgo log"@en .
+    
+    bdr:NTD1362BCB6D7D7E42
+        a                   :Note ;
+        :noteText           "alternative conversion date, 1717"@en .
+    
+    bdr:NTE27CDD8FB82A63E8
+        a                   :Note ;
+        :contentLocationStatement  "161-167" ;
+        :noteSource         bdr:MW30408 ;
+        :noteText           "see short history"@en .
+}

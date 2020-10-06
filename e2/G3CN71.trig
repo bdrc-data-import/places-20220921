@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN71 {
+    bda:G3CN71  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN71 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "e2/G3CN71.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN71 ;
+        adm:logEntry        bda:LG082F368C5818F710 , bda:LG25957A6182C324C3 , bda:LG2FF9F5376B042A58 , bda:LG326B3E2BC315AC6D , bda:LG824436A174D28E7F , bda:LGBD4C95AC8FA08324 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG082F368C5818F710
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-12T09:50:44.38Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains \"mong kar\" ?"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG25957A6182C324C3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-10T14:26:15.731Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2FF9F5376B042A58
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-02T11:15:40.671Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG326B3E2BC315AC6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-10T14:31:11.671Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"mang mkhar\" and contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG824436A174D28E7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T16:12:38.602Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBD4C95AC8FA08324
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T12:08:31.098Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as \"stongSde\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV3FABF2D3857D7E29
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN71  a           :Place ;
+        skos:altLabel       "mang mkhar/"@bo-x-ewts ;
+        skos:prefLabel      "mang kar/"@bo-x-ewts , "Mangkar"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT40C66084A65CDBEC ;
+        :placeContains      bdr:G323 , bdr:G3CN460 , bdr:G3CN580 ;
+        :placeEvent         bdr:EV3FABF2D3857D7E29 ;
+        :placeLocatedIn     bdr:G3175 ;
+        :placeType          bdr:PT0073 .
+    
+    bdr:NT40C66084A65CDBEC
+        a                   :Note ;
+        :contentLocationStatement  "p. 102" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "རུ་ལག་གི་སྟོང་སྡེ་བཅུ་ཡི་ནང་ཚན་ཞིག་ཡིན་པར་གསལ།"@bo .
+}

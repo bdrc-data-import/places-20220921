@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2278 {
+    bda:G2278  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2278 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "e1/G2278.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2278 ;
+        adm:logEntry        bda:LG0ECB1290239AAF05 , bda:LG35D964CA14C23563 , bda:LG5E9FBF11665483D7 , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542526201:82" ;
+        adm:place_id_lex    "542526201:82" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0ECB1290239AAF05
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-21T16:44:10.338Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG35D964CA14C23563
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T10:40:58.582Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, events & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5E9FBF11665483D7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA3053C94FD36ABED
+        a                   :PlaceFounded ;
+        :onYear             "1850"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVBBF9278E04008C2E
+        a                   :PlaceConverted ;
+        :onYear             "1989"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G2278  a            :Place ;
+        skos:altLabel       "sger rtse khang thog lha khang /"@bo-x-ewts , "stong mtsho ma Ni lha khang /"@bo-x-ewts , "dongcuo lakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "stong mtsho lha khang /"@bo-x-ewts , "洞措拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3E52C65DD014A997 ;
+        :isRoot             true ;
+        :note               bdr:NT82201B9C74A56A6A , bdr:NT930BE8614A8BC18C , bdr:NTD2D8D6C9DE14CC70 ;
+        :placeEvent         bdr:EVA3053C94FD36ABED , bdr:EVBBF9278E04008C2E ;
+        :placeGonpaPerEcumen  "0.23" ;
+        :placeLat           "32.15000" ;
+        :placeLocatedIn     bdr:G2157 , bdr:G2287 ;
+        :placeLong          "84.92000" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID3E52C65DD014A997
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2278" .
+    
+    bdr:NT82201B9C74A56A6A
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 129" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Located 100 km from the gertse district. Gelugpa tradition"@en .
+    
+    bdr:NT930BE8614A8BC18C
+        a                   :Note ;
+        :contentLocationStatement  "p. 421" ;
+        :noteSource         bdr:MW1GS56008 ;
+        :noteText           "སྔར་སྒེར་རྩེ་དཔོན་ཚང་གི་ཁང་ཐོག་དུ་ཡོད་ལ་གྲུབ་མཐའ་དགེ་ལུགས་བྱེད་མོད། ཕྱིས་སྟོང་མཚོར་ཆགས་ཤིང་གྲུབ་མཐའ་ཀརྨ་བཀའ་བརྒྱུད་ཡིན་པར་གསལ། ཕལ་ཆེར་༡༩༨༩ལོ་ཙམ་ནས་ཆགས་པ་ཨེ་ཡིན་བརྟག་རྒྱུ།"@bo .
+    
+    bdr:NTD2D8D6C9DE14CC70
+        a                   :Note ;
+        :contentLocationStatement  "p. 13" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "dge lugs pa temple in stong mtsho chus, sger rtse rdzong, mnga' ris prefecture\n\"da yod grwa pa gnyis/ slad grwa tshad lnga'o\""@en .
+}

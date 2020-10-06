@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3242 {
+    bda:G3242  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3242 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fc/G3242.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3242 ;
+        adm:logEntry        bda:LG932E1C6FA6785EEA , bda:LGC05E55E0804367D2 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG932E1C6FA6785EEA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC05E55E0804367D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T13:27:28.823Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV089501A3A7521BD9
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3242  a            :Place ;
+        skos:prefLabel      "brag rgya rdo rje pho brang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE8D53509F93E1BEE ;
+        :placeEvent         bdr:EV089501A3A7521BD9 ;
+        :placeLocatedIn     bdr:G2170 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NTE8D53509F93E1BEE
+        a                   :Note ;
+        :noteText           "དབེན་ས་སྙན་རྒྱུད་དང་འབྲེལ་བའི་གལ་ཆེའི་སྒྲུབ་གནས་ཞིག"@bo .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2799 {
+    bda:G2799  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2799 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b1/G2799.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2799 ;
+        adm:logEntry        bda:LG7EFB33FA34B1AA35 , bda:LGDCA35517EFE69B79 , bda:LGDED1EED66BECAF49 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7EFB33FA34B1AA35
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDCA35517EFE69B79
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:40:27.8Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:village to grongTsho"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGDED1EED66BECAF49
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-20T11:39:54.533Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2799  a            :Place ;
+        skos:prefLabel      "mon yag sde ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT185ED98082208EE1 ;
+        :placeLocatedIn     bdr:G1715 ;
+        :placeType          bdr:PT0084 .
+    
+    bdr:NT185ED98082208EE1
+        a                   :Note ;
+        :noteText           "one of the smad pa tsho bdun of khri ka rdzong"@en .
+}

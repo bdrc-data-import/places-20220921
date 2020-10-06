@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2815 {
+    bda:G2815  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2815 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "3e/G2815.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2815 ;
+        adm:logEntry        bda:LG7065DEA9B30B9114 , bda:LGABBF3B3D6E2FD43C , bda:LGEC05DFC64A10B4D0 , bda:LGFDD1DBB6543D82D5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542222200:542222116" ;
+        adm:place_id_lex    "542222200:542222116" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7065DEA9B30B9114
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T11:53:42.399Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & GIS ID & note in Tib."@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGABBF3B3D6E2FD43C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-05T16:13:15.427Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEC05DFC64A10B4D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:00.646Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain: \"par khang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFDD1DBB6543D82D5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVD2705673AC2ACB50
+        a                   :PlaceFounded ;
+        :onYear             "1200"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G2815  a            :Place ;
+        skos:altLabel       "bye rdzing tshogs pa/"@bo-x-ewts , "grwa phyi tshong 'dus tshogs pa/"@bo-x-ewts , "mkhas mang bye ba 'dus pa'i rdzing bu bye rdzing tshogs pa/"@bo-x-ewts , "tshong 'dus tshogs pa/"@bo-x-ewts , "congdui si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tshong 'dus grwa tshang /"@bo-x-ewts , "Tshongdu Dratsang"@en-x-mixed , "丛堆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID22400014A3C32FC2 ;
+        :isRoot             true ;
+        :note               bdr:NT69333BCF0AD2891A , bdr:NTD746524C379EA9F2 ;
+        :placeContains      bdr:G2CN10888 ;
+        :placeEvent         bdr:EVD2705673AC2ACB50 ;
+        :placeGonpaPerEcumen  "6.47" ;
+        :placeLat           "29.23605" ;
+        :placeLocatedIn     bdr:G799 ;
+        :placeLong          "91.39941" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID22400014A3C32FC2
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2815" .
+    
+    bdr:NT69333BCF0AD2891A
+        a                   :Note ;
+        :contentLocationStatement  "p. 241" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "this was the seat of an ordination monastery upholding the kha che lugs of the vinaya"@en .
+    
+    bdr:NTD746524C379EA9F2
+        a                   :Note ;
+        :contentLocationStatement  "p. 33-34" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "ཁ་ཆེ་པཎ་ཆེན་གྱིས་ཚོགས་པ་སྡེ་བཞི་བཏབ་པའི་ཡ་གྱལ་ཏེ། ཕྱིས་ཆོས་བརྒྱུད་ས་སྐྱ་ངོར་ལུགས་སུ་གཏོགས། སྔར་ནང་རྟེན་དུ་པཎ་ཆེན་གྱི་རྫ་སྐུ་དང་རྒྱལ་བ་ལྔ་པའི་ཕྱག་བཟོ་ཆོས་སྲུང་བྱ་ཁྲི་སྤྱན་གཅིག་གི་སྐུ་བརྙན་སོགས་ཡོད་ཅིང་། གཞུང་དགོན་ལྟར་ཡུལ་ཁྲལ་བསྡུ་དབང་ཡོད་པར་འཁོད།"@bo .
+}

@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G74 {
+    bda:G74  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G74 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "59/G74.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G74 ;
+        adm:logEntry        bda:LG15A97E2BF272FF0B , bda:LG768A77D8A09265F4 , bda:LGAF6CE3277620684C , bda:LGF84ADB17F6B2EAB0 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540121207:540121129" ;
+        adm:place_id_lex    "540121207:540121129" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG15A97E2BF272FF0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-21T11:05:39.86Z"^^xsd:dateTime ;
+        adm:logMessage      "added alternate spelling"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG768A77D8A09265F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:37:29.865Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAF6CE3277620684C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF84ADB17F6B2EAB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-16T09:12:04.631Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVFE0C3AFEDAC8BFA5
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G74  a              :Place ;
+        skos:altLabel       "byang rwa sgreng /"@bo-x-ewts , "rgyal ba'i dben gnas/"@bo-x-ewts , "rwa bsgrengs/"@bo-x-ewts , "rwa sgreng rgyal ba'i dben gnas/"@bo-x-ewts , "rezhen si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rwa sgreng dgon pa/"@bo-x-ewts , "Reting"@en-x-mixed , "热振寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD80ED4E394865216 ;
+        :isRoot             true ;
+        :note               bdr:NT098B0B19BC300FF8 , bdr:NT2319173F642146F4 , bdr:NT783D65908CC81EA7 ;
+        :placeContains      bdr:G2CN10873 ;
+        :placeEvent         bdr:EVFE0C3AFEDAC8BFA5 ;
+        :placeGonpaPerEcumen  "2.65" ;
+        :placeLat           "30.31830" ;
+        :placeLocatedIn     bdr:G2127 ;
+        :placeLong          "91.52425" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD80ED4E394865216
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G74" .
+    
+    bdr:NT098B0B19BC300FF8
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 27" ;
+        :noteSource         bdr:MW21509 ;
+        :noteText           "bka' gdams pa monastery located in the present day bod mdo chus,  lhun grub rdzong, bod rang skyong ljongs\nfounded in 1057"@en .
+    
+    bdr:NT2319173F642146F4
+        a                   :Note ;
+        :noteSource         bdr:MW20115 ;
+        :noteText           "formerly a bka' gdams pa monastery, now a dge lugs pa establishment\nfounded by 'brom rgyal ba'i 'byung gnas"@en .
+    
+    bdr:NT783D65908CC81EA7
+        a                   :Note ;
+        :contentLocationStatement  "p. 2, pp. 198-201" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

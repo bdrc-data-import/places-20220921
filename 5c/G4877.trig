@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4877 {
+    bda:G4877  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4877 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "5c/G4877.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4877 ;
+        adm:logEntry        bda:LG1937EAFE30F77506 , bda:LG61332EBA763BF64A , bda:LG68242BF88A46D14C , bda:LGE0433B12B91EB62D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1937EAFE30F77506
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-09T16:03:57.14Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG61332EBA763BF64A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG68242BF88A46D14C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-02T15:19:59.034Z"^^xsd:dateTime ;
+        adm:logMessage      "changed place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE0433B12B91EB62D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4877  a            :Place ;
+        skos:prefLabel      "nub byang mi rigs slob grwa chen po/"@bo-x-ewts , "northwest nationalities university"@en , "西北民族大学"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT9AAD7776EBCF639F ;
+        :placeType          bdr:PT0067 .
+    
+    bdr:NT9AAD7776EBCF639F
+        a                   :Note ;
+        :noteText           "name of a major institution of higher learning for the training of minority nationalities"@en .
+}

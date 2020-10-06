@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN472 {
+    bda:G3CN472  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN472 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "04/G3CN472.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN472 ;
+        adm:logEntry        bda:LG01310FDD0E6441EE , bda:LG17B42E7DAA2C0889 , bda:LG292CDEB604F928B3 , bda:LGF6FD34099BD1928D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG01310FDD0E6441EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-29T12:10:18.402Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG17B42E7DAA2C0889
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-10T09:36:41.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added note & description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG292CDEB604F928B3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-09T16:47:29.891Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF6FD34099BD1928D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-10T09:41:31.016Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN472  a          :Place ;
+        rdfs:comment        "Main route via Jangtang area to Amdo or Khams."@en , "གནའ་སྔ་མོ་བྱང་ཐང་བརྒྱུད་བོད་ཡུལ་ཤར་ནུབ་བར་འགྲུལ་བཞུད་བྱེད་པའི་ལམ་ཆེན་ཞིག་ཏེ། ཡུལ་དབུས་དང་མདོ་སྟོད་སྨད་གཉིས་འབྲེལ་བའི་ལམ་ཆེན་དུ་ཡང་གོ་ཆོག་སྙམ་པ་དཔྱད་གཞིའི་རྒྱུ་ཆ་རྙེད་རིམ་བཞིན་ཁ་སྐོངས་བྱ་རྒྱུ།" ;
+        skos:altLabel       "byang lam bar ma/"@bo-x-ewts , "byang thang brgyud lam/"@bo-x-ewts , "dbus gtsang byang rgyud kyi lam/"@bo-x-ewts ;
+        skos:prefLabel      "byang lam/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT37819F71DF8C9794 , bdr:NT917076797B4892C5 , bdr:NTA1276AACA602EC01 ;
+        :placeLocatedIn     bdr:G3189 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT37819F71DF8C9794
+        a                   :Note ;
+        :contentLocationStatement  "p. 53" ;
+        :noteSource         bdr:MW1GS61415 ;
+        :noteText           "བྱང་ལམ་བརྒྱུད་ནས་ཁམས་ཕྱོགས་སུ་སླེབས་པའི་སྐོར་གསལ།"@bo .
+    
+    bdr:NT917076797B4892C5
+        a                   :Note ;
+        :contentLocationStatement  "p. 28" ;
+        :noteSource         bdr:MW00EGS1016733 ;
+        :noteText           "\"༡༩༡༦ལོར་བོད་གཞུང་གིས་རྟ་ཟམ་ས་ཚིགས་སྐྱར་བཟོས་བགྱིས་འབྲེལ་ཧོར་ཚོའི་ཁོངས་ནག་ཤོད་ཚོ་བ་དང་། འབྲི་གུང་སྦྲངས་སོགས་ཚོ་ཤོག་སོ་སོར་འཕྲལ་ནས་བྱང་ལམ་བར་མ་ཞེས་པའི་ས་ཚིགས་གསར་བཙུགས་\"བྱས་ཡོད་ཚུལ་གསལ།"@bo .
+    
+    bdr:NTA1276AACA602EC01
+        a                   :Note ;
+        :contentLocationStatement  "p. 216" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "ཏོན་ཧོང་གཏེར་ཡིག་ལས། \"(ཁྱིའི་ལོ་ ༦༣༨ ལ་བབས་ཏེ།) བཙན་པོ་ཁྲི་སྲོང་རྩན་(བཙན་)གིས་། ཤུལད་བྱང་ལམ་དུ་པྱུང་(ཕྱུང་)སྟེ། འ་ཞ་དང་རྒྱ་ལའ་(མ་དྲངས་)རྒྱ་དང་འ་ཞ་གཉིས་ཀྱིས་དཔྱའ་(ཁྲལ་)གཅལ་()ཏོ།\"ཞེས་གསལ་བ་ལས། \"བྱང་ལམ་\"ཞེས་པའི་ཐ་སྙད་སྐབས་དེ་དུས་ནས་ཡོད་ལ། དེ་ནི་བོད་དབུས་གཙང་རུ་བཞི་ནས་མདོ་སྨད་ཀྱི་འ་ཞ་དང་རྒྱ་ཡུལ་དུ་བགྲོད་ལམ་ལ་གོ་བ་རྟོགས་ནུས།"@bo .
+}

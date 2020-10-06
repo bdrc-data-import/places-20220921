@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3581 {
+    bda:G3581  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3581 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "31/G3581.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3581 ;
+        adm:logEntry        bda:LGA26076F9EF7E90C3 , bda:LGEC3185E9B29837CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA26076F9EF7E90C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T16:34:36.672Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEC3185E9B29837CA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G3581  a            :Place ;
+        skos:prefLabel      "lung dmar shang (rgyal rtse rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD026DEEFBD6080E8 ;
+        :placeGB2260-2013   "542323208" ;
+        :placeLocatedIn     bdr:G2175 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NTD026DEEFBD6080E8
+        a                   :Note ;
+        :contentLocationStatement  "p. 49" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "name of a township seat in rgyal rtse rdzong"@en .
+}

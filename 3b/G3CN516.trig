@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN516 {
+    bda:G3CN516  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN516 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3b/G3CN516.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN516 ;
+        adm:logEntry        bda:LG18E5884F8E972EF0 , bda:LG8504230C57DFE1DF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18E5884F8E972EF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-03T09:14:12.356Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8504230C57DFE1DF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-27T11:23:07.831Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV8C06932F52C21824
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0724"^^xsd:gYear .
+    
+    bdr:G3CN516  a          :Place ;
+        skos:prefLabel      "spel/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT947AC1737BCDA5AE ;
+        :placeEvent         bdr:EV8C06932F52C21824 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NT947AC1737BCDA5AE
+        a                   :Note ;
+        :contentLocationStatement  "p. 378" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"བྱི་བའི་ལོ་ ༧༢༤ ལ། བཙན་པོ་དབྱར་སྤེལ་ན་བཞུགས་ཤིང་།\" ཞེས་གསལ།"@bo .
+}

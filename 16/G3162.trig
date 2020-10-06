@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3162 {
+    bda:G3162  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3162 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "16/G3162.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3162 ;
+        adm:logEntry        bda:LG11438C936F1528BF , bda:LG298C6554A9576568 , bda:LG705B88F22EC3FDDA , bda:LG8C58E9F10E0F3B1C , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG11438C936F1528BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-02T10:53:31.611Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"'brig mtshams\"& contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG298C6554A9576568
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-02T10:46:31.951Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG705B88F22EC3FDDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-27T12:39:47.486Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, time, locations, notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8C58E9F10E0F3B1C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA8F4D9A45C32E350
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0799"^^xsd:gYear ;
+        :notBefore          "0700"^^xsd:gYear .
+    
+    bdr:G3162  a            :Place ;
+        skos:altLabel       "'brig mtshams/"@bo-x-ewts , "'bring mtshams/"@bo-x-ewts ;
+        skos:prefLabel      "'bri mtshams/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT564912A4F4CB46D0 , bdr:NT8796165CD1108150 , bdr:NT8A958A9DC215FA60 ;
+        :placeContains      bdr:G3CN455 , bdr:G3CN456 ;
+        :placeEvent         bdr:EVA8F4D9A45C32E350 ;
+        :placeLocatedIn     bdr:G3175 , bdr:G3CN78 ;
+        :placeType          bdr:PT0001 .
+    
+    bdr:NT564912A4F4CB46D0
+        a                   :Note ;
+        :contentLocationStatement  "p. 207" ;
+        :noteSource         bdr:MW1KG16696 ;
+        :noteText           "འདིར་རུ་ལག་གི་སྟོང་སྡེ་\"གད་སྲམ་(G3CN78)\"གྱི་ཤར་རྒྱུད་དུ་གནས་པར་བཤད་མོད་དོན་དུ་ལྷོ་ནུབ་ཏུ་ཡོད་པར་དྭོགས་པ་དཔྱད་རྒྱུ།"@bo .
+    
+    bdr:NT8796165CD1108150
+        a                   :Note ;
+        :contentLocationStatement  "f. 12r" ;
+        :noteSource         bdr:MW9369 ;
+        :noteText           "'bri mtshams is described as the northern gateway (byang sgo) of sikkim\nit was here at the gsang sngags ri bo dben gnas that tshe dbang nor bu wrote the above work"@en .
+    
+    bdr:NT8A958A9DC215FA60
+        a                   :Note ;
+        :contentLocationStatement  "p. 185" ;
+        :noteSource         bdr:MW17319 ;
+        :noteText           "རྒྱལ་པོ་བཀའ་ཐང་ནང་གསལ་བའི་ཆོས་རྒྱལ་ཁྲི་སྲོང་ལྡེའུ་བཙན་སྐབས་ཀྱི་རུ་ལག་གི་ཡུལ་སྡེ་བཅུ་དྲུག་གི་ནང་ཚན་ཡུལ་སྡེ་བདུན་པ་དེ་ཡིན་ཏེ། མཁས་པ་ལྡེའུའི་ཆོས་འབྱུང་ནང་འཁོད་པའི་རུ་ལག་གི་ཡུལ་དཔོན་ཚན་བཅུ་དྲུག་གི་ཡུལ་སྡེའི་ནང་དུ་ནི་ཚུད་མེད་དོ།"@bo .
+}

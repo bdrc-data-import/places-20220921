@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN40 {
+    bda:G3CN40  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN40 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "63/G3CN40.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN40 ;
+        adm:logEntry        bda:LG05E05B93F56A50F9 , bda:LG0BF85B4AD395A61E , bda:LG15769035B8FC36F1 , bda:LGAAB6FF366D615878 , bda:LGC57EF6E9D1978B1D , bda:LGEF3929EC313F2D0E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG05E05B93F56A50F9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-06T11:34:12.005Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0BF85B4AD395A61E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-07T15:22:06.929Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG15769035B8FC36F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-07T10:12:32.078Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAAB6FF366D615878
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-27T16:23:20.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC57EF6E9D1978B1D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-30T10:04:58.082Z"^^xsd:dateTime ;
+        adm:logMessage      "added wylie in note for place names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEF3929EC313F2D0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-30T09:56:54.393Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN40  a           :Place ;
+        skos:altLabel       "mtsho skor ru sde/"@bo-x-ewts , "mtsho sngon phyogs kha brgyad/"@bo-x-ewts ;
+        skos:prefLabel      "mtsho skor bod sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT27649879F5E19BEA , bdr:NT59D7111329C90655 ;
+        :placeContains      bdr:G1149 , bdr:G2DB25459 , bdr:G2DB5090 , bdr:G3004 ;
+        :placeLocatedIn     bdr:G1202 ;
+        :placeType          bdr:PT0081 .
+    
+    bdr:NT27649879F5E19BEA
+        a                   :Note ;
+        :contentLocationStatement  "p. 14-22" ;
+        :noteSource         bdr:MW2DB5088 ;
+        :noteText           "རུ་སྔན་(ru sngan) དང་། བོང་སྟག(bong stag)  བདུད་ཤུལ།(bdud shul)  རྐང་ཚ།(rkang tsha)  བདའ་ཚང་(bda' tshang) ། སྒོ་མེ།(sgo me)  ཆོས་ཚྭ་(chos tsha) སོགས་མཚོ་སྐོར་བོད་སྡེ་རྣམས་མེན་རྒྱལ་རབས་(ming chao)སྐབས་སུ་ཤར་སོག་(shar sog)གིས་བདའ་འདེད་བྱས་ནས་རྨ་ཆུའི་ལྷོ་ཕྱོགས་སུ་གནས་སྤོས་པ་དང་། ཡང་ཆིང་(qing chao)གི་སྐབས་སུ་རྨ་ཆུའི་ཆུའི་བྱང་ཕྱོགས་སུ་གྱེས་ཚུལ་སོགས་འཁོད།"@en .
+    
+    bdr:NT59D7111329C90655
+        a                   :Note ;
+        :contentLocationStatement  "p. 32-33" ;
+        :noteSource         bdr:MW2DB25451 ;
+        :noteText           "བདུད་ཤུལ་འཁྱོམས་བཟའ་('khyoms bza')སོགས་མཚོ་སྔོན་ཕྱོགས་ཁ་བརྒྱད་རྒྱ་དང་སོག་པོས་རྨ་ལྷོར་བཙན་བསྐྲད་བྱས་པ་སོགས་ཀྱི་སྐོར་གསལ་བ་ལས། བདུད་ཤུལ་དང་།(bdud shul) བན་ཤུལ་།(ban shul) ཐར་ཤུལ།(thar shul) རྐང་ཚ།(rkang tsha) གཅན་ཚ།(gcan tsha) བོང་སྟག(bong stag)  གཡོན་རུ།(g.yon ru)  རུ་སྔོན་གོང་ཞོལ།(ru sngon gong zhol)  འཁྱམས་རུ།('khyams ru)  གདའ་ཚང་།(gda' tshang)  ཨ་ཚོགས།(a tshogs)  ཆུ་ཀྱ།(chu kya)  ཀྱ་ཀྱ།(kya kya)  ཀླུ་ཚང་།(klu tshang)  རྒྱ་བཟའ་(rgya bza') སོགས་སྦྲ་ནག་ཚོ་ཁག་མང་པོ་ཞིག་མཚོ་ཁྲི་ཤོར་རྒྱལ་མོའི་ཉེ་འགྲམ་ནས་རྨ་ལྷོ་(rma lho)དང་རྨ་བྱང་(rma byang)ཕྱོགས་སུ་ཡང་ནས་ཡང་དུ་སྤོས་པའི་སྐོར་གསལ།"@en .
+}

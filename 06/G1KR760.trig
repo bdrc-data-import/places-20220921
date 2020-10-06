@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR760 {
+    bda:G1KR760  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR760 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "06/G1KR760.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR760 ;
+        adm:logEntry        bda:LG349EBEFB2CC48B69 , bda:LGF0D55327838900CC , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513422205:4" ;
+        adm:place_id_lex    "513422205:4" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG349EBEFB2CC48B69
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-09T10:52:32.904Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF0D55327838900CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-08T16:39:22.231Z"^^xsd:dateTime ;
+        adm:logMessage      "added name with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVC3791C2CE2E42365
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1KR760  a          :Place ;
+        skos:altLabel       "Sulu Erche"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "su lu ri khrod/"@bo-x-ewts , "?"@zh-latn-pinyin-x-ndia ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5F0227FACAA6F814 ;
+        :isRoot             true ;
+        :note               bdr:NT9E4FCBC6AB40B2E7 , bdr:NTBDF207B27A8B6D48 ;
+        :placeEvent         bdr:EVC3791C2CE2E42365 ;
+        :placeGonpaPerEcumen  "2.05" ;
+        :placeLat           "28.28333" ;
+        :placeLocatedIn     bdr:G1712 ;
+        :placeLong          "100.65000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID5F0227FACAA6F814
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR760" .
+    
+    bdr:NT9E4FCBC6AB40B2E7
+        a                   :Note ;
+        :noteText           "missing original name in tibetan \nདགོན་མིང་དངོས་ཇི་ཡིན་གསལ་ཁ་མ་རྙེད་པས་རྒྱ་ཡིག་གི་མིང་དེ་ལས་སྒྲ་བསྒྱུར་ཙམ་ཞིག་གནས་སྐབས་ཤིག་སྟོང་ཆ་ཁ་སྐོངས་ཞུས་པ་ཙམ་མོ།"@en .
+    
+    bdr:NTBDF207B27A8B6D48
+        a                   :Note ;
+        :noteText           "5 to 6 resident lamas, over 100 non-resident lamas"@en .
+}

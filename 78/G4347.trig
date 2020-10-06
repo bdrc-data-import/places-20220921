@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4347 {
+    bda:G4347  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4347 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "78/G4347.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4347 ;
+        adm:logEntry        bda:LG2B866CF594915C75 , bda:LGD65EC320238F3ACC , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2B866CF594915C75
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD65EC320238F3ACC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-29T11:11:52.993Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV25EDB392FCB004D3
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P8972 ;
+        :onYear             "1944"^^xsd:gYear .
+    
+    bdr:G4347  a            :Place ;
+        skos:altLabel       "klu shod khyung ri thang dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "khyung ri thang dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7CF73EE8F5BC51EF ;
+        :placeEvent         bdr:EV25EDB392FCB004D3 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT7CF73EE8F5BC51EF
+        a                   :Note ;
+        :contentLocationStatement  "pp. 141-142" ;
+        :noteSource         bdr:MW21017 ;
+        :noteText           "monastery founded: 1944: works: kun mkhyen sku 'phreng lnga ba blo bzang 'jam dbyangs ye shes bstan pa'i rgyal mtshan gyi thugs dgongs ltar klu shod du phebs te khyung ri thang dgon pa btab nas dpal ldan smad rgyud grwa tshang gi srol btsugs/ 'du khang tshon rtsi dang bcas pa gsar du bzhengs shing dbang lung rjes gnang sogs kyis smin par mdzad/ dme shul dgon du gtso sku byams chen khang tshad gnyis dang/ rje'i stong sku bzhugs pa'i lha khang gser tog rgyal mtshan dang bcas gsar bzhengs gnang"@en .
+}

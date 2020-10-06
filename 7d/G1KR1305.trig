@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1305 {
+    bda:G1KR1305  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1305 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7d/G1KR1305.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1305 ;
+        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542129203:174" ;
+        adm:place_id_lex    "542129203:176" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV4323775A13957FA1
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1KR1305  a         :Place ;
+        skos:altLabel       "拉贡寺"@zh-hans , "Gangda si"@zh-latn-pinyin-x-ndia , "Lagong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "甘达寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD840D4D2EB332043 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV4323775A13957FA1 ;
+        :placeGonpaPerEcumen  "7.88" ;
+        :placeLat           "29.05000" ;
+        :placeLocatedIn     bdr:G2179 ;
+        :placeLong          "98.60000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD840D4D2EB332043
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1305" .
+}

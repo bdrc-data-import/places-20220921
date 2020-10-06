@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1959 {
+    bda:G1959  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1959 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ac/G1959.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1959 ;
+        adm:logEntry        bda:LG2F754F785722038A , bda:LG733A84EA23616C6E , bda:LG9959B4CA5B9E3099 , bda:LGE73F2EEC8298C67E , bda:LGEFB13D130901449B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2F754F785722038A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-18T14:58:36.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG733A84EA23616C6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-30T16:35:25.009Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9959B4CA5B9E3099
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-19T11:17:14.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE73F2EEC8298C67E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEFB13D130901449B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-07T11:15:43.389Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type from \"chus\" to \"chu bo\" added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1959  a            :Place ;
+        skos:altLabel       "长江"@zh-hans , "chang jiang"@zh-latn-pinyin-x-ndia , "jinsha jiang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'bri chu/"@bo-x-ewts , "金沙江"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT6D68B900FFDD57E7 ;
+        :placeLocatedIn     bdr:G1326 , bdr:G2324 , bdr:G3196 ;
+        :placeType          bdr:PT0065 .
+    
+    bdr:NT6D68B900FFDD57E7
+        a                   :Note ;
+        :noteSource         bdr:MW20160 ;
+        :noteText           "subject of this book is the two rivers, 'bri chu and rma chu, and chinese nationalities settlement"@en .
+}

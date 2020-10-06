@@ -1,0 +1,113 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD95993 {
+    bda:G1PD95993  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD95993 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "76/G1PD95993.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD95993 ;
+        adm:logEntry        bda:LG1F3E3254EF9AABDD , bda:LG2FBAE8CCA4638F33 , bda:LG4EEDA815119AC535 , bda:LG8CB7A40882B405CF , bda:LGAEBA463C50F9AA87 , bda:LGCD4366F093FF09B2 , bda:LGCFCB63EB2EB62EC4 , bda:LGFD657CB000498E0D , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632122205:31" ;
+        adm:place_id_lex    "632122205:373" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1F3E3254EF9AABDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T11:52:00.884Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG2FBAE8CCA4638F33
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-16T15:24:25.704Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG4EEDA815119AC535
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-16T16:19:49.134Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG8CB7A40882B405CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-24T16:09:17.396Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGAEBA463C50F9AA87
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-24T15:45:51.606Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCD4366F093FF09B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T12:28:22.848Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGCFCB63EB2EB62EC4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-11-23T14:54:57.39Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGFD657CB000498E0D
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-16T16:00:42.599Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1C2636277CA44DC2
+        a                   :PlaceFounded ;
+        :onYear             "1874"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1PD95993  a        :Place ;
+        skos:altLabel       "光角寺"@zh-hans , "guangjiao si"@zh-latn-pinyin-x-ndia , "guang jiao si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "kong jo zi/"@bo-x-ewts , "光角寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE493D5F6E6C92DD6 ;
+        :isRoot             true ;
+        :note               bdr:NT5EED868E5551346B ;
+        :placeEvent         bdr:EV1C2636277CA44DC2 ;
+        :placeGonpaPerEcumen  "21.73" ;
+        :placeLat           "36.18186" ;
+        :placeLocatedIn     bdr:G1PD95976 ;
+        :placeLong          "102.82070" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE493D5F6E6C92DD6
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD95993" .
+    
+    bdr:NT5EED868E5551346B
+        a                   :Note ;
+        :contentLocationStatement  "p. 23" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་1874ལོར་བཏབ། དགའ་ལྡན་གནས་བཅུ་འཕེལ་རྒྱས་གླིང་གི་དགོན་ལག་ཡིན། 1958ལོར་གཏོར་ནས་ད་ལྟ་བསྐྱར་གསོ་བྱས་མེད་ཅེས་འཁོད།"@bo .
+}

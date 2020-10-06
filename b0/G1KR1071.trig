@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1071 {
+    bda:G1KR1071  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1071 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b0/G1KR1071.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1071 ;
+        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542122209:347" ;
+        adm:place_id_lex    "542122209:347" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV7EA4C2A8F2A18562
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1KR1071  a         :Place ;
+        skos:altLabel       "格普寺"@zh-hans , "Genpu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "根普寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID30AEB2C070F7A467 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV7EA4C2A8F2A18562 ;
+        :placeGonpaPerEcumen  "2.67" ;
+        :placeLat           "31.13333" ;
+        :placeLocatedIn     bdr:G2376 ;
+        :placeLong          "98.40000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID30AEB2C070F7A467
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1071" .
+}

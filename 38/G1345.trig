@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1345 {
+    bda:G1345  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1345 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "38/G1345.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1345 ;
+        adm:logEntry        bda:LG30CE61787D8DF45D , bda:LG6F422059272F9D47 , bda:LGD2E2EB35E91D35B2 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG30CE61787D8DF45D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-14T11:06:34.966Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6F422059272F9D47
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD2E2EB35E91D35B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-28T15:47:53.185Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1345  a            :Place ;
+        skos:altLabel       "dbu ru lo nang /"@bo-x-ewts ;
+        skos:prefLabel      "lo nang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2011 ;
+        :placeType          bdr:PT0083 .
+}

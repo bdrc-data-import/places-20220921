@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3447 {
+    bda:G3447  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3447 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "c7/G3447.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3447 ;
+        adm:logEntry        bda:LG2282FB6A87A0C5D9 , bda:LGCF7B2EB4DA642C20 , bda:LGF96DD2437F76B7A2 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540126203:540126110" ;
+        adm:place_id_lex    "540126203:540126110" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2282FB6A87A0C5D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGCF7B2EB4DA642C20
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-27T15:51:32.869Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF96DD2437F76B7A2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV3CC98930A9490C4A
+        a                   :PlaceConverted ;
+        :onYear             "1750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVF7CF67991FE52E6B
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:EVFF09D9D00CF04D87
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P4090 ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:G3447  a            :Place ;
+        skos:altLabel       "qiongcang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "khyung tshang dgon/"@bo-x-ewts , "Khyungtsang"@en-x-mixed , "琼仓寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID218D87D7AA9DC64B ;
+        :isRoot             true ;
+        :note               bdr:NT5A183E219CD75B18 , bdr:NT659D343D5E9D5CFE ;
+        :placeEvent         bdr:EV3CC98930A9490C4A , bdr:EVF7CF67991FE52E6B , bdr:EVFF09D9D00CF04D87 ;
+        :placeGonpaPerEcumen  "8.75" ;
+        :placeLat           "29.92955" ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3374 ;
+        :placeLong          "91.58846" ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:ID218D87D7AA9DC64B
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3447" .
+    
+    bdr:NT5A183E219CD75B18
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 247-248" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT659D343D5E9D5CFE
+        a                   :Note ;
+        :contentLocationStatement  "p. 127" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "gelug nunnery located in lo phu shang of stag rtse rdzong.\nfounded by rdo ring paNDi ta.\nowned and administered by lo dgon pa\nin 1959 had about 40 nuns.\nrestored, currently with 12 nuns."@en .
+}

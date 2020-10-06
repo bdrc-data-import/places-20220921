@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3284 {
+    bda:G3284  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3284 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "43/G3284.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3284 ;
+        adm:logEntry        bda:LG49DF2E1D52C39516 , bda:LG800D75BEA5E19FAC , bda:LGE4ADC2566CC23606 , bda:LGF93B6B9BAA4C8CA4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG49DF2E1D52C39516
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-22T15:39:26.74Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG800D75BEA5E19FAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-26T10:02:44.953Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE4ADC2566CC23606
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF93B6B9BAA4C8CA4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G3284  a            :Place ;
+        skos:altLabel       "theg mchog gling /"@bo-x-ewts ;
+        skos:prefLabel      "snye mo theg mchog gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5927A9352B61EC3D , bdr:NT9DA025BF41677EE7 ;
+        :placeLocatedIn     bdr:G2129 , bdr:G3283 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NT5927A9352B61EC3D
+        a                   :Note ;
+        :contentLocationStatement  "p. 326" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "restored nyingmapa nunnery with about 22 nuns in kha ru shang of snye mo rdzong"@en .
+    
+    bdr:NT9DA025BF41677EE7
+        a                   :Note ;
+        :contentLocationStatement  "p. 44" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "monastery in kha ru shang, snye mo rdzong; founder, date of foundation, and sectarian affilation unknown; number of monks unknown"@en .
+}

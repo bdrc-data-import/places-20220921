@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4465 {
+    bda:G4465  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4465 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "5f/G4465.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4465 ;
+        adm:logEntry        bda:LG34353C9014064766 , bda:LG43CAB43524228D01 , bda:LG67FD96DF0F03CA2C , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221200:542221122" ;
+        adm:place_id_lex    "542221200:542221122" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG34353C9014064766
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG43CAB43524228D01
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:18:32.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG67FD96DF0F03CA2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-11T14:20:27.801Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag gi ngo sprod"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5071E9C0DC8A4403
+        a                   :PlaceFounded ;
+        :onYear             "0750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:EVCA5BD1F1A543CD9F
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G4465  a            :Place ;
+        skos:altLabel       "'on ke ru kha khang /"@bo-x-ewts , "brag dmar ke ru lha khang /"@bo-x-ewts , "Keru"@bo-x-phon-en , "扎玛尔吉如拉康"@zh-hans , "Keru"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ke ru lha khang /"@bo-x-ewts , "吉如拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFEDD8F782FD197D6 ;
+        :isRoot             true ;
+        :note               bdr:NTEAF6D715143D6D92 , bdr:NTFCD40F724615E738 ;
+        :placeEvent         bdr:EV5071E9C0DC8A4403 , bdr:EVCA5BD1F1A543CD9F ;
+        :placeGonpaPerEcumen  "15.1" ;
+        :placeLat           "29.38809" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.83705" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:IDFEDD8F782FD197D6
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4465" .
+    
+    bdr:NTEAF6D715143D6D92
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 61-62" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "ལྷ་ཁང་དེ་ནི་ཐོག་མར་ཆོས་རྒྱལ་ཁྲི་ལྡེ་གཙུག་བཙན་གྱིས་བཞེངས་གནང་མཛད། དེ་རྗེས་ཇོ་བོ་རྗེ་དེར་ཕེབས་ནས་ཤངས་ཁྲག་གིས་འདྲ་སྐུ་ཞིག་བཞེངས་གནང་བ་དང་། ཇོ་བོ་ཡང་གྱང་ལ་ཐིམ་སར་མཆོད་རྟེན་ཆུང་ངུ་ཞིག་མཇལ་རྒྱུ་ཡོད་པ་ལ་མཆོད་རྟེན་དཀར་ཆུང་ལྷ་ཁང་ཞེས་ཟེར། སྔོན་འདུ་ཁང་ནང་སྟོན་པ་གཙོ་འཁོར་ཉེ་སྲས་བརྒྱད་ཐོག་བརྩེགས་གཉིས་ལྡན་གྱི་འཇིམ་སྐུ་དང་། དགེ་འདུན་ཞལ་གྲངས་སུམ་ཅུ་སྐོར་ཡོད། དགོན་དེ་རྡོ་རྗེ་བྲག་གི་ཁོངས་ཡིན་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NTFCD40F724615E738
+        a                   :Note ;
+        :contentLocationStatement  "p. 130" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "temple located in ke ru grong tsho of skyer pa shang of sne gdong rdzong said to have been built by khri lde gtsug brtan; there are located here statues of the btsan po and rgya bza'; later atisa visited here (dus phyis jo bo rje yang ke ru lha khang du zla 'khor gcig tsam bzugs lugs 'khod pa'ang yod). the ke ru lha khang is located about 18 km to the northwest of rtsed thang"@en .
+}

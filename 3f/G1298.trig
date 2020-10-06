@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1298 {
+    bda:G1298  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1298 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3f/G1298.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1298 ;
+        adm:logEntry        bda:LGC8104B77D2B4571C , bda:LGF69AF3A1EAD060A0 , bda:LGF81E54598620C2F4 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LGC8104B77D2B4571C
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-09-16T12:04:23.616Z"^^xsd:dateTime ;
+        adm:logMessage      "checkout for analysis of place"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF69AF3A1EAD060A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-12T14:55:25.536Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF81E54598620C2F4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1298  a            :Place ;
+        skos:prefLabel      "mdo smad Byang rgyud Rwa lo Thang in the lineage of his predecessor"@en ;
+        :isRoot             true ;
+        :placeType          bdr:PT0078 .
+}

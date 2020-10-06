@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1030 {
+    bda:G1KR1030  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1030 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "b6/G1KR1030.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1030 ;
+        adm:logEntry        bda:LG0A48DC23E63FA166 , bda:LG3B22D0C1BFFB87DC , bda:LGB5DD56F439B08BD9 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542122203:379" ;
+        adm:place_id_lex    "542122203:379" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A48DC23E63FA166
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-16T13:58:14.105Z"^^xsd:dateTime ;
+        adm:logMessage      "update list of names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3B22D0C1BFFB87DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-16T13:11:59.846Z"^^xsd:dateTime ;
+        adm:logMessage      "added tibetan name & event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB5DD56F439B08BD9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-30T11:33:03.175Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese name & GIs coords & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVCDCA4111CB5ECFE8
+        a                   :PlaceFounded ;
+        :onYear             "1180"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1030  a         :Place ;
+        skos:altLabel       "达斯贡巴"@zh-hans , "达益寺"@zh-hans , "dasi gongba"@zh-latn-pinyin-x-ndia , "dayi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "stag gzhi dgon/"@bo-x-ewts , "达依寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID24AD270868771213 ;
+        :isRoot             true ;
+        :note               bdr:NTBECA55CD077CA197 , bdr:NTCB87814DC6295468 ;
+        :placeEvent         bdr:EVCDCA4111CB5ECFE8 ;
+        :placeGonpaPerEcumen  "13.25" ;
+        :placeLat           "32.050716" ;
+        :placeLocatedIn     bdr:G2376 ;
+        :placeLong          "98.393227" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID24AD270868771213
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1030" .
+    
+    bdr:NTBECA55CD077CA197
+        a                   :Note ;
+        :contentLocationStatement  "p. 203" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "དབོན་པོ་སྟོད་ཤང་ཁ་སྲུབ་གྲོང་ཚོར་གནས། ༡༡༨༠ལོར་བཏབ། བོན་དགོན་རྙིང་ཁོངས་ཤིག་ཡིན་ཚུལ་སོགས་གསལ།"@bo .
+    
+    bdr:NTCB87814DC6295468
+        a                   :Note ;
+        :noteText           "2 lamas -  30 monks"@en .
+}

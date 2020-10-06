@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN235 {
+    bda:G3CN235  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN235 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "27/G3CN235.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN235 ;
+        adm:logEntry        bda:LG3D75944DB676FB95 , bda:LG838A84DC98F1891E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3D75944DB676FB95
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-05-27T15:00:26.082Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG838A84DC98F1891E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-27T16:21:49.506Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN235  a          :Place ;
+        skos:altLabel       "mdo kams ldong tsha chen bco brgyad/"@bo-x-ewts ;
+        skos:prefLabel      "ldong tsha chen bco brgyad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT32918C44DA3C90BC ;
+        :placeContains      bdr:G1149 ;
+        :placeLocatedIn     bdr:G1068 ;
+        :placeType          bdr:PT0068 .
+    
+    bdr:NT32918C44DA3C90BC
+        a                   :Note ;
+        :contentLocationStatement  "p. 249" ;
+        :noteSource         bdr:MW2DB16422 ;
+        :noteText           "ldong tsha chen bco brgyad du grags pa ni/\n1, tog tsha/\n2, rmog tsha/\n3, 'go tsha/\n4, phyag tsha/\n5, khrom tsha/\n6, dmu tsha/\n7, rkang tsha/\n8, zam tsha/\n9, 'tsham tsha/\n10, rag tsha/\n11, hur tsha/\n12, stag tsha/\n13, gzi tsha/\n14, rbu tsha/\n15, smug tsha/\n16, g.yi tsha/\n17, mtshur tsha/\n18, rkyang tsha'am tshab tsha rmas yin pa gsal/"@bo-x-ewts .
+}

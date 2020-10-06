@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G952 {
+    bda:G952  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G952 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b5/G952.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G952 ;
+        adm:logEntry        bda:LG25025393AA9F4C72 , bda:LG78E8A31B7175ABD7 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542127200:94" ;
+        adm:place_id_lex    "542127200:94" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG25025393AA9F4C72
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG78E8A31B7175ABD7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-16T14:19:35.74Z"^^xsd:dateTime ;
+        adm:logMessage      "clenup location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5D4C44712CB4F2A8
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G952  a             :Place ;
+        skos:altLabel       "dpa' shod dgon/"@bo-x-ewts , "同卡寺/循努巴雪桑珠林"@zh-hans , "Basu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpa' shod dgon/"@bo-x-ewts , "八宿寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF6FA99F77792A133 ;
+        :isRoot             true ;
+        :note               bdr:NTC6C712AAF3805D0B ;
+        :placeEvent         bdr:EV5D4C44712CB4F2A8 ;
+        :placeGonpaPerEcumen  "4.49" ;
+        :placeLat           "30.55000" ;
+        :placeLocatedIn     bdr:G2181 ;
+        :placeLong          "96.63333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF6FA99F77792A133
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G952" .
+    
+    bdr:NTC6C712AAF3805D0B
+        a                   :Note ;
+        :noteText           "dge lugs monastery in the dpa' shod rdzong of the chab mdo prefecture of the tibetan autonomous region\nsaid to have been build in 1473"@en .
+}

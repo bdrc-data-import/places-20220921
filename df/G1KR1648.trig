@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1648 {
+    bda:G1KR1648  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1648 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "df/G1KR1648.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1648 ;
+        adm:logEntry        bda:LG0947DFDE9E5DF997 , bda:LG17676AC52CB99E24 , bda:LG41ABEC76119669A6 , bda:LGEE6B55AB686B4F66 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542336204:542336104" ;
+        adm:place_id_lex    "542336204:542336104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0947DFDE9E5DF997
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-06T15:46:18.443Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG17676AC52CB99E24
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-06T15:55:20.528Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG41ABEC76119669A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-26T16:12:35.906Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note from G4167(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEE6B55AB686B4F66
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-06T15:49:49.628Z"^^xsd:dateTime ;
+        adm:logMessage      "moved note from G3114(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVB301AB7B30671B58
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBodong .
+    
+    bdr:G1KR1648  a         :Place ;
+        skos:altLabel       "bde chen dpal mo chos lding /"@bo-x-ewts , "dpal mo chos lding /"@bo-x-ewts , "dpal mo chos sdings/"@bo-x-ewts , "pad+ma chos gling dgon/"@bo-x-ewts , "spo rong bde chen dpal mo chos sdings/"@bo-x-ewts , "Padma Choling"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "pad ma chos gling /"@bo-x-ewts , "Padma Choling"@en-x-mixed , "白玛曲林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID993965AEBE92FF44 ;
+        :isRoot             true ;
+        :note               bdr:NT3D73B32AA7BB22AA , bdr:NTC579DBBB80F89166 ;
+        :placeEvent         bdr:EVB301AB7B30671B58 ;
+        :placeGonpaPerEcumen  "0.72" ;
+        :placeLat           "28.85000" ;
+        :placeLocatedIn     bdr:G2163 , bdr:G3106 ;
+        :placeLong          "85.73333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID993965AEBE92FF44
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1648" .
+    
+    bdr:NT3D73B32AA7BB22AA
+        a                   :Note ;
+        :contentLocationStatement  "note moved from G3114(dup.)" ;
+        :noteText           "monastery in the spo rong area of southwestern tibet"@en .
+    
+    bdr:NTC579DBBB80F89166
+        a                   :Note ;
+        :contentLocationStatement  "note moved from G4167(dup.)" ;
+        :noteText           "monastery of the bo dong tradition in western tibet\n \t\nmonastic institution that preserved the bo dong lineage (mkhyen brtse gdan rabs p. 510)"@en .
+}

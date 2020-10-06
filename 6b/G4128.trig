@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4128 {
+    bda:G4128  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4128 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6b/G4128.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4128 ;
+        adm:logEntry        bda:LGC9D33F72C2158E38 , bda:LGCCA999275A41F6C5 , bda:LGD9E78FFF38FA7915 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC9D33F72C2158E38
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-01T14:44:12.849Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCCA999275A41F6C5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD9E78FFF38FA7915
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T10:47:07.801Z"^^xsd:dateTime ;
+        adm:logMessage      "arrange dnames"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVD13B5B0EF7DFB308
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G4128  a            :Place ;
+        skos:prefLabel      "sman chu lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB19ADF0584710563 ;
+        :placeEvent         bdr:EVD13B5B0EF7DFB308 ;
+        :placeLocatedIn     bdr:G2309 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NTB19ADF0584710563
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 658-659" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "ris med temple in lcags zam rdzong"@en .
+}

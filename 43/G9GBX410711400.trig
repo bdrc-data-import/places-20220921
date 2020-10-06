@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX410711400 {
+    bda:G9GBX410711400
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX410711400 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "43/G9GBX410711400.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX410711400 ;
+        adm:logEntry        bda:LGE09C25C4C35C192B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGE09C25C4C35C192B
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX410711400
+        a                   :Place ;
+        skos:altLabel       "xin xiang hua xue yu wu li dian yuan chan ye yuan qu guan li wei yuan hui"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Xinxiang Chemical and Physical Power Industrial Park Management Committee"@en , "新乡化学与物理电源产业园区管理委员会"@zh-hans ;
+        :isRoot             true ;
+        :placeGB2260-2013   "410711400" ;
+        :placeLocatedIn     bdr:G9GBX410711000 ;
+        :placeType          bdr:PT0077 .
+}

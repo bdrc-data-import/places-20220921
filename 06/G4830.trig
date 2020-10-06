@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4830 {
+    bda:G4830  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4830 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "06/G4830.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4830 ;
+        adm:logEntry        bda:LG0EEA0D2ADFC430B3 , bda:LG52C78C87F65E8DFF , bda:LG553BA205D46DE62F , bda:LGA15DA2028BF95BA5 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623027201:623027143" ;
+        adm:place_id_lex    "623027201:623027143" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0EEA0D2ADFC430B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG52C78C87F65E8DFF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-07T10:33:04.914Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG553BA205D46DE62F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-07T09:18:11.401Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA15DA2028BF95BA5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVD98BF6170AAFB6C8
+        a                   :PlaceFounded ;
+        :onYear             "1925"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4830  a            :Place ;
+        skos:altLabel       "宏仓俄觉姆格尔"@zh-hans , "hongcang'e juemu ge'er"@zh-latn-pinyin-x-ndia , "hongcang'e nigu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpon tshang ngo jo mo'i sgar/"@bo-x-ewts , "宏仓俄尼姑寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID43572CFDACE05887 ;
+        :isRoot             true ;
+        :note               bdr:NTA30FF03AB11ED7AB ;
+        :placeEvent         bdr:EVD98BF6170AAFB6C8 ;
+        :placeGonpaPerEcumen  "13.34" ;
+        :placeLat           "35.16715" ;
+        :placeLocatedIn     bdr:G2396 ;
+        :placeLong          "102.59704" ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:ID43572CFDACE05887
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4830" .
+    
+    bdr:NTA30FF03AB11ED7AB
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 69" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "nunnery in the kan lho autonomous tibetan prefecture"@en .
+}

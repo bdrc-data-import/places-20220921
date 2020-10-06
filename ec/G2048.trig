@@ -1,0 +1,107 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2048 {
+    bda:G2048  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2048 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "ec/G2048.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2048 ;
+        adm:logEntry        bda:LG548D70C10650B70D , bda:LG83DF3A251B071D98 , bda:LGA250B9B1F45979AE , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540127205:540127114" ;
+        adm:place_id_lex    "540127205:540127114" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG548D70C10650B70D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG83DF3A251B071D98
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:50:37.565Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGA250B9B1F45979AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-25T15:06:26.307Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged name & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8BB36E400344224B
+        a                   :PlaceConverted ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVC3CE37FD5D589B7C
+        a                   :PlaceFounded ;
+        :onYear             "1250"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionTsalpaKagyu .
+    
+    bdr:G2048  a            :Place ;
+        skos:altLabel       "Ruthok"@en-x-mixed , "日多贡巴"@zh-hans , "riduo gongba"@zh-latn-pinyin-x-ndia , "riduo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ru thog dgon/"@bo-x-ewts , "Rutok Gon"@en , "日多寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID558A239785C4702F ;
+        :isRoot             true ;
+        :note               bdr:NT2DFDEE602657D849 , bdr:NT454BDBA832D79B5B , bdr:NT477E5577B399A61F , bdr:NT71391D8F7F57CB90 ;
+        :placeEvent         bdr:EV8BB36E400344224B , bdr:EVC3CE37FD5D589B7C ;
+        :placeGonpaPerEcumen  "1.37" ;
+        :placeLat           "29.71194" ;
+        :placeLocatedIn     bdr:G2014 , bdr:G2032 ;
+        :placeLong          "92.15658" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID558A239785C4702F
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2048" .
+    
+    bdr:NT2DFDEE602657D849
+        a                   :Note ;
+        :contentLocationStatement  "p. 40" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa monastery in ru thog zhang and owned by the dga' ldan byang rtse grwa tshang\nfounded in 1381 by bla ma bde pa gzhon nu\nhad 50 monks in 1959\nrestored"@en .
+    
+    bdr:NT454BDBA832D79B5B
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 221" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT477E5577B399A61F
+        a                   :Note ;
+        :contentLocationStatement  "p. 118" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "one of the ten affiliated monasteries belonging to se ra byes college and to which religious teachers and administrators were sent\nthe sources are at variance: who owns?"@en .
+    
+    bdr:NT71391D8F7F57CB90
+        a                   :Note ;
+        :contentLocationStatement  "p. 1617" ;
+        :noteSource         bdr:MW19801 ;
+        :noteText           "according to this scource the monastery was founded by ru thog pa chen po, a practitioner of the mahamudra\nit was from this monastery that his name comes"@en .
+}

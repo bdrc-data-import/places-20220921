@@ -1,0 +1,135 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4681 {
+    bda:G4681  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4681 ;
+        adm:facetIndex      18 ;
+        adm:gitPath         "eb/G4681.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4681 ;
+        adm:logEntry        bda:LG18E7192A24153F12 , bda:LG59F348B0F675489E , bda:LGB7E81B6FAD0AF1AA , bda:LGB992F4AF9D952F2D , bda:LGCE6132E3B4B590AE , bda:LGD18D4F3F81A71141 , bda:LGE4471B1D3A765C19 , bda:LGEBD36202817475CF , bda:LGFC1AA770C03298E6 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632128206:238" ;
+        adm:place_id_lex    "632128206:13" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18E7192A24153F12
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-11T15:24:57.975Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG59F348B0F675489E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB7E81B6FAD0AF1AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-11T16:42:08.056Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB992F4AF9D952F2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-15T12:35:07.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings & arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCE6132E3B4B590AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-11T14:08:08.843Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD18D4F3F81A71141
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-18T14:35:39.43Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE4471B1D3A765C19
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-11T14:10:58.987Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEBD36202817475CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-22T10:38:18.685Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGFC1AA770C03298E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-18T14:38:37.945Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV728EFAD8B6EEA82E
+        a                   :PlaceConverted ;
+        :notAfter           "1399"^^xsd:gYear ;
+        :notBefore          "1300"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EVCF24CE11FD530578
+        a                   :PlaceFounded ;
+        :onYear             "1200"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EVD31923337EA88FE7
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P8LS13436 ;
+        :onYear             "1402"^^xsd:gYear .
+    
+    bdr:EVEAA25AA8411B0CAB
+        a                   :PlaceConverted ;
+        :onYear             "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4681  a            :Place ;
+        skos:altLabel       "bis mdo dgon chen bkra shis thos bsam chos 'khor gling /"@bo-x-ewts , "bkra shis thos bsam chos 'khor gling /"@bo-x-ewts , "边垛寺"@zh-hans , "边都寺"@zh-hans , "bianduo si"@zh-latn-pinyin-x-ndia , "biandu si"@zh-latn-pinyin-x-ndia , "wendu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bis mdo dgon chen/"@bo-x-ewts , "Bindo"@en-x-mixed , "文都寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3A2B6F0EC1E72BC4 ;
+        :isRoot             true ;
+        :note               bdr:NT417AE8A273C639F7 ;
+        :placeEvent         bdr:EV728EFAD8B6EEA82E , bdr:EVCF24CE11FD530578 , bdr:EVD31923337EA88FE7 , bdr:EVEAA25AA8411B0CAB ;
+        :placeGonpaPerEcumen  "34.11" ;
+        :placeLat           "35.72813" ;
+        :placeLocatedIn     bdr:G1734 , bdr:G1PD96275 ;
+        :placeLong          "102.34092" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID3A2B6F0EC1E72BC4
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4681" .
+    
+    bdr:NT417AE8A273C639F7
+        a                   :Note ;
+        :contentLocationStatement  "p. 116" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "major dge lugs pa monastery in a mdo"@en .
+}

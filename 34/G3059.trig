@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3059 {
+    bda:G3059  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3059 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "34/G3059.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3059 ;
+        adm:logEntry        bda:LG3FD8899010AFE62F , bda:LG4E04F532233CE895 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3FD8899010AFE62F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T11:01:17.477Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4E04F532233CE895
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4843BBFA6AD38DD6
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P7703 ;
+        :notAfter           "0999"^^xsd:gYear ;
+        :notBefore          "0900"^^xsd:gYear .
+    
+    bdr:G3059  a            :Place ;
+        skos:altLabel       "brag so dgon/"@bo-x-ewts , "brag sog dgon/"@bo-x-ewts , "dga' ldan la zhol/"@bo-x-ewts ;
+        skos:prefLabel      "cha phu brag sog dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4E4E4EA236494738 , bdr:NTFE64BB352A953D08 ;
+        :placeEvent         bdr:EV4843BBFA6AD38DD6 ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3370 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT4E4E4EA236494738
+        a                   :Note ;
+        :contentLocationStatement  "p. 109" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "gelug monastery founded by shAkya dbang phyug, a disciple of klu mes\nlocated in gtsang tog shang\nmonastery was the seat of the successive brag seb sprul sku\nhad about 40 monks according to the census of monasteries of dbus\nin 1959 the population had declined to 30"@en .
+    
+    bdr:NTFE64BB352A953D08
+        a                   :Note ;
+        :contentLocationStatement  "p. 52" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "dge lugs pa monastery located in cha grong tsho, gtsang rtogs shang, stag rtse rdzong, lha sa prefecture\nfounded by shAkya dbang phyug, a student of klu mes, in the 900s\nhead of the monastery is brag sog sprul sku\nhad 30 monks"@en .
+}

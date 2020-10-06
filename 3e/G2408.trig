@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2408 {
+    bda:G2408  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2408 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3e/G2408.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2408 ;
+        adm:logEntry        bda:LG3E401FF234BB5719 , bda:LGC9A58AAE27EE39D5 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3E401FF234BB5719
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-04T09:01:30.128Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC9A58AAE27EE39D5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2408  a            :Place ;
+        skos:prefLabel      "bud nub dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE5757D31019C6E3A ;
+        :placeLocatedIn     bdr:G2128 , bdr:G2406 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTE5757D31019C6E3A
+        a                   :Note ;
+        :contentLocationStatement  "p. 31" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "mixed sa skya rnying ma pa nunnery located in rkyang steng grong tsho of tsha rag shang, chu shur rdzong, lha sa sa khul\nfounded by phag mo gru pa in the 12th cent.\nchief patron (dgon bdag) the thon pa family\nin 1959 this nunnery had 12 nuns"@en .
+}

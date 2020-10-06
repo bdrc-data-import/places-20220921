@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2518 {
+    bda:G2518  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2518 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "88/G2518.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2518 ;
+        adm:logEntry        bda:LGDE34F05DCB9BAE4B , bda:LGEC270C6A63733D78 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGDE34F05DCB9BAE4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-07T17:52:21.233Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEC270C6A63733D78
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2518  a            :Place ;
+        skos:altLabel       "spo bo chu mdo dgon khag lnga /"@bo-x-ewts ;
+        skos:prefLabel      "chu mdo dgon khag lnga /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT22702882DD4E5DE2 , bdr:NT879C0ECA30CBDD22 ;
+        :placeContains      bdr:G1KR1882 , bdr:G1KR1885 , bdr:G2903 , bdr:G2904 , bdr:G2905 ;
+        :placeLocatedIn     bdr:G2947 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT22702882DD4E5DE2
+        a                   :Note ;
+        :contentLocationStatement  "p. 72, 118" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "one of the ten affiliated monasteries belonging to se ra byes college and to which religious teachers and administrators were sent\nthe first of the gdan rabs of the monastery of chu mdo byams pa gling was bas so chos kyi rgyal mtshan"@en .
+    
+    bdr:NT879C0ECA30CBDD22
+        a                   :Note ;
+        :contentLocationStatement  "p. 72, 125" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "chu mdo dgon is a dge lugs pa monastery in chu mdo chus, spo bo rdzong"@en .
+}

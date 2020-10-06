@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G330 {
+    bda:G330  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G330 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "52/G330.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G330 ;
+        adm:logEntry        bda:LG093FF00CFC8E7210 , bda:LGDCBDFB482F7D92BD , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540126202:540126101" ;
+        adm:place_id_lex    "540126202:540126101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG093FF00CFC8E7210
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-22T16:01:42.134Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDCBDFB482F7D92BD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV3E00D3C49E4E3538
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1591 ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:EV9DE22C75AA61DB68
+        a                   :PlaceFounded ;
+        :onYear             "1550"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G330  a             :Place ;
+        skos:altLabel       "zunmucai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "btsun mo tshal dgon/"@bo-x-ewts , "Tsunmotsal"@en-x-mixed , "尊木采寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7346B48424D56F0F ;
+        :isRoot             true ;
+        :note               bdr:NT4073CD203E746E0D , bdr:NT60964ED574225F17 , bdr:NT67E8AF404C05A96B ;
+        :placeEvent         bdr:EV3E00D3C49E4E3538 , bdr:EV9DE22C75AA61DB68 ;
+        :placeGonpaPerEcumen  "21.44" ;
+        :placeLat           "29.78221" ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3370 ;
+        :placeLong          "91.60656" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID7346B48424D56F0F
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G330" .
+    
+    bdr:NT4073CD203E746E0D
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 230-231" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT60964ED574225F17
+        a                   :Note ;
+        :contentLocationStatement  "p. 121" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "ancient site in gtsang tog shang, la mo chus, stag rtse rdzong.\nfrom 1420 a gelug establishment founded by 'dul 'dzin grags pa rgyal mtshan.\ncalled btsun mo tshal because it was the residence of the king and queens at stag rtse mda' pho brang byams pa mi 'gyur gling where srong btsan sgam po was born.\naccording to the census of religious establishments in dbus it had 49 monks.\nnow restored with a complement of 18 monks."@en .
+    
+    bdr:NT67E8AF404C05A96B
+        a                   :Note ;
+        :contentLocationStatement  "p. 52" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "dge lugs pa monastery located in la mo shang, stag rtse county, lha sa prefecture\nfounded by 'dul 'dzin grags pa rgyal mtshan in 1420\nsupported by the la mo gzhung rkyang\noriginally had 40 monks\nrestored"@en .
+}

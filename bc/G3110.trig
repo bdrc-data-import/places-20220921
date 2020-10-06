@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3110 {
+    bda:G3110  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3110 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "bc/G3110.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3110 ;
+        adm:logEntry        bda:LG0CA3359558A87239 , bda:LG63ED8A94FB15FE1D , bda:LG7BF49BC486853DA0 , bda:LG7F2C51E06FD2E2C7 , bda:LG92914DE171CD24A7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0CA3359558A87239
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-25T14:28:52.427Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG63ED8A94FB15FE1D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7BF49BC486853DA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:40:27.8Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from village to grongTsho"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7F2C51E06FD2E2C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T15:23:32.662Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG92914DE171CD24A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-05T16:09:37.804Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3110  a            :Place ;
+        skos:prefLabel      "gnya' lam tshong 'dus/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2112 ;
+        :placeType          bdr:PT0035 .
+}

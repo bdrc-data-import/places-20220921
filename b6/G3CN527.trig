@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN527 {
+    bda:G3CN527  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN527 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b6/G3CN527.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN527 ;
+        adm:logEntry        bda:LG1F25BFBAFBBAE324 , bda:LGE58A656976656BFE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1F25BFBAFBBAE324
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-29T09:56:07.668Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE58A656976656BFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-03T09:47:54.964Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV18B0353E9EA34717
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0762"^^xsd:gYear .
+    
+    bdr:EV71E5FC25AD2B74AA
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0759"^^xsd:gYear .
+    
+    bdr:G3CN527  a          :Place ;
+        skos:altLabel       "pho brang sdings/"@bo-x-ewts , "pho brang zu spug"@bo-x-ewts ;
+        skos:prefLabel      "zu spug"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT47F18F2C22D3EB43 , bdr:NTB3A381BA8000EA9E ;
+        :placeEvent         bdr:EV18B0353E9EA34717 , bdr:EV71E5FC25AD2B74AA ;
+        :placeLocatedIn     bdr:G3CN549 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NT47F18F2C22D3EB43
+        a                   :Note ;
+        :contentLocationStatement  "p. 417" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"(ས་ཕག་ ༧༥༩ )དབྱར་བཙན་པོ་ཁྲི་སྲོང་ལྡེ་བརྩན་(བཙན་)གྱི་ཕོ་བྲང་ཟུ་སྤུག་ན་བཞུགས་ཏེ་ ་་་ དགུན་བཙན་པོའི་ཕོ་བྲང་བྱར་གྱི་ལྕང་བུ་ན་བཞུགས་ཏེ་\"ཞེས་སོགས་གསལ།"@bo .
+    
+    bdr:NTB3A381BA8000EA9E
+        a                   :Note ;
+        :contentLocationStatement  "p. 417" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"(ཆུ་སྟག་ ༧༦༢ )དབྱར་བཙན་པོའི་ཕོ་བྲང་ཟུ་སྤགི་(སྤུག་གི་)། ཕོ་བྲང་སྡིངསྣ་བཞུགས་ཏེ་ ་་་ དགུན་ཕོ་བྲང་བྱར་གྱི་ལྕང་བུ་ན་བཞུགས་\"ཞེས་སོགས་ཀྱང་གསལ།"@bo .
+}

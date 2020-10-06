@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3951 {
+    bda:G3951  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3951 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "34/G3951.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3951 ;
+        adm:logEntry        bda:LG5BE4B8E03289A07E , bda:LGA3C594F74720F1A8 , bda:LGF54F19C033262E22 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5BE4B8E03289A07E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-16T11:45:51.913Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA3C594F74720F1A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-06T16:44:00.011Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF54F19C033262E22
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3951  a            :Place ;
+        skos:prefLabel      "bo rod dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT069B76884DFF6BBD , bdr:NT122F43EDFB30CB31 ;
+        :placeLocatedIn     bdr:G2301 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT069B76884DFF6BBD
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 230-233" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs monastery in ser shul rdzong"@en .
+    
+    bdr:NT122F43EDFB30CB31
+        a                   :Note ;
+        :contentLocationStatement  "p. 152" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "dge lugs monastery founded through the efforts of rab 'byams pa bstan pa dar rgyas from bkra shis lhun po; enjoyed the patronage of sde dge yid lhun lha ri dpon tshang who presented the monastery with gzhan dang mi 'dra ba'i rol mo 'dzam gling g.yas bzhag cig phul ba/ da lta'ang yod/) formerly there were more than 100 monks; now there are more than 60 monks."@en .
+}

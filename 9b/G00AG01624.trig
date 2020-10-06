@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00AG01624 {
+    bda:G00AG01624  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00AG01624 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "9b/G00AG01624.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00AG01624 ;
+        adm:logEntry        bda:LG4910302F4F96DAFB , bda:LG495E547A9FE0BCAB , bda:LGB2DF5C04989E9E63 , bda:LGBEB641F291364145 , bda:LGF8CF604FF8C2FA14 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542327101:542327101" ;
+        adm:place_id_lex    "542327101:542327101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4910302F4F96DAFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-08T15:09:53.626Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG495E547A9FE0BCAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T10:07:55.417Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB2DF5C04989E9E63
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T15:57:44.813Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & place type and info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBEB641F291364145
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T16:04:16.37Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF8CF604FF8C2FA14
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-02-08T14:56:17.121Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV182F1E0455EDAD67
+        a                   :PlaceFounded ;
+        :onYear             "0800"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:G00AG01624  a       :Place ;
+        skos:altLabel       "lha brag dgon/"@bo-x-ewts , "zang zang lha brag 'od gsal theg mchog gling /"@bo-x-ewts , "zang zang lha brag srid gsum rnam rgyal/"@bo-x-ewts , "Lhadrak"@bo-x-phon-en , "桑桑拉扎寺"@zh-hans , "Lhadrak"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zang zang lha brag dgon/"@bo-x-ewts , "拉扎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID06E74C4B95665F88 ;
+        :isRoot             true ;
+        :note               bdr:NTB2490B56A89510E5 , bdr:NTE6137D699A287A0F ;
+        :placeEvent         bdr:EV182F1E0455EDAD67 ;
+        :placeGonpaPerEcumen  "3.31" ;
+        :placeLat           "29.45000" ;
+        :placeLocatedIn     bdr:G2162 , bdr:G3CN127 ;
+        :placeLong          "86.60000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID06E74C4B95665F88
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G00AG01624" .
+    
+    bdr:NTB2490B56A89510E5
+        a                   :Note ;
+        :noteText           "An 'Eagle's Nest' site, on cliff side about 20 km west of Sangsang, and 3 km south of Tsangpo. Date from Xian Wenwuzhi"@en .
+    
+    bdr:NTE6137D699A287A0F
+        a                   :Note ;
+        :noteText           "founded by yid bzhin nor bu, the younger brother of younger brother of dbang po sde, byang bdag bkra shis stob rgyal. it is maintained by rdo rje brag"@en .
+}

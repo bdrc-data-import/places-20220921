@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3106 {
+    bda:G3106  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3106 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "a4/G3106.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3106 ;
+        adm:logEntry        bda:LG629B9BB6964B69DC , bda:LG6FCC645CC23A4E46 , bda:LG7182E451E8A1F875 , bda:LGA1CA4D55B70E3AD6 , bda:LGC73BF983C30E0A66 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG629B9BB6964B69DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T15:41:27.521Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6FCC645CC23A4E46
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-05T09:37:17.136Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7182E451E8A1F875
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T15:52:24.865Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA1CA4D55B70E3AD6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-06T15:59:07.944Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location, contains & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC73BF983C30E0A66
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3106  a            :Place ;
+        skos:prefLabel      "spo rong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5E6A6B54C6B109A1 , bdr:NTD7375BE6BD3728F0 ;
+        :placeContains      bdr:G1KR1648 , bdr:G3115 , bdr:G3116 ;
+        :placeLocatedIn     bdr:G4794 ;
+        :placeType          bdr:PT0048 .
+    
+    bdr:NT5E6A6B54C6B109A1
+        a                   :Note ;
+        :contentLocationStatement  "p. 17-18" ;
+        :noteSource         bdr:MW1KG5560 ;
+        :noteText           "འབྲོག་སྡེ་ཆེན་པོ་སྤོ་རོང་གི་ལོ་རྒྱུས་གསལ།"@bo .
+    
+    bdr:NTD7375BE6BD3728F0
+        a                   :Note ;
+        :noteText           "small region in southwestern tibet"@en .
+}

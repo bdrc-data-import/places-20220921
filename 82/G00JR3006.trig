@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00JR3006 {
+    bda:G00JR3006  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00JR3006 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "82/G00JR3006.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00JR3006 ;
+        adm:logEntry        bda:LG19674E14BB5A0AFE , bda:LG31758A35BC0B03D7 , bda:LG3466835079D19ADC , bda:LG4BF6EFD51334D8B8 , bda:LG86CEA5313EBB163E , bda:LG97615085DA5D7BA4 , bda:LGDB75579D72E3A680 , bda:LGFB34F157EF7B8608 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG19674E14BB5A0AFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-08T14:34:35.231Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG31758A35BC0B03D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-08T13:03:02.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & 2 notes in tibetan"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3466835079D19ADC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-03T10:06:04.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4BF6EFD51334D8B8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-11-30T15:03:37.795Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LG86CEA5313EBB163E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-01T15:36:58.433Z"^^xsd:dateTime ;
+        adm:logMessage      "added Near G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG97615085DA5D7BA4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-03T10:01:21.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added founding time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDB75579D72E3A680
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-16T15:46:28.447Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGFB34F157EF7B8608
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-16T15:42:31.788Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8FCAD0BAB0D7F511
+        a                   :PlaceFounded ;
+        :onYear             "0650"^^xsd:gYear .
+    
+    bdr:G00JR3006  a        :Place ;
+        skos:altLabel       "kong po bu chu/"@bo-x-ewts , "kong yul bo chu thar legs/"@bo-x-ewts ;
+        skos:prefLabel      "bu chu lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8087E0F2DF1E9A08 , bdr:NT80BC584AB1C14A7C , bdr:NTD884EB51C7D28E60 ;
+        :placeEvent         bdr:EV8FCAD0BAB0D7F511 ;
+        :placeIsNear        bdr:G3CN441 ;
+        :placeLocatedIn     bdr:G3CN366 , bdr:G640 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NT8087E0F2DF1E9A08
+        a                   :Note ;
+        :contentLocationStatement  "p. 123" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "\"གྲུ་མོ་གཡས་པ་ལ་ཤར་སྟག་གི་མགོར་ཀོང་པོ་བུ་ཆུ། གཡོན་པ་ལ་ལྷོ་འབྲུག་གི་ཟེ་སྟེང་དུ་ལྷོ་བྲག་ཁོ་ཐིང་(མཁོ་མཐཻང་།)  པུས་མོ་གཡས་པ་ལ་ནུབ་བྱ་དམར་པོའི་སྐས་སྟེང་དུ་(བྱམས་སྤྲིན་)དགེ་རྒྱས། གཡོན་པ་ལ་བྱང་རུས་སྦལ་གྱི་དཔྲལ་སྟེང་དུ་པྲ་དན་ཙེའི་(བྱང་པྲ་དུན་བརྩེ་)ལྷ་ཁང་བཏབ་སྟེ་ཡང་འདུལ་བཞིའོ།\" ཞེས་གསལ།"@bo .
+    
+    bdr:NT80BC584AB1C14A7C
+        a                   :Note ;
+        :noteText           "treasure site of 'ja' tshon snying po's (1585-1656)  thugs rje chen po ngan song rang grol gyi skor"@en .
+    
+    bdr:NTD884EB51C7D28E60
+        a                   :Note ;
+        :contentLocationStatement  "p. 115-116" ;
+        :noteSource         bdr:MW20831 ;
+        :noteText           "རུ་བཞིའི་ཡན་ལག་བཞི་ལ་མཐའ་འདུལ་གྱི་ལྷ་ཁང་བཞི་བཞེངས་ལ། ཉིང་ལག་མནན་པའི་ཕྱིར་མཐའ་འདུལ་བརྒྱད་བཞེངས་ཏེ། རྒྱ་སྒོར་ཀཱ་ཆུ་ཐོགས་མེད། མདོ་ཁམས་སུ་གློང་(ཀློང་)ཐང་སྒྲོལ་མ། འ་ཞའི་སར་ཀེ་རུ་གཟི་མདངས། ལི་ཡུལ་དུ་བ་དག་ཨིན་ཏྲ། མང་ཡུལ་དུ་བྱང་སྤྲིན་ཡིད་འོང་དགེ་རྒྱས། ཁ་ཆེར་རབ་སྣང་དབང་ཆེན་རྒྱས་པ། ཀོང་ཡུལ་དུ་བོ་ཆུ་ཐར་ལེགས། གཡུང་རུང་བརྩེགས་པ། དཔལ་གྲོར་སྐྱེར་ཆུ་དཔལ་བེའུ་རྒྱས་པ་བཞེངས་སོ་ཞེས་གསལ།"@bo .
+}

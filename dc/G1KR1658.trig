@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1658 {
+    bda:G1KR1658  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1658 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "dc/G1KR1658.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1658 ;
+        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542421204:413" ;
+        adm:place_id_lex    "542421204:413" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV31F45BC8042EA7C7
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1KR1658  a         :Place ;
+        skos:altLabel       "Ningbuqiongcang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "宁布穷仓寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID856DAB6032667E76 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV31F45BC8042EA7C7 ;
+        :placeGonpaPerEcumen  "0.76" ;
+        :placeLat           "31.25000" ;
+        :placeLocatedIn     bdr:G2147 ;
+        :placeLong          "92.63333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID856DAB6032667E76
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1658" .
+}

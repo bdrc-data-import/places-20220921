@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3772 {
+    bda:G3772  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3772 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3e/G3772.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3772 ;
+        adm:logEntry        bda:LG1B7093D9781B50CD , bda:LG2EC4ABAC266853D4 , bda:LG5CDC43E55A2FE129 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG1B7093D9781B50CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-03T14:55:21.568Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2EC4ABAC266853D4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5CDC43E55A2FE129
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-11T09:09:56.706Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3772  a            :Place ;
+        skos:prefLabel      "gsang sngags chos rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5328C9AF73D2ECED ;
+        :placeLocatedIn     bdr:G2178 ;
+        :placeType          bdr:PT0056 .
+    
+    bdr:NT5328C9AF73D2ECED
+        a                   :Note ;
+        :noteText           "now merged with rdza yul rdzong"@en .
+}

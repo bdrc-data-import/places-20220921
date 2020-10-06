@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN233 {
+    bda:G3CN233  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN233 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "84/G3CN233.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN233 ;
+        adm:logEntry        bda:LG4A2E568445529AC5 , bda:LG4A9FDAEE4297EF11 , bda:LG64F50DE2642878F4 , bda:LGF2B434181791E9E4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4A2E568445529AC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-12T16:31:39.965Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4A9FDAEE4297EF11
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-12T15:17:42.984Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG64F50DE2642878F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-29T12:33:32.294Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2B434181791E9E4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-05-28T15:51:05.039Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN233  a          :Place ;
+        skos:altLabel       "rta mchog gtsang po/"@bo-x-ewts , "rta mchog kha 'bab/"@bo-x-ewts , "yar chab/"@bo-x-ewts , "yar chab gtsang po/"@bo-x-ewts , "yar chu sngon po/"@bo-x-ewts , "yar mo/"@bo-x-ewts , "yalong zangbu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "yar klung gtsang po/"@bo-x-ewts , "Yarlung Tsangpo"@en , "雅鲁藏布"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT0B79D6D82CE97340 , bdr:NT8E59B338DD5C9B60 ;
+        :placeLocatedIn     bdr:G3196 ;
+        :placeType          bdr:PT0065 .
+    
+    bdr:NT0B79D6D82CE97340
+        a                   :Note ;
+        :contentLocationStatement  "p. 208" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "ཏོན་ཧོང་གཏེར་ཡིག་ལས། \"ཡར་མོ་ནི་ཆུ་ཐུངས་ཀྱིས་(ཐུང་གི)། མདོ་ནས་ནི་ཙང་(གཙང་)དུ་བསྲིང་། ཡར་མོ་ནི་ཞེང་ཆུངས་ཀྱིས་(ཆུང་གི)། ལྷོ་ནས་ནི་བྱང་དུ་བསྐྱེད། མ་བྲུན་ནི་མཐའ་བཞི་རྒྱལ་(བཞིར་རྒྱས)།\" ཅེས་གསུངས།"@bo .
+    
+    bdr:NT8E59B338DD5C9B60
+        a                   :Note ;
+        :contentLocationStatement  "v. 58, p. 27-38" ;
+        :noteSource         bdr:MW20382 ;
+        :noteText           "ཡར་ཀླུང་གཙང་པོའི་སྟོད་རྒྱུད་ལ་རྟ་མཆོག་ཁ་འབབ་དུ་གྲངས་ལ། ཐ་སྙད་འདི་ལ་ཆབ་སྤེལ་ཚེ་བརྟན་ཕུན་ཚོགས་ཀྱིས་དཔྱད་རྩོམ་སྤེལ་གནང་འདུག་པར་གཟིགས།"@bo .
+}

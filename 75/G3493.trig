@@ -1,0 +1,117 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3493 {
+    bda:G3493  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3493 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "75/G3493.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3493 ;
+        adm:logEntry        bda:LG3926F38B4BF53C91 , bda:LG564507A62CAF85D7 , bda:LG9A8B59EDAE3795EB , bda:LGA144D13A2C8FC2A7 , bda:LGAFD8E32A40E0F598 , bda:LGB4C98D31D5039EA1 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513321100:96" ;
+        adm:place_id_lex    "513321100:96" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3926F38B4BF53C91
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG564507A62CAF85D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-02T14:42:13.798Z"^^xsd:dateTime ;
+        adm:logMessage      "added events"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A8B59EDAE3795EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-03T11:24:42.896Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged nmaes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA144D13A2C8FC2A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-17T16:37:39.396Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAFD8E32A40E0F598
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-06T00:31:29.093Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB4C98D31D5039EA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-15T16:31:05.95Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8F7E71DF4816A5AC
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P646 ;
+        :onYear             "1564"^^xsd:gYear .
+    
+    bdr:EVB26712815DB21CA1
+        a                   :PlaceFounded ;
+        :onYear             "1564"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3493  a            :Place ;
+        skos:altLabel       "rdor brag dgon (smad)"@bo-x-ewts , "rdo rje brag dgon/"@bo-x-ewts , "康定金刚寺"@zh-hans , "jingang si"@zh-latn-pinyin-x-ndia , "kangding jingang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dar mdo rdo rje brag dgon/"@bo-x-ewts , "金刚寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4D18CEC7B95DA7C6 ;
+        :isRoot             true ;
+        :note               bdr:NT2002F69285E58503 , bdr:NT618302083A532EAF , bdr:NTEB8F1EB6312590EA ;
+        :placeEvent         bdr:EV8F7E71DF4816A5AC , bdr:EVB26712815DB21CA1 ;
+        :placeGonpaPerEcumen  "22.36" ;
+        :placeLat           "30.05000" ;
+        :placeLocatedIn     bdr:G2308 ;
+        :placeLong          "101.96667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID4D18CEC7B95DA7C6
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3493" .
+    
+    bdr:NT2002F69285E58503
+        a                   :Note ;
+        :contentLocationStatement  "p. 129" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "rnying ma monastery in dar rtse mdo rdzong; this source is incorrect in stating that the monastery was founded 1126 (rab byung 2 me rta) by the rdor brag rig 'dzin chen po skal bzang theg mchog bstan pa'i rgyal mtshan (this should be bskal bzang pad+ma dbang phyug (1719/1720-1770). it is likely that the date of founding is in middle of the 18th century. \n\nformerly for religious ceremonies there were 180+ monks; now there are 40 monks."@en .
+    
+    bdr:NT618302083A532EAF
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, pp. 16-19" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "recently restored rnying ma monastery of the byang gter tradition;\nthis was the family monastery of the lcags la rulers of dar rtse mdo;\nrecently restored\n\nའདི་ནི་རྙིང་མའི་གདན་ས་ཆེན་པོ་ཐུབ་བསྟན་རྡོ་རྗེ་བྲག་གི་བུ་དགོན་ཆེ་གྲས་ཤིག་ཡིན།"@en .
+    
+    bdr:NTEB8F1EB6312590EA
+        a                   :Note ;
+        :noteText           "pinyin: jin gang si; nyingma monastery founded in 1564 in sheng jiao xiang, dar mdo rdzong"@en .
+}

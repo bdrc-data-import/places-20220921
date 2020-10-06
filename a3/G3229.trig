@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3229 {
+    bda:G3229  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3229 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a3/G3229.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3229 ;
+        adm:logEntry        bda:LG343D9FA1F5B643CD , bda:LGA16A8103167BC0C5 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG343D9FA1F5B643CD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA16A8103167BC0C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T10:49:53.846Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3229  a            :Place ;
+        skos:prefLabel      "bsam gtan chos gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD7BF4BAA4B64A616 ;
+        :placeLocatedIn     bdr:G2202 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTD7BF4BAA4B64A616
+        a                   :Note ;
+        :contentLocationStatement  "1991-4 (38), p. 64" ;
+        :noteSource         bdr:MW22362 ;
+        :noteText           "rnying ma pa monastery founded in the 17th century"@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4714 {
+    bda:G4714  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4714 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "bd/G4714.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4714 ;
+        adm:logEntry        bda:LG5F7C436DF6A3FED2 , bda:LG7038395982A32467 , bda:LGD0798EB1E5FD4BB6 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5F7C436DF6A3FED2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-03T14:57:07.062Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7038395982A32467
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD0798EB1E5FD4BB6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-25T14:38:56.71Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4714  a            :Place ;
+        skos:prefLabel      "kur stod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT66015972CE4B38F9 ;
+        :placeLocatedIn     bdr:G3205 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT66015972CE4B38F9
+        a                   :Note ;
+        :contentLocationStatement  "f. 129v-130r" ;
+        :noteSource         bdr:MW19809 ;
+        :noteText           "the dung dkar chos rje lineage is located in kur stod"@en .
+}

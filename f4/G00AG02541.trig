@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00AG02541 {
+    bda:G00AG02541  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00AG02541 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f4/G00AG02541.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00AG02541 ;
+        adm:logEntry        bda:LGE48C7EFD88F8F3FD , bda:LGF63A3042FA925539 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGE48C7EFD88F8F3FD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-02-27T14:36:42.491Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGF63A3042FA925539
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-14T11:16:59.558Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G00AG02541  a       :Place ;
+        skos:prefLabel      "mang yul sngags mo'i chos grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT19E6F2D6C7B72C9B , bdr:NT392F9EF66156D46A ;
+        :placeLocatedIn     bdr:G3166 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NT19E6F2D6C7B72C9B
+        a                   :Note ;
+        :noteText           "dge lugs pa institution in mgna' ris founded by se ra rje shes rab bzang po"@en .
+    
+    bdr:NT392F9EF66156D46A
+        a                   :Note ;
+        :noteText           "འདི་ལ་སྔགས་མོའི་ཆོས་གྲྭ་ཞེས་མཚན་དུ་བཏགས་པ་བཙུན་མའི་དགོན་པ་ཞིག་ཡིན་མིན་མུ་མཐུད་དཔྱད་རྒྱུར་ལུས་པའི་ཐོར།"@bo .
+}

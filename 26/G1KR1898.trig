@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1898 {
+    bda:G1KR1898  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1898 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "26/G1KR1898.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1898 ;
+        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542627100:553" ;
+        adm:place_id_lex    "542627100:554" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVA1BC4B35F658CFBB
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1KR1898  a         :Place ;
+        skos:altLabel       "巴尔曲德寺"@zh-hans , "甘丹绕登寺"@zh-hans , "Ba'er si"@zh-latn-pinyin-x-ndia , "Gandanraodeng si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "巴尔寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6F57B74D9DB3B5A2 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVA1BC4B35F658CFBB ;
+        :placeGonpaPerEcumen  "10.52" ;
+        :placeLat           "29.06667" ;
+        :placeLocatedIn     bdr:G2140 ;
+        :placeLong          "92.83334" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID6F57B74D9DB3B5A2
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1898" .
+}

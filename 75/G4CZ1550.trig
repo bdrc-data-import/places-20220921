@@ -1,0 +1,115 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4CZ1550 {
+    bda:G4CZ1550  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4CZ1550 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "75/G4CZ1550.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4CZ1550 ;
+        adm:logEntry        bda:LG1559377EB0988A5E , bda:LG2C5606367DC77180 , bda:LG42875A23EFAA15DD , bda:LG8C33C9AF6BF8A989 , bda:LG8F1A75BF61EEB166 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542222100:542222107" ;
+        adm:place_id_lex    "542222100:542222107" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1559377EB0988A5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-04-22T15:26:27.261Z"^^xsd:dateTime ;
+        adm:logMessage      "add topic"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG2C5606367DC77180
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-18T15:33:45.629Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG42875A23EFAA15DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:21:52.618Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8C33C9AF6BF8A989
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T12:37:39.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & GIS ID & 3rd+4th notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8F1A75BF61EEB166
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-10-22T15:35:01.577Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0F574D489560FF6E
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionDrukpaKagyu .
+    
+    bdr:G4CZ1550  a         :Place ;
+        skos:altLabel       "byams pa gling /"@bo-x-ewts , "gra nang byams pa gling /"@bo-x-ewts , "qiangbalin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gra byams pa gling /"@bo-x-ewts , "Jampaling"@en-x-mixed , "强巴林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID91AE2F800208F235 ;
+        :isRoot             true ;
+        :note               bdr:NT2C2BBA812B8F8C5B , bdr:NT57ABC3CF8E092B13 , bdr:NT8A4E7DDE3972F811 , bdr:NTF27F0E16C6C78D66 , bdr:NTFA22D1E18FDBBFB0 ;
+        :placeContains      bdr:G2CN10890 ;
+        :placeEvent         bdr:EV0F574D489560FF6E ;
+        :placeGonpaPerEcumen  "18.99" ;
+        :placeLat           "29.22890" ;
+        :placeLocatedIn     bdr:G799 ;
+        :placeLong          "91.33956" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID91AE2F800208F235
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4CZ1550" .
+    
+    bdr:NT2C2BBA812B8F8C5B
+        a                   :Note ;
+        :contentLocationStatement  "p. 24-25" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "དགོན་འདིར་བོད་ཀྱི་མཆོད་རྟེན་ཡོད་ཚད་ཀྱི་ནང་ནས་ཁྱད་འཕགས་སུ་གྲགས་པ་ཞིག་ཡོད་དེ། ཐོན་མིའི་གདུངས་རབས་བཅུ་གསུམ་པ་གཅེན་གཅུང་ཟུང་སོགས་ནས་བཏབ་ཅིང་། དུས་རབས་བཅོ་ལྔ་ཙམ་ན་རྗེ་རིན་པོ་ཆེའི་དངོས་སློབ་པཎ་ཆེན་བསོད་ནམས་རྣམ་རྒྱལ་དགོན་དེར་བྱོན་ཏེ་སྔར་ཡོད་གྲྭ་ཚང་ལྔ་པོ་གཅིག་སྒྲིལ་དང་མཆོད་རྟེན་ལ་ཉམས་གསོ་མཛད་ཅིང་ཕྱིས་བླ་མ་གཞན་གྱིས་ཀྱང་ཉམས་གསོ་རབས་རིམ་མཛད། དགོན་དེར་ད་ལྟ་ཙན་དན་གྱི་བྱམས་པ་ཁྲུ་གང་པ་དང་པཎ་ཆེན་བསོད་རྣམ་གྱི་སྐུ་གདུང་ལྷུ་ཚིགས་སོགས་རྟེན་རྙིང་ཡང་བཞུགས་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NT57ABC3CF8E092B13
+        a                   :Note ;
+        :noteText           "ཐོན་མིའི་གདུང་རབས་བཅུ་གཉིས་པ་དྲུང་ཆེན་ཚུལ་ཁྲིམས་རྒྱལ་མཚན་ལ་སྲས་གཉིས་བྱུང་བའི་གཅེན་དགེ་བསྙེན་ལྷུན་གྲུབ་བཀྲ་ཤིས་ཀྱིས་བཏབ། གཅུང་བྱམས་གླིང་པཎ་ཆེན་བསོད་ནམས་རྣམ་རྒྱལ་དང་ལོ་་ཆེན་བསོད་ནམས་རྒྱ་མཚོས་བོད་དུ་མཆོད་རྟེན་ཡོད་ཚད་ཀྱི་ནང་ནས་ཁྱད་པར་དུ་འཕགས་པ་བཀྲ་ཤིས་སྒོ་མང་བཞེངས།\tསྔོན་བོད་ཟླ་༡་ཚེས་༡་ནས་ཚེས་བདུན་བར་བྱམས་པ་གླིང་ཚོང་འདུས་ཞེས་བལ་བོད་འབྲུག་གསུམ་འདུ་འཛོམས་ཆེ། གྲྭ་རྒྱུན་བློ་གླིང་དང་བྱེས། ཉང་རོང་སོགས་སུ་འགྲོ། སྐབས་གཅིག་གྲྭ་གྲངས་ཆིག་སྟོང་ལས་བརྒལ་བ་བྱུང་སྐད།"@bo .
+    
+    bdr:NT8A4E7DDE3972F811
+        a                   :Note ;
+        :noteText           "there is a duplicate \"gra byams pa gling\" as G3519 in web, but not in DLM."@en .
+    
+    bdr:NTF27F0E16C6C78D66
+        a                   :Note ;
+        :noteText           "important monastery of the dge lugs tradition in the gra nang rdzong.\nfounded by elder son of drung chen tshul khrims rgyal mtshan, the 12th generation of thon mi sam b+hoTa."@en .
+    
+    bdr:NTFA22D1E18FDBBFB0
+        a                   :Note ;
+        :noteText           "huge Chorten, 13 stories tall"@en .
+}

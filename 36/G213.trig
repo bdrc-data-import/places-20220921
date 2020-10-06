@@ -1,0 +1,125 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G213 {
+    bda:G213  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G213 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "36/G213.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G213 ;
+        adm:logEntry        bda:LG13C476DB6F44E26D , bda:LG21E5C8F7071D7DAC , bda:LG29CBA34CC9D1146B , bda:LG2B60CBDDB9CF6B57 , bda:LG6D8484BEFFD91922 , bda:LG87D33D9038BAD355 , bda:LG9B75BC83F68869DD , bda:LGCC1FE771E13D6557 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330200:170" ;
+        adm:place_id_lex    "513330200:170" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG13C476DB6F44E26D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-10T16:05:02.388Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG21E5C8F7071D7DAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-07-10T17:01:14.259Z"^^xsd:dateTime ;
+        adm:logMessage      "added records and notes"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LG29CBA34CC9D1146B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-26T14:28:36.433Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2B60CBDDB9CF6B57
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-27T10:54:22.663Z"^^xsd:dateTime ;
+        adm:logMessage      "added rdzong gsar dgon pa'i par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG6D8484BEFFD91922
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-20T11:44:45.821Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG87D33D9038BAD355
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-18T12:15:54.222Z"^^xsd:dateTime ;
+        adm:logMessage      "changed english name to an english name"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG9B75BC83F68869DD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCC1FE771E13D6557
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T15:01:33.895Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV054D97D07C5839DA
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P733 ;
+        :onYear             "1918"^^xsd:gYear .
+    
+    bdr:EV0BC70E09B258A98E
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G213  a             :Place ;
+        skos:altLabel       "rdzong gsar dgon/"@bo-x-ewts , "rdzong sar bkra shis lha rtse/"@bo-x-ewts , "sde dge rdzong sar dgon bshad sgrub dar rgyas gling /"@bo-x-ewts , "德格宗萨寺"@zh-hans , "dege zongsa si"@zh-latn-pinyin-x-ndia , "zongsa si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdzong sar dgon/"@bo-x-ewts , "Dzongsar Monastery"@en , "宗萨寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8C39DA63A6EDD0DA ;
+        :isRoot             true ;
+        :note               bdr:NT30FD18E15E298F1E , bdr:NT56423E30BB7E8340 ;
+        :placeContains      bdr:G2CN11095 , bdr:G3JT12554 , bdr:G4874 ;
+        :placeEvent         bdr:EV054D97D07C5839DA , bdr:EV0BC70E09B258A98E ;
+        :placeGonpaPerEcumen  "10.21" ;
+        :placeLat           "31.63333" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "98.98333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID8C39DA63A6EDD0DA
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G213" .
+    
+    bdr:NT30FD18E15E298F1E
+        a                   :Note ;
+        :contentLocationStatement  "p. 1, p. 472" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "important sa skya monastery in the vicinity of sde dge\nthe seat of the rdzong sar mkhyen brtse line of incarnations\nའདིར་དགོན་འདིའི་ལོ་རྒྱུས་གནད་ཚང་བཞུགས།"@en .
+    
+    bdr:NT56423E30BB7E8340
+        a                   :Note ;
+        :contentLocationStatement  "310" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "The Khamshe College at Dzongsar (khams byed bshad grwa) was founded in 1919 by gzhan phan snang ba after he had completed his term as mkhan po there for four years.   'jam dbyangs mkhyen brtse chos kyi blo gros encouraged him to establish the school.  The first chair was filled by mkhan chen gzhan dga', who served for four years. He was followed by: \ndbon stod mkhyen rab\n mkhan chen 'jam dbyangs thabs mkhas\n bla ma 'jam dbyangs rgyal mtshan\nkhang dmar rin chen rdo rje\nbrag yab blo gros\nmdo srib thub bstan \nmi nyag dam chos\nsde gzhung chos 'phel\nbrag yab mkhyen rab seng+ge \n\n-Having served at rdzong sar, many of these masters went on to found their own schools:\n-mkhan chen 'jam dpal bzang po => stod sa sky'i bshad grwa which also gave birth to gstang ngor dgon gyi bshad grwa\n -dbon stod mkhyen rab => dbon stod lhun po rtse'i bshad grwa & sde dge dgon chen bshad grwa\n- bla ma 'jam rgyal => sku tshe gser ljongs kyi bshad grwa\n- dung mdo blo gros seng+ge => sga khri 'du skal bzang dgon gyi bshad grwa\n- mdo srib thub bstan => rab brtan dgon gyi bshad grwa & mdo srib bshad grwa\n- brag yab blo gros => 'jo dgon gyi bshad grwa & go 'jo thang skya dgon gyi bshad grwa\n- khang dmar rin chen => ri bo che gnas brtan dgon gyi bshad grwa\n-mi nyag dam chos => dpal lha lha sgang gi bshad grwa & yid lhung lha bya dgon gyi bshad grwa & khrom kho dgon gyi bshad grwa & gtsang rta nag gi slob grwa & ngor dgon gyi slob grwa"@en .
+}

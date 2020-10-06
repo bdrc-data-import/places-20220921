@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2822 {
+    bda:G1KR2822  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2822 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "cd/G1KR2822.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2822 ;
+        adm:logEntry        bda:LG4776DCAE89B2F175 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632725204:175" ;
+        adm:place_id_lex    "632725204:175" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4776DCAE89B2F175
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-06T10:38:06.019Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note from G2731(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV62D5E1343B794E23
+        a                   :PlaceFounded ;
+        :onYear             "1300"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBaromKagyu .
+    
+    bdr:G1KR2822  a         :Place ;
+        skos:altLabel       "bes ri bla chung dgon pa/"@bo-x-ewts , "dre'u ri bla chung dgon pa/"@bo-x-ewts , "白日拉穹寺"@zh-hans , "biri laqiong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "be ru bla chung dgon pa/"@bo-x-ewts , "毕日拉穹寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID85BCF677BD050E7E ;
+        :isRoot             true ;
+        :note               bdr:NT2DD41D213D74B844 , bdr:NT4B52B7E2DDDDEA75 ;
+        :placeEvent         bdr:EV62D5E1343B794E23 ;
+        :placeGonpaPerEcumen  "10.35" ;
+        :placeLat           "32.42676" ;
+        :placeLocatedIn     bdr:G1467 ;
+        :placeLong          "96.04424" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID85BCF677BD050E7E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2822" .
+    
+    bdr:NT2DD41D213D74B844
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 47" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "sa skya pa monastery in yus hru'u prefecture, qinghai province"@en .
+    
+    bdr:NT4B52B7E2DDDDEA75
+        a                   :Note ;
+        :noteText           "used to be Barompa and TAR Barom was Mother"@en .
+}

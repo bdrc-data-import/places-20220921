@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G238 {
+    bda:G238  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G238 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "9e/G238.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G238 ;
+        adm:logEntry        bda:LG0888F0C70EA4F36C , bda:LG749FA7516ED88857 , bda:LGD65FA0A165130CF1 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542329209:542310" ;
+        adm:place_id_lex    "542329209:542310" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0888F0C70EA4F36C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG749FA7516ED88857
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-03T09:30:33.761Z"^^xsd:dateTime ;
+        adm:logMessage      "readded Near location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD65FA0A165130CF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T11:50:47.942Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0835ED99E94392A7
+        a                   :PlaceFounded ;
+        :onYear             "1550"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G238  a             :Place ;
+        skos:altLabel       "dben sa/"@bo-x-ewts , "Wen"@bo-x-phon-en , "温贡寺"@zh-hans , "Wen"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dben sa/"@bo-x-ewts , "Wensa"@en , "温萨寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID9E2BE1801A119664 ;
+        :isRoot             true ;
+        :note               bdr:NT37CC75732FBBCCF4 ;
+        :placeEvent         bdr:EV0835ED99E94392A7 ;
+        :placeGonpaPerEcumen  "20.62" ;
+        :placeIsNear        bdr:G1AG31 ;
+        :placeLat           "29.28333" ;
+        :placeLocatedIn     bdr:G2174 ;
+        :placeLong          "89.21667" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID9E2BE1801A119664
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G238" .
+    
+    bdr:NT37CC75732FBBCCF4
+        a                   :Note ;
+        :noteText           "important dge lugs pa hermitage in gtsang in the tibetan autonomous region\nnoted as the source of the dben sa snyan brgyud, teachings of the paN chen incarnation lineage"@en .
+}

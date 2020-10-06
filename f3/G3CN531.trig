@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN531 {
+    bda:G3CN531  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN531 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f3/G3CN531.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN531 ;
+        adm:logEntry        bda:LG3D1CDDDF6BC377EA , bda:LG79F3082F00CC2859 , bda:LG7CAEEE4D4A4E6C10 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3D1CDDDF6BC377EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-29T15:41:01.711Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG79F3082F00CC2859
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-29T14:04:17.566Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7CAEEE4D4A4E6C10
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-31T17:00:50.479Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV4787FDF4B93E3D70
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0654"^^xsd:gYear .
+    
+    bdr:G3CN531  a          :Place ;
+        skos:altLabel       "mong pu sral 'dzong /"@bo-x-ewts ;
+        skos:prefLabel      "mong phu sral 'dzong /"@bo-x-ewts , "Mong"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT5D81226E3B1F3FCF , bdr:NTA77B8C75ECA3CF9D , bdr:NTB2A621B5543E4741 ;
+        :placeEvent         bdr:EV4787FDF4B93E3D70 ;
+        :placeLocatedIn     bdr:G3353 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT5D81226E3B1F3FCF
+        a                   :Note ;
+        :contentLocationStatement  "p. 266" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"མོང་ཕུ་སྲལ་འཛོང་ནི། ་་་ སྟོད་ལུང་ཕུ་མོང་སྟོད་མཁའ་རག་མདོའི་ཁོར་ཡུག་ཏུ་ཡིན་པར་བཤད་\"ཅེས་གསལ།"@bo .
+    
+    bdr:NTA77B8C75ECA3CF9D
+        a                   :Note ;
+        :contentLocationStatement  "p. 267" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "འདུན་མ་ནི་ཐོག་མར་བློན་ཆེན་མགར་སྟོང་བཙན་གྱིས་སྤྱི་ལོ་་༦༥༨ཀྱི་འདུན་མ་དེ་ནས་འགོ་ཚུགས་ཏེ། ལོ་གཅིག་ནང་དབྱར་དགུན་གཉིས་སུ་ཚོགས་ཆེན་ཐེངས་གཉིས་སྐོང་འཚོགས་བྱས་ནས། ཕྱོགས་གང་སྤྱི་ནས་རྒྱལ་དོན་འཛིན་སྐྱོངས་ཀྱི་ལམ་སྲོལ་གཏན་འབེབས་བྱུང་བ་ཞིག་ལ་གོ་བར་འགྲེལ་ཡོད།"@bo .
+    
+    bdr:NTB2A621B5543E4741
+        a                   :Note ;
+        :contentLocationStatement  "p. 262" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "འདི་ནི་ཆོས་རྒྱལ་སྲོང་བཙན་སྐབས་ཀྱི་འདུན་མ་ཆེན་པོ་སྐོང་འཚོགས་བྱེད་ས་ཞིག་ཏེ། \"སྟག་གི་ལོ་ ༦༥༤ ལ་བབ་སྟེ། བཙན་པོ་མེར་ཁེ་ནའ་བཞུགས་ཤིང་། བློན་ཆེ་སྟོང་བཙན་གྱིས། མོང་པུ་(ཕུ་)སྲལ་འཛོང་དུའ་བསྡུས་ཏེ། རྒོད་གཡུང་དབྱེ་ཞིང་། མཁོ་ཤམ་ཆེན་པོ་བགྱི་བའི་རྩིས་མགོ་བགྱི་བར་ལོ་གཆིག\"ཞེས་གསལ་ལོ།"@bo .
+}

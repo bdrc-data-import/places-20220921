@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G323 {
+    bda:G323  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G323 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "68/G323.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G323 ;
+        adm:logEntry        bda:LG002EE56054A7BE5F , bda:LG2835F39E27306900 , bda:LG61B5E347F86BD708 , bda:LG898776758003A0D3 , bda:LGC0094AE5C4B168B1 , bda:LGD86F71DB4BD5E417 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG002EE56054A7BE5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T11:47:29.552Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2835F39E27306900
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-10T14:31:45.675Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG61B5E347F86BD708
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG898776758003A0D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-22T15:22:15.343Z"^^xsd:dateTime ;
+        adm:logMessage      "added note & sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC0094AE5C4B168B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-11T11:14:17.934Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD86F71DB4BD5E417
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-14T15:17:37.699Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & assosiated nodes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G323  a             :Place ;
+        skos:altLabel       "gnas mchog mu gu lung /"@bo-x-ewts , "mu gu lung phug pa bcu gsum/"@bo-x-ewts , "myu gu lung /"@bo-x-ewts ;
+        skos:prefLabel      "mu gu lung /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT21B5FE3B9EBC5943 , bdr:NT75C5F60997DDC3B2 ;
+        :placeContains      bdr:G2GS1264 ;
+        :placeLocatedIn     bdr:G3CN71 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT21B5FE3B9EBC5943
+        a                   :Note ;
+        :noteText           "valley connected with various sa skya and bka' gdams teachers in the gtsang area of the tibetan autonomous region"@en .
+    
+    bdr:NT75C5F60997DDC3B2
+        a                   :Note ;
+        :contentLocationStatement  "p. 420" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "ས་མིང་འདི་ནི་ཆུ་མུག་མུག་སྒྲ་ལས་འབྲོག་མི་ལོ་ཙཱ་བས་('brog mi lo tsA ba)མུ་གུ་ལུང་(mu gu lu)དུ་བཏགས་ཚུལ་གསལ། ལུང་པ་འདིའི་ཕུར་གྷ་ཡ་དྷ་རའི་(g+ha ya d+ha ra)སྒུབ་ཕུག་དང་། ཕུག་ཆེན་བཅུ་གསུམ།(phug chen bcu gsum) ཕུ་གངས་ལྷ་རྒོད་མདུང་(gangs lha rgod mdung)རྩེར་ཨོ་རྒྱན་སྒྲུབ་ཕུག་(u rgyan sgrub phug)མཚོ་ཆེན་པོ་བཅས་ཡོད་པ་གསལ།"@en .
+}

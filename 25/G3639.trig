@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3639 {
+    bda:G3639  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3639 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "25/G3639.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3639 ;
+        adm:logEntry        bda:LGBA3BCDAA0D0AD94D , bda:LGBD8D47771BCB841F , bda:LGD0636FA0892EF9AC , bda:LGF21A8EB3EC00DFE0 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513331213:344" ;
+        adm:place_id_lex    "513331213:344" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBA3BCDAA0D0AD94D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-27T09:59:18.777Z"^^xsd:dateTime ;
+        adm:logMessage      "added sga rje bde chen dgon gyi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGBD8D47771BCB841F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD0636FA0892EF9AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-27T09:58:07.309Z"^^xsd:dateTime ;
+        adm:logMessage      "ming bcos"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGF21A8EB3EC00DFE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-10T09:02:01.404Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV806C33BBEE9FB8AD
+        a                   :PlaceFounded ;
+        :onYear             "1725"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3639  a            :Place ;
+        skos:altLabel       "deqing si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sga rje bde chen dgon/"@bo-x-ewts , "德青寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID547911978A7ADFBF ;
+        :isRoot             true ;
+        :note               bdr:NT6854D616EA53515D , bdr:NTADE2AB979C44CA0F ;
+        :placeContains      bdr:G3JT12614 ;
+        :placeEvent         bdr:EV806C33BBEE9FB8AD ;
+        :placeGonpaPerEcumen  "4.1" ;
+        :placeLat           "30.76667" ;
+        :placeLocatedIn     bdr:G2300 ;
+        :placeLong          "99.03333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID547911978A7ADFBF
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3639" .
+    
+    bdr:NT6854D616EA53515D
+        a                   :Note ;
+        :contentLocationStatement  "p. 166" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "a subsidiary monastery of kaH thog in 'the center\"  according to the list of kaH thog si tu chos kyi rgya mtsho"@en .
+    
+    bdr:NTADE2AB979C44CA0F
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, pp. 242-245" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery in dpal yul rdzong"@en .
+}

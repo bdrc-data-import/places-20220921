@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4338 {
+    bda:G4338  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4338 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "aa/G4338.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4338 ;
+        adm:logEntry        bda:LG02B17296462BB171 , bda:LG06CD07FBEB99031C , bda:LG2D7F5F6711907D6A , bda:LG31D2C02CA55FF03D , bda:LG7C9137631F0FDEAD , bda:LGBC30EF8496C3B12C , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02B17296462BB171
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T14:12:05.956Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG06CD07FBEB99031C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-24T10:01:55.949Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2D7F5F6711907D6A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-23T11:01:49.907Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location to Himachal"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG31D2C02CA55FF03D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-29T10:30:03.184Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7C9137631F0FDEAD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-29T10:45:05.922Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"gar zha\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBC30EF8496C3B12C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4338  a            :Place ;
+        skos:altLabel       "gar zha/"@bo-x-ewts ;
+        skos:prefLabel      "gar sha"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeContains      bdr:G4337 , bdr:G4339 , bdr:G4340 , bdr:G4341 , bdr:G4342 , bdr:G4343 , bdr:G4344 ;
+        :placeLocatedIn     bdr:G3CN1563 ;
+        :placeType          bdr:PT0070 .
+}

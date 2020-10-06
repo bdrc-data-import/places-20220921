@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2JM244 {
+    bda:G2JM244  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2JM244 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "35/G2JM244.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2JM244 ;
+        adm:logEntry        bda:LG539B4D11F6348048 , bda:LG96871835C98C7557 , bda:LGAD28B67A335F0BE3 , bda:LGF66B99C0AD9B9BDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG539B4D11F6348048
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T11:48:39.651Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG96871835C98C7557
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T12:50:07.429Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as bshad grwa"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAD28B67A335F0BE3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-11T17:07:07.653Z"^^xsd:dateTime ;
+        adm:logMessage      "added records and notes"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LGF66B99C0AD9B9BDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T14:30:10.214Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2JM244  a          :Place ;
+        skos:altLabel       "legs bshad nyi zla'i gling /"@bo-x-ewts , "zhe chen bshad grwa legs bshad nyi zla'i gling /"@bo-x-ewts ;
+        skos:prefLabel      "zhe chen bshad grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT75B6AD5C73D70C90 ;
+        :placeLocatedIn     bdr:G20 ;
+        :placeType          bdr:PT0038 .
+    
+    bdr:NT75B6AD5C73D70C90
+        a                   :Note ;
+        :contentLocationStatement  "314" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "Founded by zhe chen kong sprul pad+ma dri med legs pa'i blo gros who first invited bod sprul mdo sngags bstan pa'i nyi ma to be the first abbot.  After that, kong sprul himself, khro shul mkhan po 'jam dbyangs rdo rje, and mkhan po gang shar held abbotships."@en .
+}

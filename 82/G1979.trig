@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1979 {
+    bda:G1979  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1979 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "82/G1979.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1979 ;
+        adm:logEntry        bda:LGAA72D92A867E72DC , bda:LGBE85ED9E55B5DD09 , bda:LGC1841AB86F914E6A , bda:LGE7F8689770FC0082 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGAA72D92A867E72DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T15:27:13.557Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGBE85ED9E55B5DD09
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-08T16:30:29.372Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, linked with p#s"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC1841AB86F914E6A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE7F8689770FC0082
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T10:11:42.843Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV91CBE8876C6A2C7D
+        a                   :PlaceFounded ;
+        :onYear             "1778"^^xsd:gYear .
+    
+    bdr:G1979  a            :Place ;
+        skos:altLabel       "khu ral chen mo/"@bo-x-ewts , "khu ral chen mo dga' ldan bshad sgrub gling /"@bo-x-ewts , "khu re chen mo/"@bo-x-ewts , "ku re chen mo/"@bo-x-ewts , "ri bo dge rgyas dga' ldan bshad sgrub gling /"@bo-x-ewts , "tA hu re/"@bo-x-ewts , "tA khu ral/"@bo-x-ewts , "tA khu re/"@bo-x-ewts ;
+        skos:prefLabel      "ta khu re dgon chen/"@bo-x-ewts , "Takure Gonchen"@en ;
+        :isRoot             true ;
+        :note               bdr:NTAC8E3C2F94A19389 ;
+        :placeEvent         bdr:EV91CBE8876C6A2C7D ;
+        :placeLat           "47.9263800000" ;
+        :placeLong          "106.9171000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTAC8E3C2F94A19389
+        a                   :Note ;
+        :noteSource         bdr:MW20115 .
+}

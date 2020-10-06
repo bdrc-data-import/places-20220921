@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G375 {
+    bda:G375  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G375 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "cf/G375.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G375 ;
+        adm:logEntry        bda:LG6A2FE690844E3979 , bda:LG9228F35EB291BC7E , bda:LGB9E875B8C8B2BFD6 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632622202:522" ;
+        adm:place_id_lex    "632622202:99" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6A2FE690844E3979
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-11T10:03:25.886Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9228F35EB291BC7E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB9E875B8C8B2BFD6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-25T12:32:44.013Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & event from W20140"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV114EAC6EF5558596
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P293 ;
+        :onYear             "1810"^^xsd:gYear .
+    
+    bdr:EVC2C209125AF2F680
+        a                   :PlaceFounded ;
+        :onYear             "1880"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVE4C678841CF3E959
+        a                   :PlaceFounded ;
+        :onYear             "1527"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G375  a             :Place ;
+        skos:altLabel       "grub chen dgon/"@bo-x-ewts , "gsang chen dngos grub dpal 'bar gling /"@bo-x-ewts , "gtsang chen dngos grub dpal 'bar gling /"@bo-x-ewts , "rdo grub dgon gsang chen dngos grub dpal 'bar gling /"@bo-x-ewts , "rtsang chen dngos grub dpal 'bar gling /"@bo-x-ewts , "多智钦寺"@zh-hans , "duozhiqin si"@zh-latn-pinyin-x-ndia , "zhiqin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdo grub chen dgon/"@bo-x-ewts , "智钦寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4BB4ED01680EA4F3 ;
+        :isRoot             true ;
+        :note               bdr:NT4F0FDB45AEE7FEDD , bdr:NT64328CD2BB2FCAD2 ;
+        :placeEvent         bdr:EV114EAC6EF5558596 , bdr:EVC2C209125AF2F680 , bdr:EVE4C678841CF3E959 ;
+        :placeGonpaPerEcumen  "2.74" ;
+        :placeLat           "32.56000" ;
+        :placeLocatedIn     bdr:G1719 , bdr:G1763 ;
+        :placeLong          "100.60000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID4BB4ED01680EA4F3
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G375" .
+    
+    bdr:NT4F0FDB45AEE7FEDD
+        a                   :Note ;
+        :contentLocationStatement  "p. 157" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "rnying ma pa monastery of the rdzogs chen tradition in padma rdzong\nfounded 1810 by the 1st rdo grub chen 'jigs med 'phrin las 'od zer"@en .
+    
+    bdr:NT64328CD2BB2FCAD2
+        a                   :Note ;
+        :noteText           "rnying ma monastery of the klong chen snying thig tradition located in padma rdzong in mgo log; the seat of the rdo grub chen incarnation lineage"@en .
+}

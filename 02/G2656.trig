@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2656 {
+    bda:G2656  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2656 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "02/G2656.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2656 ;
+        adm:logEntry        bda:LG8B901A18FC64894F , bda:LGE0D954A9B7D57BDA , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632725208:188" ;
+        adm:place_id_lex    "632725208:188" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8B901A18FC64894F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-07T15:02:09.373Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE0D954A9B7D57BDA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1774607F0051AB5A
+        a                   :PlaceFounded ;
+        :onYear             "1700"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBaromKagyu .
+    
+    bdr:G2656  a            :Place ;
+        skos:altLabel       "gsang sngags bde chen chos gling /"@bo-x-ewts , "wa lung gsang sngags bde chen chos gling /"@bo-x-ewts , "walong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "wa lung dgon/"@bo-x-ewts , "哇龙寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA14E3836948F8A78 ;
+        :isRoot             true ;
+        :note               bdr:NT3A3B86A06BCE0086 ;
+        :placeEvent         bdr:EV1774607F0051AB5A ;
+        :placeGonpaPerEcumen  "10.08" ;
+        :placeLat           "32.11628" ;
+        :placeLocatedIn     bdr:G1467 ;
+        :placeLong          "95.91717" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA14E3836948F8A78
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2656" .
+    
+    bdr:NT3A3B86A06BCE0086
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 47" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "'brug pa bka' brgyud pa monastery in yus hru'u prefecture, qinghai province"@en .
+}

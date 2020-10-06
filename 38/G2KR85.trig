@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KR85 {
+    bda:G2KR85  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KR85 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "38/G2KR85.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KR85 ;
+        adm:logEntry        bda:LGIM335E72436E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM335E72436E
+        a                   adm:UpdateData ;
+        adm:logAgent        "mongol import" ;
+        adm:logDate         "2013-12-03T23:23:40.962Z"^^xsd:dateTime ;
+        adm:logMessage      "created by mongol import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVA0D78C88688D3075
+        a                   :PlaceFounded ;
+        :onYear             "1575"^^xsd:gYear .
+    
+    bdr:G2KR85  a           :Place ;
+        skos:altLabel       "Maidari-yin juu"@mn-x-trans , "mayidari-yin job-a"@mn-x-trans , "寿灵寺"@zh-hans , "灵觉寺"@zh-hans , "Meidai zhao"@zh-latn-pinyin-x-ndia , "Shouling si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Maidarin juu"@mn-x-trans , "Lingjue si"@zh-latn-pinyin-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NTC791AC2B65AD2870 ;
+        :placeEvent         bdr:EVA0D78C88688D3075 ;
+        :placeLocatedIn     bdr:G603 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTC791AC2B65AD2870
+        a                   :Note ;
+        :noteText           "located at Baotou City of Inner Monglia"@en .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD110068 {
+    bda:G1PD110068  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD110068 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "97/G1PD110068.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD110068 ;
+        adm:logEntry        bda:LG02BBA62F3AACB42D , bda:LGE97130AE5DC447AC , bda:LGFA4C487C5E729A05 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02BBA62F3AACB42D
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-03-01T10:46:36.188Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE97130AE5DC447AC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-03-01T09:52:35.727Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGFA4C487C5E729A05
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-19T16:22:10.591Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1PD110068  a       :Place ;
+        skos:altLabel       "brag dkar bkra shis sdings/"@bo-x-ewts ;
+        skos:prefLabel      "bkra shis sdings/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1DBD629CCBC2150D ;
+        :placeLocatedIn     bdr:G1398 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1DBD629CCBC2150D
+        a                   :Note ;
+        :noteSource         bdr:MW1KG879 ;
+        :noteText           "p. 44"@en .
+}

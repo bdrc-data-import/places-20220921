@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00UNK54 {
+    bda:G00UNK54  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00UNK54 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a8/G00UNK54.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00UNK54 ;
+        adm:logEntry        bda:LG0881636955E97E46 , bda:LGBDC1220A34963FB3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0881636955E97E46
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-05T09:52:56.631Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created"@en .
+    
+    bda:LGBDC1220A34963FB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T12:08:49.735Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G00UNK54  a         :Place ;
+        skos:prefLabel      "bstan ri/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6F6214C99E3EBE05 ;
+        :placeType          bdr:PT0042 .
+    
+    bdr:NT6F6214C99E3EBE05
+        a                   :Note ;
+        :noteText           "in khams/"@bo-x-ewts .
+}

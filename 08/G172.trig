@@ -1,0 +1,112 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G172 {
+    bda:G172  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G172 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "08/G172.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G172 ;
+        adm:logEntry        bda:LG0EEF8BFDA9C3BB3A , bda:LG3872AD67F4CCF5BC , bda:LG7407800917D27890 , bda:LG74495C0B909DAEC2 , bda:LGA04D10845893B009 , bda:LGDF12D4F1F78BD155 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632126219:133" ;
+        adm:place_id_lex    "632126219:143" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0EEF8BFDA9C3BB3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T14:32:22.86Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG3872AD67F4CCF5BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-10T15:02:25.975Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7407800917D27890
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:12.913Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG74495C0B909DAEC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-09T11:50:37.424Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA04D10845893B009
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T16:55:27.417Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGDF12D4F1F78BD155
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5576F67919E28D23
+        a                   :PlaceFounded ;
+        :onYear             "1643"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV56D09BF5933164FF
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P4084 ;
+        :onYear             "1654"^^xsd:gYear .
+    
+    bdr:G172  a             :Place ;
+        skos:altLabel       "kan chen dgon theg chen thar pa gling /"@bo-x-ewts , "kan chen theg chen thar pa gling /"@bo-x-ewts , "theg chen thar pa gling /"@bo-x-ewts , "尕寺"@zh-hans , "巴扎尕寺"@zh-hans , "bazhaga si"@zh-latn-pinyin-x-ndia , "ganchan si"@zh-latn-pinyin-x-ndia , "ga si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "kan chen dgon/"@bo-x-ewts , "Kanchen Gon Tekchen Tarpaling"@en , "甘禅寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID222CBE05F3FDEAF3 ;
+        :isRoot             true ;
+        :note               bdr:NTDF47193128AA6340 , bdr:NTE142C7633FF8026A ;
+        :placeEvent         bdr:EV5576F67919E28D23 , bdr:EV56D09BF5933164FF ;
+        :placeGonpaPerEcumen  "7.49" ;
+        :placeLat           "37.03000" ;
+        :placeLocatedIn     bdr:G1PD96101 ;
+        :placeLong          "102.34372" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID222CBE05F3FDEAF3
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G172" .
+    
+    bdr:NTDF47193128AA6340
+        a                   :Note ;
+        :contentLocationStatement  "p. 80" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་1654ལོར་ཕྱག་བཏབ།"@en .
+    
+    bdr:NTE142C7633FF8026A
+        a                   :Note ;
+        :contentLocationStatement  "pp 108-111" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "dge lugs pa monastery in a mdo; \nkan chen dgon theg chen thar ba gling \n'di ni bA za gzungs 'bum rgyal gyis mthun rkyen sbyar te paN chen blo bzang chos rgyan gyi thugs sras stong nyid rtogs pa'i grub chen bzhi'i nang tshan bsam blo ba 'dan ma tshul khrims rgya mtshos dgung lo re brgyad pa shing rta (1654) lor btab/ bA za phun tshogs sogs kha shas kyis grwa khang brgyab/ bA za zhang tshan gyis lnga mchod btang/ phyi lo nas grwa ba dang grwa shag je mang du song/ re zhig thar ba gling la 'chad nyan btsugs nas dga' ldan legs bshad gling thogs gsungs/ lU kya rab 'byams pa la brtsi bzhag gtong bcug ste rten 'brel bsgrigs/ thu'u bkwan rin po che khrir bzhugs shing slob chung du rab 'byams pa ngag dbang bkra shis bskos/ bram gzugs sku thang byin can zhig yod pa 'di gar bzhugs/ 'dan ma sku phreng gi sku gdung/ lcang skya rin po ches gnang ba'i tshe sku byin can/ gser zangs kyi gnas brtan bcu drug sogs bzhugs"@en .
+}

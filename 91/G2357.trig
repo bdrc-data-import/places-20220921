@@ -1,0 +1,116 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2357 {
+    bda:G2357  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2357 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "91/G2357.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2357 ;
+        adm:logEntry        bda:LG19D1E0653FFFA854 , bda:LG3D3ECE72845907E7 , bda:LG7A73B8D76C8DD140 , bda:LG968B6D2847202C80 , bda:LGA88DF857026EEF1F , bda:LGB83A66754CE33C49 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542229101:542229101" ;
+        adm:place_id_lex    "542229101:542229101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG19D1E0653FFFA854
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-05T13:42:53.36Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3D3ECE72845907E7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7A73B8D76C8DD140
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-11-25T16:06:31.289Z"^^xsd:dateTime ;
+        adm:logMessage      "added full name and description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG968B6D2847202C80
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:19:05.559Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA88DF857026EEF1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:35:40.593Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB83A66754CE33C49
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-11-25T14:51:12.114Z"^^xsd:dateTime ;
+        adm:logMessage      "added location \"deags po\" and name \"dwags po grwa tshang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV14564F82DD54D5E4
+        a                   :PlaceConverted ;
+        :onYear             "1750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV6C7E28A0E6CBB52F
+        a                   :PlaceFounded ;
+        :onYear             "1550"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G2357  a            :Place ;
+        rdfs:comment        "dgon pa 'di la lo rgyus snga phyi gnyis las / sngar bka' brgyud yin pa la/ phyis dge lugs pa chags par snang /" ;
+        skos:altLabel       "bshad sgrub gling /"@bo-x-ewts , "dwags po dga' ldan bshad sgrub rnam rgyal gling /"@bo-x-ewts , "dwags po grwa tshang /"@bo-x-ewts , "dabo xiezhulin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dwags po bshad sgrub gling /"@bo-x-ewts , "Dakpo Shedrubling"@en-x-mixed , "达波谢珠林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC88B01F10BFD8774 ;
+        :isRoot             true ;
+        :note               bdr:NT095F0D91F2ED2786 , bdr:NT834D99A938980C5A ;
+        :placeContains      bdr:G2CN10878 ;
+        :placeEvent         bdr:EV14564F82DD54D5E4 , bdr:EV6C7E28A0E6CBB52F ;
+        :placeGonpaPerEcumen  "3.14" ;
+        :placeLat           "29.13814" ;
+        :placeLocatedIn     bdr:G1390 , bdr:G2138 ;
+        :placeLong          "92.56857" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC88B01F10BFD8774
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2357" .
+    
+    bdr:NT095F0D91F2ED2786
+        a                   :Note ;
+        :contentLocationStatement  "p. 59" ;
+        :noteSource         bdr:MW20212 ;
+        :noteText           "dge lugs pa monastery founded by the 7th khri of dga' ldan blo gros brtan pa"@en .
+    
+    bdr:NT834D99A938980C5A
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 90-91" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

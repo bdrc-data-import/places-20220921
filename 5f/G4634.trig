@@ -1,0 +1,120 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4634 {
+    bda:G4634  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4634 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "5f/G4634.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4634 ;
+        adm:logEntry        bda:LG23BC6B9657D4B20B , bda:LG25CC7043112A150B , bda:LG4AC4147C907ED93B , bda:LGAE495CB8B4692547 , bda:LGAFB29353ACBDFD7C , bda:LGD33AA45C898C98BD , bda:LGF0C1D48FFB7A484E , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542229204:542229102" ;
+        adm:place_id_lex    "542229204:542229102" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG23BC6B9657D4B20B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:36:55.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG25CC7043112A150B
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-27T15:08:31.726Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG4AC4147C907ED93B
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-27T15:05:56.061Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGAE495CB8B4692547
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-23T15:01:38.832Z"^^xsd:dateTime ;
+        adm:logMessage      "edited founding date"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGAFB29353ACBDFD7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-03T11:31:15.806Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD33AA45C898C98BD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF0C1D48FFB7A484E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-04T14:05:03.381Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV22ACC51BC73DDE34
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P84 .
+    
+    bdr:EVE24D70C33B3F2E64
+        a                   :PlaceFounded ;
+        :onYear             "1509"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4634  a            :Place ;
+        skos:altLabel       "chos 'khor rgyal me tog thang /"@bo-x-ewts , "曲果杰寺"@zh-hans , "琼果杰寺"@zh-hans , "青稞吉寺"@zh-hans , "qingkeji si"@zh-latn-pinyin-x-ndia , "qiongguojie si"@zh-latn-pinyin-x-ndia , "quguojie si"@zh-latn-pinyin-x-ndia , "qukejie si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "chos 'khor rgyal/"@bo-x-ewts , "Chokhorgyal"@en-x-mixed , "曲科杰寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7EA5DFDEA8B78A74 ;
+        :isRoot             true ;
+        :note               bdr:NT16AB4978D41514CF , bdr:NT22D32C99C2C48866 , bdr:NT8790AA99307D0E74 ;
+        :placeEvent         bdr:EV22ACC51BC73DDE34 , bdr:EVE24D70C33B3F2E64 ;
+        :placeGonpaPerEcumen  "2.89" ;
+        :placeLat           "29.45252" ;
+        :placeLocatedIn     bdr:G2109 , bdr:G2138 ;
+        :placeLong          "92.72956" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID7EA5DFDEA8B78A74
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4634" .
+    
+    bdr:NT16AB4978D41514CF
+        a                   :Note ;
+        :noteText           "alternative founding date, 1550"@en .
+    
+    bdr:NT22D32C99C2C48866
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 91-92" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT8790AA99307D0E74
+        a                   :Note ;
+        :noteText           "founded by the second dalai lama, dge 'dun rgya mtsho (mkhyen brtse gdan rabs p. 481)"@en .
+}

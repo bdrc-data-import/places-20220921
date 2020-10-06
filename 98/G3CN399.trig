@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN399 {
+    bda:G3CN399  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN399 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "98/G3CN399.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN399 ;
+        adm:logEntry        bda:LG09EFEC619C1E6461 , bda:LG2DBFBD210B312ED5 , bda:LGADFD58F308DFDE5F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG09EFEC619C1E6461
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-19T11:12:16.723Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2DBFBD210B312ED5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-09-18T16:39:31.426Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGADFD58F308DFDE5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-25T10:54:03.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN399  a          :Place ;
+        skos:altLabel       "a chen khu nu ri rgyud/"@bo-x-ewts , "khu nu ri rgyud/"@bo-x-ewts , "kunlun shan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "khu nu la/"@bo-x-ewts , "Kunlun Mountains"@en , "昆仑山"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT6387425CD8E57152 ;
+        :placeLocatedIn     bdr:G3170 , bdr:G3196 ;
+        :placeType          bdr:PT0044 .
+    
+    bdr:NT6387425CD8E57152
+        a                   :Note ;
+        :contentLocationStatement  "p. 166" ;
+        :noteSource         bdr:MW1PD95799 ;
+        :noteText           "བོད་ཀྱི་ནུབ་བྱང་མཚམས་ཀྱི་ལ་ཆེན་ནམ་རི་རྒྱུད་རིང་པོ་ཞིག་གི་མིང་ཡིན་ཏེ། དེང་སང་ལྟར་ན་ཤིན་ཅང་དང་བོད་ཀྱི་ས་མཚམས་སུ་གནས།"@bo .
+}

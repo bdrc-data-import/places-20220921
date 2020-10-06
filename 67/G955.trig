@@ -1,0 +1,39 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G955 {
+    bda:G955  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G955 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "67/G955.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G955 ;
+        adm:logEntry        bda:LG948724FC36E35EFE , bda:LGFB4014C0EAF25851 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG948724FC36E35EFE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFB4014C0EAF25851
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-09T19:51:48.257Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G955  a             :Place ;
+        skos:prefLabel      "shar phyogs Kong yul/"@bo-x-ewts ;
+        :isRoot             true .
+}

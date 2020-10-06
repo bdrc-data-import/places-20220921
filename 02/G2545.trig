@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2545 {
+    bda:G2545  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2545 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "02/G2545.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2545 ;
+        adm:logEntry        bda:LG4E59F45D656B85F2 , bda:LG4FEEFCD7DCA9B44B , bda:LGE7ECE6742EAD058F , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG4E59F45D656B85F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-18T14:52:57.319Z"^^xsd:dateTime ;
+        adm:logMessage      "takeout location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4FEEFCD7DCA9B44B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-18T18:43:22.892Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE7ECE6742EAD058F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2545  a            :Place ;
+        skos:altLabel       "bkra shis chos 'khor gling /"@bo-x-ewts , "gser rde'u dgon pa/"@bo-x-ewts , "rkang tsha dgon gong ma'i dgon pa bkra shis chos 'khor gling /"@bo-x-ewts ;
+        skos:prefLabel      "rkang tsha dgon gong ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2A87204845065197 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT2A87204845065197
+        a                   :Note ;
+        :contentLocationStatement  "p. 138" ;
+        :noteSource         bdr:MW20197 ;
+        :noteText           "dge lugs pa monastery in rkang tsha rdzong, mtsho byang khul\nfounded in 1948\nrestored"@en .
+}

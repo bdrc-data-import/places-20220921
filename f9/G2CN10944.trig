@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10944 {
+    bda:G2CN10944  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10944 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "f9/G2CN10944.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10944 ;
+        adm:logEntry        bda:LG2D57BEF40DD16DF5 , bda:LG3A1E3056FB4E01A1 , bda:LG57C40546383D3F02 , bda:LGD6ABA7E77AE32589 , bda:LGFFE23A36B92EF3C3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1KR2385 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG2D57BEF40DD16DF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG3A1E3056FB4E01A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-07T15:49:48.163Z"^^xsd:dateTime ;
+        adm:logMessage      "added note & info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG57C40546383D3F02
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-12-07T12:55:21.885Z"^^xsd:dateTime ;
+        adm:logMessage      "created place record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD6ABA7E77AE32589
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-08T12:50:04.219Z"^^xsd:dateTime ;
+        adm:logMessage      "added pinyin name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFFE23A36B92EF3C3
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-02-14T10:28:06.123Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1KR2385"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV179EF414CDAA9F82
+        a                   :PlaceFounded ;
+        :onYear             "1553"^^xsd:gYear .
+    
+    bdr:G2CN10944  a        :Place ;
+        skos:altLabel       "a rig dgon chen dga' ldan chos 'phel gling /"@bo-x-ewts , "阿力克大寺"@zh-hans , "alike dasi"@zh-latn-pinyin-x-ndia , "arou dasi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "a rig dgon chen/"@bo-x-ewts , "阿柔大寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT0990A1C06AB805E6 , bdr:NT7F52CE40D1E21ADD , bdr:NTD85DFA2D32BE41E9 ;
+        :placeEvent         bdr:EV179EF414CDAA9F82 ;
+        :placeLocatedIn     bdr:G1110 , bdr:G2314 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0990A1C06AB805E6
+        a                   :Note ;
+        :contentLocationStatement  "p. 219-224" ;
+        :noteSource         bdr:MW00KG01062 ;
+        :noteText           "ཆུ་ལེན་རྫོང་ནས་ཤར་ཕྱོགས་སུ་སྤྱི་ལེ་༣༥ཙམ་ཡོད་པའི་ཨ་རིག་ཞང་སྲིད་གཞུང་གི་ཉེ་འདབས་སུ་ཆགས་ཡོད། ཞིབ་ཆའི་ལོ་རྒྱུས་གོང་འཁོད་རྒྱུ་ཆར་གཟིགས།"@bo .
+    
+    bdr:NT7F52CE40D1E21ADD
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR2385"@en .
+    
+    bdr:NTD85DFA2D32BE41E9
+        a                   :Note ;
+        :contentLocationStatement  "p. 418-419" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "རྒྱལ་དབང་ལྔ་པ་ཆེན་པོའི་བཀའ་དང་འབྲེལ་ནས་བྱ་བྲལ་ཏཱ་བླ་མ་དང་ཨ་རིག་རབ་འབྱམས་པ་མཁས་བཙུན་རྒྱ་མཚོ་གཉིས་ཀྱིས་ཐོག་མར་བཞེངས་པར་གསལ།"@bo .
+}

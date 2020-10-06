@@ -1,0 +1,119 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1963 {
+    bda:G1963  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1963 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "26/G1963.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1963 ;
+        adm:logEntry        bda:LG062FF29AB481529D , bda:LG153A6F863AC53634 , bda:LG4A7351E93450066A , bda:LGAA142D963344730E , bda:LGC435636EBE88F958 , bda:LGC538C938729FBAC5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632123103:86" ;
+        adm:place_id_lex    "632123103:57" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG062FF29AB481529D
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T15:22:50.748Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG153A6F863AC53634
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4A7351E93450066A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-31T12:41:13.657Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAA142D963344730E
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-01T14:54:52.477Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC435636EBE88F958
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T14:33:16.278Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGC538C938729FBAC5
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-01T14:32:53.69Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV502AC37F1B368402
+        a                   :PlaceConverted ;
+        :onYear             "1619"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVFAAFD02A2AE2C64F
+        a                   :PlaceFounded ;
+        :onYear             "1392"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G1963  a            :Place ;
+        skos:altLabel       "gro tshang lha khang gau tam sde dge rgyas bde chen gling /"@bo-x-ewts , "gro tshang rdo rje 'chang /"@bo-x-ewts , "qutan si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gro tshang lha khang /"@bo-x-ewts , "瞿昙寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID67AB22E01163EB75 ;
+        :isRoot             true ;
+        :note               bdr:NT18A730A80382EC66 , bdr:NT48C9793B73863AF2 , bdr:NTDD13E91F1F1E5846 ;
+        :placeEvent         bdr:EV502AC37F1B368402 , bdr:EVFAAFD02A2AE2C64F ;
+        :placeGonpaPerEcumen  "12.08" ;
+        :placeLat           "36.35000" ;
+        :placeLocatedIn     bdr:G1PD5303 ;
+        :placeLong          "102.30000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID67AB22E01163EB75
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1963" .
+    
+    bdr:NT18A730A80382EC66
+        a                   :Note ;
+        :contentLocationStatement  "p. 597" ;
+        :noteSource         bdr:MW20115 ;
+        :noteText           "temple located in a mdo"@en .
+    
+    bdr:NT48C9793B73863AF2
+        a                   :Note ;
+        :contentLocationStatement  "p. 22" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "according to this source gro tshang dgon was founded by two direct disciples of tsong kha pa, glang dkar ba sangs rgyas bkra shis and his nephew (dbon) chos rje bsam gtan blo gros\n\nglang dkar ba sangs rgyas bkra shis \nchos rje bsam gtan blo gros \n'di khu dbon gnyis ni rje blo bzang grags pa'i dngos slob yin pa dang gro tshang dgon btab/ ta'i ming gi ti shrI mdzad/"@en .
+    
+    bdr:NTDD13E91F1F1E5846
+        a                   :Note ;
+        :contentLocationStatement  "p. 48" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་1392 ལོར་ཕྱག་བཏབ།"@en .
+}

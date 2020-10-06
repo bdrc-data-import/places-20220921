@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1359 {
+    bda:G1359  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1359 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "05/G1359.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1359 ;
+        adm:logEntry        bda:LG20C12A9AE8EAD418 , bda:LGA61A416730167F52 , bda:LGC16B9ADB40D840D7 , bda:LGF77AF3B2C3186FFE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG20C12A9AE8EAD418
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-05T09:00:33.307Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA61A416730167F52
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-16T14:51:31.111Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC16B9ADB40D840D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-09T14:54:55.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF77AF3B2C3186FFE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1359  a            :Place ;
+        skos:prefLabel      "er te ni Te ge li/"@bo-x-ewts , "er te ni Te ge li in Kang ga'i kan Ko shi gun"@en ;
+        :isRoot             true ;
+        :note               bdr:NT7818C7E8B5A5DA38 ;
+        :placeLocatedIn     bdr:G584 ;
+        :placeType          bdr:PT0081 .
+    
+    bdr:NT7818C7E8B5A5DA38
+        a                   :Note ;
+        :noteText           "see also C2CN10984"@en .
+}

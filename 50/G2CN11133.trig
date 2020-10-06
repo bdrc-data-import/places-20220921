@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11133 {
+    bda:G2CN11133  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11133 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "50/G2CN11133.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11133 ;
+        adm:logEntry        bda:LG1153B912B613E84A , bda:LG95509D007A516EBB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1153B912B613E84A
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-18T09:29:54.6Z"^^xsd:dateTime ;
+        adm:logMessage      "remove empty event"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG95509D007A516EBB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-16T11:03:20.973Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2CN11133  a        :Place ;
+        skos:prefLabel      "rgyal po shel khur ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7C0FCB4F20FE2C18 , bdr:NTA99EA8C4154B3D08 ;
+        :placeLat           "32.197889" ;
+        :placeLocatedIn     bdr:G2146 ;
+        :placeLong          "92.693972" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT7C0FCB4F20FE2C18
+        a                   :Note ;
+        :contentLocationStatement  "p. 68" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "སྙེ་རོང་རྫོང་བེ་གཞུང་ཤང་ཁོངས་སུ་གནས། བླ་གྲྭ་སུམ་ཅུ་སྐོར་ཡོད་ཅིང་ལམ་བགྲོད་དཀའ་ཚུལ་འཁོད།"@bo .
+    
+    bdr:NTA99EA8C4154B3D08
+        a                   :Note ;
+        :noteText           "Located in Be gzhung xiang. Approximately 25 monks."@en .
+}

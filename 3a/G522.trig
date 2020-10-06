@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G522 {
+    bda:G522  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G522 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "3a/G522.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G522 ;
+        adm:logEntry        bda:LG02CD23F126CE0318 , bda:LG0A118CCDD7E46890 , bda:LG104CC41D98214F18 , bda:LG28304449D3958617 , bda:LG954F955C93A64625 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513335208:73" ;
+        adm:place_id_lex    "513335208:73" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02CD23F126CE0318
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-26T09:57:33.24Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"gro ba dgon\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0A118CCDD7E46890
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-17T14:24:38.538Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG104CC41D98214F18
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG28304449D3958617
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T15:45:35.618Z"^^xsd:dateTime ;
+        adm:logMessage      "added o rgyan theg mchog gling gi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG954F955C93A64625
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-26T10:33:29.48Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0A814C47883DA160
+        a                   :PlaceFounded ;
+        :onYear             "1436"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G522  a             :Place ;
+        skos:altLabel       "'ba' grub pa dgon o rgyan theg mchog gling /"@bo-x-ewts , "gro ba dgon/"@bo-x-ewts , "grub dgon/"@bo-x-ewts , "o rgyan theg mchog gling /"@bo-x-ewts , "zhuwa si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "grub pa dgon/"@bo-x-ewts , "竹瓦寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAE5C6846122E5817 ;
+        :isRoot             true ;
+        :note               bdr:NTD341C5F7512CC34F , bdr:NTDFAF807E353F1450 ;
+        :placeContains      bdr:G3JT12603 ;
+        :placeEvent         bdr:EV0A814C47883DA160 ;
+        :placeGonpaPerEcumen  "2" ;
+        :placeLat           "29.45000" ;
+        :placeLocatedIn     bdr:G2305 ;
+        :placeLong          "99.36667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDAE5C6846122E5817
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G522" .
+    
+    bdr:NTD341C5F7512CC34F
+        a                   :Note ;
+        :contentLocationStatement  "pp. 29-33" ;
+        :noteSource         bdr:MW29126 ;
+        :noteText           "rnying ma monastery located in 'ba' thang rdzong (spo 'bor gang), located 40 km. from the center of 'ba' thang rdzong\nthe monastery was founded as a hermitage by an indian grub chen ra khrid bkra shis chos kyi dbang phyug during his wanderings in tibet; it became a monastery between 1436-1442\nit was originally a kaM tshang bka' brgyud monastery and was converted to byang gter rnying ma during the time of the 5th dalai lama; it had two ranking incarnations, the rgya gar sku zhabs and the rgya nag bla brang\nthis monastery had 8 separate khams tshan:\nyar 'phel gzhal yas khang tshan\nri shul sngags pa khang tshan\ngo bo bsam gtan khang tshan\nphyi song bdud 'joms khang tshan\nsde rong rang 'byung khang tshan\n'bri rgyud sram khang tshan\nmdo rdzong zil non khang tshan\nge smad bstan srung khang tshan"@en .
+    
+    bdr:NTDFAF807E353F1450
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 392-396" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "name of a rnying ma monastery in 'ba' thang rdzong of the byang gter tradition\n\nཐོག་མར་ཆོས་བརྒྱུད་ཀཾ་ཚང་ཡིན་པ་ལ་རྒྱལ་དབང་ལྔ་པ་ཆེན་པོའི་དུས་སུ་རྙིང་མར་བསྒྱུར། དེ་ཡང་ཆོས་རྒྱལ་བཀྲ་ཤིས་སྟོབས་རྒྱལ་གྱི་གདུང་བརྒྱུད། གཙང་ཐེག་མཆོག་གླིང་(G00AG01698)གི་དབུ་མཛད། རྒྱུད་གྲྭ་ཀུན་ལ་མཚན་སྙན་རྒྱས་པ་ངག་དབང་བསྟན་པ་རབ་རྒྱས་ཀྱིས་དགོན་འདི་གནས་སྤོ་གསར་བཞེངས་མཛད་ཅིང་། དགོན་མིང་ཨོ་རྒྱན་ཐེག་མཆོག་གླིང་དུ་གསོལ་ནས་སྔ་འགྱུར་རྡོ་རྗེ་བྲག་གི་རིང་ལུགས་སྤེལ། རྒྱ་ནག་སྐུ་ཕྲེང་རིམ་བྱོན་དང་རྒྱ་གར་སྐུ་ཕྲེང་རིམ་བྱོན་ཟུང་ནས་བསྟན་སྲིད་བསྐྱངས་ཚུལ་ཐུན་མིན་དུ་གནས་པ་སོགས་འཁོད།"@en .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G003JR177 {
+    bda:G003JR177  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G003JR177 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "85/G003JR177.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G003JR177 ;
+        adm:logEntry        bda:LG462BB189C93609A1 , bda:LG5A874E2EFCFA5E78 , bda:LGE1B80BEB6C3A19F9 , bda:LGFA5BE8F681739D15 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG462BB189C93609A1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-04-23T17:05:00.496Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created or updated; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LG5A874E2EFCFA5E78
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-24T11:07:24.999Z"^^xsd:dateTime ;
+        adm:logMessage      "edited; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGE1B80BEB6C3A19F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-05T11:12:36.598Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFA5BE8F681739D15
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-23T23:07:59.265Z"^^xsd:dateTime ;
+        adm:logMessage      "edited located in fields; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G003JR177  a        :Place ;
+        skos:altLabel       "gtso dgon smin grol bstan rgyas gling /"@bo-x-ewts , "gtso tshang smin grol bstan rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "gtso tshang dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD3F5DBD1EC5674A4 ;
+        :placeLocatedIn     bdr:G2333 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTD3F5DBD1EC5674A4
+        a                   :Note ;
+        :contentLocationStatement  "p. 198" ;
+        :noteSource         bdr:MW00EGS1016181 ;
+        :noteText           "mdo smad 'phags pa rnam gsum gyi nang tshan gtso 'phags zla ba rgyal mtshan zhes pa'i gsang grub rig pa 'dzin pa'i skyes mchog 'gro don la thogs chags med pa sbas pa'i rnal 'byor chen po de nyid kyi gdan sa ni/ shar dung ri'i gser mtsho nas nub phyogs su spyi le 25 yod pa dang/ khri skyang stod smad kyi bar chu bo gnyis 'dus mdo na rgya tshang sgu zhes 'bod pa'i sa na/ zhwa dkar g.yung drung bon gyi 'dus sde chen po gtso tshang dgon smin grol bstan rgyas gling zhes 'bod pa; bon monastery in a mdo shar khog"@en .
+}

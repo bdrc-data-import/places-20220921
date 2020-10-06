@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2414 {
+    bda:G2414  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2414 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "35/G2414.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2414 ;
+        adm:logEntry        bda:LGF7A490520C19519D , bda:LGFE2FAC2CDB07595E , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGF7A490520C19519D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-04T09:35:25.543Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFE2FAC2CDB07595E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2414  a            :Place ;
+        skos:prefLabel      "chu bzang ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT24D14CB367FECC4D ;
+        :placeLocatedIn     bdr:G2128 , bdr:G2406 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT24D14CB367FECC4D
+        a                   :Note ;
+        :contentLocationStatement  "p. 32" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "rnying ma pa hermitage located in lcang can grong tsho of tsha rag shang, chu shur rdzong, lha sa prefecture\nfounded in 1887 by a practitioner from sde dge, khams pa sangs rgyas\nunder the control of the 'bras spungs blo gsal gling grwa tshang\nin 1959 was looked after by a single dkon gnyer"@en .
+}

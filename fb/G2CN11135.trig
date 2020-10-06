@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11135 {
+    bda:G2CN11135  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11135 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fb/G2CN11135.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11135 ;
+        adm:logEntry        bda:LG26D1824EA18FB30E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG26D1824EA18FB30E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-16T11:39:33.802Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV22B2EDBDA9363407
+        a                   :PlaceFounded ;
+        :onYear             "1842"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G2CN11135  a        :Place ;
+        skos:altLabel       "murong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "smon rgyal bla brang /"@bo-x-ewts , "木荣寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT498466BB7A930682 , bdr:NTBEC498CA5EE2E52A ;
+        :placeEvent         bdr:EV22B2EDBDA9363407 ;
+        :placeLocatedIn     bdr:G2188 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT498466BB7A930682
+        a                   :Note ;
+        :contentLocationStatement  "p. 173" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "དགོན་འདི་ནི་སྟེང་ཆེན་གྲོང་རྡལ་གྱི་ཁོངས་སུ་གནས། ༡༨༤༢ལོར་ནམ་མཁའ་དབང་གིས་ཕྱག་བཏབ། བླ་གྲྭ་བཅུ་སྐོར་ཙམ་ལས་མེད།"@bo .
+    
+    bdr:NTBEC498CA5EE2E52A
+        a                   :Note ;
+        :noteText           "residence. 4km s. of Tengchen Co. seat"@en .
+}

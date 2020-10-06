@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1930 {
+    bda:G1930  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1930 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "4e/G1930.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1930 ;
+        adm:logEntry        bda:LG3D6905E985990EAD , bda:LG7D1FBCFB131DA61C , bda:LG818D3566DCD0125A , bda:LGD0E8F087AC2FA868 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632522204:391" ;
+        adm:place_id_lex    "632522204:454" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3D6905E985990EAD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T16:06:02.051Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7D1FBCFB131DA61C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T14:03:01.488Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG818D3566DCD0125A
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T14:01:50.845Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGD0E8F087AC2FA868
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVBF89220FE1D8BD06
+        a                   :PlaceFounded ;
+        :onYear             "1927"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVFD6CC9105C2CAF3D
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P6819 ;
+        :onYear             "1927"^^xsd:gYear .
+    
+    bdr:G1930  a            :Place ;
+        skos:altLabel       "dkar mo gsang chen sgrub phug bkra shis chos 'khor gling /"@bo-x-ewts , "gsang chen sgrub phug bkra shis chos 'khor gling /"@bo-x-ewts , "gamaowu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dkar mo mtshams khang /"@bo-x-ewts , "Karmo Sangchen Drubpuk Tashi Chokorling"@en , "尕毛吾寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDF7DA5BC8341913C ;
+        :isRoot             true ;
+        :note               bdr:NT0A8FDCBA18ABBF7C ;
+        :placeEvent         bdr:EVBF89220FE1D8BD06 , bdr:EVFD6CC9105C2CAF3D ;
+        :placeGonpaPerEcumen  "1.32" ;
+        :placeLat           "35.13624" ;
+        :placeLocatedIn     bdr:G1518 ;
+        :placeLong          "100.33241" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDDF7DA5BC8341913C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1930" .
+    
+    bdr:NT0A8FDCBA18ABBF7C
+        a                   :Note ;
+        :contentLocationStatement  "p. 761" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "dge lugs pa monastery in thang rgan zhang,  thun te country, mtsho lho bod rigs rang skyong prefecture\nlocated in  thang rgan zhang on the north bank of the rgyang chen lung ba\nfounded in 1927 'jam dbyangs mkhyen rab\nin 1948 it had one main assembly hall, 20 monk residences, and 35 monks\ncompletely destroyed during cultural revolution\nfrom 1986 the assembly hall was rebuilt and more that 20 monks residences with more than 70 monks"@en .
+}

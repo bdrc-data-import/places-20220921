@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G616 {
+    bda:G616  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G616 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c4/G616.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G616 ;
+        adm:logEntry        bda:LG2D2EE9B5417893B5 , bda:LG6AA5360A935589BF , bda:LGD394231B39B5D033 , bda:LGEEF0863277F60CDD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2D2EE9B5417893B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-27T15:22:31.762Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6AA5360A935589BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T15:39:04.142Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains in info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD394231B39B5D033
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEEF0863277F60CDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-14T12:36:04.521Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G616  a             :Place ;
+        skos:prefLabel      "rgyal bzang 'brog sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFB0150A8D8D7EF93 ;
+        :placeLocatedIn     bdr:G3CN22 ;
+        :placeType          bdr:PT0048 .
+    
+    bdr:NTFB0150A8D8D7EF93
+        a                   :Note ;
+        :contentLocationStatement  "p. 1630" ;
+        :noteSource         bdr:MW19801 ;
+        :noteText           "rong tha blo bzang chos 'byor lhun grub ni/ 'bri zla zla mo sgang gi rgyal bzang 'brog sder 'khrungs zhes gsal/"@bo-x-ewts .
+}

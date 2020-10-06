@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10941 {
+    bda:G2CN10941  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10941 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ee/G2CN10941.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10941 ;
+        adm:logEntry        bda:LG202806262E94EE49 , bda:LG59C2D7CD2253244C , bda:LG6B798558A438BC77 , bda:LG837DFC5E8A253FEA , bda:LG9FCAC7CE27FF71F9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG202806262E94EE49
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T14:55:15.772Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains in info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG59C2D7CD2253244C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-12T15:25:43.767Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6B798558A438BC77
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T10:13:02.064Z"^^xsd:dateTime ;
+        adm:logMessage      "added as par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG837DFC5E8A253FEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-06T10:21:54.858Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains data"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9FCAC7CE27FF71F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-22T15:50:09.61Z"^^xsd:dateTime ;
+        adm:logMessage      "added regions"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:G2CN10941  a        :Place ;
+        skos:prefLabel      "par pa pad+ma don grub kyi par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2800 ;
+        :placeType          bdr:PT0059 .
+}

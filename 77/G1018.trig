@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1018 {
+    bda:G1018  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1018 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "77/G1018.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1018 ;
+        adm:logEntry        bda:LG37C2C90C34AFCBD5 , bda:LG6DF476FDF3185A8E , bda:LG9F45116DD2F436DB , bda:LGC5E2FCD2B234497B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG37C2C90C34AFCBD5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6DF476FDF3185A8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9F45116DD2F436DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-28T10:26:42.231Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC5E2FCD2B234497B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-09T15:46:06.012Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1018  a            :Place ;
+        skos:altLabel       "sa skya'i lha rtse/"@bo-x-ewts ;
+        skos:prefLabel      "sa skya lha rtse/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5B7023015379138A ;
+        :placeLocatedIn     bdr:G880 ;
+        :placeType          bdr:PT0041 .
+    
+    bdr:NT5B7023015379138A
+        a                   :Note ;
+        :contentLocationStatement  "p. 230" ;
+        :noteSource         bdr:MW19801 ;
+        :noteText           "sa skya'i lha rtse zhes pa 'di mkhas btsun nam mkha' legs pa'i rgyal mtshan gyi 'khrungs sa yin te/ 'di bla brang yin min mu mthud rsad rgyu'i brjed thor/"@en .
+}

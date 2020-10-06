@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2034 {
+    bda:G2034  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2034 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "02/G2034.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2034 ;
+        adm:logEntry        bda:LG770E2455D9608E99 , bda:LGC3AEFEAA18D200A7 , bda:LGIM035E0028DC , bda:LGIMA37A954E21 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG770E2455D9608E99
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-24T10:25:58.957Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC3AEFEAA18D200A7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM035E0028DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from zhangxiang to shang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMA37A954E21
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-20T22:30:59.465Z"^^xsd:dateTime ;
+        adm:logMessage      "populating gis from G9GBX..."@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G2034  a            :Place ;
+        skos:prefLabel      "rgya ma shang (mal gro gung dkar)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFA27DB4764FA21AC ;
+        :placeContains      bdr:G235 , bdr:G4163 ;
+        :placeGB2260-2013   "540127205" ;
+        :placeLocatedIn     bdr:G2014 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NTFA27DB4764FA21AC
+        a                   :Note ;
+        :contentLocationStatement  "p. 40" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "modern zhang located in mal gro gung dkar rdzong--1997"@en .
+}

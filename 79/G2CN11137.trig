@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11137 {
+    bda:G2CN11137  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11137 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "79/G2CN11137.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11137 ;
+        adm:logEntry        bda:LGCD17753A61E97B84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGCD17753A61E97B84
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-17T12:03:41.532Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV13625382CB58C08A
+        a                   :PlaceFounded ;
+        :notAfter           "1599"^^xsd:gYear ;
+        :notBefore          "1500"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G2CN11137  a        :Place ;
+        skos:altLabel       "g.yung drung shug tshal gling /"@bo-x-ewts , "gser thang g.yung drung shug tshal gling /"@bo-x-ewts ;
+        skos:prefLabel      "gser thang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4F6FAA3AB6A3FA59 ;
+        :placeEvent         bdr:EV13625382CB58C08A ;
+        :placeLat           "28.912861" ;
+        :placeLocatedIn     bdr:G4450 ;
+        :placeLong          "82.999174" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT4F6FAA3AB6A3FA59
+        a                   :Note ;
+        :noteText           "Main temple known as gser thang.\n\nno monks, villagers\n\nlocated in Bar sle, Bajibara, Nepal"@en .
+}

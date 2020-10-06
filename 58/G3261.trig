@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3261 {
+    bda:G3261  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3261 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "58/G3261.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3261 ;
+        adm:logEntry        bda:LG4394EB86101458F9 , bda:LG955EE7DB0A2BE040 , bda:LGBBD3646D8BE9FF3B , bda:LGF5EA26FB46E05232 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513332219:386" ;
+        adm:place_id_lex    "513332219:386" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4394EB86101458F9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG955EE7DB0A2BE040
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T09:25:21.59Z"^^xsd:dateTime ;
+        adm:logMessage      "added dga' ldan theg chen dar rgyas gling gi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGBBD3646D8BE9FF3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-22T10:13:41.248Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF5EA26FB46E05232
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-06T15:46:21.008Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from sde dge political history"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVDC063B25F8AC1B4C
+        a                   :PlaceFounded ;
+        :onYear             "1672"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3261  a            :Place ;
+        skos:altLabel       "dga' ldan theg chen dar rgyas gling /"@bo-x-ewts , "ser shul dgon dga' ldan theg chen dar rgyas gling /"@bo-x-ewts , "sexu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ser shul dgon/"@bo-x-ewts , "色须寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAC13228A2C22B43E ;
+        :isRoot             true ;
+        :note               bdr:NTA160B46B18D30F5A , bdr:NTF5D6436AEE58DDE6 ;
+        :placeContains      bdr:G3JT12566 ;
+        :placeEvent         bdr:EVDC063B25F8AC1B4C ;
+        :placeGonpaPerEcumen  "3.24" ;
+        :placeLat           "32.58333" ;
+        :placeLocatedIn     bdr:G2301 ;
+        :placeLong          "98.88333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDAC13228A2C22B43E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3261" .
+    
+    bdr:NTA160B46B18D30F5A
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 123-151" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "important dge lugs monastery in ser shul rdzong"@en .
+    
+    bdr:NTF5D6436AEE58DDE6
+        a                   :Note ;
+        :contentLocationStatement  "p. 150" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "dge lugs monastery in ser shul rdzong; according to this source in was founded in 1760 by dka' bcu rin po che blo bzang chos dar; in former times it had about 1200 monks"@en .
+}

@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS521 {
+    bda:G2LS521  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS521 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3b/G2LS521.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS521 ;
+        adm:logEntry        bda:LG0A9C62AF36C34BC9 , bda:LG269633F1A14CA818 , bda:LG91BAB51DDB5A3945 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A9C62AF36C34BC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG269633F1A14CA818
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-02T13:43:33.679Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG91BAB51DDB5A3945
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:50:25.926Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:G2LS521  a          :Place ;
+        skos:prefLabel      "gangs ti se rgyal spyi'i sman rtsis khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8B741C82D61BE92C ;
+        :placeLocatedIn     bdr:G2154 ;
+        :placeType          bdr:PT0023 .
+    
+    bdr:NT8B741C82D61BE92C
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 21" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Established in 1999 by Ngari association, Switzerland and Swiss friend of Tibet."@en .
+}

@@ -1,0 +1,42 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX630224000 {
+    bda:G9GBX630224000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX630224000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "6a/G9GBX630224000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX630224000 ;
+        adm:logEntry        bda:LG5E05F17CD9680F3F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG5E05F17CD9680F3F
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX630224000
+        a                   :Place ;
+        skos:altLabel       "hua long hui zu zi zhi xian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Hualong Hui Autonomous County"@en , "化隆回族自治县"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX630224100 , bdr:G9GBX630224101 , bdr:G9GBX630224102 , bdr:G9GBX630224103 , bdr:G9GBX630224104 , bdr:G9GBX630224105 , bdr:G9GBX630224200 , bdr:G9GBX630224201 , bdr:G9GBX630224202 , bdr:G9GBX630224203 , bdr:G9GBX630224204 , bdr:G9GBX630224205 , bdr:G9GBX630224206 , bdr:G9GBX630224207 , bdr:G9GBX630224208 , bdr:G9GBX630224209 , bdr:G9GBX630224210 , bdr:G9GBX630224400 , bdr:G9GBX630224401 ;
+        :placeGB2260-2013   "630224000" ;
+        :placeLocatedIn     bdr:G9GBX630200000 ;
+        :placeType          bdr:PT0011 .
+}

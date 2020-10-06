@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1238 {
+    bda:G1238  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1238 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4a/G1238.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1238 ;
+        adm:logEntry        bda:LG27106387CC303502 , bda:LG88321C718FFA627D , bda:LGAB4A783E76F0E9F0 , bda:LGFCEA51B1B32CE3DC , bda:LGIM454E022964 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG27106387CC303502
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-08T10:50:44.898Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG88321C718FFA627D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAB4A783E76F0E9F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:21:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:residentialHouse to gzimsKhang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGFCEA51B1B32CE3DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T12:35:46.549Z"^^xsd:dateTime ;
+        adm:logMessage      "changed place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM454E022964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T17:05:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:gzimsKhang to khamsTshan"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1238  a            :Place ;
+        skos:prefLabel      "rka phug bya tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeType          bdr:PT0024 .
+}

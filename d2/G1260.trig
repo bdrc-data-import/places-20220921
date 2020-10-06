@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1260 {
+    bda:G1260  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1260 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d2/G1260.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1260 ;
+        adm:logEntry        bda:LG3B3B99030A92A48B , bda:LG3D5D89A02174F9B8 , bda:LG7170BFC1A65C0A6C , bda:LGF7402C98A4B8F84B , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3B3B99030A92A48B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-08T14:38:31.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain to the \"mdo ba\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3D5D89A02174F9B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-24T11:42:27.472Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7170BFC1A65C0A6C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF7402C98A4B8F84B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-27T14:13:17.99Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1260  a            :Place ;
+        skos:prefLabel      "mdo ba yar nang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT64B3D2B75FBE48BE ;
+        :placeLocatedIn     bdr:G1265 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT64B3D2B75FBE48BE
+        a                   :Note ;
+        :noteText           "traditional place name in eastern tibet"@en .
+}

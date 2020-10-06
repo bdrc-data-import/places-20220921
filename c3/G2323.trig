@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2323 {
+    bda:G2323  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2323 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c3/G2323.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2323 ;
+        adm:logEntry        bda:LG08DF652CB233F20F , bda:LG0C0EAEA63E5AFDC4 , bda:LG103366BEA0DD17BB , bda:LG1CF730007CA78F47 , bda:LG5EC8B05DDED4E340 , bda:LGB5385AD4C71FDB55 , bda:LGFE771124AC792252 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG08DF652CB233F20F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-01T15:22:56.284Z"^^xsd:dateTime ;
+        adm:logMessage      "added county \"wu'u lan rdzong\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0C0EAEA63E5AFDC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-30T13:51:00.222Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup, normalized, arranged list of contains & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG103366BEA0DD17BB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG1CF730007CA78F47
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2378"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG5EC8B05DDED4E340
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-26T12:31:12.812Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB5385AD4C71FDB55
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-30T14:38:52.605Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains & normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFE771124AC792252
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T10:23:09.173Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese name & place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2323  a            :Place ;
+        skos:altLabel       "mtsho nub khul/"@bo-x-ewts , "mtsho nub sog rigs bod rigs rang skyong khul/"@bo-x-ewts , "west kokonor autonomous mongolian & tibetan prefecture"@en , "海西蒙古族藏族自治州"@zh-hans , "haixi mengguzu zangzu zizhizhou"@zh-latn-pinyin-x-ndia , "haixi zhou"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mtsho nub rang skyong khul/"@bo-x-ewts , "West Kokonor Prefecture"@en , "海西州"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT832D6527D6AE7240 , bdr:NT9873BFC1878A420C ;
+        :placeContains      bdr:G2375 , bdr:G2378 , bdr:G2379 , bdr:G2380 , bdr:G2391 ;
+        :placeLocatedIn     bdr:G977 ;
+        :placeType          bdr:PT0002 .
+    
+    bdr:NT832D6527D6AE7240
+        a                   :Note ;
+        :noteText           "self-governing prefecture for the mongols, tibetans, and kazakhs in qinghai province\npinyin: haibeizhou\nthis prefecture has four or possibly six rdzong:\nwulan\ndulan\ngeermu\ndelinha\nmangya\ndachaidan\naccording to the tshig mdzod chen mo it has four/five rdzong:\nwu'u lan\nthen cun\ntu'u lan\nker mo\nand te lin khu"@en .
+    
+    bdr:NT9873BFC1878A420C
+        a                   :Note ;
+        :noteText           "༡༩༥༤ལོར་མཚོ་ནུབ་སོག་རིགས་བོད་རིགས་ཧ་སག་རིགས་རང་སྐྱོང་ལྗོངས་བཙུགས་ཤིང་། ༡༩༥༥ལོར་རང་སྐྱོང་ཁུལ་དུ་མིང་བསྒྱུར། སླར་༡༩༨༤ལོར་ཁུལ་དེའི་ཧ་སག་རིགས་རྣམས་ཤིན་ཅང་དུ་སྐྱས་སྤོས་རྗེས་མཚོ་ནུབ་སོག་རིགས་བོད་རིགས་རང་སྐྱོང་ཁུལ་དུ་མིང་བསྒྱུར། ༡༩༩༩ལོ་ནས་བཟུང་མཚོ་ནུབ་ཁུལ་གྱི་ཁོངས་སུ་གྲོང་ཁྱེར་གཉིས་དང་རྫོང་གསུམ་ཡོད་པ་ནི། གོར་མོ་གྲོང་ཁྱེར་དང་གཏེར་ལེན་ཁ་གྲོང་ཁྱེར། ཏུའུ་ལན་རྫོང་། ཝུའུ་ལན་རྫོང་། ཐེམ་ཆེན་རྫོང་བཅས་སོ།"@bo .
+}

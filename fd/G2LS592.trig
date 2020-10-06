@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS592 {
+    bda:G2LS592  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS592 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fd/G2LS592.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS592 ;
+        adm:logEntry        bda:LGCEC14FC764D1A082 , bda:LGEF38CD2408F1C033 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G2263 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LGCEC14FC764D1A082
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-31T15:54:03.024Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEF38CD2408F1C033
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-10-29T09:37:39.383Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G2263"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2LS592  a          :Place ;
+        skos:prefLabel      "pri ta pu ri/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAA0E4564F58FA7A8 , bdr:NTFA0A071E53B0E4F4 ;
+        :placeLocatedIn     bdr:G2153 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTAA0E4564F58FA7A8
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G2263"@en .
+    
+    bdr:NTFA0A071E53B0E4F4
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 94" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Another name such as Di dak pori. di da pori and Druk gon shedup choling. Located 70 km from Darchen. One of the 24 pilgrimage site of cakrasamvara."@en .
+}

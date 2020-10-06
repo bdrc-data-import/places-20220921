@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KR6 {
+    bda:G2KR6  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KR6 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5c/G2KR6.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KR6 ;
+        adm:logEntry        bda:LGIM335E72436E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM335E72436E
+        a                   adm:UpdateData ;
+        adm:logAgent        "mongol import" ;
+        adm:logDate         "2013-12-03T23:23:40.962Z"^^xsd:dateTime ;
+        adm:logMessage      "created by mongol import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVD6EE40DEBB4B560F
+        a                   :PlaceFounded ;
+        :onYear             "1109"^^xsd:gYear .
+    
+    bdr:G2KR6  a            :Place ;
+        skos:altLabel       "aru job-a"@mn-x-trans , "Gilubar juu, Aru juu"@mn-x-trans , "后召庙"@zh-hans , "善福寺"@zh-hans , "Shanfu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Ar juu"@mn-x-trans , "Houzhao miao"@zh-latn-pinyin-x-ndia ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVD6EE40DEBB4B560F ;
+        :placeLocatedIn     bdr:G603 ;
+        :placeType          bdr:PT0037 .
+}

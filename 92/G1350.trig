@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1350 {
+    bda:G1350  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1350 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "92/G1350.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1350 ;
+        adm:logEntry        bda:LG600F87EEA438E6BF , bda:LGF7DE37227C536E70 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:C2CN10982 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG600F87EEA438E6BF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF7DE37227C536E70
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-01-16T12:22:07.623Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of C2CN10982"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1350  a            :Place ;
+        skos:prefLabel      "gtsang rong mtshams lhan drug sba lineage"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT413CC69CEECB3232 .
+    
+    bdr:NT413CC69CEECB3232
+        a                   :Note ;
+        :noteText           "see C2CN10982"@en .
+}

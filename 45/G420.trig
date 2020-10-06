@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G420 {
+    bda:G420  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G420 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "45/G420.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G420 ;
+        adm:logEntry        bda:LG3908F47E34CEF5BA , bda:LGA74813D9793E6EBB , bda:LGB74A6C4E2DF6089F , bda:LGCC27FB81DEDCA64C , bda:LGCE74290AEEDC523E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG3908F47E34CEF5BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:51.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA74813D9793E6EBB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-24T17:08:07.003Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGB74A6C4E2DF6089F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCC27FB81DEDCA64C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-30T13:47:30.224Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGCE74290AEEDC523E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-24T13:12:15.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added info to G1KR1565"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G420  a             :Place ;
+        skos:altLabel       "'dar grang mo che chos 'khor yang rtse/"@bo-x-ewts , "grang mo che ('dar)"@bo-x-ewts , "grong mo che ('dar)"@bo-x-ewts , "mdar grang mo che/"@bo-x-ewts ;
+        skos:prefLabel      "'dar grang mo che/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeType          bdr:PT0037 .
+}

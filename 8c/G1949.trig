@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1949 {
+    bda:G1949  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1949 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "8c/G1949.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1949 ;
+        adm:logEntry        bda:LG242FCD0E410C8C07 , bda:LG4C7D7A6A3637C8E1 , bda:LG7007ADAB634FFD28 , bda:LG712454DD70E01A8E , bda:LG7A2A31564E8D3337 , bda:LGC4DAE8267CD98D18 , bda:LGCAACE1AE3032EE30 , bda:LGE68DC6E03E145192 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG242FCD0E410C8C07
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4C7D7A6A3637C8E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-28T15:06:31.484Z"^^xsd:dateTime ;
+        adm:logMessage      "added 嵩祝寺"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7007ADAB634FFD28
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-19T16:33:58.412Z"^^xsd:dateTime ;
+        adm:logMessage      "pe cin par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG712454DD70E01A8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-14T12:51:37.066Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7A2A31564E8D3337
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-20T14:53:03.793Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC4DAE8267CD98D18
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-22T15:11:55.044Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGCAACE1AE3032EE30
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:39:27.429Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from city to grongKhyer"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE68DC6E03E145192
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-02T12:16:39.491Z"^^xsd:dateTime ;
+        adm:logMessage      "added containedIn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1949  a            :Place ;
+        skos:altLabel       "beijing"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "pe cin/"@bo-x-ewts , "北京"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G1955 , bdr:G296 , bdr:G3CN1712 , bdr:G3JT12534 ;
+        :placeLat           "39.904030" ;
+        :placeLong          "116.407526" ;
+        :placeType          bdr:PT0008 .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3057 {
+    bda:G3057  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3057 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "2b/G3057.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3057 ;
+        adm:logEntry        bda:LG3AD1AF0C7C56924F , bda:LG431C25184E759E5C , bda:LG83C6B831BBA0684C , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3AD1AF0C7C56924F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG431C25184E759E5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T11:01:17.082Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG83C6B831BBA0684C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-08T09:37:06.156Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, location & events"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV3B2694D2F14727DA
+        a                   :PlaceConverted ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV3C6A7AC2AD3D01F6
+        a                   :PlaceFounded ;
+        :notAfter           "1099"^^xsd:gYear ;
+        :notBefore          "1000"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G3057  a            :Place ;
+        skos:altLabel       "dbu ru la mo chag de'u/"@bo-x-ewts ;
+        skos:prefLabel      "la mo lcog dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7C2190A468CAA225 , bdr:NTD1F3A7FB749E8112 ;
+        :placeEvent         bdr:EV3B2694D2F14727DA , bdr:EV3C6A7AC2AD3D01F6 ;
+        :placeLocatedIn     bdr:G1382 , bdr:G1516 , bdr:G3370 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT7C2190A468CAA225
+        a                   :Note ;
+        :contentLocationStatement  "p. 52" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "dge lugs pa monastery located in grong tsho gsum pa, la mo shang, stag rtse county, lha sa prefecture\nthe seat of the la mo oracle\nfounded by klu mes in about 900\nadministered by the la mo gzhung rkyang\nhad 30 monks formerly\nrestored"@en .
+    
+    bdr:NTD1F3A7FB749E8112
+        a                   :Note ;
+        :contentLocationStatement  "p. 108" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "restored gelug temple founded by klu mes\nhad about 30 monks before 1959\nnow restored housing 8 monks"@en .
+}

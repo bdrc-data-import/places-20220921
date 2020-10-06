@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3352 {
+    bda:G3352  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3352 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3f/G3352.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3352 ;
+        adm:logEntry        bda:LG25D98607D39784CE , bda:LG5B9BD68B7B190002 , bda:LG69024D3ED0F7D0B6 , bda:LGIM035E0028DC , bda:LGIMA37A954E21 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG25D98607D39784CE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5B9BD68B7B190002
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-18T12:21:24.063Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG69024D3ED0F7D0B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-21T14:35:45.07Z"^^xsd:dateTime ;
+        adm:logMessage      "added name as grong rdal"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM035E0028DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from zhangxiang to shang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMA37A954E21
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-20T22:30:59.465Z"^^xsd:dateTime ;
+        adm:logMessage      "populating gis from G9GBX..."@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G3352  a            :Place ;
+        skos:altLabel       "gdong dkar shang (stod lung bde chen rdzong)"@bo-x-ewts ;
+        skos:prefLabel      "gdong dkar grong rdal (stod lung bde chen rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT93EA8D2A99EB461F ;
+        :placeGB2260-2013   "540125100" ;
+        :placeLocatedIn     bdr:G1325 ;
+        :placeType          bdr:PT0045 .
+    
+    bdr:NT93EA8D2A99EB461F
+        a                   :Note ;
+        :contentLocationStatement  "p. 281" ;
+        :noteSource         bdr:MW23664 .
+}

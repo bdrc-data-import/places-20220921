@@ -1,0 +1,568 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2800 {
+    bda:G2800  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2800 ;
+        adm:facetIndex      90 ;
+        adm:gitPath         "1c/G2800.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2800 ;
+        adm:logEntry        bda:LG00DA69D7C9075A71 , bda:LG026B2BCC787B68A2 , bda:LG02E7970E2E0BD03C , bda:LG088610D9D50DE02D , bda:LG09DAFE7D1ED73339 , bda:LG0A2239095B1D8A3E , bda:LG0C83827C8B431C4F , bda:LG0D8426D787BB2B35 , bda:LG173373CBE7FF42AE , bda:LG1814A26E4B0C0D30 , bda:LG1BC0DC15689C56D5 , bda:LG1CBFA7F820AD2D9B , bda:LG1FCF4C228A66429F , bda:LG34C99BFA18A157B6 , bda:LG36F2246FF82EBE42 , bda:LG3F2B8609F7B182C1 , bda:LG42AB226BAEC17BA2 , bda:LG4A05D59A0E2C1909 , bda:LG4A15D8384BF1399C , bda:LG4E006C8B22DE1D25 , bda:LG5531949F44225EB8 , bda:LG5791A3BEDE4F56E9 , bda:LG59C94158E0B0BFA7 , bda:LG5E0797006B78C436 , bda:LG60DBC30AFC838D6E , bda:LG63A71631FF11A30B , bda:LG658DE1BC9CAF0456 , bda:LG66A8562CB8EF72DC , bda:LG68E10C2C0BC0B368 , bda:LG6F63BFEC01792D26 , bda:LG722E5FD32103F914 , bda:LG734E6FEF763E82A8 , bda:LG79EA7DFF485D92B4 , bda:LG7B2716CE72C1F3B3 , bda:LG7F8B6D44B45C8A3E , bda:LG816425F091E2D711 , bda:LG8307DACFFA6E20AC , bda:LG881A95EC4715DC22 , bda:LG89CAFA6658218855 , bda:LG8A158881CBA693C1 , bda:LG8DC3C3E786381F6B , bda:LG8F022F2FACF2FE2A , bda:LG9170B17C3F01AB22 , bda:LG93D61DF404E1CEFB , bda:LG9596A7CEC773FAF5 , bda:LG9712F6036A1859C0 , bda:LG99523AA6C2EDC389 , bda:LG9DEEB1D06686BDA8 , bda:LG9EBC6DCCCBAC1A1A , bda:LGA2EDAF2AE3A96562 , bda:LGA388E5C5C13F0DA1 , bda:LGAA3E3B13A789B7E6 , bda:LGAD868F48B4B9B6D8 , bda:LGAFCF8FF974E3E1E4 , bda:LGB07F4FC0EEE521C3 , bda:LGB4A5EFC02ADCDEC9 , bda:LGB716749C4B208F0B , bda:LGBFE2CA0EB5750379 , bda:LGC1EEA1073E247E0E , bda:LGC5AEAF63F5B1547B , bda:LGC635D529BF332B21 , bda:LGC79C49ADD80823F9 , bda:LGCBE608E5DA398B87 , bda:LGCCD6DD5554CB3A2F , bda:LGCCE595CFDE5430AB , bda:LGCD441C0F72776060 , bda:LGCD7BD2B42DA09555 , bda:LGD2BA7756371E72E7 , bda:LGDC733BEFD9177783 , bda:LGDD4BB692A1B88F53 , bda:LGDEFD298B0D0D8F2E , bda:LGDFB21AB405931C0B , bda:LGEB4D216265F4458D , bda:LGEBDB5622075F5028 , bda:LGEC2A75078CF86503 , bda:LGEF700B3C1C7F8389 , bda:LGEF876E2A7391EA27 , bda:LGF1776C9EBEDC66F3 , bda:LGF2AB338D677F2159 , bda:LGF363D2F9AD1973CE , bda:LGFB1E79F383311276 , bda:LGFB69179F397A207D , bda:LGFCA4CEB42B097E14 , bda:LGFD0CA94213CD9D03 , bda:LGFE07187C3953D76E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00DA69D7C9075A71
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G3JT12562"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG026B2BCC787B68A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR818"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG02E7970E2E0BD03C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-25T09:09:24.667Z"^^xsd:dateTime ;
+        adm:logMessage      "added G3JT12504"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG088610D9D50DE02D
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-04T11:27:05.507Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup testing G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG09DAFE7D1ED73339
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2127"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG0A2239095B1D8A3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR850"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG0C83827C8B431C4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-24T16:56:14.565Z"^^xsd:dateTime ;
+        adm:logMessage      "Update record"@en ;
+        adm:logWho          bdu:U00004 .
+    
+    bda:LG0D8426D787BB2B35
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1818"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG173373CBE7FF42AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1516"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG1814A26E4B0C0D30
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR822"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG1BC0DC15689C56D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-26T14:49:43.883Z"^^xsd:dateTime ;
+        adm:logMessage      "correct spelling of gis/id gb2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG1CBFA7F820AD2D9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-03T09:43:53.911Z"^^xsd:dateTime ;
+        adm:logMessage      "edited order of list of contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1FCF4C228A66429F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2510"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG34C99BFA18A157B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-24T16:09:25.025Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged list of contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG36F2246FF82EBE42
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR817"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG3F2B8609F7B182C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G220"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG42AB226BAEC17BA2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-04T13:45:40.01Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG4A05D59A0E2C1909
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-20T11:16:35.274Z"^^xsd:dateTime ;
+        adm:logMessage      "added time with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4A15D8384BF1399C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-26T12:45:39.547Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4E006C8B22DE1D25
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G3JT12524"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG5531949F44225EB8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:16:32.085Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from municipality to grongRdal"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG5791A3BEDE4F56E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR828"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG59C94158E0B0BFA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-05T09:22:12.879Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5E0797006B78C436
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-10-25T10:37:16.172Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG60DBC30AFC838D6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-05T11:31:13.942Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG63A71631FF11A30B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-29T10:46:26.409Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG658DE1BC9CAF0456
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR857"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG66A8562CB8EF72DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-01-26T19:15:39.664Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bda:LG68E10C2C0BC0B368
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR829"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG6F63BFEC01792D26
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR828"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG722E5FD32103F914
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR831"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG734E6FEF763E82A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR841"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG79EA7DFF485D92B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR845"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG7B2716CE72C1F3B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-03T15:01:51.04Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7F8B6D44B45C8A3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G219"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG816425F091E2D711
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2508"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG8307DACFFA6E20AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G3JT12526"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG881A95EC4715DC22
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T13:55:10.506Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG89CAFA6658218855
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8A158881CBA693C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-04-15T13:56:11.015Z"^^xsd:dateTime ;
+        adm:logMessage      "created entry"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bda:LG8DC3C3E786381F6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-07T11:26:51.868Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged contains of place"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8F022F2FACF2FE2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-08T11:56:36.687Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9170B17C3F01AB22
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR864"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG93D61DF404E1CEFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2511"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG9596A7CEC773FAF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G154"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG9712F6036A1859C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T11:08:18.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type \"grong khyer\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG99523AA6C2EDC389
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR840"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG9DEEB1D06686BDA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-11T16:41:22.154Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9EBC6DCCCBAC1A1A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-11T10:55:47.802Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA2EDAF2AE3A96562
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR844"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGA388E5C5C13F0DA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-14T16:24:36.484Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAA3E3B13A789B7E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2129"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGAD868F48B4B9B6D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR847"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGAFCF8FF974E3E1E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-05T15:03:13Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB07F4FC0EEE521C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G3JT12550"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGB4A5EFC02ADCDEC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR840"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGB716749C4B208F0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-21T15:57:11.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBFE2CA0EB5750379
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:19:59.742Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains: \"par khang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC1EEA1073E247E0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR844"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGC5AEAF63F5B1547B
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-12T13:33:20.382Z"^^xsd:dateTime ;
+        adm:logMessage      "added GB2260-2013 code, populations, area; updated coords"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGC635D529BF332B21
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G9"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGC79C49ADD80823F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-06T10:14:50.66Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCBE608E5DA398B87
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-23T15:20:47.333Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bda:LGCCD6DD5554CB3A2F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-01T15:18:13.04Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCCE595CFDE5430AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-22T16:16:57.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCD441C0F72776060
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-25T14:01:16.416Z"^^xsd:dateTime ;
+        adm:logMessage      "added G1KG12791"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGCD7BD2B42DA09555
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-04T10:30:22.835Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD2BA7756371E72E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR827"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGDC733BEFD9177783
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2128"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGDD4BB692A1B88F53
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-13T16:22:16.929Z"^^xsd:dateTime ;
+        adm:logMessage      "added Near G3CN48"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDEFD298B0D0D8F2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-16T09:44:52.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDFB21AB405931C0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-02-04T12:39:24.725Z"^^xsd:dateTime ;
+        adm:logMessage      "grong khyer lha sa bsnan"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGEB4D216265F4458D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1325"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGEBDB5622075F5028
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR826"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGEC2A75078CF86503
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-12-16T11:48:02.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added bod rang skyong ljongs kyi dpe mdzod khang"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGEF700B3C1C7F8389
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-24T16:19:16.175Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEF876E2A7391EA27
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-01T14:27:14.116Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF1776C9EBEDC66F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR830"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGF2AB338D677F2159
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2014"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGF363D2F9AD1973CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR851"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGFB1E79F383311276
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR820"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGFB69179F397A207D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR831"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGFCA4CEB42B097E14
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-23T12:38:25.761Z"^^xsd:dateTime ;
+        adm:logMessage      "added lcags po ri par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGFD0CA94213CD9D03
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2CN10869"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGFE07187C3953D76E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2CN10858"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:EV46386B6A9E088237
+        a                   :PlaceFounded ;
+        :onYear             "0633"^^xsd:gYear .
+    
+    bdr:G2800  a            :Place ;
+        skos:altLabel       "khrin kon chus/"@bo-x-ewts , "lha ldan/"@bo-x-ewts , "lha sa grong khyer/"@bo-x-ewts , "lha sa grong khyer nang khul/"@bo-x-ewts , "ra sa/ （dus rabs 7 pa tsam la）"@bo-x-ewts , "Lhasa City"@en , "Lhasa Urban"@en , "城关区"@zh-hans , "拉萨市(城关区)"@zh-hans , "逻些 (7-9世纪)"@zh-hans , "luoxie (7-9 shiji)"@zh-latn-pinyin , "cheng guan qu"@zh-latn-pinyin-x-ndia , "lasa"@zh-latn-pinyin-x-ndia , "la sa shi (cheng guan qu)"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lha sa/"@bo-x-ewts , "Lhasa"@en , "拉萨"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT9EFE19C103B9206B , bdr:NTC0108D933DB774F4 , bdr:NTC8B9B15DBB0B0F80 ;
+        :placeContains      bdr:G10 , bdr:G1062 , bdr:G108 , bdr:G154 , bdr:G156 , bdr:G1KG12691 , bdr:G1KG12791 , bdr:G1KG22586 , bdr:G1KR817 , bdr:G1KR818 , bdr:G1KR820 , bdr:G1KR822 , bdr:G1KR826 , bdr:G1KR827 , bdr:G1KR828 , bdr:G1KR829 , bdr:G1KR830 , bdr:G1KR831 , bdr:G1KR840 , bdr:G1KR841 , bdr:G1KR844 , bdr:G1KR845 , bdr:G1KR847 , bdr:G1KR850 , bdr:G1KR851 , bdr:G1KR857 , bdr:G1KR864 , bdr:G1KT3 , bdr:G1PD129184 , bdr:G1PD129185 , bdr:G1TD14 , bdr:G1TD20 , bdr:G1TD44 , bdr:G219 , bdr:G220 , bdr:G222 , bdr:G236 , bdr:G2371 , bdr:G2508 , bdr:G2510 , bdr:G2511 , bdr:G261 , bdr:G270 , bdr:G2CN10835 , bdr:G2CN10840 , bdr:G2CN10841 , bdr:G2CN10858 , bdr:G2CN10859 , bdr:G2CN10869 , bdr:G2CN10924 , bdr:G2CN10925 , bdr:G2CN10926 , bdr:G2CN10927 , bdr:G2CN10928 , bdr:G2CN10929 , bdr:G2CN10930 , bdr:G2CN10931 , bdr:G2CN10932 , bdr:G2CN10933 , bdr:G2CN10934 , bdr:G2CN10935 , bdr:G2CN10936 , bdr:G2CN10937 , bdr:G2CN10938 , bdr:G2CN10939 , bdr:G2CN10941 , bdr:G2CN10942 , bdr:G2CN10943 , bdr:G30 , bdr:G303 , bdr:G3369 , bdr:G394 , bdr:G395 , bdr:G3CN431 , bdr:G3JT12504 , bdr:G3JT12524 , bdr:G3JT12526 , bdr:G3JT12550 , bdr:G3JT12561 , bdr:G3JT12562 , bdr:G3JT12595 , bdr:G402 , bdr:G4145 , bdr:G4249 , bdr:G4261 , bdr:G4379 , bdr:G4552 , bdr:G4553 , bdr:G4554 , bdr:G4555 , bdr:G4556 , bdr:G543 , bdr:G703 , bdr:G9 , bdr:G949 ;
+        :placeEvent         bdr:EV46386B6A9E088237 ;
+        :placeGB2260-2013   "540102000" ;
+        :placeIsNear        bdr:G3CN48 ;
+        :placeLat           "29.6457567" ;
+        :placeLocatedIn     bdr:G1089 , bdr:G1819 ;
+        :placeLong          "91.1408186" ;
+        :placeType          bdr:PT0008 ;
+        :placeWB2000        "190511" ;
+        :placeWB2010        "250225" ;
+        :placeWBArea        "524.5401" .
+    
+    bdr:NT9EFE19C103B9206B
+        a                   :Note ;
+        :contentLocationStatement  "p. 2324, 2327, 2328, 2331" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1562. dbyar dkyil du char zhod che rkyen lha sar chu skyon chen po byung\n1581. stag lung zhabs drung kun dga' bkra shis dang/ skyid shod sde pa bkra shis rab brtan pa rnam gnyis kyis lha sa'i jo bo rin po che'i dbu thog gi rgya phibs nyams gso gnang/ sde pa des dga' ldan gser gdung gi sgo khyim gser sbyangs lhad med du bsgyur\n1587. lo 'dir lha sar chu skyon byung zhes <> las gsal\n1607. kar srid gtsang skur dang bcas pa'i dmag dpung lha sar 'byor nas skyid shod dga' ldan pa'i srid dbang sde bcad yongs rdzogs phrogs/ sras rnams btson du bzung\n1608. yar rgyab dang gtsang pa sde srid gnyis kyis po ta lar mkhar rdzong gsar rgyag thog/ rje zhwa dmar ba chos kyi dbang phyug rab gnas su gdan drangs/ pho brang gi ming phun tshogs rab brtan du btags/ lha sa gtsug lag khang gi mdun du gtsang dar smyon du grags pa yang btsugs\n1620. lha sar gtsang sog gnyis 'thab 'khrug byas"@en .
+    
+    bdr:NTC0108D933DB774F4
+        a                   :Note ;
+        :contentLocationStatement  "p. 2" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "ལྷ་ས་འདིར་ར་ས་ཞེས་འབོད་པ་སྔ་ཡང་ཕྱིས་སུ\"ལྷ་ས\"་ཞེས་མང་བར་གྲགས།\n\nདེ་ཡང་ཡིག་ཐོག་དུ་འཁོད་པ་ནི། སྤྱི་ལོ ༨༢༣ལོར་བོད་ཀྱི་བཙན་པོ་ཁྲི་རལ་པ་ཅན་གྱིས་བཙུགས་པའི་དབོན་ཞང་རྡོ་རིང་སྟེང་གསལ་བར་བཤད་མོད། དོན་དུ་སྤྱི་ལོ ༨༠༨ ལོར་ཁྲི་ལྡེ་སྲོང་བཙན་གྱིས་བཙུགས་པའི་དཀར་ཆུང་ལྷ་ཁང་གི་རྡོ་རིང་ལ་གསལ་བ་ཕལ་ཆེར་ཡིག་ཐོག་ཏུ་འཁོད་སྔ་ཤོས་ཡིན་པ་དཔྱད་གཞིའོ།"@bo .
+    
+    bdr:NTC8B9B15DBB0B0F80
+        a                   :Note ;
+        :contentLocationStatement  "p. 2076" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "བོད་ཀྱི་མཁས་དབང་མང་ཆེ་བས་སྲོང་བཙན་གྱིས་བོད་ཆུ་སྦྲུལ་༼༦༣༣༽ལོར་རྒྱལ་ས་ལྷ་སར་སྤོས་པར་བཞེད་པ་དེ་ཁུངས་དང་ལུང་བཙན་པར་མཐོང་ཞེས་གསལ།"@bo .
+}

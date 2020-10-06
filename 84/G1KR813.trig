@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR813 {
+    bda:G1KR813  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR813 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "84/G1KR813.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR813 ;
+        adm:logEntry        bda:LG67E6F0112B072D1E , bda:LGD955470FB2AADC8B , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "533423206:19" ;
+        adm:place_id_lex    "533423206:19" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG67E6F0112B072D1E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-21T13:05:15.168Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD955470FB2AADC8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-14T14:28:36.197Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & note in chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV441F07FE32A755D6
+        a                   :PlaceFounded ;
+        :onYear             "1737"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:EV563CA950EB8E7DD5
+        a                   :PlaceFounded ;
+        :onYear             "1662"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1KR813  a          :Place ;
+        skos:altLabel       "丹培林"@zh-hans , "damo si"@zh-latn-pinyin-x-ndia , "danpeilin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bstan 'phel gling /"@bo-x-ewts , "达摩寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0CB074928B34D77E ;
+        :isRoot             true ;
+        :note               bdr:NT4B67A2B5BA271E3B ;
+        :placeEvent         bdr:EV441F07FE32A755D6 , bdr:EV563CA950EB8E7DD5 ;
+        :placeGonpaPerEcumen  "3.82" ;
+        :placeLat           "27.61667" ;
+        :placeLocatedIn     bdr:G1523 ;
+        :placeLong          "99.41666" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID0CB074928B34D77E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR813" .
+    
+    bdr:NT4B67A2B5BA271E3B
+        a                   :Note ;
+        :contentLocationStatement  "http://www.kzcl.cn/temple/ShowArticle.asp?ArticleID=476" ;
+        :noteText           "江地噶玛噶举十三大寺之一。\n达摩寺，藏名丹培林，意为“教义弘扬苑”。建于康熙元年（1662年），位于维西县塔城乡。1958年被毁，1985年部分修复，现在仲巴活佛的主持下，正在重建，并逐渐发展。 \n    原有僧房十三院，常住僧人200名。"@en .
+}

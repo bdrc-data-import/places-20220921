@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4525 {
+    bda:G4525  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4525 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "10/G4525.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4525 ;
+        adm:logEntry        bda:LG649860CD8D0743BB , bda:LGAB4A41D1E83AAC64 , bda:LGC4AD1A0CEF7B2EED , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG649860CD8D0743BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T15:08:55.46Z"^^xsd:dateTime ;
+        adm:logMessage      "added steng chen rdzong"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGAB4A41D1E83AAC64
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC4AD1A0CEF7B2EED
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-09-27T16:57:29.983Z"^^xsd:dateTime ;
+        adm:logMessage      "withdraw in favor of G1KR1173"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4525  a            :Place ;
+        skos:altLabel       "mazong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ma rdzong dgon/"@bo-x-ewts , "玛宗寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT5471B26AFC52AB34 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT5471B26AFC52AB34
+        a                   :Note ;
+        :noteText           "bon monasetery at steng chen rdzong"@en .
+}

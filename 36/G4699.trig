@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4699 {
+    bda:G4699  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4699 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "36/G4699.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4699 ;
+        adm:logEntry        bda:LG19599FB1CB2D51A8 , bda:LG9537DE42EFD7B77C , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623027204:623027130" ;
+        adm:place_id_lex    "623027204:623027130" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG19599FB1CB2D51A8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9537DE42EFD7B77C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-03T12:12:58.938Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0A17A2E2FB821275
+        a                   :PlaceFounded ;
+        :onYear             "1659"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVB21AFCD313957BC1
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P9894 .
+    
+    bdr:G4699  a            :Place ;
+        skos:altLabel       "bkra shis chos 'phel gling /"@bo-x-ewts , "sman lung dgon bkra shis chos 'phel gling /"@bo-x-ewts , "manlong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sman lung dgon/"@bo-x-ewts , "曼龙寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1B9D2C8E41A8ABBB ;
+        :isRoot             true ;
+        :note               bdr:NT8F694916909AF612 , bdr:NTEC0B40CC043B302C ;
+        :placeEvent         bdr:EV0A17A2E2FB821275 , bdr:EVB21AFCD313957BC1 ;
+        :placeGonpaPerEcumen  "12.81" ;
+        :placeLat           "35.19692" ;
+        :placeLocatedIn     bdr:G2199 ;
+        :placeLong          "102.91018" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID1B9D2C8E41A8ABBB
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4699" .
+    
+    bdr:NT8F694916909AF612
+        a                   :Note ;
+        :contentLocationStatement  "p. 577" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "dge lugs monastery in a mdo founded by rab 'byams pa smon lam mchog grub"@en .
+    
+    bdr:NTEC0B40CC043B302C
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p, 65" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "dge lugs monastery in the kan lho autonomous tibetan prefecture"@en .
+}

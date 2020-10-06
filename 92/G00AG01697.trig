@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00AG01697 {
+    bda:G00AG01697  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00AG01697 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "92/G00AG01697.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00AG01697 ;
+        adm:logEntry        bda:LG1926D2F86883898A , bda:LG66F3B8F27427602A , bda:LGA02127D50BDB0C0A , bda:LGAC43931EBBD24230 , bda:LGE4CE1BBD3EF8B0F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1926D2F86883898A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-02-12T12:59:27.954Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG66F3B8F27427602A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T16:30:16.95Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA02127D50BDB0C0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-27T15:43:14.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAC43931EBBD24230
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-31T10:42:10.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE4CE1BBD3EF8B0F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-07T14:34:32.692Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV32363C70C5058E55
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVB8413C8C18F3879E
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P10267 .
+    
+    bdr:G00AG01697  a       :Place ;
+        skos:prefLabel      "o rgyan 'gro 'dren gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT82B204731BFB7210 ;
+        :placeEvent         bdr:EV32363C70C5058E55 , bdr:EVB8413C8C18F3879E ;
+        :placeLocatedIn     bdr:G2175 , bdr:G971 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT82B204731BFB7210
+        a                   :Note ;
+        :noteText           "rnying ma monastery in gtsang near lha ri sgrol ma phug. it was founded by pad+ma bshes gnyen, an incarnation of yol mo sprul sku"@en .
+}

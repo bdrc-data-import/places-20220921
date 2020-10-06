@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1752 {
+    bda:G1KR1752  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1752 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "69/G1KR1752.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1752 ;
+        adm:logEntry        bda:LG165E283DF5EEC9FE , bda:LG36F9048362F4F2EA , bda:LG3DD379C6D23C0B11 , bda:LGAD33AC4AFC9ED2F0 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542429200:476" ;
+        adm:place_id_lex    "542429200:476" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG165E283DF5EEC9FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-24T15:34:08.82Z"^^xsd:dateTime ;
+        adm:logMessage      "update name list at location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG36F9048362F4F2EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-09T14:07:00.624Z"^^xsd:dateTime ;
+        adm:logMessage      "added Gis Coords"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3DD379C6D23C0B11
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-24T14:22:17.471Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & event & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAD33AC4AFC9ED2F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-18T10:46:41.265Z"^^xsd:dateTime ;
+        adm:logMessage      "update name list of contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVD04357B863799883
+        a                   :PlaceFounded ;
+        :onYear             "1853"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1752  a         :Place ;
+        skos:altLabel       "spu la dgon/"@bo-x-ewts , "bula si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "spu la ri khang dgon/"@bo-x-ewts , "布拉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDC4A146B55F94C41 ;
+        :isRoot             true ;
+        :note               bdr:NT7D41BEFB5DF08DF9 , bdr:NT9DC1D6F98F7F4024 ;
+        :placeEvent         bdr:EVD04357B863799883 ;
+        :placeGonpaPerEcumen  "4.21" ;
+        :placeLat           "31.891316" ;
+        :placeLocatedIn     bdr:G2150 ;
+        :placeLong          "94.265083" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDDC4A146B55F94C41
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1752" .
+    
+    bdr:NT7D41BEFB5DF08DF9
+        a                   :Note ;
+        :noteText           "Founded by Khyung nag Shes rab rgyal mtshan. The mountain to the north, Pha bong bon ri, is likened to Kong po bon ri."@en .
+    
+    bdr:NT9DC1D6F98F7F4024
+        a                   :Note ;
+        :contentLocationStatement  "p. 142-146" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "ཁྱུང་ནག་ཤེས་རབ་རྒྱལ་མཚན་གྱིས་༡༨༥༣ལོ་ཙམ་ལ་ཕྱག་བཏབ་པ་སོགས་ལོ་རྒྱུས་ཞིབ་ཙམ་གསལ།"@bo .
+}

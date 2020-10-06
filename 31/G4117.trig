@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4117 {
+    bda:G4117  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4117 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "31/G4117.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4117 ;
+        adm:logEntry        bda:LG29A7309AF207AEC9 , bda:LG8763563F86C9F932 , bda:LG8F66D1F7BD84EE5B , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG29A7309AF207AEC9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8763563F86C9F932
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-01T11:39:14.528Z"^^xsd:dateTime ;
+        adm:logMessage      "added evwnts & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8F66D1F7BD84EE5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T09:38:52.34Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1D7446E8C4A9BFC6
+        a                   :PlaceConverted ;
+        :notAfter           "1999"^^xsd:gYear ;
+        :notBefore          "1900"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EV81DFB36540FAE9FD
+        a                   :PlaceFounded ;
+        :notAfter           "0899"^^xsd:gYear ;
+        :notBefore          "0800"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVB943FAA121E9FAD8
+        a                   :PlaceConverted ;
+        :notAfter           "1699"^^xsd:gYear ;
+        :notBefore          "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4117  a            :Place ;
+        skos:prefLabel      "byams chen dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD061A66E9E8E8AAB ;
+        :placeEvent         bdr:EV1D7446E8C4A9BFC6 , bdr:EV81DFB36540FAE9FD , bdr:EVB943FAA121E9FAD8 ;
+        :placeLocatedIn     bdr:G2298 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTD061A66E9E8E8AAB
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 624-626" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery in rta'u rdzong\ndgon 'di'i lo rgyus ring mod phyis su rdo rje brag dgon pa'i dgon lag lta bu chags par gsal/"@en .
+}

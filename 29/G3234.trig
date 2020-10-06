@@ -1,0 +1,107 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3234 {
+    bda:G3234  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3234 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "29/G3234.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3234 ;
+        adm:logEntry        bda:LG015F99E54B5ACB81 , bda:LG4B494C5621C837B2 , bda:LGA24FBC40017D833C , bda:LGA67D4BB5BD06AA39 , bda:LGC2C8A2810D99870E , bda:LGD2F0509991D22F79 , bda:LGE4985C14B9DAA98C , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632127207:175" ;
+        adm:place_id_lex    "632127207:118" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG015F99E54B5ACB81
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:31.056Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG4B494C5621C837B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-11T12:12:33.854Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA24FBC40017D833C
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-11T12:15:14.661Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA67D4BB5BD06AA39
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC2C8A2810D99870E
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-18T12:19:11.532Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD2F0509991D22F79
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-11T12:17:48.891Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE4985C14B9DAA98C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T13:19:40.11Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVF775A288CD54618B
+        a                   :PlaceFounded ;
+        :onYear             "1596"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3234  a            :Place ;
+        skos:altLabel       "brag lung dgon dga' ldan bkra shis chos gling /"@bo-x-ewts , "只胡鲁寺"@zh-hans , "朱胡弄寺"@zh-hans , "知恒隆寺"@zh-hans , "诸古隆寺"@zh-hans , "zhihenglong si"@zh-latn-pinyin-x-ndia , "zhihulong si"@zh-latn-pinyin-x-ndia , "zhihulu si"@zh-latn-pinyin-x-ndia , "zhugulong si"@zh-latn-pinyin-x-ndia , "zhuhunong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gcan tsha brag lung dgon/"@bo-x-ewts , "知乎隆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCDF20B48C1336E10 ;
+        :isRoot             true ;
+        :note               bdr:NT0401A2DB8590C93B ;
+        :placeEvent         bdr:EVF775A288CD54618B ;
+        :placeGonpaPerEcumen  "24.43" ;
+        :placeLat           "36.19681" ;
+        :placeLocatedIn     bdr:G1PD96109 ;
+        :placeLong          "102.10393" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDCDF20B48C1336E10
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3234" .
+    
+    bdr:NT0401A2DB8590C93B
+        a                   :Note ;
+        :contentLocationStatement  "p. 100" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་གཅན་ཚ་མཁན་པོ་ངག་དབང་ཚུལ་ཁྲིམས་མཚན་གཞན་ཡེ་ཤེས་རྒྱ་མཚོས་བཏབ།"@bo .
+}

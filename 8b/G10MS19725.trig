@@ -1,0 +1,42 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G10MS19725 {
+    bda:G10MS19725  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G10MS19725 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8b/G10MS19725.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G10MS19725 ;
+        adm:logEntry        bda:LG1EEC6E8952A693E9 , bda:LGC46D4147683490A1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1EEC6E8952A693E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-09T23:21:39.429Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC46D4147683490A1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-01T14:34:33.538Z"^^xsd:dateTime ;
+        adm:logMessage      "created new place, GIS needed"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G10MS19725  a       :Place ;
+        skos:prefLabel      "bse ru gong ma tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2299 , bdr:G2302 ;
+        :placeType          bdr:PT0025 .
+}

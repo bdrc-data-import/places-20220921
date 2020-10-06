@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN219 {
+    bda:G2CN219  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN219 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "87/G2CN219.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN219 ;
+        adm:logEntry        bda:LG2DA9173E24D19B5B , bda:LG3AD4AAB5FBC4B3DC , bda:LG992D935A0F3895D7 , bda:LGB1503A1E1F067FC0 , bda:LGD4AC63B65410B8DB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2DA9173E24D19B5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-19T17:02:19.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3AD4AAB5FBC4B3DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-05T12:26:28.746Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language sttings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG992D935A0F3895D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-13T16:45:05.081Z"^^xsd:dateTime ;
+        adm:logMessage      "revised notes & added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB1503A1E1F067FC0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-10-14T16:34:33.767Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD4AC63B65410B8DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-01-12T16:05:32.23Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed and released"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bdr:G2CN219  a          :Place ;
+        rdfs:comment        "small country in early medieval India, ascribed importance in the development and dissemination of Tantric Buddhism. Possible locations that have been identified is Swat Valley region of present-day Pakistan. Most scholars conventionally place it here." ;
+        skos:altLabel       "o Di yA na/（legs）"@bo , "a+yon/"@bo-x-ewts , "u rgyan/"@bo-x-ewts , "wuzhang yanna"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "o rgyan/"@bo-x-ewts , "Oddiyana"@en , "Oḍḍiyāna"@sa-x-ndia , "邬仗衍那"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT3D502CE7BC3B6641 , bdr:NTB0109A80AB394D27 ;
+        :placeType          bdr:PT0010 .
+    
+    bdr:NT3D502CE7BC3B6641
+        a                   :Note ;
+        :contentLocationStatement  "pp. 48-49/ pp. 67-69" ;
+        :noteSource         bdr:MW23940 ;
+        :noteText           "གུ་རུ་པདྨ་སམ་བྷ་བའི་འཁྲུངས་ཡུལ་དང་གྲུབ་ཆེན་ཨོ་རྒྱན་པ་སོགས་ཀྱིས་དངོས་སུ་ཕེབས་མྱོང་བའི་ཡུལ་ཞིག་སྟེ། དེང་དུས་མཁས་པ་མང་བས་པ་ཀི་སི་ཐན་གྱི་སྭཏ་ཞེས་པའི་ལུང་ཤུར་ཨ་ཧྥོ་གྷན་སི་ཐན་ དང་ས་མཚམས་འབྲེལ་ས་དེར་ངོས་འཛིན་བྱེད། ལ་ལས་ནི་རྒྱ་གར་ཤར་ཕྱོགས་ཨོདིཤ་ཞེས་པར་འདོད་ཅིང། ཡང་སྦས་ཡུལ་ཞིག་ཏུ་འདོད་མཁན་ཡང་ཡོད། འདིའི་གནས་ཚུལ་ཞིབ་ཆ་《གྲུབ་ཆེན་ཨོ་རྒྱན་པའི་རྣམ་པར་ཐར་པ་བྱིན་བརླབས་ཀྱི་ཆུ་རྒྱུན》ཞེས་པ་འདིར་གཟིགས་ནའང་ཤེས།"@bo .
+    
+    bdr:NTB0109A80AB394D27
+        a                   :Note ;
+        :contentLocationStatement  "p. 3138" ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོའི་ནང་དུ། ཨོ་ཊི་ཡ་ན་སྟེ་འཕུར་འགྲོ་ཞེས་པ་ཟུར་ཆག་པ་དང་སྔར་རྒྱ་གར་ནུབ་ཕྱོགས་ཀྱི་རྒྱལ་པོ་ཨིནྡྲ་བྷུ་ཏི་བྱོན་པའི་ཡུལ་ཞེས་འཁོད།"@bo .
+}

@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2556 {
+    bda:G2556  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2556 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e6/G2556.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2556 ;
+        adm:logEntry        bda:LGA1B220943F4B2E00 , bda:LGB57C14C34A275167 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA1B220943F4B2E00
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T12:24:29.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB57C14C34A275167
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2556  a            :Place ;
+        skos:altLabel       "klung shod dga' ldan chos 'khor gling /"@bo-x-ewts , "rab shis glung shod dga' ldan chos 'khor gling /"@bo-x-ewts , "rag shul klung shod dga' ldan chos 'khor gling /"@bo-x-ewts ;
+        skos:prefLabel      "rag shul klung shod dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEE122C6CC46D7DF3 , bdr:NTFAC0BC1CC5B21E1B ;
+        :placeLocatedIn     bdr:G2326 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTEE122C6CC46D7DF3
+        a                   :Note ;
+        :contentLocationStatement  "p. 312" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་པ་འདི་ནི་སྔ་ཕྱིར་བོན་དང་རྙིང་མ། འབྲི་གུང་བཀའ་བརྒྱུད་དང་དེ་རྗེས་དགེ་ལུགས་བཅས་ལོ་རྒྱུས་ཀྱི་འཕེལ་རིམ་བཞིན་གྱི་གྲུབ་མཐའ་སྣ་ཚོགས་བརྒྱུད་མྱོང་ལ་བོད་ཀྱི་ལོ་རྒྱུས་ཐོག་གལ་ཆེ་བའི་ས་ཚིགས་མཚོན་ནུས་པའི་དགོན་སྡེ་ཞིག་ཡིན།"@bo .
+    
+    bdr:NTFAC0BC1CC5B21E1B
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 47a" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "dge lugs pa monastery in yus hru'u prefecture, qinghai province"@en .
+}

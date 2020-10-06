@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1757 {
+    bda:G1757  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1757 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f9/G1757.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1757 ;
+        adm:logEntry        bda:LG6637654052FBDEDD , bda:LGIM035E0028DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6637654052FBDEDD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM035E0028DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from zhangxiang to shang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1757  a            :Place ;
+        skos:prefLabel      "yar thang zhang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7563B42FC55AF481 ;
+        :placeContains      bdr:G1802 , bdr:G1803 , bdr:G1809 , bdr:G1810 ;
+        :placeLocatedIn     bdr:G1719 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT7563B42FC55AF481
+        a                   :Note ;
+        :contentLocationStatement  "p. 146" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "located in padma rdzong\ncontains for monasteries: sgo mang, bu rtsa, 'bra yo, and dpal sde"@en .
+}

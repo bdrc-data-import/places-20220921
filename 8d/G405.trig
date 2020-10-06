@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G405 {
+    bda:G405  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G405 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "8d/G405.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G405 ;
+        adm:logEntry        bda:LG6624D90646BF9B8F , bda:LGB981BD412BBDB609 , bda:LGD64B2446693E99B5 , bda:LGF853EB0788BC1E45 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6624D90646BF9B8F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-31T16:59:48.117Z"^^xsd:dateTime ;
+        adm:logMessage      "linked with 2 founders & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB981BD412BBDB609
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-25T15:49:06.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G2366(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD64B2446693E99B5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF853EB0788BC1E45
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-26T10:01:06.529Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G2070(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV01CEBE453245AF7F
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P404 ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear .
+    
+    bdr:EV5E84B8C40FD5BE22
+        a                   :PlaceConverted ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV82C26B513F9CC4E2
+        a                   :PlaceFounded ;
+        :notAfter           "1099"^^xsd:gYear ;
+        :notBefore          "1000"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G405  a             :Place ;
+        skos:altLabel       "dbus stod stag phu chos sde/"@bo-x-ewts , "stag phu chos sde/"@bo-x-ewts , "stag phu rin chen sding dgon/"@bo-x-ewts , "dapu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "stag phu dgon pa/"@bo-x-ewts , "Takpu Chode"@en-x-mixed , "达普寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT4A8B2835E8BF0B18 , bdr:NT7A9CEA78979FED01 , bdr:NT99EA3F11E0715DA9 ;
+        :placeEvent         bdr:EV01CEBE453245AF7F , bdr:EV5E84B8C40FD5BE22 , bdr:EV82C26B513F9CC4E2 ;
+        :placeLocatedIn     bdr:G2014 , bdr:G2028 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT4A8B2835E8BF0B18
+        a                   :Note ;
+        :noteText           "important dge lug establishment in the tibetan autonomous region"@en .
+    
+    bdr:NT7A9CEA78979FED01
+        a                   :Note ;
+        :contentLocationStatement  "p. 38" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "ཨ་ཏི་ཤའི་སློབ་མ་རིན་ཆེན་སྙིང་པོས་སྟག་ཕུ་དགོན་པ་ཕྱག་བཏབ་པར་བཤད་པ་ལོ་རྒྱུས་གཞན་དང་མཐུན་མོད། རྒྱུ་ཆ་འདིར་བཏབ་དུས་༡༣༨༡བྲིས་པ་འཛོལ་བར་ངེས་ཤིང་། དུས་རབས་༡༡པར་ཡིན་ངེས་མོད་ཞིབ་ཆའི་ལོ་ཚིགས་མུ་མཐུད་རྩད་རྒྱུ། གཞན་ཡང་ཨེ་གོང་པོར་འཁྲུངས་པའི་ཀུན་དགའ་དོན་གྲུབ་(དཔལ་ལྡན་དོན་གྲུབ་)ཀྱིས་སྟག་ཕུར་ཆོས་ཁང་གསར་བརྩིགས་དང་འབྲེལ་རི་བོ་དགེ་ལྡན་པའི་བསྟན་པ་སྤེལ་བ་ཡང་གསལ་ལོ།"@bo .
+    
+    bdr:NT99EA3F11E0715DA9
+        a                   :Note ;
+        :contentLocationStatement  "p. 38" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa monastery located in sbrang mda' shang of mal gro gung dkar rdzong\nsaid to have be founded by a student of a ti sha, rin chen snying po, in 1381\nunder the control of kun bde gling\nhad 27 monka and 12 nuns in 1959\nrestored\n\n---note moved from G2070 (dup.)"@en .
+}

@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3425 {
+    bda:G3425  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3425 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "4a/G3425.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3425 ;
+        adm:logEntry        bda:LG0364BA86BA9D36A8 , bda:LG17CBB43BA2A06D83 , bda:LGFBF4F7121ACCC025 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG0364BA86BA9D36A8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG17CBB43BA2A06D83
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-08T16:10:35.667Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFBF4F7121ACCC025
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-27T14:15:50.491Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3425  a            :Place ;
+        skos:altLabel       "dngul kho dgon g.yung drung dar rgyas gling /"@bo-x-ewts , "g.yung drung dar rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "dngul kho dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC316AD5DAF5C2EA2 , bdr:NTC8D63EC011FDBBC6 ;
+        :placeLocatedIn     bdr:G2386 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTC316AD5DAF5C2EA2
+        a                   :Note ;
+        :contentLocationStatement  "pp. 90-93" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "bon monastery said to have been founded in 1240 by kyu ru 'od zer rgyal mtshan"@en .
+    
+    bdr:NTC8D63EC011FDBBC6
+        a                   :Note ;
+        :contentLocationStatement  "p. 399, 416" ;
+        :noteSource         bdr:MW23671 ;
+        :noteText           "bon monastery restored in 1985/1986 (me stag)..\ncomplement of 5 monks.\nrestored through the efforts of a bu bsam med and thub bstan."@en .
+}

@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1899 {
+    bda:G1899  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1899 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "75/G1899.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1899 ;
+        adm:logEntry        bda:LG2190004D17AB3057 , bda:LG371016EA9D8F22AA , bda:LGCE9A4D80BB847004 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2190004D17AB3057
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T16:10:31.066Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG371016EA9D8F22AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T10:29:51.011Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCE9A4D80BB847004
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVDE114BC738345C98
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P6771 ;
+        :notAfter           "1981"^^xsd:gYear ;
+        :notBefore          "1980"^^xsd:gYear .
+    
+    bdr:G1899  a            :Place ;
+        skos:altLabel       "bshad sgrub dar rgyas gling /"@bo-x-ewts , "dkar la dgon bshad sgrub dar rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "dkar la dgon/"@bo-x-ewts , "Karla Gon Shedrub Dargyeling"@en ;
+        :isRoot             true ;
+        :note               bdr:NT63F658A29D5A1B26 ;
+        :placeEvent         bdr:EVDE114BC738345C98 ;
+        :placeLocatedIn     bdr:G1698 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT63F658A29D5A1B26
+        a                   :Note ;
+        :contentLocationStatement  "p. 424" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "dge lugs pa monastery located in gung ho rdzong, mtsho lho tibetan autonomous prefecture\nsituated 111 km. to the northwest of chab cha municipality at a place called chos rje thang dkar la\nnow located in the sprel nag zhang of gung ho rdzong\nfounded through the efforts of a mchod rnga ba blo bzang 'phrin las rgya mtsho and the 7th panchen lama"@en .
+}

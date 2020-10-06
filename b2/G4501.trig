@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4501 {
+    bda:G4501  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4501 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b2/G4501.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4501 ;
+        adm:logEntry        bda:LG1BA850CE7C88EC38 , bda:LG93CE8F5C3835E06B , bda:LGFFBDA67F67562938 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG1BA850CE7C88EC38
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG93CE8F5C3835E06B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T10:12:56.053Z"^^xsd:dateTime ;
+        adm:logMessage      "moved note to G1KR1855 & added withdrawn note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFFBDA67F67562938
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T13:40:37.84Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8295D554E1B2AE50
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1665 ;
+        :notAfter           "1399"^^xsd:gYear ;
+        :notBefore          "1300"^^xsd:gYear .
+    
+    bdr:G4501  a            :Place ;
+        skos:prefLabel      "sgyel ri dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT29706C873015F338 , bdr:NT65B155F601EE29F1 ;
+        :placeEvent         bdr:EV8295D554E1B2AE50 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT29706C873015F338
+        a                   :Note ;
+        :contentLocationStatement  "'phar ma (2003), pp. 94-96" ;
+        :noteSource         bdr:MW28826 ;
+        :noteText           "bon monastery in the vicinity of bon ri in kong po\nfounded by blo ldan snying po\ncompletely destroyed during the cultural revolution; restored in 1998 through the efforts of rme ston gnam lha rin po che\nnow under the control of dge bshes ye shes thabs mkhas"@en .
+    
+    bdr:NT65B155F601EE29F1
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR1855"@en .
+}

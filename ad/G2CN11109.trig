@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11109 {
+    bda:G2CN11109  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11109 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "ad/G2CN11109.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11109 ;
+        adm:logEntry        bda:LG106D0BDE48D84289 , bda:LG3612E9CD0BCCF6B8 , bda:LG3BE3FCA5D0B0D21B , bda:LG43AEB6B1EA883B15 , bda:LG833296B9E6B90DEC , bda:LG914589FB58DBF5A7 , bda:LGBA31163D64F93321 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG106D0BDE48D84289
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-02T12:36:36.66Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3612E9CD0BCCF6B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-03T13:02:33.73Z"^^xsd:dateTime ;
+        adm:logMessage      "added wylie font in note for searching"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3BE3FCA5D0B0D21B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-03T12:53:25.285Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG43AEB6B1EA883B15
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-02T12:25:01.143Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG833296B9E6B90DEC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-09-04T16:47:27.05Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG914589FB58DBF5A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-03T12:55:37.103Z"^^xsd:dateTime ;
+        adm:logMessage      "testing"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBA31163D64F93321
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-04T16:23:57.258Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2CN11109  a        :Place ;
+        skos:altLabel       "gnas mchog 'brong ri smug po/"@bo-x-ewts , "gser gyi 'brong ri smug po/"@bo-x-ewts , "gter gnas 'brong ri smug po/"@bo-x-ewts , "rgyal rong brag lha mgon po/"@bo-x-ewts ;
+        skos:prefLabel      "'brong ri smug po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2890CC9A8A3BD3B7 , bdr:NTAA3F89F24F42FA32 , bdr:NTBBC52E6CEC190CA9 ;
+        :placeLocatedIn     bdr:G3765 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT2890CC9A8A3BD3B7
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 546" ;
+        :noteSource         bdr:MW2CZ7959 ;
+        :noteText           "གསེར་རྟ་བ་སྤྱིའི་གཞི་བདག་འབྲོང་རི་སྨུག་པོ་འདི་ཡི་མིང་གཞན་ལ་རྒྱལ་རོང་བྲག་ལྷ་མགོན་པོ་ཞེས་གྲགས་པ་སོགས་གསལ།"@bo .
+    
+    bdr:NTAA3F89F24F42FA32
+        a                   :Note ;
+        :contentLocationStatement  "p. 172-199" ;
+        :noteSource         bdr:MW29295 ;
+        :noteText           "གནས་ཀྱི་དཀར་ཆག་བཞུགས།"@bo .
+    
+    bdr:NTBBC52E6CEC190CA9
+        a                   :Note ;
+        :contentLocationStatement  "p. 19" ;
+        :noteSource         bdr:MW1KG5737 ;
+        :noteText           "འདི་ནི་མགོ་ལོག་གསེར་ཐལ་གྱི་གནས་ལ་འགོ་བའི་ཡུལ་སྐྱོངས། ཤར་རྒྱལ་མོ་རོང་གི་འཕྲུ་ཏོག །ཁམས་གསེར་གཞུང་མི་སྡེའི་རྟེན་ཕུར། གནས་ལས་མིང་བཏགས་པ་གསེར་གྱི་འབྲོང་རི་སྨུག་པོ་སྟེ། མཚན་ནས་བརྗོད་ན་རྒྱལ་རོང་བྲག་ལྷ་མགོན་པོ། བཙུན་མོ། བཀའ་འཁོར་གྱི་ཐུ་བོ་དམ་ཅན་སྡོང་ར་དཀར་པོ། ཕྱིའི་བློན་ཆེན་ཐོར་བོའི་རི་བཀྲ། ནང་གི་བློན་ཆེན་གསེར་ལག་ལྷ་རྩེ། གསང་བའི་བློན་ཆེན་འཛི་ཆུང་སྟག་རྩེ། དམར་མཛོད་ཀྱི་གཉེར་ཀ་རྐྱ་རེངས། སྤྱན་གཟིགས་ཀྱི་སྲུང་མ་རྫ་ཆེན་རི་རྫི་སྤུན་བདུན། གཡུང་དྲུང་རྔ་ལ་སྟག་རྩེ། འཛི་ཆེན་ཤར་གི་ལྷ་མོ། རྫ་ཁྲིའི་དམ་ཅན་མགར་ནག སིལ་བོ། སིལ་མོ་སོགས་གནས་དེར་སྲུང་མ་ཆོས་ཀྱི་དམ་ཚིག་དང་ལྡན་པ་མང་པོས་མེལ་ཚེ་བྱེད་བཞིན་ཡོད་པ་སོགས་གསལ།\n'di ni mgo log gser thal gyi gnas la 'go ba'i yul skyongs/_shar rgyal mo rong gi 'phru tog_/khams gser gzhung mi sde'i rten phur/_gnas las ming btags pa gser gyi 'brong ri smug po ste/_mtshan nas brjod na rgyal rong brag lha mgon po/_btsun mo/_bka' 'khor gyi thu bo dam can sdong ra dkar po/_phyi'i blon chen thor bo'i ri bkra/_nang gi blon chen gser lag lha rtse/_gsang ba'i blon chen 'dzi chung stag rtse/_dmar mdzod kyi gnyer ka rkya rengs/_spyan gzigs kyi srung ma rdza chen ri rdzi spun bdun/_g.yung drung rnga la stag rtse/_'dzi chen shar gi lha mo/_rdza khri'i dam can mgar nag_sil bo/_sil mo sogs gnas der srung ma chos kyi dam tshig dang ldan pa mang pos mel tshe byed bzhin yod pa sogs gsal/"@en .
+}

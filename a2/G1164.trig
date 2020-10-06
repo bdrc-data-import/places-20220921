@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1164 {
+    bda:G1164  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1164 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "a2/G1164.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1164 ;
+        adm:logEntry        bda:LG1329F2A76C520222 , bda:LG19A7591900CD3C19 , bda:LG330B127394C73412 , bda:LG4404412EA0E8ACCE , bda:LG794E061DCA7E8260 , bda:LG980E8BEB0E64CF1F , bda:LG9BCD920781DD34E6 , bda:LGB642330D97B7995C , bda:LGC2EA99701D3AAD13 , bda:LGD0B1A5CB46BD0278 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1329F2A76C520222
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-24T11:31:52.881Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG19A7591900CD3C19
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-04T11:45:16.369Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG330B127394C73412
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-07T16:37:50.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4404412EA0E8ACCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-27T16:37:10.323Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG794E061DCA7E8260
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG980E8BEB0E64CF1F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9BCD920781DD34E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-02T14:12:40.155Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB642330D97B7995C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-06T15:28:23.903Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language encoding & added name and place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC2EA99701D3AAD13
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-14T11:14:05.208Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from dup. G592 & G671"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD0B1A5CB46BD0278
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-04T16:16:22.139Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1164  a            :Place ;
+        skos:altLabel       "a mdo co ne/"@bo-x-ewts ;
+        skos:prefLabel      "co ne/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeContains      bdr:G1318 , bdr:G2753 , bdr:G435 , bdr:G4350 , bdr:G591 , bdr:G917 , bdr:G975 , bdr:G990 ;
+        :placeLocatedIn     bdr:G1202 ;
+        :placeType          bdr:PT0070 .
+}

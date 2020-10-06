@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4466 {
+    bda:G4466  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4466 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "11/G4466.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4466 ;
+        adm:logEntry        bda:LG0578177DD5818925 , bda:LGCB712AC34F16C503 , bda:LGD8E116E84BFB7505 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221200:542221123" ;
+        adm:place_id_lex    "542221200:542221123" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0578177DD5818925
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-11T14:09:20.236Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag gcig gi lo sprod"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCB712AC34F16C503
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:18:48.368Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD8E116E84BFB7505
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV156EDBF6DC0BCD29
+        a                   :PlaceFounded ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4466  a            :Place ;
+        skos:altLabel       "'on gyi bkra shis rdo kha/"@bo-x-ewts , "bkra shis du kha/"@bo-x-ewts , "Tashi Dokha"@bo-x-phon-en , "Tashi Dokha"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bkra shis do kha/"@bo-x-ewts , "哲西多嘎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBDDFDA0A27FA8271 ;
+        :isRoot             true ;
+        :note               bdr:NT65432294751E6299 , bdr:NTE3E713955C82F2CD ;
+        :placeEvent         bdr:EV156EDBF6DC0BCD29 ;
+        :placeGonpaPerEcumen  "15.1" ;
+        :placeLat           "29.35331" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.84210" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDBDDFDA0A27FA8271
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4466" .
+    
+    bdr:NT65432294751E6299
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 61-63" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "དགོན་དེ་ཀེ་རུ་ལྷ་ཁང་དང་ཉེ་བའི་ཁྲི་སྨོན་གྲོང་ཞེས་པའི་ཤར་གྱི་རི་འབུར་སྟེང་ཆགས་ཡོད། དེ་ནི་ཐོག་མར་རྗེ་ཙོང་ཁ་པ་གནས་དེར་ཕེབས་ནས་ཆོས་འཁོར་རྒྱ་ཆེར་བསྐོར་ཞིང་། འདྲ་སྐུ་བདུན་དང་དེ་རྣམས་བཞུགས་པའི་མཆོད་རྟེན་ཞིག་ཀྱང་བཞེངས་གནང་མཛད་པར་གྲགས། དེ་རྗེས་རྩེ་མགྲོན་རིན་པོ་ཆེས་སྨན་བླའི་དགོན་པ་ཞེས་པ་ཞིག་ཕྱག་བཏབ་གནང་མཛད། དེ་རྗེས་དྭགས་པོ་མངའ་རིས་གྲྭ་ཚང་གི་དགོན་ལག་ཏུ་གྱུར། ད་ལྟ་རྟེན་གསུམ་གསར་བཞེངས་གནང་ཡོད་ལ། ད་དུང་འདུ་ཁང་གི་ལྟག་ཏུ་རྗེ་རིན་པོ་ཆེས་སེང་གདོང་མ་སྒྲུབ་གནང་སའི་སྒྲུབ་ཕུག་ཀྱང་ཡོད་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NTE3E713955C82F2CD
+        a                   :Note ;
+        :contentLocationStatement  "p. 130" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "small dge lugs monastery; it was here that in 1414 (rab byung 7 shing rta) tsong kha pa spent some time; there are several locks of tsong kha pa's hair that are preserved here as relics and there is a statue know as the bkra shis rdo kha ma; the 1st dalai lama dge 'dun grub came in his 25th year here to visit the great tsong kha pa here and became his disciple"@en .
+}

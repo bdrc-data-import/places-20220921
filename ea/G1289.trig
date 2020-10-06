@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1289 {
+    bda:G1289  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1289 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ea/G1289.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1289 ;
+        adm:logEntry        bda:LG7444466DB463D196 , bda:LG9B498A221FF20555 , bda:LGA59ACCBB8F924F69 , bda:LGA8AB964F882552F2 , bda:LGCFFC997A3CB9B7D2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7444466DB463D196
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T16:05:30.68Z"^^xsd:dateTime ;
+        adm:logMessage      "new place type assigned"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9B498A221FF20555
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-27T16:51:40.837Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized name & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA59ACCBB8F924F69
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-09T09:55:33.013Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected place name with note & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA8AB964F882552F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGCFFC997A3CB9B7D2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1289  a            :Place ;
+        skos:altLabel       "mdo smad rgan gya'i lha zhis/"@bo-x-ewts , "rgan gya'i lha zhis/"@bo-x-ewts ;
+        skos:prefLabel      "lha zhis/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD92F50008DC4E608 ;
+        :placeLocatedIn     bdr:G1227 ;
+        :placeType          bdr:PT0020 .
+    
+    bdr:NTD92F50008DC4E608
+        a                   :Note ;
+        :contentLocationStatement  "p. 1865" ;
+        :noteSource         bdr:MW19801 ;
+        :noteText           "འདི་ནི་བླ་བྲང་སྨན་ཁྲི་དྲུག་པ་ལྷ་ཞིས་འཇིགས་མེད་འཕྲིན་ལས་ཀྱི་འཁྲུངས་ཡུལ་ཏེ། ཐང་དཀར་(thang dkar)ཞེས་པ་ནི་ཁོང་གི་གདུང་རུས་(it's clan name)ཡིན་པ་ལས་ས་མིང་མིན་པར་གསལ་བས་འདིར་བཅོས་ཐོ་འདི་བཏབ་བོ།"@en .
+}

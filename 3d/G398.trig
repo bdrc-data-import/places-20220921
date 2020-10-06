@@ -1,0 +1,106 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G398 {
+    bda:G398  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G398 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "3d/G398.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G398 ;
+        adm:logEntry        bda:LG58EBB00FCDF3DC9A , bda:LG6289654712A2B851 , bda:LGB89880BEE7E17E1A , bda:LGEE4FB2E63C1F7587 , bda:LGFA18B48ECACB2C7D , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632621100:471" ;
+        adm:place_id_lex    "632621100:266" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG58EBB00FCDF3DC9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-21T16:51:41.263Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6289654712A2B851
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB89880BEE7E17E1A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-11T16:04:31.583Z"^^xsd:dateTime ;
+        adm:logMessage      "added rwa rgya dgon pa'i par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGEE4FB2E63C1F7587
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-16T14:57:17.693Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFA18B48ECACB2C7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G3JT12586"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV9A10D03525065185
+        a                   :PlaceFounded ;
+        :onYear             "1769"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVF8B2394785B34B3E
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P167 .
+    
+    bdr:G398  a             :Place ;
+        skos:altLabel       "rwa rgya dgon bkra shis 'byung gnas bshad sgrub dar rgyas gling /"@bo-x-ewts , "rwa rgya dgon bkra shis kun bde gling /"@bo-x-ewts , "rwa rgya dgon dga' ldan bkra shis 'byung gnas/"@bo-x-ewts , "嘉祥寺"@zh-hans , "jiaxiang si"@zh-latn-pinyin-x-ndia , "lajia si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rwa rgya dgon/"@bo-x-ewts , "拉加寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAB8A2A3DF5B7E07A ;
+        :isRoot             true ;
+        :note               bdr:NT279DF843CC74F64E , bdr:NTAD79EB656B505FA2 ;
+        :placeContains      bdr:G3JT12586 ;
+        :placeEvent         bdr:EV9A10D03525065185 , bdr:EVF8B2394785B34B3E ;
+        :placeGonpaPerEcumen  "0.31" ;
+        :placeLat           "34.68000" ;
+        :placeLocatedIn     bdr:G1754 , bdr:G1764 ;
+        :placeLong          "100.65000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDAB8A2A3DF5B7E07A
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G398" .
+    
+    bdr:NT279DF843CC74F64E
+        a                   :Note ;
+        :noteText           "important dge lugs monastery in the mgo log lands; there was kept here blocks for carving a bka' 'gyur; no copy of this edition is known to survive"@en .
+    
+    bdr:NTAD79EB656B505FA2
+        a                   :Note ;
+        :contentLocationStatement  "p. 210" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "description"@en .
+}

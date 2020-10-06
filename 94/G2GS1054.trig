@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1054 {
+    bda:G2GS1054  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1054 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "94/G2GS1054.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1054 ;
+        adm:logEntry        bda:LG51FF60AB5C2835D6 , bda:LG7F130F621E085B16 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG51FF60AB5C2835D6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-05-31T20:07:11.34Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7F130F621E085B16
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:18:29.127Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from palace to phoBrang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2GS1054  a         :Place ;
+        skos:altLabel       "gzhis ka bde chen/"@bo-x-ewts ;
+        skos:prefLabel      "gzhis kha bde chen/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF240258A4A223AAC ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NTF240258A4A223AAC
+        a                   :Note ;
+        :noteText           "name of a palace or main estate situated in central tibet; it was associated in the 16th century with the karma bka' brgyud tradition"@en .
+}

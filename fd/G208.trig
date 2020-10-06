@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G208 {
+    bda:G208  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G208 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fd/G208.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G208 ;
+        adm:logEntry        bda:LG797C22117B73242E , bda:LGB4D2CD8774A482C2 , bda:LGC104F9D26AC54A0F , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG797C22117B73242E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB4D2CD8774A482C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:56:31.64Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGC104F9D26AC54A0F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-26T11:05:51.267Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G208  a             :Place ;
+        skos:altLabel       "mi shig rdo rje rdzong /"@bo-x-ewts , "phug chung dgon pa mi shig rdo rje rdzong /"@bo-x-ewts ;
+        skos:prefLabel      "phug chung dgon pa/"@bo-x-ewts , "Pugchung Gonpa Mishi Dorje Dzong"@en ;
+        :isRoot             true ;
+        :note               bdr:NT05CB3A3DB7DD15D7 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT05CB3A3DB7DD15D7
+        a                   :Note ;
+        :noteText           "small monastery of the 'brug pa dkar brgyud pa tradition in khams"@en .
+}

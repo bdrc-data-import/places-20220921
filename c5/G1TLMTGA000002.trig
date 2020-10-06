@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1TLMTGA000002 {
+    bda:G1TLMTGA000002
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1TLMTGA000002 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c5/G1TLMTGA000002.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1TLMTGA000002 ;
+        adm:logEntry        bda:LG16AF93CB151FE259 , bda:LG5E8ABAC4A5A372F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG16AF93CB151FE259
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-07-16T16:28:38.518Z"^^xsd:dateTime ;
+        adm:logMessage      "replace unicode by wylie as per convention"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG5E8ABAC4A5A372F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-07-20T10:25:53.575Z"^^xsd:dateTime ;
+        adm:logMessage      "consolidating both libraries under a single monastery"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G1TLMTGA000002
+        a                   :Place ;
+        skos:prefLabel      "rdzong sar bshad grwa chos kyi blo gros/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeAddress       vcard:VA85853EEDADABA559 ;
+        :placeContains      bdr:G1TLMTGA000001 , bdr:G1TLMTGB000001 ;
+        :placeType          bdr:PT0037 .
+    
+    vcard:VA85853EEDADABA559
+        a                   vcard:Address ;
+        vcard:country-name  "India" ;
+        vcard:locality      "Chauntra" ;
+        vcard:postal-code   "175032" ;
+        vcard:region        "Himachal Pradesh" ;
+        vcard:street-address  " " .
+}

@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2088 {
+    bda:G2088  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2088 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "b7/G2088.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2088 ;
+        adm:logEntry        bda:LG07220D87D6F8C66F , bda:LG16B3F311CECF933C , bda:LG25AD3D149F47BE91 , bda:LG29ADA5BA5468D4D6 , bda:LG2A8765CC19CD0407 , bda:LG5583D724F40A7AD1 , bda:LG63E2CA14D0DF0922 , bda:LG701F2BDDFAF479AD , bda:LG900E04A401CBC42D , bda:LGD01567DB10B366F3 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07220D87D6F8C66F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG16B3F311CECF933C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-19T12:41:43.455Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG25AD3D149F47BE91
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-28T15:58:54.625Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG29ADA5BA5468D4D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-19T11:43:50.631Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2A8765CC19CD0407
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-19T09:39:39.395Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5583D724F40A7AD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-18T16:39:36.324Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type from dgon pa to khul"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG63E2CA14D0DF0922
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T15:24:57.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains brag dmar"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG701F2BDDFAF479AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-19T10:39:35.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG900E04A401CBC42D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-18T16:51:18.28Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD01567DB10B366F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-01T13:04:19.324Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2088  a            :Place ;
+        skos:prefLabel      "bsam yas khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5747F264452ECF6E ;
+        :placeContains      bdr:G1156 , bdr:G2807 , bdr:G2808 , bdr:G3CN275 , bdr:G3CN278 , bdr:G3CN279 , bdr:G3CN430 , bdr:G3CN498 , bdr:G3CN524 ;
+        :placeType          bdr:PT0079 .
+    
+    bdr:NT5747F264452ECF6E
+        a                   :Note ;
+        :contentLocationStatement  "p. 122" ;
+        :noteSource         bdr:MW20170 ;
+        :noteText           "administrative region equivent to a rdzong in the 1830 settlement document"@en .
+}

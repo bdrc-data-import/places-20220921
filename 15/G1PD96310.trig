@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD96310 {
+    bda:G1PD96310  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD96310 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "15/G1PD96310.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD96310 ;
+        adm:logEntry        bda:LG4959BAC0D0288713 , bda:LG792D345CF43F0090 , bda:LGD2FFC707DE4A92B4 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG4959BAC0D0288713
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-01T09:21:58.657Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG792D345CF43F0090
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-04-30T16:00:54.834Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD2FFC707DE4A92B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-15T14:31:00.489Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from withdrawn to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1PD96310  a        :Place ;
+        skos:altLabel       "ba yan stod th'I dgon pa/"@bo-x-ewts , "duoda si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "བ་ཡན་སྟོད་ཐའི་དགོན་པ།"@bo , "多达寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTA7F254BF7E36B053 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTA7F254BF7E36B053
+        a                   :Note ;
+        :contentLocationStatement  "p. 103" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་བྱ་ཁྱུང་དགོན་པའི་དགོན་ལག་ཡིན། 1958ལོར་གཏོར་ནས་བསྐྱར་གསོ་གྲུབ་མེད་ཅེས་འཁོད།"@bo .
+}

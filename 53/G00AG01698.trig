@@ -1,0 +1,116 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00AG01698 {
+    bda:G00AG01698  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00AG01698 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "53/G00AG01698.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00AG01698 ;
+        adm:logEntry        bda:LG094DDD4255C96EC0 , bda:LG0B75E069E563DD13 , bda:LG17F7309499810FD6 , bda:LG8A6C32D377C7348F , bda:LG9D5DD74E303E22FE , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542323203:542323111" ;
+        adm:place_id_lex    "542323203:542323111" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG094DDD4255C96EC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-10T16:41:39.217Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0B75E069E563DD13
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-31T10:45:36.644Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG17F7309499810FD6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T16:33:45.632Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8A6C32D377C7348F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-17T15:20:56.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & location & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9D5DD74E303E22FE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-02-12T13:08:06.939Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV374E530D211765F5
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P825 .
+    
+    bdr:EVC7AE6551022D7F7A
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVDDA651E7038FC1CB
+        a                   :PlaceFounded ;
+        :onYear             "1550"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G00AG01698  a       :Place ;
+        skos:altLabel       "gtsang theg mchog gling /"@bo-x-ewts , "rgyal byed tshal/"@bo-x-ewts , "tianjuelin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "theg mchog gling /"@bo-x-ewts , "Tekchok Ling"@en-x-mixed , "天觉林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1C6932E3D072B5B4 ;
+        :isRoot             true ;
+        :note               bdr:NT088FEB989A41B88B , bdr:NTBA18E70A28618581 , bdr:NTC2A6F7C4EB2EC562 , bdr:NTD133A77C04715D3A ;
+        :placeContains      bdr:G755 ;
+        :placeEvent         bdr:EV374E530D211765F5 , bdr:EVC7AE6551022D7F7A , bdr:EVDDA651E7038FC1CB ;
+        :placeGonpaPerEcumen  "9.68" ;
+        :placeLat           "29.03333" ;
+        :placeLocatedIn     bdr:G2175 ;
+        :placeLong          "89.43333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID1C6932E3D072B5B4
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G00AG01698" .
+    
+    bdr:NT088FEB989A41B88B
+        a                   :Note ;
+        :contentLocationStatement  "P. 404" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "description"@en .
+    
+    bdr:NTBA18E70A28618581
+        a                   :Note ;
+        :noteText           "TBRC states 5th"@en .
+    
+    bdr:NTC2A6F7C4EB2EC562
+        a                   :Note ;
+        :contentLocationStatement  "v.18, p. 324-325" ;
+        :noteSource         bdr:MW21807 ;
+        :noteText           "ཐེག་མཆོག་གླིང་ནི་འབྲུག་པ་པདྨ་དཀར་པོས་བཏབ། ལྔ་པ་རིན་པོ་ཆེས་རྙིང་དགོན་དུ་བསྒྱུར། བྱང་གཏེར་དང་རྒྱ་ཅན་གཙོ་བོར་གྱུར་པའི་ཉམས་བཞེས་དང་། ཕྱིས་སུ་ཀུན་མཁྱེན་འཇིགས་མེད་གླིང་པ་ཕེབས་ནས་སྒྱུ་འཕྲུལ་ཞི་ཁྲོ་སོགས་བཙུགས་པའི་རྒྱུན་དེང་སང་ཡོད། ཅེས་འཇམ་དབྱངས་མཁྱེན་བརྩེའི་དབང་པོའི་བཀའ་འབུམ་ནང་གསལ།"@bo .
+    
+    bdr:NTD133A77C04715D3A
+        a                   :Note ;
+        :noteText           "a monastery in gtsang founded by 'brug chen 04 pad+ma dkar po (1527-1592) and converted by the fifth dalai lama to the rnying ma sect, in the byang gter lineage."@en .
+}

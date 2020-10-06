@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4CZ1581 {
+    bda:G4CZ1581  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4CZ1581 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "59/G4CZ1581.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4CZ1581 ;
+        adm:logEntry        bda:LG0CBC6853ADE87739 , bda:LG75F5AB68190635CD , bda:LGB21518EE22BDEFEB , bda:LGC4BB571463FB5E21 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542224202:542224104" ;
+        adm:place_id_lex    "542224202:542224104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0CBC6853ADE87739
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-11T12:02:03.376Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG75F5AB68190635CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-10T09:15:27.063Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB21518EE22BDEFEB
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-16T10:42:05.305Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC4BB571463FB5E21
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-10-22T15:35:06.582Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV196EFE78F1A346AC
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV3A7BC4BAD08CE459
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G4CZ1581  a         :Place ;
+        skos:altLabel       "'ol dga' bsam gling /"@bo-x-ewts , "'ol dga' bsam gtan gling /"@bo-x-ewts , "sanglin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bsam gling dgon/"@bo-x-ewts , "Samling Gon"@en-x-mixed , "桑林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE15654CAEAFFDAC0 ;
+        :isRoot             true ;
+        :note               bdr:NT5DC6D6044AB35C2F ;
+        :placeEvent         bdr:EV196EFE78F1A346AC , bdr:EV3A7BC4BAD08CE459 ;
+        :placeGonpaPerEcumen  "4.02" ;
+        :placeLat           "29.40923" ;
+        :placeLocatedIn     bdr:G1379 , bdr:G2130 ;
+        :placeLong          "92.42286" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE15654CAEAFFDAC0
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4CZ1581" .
+    
+    bdr:NT5DC6D6044AB35C2F
+        a                   :Note ;
+        :noteText           "ཐོག་མར་མཉམ་མེད་སྒམ་པོ་པས་སྒྲུབ་པ་མཛད། དེ་རྗེས་གདན་ས་ཐེལ་པའི་རྟོག་ལྡན་བརྒྱད་ཀྱིས་མཆོད་ཁང་བཞེངས། དེ་རྗེས་བཙོང་ཁ་ཁ་ཆེ་པོ་ཕེབས་ནས་ཆོས་གསུངས་ཤིང་འདུས་པས་སོགས་ཀྱི་ཆོས་གསུངས་པས་རིམ་བཞིན་དགེ་ལྡན་པར་གྱུར། དེར་རྗེ་ང་འདྲ་མའི་སྐུ་གསུམ་དང་སྒྲོལ་མ་གསུང་བྱོན་མསོགས་ཡོད། གྲྭ་རྒྱུན་སེར་སྨད་བློ་གླིང་ཉང་རོང་མངའ་དྭགས་གང་མོས་སུ་འགྲོ།\tགྲྭ་གྲངས་༨༤་སྐོར་ཡོད།"@bo .
+}

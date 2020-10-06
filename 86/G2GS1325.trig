@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1325 {
+    bda:G2GS1325  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1325 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "86/G2GS1325.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1325 ;
+        adm:logEntry        bda:LG004FCF0AA1995316 , bda:LG2735657EF45B8B24 , bda:LG2963CE5342524A97 , bda:LG5F1DF7181BC64823 , bda:LG814FC934245243D9 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG004FCF0AA1995316
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-29T11:37:09.01Z"^^xsd:dateTime ;
+        adm:logMessage      "added info and place type"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG2735657EF45B8B24
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-05T16:14:38.418Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2963CE5342524A97
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-13T17:10:19.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5F1DF7181BC64823
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-11-24T21:24:51.048Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG814FC934245243D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-10T14:41:55.707Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2GS1325  a         :Place ;
+        skos:altLabel       "smad mdo khams sgang drug"@bo-x-ewts , "smad phyogs sgang drug"@bo-x-ewts ;
+        skos:prefLabel      "sgang drug"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT120F10D907CCBEFD , bdr:NT42A0678DFDB6D470 ;
+        :placeContains      bdr:G3CN22 , bdr:G3CN23 , bdr:G3CN24 , bdr:G3CN25 , bdr:G851 , bdr:G925 ;
+        :placeLocatedIn     bdr:G1326 ;
+        :placeType          bdr:PT0062 .
+    
+    bdr:NT120F10D907CCBEFD
+        a                   :Note ;
+        :contentLocationStatement  "p. 824" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "ཆུ་བཞི་སྒང་དྲུག་གི་རྣམ་གྲངས་འདྲེན་ཚུལ་རིགས་གཅིག་གསལ།"@bo .
+    
+    bdr:NT42A0678DFDB6D470
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 1347" ;
+        :noteSource         bdr:MW1KG2733 ;
+        :noteText           "according to the chos rnam kun btus (citing the dung dkar tshig mdzod 717-28)the six ridges (sgang drug) of eastern tibet (bod yul stod smad bar gsum gyi smad phyogs sgang drug) are: 1) zal mo sgang; 2) tsha ba sgang; 3) smar khams sgang: 4) spo 'bor sgang; 5) dmar rdza sgang; 6) mi nyag rab sgang; according to jv: the  6 districts of khams are skya ra sgang, rab sgang, spo 'bor sgang, dmar khams sgang, tsha sgang, zal mo sgang."@en .
+}

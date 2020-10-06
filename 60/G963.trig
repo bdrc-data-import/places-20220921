@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G963 {
+    bda:G963  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G963 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "60/G963.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G963 ;
+        adm:logEntry        bda:LG5D6C2C3AE081CB03 , bda:LGE3D860E5A3BD9562 , bda:LGE652A872537295AD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5D6C2C3AE081CB03
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-09T20:01:28.442Z"^^xsd:dateTime ;
+        adm:logMessage      "tshab bjes byas"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE3D860E5A3BD9562
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-02T12:38:58.541Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed & added all info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE652A872537295AD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G963  a             :Place ;
+        skos:altLabel       "lho nem khri rdo rdzong /"@bo-x-ewts ;
+        skos:prefLabel      "khri rdo rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA19E1A72287122E7 ;
+        :placeLocatedIn     bdr:G970 ;
+        :placeType          bdr:PT0056 .
+    
+    bdr:NTA19E1A72287122E7
+        a                   :Note ;
+        :contentLocationStatement  "p.620-624" ;
+        :noteSource         bdr:MW1PD96945 ;
+        :noteText           "steng chen khul du gtogs pa 1942 lor btsugs/ \nrdzong 'di khong su lho pa shog drug gam shog bdun/ dngso yod brgyad ni deng steng chen rdzong khongs yin/\nnem tsha shog lnga dang khri rdo shog gnyis ni da lta nag chu sa khul sog rdzong gi khongs su gtogs tshul sogs gsal/"@en .
+}

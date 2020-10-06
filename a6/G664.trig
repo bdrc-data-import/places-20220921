@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G664 {
+    bda:G664  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G664 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a6/G664.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G664 ;
+        adm:logEntry        bda:LG6AE84E895B8CB293 , bda:LGAF327BC376BAFC8E , bda:LGF3105C049E9C792B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6AE84E895B8CB293
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T16:22:33.715Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:brogSde to 'brogSde"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGAF327BC376BAFC8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-03T14:55:17.803Z"^^xsd:dateTime ;
+        adm:logMessage      "added names and place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF3105C049E9C792B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G664  a             :Place ;
+        skos:altLabel       "gnya' gong brag dkar gyi lha zhol gnyan thog 'brog"@bo-x-ewts , "mdo smad gnya' gong brag dkar gyi lha zhol gnyan thog 'brog"@bo-x-ewts ;
+        skos:prefLabel      "gnyan thog 'brog"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeType          bdr:PT0048 .
+}

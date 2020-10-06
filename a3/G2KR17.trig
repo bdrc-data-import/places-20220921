@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KR17 {
+    bda:G2KR17  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KR17 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a3/G2KR17.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KR17 ;
+        adm:logEntry        bda:LG09C89506B2E256B2 , bda:LGIM335E72436E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG09C89506B2E256B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T15:58:14.208Z"^^xsd:dateTime ;
+        adm:logMessage      "edited order of names and added type again"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM335E72436E
+        a                   adm:UpdateData ;
+        adm:logAgent        "mongol import" ;
+        adm:logDate         "2013-12-03T23:23:40.962Z"^^xsd:dateTime ;
+        adm:logMessage      "created by mongol import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVD9A38FD2092F72EF
+        a                   :PlaceFounded ;
+        :onYear             "1713"^^xsd:gYear .
+    
+    bdr:G2KR17  a           :Place ;
+        skos:altLabel       "baragun coyir-a-yin keyid"@mn-x-trans ;
+        skos:prefLabel      "chos grwa g.yas pa/"@bo-x-ewts , "Baruun Choiriin khiid"@mn-x-trans ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVD9A38FD2092F72EF ;
+        :placeLat           "46.2477166667" ;
+        :placeLocatedIn     bdr:G584 ;
+        :placeLong          "108.1248833" ;
+        :placeType          bdr:PT0038 .
+}

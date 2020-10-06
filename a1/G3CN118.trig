@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN118 {
+    bda:G3CN118  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN118 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "a1/G3CN118.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN118 ;
+        adm:logEntry        bda:LG0B017FEDF5581213 , bda:LGA252C38BE852D118 , bda:LGE585AAB5ECA7FB93 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B017FEDF5581213
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-19T10:51:26.509Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA252C38BE852D118
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-20T13:09:58.027Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE585AAB5ECA7FB93
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-27T16:35:45.23Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV115FCDCE94E6445B
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN118  a          :Place ;
+        skos:altLabel       "'grangs te/"@bo-x-ewts ;
+        skos:prefLabel      "greng nga /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT386E10CE7AE30AB9 , bdr:NTD404564E507855ED , bdr:NTF4776B015AFD8C04 ;
+        :placeEvent         bdr:EV115FCDCE94E6445B ;
+        :placeLocatedIn     bdr:G3176 ;
+        :placeType          bdr:PT0001 .
+    
+    bdr:NT386E10CE7AE30AB9
+        a                   :Note ;
+        :contentLocationStatement  "p. 258" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོའི་སྐབས་ནས་བཟུང་བོད་བཙན་པོའི་རྒྱལ་རབས་སྐབས་སུ། བོད་རུ་རེ་རེ་ན་ཡུལ་དཔོན་བཅུ་དྲུག་རེ་ཡོད་པ་ལས། འདི་ནི་གཡོ་རུའི་ཡུལ་དཔོན་ཚན་བཅུ་དྲུག་གི་ཡུལ་སྡེ་དྲུག་པ་དེ་ཡིན་པར་གསལ།"@bo .
+    
+    bdr:NTD404564E507855ED
+        a                   :Note ;
+        :contentLocationStatement  "p. 202, p. 205" ;
+        :noteSource         bdr:MW1KG16696 ;
+        :noteText           "དེ་ཡང་འདིར་འཕྱོང་པོ་སྟོད་རྒྱུད་དུ་ཡིན་ཚུལ་{Grang-mo Grang-chung in Upper 'Phyong-po; Hazod 2007a; 7.1 Breng}མཆན་དང་། ས་ཁྲ་ཡང་གཟིགས་ཆོག་ཏུ་སྣང་།"@en .
+    
+    bdr:NTF4776B015AFD8C04
+        a                   :Note ;
+        :contentLocationStatement  "p. 185" ;
+        :noteSource         bdr:MW17319 ;
+        :noteText           "རྒྱལ་པོ་བཀའ་ཐང་ལས། \"འགྲངས་ཏེ་\"ནི་གཡོན་རུའི་ཡུལ་གྲུ་བཅུ་དྲུག་གི་ཨང་ལྔ་པ་དེ་ཡིན་པར་གསལ། དེ་ཡང་\"གྲེང་ང་\"དང་ཡུལ་སྡེ་གཅིག་གི་མིང་གི་རྣམ་གྲངས་ཡིན་པ་འོག་གི་མཆན་ལ་ཡང་གསལ།"@bo .
+}

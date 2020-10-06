@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G218 {
+    bda:G218  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G218 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "7a/G218.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G218 ;
+        adm:logEntry        bda:LG010AE54B77E1DC2B , bda:LG01AD01CA6227EF38 , bda:LG1B495A68D01DA4C2 , bda:LG229643AFA286B942 , bda:LG31B3B3336474B8EE , bda:LG58F3805BE12F7453 , bda:LG5EA0ED84B5C8119E , bda:LG6C2478A7AA892BBA , bda:LG7D06564C21A5E8F1 , bda:LGE7CFB42AD9CA9184 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG010AE54B77E1DC2B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-18T12:34:56.731Z"^^xsd:dateTime ;
+        adm:logMessage      "added type and not"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG01AD01CA6227EF38
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-21T12:33:57.339Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG1B495A68D01DA4C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-23T12:28:01.554Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG229643AFA286B942
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-26T15:12:00.344Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG31B3B3336474B8EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-07T14:51:53.082Z"^^xsd:dateTime ;
+        adm:logMessage      "added rta mgo par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG58F3805BE12F7453
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T13:30:53.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5EA0ED84B5C8119E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-17T11:11:42.333Z"^^xsd:dateTime ;
+        adm:logMessage      "edited place type"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6C2478A7AA892BBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G3205"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG7D06564C21A5E8F1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE7CFB42AD9CA9184
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T15:05:21.375Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV9A1F53859E78546E
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionDrukpaKagyu .
+    
+    bdr:G218  a             :Place ;
+        skos:altLabel       "rta mgo"@bo-x-ewts , "rta mgo chos dbyings rdzong /"@bo-x-ewts ;
+        skos:prefLabel      "rta mgo dgon/"@bo-x-ewts , "Tamgo Gon"@en ;
+        :isRoot             true ;
+        :note               bdr:NT8C1A5F3C6CD00C31 ;
+        :placeContains      bdr:G3JT12513 ;
+        :placeEvent         bdr:EV9A1F53859E78546E ;
+        :placeLat           "27.593052" ;
+        :placeLocatedIn     bdr:G3205 , bdr:G4706 ;
+        :placeLong          "89.638776" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8C1A5F3C6CD00C31
+        a                   :Note ;
+        :noteText           "major monastery hermitage of the 'brug pa dkar brgyud pa tradition in 'bhutan; now mainly learning centre (bshad sgra) as well as seat of meditation training (sgrub sgra)"@en .
+}

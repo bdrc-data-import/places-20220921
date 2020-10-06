@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3703 {
+    bda:G3703  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3703 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "f3/G3703.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3703 ;
+        adm:logEntry        bda:LG6FFD7180F78DDE41 , bda:LG839F565AA2B6A5C5 , bda:LG885F9A24C6531887 , bda:LG94B1F975D80C23A1 , bda:LGA6FD456A0548B032 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632321202:583" ;
+        adm:place_id_lex    "632321202:267" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6FFD7180F78DDE41
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG839F565AA2B6A5C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-25T10:16:53.81Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG885F9A24C6531887
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-25T10:15:51.597Z"^^xsd:dateTime ;
+        adm:logMessage      "yig nor bcos"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG94B1F975D80C23A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-25T10:17:21.871Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGA6FD456A0548B032
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-10T12:34:24.289Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2D296B513C8F4FE9
+        a                   :PlaceFounded ;
+        :onYear             "1770"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3703  a            :Place ;
+        skos:altLabel       "reb kong bkra shis 'khyil/"@bo-x-ewts , "yama zhaxiqi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "g.ya' ma bkra shis 'khyil/"@bo-x-ewts , "雅玛扎西其寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBB7F34D323FDF913 ;
+        :isRoot             true ;
+        :note               bdr:NTBF98CB63C10C3C12 ;
+        :placeContains      bdr:G3JT12611 ;
+        :placeEvent         bdr:EV2D296B513C8F4FE9 ;
+        :placeGonpaPerEcumen  "21.16" ;
+        :placeLat           "35.55000" ;
+        :placeLocatedIn     bdr:G2369 ;
+        :placeLong          "102.20000" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:IDBB7F34D323FDF913
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3703" .
+    
+    bdr:NTBF98CB63C10C3C12
+        a                   :Note ;
+        :contentLocationStatement  "p. 72" ;
+        :noteSource         bdr:MW24572 ;
+        :noteText           "list of teachers connected with this hermitage\n\"grub dbang padma rnam grol sku phreng rim byon\""@en .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2526 {
+    bda:G2526  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2526 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "7f/G2526.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2526 ;
+        adm:logEntry        bda:LGD834876A7065A5E4 , bda:LGF0802806F66B8507 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623027202:623027103" ;
+        adm:place_id_lex    "623027202:623027103" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD834876A7065A5E4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF0802806F66B8507
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T10:38:00.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5D92F2EB531A5863
+        a                   :PlaceFounded ;
+        :onYear             "1662"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2526  a            :Place ;
+        skos:altLabel       "rgan gya ri ngar bkra shis dge 'phel dgon/"@bo-x-ewts ;
+        skos:prefLabel      "ri ngar bkra shis dge 'phel dgon/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3E3CA9B23730BF71 ;
+        :isRoot             true ;
+        :note               bdr:NT4FED5BD54D6DA7B6 ;
+        :placeEvent         bdr:EV5D92F2EB531A5863 ;
+        :placeGonpaPerEcumen  "5.7" ;
+        :placeLat           "35.39524" ;
+        :placeLocatedIn     bdr:G1227 , bdr:G2396 , bdr:G2527 ;
+        :placeLong          "102.40276" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID3E3CA9B23730BF71
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2526" .
+    
+    bdr:NT4FED5BD54D6DA7B6
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, p. 21" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "dge lugs pa monastery located in a nomadic encampment of rgan gya'i ri ngar of bsang chu rdzong, kan lho khul"@en .
+}

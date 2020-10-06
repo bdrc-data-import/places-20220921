@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G354 {
+    bda:G354  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G354 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "43/G354.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G354 ;
+        adm:logEntry        bda:LG204807A48A174C0A , bda:LG541F4574470AB05A , bda:LGA1536FA2B0070A6A , bda:LGC844CAD81DC2CE21 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG204807A48A174C0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-30T10:30:13.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG541F4574470AB05A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-04T10:41:22.411Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA1536FA2B0070A6A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-16T11:07:15.128Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC844CAD81DC2CE21
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G354  a             :Place ;
+        skos:altLabel       "nag chu dge phan byang chub gling /"@bo-x-ewts ;
+        skos:prefLabel      "dge phan byang chub gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA5A0423E77E68675 ;
+        :placeLocatedIn     bdr:G2147 , bdr:G3633 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTA5A0423E77E68675
+        a                   :Note ;
+        :noteText           "dge lugs monastery in the nag chu area of the tibetan autonomous region"@en .
+}

@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3568 {
+    bda:G3568  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3568 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "6b/G3568.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3568 ;
+        adm:logEntry        bda:LG3A0D11AFE0D873B8 , bda:LG8DC99E79A470F7A8 , bda:LGA852E930A0AD4066 , bda:LGAE6B9ECE696EED5E , bda:LGIM0A2D5DA707 , bda:LGIMA37A954E21 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3A0D11AFE0D873B8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8DC99E79A470F7A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T15:49:18.092Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA852E930A0AD4066
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T15:54:41.634Z"^^xsd:dateTime ;
+        adm:logMessage      "added type * location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAE6B9ECE696EED5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from countyseats to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM0A2D5DA707
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rdzong to sngarGyiRdzong"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMA37A954E21
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-20T22:30:59.465Z"^^xsd:dateTime ;
+        adm:logMessage      "populating gis from G9GBX..."@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G3568  a            :Place ;
+        skos:altLabel       "rnam gling zhol/"@bo-x-ewts ;
+        skos:prefLabel      "rnam gling grong rdal (rnam gling)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1E47EADAFD9E50C1 ;
+        :placeGB2260-2013   "542322100" ;
+        :placeLocatedIn     bdr:G2171 ;
+        :placeType          bdr:PT0045 .
+    
+    bdr:NT1E47EADAFD9E50C1
+        a                   :Note ;
+        :contentLocationStatement  "p. 47" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "name of the county seat of rnam gling rdzong"@en .
+}

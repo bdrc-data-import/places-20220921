@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1614 {
+    bda:G1KR1614  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1614 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "59/G1KR1614.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1614 ;
+        adm:logEntry        bda:LG00D5DBFEF1593388 , bda:LG0DCBDAEFC0AC3069 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542330100:542330101" ;
+        adm:place_id_lex    "542330100:542330101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00D5DBFEF1593388
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-11T15:03:04.968Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G4CZ1552(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0DCBDAEFC0AC3069
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-11T15:05:17.158Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV1491A2B1A4E13A05
+        a                   :PlaceFounded ;
+        :onYear             "1367"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EVCA696388D093AD96
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk , bdr:TraditionSakya .
+    
+    bdr:G1KR1614  a         :Place ;
+        skos:altLabel       "dga' ldan byams pa gling /"@bo-x-ewts , "rong byams chen dgon/"@bo-x-ewts , "rong byams gling /"@bo-x-ewts , "qiangqin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "byams chen chos sde/"@bo-x-ewts , "Rong Chamchen Gon"@en-x-mixed , "强钦寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA58ADB975D82A801 ;
+        :isRoot             true ;
+        :note               bdr:NT7CB6A15C01482970 ;
+        :placeEvent         bdr:EV1491A2B1A4E13A05 , bdr:EVCA696388D093AD96 ;
+        :placeGonpaPerEcumen  "4.16" ;
+        :placeLat           "29.21667" ;
+        :placeLocatedIn     bdr:G2176 ;
+        :placeLong          "89.85000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA58ADB975D82A801
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1614" .
+    
+    bdr:NT7CB6A15C01482970
+        a                   :Note ;
+        :contentLocationStatement  "this note moved from dup. G4CZ1552" ;
+        :noteText           "founded in 1367 by rin spungs pa nor bu bzang po and gzhon nu rgyal mchog\n \t\nརིན་སྤུངས་པ་ནོར་བུ་བཟང་པོ་དང་། ཙོང་ཁ་པའི་དངོས་སློབ་གཞོན་ནུ་རྒྱལ་མཆོག་གིས་ཕྱག་བཏབ། གྲྭ་ཚང་བདུན་ཡོད། པཎ་ཆེན་ནགས་ཀྱི་རིན་ཆེན་པས་རབ་གནས་མཛད་པར་གྲགས། གྲྭ་གྲངས་༢༤༠ཙམ་ཡོད་སྐོར། ཕྱིས་ཉམས་རྒུད་དུ་སོང་བས་སླར་གོང་ས་ལྔ་པ་ཆེན་པོས་ཉམས་གསོ་དང་འཆད་ཉན་སོགས་གསར་དུ་བཙུགས་ནས་དགའ་ལྡན་བྱམས་པ་གླིང་ཞེས་འདོགས་པར་མཛད།"@en .
+}

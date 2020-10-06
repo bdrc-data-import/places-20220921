@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4770 {
+    bda:G4770  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4770 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "56/G4770.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4770 ;
+        adm:logEntry        bda:LGA0BD7B2B727CB72C , bda:LGF8F81C594E6D9A98 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA0BD7B2B727CB72C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-03T09:26:43.369Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF8F81C594E6D9A98
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0630C088FF4C711C
+        a                   :PlaceFounded ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4770  a            :Place ;
+        skos:prefLabel      "lcam mda' dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT472F4D6D4FD6CA2A , bdr:NTDB6BA3F4DDD01653 ;
+        :placeEvent         bdr:EV0630C088FF4C711C ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT472F4D6D4FD6CA2A
+        a                   :Note ;
+        :contentLocationStatement  "p. 334" ;
+        :noteSource         bdr:MW8224 ;
+        :noteText           "རྗེ་ཙོང་ཁ་པའི་དངོས་སློབ་མཁན་ཆེན་བཀྲ་ཤིས་རྒྱ་མཚོས་བཏབ། ༼ཀ་ཐོག་སི་ཏུས་བཀྲ་ཤིས་སེངྒེ་ཞེས་བྲིས་པ་འདི་དང་མ་མཐུན།༽ བར་སྐབས་སུ་ཆབ་མདོའི་དགོན་ལག་ཏུ་གྱུར་མོད། ཕྱིས་གཞིས་དགོན་སྔགས་ཕྱོགས་རྒྱུད་སྨད་དང་ཉེ། གྲྭ་རྒྱུན་སེར་བྱེས་དང་ཉི་ཐང་དུ་འགྲོ། དགེ་འདུན་ཉིས་བརྒྱ་ཉི་ཤུ་སྐོར་ཞེས་གསལ།"@bo .
+    
+    bdr:NTDB6BA3F4DDD01653
+        a                   :Note ;
+        :contentLocationStatement  "p. 385" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "dge lugs monastery conneted with se ra smad; at the time of kaH thog si tu's visit had about 100 monks\nfounded by a student of rje tsong kha pa, mkhan chen bkra shis seng+ge (bkra shis rgya mtsho?)"@en .
+}

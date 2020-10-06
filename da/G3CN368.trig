@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN368 {
+    bda:G3CN368  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN368 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "da/G3CN368.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN368 ;
+        adm:logEntry        bda:LG01A78E4AAF783AF2 , bda:LG04788C8AFFB9448E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG01A78E4AAF783AF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-11T16:17:46.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added 4th notes & Gis Coords"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG04788C8AFFB9448E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-11T11:35:55.557Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV931FD5B1845995E9
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN368  a          :Place ;
+        skos:altLabel       "dpa' gro skyer chu dpal be'u rgyas pa/"@bo-x-ewts , "mon skyer chu/"@bo-x-ewts , "spa gro skyer chu dpal bo rgyas pa/"@bo-x-ewts , "spa gro skyid chu lha khang /"@bo-x-ewts , "Paro Kyichu Lhakhang"@en ;
+        skos:prefLabel      "spa gro skyer chu lha khang /"@bo-x-ewts , "Kyichu Lhakhang temple"@en ;
+        :isRoot             true ;
+        :note               bdr:NT30C8B1EF25CBF714 , bdr:NT4EC2969AE5A1EEF6 , bdr:NTC29D80F8443A67A6 , bdr:NTE0C90F1CEF6BA85C ;
+        :placeEvent         bdr:EV931FD5B1845995E9 ;
+        :placeLat           "27.262750 N" ;
+        :placeLocatedIn     bdr:G3CN367 , bdr:G836 ;
+        :placeLong          "89.223212 E" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NT30C8B1EF25CBF714
+        a                   :Note ;
+        :contentLocationStatement  "p. 123" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "\"ལག་མཐིལ་གཡས་གནོན་པ་ལ་མི་ཉག་གིས་ལག་དཔོན་བྱས་ཏེ་ཁམས་ཀློང་ཐང་སྒྲོན་མ། གཡོན་ལ་ཐོ་གར་གྱིས་ལག་དཔོན་བྱས་ཏེ་མོན་སྐྱེར་ཆུ། རྐང་མཐིལ་གཡས་ལ་ཧོར་གྱིས་ལག་དཔོན་བྱས་ཏེམཚལ་རིགས་སྒྲོན་མ། གཡོན་ལ་བལ་པོས་ལག་དཔོན་བྱས་ཏེ་ཚངས་པ་རླུང་གནོན་གྱི་ལྷ་ཁང་བཞེངས་ཏེ་རུ་གནོན་གྱི་གཙུག་ལག་ཁང་བཞིའོ་\"ཞེས་གསལ།"@bo .
+    
+    bdr:NT4EC2969AE5A1EEF6
+        a                   :Note ;
+        :contentLocationStatement  "p. 115-116" ;
+        :noteSource         bdr:MW20831 ;
+        :noteText           "བོད་ཡུལ་གན་རྐྱལ་དུ་སྒྱེལ་བ་འདྲ་བའི་ས་དགྲ་འདུལ་ཆེད། ཉིང་ལག་མནན་པའི་ཕྱིར་མཐའ་འདུལ་བརྒྱད་བཞེངས་པ་ལས། མཐའ་མ་དེ་\"དཔའ་གྲོར་སྐྱེར་ཆུ་དཔལ་བེའུ་རྒྱས་པ་བཞེངས་སོ\"ཞེས་གསལ་ལ། ཡང་དེ་ནས་སོར་མོ་བཅུ་མནན་པའི་ཕྱིར་ཡང་འདུལ་གྱི་གཙུག་ལག་ཁང་བརྒྱད་དམ་\"ཡང་འདུལ་བཞི་ལ་འཕྱོང་གིས་བཏགས་པ་བཞི་སྟེ་བརྒྱད་\"བཞེངས་པའི་ནང་ཚན་དུ། \"ལྷོ་ཕྱོགས་སྟག་མོའི་ཁ་སྟེངས་སུ་དཔའ་གྲོ་སྐྱེར་ཆུ། དེའི་འཕྱོང་དུ་སྨན་ཤ་ན་སྨའི་ལྷ་ཁང་།\" ཞེས་ཀྱང་གསལ་ལོ།"@bo .
+    
+    bdr:NTC29D80F8443A67A6
+        a                   :Note ;
+        :contentLocationStatement  "p. 3" ;
+        :noteSource         bdr:MW1KG4871 ;
+        :noteText           "བོད་ཀྱི་རྒྱལ་པོ་སྲོང་བཙན་སྒམ་པོས་འབྲུག་ཡུལ་དུ་སྤ་གྲོ་སྐྱེར་ཆུ་ལྷ་ཁང་་དང་། བུམ་ཐང་ཆོས་འཁོར་དུ་བྱམས་པ་ལྷ་ཁང་(bum thang chos 'khor byams pa lha khang)དང་། སྟང་ཨ་ནུ་ལྷ་ཁང་།(stang a nu lha khang) ཆུ་སྨད་དུ་དགེ་གནས་ལྷ་ཁང་(chu smad dge gnas lha khang)བཞེངས་པ་སོགས་གསལ།"@en .
+    
+    bdr:NTE0C90F1CEF6BA85C
+        a                   :Note ;
+        :contentLocationStatement  "p. 285" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "ཡང་འདུལ་གྱི་ཡང་འདུལ་བཞི་ལས། \"རྐང་མཐིལ་གཡས་པ་ལ། མང་ཡུལ་བྱང་(བྱམས་)སྤྲིན་དུ་ཡིད་འོང་དགེ་རྒྱས་དང་། གཡོན་པ་ལ་མོན་སྐྱེར་ཆུར་བུམ་ཐང་གི་ལྷ་ཁང་བརྩིགས།\"་ཞེས་གསལ། \nསླར་ཡང་དེ་མུར་ཡང་འདུལ་བརྒྱད་གསལ་བ་ལས་མཐའ་མ་དེར། \"སྤ་གྲོར་སྐྱེར་ཆུ་དཔལ་བོ་རྒྱས་པ་བཞེངས་\"ཞེས་གསལ།"@bo .
+}

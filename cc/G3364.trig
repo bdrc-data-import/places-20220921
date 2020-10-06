@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3364 {
+    bda:G3364  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3364 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cc/G3364.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3364 ;
+        adm:logEntry        bda:LG22A4BC2695D2DF75 , bda:LGC2AE63C86D0ED795 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG22A4BC2695D2DF75
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC2AE63C86D0ED795
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:40:27.8Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from village to grongTsho"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3364  a            :Place ;
+        skos:prefLabel      "dmar grong tsho (stod lung bde chen rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT58ADFACED7333B25 ;
+        :placeLocatedIn     bdr:G3357 ;
+        :placeType          bdr:PT0084 .
+    
+    bdr:NT58ADFACED7333B25
+        a                   :Note ;
+        :contentLocationStatement  "p. 293" ;
+        :noteSource         bdr:MW23664 .
+}

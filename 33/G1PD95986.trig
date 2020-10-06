@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD95986 {
+    bda:G1PD95986  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD95986 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "33/G1PD95986.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD95986 ;
+        adm:logEntry        bda:LG08DADD1B94D5B371 , bda:LG25A90D6CCCD42BB1 , bda:LG4F64945C945D2842 , bda:LG7DB7FC92BF8C4ED5 , bda:LGC5CE30F0FEB9DC0B , bda:LGD53E1881DBD3D691 , bda:LGE9483027AF586A0D , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632122100:24" ;
+        adm:place_id_lex    "632122100:431" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG08DADD1B94D5B371
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-31T10:27:11.417Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected name \"kong phyug zi\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG25A90D6CCCD42BB1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-11-23T14:54:57.39Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG4F64945C945D2842
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-24T15:35:52.351Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7DB7FC92BF8C4ED5
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T10:50:31.449Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC5CE30F0FEB9DC0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T12:28:20.926Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGD53E1881DBD3D691
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-24T16:09:16.187Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE9483027AF586A0D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T16:09:21.004Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV7704B9F46437E3AD
+        a                   :PlaceFounded ;
+        :onYear             "1918"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1PD95986  a        :Place ;
+        skos:altLabel       "团结寺"@zh-hans , "广修寺"@zh-hans , "广秀寺"@zh-hans , "广秀寺/团结寺"@zh-hans , "guangxiu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "kong phyug zi/"@bo-x-ewts , "广修寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1B0B51F5D1D353AA ;
+        :isRoot             true ;
+        :note               bdr:NTB93F2030FB290033 ;
+        :placeEvent         bdr:EV7704B9F46437E3AD ;
+        :placeGonpaPerEcumen  "141.02" ;
+        :placeLat           "36.31186" ;
+        :placeLocatedIn     bdr:G1PD95976 ;
+        :placeLong          "102.86063" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID1B0B51F5D1D353AA
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD95986" .
+    
+    bdr:NTB93F2030FB290033
+        a                   :Note ;
+        :contentLocationStatement  "p. 21" ;
+        :noteSource         bdr:MW1PD95675 .
+}

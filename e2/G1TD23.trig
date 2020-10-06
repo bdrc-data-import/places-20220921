@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1TD23 {
+    bda:G1TD23  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1TD23 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e2/G1TD23.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1TD23 ;
+        adm:logEntry        bda:LG1E1EBF98B65CF864 , bda:LGBEF5E46196278467 , bda:LGECCFCC13619A9353 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1E1EBF98B65CF864
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-05-11T16:32:56.016Z"^^xsd:dateTime ;
+        adm:logMessage      "added a G record it contains"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bda:LGBEF5E46196278467
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-06-01T16:19:04.661Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGECCFCC13619A9353
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-11T16:30:43.192Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bdr:EVC0C02673C7211A91
+        a                   :PlaceFounded ;
+        :onYear             "1912"^^xsd:gYear .
+    
+    bdr:G1TD23  a           :Place ;
+        skos:altLabel       "'brug nang /"@bo-x-ewts ;
+        skos:prefLabel      "mi 'gyur mngon par dga' ba'i pho brang /"@bo-x-ewts , "Bhutan House"@en ;
+        :isRoot             true ;
+        :note               bdr:NTB3D5A9D538BE8C21 ;
+        :placeEvent         bdr:EVC0C02673C7211A91 ;
+        :placeLat           "27.07804" ;
+        :placeLocatedIn     bdr:G3JT12629 ;
+        :placeLong          "88.49385" ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NTB3D5A9D538BE8C21
+        a                   :Note ;
+        :noteText           "As noted in Journal of Bhutan Studies Volume 5, pp.1-7\nhttp://www.bhutanstudies.org.bt/publicationFiles/JBS/JBS_Vol5/v5-1.pdf\n\nBhutan House belonged to the prominent Dorji family of Bhutan, at whose invitation, the Thirteenth Dalai Lama resided there during his exile in India in 1912"@en .
+}

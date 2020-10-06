@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2969 {
+    bda:G2969  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2969 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2a/G2969.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2969 ;
+        adm:logEntry        bda:LG6FBC27C44E38A222 , bda:LGD371E68CED1A4A6E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6FBC27C44E38A222
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD371E68CED1A4A6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-14T15:35:11.922Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2969  a            :Place ;
+        skos:prefLabel      "yal shul tsho ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3D25376A8EE3C362 ;
+        :placeLocatedIn     bdr:G2315 , bdr:G2975 ;
+        :placeType          bdr:PT0068 .
+    
+    bdr:NT3D25376A8EE3C362
+        a                   :Note ;
+        :contentLocationStatement  "p. 41, 226" ;
+        :noteSource         bdr:MW20197 ;
+        :noteText           "one of the major nomadic groups in rkang tsha county of mtsho byang prefecture\none of six tsho ba listed in the source as under the control of grub bzhi zhang, rkang tsha county, mtsho byang prefecture\nthe source, however, indicates that there are 5 tsho ba including no han settlements"@en .
+}

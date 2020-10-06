@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD96062 {
+    bda:G1PD96062  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD96062 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "91/G1PD96062.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD96062 ;
+        adm:logEntry        bda:LG6F5DE97EB9FD209E , bda:LGBB0DB629CE876FC3 , bda:LGC75F0B73266D11B0 , bda:LGC80F6F9CCED7911D , bda:LGEDEE4C81232DA31F , bda:LGEE832D37B72B0542 , bda:LGFFD76718E16505D6 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632123212:93" ;
+        adm:place_id_lex    "632123212:128" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6F5DE97EB9FD209E
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-02T15:21:47.277Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBB0DB629CE876FC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T15:02:14.734Z"^^xsd:dateTime ;
+        adm:logMessage      "added steng chen rdzong"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGC75F0B73266D11B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T12:32:48.387Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC80F6F9CCED7911D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-12-02T14:58:11.944Z"^^xsd:dateTime ;
+        adm:logMessage      "གསར་དུ་བཅུག"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGEDEE4C81232DA31F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-18T12:08:03.214Z"^^xsd:dateTime ;
+        adm:logMessage      "deled location: \"steng chen rdzong\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEE832D37B72B0542
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T14:33:22.67Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGFFD76718E16505D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-02T15:38:46.008Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV28BDCC546D226D33
+        a                   :PlaceFounded ;
+        :onYear             "1619"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1PD96062  a        :Place ;
+        skos:altLabel       "羊宗寺"@zh-hans , "yangzong si"@zh-latn-pinyin-x-ndia , "yang zong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "phu la yang rdzong ri khrod/"@bo-x-ewts , "羊宗寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4DD86E866D9B3A84 ;
+        :isRoot             true ;
+        :note               bdr:NT3BA37C798FB785BF ;
+        :placeEvent         bdr:EV28BDCC546D226D33 ;
+        :placeGonpaPerEcumen  "30.93" ;
+        :placeLat           "36.23837" ;
+        :placeLocatedIn     bdr:G1PD5303 ;
+        :placeLong          "102.45871" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID4DD86E866D9B3A84
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD96062" .
+    
+    bdr:NT3BA37C798FB785BF
+        a                   :Note ;
+        :contentLocationStatement  "p. 55" ;
+        :noteSource         bdr:MW1PD95675 .
+}

@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1884 {
+    bda:G1KR1884  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1884 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c4/G1KR1884.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1884 ;
+        adm:logEntry        bda:LG297179F6D6D316B6 , bda:LGD0443CB560366631 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542625101:537" ;
+        adm:place_id_lex    "542625101:537" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG297179F6D6D316B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T13:46:02.399Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G2906 & G4371 (dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD0443CB560366631
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-03-08T14:08:33.929Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVDA47D800364B3E75
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P813 .
+    
+    bdr:EVF08C2901B5C9700F
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1KR1884  a         :Place ;
+        skos:altLabel       "pho lung dgon/"@bo-x-ewts , "phu lung chos lding rin chen spungs gdan sa 'og min byang chub gling /"@bo-x-ewts , "phu lung dgon 'og min byang chub gling /"@bo-x-ewts , "spo bo pho lung dgon/"@bo-x-ewts , "pulong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "phu lung dgon/"@bo-x-ewts , "普龙寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC9F06389CB75643E ;
+        :isRoot             true ;
+        :note               bdr:NT1E95DECB438BFAFF , bdr:NTCE431FCBF0BB1124 ;
+        :placeEvent         bdr:EVDA47D800364B3E75 , bdr:EVF08C2901B5C9700F ;
+        :placeGonpaPerEcumen  "2.58" ;
+        :placeLat           "30.06667" ;
+        :placeLocatedIn     bdr:G2944 , bdr:G2947 ;
+        :placeLong          "95.61667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC9F06389CB75643E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1884" .
+    
+    bdr:NT1E95DECB438BFAFF
+        a                   :Note ;
+        :contentLocationStatement  "p. 552" ;
+        :noteSource         bdr:MW20850 ;
+        :noteText           "dgon lag of mtshur phu monastery: spo bo pho lung dgon pa\n\n---note moved from G4371(dup.)"@en .
+    
+    bdr:NTCE431FCBF0BB1124
+        a                   :Note ;
+        :contentLocationStatement  "p. 66, 125" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "karma kam tshang bka' brgyud pa monastery in chu mdo chus, spo bo rdzong\nfounded by mgar dam pa\n\n---note moved from G2906(dup.)"@en .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2440 {
+    bda:G2440  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2440 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3e/G2440.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2440 ;
+        adm:logEntry        bda:LG0A01AEA96AABE89B , bda:LG7A76EC743F4429E9 , bda:LGB4BC00A12F65AB3F , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A01AEA96AABE89B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-04T11:45:52.699Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7A76EC743F4429E9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB4BC00A12F65AB3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T12:03:15.326Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2440  a            :Place ;
+        skos:prefLabel      "klong rdol ri khrod/"@bo-x-ewts , "Longdol Ritro"@en ;
+        :isRoot             true ;
+        :note               bdr:NT37BDBE14DD8D212D ;
+        :placeLocatedIn     bdr:G2128 , bdr:G2450 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT37BDBE14DD8D212D
+        a                   :Note ;
+        :contentLocationStatement  "p. 41" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "dge lugs pa monastery founded in the 12th cent. by gtsang pa rgya ras\ndgon bdag: rtse rnam rgyal grwa tshang\n4 monks"@en .
+}

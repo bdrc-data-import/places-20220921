@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2223 {
+    bda:G1KR2223  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2223 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "06/G1KR2223.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2223 ;
+        adm:logEntry        bda:LGEE10FE61EE4F93DF , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632126203:150" ;
+        adm:place_id_lex    "632126203:570" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGEE10FE61EE4F93DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-13T12:43:29.286Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVB85C3742D3120485
+        a                   :PlaceFounded ;
+        :note               bdr:NTB69C2CE93FC6BD2D .
+    
+    bdr:G1KR2223  a         :Place ;
+        skos:altLabel       "maquan lakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ma chon lha khang /"@bo-x-ewts , "妈圈拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDA6E7F11FF8C1EDE ;
+        :isRoot             true ;
+        :note               bdr:NT6C963542AE608992 ;
+        :placeEvent         bdr:EVB85C3742D3120485 ;
+        :placeGonpaPerEcumen  "17.27" ;
+        :placeLat           "36.60000" ;
+        :placeLocatedIn     bdr:G1PD96101 ;
+        :placeLong          "102.08000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDDA6E7F11FF8C1EDE
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2223" .
+    
+    bdr:NT6C963542AE608992
+        a                   :Note ;
+        :noteText           "dgon ming zur chag yin/"@bo-x-ewts .
+    
+    bdr:NTB69C2CE93FC6BD2D
+        a                   :Note ;
+        :noteText           "tuzu"@en .
+}

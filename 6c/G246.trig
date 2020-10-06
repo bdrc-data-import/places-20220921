@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G246 {
+    bda:G246  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G246 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "6c/G246.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G246 ;
+        adm:logEntry        bda:LG03EC827403D657D2 , bda:LG0F638D5402B07E88 , bda:LG819C1A5D5DF77384 , bda:LGA5EE71A9A7CB0BD3 , bda:LGFC147FFDC92CD287 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542326101:542326113" ;
+        adm:place_id_lex    "542326101:542326113" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG03EC827403D657D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T12:05:09.579Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG0F638D5402B07E88
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:19:58.365Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain: \"par khang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG819C1A5D5DF77384
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA5EE71A9A7CB0BD3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-22T11:23:36.03Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFC147FFDC92CD287
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-10T13:03:05.558Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag gcig gi ngo sprod"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV215AE54144C305B1
+        a                   :PlaceFounded ;
+        :onYear             "1250"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G246  a             :Place ;
+        skos:altLabel       "dga' ldan 'od gsal gling /"@bo-x-ewts , "dga' ldan 'og min gling /"@bo-x-ewts , "dga' ldan chos gling /"@bo-x-ewts , "Lhatse Chode"@en-x-mixed , "laza si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lha rtse dga' ldan chos gling /"@bo-x-ewts , "Ganden Woseling"@en , "拉孜寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID913A553E8DAF8CCF ;
+        :isRoot             true ;
+        :note               bdr:NT05E6D22D7B89FE55 , bdr:NTB1577B8C1593B371 ;
+        :placeContains      bdr:G2CN10904 ;
+        :placeEvent         bdr:EV215AE54144C305B1 ;
+        :placeGonpaPerEcumen  "6.38" ;
+        :placeLat           "29.15000" ;
+        :placeLocatedIn     bdr:G2167 ;
+        :placeLong          "87.68333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID913A553E8DAF8CCF
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G246" .
+    
+    bdr:NT05E6D22D7B89FE55
+        a                   :Note ;
+        :contentLocationStatement  "p. 330" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "important dge lugs monastery in gtsang\nthis monastery seems to have several names: dga' ldan chos gling and dga' ldan 'od gsal gling\nrelation to lha rtse dga' ldan dgon gsar as yet unexplored"@en .
+    
+    bdr:NTB1577B8C1593B371
+        a                   :Note ;
+        :contentLocationStatement  "p. 99" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "paramount dge lugs monastery in lha rtse rdzong located on the north banks of the yar lung gtsang po near the old lha rtse rdzong in the present day lha rtse rdzong grong brdal near the lha rtse iron bridge; the monastery was founded as one of the 13 monasteries (gling bcu gsum) founded in 1649 (sa glang). in the iron tiger (sa stag, ?1698, 1938) year had a complement of 326 monks"@en .
+}

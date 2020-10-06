@@ -1,0 +1,120 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G233 {
+    bda:G233  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G233 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "62/G233.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G233 ;
+        adm:logEntry        bda:LG0E10822A5D6C34F5 , bda:LG1F517B903FDC954F , bda:LG52F3CB1E5559B461 , bda:LG83B675EFF1BA3F7F , bda:LG8A5F73F6433B08AE , bda:LGA35762D2C5EC1F3C , bda:LGE0B523BC8ED57AF7 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540121205:540121107" ;
+        adm:place_id_lex    "540121205:540121107" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0E10822A5D6C34F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T15:24:21.526Z"^^xsd:dateTime ;
+        adm:logMessage      "added pinyin & normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1F517B903FDC954F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T11:35:24.12Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG52F3CB1E5559B461
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-21T13:12:46.212Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG83B675EFF1BA3F7F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8A5F73F6433B08AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-14T15:06:02.234Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA35762D2C5EC1F3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-30T15:07:04.868Z"^^xsd:dateTime ;
+        adm:logMessage      "changed founding date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGE0B523BC8ED57AF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-26T09:18:52.254Z"^^xsd:dateTime ;
+        adm:logMessage      "added 'phan po na len+dra'i par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV7BB8024FBE195D2D
+        a                   :PlaceFounded ;
+        :onYear             "1436"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EVC99299C2FDDB488C
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P431 ;
+        :onYear             "1436"^^xsd:gYear .
+    
+    bdr:G233  a             :Place ;
+        skos:altLabel       "'phan yul na len+dra/"@bo-x-ewts , "那烂陀寺"@zh-hans , "nalantuo si"@zh-latn-pinyin-x-ndia , "nalanzha si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'phan po na len+dra/"@bo-x-ewts , "Penpo Nalanda Monastery"@en , "那烂扎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF54227FCEFC47B91 ;
+        :isRoot             true ;
+        :note               bdr:NT0955BE37129A86D7 , bdr:NT5233B5701018E85C ;
+        :placeContains      bdr:G3JT12613 ;
+        :placeEvent         bdr:EV7BB8024FBE195D2D , bdr:EVC99299C2FDDB488C ;
+        :placeGonpaPerEcumen  "14.65" ;
+        :placeLat           "29.86976" ;
+        :placeLocatedIn     bdr:G2127 ;
+        :placeLong          "91.13071" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF54227FCEFC47B91
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G233" .
+    
+    bdr:NT0955BE37129A86D7
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 172-174" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT5233B5701018E85C
+        a                   :Note ;
+        :contentLocationStatement  "p. 343" ;
+        :noteSource         bdr:MW10247 ;
+        :noteText           "important sa skya pa monastery north of lha sa\nseat of the na lendra pa tradition\nfounded in 1436 by rong ston smra ba'i sengge"@en .
+}

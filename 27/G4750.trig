@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4750 {
+    bda:G4750  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4750 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "27/G4750.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4750 ;
+        adm:logEntry        bda:LG358AAAD7F5F657F4 , bda:LGDDBEF212C2683014 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG358AAAD7F5F657F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-09T08:54:52.281Z"^^xsd:dateTime ;
+        adm:logMessage      "added sorces, event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDDBEF212C2683014
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV7C9909FD4A2979AC
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBodong .
+    
+    bdr:G4750  a            :Place ;
+        skos:altLabel       "'brog gang lding dgon/"@bo-x-ewts , "gangs lding dgon/"@bo-x-ewts ;
+        skos:prefLabel      "'brog gangs lding dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7CCD17DBC869A73D , bdr:NT817568DCDE84B706 ;
+        :placeEvent         bdr:EV7C9909FD4A2979AC ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT7CCD17DBC869A73D
+        a                   :Note ;
+        :contentLocationStatement  "p. 267" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "rnying ma monastery in the southeast corner of the tibetan autonomous region; is this the same as the 'brog khang dgon, a dgon lag of kaH thog?"@en .
+    
+    bdr:NT817568DCDE84B706
+        a                   :Note ;
+        :contentLocationStatement  "p. 337" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "bo dong ring lugs 'dzin par gsal/"@bo-x-ewts .
+}

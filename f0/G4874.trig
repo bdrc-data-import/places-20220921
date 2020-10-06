@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4874 {
+    bda:G4874  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4874 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f0/G4874.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4874 ;
+        adm:logEntry        bda:LG35E646D5B2058FFD , bda:LG55B777CC8812CF74 , bda:LG62AB0902436FE0E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG35E646D5B2058FFD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG55B777CC8812CF74
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG62AB0902436FE0E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-09T16:01:07.214Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV9B5904929CE23943
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P733 ;
+        :onYear             "1918"^^xsd:gYear .
+    
+    bdr:G4874  a            :Place ;
+        skos:altLabel       "rdzong sar khams bye grwa tshang /"@bo-x-ewts ;
+        skos:prefLabel      "khams bye bshad grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT944169DD12F8B68B ;
+        :placeEvent         bdr:EV9B5904929CE23943 ;
+        :placeLocatedIn     bdr:G213 ;
+        :placeType          bdr:PT0038 .
+    
+    bdr:NT944169DD12F8B68B
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 472" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "the teaching college attached to rdzong sar monastery\nfounded in 15 sa rta (1918) by 'jam dbyangs mkhyen brtse chos kyi blo gros, it had the following successive teacher who served on the average of 5 years each\n1) gzhan phan chos kyi snang ba\n2) dbon stod mkhyen rab\n3) 'jam dbyangs rgyal mtshan\n4) brag g.yab blo gros\n5) sde gzhung chos 'phel\n6) khang dmar rin chen rdo rje\n7) mdo srib thub bstan\n8) mi nyag dam chos\n9) brag g.yab mkhyen rab seng+ge"@en .
+}

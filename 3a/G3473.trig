@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3473 {
+    bda:G3473  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3473 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3a/G3473.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3473 ;
+        adm:logEntry        bda:LG3FB7A246DC0C18AB , bda:LG873AF03F9F49AC5E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3FB7A246DC0C18AB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG873AF03F9F49AC5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-29T11:55:17.188Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV58CA964883CC6B9B
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1AG8 ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear .
+    
+    bdr:G3473  a            :Place ;
+        skos:altLabel       "gnyal ngang skyal chos sde/"@bo-x-ewts ;
+        skos:prefLabel      "ngang skyal chos sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0E6924F93C6C3246 ;
+        :placeEvent         bdr:EV58CA964883CC6B9B ;
+        :placeLocatedIn     bdr:G3469 , bdr:G724 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0E6924F93C6C3246
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 549" ;
+        :noteSource         bdr:MW22378 ;
+        :noteText           "one of the group of six monasteries in the gnyal area, assigned to the sde drug line of incarnations and benefices to him:\ngra 'or\nzangs po che\nrin chen steng\nngang skyal chos sde\nrte'u ra\ngser phye kha\n\nfounded by a studeng of 'jig rten mgon po, grub thob gtsang zhig pa\nname comes from a prophecy from a dakini after his gtor chas had been carried away by ducks and dropped on the mountain\nlater became a dge lugs pa monastery\nits monks could go to se ra, 'bras spungs, and dga' ldan"@en .
+}

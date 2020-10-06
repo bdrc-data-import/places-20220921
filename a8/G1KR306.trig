@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR306 {
+    bda:G1KR306  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR306 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "a8/G1KR306.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR306 ;
+        adm:logEntry        bda:LG2116AE1B26294D3F , bda:LGA90355129916E667 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513324100:47" ;
+        adm:place_id_lex    "513324100:47" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2116AE1B26294D3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-20T16:27:35.223Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged name and added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA90355129916E667
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-03T13:04:57.666Z"^^xsd:dateTime ;
+        adm:logMessage      "added name (pinyin to tibetan)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVE9731BED2CD873F5
+        a                   :PlaceFounded ;
+        :onYear             "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G1KR306  a          :Place ;
+        skos:altLabel       "huaqiu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "hwa chi'u si/"@bo-x-ewts , "华坵寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF7BE1CC346FAE298 ;
+        :isRoot             true ;
+        :note               bdr:NT03B109BE8EF1C45F , bdr:NT28EC8B9718A0DA90 ;
+        :placeEvent         bdr:EVE9731BED2CD873F5 ;
+        :placeGonpaPerEcumen  "4.36" ;
+        :placeLat           "29.00000" ;
+        :placeLocatedIn     bdr:G2311 ;
+        :placeLong          "101.50000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF7BE1CC346FAE298
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR306" .
+    
+    bdr:NT03B109BE8EF1C45F
+        a                   :Note ;
+        :noteText           "Jiulong Xianzhi states founded during mid-Wanli reign"@en .
+    
+    bdr:NT28EC8B9718A0DA90
+        a                   :Note ;
+        :noteText           "missing original name in tibetan\n\ndgon ming dngos ji yin dwogs gnas yod pas rjes sor rgyu cha rnyed rim bzhin kha skong bya rgyu/"@en .
+}

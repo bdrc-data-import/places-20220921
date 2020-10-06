@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN387 {
+    bda:G3CN387  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN387 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "48/G3CN387.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN387 ;
+        adm:logEntry        bda:LG4347C2B090F2CB73 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4347C2B090F2CB73
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-15T16:43:48.633Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note & sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV2D86C356BC5B4DCA
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3CN387  a          :Place ;
+        skos:altLabel       "zur chen gdan sa/"@bo-x-ewts ;
+        skos:prefLabel      "rtse mo dgu 'dus ma brag rgya bo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDE8CDCE77557F9AA ;
+        :placeEvent         bdr:EV2D86C356BC5B4DCA ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTDE8CDCE77557F9AA
+        a                   :Note ;
+        :contentLocationStatement  "p. 449" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "འདི་ཟུར་ཆེན་གྱི་གདན་སར་གསུངས་མོད། ཟུར་ཆེན་ཞེས་གྲགས་པ་གསུམ་ཙམ་སྣང་བ་ལས་སུ་ཡིན་རྩད་རྒྱུ།"@bo .
+}

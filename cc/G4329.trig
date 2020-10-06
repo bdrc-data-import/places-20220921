@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4329 {
+    bda:G4329  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4329 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "cc/G4329.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4329 ;
+        adm:logEntry        bda:LGA388551D902C8B9B , bda:LGBE0DC7B011F9C620 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513230208:110" ;
+        adm:place_id_lex    "513230208:110" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA388551D902C8B9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-26T14:51:10.28Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBE0DC7B011F9C620
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV30F855C390F58CDC
+        a                   :PlaceConverted ;
+        :onYear             "1734"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionJonang .
+    
+    bdr:EV5E650A07A45A319A
+        a                   :PlaceFounded ;
+        :onYear             "1731"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G4329  a            :Place ;
+        skos:altLabel       "bya yur dzam lha'i chos sde/"@bo-x-ewts , "夏炎扎西赞拉贡巴寺"@zh-hans , "xiayan si"@zh-latn-pinyin-x-ndia , "xiayan zhaxi zanla gongba si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bya yur dgon/"@bo-x-ewts , "夏炎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID9C5CB3776C6100F4 ;
+        :isRoot             true ;
+        :note               bdr:NT767096FA85857236 , bdr:NTE8684A9683CD9CB0 ;
+        :placeEvent         bdr:EV30F855C390F58CDC , bdr:EV5E650A07A45A319A ;
+        :placeGonpaPerEcumen  "23.53" ;
+        :placeLat           "32.40546" ;
+        :placeLocatedIn     bdr:G2336 ;
+        :placeLong          "101.08213" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID9C5CB3776C6100F4
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4329" .
+    
+    bdr:NT767096FA85857236
+        a                   :Note ;
+        :contentLocationStatement  "p. 71" ;
+        :noteSource         bdr:MW30408 ;
+        :noteText           "jo nang monastery in mgo log\nprobably founded in 1784"@en .
+    
+    bdr:NTE8684A9683CD9CB0
+        a                   :Note ;
+        :contentLocationStatement  "pp. 432-457" ;
+        :noteSource         bdr:MW19816 ;
+        :noteText           "jo nang pa monastery in eastern tibet"@en .
+}

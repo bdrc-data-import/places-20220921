@@ -1,0 +1,125 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G104 {
+    bda:G104  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G104 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "89/G104.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G104 ;
+        adm:logEntry        bda:LG0F9A707A4714E7EE , bda:LG55A4957D5F62184D , bda:LG65101DDF915B82AC , bda:LG8C142ED794F5C565 , bda:LGA6BC94854DBFCA97 , bda:LGABEDFB8217F65F3F , bda:LGBDF48ACADF7C6F22 , bda:LGDC22C5C23B16E96B , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542301001:542301" ;
+        adm:place_id_lex    "542301001:542301" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0F9A707A4714E7EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T16:21:35.731Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG55A4957D5F62184D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T15:48:53.311Z"^^xsd:dateTime ;
+        adm:logMessage      "changed languege setting"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG65101DDF915B82AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-26T14:45:46.297Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8C142ED794F5C565
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-27T11:55:01.847Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGA6BC94854DBFCA97
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-18T14:18:10.207Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGABEDFB8217F65F3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T11:50:49.006Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGBDF48ACADF7C6F22
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDC22C5C23B16E96B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-23T12:03:18.189Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV078AE4C7CE0DEB83
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P80 ;
+        :onYear             "1447"^^xsd:gYear .
+    
+    bdr:EV6F09F716EC317793
+        a                   :PlaceFounded ;
+        :onYear             "1447"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G104  a             :Place ;
+        skos:altLabel       "gtsang bkra shis lhun po dpal gyi sde chen phyogs thams cad las rnam par rgyal ba'i gling /"@bo-x-ewts , "Tashi Lhunpo"@en-x-mixed , "吉祥须弥寺"@zh-hans , "扎什伦布寺"@zh-hans , "zhaxi lunbu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bkra shis lhun po dgon pa/"@bo-x-ewts , "Tashilhunpo"@en , "扎什伦布寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0191ED7AE206EBFF ;
+        :isRoot             true ;
+        :note               bdr:NTBE4F039B39F98169 , bdr:NTBEED4CE0DC1D2D35 ;
+        :placeContains      bdr:G105 , bdr:G106 , bdr:G107 , bdr:G2CN10913 , bdr:G2CN10914 , bdr:G4245 , bdr:G4964 ;
+        :placeEvent         bdr:EV078AE4C7CE0DEB83 , bdr:EV6F09F716EC317793 ;
+        :placeGonpaPerEcumen  "10.77" ;
+        :placeIsNear        bdr:G2CN10916 , bdr:G837 ;
+        :placeLat           "29.25000" ;
+        :placeLocatedIn     bdr:G2170 ;
+        :placeLong          "88.85000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID0191ED7AE206EBFF
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G104" .
+    
+    bdr:NTBE4F039B39F98169
+        a                   :Note ;
+        :contentLocationStatement  "p. 2327, 2330" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1586. paN chen blo bzang chos kyi rgyal mtshan bkra shis lhun po'i chos grwar sgrigs zhugs mdzad\n1612. paN chen blo bzang chos rgyan gyis byams pa'i gser thog bzhengs"@en .
+    
+    bdr:NTBEED4CE0DC1D2D35
+        a                   :Note ;
+        :noteText           "famous dge lugs pa monastery located near gzhis ka rtse in gtsang\nseat of the paN chen bla ma incarnation lineage\nfounded in 1447 by the 1st dalai lama dge 'dun grub pa"@en .
+}

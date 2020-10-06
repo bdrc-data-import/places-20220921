@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4768 {
+    bda:G4768  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4768 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e9/G4768.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4768 ;
+        adm:logEntry        bda:LG1B55A1D4C173B587 , bda:LG73C03C3BEC60765D , bda:LG76F693F8DCD82374 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1B55A1D4C173B587
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-02T17:00:17.427Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG73C03C3BEC60765D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-02T17:02:29.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG76F693F8DCD82374
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5BA0EF7D6F19BCE7
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4768  a            :Place ;
+        skos:altLabel       "rgya shod ban sgar/"@bo-x-ewts ;
+        skos:prefLabel      "ban sgar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT95876451BD23D300 , bdr:NTF9CD7E5332556CBE ;
+        :placeEvent         bdr:EV5BA0EF7D6F19BCE7 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT95876451BD23D300
+        a                   :Note ;
+        :contentLocationStatement  "p. 491" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "stag phu ba'i ma dgon yin pa rgsal/"@en .
+    
+    bdr:NTF9CD7E5332556CBE
+        a                   :Note ;
+        :contentLocationStatement  "p. 384" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "dgon lag of 'bras spungs, gelug monastery of about 200 monks at the time of kaH thog si tu"@en .
+}

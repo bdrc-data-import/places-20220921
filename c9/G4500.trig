@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4500 {
+    bda:G4500  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4500 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "c9/G4500.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4500 ;
+        adm:logEntry        bda:LG69CBB5026C9A3365 , bda:LG9ADEDEBBD356AE65 , bda:LGDF7F79AFFB3F704A , bda:LGFB320F4CA3AA9878 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1KR1854 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG69CBB5026C9A3365
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9ADEDEBBD356AE65
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-01T15:46:37.175Z"^^xsd:dateTime ;
+        adm:logMessage      "moved note & added note: withdrawn in favor of G1KR1854"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDF7F79AFFB3F704A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-01T19:35:05.875Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFB320F4CA3AA9878
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T15:51:09.572Z"^^xsd:dateTime ;
+        adm:logMessage      "added nying khri rdzong"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4500  a            :Place ;
+        skos:prefLabel      "srid rgyal dgon chen/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT14F9D1D573B7E57D , bdr:NTE6E1C0606CD8E772 ;
+        :placeLocatedIn     bdr:G2123 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT14F9D1D573B7E57D
+        a                   :Note ;
+        :contentLocationStatement  "'phar ma (2003), pp. 92-94" ;
+        :noteSource         bdr:MW28826 ;
+        :noteText           "bon monastery in the vicinity of bon ri in kong po\nfoundation conntected with rtogs ldan ri ba 'brug gsas\nthis source lists the successive abbots including some of the most important names in bon history\nresored in 1983 after the cultural revolution by nor skyab rin po che and  mkhas grub nyi ma"@en .
+    
+    bdr:NTE6E1C0606CD8E772
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR1854"@en .
+}

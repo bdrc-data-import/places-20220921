@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN504 {
+    bda:G3CN504  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN504 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "36/G3CN504.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN504 ;
+        adm:logEntry        bda:LG1FD2F1EFDB25C864 , bda:LGC1E286833C4A1128 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1FD2F1EFDB25C864
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-29T14:52:17.972Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC1E286833C4A1128
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T15:55:41.765Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVFD295C846CFD2043
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0799"^^xsd:gYear ;
+        :notBefore          "0700"^^xsd:gYear .
+    
+    bdr:G3CN504  a          :Place ;
+        skos:prefLabel      "rma bya tsal/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2D89C3C1BF7DDF0D ;
+        :placeEvent         bdr:EVFD295C846CFD2043 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NT2D89C3C1BF7DDF0D
+        a                   :Note ;
+        :contentLocationStatement  "p." ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"བྱི་བའི་ལོ་ ༧༠༠ ལ་བབ་སྟེ། བཙན་པོ་དབྱར་་་་དགུན་བཙན་པོ་ཕོ་བྲང་རྨ་བྱ་ཙལ་(ཚལ་)ན་བཞུགས།\" ཞེས་གསལ།"@bo .
+}

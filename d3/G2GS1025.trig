@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1025 {
+    bda:G2GS1025  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1025 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d3/G2GS1025.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1025 ;
+        adm:logEntry        bda:LG07D07EB03C12B382 , bda:LG2F3E0FEB66790451 , bda:LG9C70FCCD8377882C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07D07EB03C12B382
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-15T11:07:01.174Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2F3E0FEB66790451
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from dzong to sngarGyiRdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9C70FCCD8377882C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-05-18T12:49:55.436Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2GS1025  a         :Place ;
+        skos:prefLabel      "g.yul rgyal rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2F2EA20F3D4DFE1F , bdr:NT4D2EA3B4542B5B4B .
+    
+    bdr:NT2F2EA20F3D4DFE1F
+        a                   :Note ;
+        :noteText           "fortress belonging to the rin spungs at the beginning of the 16th century; located near the kha rag mountain massive"@en .
+    
+    bdr:NT4D2EA3B4542B5B4B
+        a                   :Note ;
+        :noteText           "need to ADD type as: mkhar rdzong (fortress)"@en .
+}

@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4771 {
+    bda:G4771  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4771 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "9d/G4771.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4771 ;
+        adm:logEntry        bda:LG01173E7A40C98A88 , bda:LG232F3895C2A71A02 , bda:LG6077E78A76153A02 , bda:LGB94A093D0F94B2FD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG01173E7A40C98A88
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG232F3895C2A71A02
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-27T10:09:14.358Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6077E78A76153A02
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-03T09:42:55.838Z"^^xsd:dateTime ;
+        adm:logMessage      "added event, note & sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB94A093D0F94B2FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV57EBB811E98D692B
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionDrigungKagyu .
+    
+    bdr:G4771  a            :Place ;
+        skos:prefLabel      "wa nag dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT35B37C7A629FF4A5 , bdr:NT5A5CFFB6F63BB382 ;
+        :placeEvent         bdr:EV57EBB811E98D692B ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT35B37C7A629FF4A5
+        a                   :Note ;
+        :contentLocationStatement  "p. 492" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "ཀ་ཐོག་སི་ཏུས་འབྲི་གུང་དགོན་འདིར་ཡིག་རྙིང་མང་ཙམ་ཡོད་ཅེས་གསལ། ཐག་ཉེར་འབྲི་དགོན་གཞན་ཞིག་ཀྱང་ཡོད་པ་གསལ།"@bo .
+    
+    bdr:NT5A5CFFB6F63BB382
+        a                   :Note ;
+        :contentLocationStatement  "p. 385" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "visited by kaH thog si tu in about 1892; this monastery belonged to the 'bri gung bka' brgyud tradition; this monastery possed many volumes of ancient manuscripts"@en .
+}

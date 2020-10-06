@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2264 {
+    bda:G2264  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2264 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "a7/G2264.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2264 ;
+        adm:logEntry        bda:LG58FF8ACC03F6912F , bda:LG8A8A61090F851277 , bda:LG998A2BB92BDFB0B3 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542523100:71" ;
+        adm:place_id_lex    "542523100:71" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG58FF8ACC03F6912F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-29T10:01:00.075Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G2LS593(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8A8A61090F851277
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG998A2BB92BDFB0B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T12:35:43.808Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV06E3CE6D478CFD6B
+        a                   :PlaceFounded ;
+        :onYear             "1750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionDrukpaKagyu .
+    
+    bdr:EV716394945142D237
+        a                   :PlaceConverted ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G2264  a            :Place ;
+        skos:altLabel       "gyam smug lha khang /"@bo-x-ewts , "qiangmu lakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgya smug lha khang /"@bo-x-ewts , "强木拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID66AAA24DDE6D2986 ;
+        :isRoot             true ;
+        :note               bdr:NT5393F5BC6C29B022 , bdr:NTCCAB71F6F8020709 ;
+        :placeEvent         bdr:EV06E3CE6D478CFD6B , bdr:EV716394945142D237 ;
+        :placeLat           "32.50000" ;
+        :placeLocatedIn     bdr:G2153 , bdr:G2294 ;
+        :placeLong          "80.10000" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID66AAA24DDE6D2986
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2264" .
+    
+    bdr:NT5393F5BC6C29B022
+        a                   :Note ;
+        :contentLocationStatement  "p. 11" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "bka' brgyud pa monastery located in bkra shis sgang chus of sgar rdzong of mnga' ris prefecture\n\"dkon gnyer mi skya gcig/ slad grwa tshad gnyis\""@en .
+    
+    bdr:NTCCAB71F6F8020709
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 103" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Located 5 km from senge khabab. Originally Drukpa kagyud tradition. For sometime practised Nyingma tradition. Now follow Karma kagyud tradition.\n\n---note moved from G2LS593(dup.)"@en .
+}

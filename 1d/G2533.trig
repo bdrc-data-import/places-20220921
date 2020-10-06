@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2533 {
+    bda:G2533  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2533 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "1d/G2533.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2533 ;
+        adm:logEntry        bda:LG2197179FF54E5A87 , bda:LG30B236AB3B21F128 , bda:LGB8257A0DE1D5E0B4 , bda:LGD06B89189683C697 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623027210:623027106" ;
+        adm:place_id_lex    "623027210:623027106" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2197179FF54E5A87
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG30B236AB3B21F128
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T11:01:55.874Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB8257A0DE1D5E0B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T12:13:13.189Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGD06B89189683C697
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-22T14:00:10.798Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVF483D2A2B85228A3
+        a                   :PlaceFounded ;
+        :onYear             "1750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2533  a            :Place ;
+        skos:altLabel       "dme rgya dgon/"@bo-x-ewts , "dme rgya dgon thos bsam nor bu gling /"@bo-x-ewts , "rme rgya dgon thos bsam nor bu gling /"@bo-x-ewts , "thos bsam nor bu gling /"@bo-x-ewts ;
+        skos:prefLabel      "rme rgya dgon/"@bo-x-ewts , "Megya Gon Tosam Norbuling"@en , "meijia si taisang nuo bulin"@zh-latn-pinyin-x-ndia ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4EE137D118F2A0D4 ;
+        :isRoot             true ;
+        :note               bdr:NT328A53C07B541DFC ;
+        :placeEvent         bdr:EVF483D2A2B85228A3 ;
+        :placeGonpaPerEcumen  "10.66" ;
+        :placeLat           "34.69626" ;
+        :placeLocatedIn     bdr:G2396 , bdr:G2532 ;
+        :placeLong          "102.82981" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID4EE137D118F2A0D4
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2533" .
+    
+    bdr:NT328A53C07B541DFC
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, p. 38" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "dge lugs monastery located in sgyis tshang zhang of bsang chu rdzong, kan lho khul\nthis monastery is a dgon lag of stag tshang lha mo gser khri dgon dga' ldan bshad sgrub pad dkar grol ba'i gling"@en .
+}

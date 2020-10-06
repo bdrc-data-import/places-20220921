@@ -1,0 +1,107 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS540 {
+    bda:G2LS540  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS540 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "53/G2LS540.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS540 ;
+        adm:logEntry        bda:LG0B4B9C07147ED354 , bda:LG2CCD3ADD7974C952 , bda:LG6DA9E410B53275BB , bda:LGD9D3FFDC6FAD3A35 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522100:18" ;
+        adm:place_id_lex    "542522100:18" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B4B9C07147ED354
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T10:42:35.534Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2CCD3ADD7974C952
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-25T09:18:35.885Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G2226 (dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6DA9E410B53275BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-25T09:25:32.023Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD9D3FFDC6FAD3A35
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:55:13.289Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV25A747A2D9924085
+        a                   :PlaceFounded ;
+        :note               bdr:NT022A8A298DB3F84F ;
+        :onYear             "1350"^^xsd:gYear .
+    
+    bdr:EVC2B386842CDEEF7D
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2LS540  a          :Place ;
+        skos:altLabel       "dung dkar bkra shis chos gling dgon/"@bo-x-ewts , "札达东嘎寺"@zh-hans , "dongga si"@zh-latn-pinyin-x-ndia , "zhada dongga si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rtsa mda' dung dkar dgon/"@bo-x-ewts , "Dungkar Gonpa"@en-x-mixed , "东嘎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA2334A61D842662F ;
+        :isRoot             true ;
+        :note               bdr:NT1B2AC38436058B1B , bdr:NT9A8CD98482410EC3 ;
+        :placeEvent         bdr:EV25A747A2D9924085 , bdr:EVC2B386842CDEEF7D ;
+        :placeGonpaPerEcumen  "3.98" ;
+        :placeLat           "31.63000" ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeLong          "79.78000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA2334A61D842662F
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2LS540" .
+    
+    bdr:NT022A8A298DB3F84F
+        a                   :Note ;
+        :noteText           "gsang sngags gsar ma/"@bo-x-ewts .
+    
+    bdr:NT1B2AC38436058B1B
+        a                   :Note ;
+        :contentLocationStatement  "p. 4" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "dge lugs pa monastery in rtsa mda' rtsa rang khongs in mnga' ris prefecture\nfounded by mkhas dbang 'jam dbyangs shin tI ba\n\"da lta grong tshos do dam gnang gi yod/ slad grwa tshad bzhi'o\""@en .
+    
+    bdr:NT9A8CD98482410EC3
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 69" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Founded by Metok kyab, the daughter of Lha Lama yeshe od. Gelugpa tradition and branch of Tholing monastery"@en .
+}

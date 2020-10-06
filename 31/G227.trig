@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G227 {
+    bda:G227  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G227 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "31/G227.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G227 ;
+        adm:logEntry        bda:LG840FB40809F8E5A9 , bda:LGD0E4CC4B998ABF68 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG840FB40809F8E5A9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD0E4CC4B998ABF68
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-19T13:55:26.986Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G227  a             :Place ;
+        skos:altLabel       "kam kam dgon/"@bo-x-ewts ;
+        skos:prefLabel      "skam skam dgon/"@bo-x-ewts , "Kamkam Gon"@en ;
+        :isRoot             true ;
+        :note               bdr:NT9C19597ED7DCD7FA ;
+        :placeLocatedIn     bdr:G2014 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT9C19597ED7DCD7FA
+        a                   :Note ;
+        :contentLocationStatement  "p. 38" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa monastery in thang skya shang, mal gro gung dkar rdzong\nfounded by mnyam med khrom zher ba\nunder the control of the rwa sgreng bla brang\nhad 8 monks in 1959\nrestored"@en .
+}

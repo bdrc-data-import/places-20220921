@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1909 {
+    bda:G1909  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1909 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "84/G1909.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1909 ;
+        adm:logEntry        bda:LG7A6307E3367B0826 , bda:LGF829EFD5117E7BA0 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7A6307E3367B0826
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF829EFD5117E7BA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T11:48:38.114Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1909  a            :Place ;
+        skos:altLabel       "phun tshogs chos gling /"@bo-x-ewts , "ru sngun grwa tshang phun tshogs chos gling /"@bo-x-ewts ;
+        skos:prefLabel      "ru sngun grwa tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7E269A16B2B10AE9 ;
+        :placeLocatedIn     bdr:G1812 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT7E269A16B2B10AE9
+        a                   :Note ;
+        :contentLocationStatement  "p. 538" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "monastery in kos nan rdzong, mtsho lho bod rigs rang skyong khul"@en .
+}

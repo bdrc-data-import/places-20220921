@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4491 {
+    bda:G4491  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4491 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "e7/G4491.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4491 ;
+        adm:logEntry        bda:LG136D53660937A002 , bda:LG62A99A01EB02D078 , bda:LG69943DAE4B03CB1C , bda:LGA9224FCE1885DEE1 , bda:LGC6A91C4BA89D3E13 , bda:LGEB0730A566ACF172 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513232213:184" ;
+        adm:place_id_lex    "513232213:184" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG136D53660937A002
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T14:55:46.022Z"^^xsd:dateTime ;
+        adm:logMessage      "arrange dnames"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG62A99A01EB02D078
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-12-13T15:18:42.712Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG69943DAE4B03CB1C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-23T23:07:57.974Z"^^xsd:dateTime ;
+        adm:logMessage      "edited located in fields; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGA9224FCE1885DEE1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G3191"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGC6A91C4BA89D3E13
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEB0730A566ACF172
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-24T11:07:15.781Z"^^xsd:dateTime ;
+        adm:logMessage      "edited; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVFC896BC114C93F05
+        a                   :PlaceFounded ;
+        :onYear             "1105"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G4491  a            :Place ;
+        skos:altLabel       "xiangzang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "skyang tshang dgon pa/"@bo-x-ewts , "相藏寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID15AB1FE70FA1047E ;
+        :isRoot             true ;
+        :note               bdr:NT3EF5CFF2C7BFCA09 ;
+        :placeEvent         bdr:EVFC896BC114C93F05 ;
+        :placeGonpaPerEcumen  "12.72" ;
+        :placeLat           "33.67397" ;
+        :placeLocatedIn     bdr:G2333 , bdr:G3191 ;
+        :placeLong          "103.23426" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID15AB1FE70FA1047E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4491" .
+    
+    bdr:NT3EF5CFF2C7BFCA09
+        a                   :Note ;
+        :contentLocationStatement  "p. 322" ;
+        :noteSource         bdr:MW28822 ;
+        :noteText           "bonpo monastery in shar khog, southern a mdo"@en .
+}

@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS524 {
+    bda:G2LS524  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS524 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "39/G2LS524.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS524 ;
+        adm:logEntry        bda:LG151D77C81CC58D76 , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542521100:54" ;
+        adm:place_id_lex    "542521100:54" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG151D77C81CC58D76
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:50:29.361Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0E3F8DCA3006835F
+        a                   :PlaceFounded ;
+        :note               bdr:NT8711A4DD5175E785 ;
+        :onYear             "1050"^^xsd:gYear .
+    
+    bdr:EV8FF8700616FF421E
+        a                   :PlaceConverted ;
+        :onYear             "1850"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G2LS524  a          :Place ;
+        skos:altLabel       "dkar dung dga' ldan lha khang /"@bo-x-ewts ;
+        skos:prefLabel      "dkar dung dga' ldan lha khang /"@bo-x-ewts , "嘎东寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID372D88C25A372089 ;
+        :isRoot             true ;
+        :note               bdr:NT7BB69B0B9FA62C8B ;
+        :placeEvent         bdr:EV0E3F8DCA3006835F , bdr:EV8FF8700616FF421E ;
+        :placeGonpaPerEcumen  "2.54" ;
+        :placeLat           "30.50000" ;
+        :placeLocatedIn     bdr:G2154 ;
+        :placeLong          "81.10000" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID372D88C25A372089
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2LS524" .
+    
+    bdr:NT7BB69B0B9FA62C8B
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 40" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Founded in 10th century. Converted to gelug tradition in 17th century during the 5th Dalai Lama period and again converted to nyingma tradition in 20th century by Degya rinpoche from kham."@en .
+    
+    bdr:NT8711A4DD5175E785
+        a                   :Note ;
+        :noteText           "gsang sngags gsar ma/"@bo-x-ewts .
+}

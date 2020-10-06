@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1AG115 {
+    bda:G1AG115  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1AG115 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2f/G1AG115.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1AG115 ;
+        adm:logEntry        bda:LG3327BC3FD3F68E0E , bda:LGBC8423052A7FCD11 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3327BC3FD3F68E0E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-26T11:24:57.094Z"^^xsd:dateTime ;
+        adm:logMessage      "updated outlines with new record"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGBC8423052A7FCD11
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-03-26T11:38:23.223Z"^^xsd:dateTime ;
+        adm:logMessage      "updated note"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:G1AG115  a          :Place ;
+        skos:prefLabel      "shug chung dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCFB277A40F5F6A7C .
+    
+    bdr:NTCFB277A40F5F6A7C
+        a                   :Note ;
+        :noteText           "a small monastery in dzamtang connected to the kagyu and nyingma byang gter traditions"@en .
+}

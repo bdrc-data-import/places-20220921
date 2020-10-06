@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G849 {
+    bda:G849  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G849 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "90/G849.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G849 ;
+        adm:logEntry        bda:LG1B445463DE6921E5 , bda:LG45192C25C751B84B , bda:LGAA75A8CFDD6A1CA8 , bda:LGABB15FDDD5A0E11E , bda:LGADB7797F720E0880 , bda:LGBFC96460D50FC671 , bda:LGC83AF1AC7448BDB2 , bda:LGE1F6983E3792F4AB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1B445463DE6921E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-22T10:40:05.716Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG45192C25C751B84B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T10:04:46.443Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed from \"dup. mang mkhar\" & added location, 3 contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAA75A8CFDD6A1CA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-12T16:55:47.421Z"^^xsd:dateTime ;
+        adm:logMessage      "corected type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGABB15FDDD5A0E11E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-02T09:17:51.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGADB7797F720E0880
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBFC96460D50FC671
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-03T16:13:35.316Z"^^xsd:dateTime ;
+        adm:logMessage      "added note in wylie"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC83AF1AC7448BDB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T10:56:32.363Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE1F6983E3792F4AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T12:22:18.423Z"^^xsd:dateTime ;
+        adm:logMessage      "added time & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVF9DC1FB173D8C8FB
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0799"^^xsd:gYear ;
+        :notBefore          "0700"^^xsd:gYear .
+    
+    bdr:G849  a             :Place ;
+        skos:altLabel       "mus ldog"@bo-x-ewts ;
+        skos:prefLabel      "mus/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT526388A68A139BAF , bdr:NT756623424E294BE7 , bdr:NT82E4AA70C74015BB ;
+        :placeContains      bdr:G1133 , bdr:G2GS1264 , bdr:G324 , bdr:G3CN450 , bdr:G4147 , bdr:G872 ;
+        :placeEvent         bdr:EVF9DC1FB173D8C8FB ;
+        :placeLocatedIn     bdr:G3174 , bdr:G4250 ;
+        :placeType          bdr:PT0001 .
+    
+    bdr:NT526388A68A139BAF
+        a                   :Note ;
+        :contentLocationStatement  "p. 185" ;
+        :noteSource         bdr:MW17319 ;
+        :noteText           "རྒྱལ་པོ་བཀའ་ཐང་ལས། ཆོས་རྒྱལ་ཁྲི་སྲོང་ལྡེའུ་བཙན་སྐབས་ཀྱི་གཡས་རུའི་ཡུལ་སྡེ་བཅུ་དྲུག་གི་ནང་ཚན་ཡུལ་སྡེ་དྲུག་པ་དེ་\"མུས་ལྡོག་\"ཡིན་པར་གསལ།"@bo .
+    
+    bdr:NT756623424E294BE7
+        a                   :Note ;
+        :noteText           "མུས་ནི་ལ་སྟོད་བྱང་རྒྱུད་དུ་གནས་པའི་ཡུལ་ལུང་གྲགས་ཅན་ཞིག་ཏེ། སྔར་ས་སྐྱ་པ་ནས་གཙོས་པའི་གྲུབ་མཐའ་རིས་མེད་ཀྱི་མཁས་པ་མང་པོ་འཁྲུངས་ཡུལ་ཡིན་ལ། སྤྱིར་ཡུལ་འདིར་མུས་སྟོད་མུས་སྨད་དུ་འབྱེད་སྲོལ་ཡོད་པའང་། མུས་སྟོད་ནི་དེང་སང་བཞད་མཐོང་སྨོན་རྫོང་ཁོངས་དང་། མུས་སྨད་ནི་ངམ་རིང་རྫོང་ཁོངས་སུ་གཏོགས།"@bo .
+    
+    bdr:NT82E4AA70C74015BB
+        a                   :Note ;
+        :noteText           "de yang mthong smon rdzong gi sle pa (gle dang slas sogs kyang 'bri srol yod)shang dang / rta mo shar shang / ngam ring rdzong gi yag mo shang (mus khang gsar gzhis ka yod sa) gtso bo byas pa'i lung tshan rnams ni mus kyi lte ba'i sa khongs dag yin te spyir mus stod du byed la/ mus smad ni ngam ring rdzong khongs kyi rta rgyud shang sogs yin pa/ bod ljongs kyi gna' rdzas zhib 'jug mkhas pa shar rgan dbang 'dus lags nas rtsad zhib mdzad rogs gnang ngo /"@bo-x-ewts .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN11 {
+    bda:G3CN11  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN11 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a9/G3CN11.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN11 ;
+        adm:logEntry        bda:LG606D00AF2DBDF0CF , bda:LGF92B113545588127 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG606D00AF2DBDF0CF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-12T16:58:48.846Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF92B113545588127
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T11:11:27.641Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV5BBA77CA601DDF03
+        a                   :PlaceFounded ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear .
+    
+    bdr:G3CN11  a           :Place ;
+        skos:prefLabel      "gur mo khri skor/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC2F3B6C4D7D032EE ;
+        :placeEvent         bdr:EV5BBA77CA601DDF03 ;
+        :placeLocatedIn     bdr:G3CN10 ;
+        :placeType          bdr:PT0046 .
+    
+    bdr:NTC2F3B6C4D7D032EE
+        a                   :Note ;
+        :contentLocationStatement  "p. 346" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "ཁྲི་སྐོར་བཅུ་གསུམ་སྐོར་མདོ་ཙམ་གསལ།"@bo .
+}

@@ -1,0 +1,42 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KG2220 {
+    bda:G2KG2220  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KG2220 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3c/G2KG2220.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KG2220 ;
+        adm:logEntry        bda:LG82CFD1D015515002 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG82CFD1D015515002
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-29T09:15:20.65Z"^^xsd:dateTime ;
+        adm:logMessage      "new place"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:G2KG2220  a         :Place ;
+        skos:prefLabel      "glang dgon bkra shis chos gling /"@bo-x-ewts , "lang gon tashi choling"@en ;
+        :isRoot             true ;
+        :note               bdr:NTF3A5E8428D6880CC ;
+        :placeLocatedIn     bdr:G2084 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTF3A5E8428D6880CC
+        a                   :Note ;
+        :noteText           "Lang Gon Tashi Choling is Sakya sect and located in Karnali zone, Dolpo district, Nepal"@en .
+}

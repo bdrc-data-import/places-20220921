@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN60 {
+    bda:G3CN60  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN60 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "97/G3CN60.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN60 ;
+        adm:logEntry        bda:LG1E270B84A7869F0F , bda:LG4C6180F5EBB6F5C7 , bda:LG668C5091FDC8FDF7 , bda:LG9D38CDE3D4DF9007 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1E270B84A7869F0F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-06T17:02:07.697Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4C6180F5EBB6F5C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-07T14:26:29.806Z"^^xsd:dateTime ;
+        adm:logMessage      "added english name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG668C5091FDC8FDF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T11:49:31.357Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as \"stongSde\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9D38CDE3D4DF9007
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T09:50:44.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVB32EE0B3A754674F
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN60  a           :Place ;
+        skos:prefLabel      "sku srung byang phyogs pa/"@bo-x-ewts , "Northern royal guard"@en ;
+        :isRoot             true ;
+        :note               bdr:NT6325A5F1C15F8A5E ;
+        :placeEvent         bdr:EVB32EE0B3A754674F ;
+        :placeLocatedIn     bdr:G3176 ;
+        :placeType          bdr:PT0073 .
+    
+    bdr:NT6325A5F1C15F8A5E
+        a                   :Note ;
+        :contentLocationStatement  "p. 102" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "གཡོ་རུའི་སྟོང་སྡེ་བཅུ་ཡི་ནངཚན་ཞིག་ཡིན་པར་གསལ།"@bo .
+}

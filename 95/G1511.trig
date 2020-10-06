@@ -1,0 +1,125 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1511 {
+    bda:G1511  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1511 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "95/G1511.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1511 ;
+        adm:logEntry        bda:LG0F67478DBFD38FD7 , bda:LG18E5A1B0C3A2AF03 , bda:LG208CE4B4C3A206F3 , bda:LG365EBA86135AAD64 , bda:LG473527F948E970DA , bda:LG4ED9C10CF1D46233 , bda:LGAC8ADA50CDC0011C , bda:LGB1B041C34E2106B2 , bda:LGBA1BDE93BAC15F3E , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542323100:542323105" ;
+        adm:place_id_lex    "542323100:542323105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0F67478DBFD38FD7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG18E5A1B0C3A2AF03
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-18T10:43:17.009Z"^^xsd:dateTime ;
+        adm:logMessage      "added mchod rten"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG208CE4B4C3A206F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2842"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG365EBA86135AAD64
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-30T14:42:36.929Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & descrption"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG473527F948E970DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-22T14:34:07.483Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG4ED9C10CF1D46233
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-11T15:18:51.367Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAC8ADA50CDC0011C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-16T15:08:43.368Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language encoding & added names and place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB1B041C34E2106B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-12T12:14:24.328Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBA1BDE93BAC15F3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T17:45:39.802Z"^^xsd:dateTime ;
+        adm:logMessage      "english"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV08F478453223F67F
+        a                   :PlaceFounded ;
+        :onYear             "1418"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya , bdr:TraditionZhalu .
+    
+    bdr:EVA117C55D12F39996
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P6904 ;
+        :onYear             "1440"^^xsd:gYear .
+    
+    bdr:EVFEE399ED9FC7ECBE
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk , bdr:TraditionSakya .
+    
+    bdr:G1511  a            :Place ;
+        rdfs:comment        "sa lugs bu lugs dge lugs gsum gcig tu 'dus pa'i dmigs bsal dgon chen zhig" ;
+        skos:altLabel       "dpal 'khor bde chen/"@bo-x-ewts , "dpal chos dgon pa/"@bo-x-ewts , "rgyal rtse dgon pa/"@bo-x-ewts , "shel mkhar rgyal rtse'i chos sde/"@bo-x-ewts , "Gyangtse Monastery"@en , "江孜白居寺"@zh-hans , "baiju si"@zh-latn-pinyin-x-ndia , "jiangzi baiju si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpal 'khor chos sde/"@bo-x-ewts , "Palkhor Chode"@en-x-mixed , "白居寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0AF01AE6645A777B ;
+        :contentLocationStatement  "Coordinates: latitude 28°55,520 longitude 89°35,699 Altitude: 4039(m) (sheehy_tibet_coordinates_2014)" ;
+        :isRoot             true ;
+        :note               bdr:NT6CC42B40E7DEE74D ;
+        :placeContains      bdr:G2842 , bdr:G2CN10945 ;
+        :placeEvent         bdr:EV08F478453223F67F , bdr:EVA117C55D12F39996 , bdr:EVFEE399ED9FC7ECBE ;
+        :placeGonpaPerEcumen  "27.01" ;
+        :placeLat           "28.93333" ;
+        :placeLocatedIn     bdr:G2175 ;
+        :placeLong          "89.60000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID0AF01AE6645A777B
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1511" .
+    
+    bdr:NT6CC42B40E7DEE74D
+        a                   :Note ;
+        :noteText           "TBRC lists founding in 1440"@en .
+}

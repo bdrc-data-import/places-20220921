@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G10MS14313 {
+    bda:G10MS14313  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G10MS14313 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "21/G10MS14313.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G10MS14313 ;
+        adm:logEntry        bda:LG1D24A3CAF102061B , bda:LGEAAAB85857F087E4 , bda:LGFC507E278FDB8055 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1D24A3CAF102061B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-16T10:34:02.007Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGEAAAB85857F087E4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-25T12:34:34.401Z"^^xsd:dateTime ;
+        adm:logMessage      "created new place"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGFC507E278FDB8055
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:hermitage to riKhrod"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G10MS14313  a       :Place ;
+        skos:prefLabel      "bud khang dgon lung ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6975DB7D94A73479 ;
+        :placeLocatedIn     bdr:G2336 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT6975DB7D94A73479
+        a                   :Note ;
+        :noteText           "jo nang hermitage 'dzam mthang"@en .
+}

@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3068 {
+    bda:G3068  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3068 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b4/G3068.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3068 ;
+        adm:logEntry        bda:LG20C1931C949456DF , bda:LG6703A98B2E914B0A , bda:LG6A97C7EA9464AC75 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG20C1931C949456DF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6703A98B2E914B0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T11:35:58.38Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6A97C7EA9464AC75
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:14:21.653Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from mountainpass to ri"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3068  a            :Place ;
+        skos:altLabel       "rgod 'khar la/"@bo-x-ewts ;
+        skos:prefLabel      "dgod dkar la/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFB7797F90C1893DA ;
+        :placeLocatedIn     bdr:G1516 ;
+        :placeType          bdr:PT0043 .
+    
+    bdr:NTFB7797F90C1893DA
+        a                   :Note ;
+        :contentLocationStatement  "p. 63" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "very high mountain pass connecting lha sa and bsam yas and other points\nfamous as the pass over which invaders traversed to and from the south\nmetioned in the btsun mo bka' thang and in the story of vairocana\naccording to the latter the pass got the name dgod dkar la because of the attempts of btsun mo dmar rgyan go seduce bai ro tsa na into an adulterous relationship\nbecause he laughted at these attempts the pass got its name dgod dkar la"@en .
+}

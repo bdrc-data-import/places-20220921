@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4784 {
+    bda:G4784  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4784 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bd/G4784.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4784 ;
+        adm:logEntry        bda:LG1304887C602E3066 , bda:LG919A31E8BB3E9E8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1304887C602E3066
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-21T12:52:24.534Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG919A31E8BB3E9E8F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G4784  a            :Place ;
+        skos:prefLabel      "dpal thang bya mang phug"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9305090F4FA9B9D5 ;
+        :placeType          bdr:PT0080 .
+    
+    bdr:NT9305090F4FA9B9D5
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, f. 358r" ;
+        :noteSource         bdr:MW29706 ;
+        :noteText           "place where byang chub gling pa rediscovered the kun bzang thugs gter"@en .
+}

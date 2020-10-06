@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN22 {
+    bda:G3CN22  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN22 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fe/G3CN22.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN22 ;
+        adm:logEntry        bda:LG0A3E926DD7033DEC , bda:LG0D98B3B9ED55889E , bda:LG1F53EC2324AE1BE3 , bda:LG52A54D6872043107 , bda:LG7D79DC64DE3A7709 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A3E926DD7033DEC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-13T17:07:38.268Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0D98B3B9ED55889E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-18T15:17:13.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains \"zla nang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1F53EC2324AE1BE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-05T12:42:54.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG52A54D6872043107
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-20T15:43:57.248Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7D79DC64DE3A7709
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-25T16:12:25.129Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN22  a           :Place ;
+        skos:altLabel       "zel mo sgang /"@bo-x-ewts , "ze mo sgang /"@bo-x-ewts , "zil mo sgang /"@bo-x-ewts ;
+        skos:prefLabel      "zal mo sgang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT15203534240C361C , bdr:NTD8B48D9FFD6E766C ;
+        :placeContains      bdr:G4734 , bdr:G616 , bdr:G754 , bdr:G811 ;
+        :placeLocatedIn     bdr:G2GS1325 ;
+        :placeType          bdr:PT0062 .
+    
+    bdr:NT15203534240C361C
+        a                   :Note ;
+        :contentLocationStatement  "p. 824" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "ཆུ་བཞི་སྒང་དྲུག་གི་རྣམ་གྲངས་འདྲེན་ཚུལ་རིགས་གཅིག་གསལ།"@bo .
+    
+    bdr:NTD8B48D9FFD6E766C
+        a                   :Note ;
+        :contentLocationStatement  "p. 289" ;
+        :noteSource         bdr:MW00EGS1016725 ;
+        :noteText           "མིང་གི་རྣམ་གྲངས་རྣམས་གསལ།"@bo .
+}

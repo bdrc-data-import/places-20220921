@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX140203000 {
+    bda:G9GBX140203000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX140203000 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d9/G9GBX140203000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX140203000 ;
+        adm:logEntry        bda:LGCF1770583CADC645 , bda:LGIME5430EC046 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGCF1770583CADC645
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME5430EC046
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-27T19:58:07.021Z"^^xsd:dateTime ;
+        adm:logMessage      "updating geometry for modern county"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX140203000
+        a                   :Place ;
+        skos:altLabel       "kuang qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mines"@en , "矿区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX140203001 , bdr:G9GBX140203002 , bdr:G9GBX140203003 , bdr:G9GBX140203004 , bdr:G9GBX140203005 , bdr:G9GBX140203006 , bdr:G9GBX140203007 , bdr:G9GBX140203008 , bdr:G9GBX140203009 , bdr:G9GBX140203010 , bdr:G9GBX140203011 , bdr:G9GBX140203012 , bdr:G9GBX140203013 , bdr:G9GBX140203014 , bdr:G9GBX140203015 , bdr:G9GBX140203016 , bdr:G9GBX140203017 , bdr:G9GBX140203018 , bdr:G9GBX140203019 , bdr:G9GBX140203020 , bdr:G9GBX140203021 , bdr:G9GBX140203022 , bdr:G9GBX140203023 , bdr:G9GBX140203024 , bdr:G9GBX140203025 , bdr:G9GBX140203026 , bdr:G9GBX140203027 , bdr:G9GBX140203028 ;
+        :placeGB2260-2013   "140203000" ;
+        :placeLat           "40.0368562" ;
+        :placeLocatedIn     bdr:G9GBX140200000 ;
+        :placeLong          "113.1772041" ;
+        :placeRegionPoly    "{\"type\":\"Feature\",\"geometry\": { \"type\": \"Polygon\", \"coordinates\": [ [ [ 113.174896239495411, 40.118324279962899 ], [ 113.186172484521379, 40.115154266293359 ], [ 113.19885253888728, 40.113040924131127 ], [ 113.211891173559962, 40.110923767056242 ], [ 113.216590881029504, 40.109283447406114 ], [ 113.218170166398778, 40.109428405734342 ], [ 113.218414306776523, 40.084514618328853 ], [ 113.221366881473955, 40.067237853930841 ], [ 113.223838805652662, 40.05857086177668 ], [ 113.229209899925408, 40.044536591268219 ], [ 113.231880188356186, 40.033531188988775 ], [ 113.235557556681513, 40.022033691146198 ], [ 113.244674683460801, 40.016689300588162 ], [ 113.253578186160027, 40.013214110674973 ], [ 113.261894226522671, 40.01000213615638 ], [ 113.26910400336007, 40.008033751726678 ], [ 113.286315917974477, 40.008083343967719 ], [ 113.306785583474678, 40.011920928961388 ], [ 113.306488036617992, 40.007801056450162 ], [ 113.297515869049661, 39.978088379330536 ], [ 113.289413451575982, 39.971042633397772 ], [ 113.26827240000901, 39.968574524036029 ], [ 113.233032227322283, 39.975620270315297 ], [ 113.223167419029053, 39.982669830358773 ], [ 113.221054076779552, 39.986896515301396 ], [ 113.208717346059771, 39.998523712225811 ], [ 113.17594909716864, 40.029178618838856 ], [ 113.144592284518907, 40.057014464837167 ], [ 113.136138916124864, 40.070758820125214 ], [ 113.131202698484302, 40.086963653636396 ], [ 113.131050110311207, 40.092998505264809 ], [ 113.131286620731814, 40.093929291226949 ], [ 113.132255554640722, 40.097812653276904 ], [ 113.135780333325414, 40.108810424669841 ], [ 113.142478943207124, 40.115154266352583 ], [ 113.15199279809903, 40.117267608785887 ], [ 113.162559509542803, 40.117618561028969 ], [ 113.174896239495411, 40.118324279962899 ] ] ] } }" ;
+        :placeType          bdr:PT0011 ;
+        :placeWB2000        "379256" ;
+        :placeWB2010        "429605" ;
+        :placeWBArea        "105.302077" .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2567 {
+    bda:G2567  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2567 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c2/G2567.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2567 ;
+        adm:logEntry        bda:LG05F442D0B35DDD01 , bda:LG173D1E8F578FDBB8 , bda:LG8B9D2793764AE675 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G4275 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG05F442D0B35DDD01
+        a                   adm:WithdrawData ;
+        adm:logDate         "2014-06-06T11:59:38.307Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G4275"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG173D1E8F578FDBB8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8B9D2793764AE675
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T15:08:21.721Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2567  a            :Place ;
+        skos:altLabel       "尕达寺"@zh-hans , "干达寺"@zh-hans , "gada si"@zh-latn-pinyin-x-ndia , "ganda si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "kar mda' dgon/"@bo-x-ewts , "甘达寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTA82F722CEC9E6BDC , bdr:NTFDDD3A1C0F864EFD ;
+        :placeLocatedIn     bdr:G1467 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTA82F722CEC9E6BDC
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G4275"@en .
+    
+    bdr:NTFDDD3A1C0F864EFD
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 48" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "dge lugs pa monastery in yus hru'u prefecture, qinghai province"@en .
+}

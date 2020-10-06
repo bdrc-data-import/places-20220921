@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G350 {
+    bda:G350  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G350 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "df/G350.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G350 ;
+        adm:logEntry        bda:LG1456DD052770783C , bda:LGDD02BA7C03FC0232 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1456DD052770783C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-03T16:13:02.58Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDD02BA7C03FC0232
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G350  a             :Place ;
+        skos:altLabel       "yar lung mtshar steng ri khrod/"@bo-x-ewts ;
+        skos:prefLabel      "mtshar steng ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF60119E8092474ED ;
+        :placeLocatedIn     bdr:G1145 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTF60119E8092474ED
+        a                   :Note ;
+        :noteText           "rnying ma monastery in the yar klung valley\nthis was the seat of the rdzogs chen master kumararadza"@en .
+}

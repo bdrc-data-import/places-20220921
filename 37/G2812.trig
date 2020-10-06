@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2812 {
+    bda:G2812  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2812 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "37/G2812.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2812 ;
+        adm:logEntry        bda:LG60A47CD223FE0DDB , bda:LG7451703E98EECA0A , bda:LG7B251E84B9593A3E , bda:LGDD6F546F9C1D1450 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542222202:542222104" ;
+        adm:place_id_lex    "542222202:542222104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG60A47CD223FE0DDB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7451703E98EECA0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T11:52:55.108Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & GIS ID & note in Tib."@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7B251E84B9593A3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T09:34:29.83Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDD6F546F9C1D1450
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T15:53:10.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added 3rd note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVE94224F8C117490F
+        a                   :PlaceFounded ;
+        :onYear             "0750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G2812  a            :Place ;
+        skos:altLabel       "bsgrags yongs rdzogs/"@bo-x-ewts , "bsgrags yongs rdzong gshin rje rol pa'i sgrub gnas/"@bo-x-ewts , "sgrags kyi yang rdzong gshin rje rol pa'i pho brang /"@bo-x-ewts , "yongs rdzong /"@bo-x-ewts , "zha yangzong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sgrags yang rdzong /"@bo-x-ewts , "Drak Yangdzong"@en-x-mixed , "扎央宗寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0F7458D08D8EF979 ;
+        :isRoot             true ;
+        :note               bdr:NT9426B1C29E4E0586 , bdr:NTBD4B657E02B2256E , bdr:NTC484AE9B85913FE5 ;
+        :placeEvent         bdr:EVE94224F8C117490F ;
+        :placeGonpaPerEcumen  "17.37" ;
+        :placeLat           "29.44222" ;
+        :placeLocatedIn     bdr:G2804 , bdr:G799 ;
+        :placeLong          "91.24727" ;
+        :placeType          bdr:PT0036 .
+    
+    bdr:ID0F7458D08D8EF979
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2812" .
+    
+    bdr:NT9426B1C29E4E0586
+        a                   :Note ;
+        :contentLocationStatement  "p. 218-219" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "ཀ་ཐོག་སི་ཏུའི་གསུང་ལས། བསྒྲགས་ཡོངས་རྫོང་གཤིན་རྗེ་རོལ་པའི་སྒྲུབ་གནས་སྟེང་ཤོད་གཉིས་སུ། གུ་རུའི་གསང་ཕུག་དང་། མཚོ་རྒྱལ་གསང་ཕུག སངས་རྒྱས་ཡེ་ཤེས་དང་མེ་ལོང་རྡོ་རྗེ་བཅས་ཀྱི་སྒྲུབ་ཕུག་སོགས་དང་། གུ་རུའི་ཕྱག་བྲིས་ཧུཾ་ཡིག་སོགས་རྟེན་ངོ་མཚར་ཅན་མང་དུ་བཞུགས།"@bo .
+    
+    bdr:NTBD4B657E02B2256E
+        a                   :Note ;
+        :contentLocationStatement  "p. 219" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "cave complex in the sgrags valley looked after by the monastery of rdo rje brag"@en .
+    
+    bdr:NTC484AE9B85913FE5
+        a                   :Note ;
+        :contentLocationStatement  "v.1, pp. 20-21" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "སྒྲུབ་ཕུག་དེ་ནི་ཐོག་མར་གུ་རུ་རིན་པོ་ཆེས་གནས་སྒོ་ཕྱེས་ཤིང་ལོ་གསུམ་ཕྱོགས་གསུམ་སྐུ་མཚམས་སུ་བཞུགས་པར་གྲགས། བྲག་ཕུག་མཐིལ་གྱི་འདུ་ཁང་དུ་སྔར་རྡོར་བྲག་དགོན་གྱི་དགེ་འདུན་རྒྱུན་བཞུགས་གནང་སྲོལ་ཡོད་ཅིང་། རྡོར་བྲག་རིག་འཛིན་བཞི་པ་བློ་བཟང་པད་མ་འཕྲིན་ལས་ཀྱིས་བྲག་ཕུག་ཀྱི་གཡས་ངོས་ནས་གནས་སྒོ་གསར་འབྱེད་མཛད་པ་སོགས་འཁོད།"@bo .
+}

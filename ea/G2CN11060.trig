@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11060 {
+    bda:G2CN11060  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11060 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ea/G2CN11060.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11060 ;
+        adm:logEntry        bda:LG205146E347813720 , bda:LG3F77005FEC765365 , bda:LG7EE49A5FB08535D6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG205146E347813720
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-05-30T14:27:18.555Z"^^xsd:dateTime ;
+        adm:logMessage      "created record (from Dr. Maho Iuchi's list)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3F77005FEC765365
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-30T14:36:40.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7EE49A5FB08535D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T15:29:13.376Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV77E1BD22B3A66B83
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear .
+    
+    bdr:G2CN11060  a        :Place ;
+        skos:altLabel       "byar spung khyen ma steng /"@bo-x-ewts ;
+        skos:prefLabel      "khyen ma steng /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8B52A5AA70D8DFFF ;
+        :placeEvent         bdr:EV77E1BD22B3A66B83 ;
+        :placeLocatedIn     bdr:G1990 , bdr:G843 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8B52A5AA70D8DFFF
+        a                   :Note ;
+        :contentLocationStatement  "p. 459" ;
+        :noteSource         bdr:MW26009 ;
+        :noteText           "འདི་ནི་བཀའ་གདམས་པའི་དགོན་རྙིང་ཞིག་ཏེ། གླང་བྱ་རབ་པས་བྱར་སྤུང་དུ་གནས་གཞི་ཁྱེན་མ་སྟེང་འདི་བཏབ་ཅིང་། དེ་ལས་ཀྱང་དཀར་ཆུང་དང་ཀླུ་སྒང་སོགས་གནས་གཞི་བདུན་དུ་གྱེས་པ་སོགས་གསལ།"@bo .
+}

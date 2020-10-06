@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD96040 {
+    bda:G1PD96040  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD96040 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "f2/G1PD96040.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD96040 ;
+        adm:logEntry        bda:LG031178666B68D78A , bda:LG1598D81E3C223695 , bda:LG245BDE1E14F11A1F , bda:LG29ABBF1560C95864 , bda:LG4EA14F19B90FA682 , bda:LG67D557DC4D2CF745 , bda:LGA6ACAEF6F82CF0C8 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632123208:106" ;
+        adm:place_id_lex    "632123208:75" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG031178666B68D78A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-12-04T10:09:35.23Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG1598D81E3C223695
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-07T09:57:50.629Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG245BDE1E14F11A1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:13.18Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG29ABBF1560C95864
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-07T09:56:12.994Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG4EA14F19B90FA682
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T12:11:52.458Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG67D557DC4D2CF745
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-26T08:49:50.274Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA6ACAEF6F82CF0C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-07T10:04:13.159Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0862BEA6330BA54A
+        a                   :PlaceFounded ;
+        :onYear             "1413"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1PD96040  a        :Place ;
+        skos:altLabel       "dgon gsar thar ba gling /"@bo-x-ewts , "lcang kya zi dgon gsar thar ba gling /"@bo-x-ewts , "lcang skya zi dgon gsar thar ba gling /"@bo-x-ewts , "张家寺"@zh-hans , "zhangjia si"@zh-latn-pinyin-x-ndia , "zhang jia si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lcang kya dgon gsar/"@bo-x-ewts , "章嘉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA4DC6776248563BB ;
+        :isRoot             true ;
+        :note               bdr:NT4316491A247F5905 ;
+        :placeEvent         bdr:EV0862BEA6330BA54A ;
+        :placeGonpaPerEcumen  "15.8" ;
+        :placeLat           "36.60407" ;
+        :placeLocatedIn     bdr:G1PD5303 ;
+        :placeLong          "102.55000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA4DC6776248563BB
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD96040" .
+    
+    bdr:NT4316491A247F5905
+        a                   :Note ;
+        :contentLocationStatement  "p. ༦༣" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་1574ལོར་ཕྱག་བཏབ་པར་གྲགས།"@en .
+}

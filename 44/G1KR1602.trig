@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1602 {
+    bda:G1KR1602  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1602 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "44/G1KR1602.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1602 ;
+        adm:logEntry        bda:LG2CD3CC616703FCE5 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542328203:542328106" ;
+        adm:place_id_lex    "542328203:542328106" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2CD3CC616703FCE5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-07T16:53:43.85Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV074D6E04DBFD7133
+        a                   :PlaceFounded ;
+        :onYear             "1436"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G1KR1602  a         :Place ;
+        skos:altLabel       "stag mo gling kha dgon_[?]"@bo-x-ewts , "Takmo Lingka"@bo-x-phon-en , "达摩林卡寺"@zh-hans , "damo linka si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gling kha dgon/"@bo-x-ewts , "林卡寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4FF74DA2F890B60B ;
+        :isRoot             true ;
+        :note               bdr:NT5393C7E09641F175 , bdr:NT8CF25AE8D1DF1A9F ;
+        :placeEvent         bdr:EV074D6E04DBFD7133 ;
+        :placeGonpaPerEcumen  "1.8" ;
+        :placeLat           "29.95000" ;
+        :placeLocatedIn     bdr:G2164 ;
+        :placeLong          "87.61667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID4FF74DA2F890B60B
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1602" .
+    
+    bdr:NT5393C7E09641F175
+        a                   :Note ;
+        :noteText           "Xian Wenwuzhi lists 1437 as founding date, but Ferrari lists 1436."@en .
+    
+    bdr:NT8CF25AE8D1DF1A9F
+        a                   :Note ;
+        :noteText           "dgon ming dngos ji yin dwogs gnas yod pas rjes sor rgyu cha rnyed rim bzhin kha skong bya rgyu/"@en .
+}

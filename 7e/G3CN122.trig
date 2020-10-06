@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN122 {
+    bda:G3CN122  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN122 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "7e/G3CN122.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN122 ;
+        adm:logEntry        bda:LG13489E7689DFC33E , bda:LG50C8B4E66D6973DE , bda:LG62EBE70EA3B5483A , bda:LG7C2CF6657F96457B , bda:LGC7A4988C009B47FF , bda:LGD41607DAA2CB9609 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG13489E7689DFC33E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-19T14:49:38.569Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG50C8B4E66D6973DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T15:03:55.78Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain \"mar ma\" & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG62EBE70EA3B5483A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-27T16:52:31.644Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7C2CF6657F96457B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-18T12:26:36.351Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC7A4988C009B47FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-18T12:28:36.54Z"^^xsd:dateTime ;
+        adm:logMessage      "revised description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD41607DAA2CB9609
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-21T10:01:51.221Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & contains with description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV7C829C853EDC42B6
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN122  a          :Place ;
+        rdfs:comment        "\"dol gzhung\" ni g.yo ru'i khongs yin pa nges gtan la lho brag phyogs su gnas sam ci ste/ \"dol\" zhes pa'i lung pa zhig ni deng gung dkar rdzong khongs na gnas pa/ de gnyis gcig pa yin min mu mthud dpyad rgyu/" ;
+        skos:altLabel       "dol/"@bo-x-ewts , "dol mda'"@bo-x-ewts , "dol nang /"@bo-x-ewts ;
+        skos:prefLabel      "dol gzhung /"@bo-x-ewts , "Dol, Zhung"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT48DDE2251C0ADC42 , bdr:NTB65012B8C59DA24F , bdr:NTE2030FC02B5E8E96 ;
+        :placeContains      bdr:G1058 , bdr:G364 , bdr:G3CN501 ;
+        :placeEvent         bdr:EV7C829C853EDC42B6 ;
+        :placeLocatedIn     bdr:G3176 , bdr:G3CN58 ;
+        :placeType          bdr:PT0001 .
+    
+    bdr:NT48DDE2251C0ADC42
+        a                   :Note ;
+        :contentLocationStatement  "p. 344" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"དོལ་ནི་ཡར་འབྲོག་གཡུ་མཚོའི་ཤར་རྒྱུད་ཀྱི་བྱང་ཕྱོགས་སུ་སྣང་།\" ཞེས་ཀྱང་གསལ།"@bo .
+    
+    bdr:NTB65012B8C59DA24F
+        a                   :Note ;
+        :contentLocationStatement  "p. 258" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོའི་སྐབས་ནས་བཟུང་བོད་བཙན་པོའི་རྒྱལ་རབས་སྐབས་སུ། བོད་རུ་རེ་རེ་ན་ཡུལ་དཔོན་བཅུ་དྲུག་རེ་ཡོད་པ་ལས། འདི་ནི་གཡོ་རུའི་ཡུལ་དཔོན་ཚན་བཅུ་དྲུག་གི་ཡུལ་སྡེ་བཅུ་གསུམ་པ་དེ་ཡིན་པར་གསལ། དེ་ཡང་དཔོན་ཚན་གཅིག་ལ་དོལ་དང་གཞུང་(dol & gzhung )ཞེས་ཡུལ་སྡེ་གཉིས་དབང་བར་གོ།"@bo .
+    
+    bdr:NTE2030FC02B5E8E96
+        a                   :Note ;
+        :contentLocationStatement  "p. 151, p. 154" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "\"dol nang\" du dol gsung rab gling yod pa sogs dol gyi skor zur tsam gsal/\n\nphreng po lung pa'i chu pha ka \"dol mda'\" mar rgyab dud tshang gnyis yod sa der lo ras 'khrungs sa yin zhes kyang gsal/"@bo-x-ewts .
+}

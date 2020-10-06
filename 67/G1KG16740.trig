@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KG16740 {
+    bda:G1KG16740  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KG16740 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "67/G1KG16740.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KG16740 ;
+        adm:logEntry        bda:LG7FECA55896371D14 , bda:LG8CC9B63EC88E613B , bda:LGD897C0A220B9EF9D , bda:LGE60E9DC01E579997 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7FECA55896371D14
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-01T14:16:49.691Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8CC9B63EC88E613B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-20T11:59:59.566Z"^^xsd:dateTime ;
+        adm:logMessage      "created place"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD897C0A220B9EF9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-18T09:38:43.167Z"^^xsd:dateTime ;
+        adm:logMessage      "removed empty event affiliation"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGE60E9DC01E579997
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-01-17T15:23:36.891Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:EV6FB9D1F1A6803FC6
+        a                   :PlaceRebuilt ;
+        :onYear             "1899"^^xsd:gYear .
+    
+    bdr:G1KG16740  a        :Place ;
+        skos:altLabel       "'bum thang stang o rgyan chos gling /"@bo-x-ewts , "stang o rgyan chos gling /"@bo-x-ewts ;
+        skos:prefLabel      "o rgyan chos gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC99F2468C0780651 ;
+        :placeEvent         bdr:EV6FB9D1F1A6803FC6 ;
+        :placeLocatedIn     bdr:G4716 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTC99F2468C0780651
+        a                   :Note ;
+        :noteText           "monastery in bumthang, bhutan"@en .
+}

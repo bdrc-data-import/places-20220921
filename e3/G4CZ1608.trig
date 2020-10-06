@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4CZ1608 {
+    bda:G4CZ1608  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4CZ1608 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e3/G4CZ1608.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4CZ1608 ;
+        adm:logEntry        bda:LG243080D14E1E77DD , bda:LG432966E2D853B68F , bda:LG686D283309742855 , bda:LG698FD9C3EA39355B , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG243080D14E1E77DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2112"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG432966E2D853B68F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-10T16:45:27.308Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG686D283309742855
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-10-22T15:34:20.791Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG698FD9C3EA39355B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-16T10:46:43.155Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4CZ1608  a         :Place ;
+        skos:altLabel       "gnya' nang dga' ldan 'phel rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "gnya' nang grod pa phug dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCE6BB10B6DBC0BFB ;
+        :placeLocatedIn     bdr:G2112 , bdr:G2163 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTCE6BB10B6DBC0BFB
+        a                   :Note ;
+        :noteText           "རྗེ་བཙུན་མི་ལ་རས་པའི་སྒྲུབ་གནས་གྲོད་པ་ཕུག་ཏུ་གོང་ས་ལྔ་པ་ཆེན་པོས་ཤིང་ཡོས་ལོར་དགེ་དགོན་གསར་དུ་བཙུགས་ནས་དགེ་ལྡན་འཕེལ་རྒྱས་གླིང་དུ་སྩལ། ངོ་བོ་སྔགས་གྲྭ།\tགྲྭ་རྒྱུན་གཞན་ལ་འགྲོ་སྲོལ་མེད།\tགྲྭ་གྲངས་༧༠་སྐོར་ཡོད།\tཕྱི་ལོ་༡༧༡༤ཤིང་རྟ་ལོར་རྒྱལ་བ་ཚངས་དབྱངས་རྒྱ་མཚོ་བྱོན་ནས་ཞབས་རྗེས་ཀྱང་ཡོད་སྐད།"@bo .
+}

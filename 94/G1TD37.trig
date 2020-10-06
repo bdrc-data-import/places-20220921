@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1TD37 {
+    bda:G1TD37  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1TD37 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "94/G1TD37.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1TD37 ;
+        adm:logEntry        bda:LG06AD1718EA52C736 , bda:LG469687D2A1FEB1A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG06AD1718EA52C736
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-16T17:26:50.627Z"^^xsd:dateTime ;
+        adm:logMessage      "no changes"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bda:LG469687D2A1FEB1A4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-04-11T19:33:57.995Z"^^xsd:dateTime ;
+        adm:logMessage      "created entry"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bdr:EV9F2CF5C3ADF99405
+        a                   :PlaceFounded ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear .
+    
+    bdr:G1TD37  a           :Place ;
+        skos:prefLabel      "nub padmo'i sde dgon/"@bo-x-ewts , "Nub Padmo De"@en ;
+        :isRoot             true ;
+        :note               bdr:NTEC48198B88F1CE2A ;
+        :placeEvent         bdr:EV9F2CF5C3ADF99405 ;
+        :placeLocatedIn     bdr:G586 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTEC48198B88F1CE2A
+        a                   :Note ;
+        :noteText           "Nub Padmo De was one of four monasteries that Sakya Paṇḍita Kunga Gyeltsen (sa skya paN+Di ta kun dga' rgyal mtshan, 1182-1251) and Pakpa Lodro Gyeltsen ('phags pa blo gros rgyal mtshan, 1235-1280) established in the Drakkar region outside of Liangzhou in the thirteenth century. \n\nhttp://treasuryoflives.org/biographies/view/Chankya-Rolpai-Dorje/3141"@en .
+}

@@ -1,0 +1,105 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G30 {
+    bda:G30  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G30 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "f5/G30.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G30 ;
+        adm:logEntry        bda:LG6D27A11B55860035 , bda:LGD3B98FB0ECE0AF0E , bda:LGE31AB063DA84A5E6 , bda:LGE78D18F7F2679B04 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540102200:540101145" ;
+        adm:place_id_lex    "540102200:540101145" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6D27A11B55860035
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-26T13:26:13.621Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGD3B98FB0ECE0AF0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-28T16:42:44.587Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & place types"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE31AB063DA84A5E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-06T09:56:19.858Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected founding date & normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE78D18F7F2679B04
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV18CE079B14E790A6
+        a                   :PlaceFounded ;
+        :onYear             "1187"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G30  a              :Place ;
+        skos:altLabel       "gung thang chos sde/"@bo-x-ewts , "gung thang dgon/"@bo-x-ewts , "tshal gung thang gtsug lag khang /"@bo-x-ewts , "cai gongtang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tshal gung thang dgon/"@bo-x-ewts , "Tsal Gungtang Gon"@en , "蔡贡唐寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA4D3DCF1A95A230B ;
+        :isRoot             true ;
+        :note               bdr:NT1F58AE4AE4900460 , bdr:NT23F4FB093AC37EE5 , bdr:NT376425F0752AB8F0 , bdr:NT8A88343D9C8363AA ;
+        :placeEvent         bdr:EV18CE079B14E790A6 ;
+        :placeGonpaPerEcumen  "7.51" ;
+        :placeLat           "29.63984" ;
+        :placeLocatedIn     bdr:G1143 , bdr:G2800 ;
+        :placeLong          "91.22002" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA4D3DCF1A95A230B
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G30" .
+    
+    bdr:NT1F58AE4AE4900460
+        a                   :Note ;
+        :contentLocationStatement  "p. 2322" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1546. tshal gung thang gtsug lag khang la me skyon tshabs chen byung gnas 'jig"@en .
+    
+    bdr:NT23F4FB093AC37EE5
+        a                   :Note ;
+        :noteText           "founded by g.yu brag pa brtson 'grus grags pa"@en .
+    
+    bdr:NT376425F0752AB8F0
+        a                   :Note ;
+        :noteText           "ancient monastery of the tshal pa bka' brgyud tradition and the seat of the tshal pa myriarchy"@en .
+    
+    bdr:NT8A88343D9C8363AA
+        a                   :Note ;
+        :contentLocationStatement  "p. 325" ;
+        :noteSource         bdr:MW21015 ;
+        :noteText           "1546. tshal gung thang was destroyed by fire"@en .
+}

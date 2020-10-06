@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3460 {
+    bda:G3460  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3460 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "85/G3460.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3460 ;
+        adm:logEntry        bda:LG27CDE5E90A023A16 , bda:LGEFDFE7B3766414C6 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540126202:540126108" ;
+        adm:place_id_lex    "540126202:540126108" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG27CDE5E90A023A16
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-28T09:57:41.588Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEFDFE7B3766414C6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2EDCE807DE235D9D
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P429 ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:EV39AA4220934D263A
+        a                   :PlaceFounded ;
+        :onYear             "1150"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionDrigungKagyu .
+    
+    bdr:G3460  a            :Place ;
+        skos:altLabel       "phag mo dgon/"@bo-x-ewts , "pamu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lo mda' phag mo dgon/"@bo-x-ewts , "Pakmo"@en-x-mixed , "帕姆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID737A26F5DE73F212 ;
+        :isRoot             true ;
+        :note               bdr:NT9E81BAD3280279F7 , bdr:NTFBB4B2298D94C617 ;
+        :placeEvent         bdr:EV2EDCE807DE235D9D , bdr:EV39AA4220934D263A ;
+        :placeGonpaPerEcumen  "21.44" ;
+        :placeLat           "29.84572" ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3042 ;
+        :placeLong          "91.57536" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID737A26F5DE73F212
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3460" .
+    
+    bdr:NT9E81BAD3280279F7
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 245-246" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTFBB4B2298D94C617
+        a                   :Note ;
+        :contentLocationStatement  "p. 123" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "gelug monastery founded in the 15th century by the 1st lo sems dpa' blo gros rgyal mtshan.\nhad the pagronage of the phag mo rdzong dpon bsod nams rgyal po who invited gnyal chen shes rab rgyal mtshan to be lama.\n118 monks at the time of the 5th dalai lama according to the bai ser.\nat present, after restoration, has 25 monks."@en .
+}

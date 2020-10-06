@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX410804000 {
+    bda:G9GBX410804000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX410804000 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "47/G9GBX410804000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX410804000 ;
+        adm:logEntry        bda:LG95019924908F644F , bda:LGIME5430EC046 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG95019924908F644F
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME5430EC046
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-27T19:58:07.021Z"^^xsd:dateTime ;
+        adm:logMessage      "updating geometry for modern county"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX410804000
+        a                   :Place ;
+        skos:altLabel       "ma cun qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Macun District"@en , "马村区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX410804001 , bdr:G9GBX410804002 , bdr:G9GBX410804003 , bdr:G9GBX410804004 , bdr:G9GBX410804005 , bdr:G9GBX410804006 , bdr:G9GBX410804007 ;
+        :placeGB2260-2013   "410804000" ;
+        :placeLat           "35.2690718" ;
+        :placeLocatedIn     bdr:G9GBX410800000 ;
+        :placeLong          "113.3187175" ;
+        :placeRegionPoly    "{\"type\":\"Feature\",\"geometry\": { \"type\": \"Polygon\", \"coordinates\": [ [ [ 113.349678039781409, 35.326496123693694 ], [ 113.355026245026878, 35.334922791110003 ], [ 113.359832764251124, 35.339942931855184 ], [ 113.371360778550653, 35.349746704107268 ], [ 113.374198913824898, 35.35637283287538 ], [ 113.378417968500557, 35.359561919932744 ], [ 113.386543274600768, 35.359073639216952 ], [ 113.393516541528854, 35.355159760321072 ], [ 113.402763367176775, 35.351005554318533 ], [ 113.416191100513203, 35.348438263176838 ], [ 113.428237914863871, 35.348846435920912 ], [ 113.436363219648626, 35.347213745164353 ], [ 113.439163207698968, 35.346286773753725 ], [ 113.44445800753013, 35.34352111832559 ], [ 113.446388244854873, 35.337333678605702 ], [ 113.443260192497604, 35.329563141322822 ], [ 113.438430785675408, 35.31951141397137 ], [ 113.433616637710315, 35.311061859437444 ], [ 113.42459106394098, 35.299194336285275 ], [ 113.415603638226145, 35.293735504084587 ], [ 113.412483214717639, 35.287567139058581 ], [ 113.412170410242382, 35.28092956486072 ], [ 113.402328490712449, 35.274333953625266 ], [ 113.381263732895931, 35.260673522733136 ], [ 113.356781006031866, 35.23466491661798 ], [ 113.345268250182784, 35.226921081555908 ], [ 113.333503723349835, 35.222152710372441 ], [ 113.31191253760791, 35.216949463234528 ], [ 113.308029175263272, 35.226379394614597 ], [ 113.302154540462539, 35.265144347965922 ], [ 113.307441710605616, 35.301563262662675 ], [ 113.33035278347927, 35.308612822672195 ], [ 113.349678039781409, 35.326496123693694 ] ] ] } }" ;
+        :placeType          bdr:PT0011 ;
+        :placeWB2000        "66157" ;
+        :placeWB2010        "90489" ;
+        :placeWBArea        "111.402666" .
+}

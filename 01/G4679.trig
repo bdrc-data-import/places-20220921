@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4679 {
+    bda:G4679  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4679 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "01/G4679.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4679 ;
+        adm:logEntry        bda:LG0D7B35F9CDD05FA1 , bda:LG4384FFE4CF5FC0DB , bda:LG44EE619597AB8B99 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D7B35F9CDD05FA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-25T12:08:25.094Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4384FFE4CF5FC0DB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG44EE619597AB8B99
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-25T12:12:47.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4679  a            :Place ;
+        skos:altLabel       "reb gong bon brgya/"@bo-x-ewts ;
+        skos:prefLabel      "bon brgya/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB3644AED5F6C910C ;
+        :placeLocatedIn     bdr:G2369 ;
+        :placeType          bdr:PT0020 .
+    
+    bdr:NTB3644AED5F6C910C
+        a                   :Note ;
+        :noteText           "name of an area within the reb gong area of a mdo"@en .
+}

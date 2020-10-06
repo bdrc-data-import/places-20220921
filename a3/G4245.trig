@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4245 {
+    bda:G4245  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4245 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a3/G4245.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4245 ;
+        adm:logEntry        bda:LG4A0E3953FEBD4740 , bda:LG65A5D5E3B8602B80 , bda:LG7A639DF04B02ECC7 , bda:LGC5102C426D6B54BE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4A0E3953FEBD4740
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG65A5D5E3B8602B80
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-21T12:49:42.835Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type as \"grwa tshang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7A639DF04B02ECC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC5102C426D6B54BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-26T14:41:03.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV97A24027C1055136
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P719 ;
+        :onYear             "1609"^^xsd:gYear .
+    
+    bdr:G4245  a            :Place ;
+        skos:prefLabel      "bkra shis lhun po rgyud pa grwa tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV97A24027C1055136 ;
+        :placeLocatedIn     bdr:G104 ;
+        :placeType          bdr:PT0040 .
+}

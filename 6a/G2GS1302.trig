@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1302 {
+    bda:G2GS1302  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1302 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "6a/G2GS1302.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1302 ;
+        adm:logEntry        bda:LG5D2AE3E733465F32 , bda:LGAB2AE3EEDBA34985 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542127208:96" ;
+        adm:place_id_lex    "542127208:96" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5D2AE3E733465F32
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-09-21T13:58:24.542Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAB2AE3EEDBA34985
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T08:57:33.729Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5A9BABE98948F698
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2GS1302  a         :Place ;
+        skos:altLabel       "eqiong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'o chung dgon/"@bo-x-ewts , "俄琼寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID43D2EB33B1B66B3C ;
+        :isRoot             true ;
+        :note               bdr:NT47B43656AA00AEF7 ;
+        :placeEvent         bdr:EV5A9BABE98948F698 ;
+        :placeGonpaPerEcumen  "3.32" ;
+        :placeLat           "30.36667" ;
+        :placeLocatedIn     bdr:G2181 ;
+        :placeLong          "96.56667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID43D2EB33B1B66B3C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2GS1302" .
+    
+    bdr:NT47B43656AA00AEF7
+        a                   :Note ;
+        :contentLocationStatement  "p. 205" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "a small dge lugs monastery located in dpa' shod rdzong; this is a dgon lag of the dpa' shod bla brang. in 1698 (sa stag) had together with sam dbra dgon a complement of 60 monks."@en .
+}

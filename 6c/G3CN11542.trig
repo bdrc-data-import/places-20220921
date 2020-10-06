@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN11542 {
+    bda:G3CN11542  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN11542 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "6c/G3CN11542.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN11542 ;
+        adm:logEntry        bda:LG32E287FE783EC7E0 , bda:LG40F7B48A490AE0E4 , bda:LGB0FA8C6F896DAAFC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG32E287FE783EC7E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-10-20T16:34:32.04Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG40F7B48A490AE0E4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-20T16:04:44.465Z"^^xsd:dateTime ;
+        adm:logMessage      "cretaed"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB0FA8C6F896DAAFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-11-07T12:51:48.863Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV3F772409642C012A
+        a                   :PlaceFounded ;
+        :notAfter           "1570"^^xsd:gYear ;
+        :notBefore          "1560"^^xsd:gYear .
+    
+    bdr:G3CN11542  a        :Place ;
+        skos:altLabel       "gad ser sgrub sde/"@bo-x-ewts ;
+        skos:prefLabel      "gad ser dgon pa/"@bo-x-ewts , "Gayser Monastery"@en , "凯塞寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT3547B5B28E4BC87C , bdr:NTAC4A564A94B16902 , bdr:NTB988DEF2A7056B55 , bdr:NTF934A8AAAB02B292 ;
+        :placeEvent         bdr:EV3F772409642C012A ;
+        :placeLat           "28.90200" ;
+        :placeLocatedIn     bdr:G2175 , bdr:G971 ;
+        :placeLong          "89.53000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT3547B5B28E4BC87C
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p." ;
+        :noteSource         bdr:MW10736 ;
+        :noteText           "\"ཁྱད་པར་ར་ལུང་ནས་ངེད་གད་སེར་དུ་སྡོད་ཐོག །གཏུག་ཡར་ཅི་ཡང་གནང་འདུག་ཀྱང་། ཞི་འཇགས་རང་དགའ་ཞུས།\" ཞེས་པ་ལས་སྐབས་རེ་ཀུན་མཁྱེན་ཉིད་གད་སེར་གྱི་གནས་དེར་མཉེས་པོ་གནང་ནས་རྒྱུན་བཞུགས་མཛད་ཀྱི་ཡོད་པ་ཟུར་བསྟན་ལེབ་མཐོང་དུ་མཇལ།"@bo .
+    
+    bdr:NTAC4A564A94B16902
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 512" ;
+        :noteSource         bdr:MW10736 ;
+        :noteText           "\"གཞན་ཙཱ་རི། སྤོས་སྐྱ། རྒྱལ་བྱེད་ཚལ། གད་སེར་སོགས་སྒྲུབ་གྲྭར་ལོ་གསུམ་མ་བཏང་། གྲོལ་བ་ངང་ངེས་མེད་ཀྱི་རི་ཁྲོད་རྐྱང་ལ་བཀྱེ།\"ཞེས་གསལ་བ་ལས། སྐབས་དེའི་འབྲུག་པ་བཀའ་བརྒྱུད་པའི་སྒྲུབ་གྲྭ་གལ་ཆེན་དུ་གྱུར་ཡོད་པ་ནི་རྒྱལ་བྱེད་ཚལ་་༼ཐེག་མཆོག་གླིང་།༽སོགས་དང་མཉམ་པར་བགྲངས་པ་ལས་ཀྱང་དཔགས་ནུས།"@bo .
+    
+    bdr:NTB988DEF2A7056B55
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 510" ;
+        :noteSource         bdr:MW10736 ;
+        :noteText           "ཀུན་མཁྱེན་པད་དཀར་གྱི་རང་རྣམ་ལས། \"དགུན་རྩེ་ཆེན་དུ་བཏེག །གཙང་ཁང་བ་རྣམ་རྒྱལ་མགོན་པོས་དོ་དམ་བྱས། དཔོན་དྲུང་གིས་གད་སེར་ཕུལ། སྒྲུབ་སྡེ་བཙུགས། ས་དེ་རྩུབ་པར་གྲགས་ཀྱང་མཁར་ལན་སོགས་ལ་གནོད་པ་མ་བྱུང་།\" ཞེས་གསལ་བ་ལས་དེ་དུས་གཙང་ཁང་བ་རྣམ་རྒྱལ་མགོན་པོའམ། དཔོན་དྲུང་མགོན་པོ་རབ་བརྟན་གྱིས་གད་སེར་གྱི་ས་ཆ་དེ་ཕུལ་ཞིང་། ཀུན་མཁྱེན་པད་མ་དཀར་པོས་གད་སེར་སྒྲུབ་སྡེ་ཞེས་པ་དངོས་སུ་ཕྱག་བཏབ་པ་ཤེས་ལ་། གནས་དེ་ནི་ས་རྩུབ་པར་གྲགས་པ་བཙན་པོའི་དུར་ལྷ་སོགས་ལྷ་གཉན་ཆེན་པོས་སྲུང་བའི་གནས་རྙིང་ཡིན་པའང་རྒྱུ་ཆ་གཞན་ལས་འཕྲོས་པའི་གཏམ་མང་ལ་མཚར་བར་ཡོད་དོ།།"@bo .
+    
+    bdr:NTF934A8AAAB02B292
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p." ;
+        :noteSource         bdr:MW10736 ;
+        :noteText           "\"གད་སེར་གྱི་སྒྲུབ་སྡེར་ཕྱིན། དགེ་འདུན་དྲུག་བརྒྱ་ཐལ་བ་ལ། དཔོན་ས་ཚོང་འདུས་ནས་གཙོ་བོ་མཛད། གཙང་གད་པ་སོགས་ཀྱིས་ཟླ་བ་གསུམ་གྱི་རིང་ཞབས་ཏོག་ལེགས་ལ་ཆོས་སྨར་བའི་ཚད་དུ་བྱུང་།\" ཞེས་གསལ་བ་ལས་ནི་གད་སེར་སྒྲུབ་སྡེ་དེ་ཡང་ཀུན་མཁྱེན་པད་དཀར་གྱི་སྐུ་ཚེ་དེ་རིང་ཁོ་ནར་ཡར་རྒྱས་ལེགས་པར་ཕྱིན་ནས་དགེ་འདུན་པ་དྲུག་བརྒྱ་འདུ་བའི་དགོན་ཆེན་དུ་གྱུར་ཡོད་པའང་། སྦྱིན་བདག་གཙོ་བོ་ལུང་ཆུང་གི་ཡུལ་མི་ཙམ་མིན་པར་ཚོང་འདུས་མགུར་མོ་དང་གཙང་གད་སོགས་ཡུལ་ལུང་གང་ས་ནས་ཡོད་པ་ཤེས་ཅིང་། མཐུན་རྐྱེན་འཛོམས་དུས་དམ་ཆོས་ཟབ་དགུའི་བཤད་སྒྲུབ་ཤིན་ཏུ་དར་མྱོང་བ་གསལ་བར་བསྟནད་ཏོ།།"@bo .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2297 {
+    bda:G2297  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2297 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "bc/G2297.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2297 ;
+        adm:logEntry        bda:LG9A82CCD9B05D7D61 , bda:LGCB46F3ACF8CD4B32 , bda:LGE06DCC2EFABCF855 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9A82CCD9B05D7D61
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-05T11:56:19.524Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCB46F3ACF8CD4B32
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-14T14:40:07.373Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE06DCC2EFABCF855
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2297  a            :Place ;
+        skos:prefLabel      "grib khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA7B607CF070CFE4D ;
+        :placeContains      bdr:G3449 ;
+        :placeLocatedIn     bdr:G1344 ;
+        :placeType          bdr:PT0079 .
+    
+    bdr:NTA7B607CF070CFE4D
+        a                   :Note ;
+        :noteText           "area in the vicinity of lhasa in the tar"@en .
+}

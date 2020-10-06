@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1TD13 {
+    bda:G1TD13  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1TD13 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ba/G1TD13.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1TD13 ;
+        adm:logEntry        bda:LG02B68B3527F94DCB , bda:LGCD430F0DC7FC15EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02B68B3527F94DCB
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-03-07T14:55:12.055Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bda:LGCD430F0DC7FC15EC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-22T18:47:23.215Z"^^xsd:dateTime ;
+        adm:logMessage      "created new record"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bdr:EV2808A01077D2F7E0
+        a                   :PlaceFounded ;
+        :onYear             "1121"^^xsd:gYear .
+    
+    bdr:EVCD18BE7DADE9152D
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P39 ;
+        :onYear             "1121"^^xsd:gYear .
+    
+    bdr:G1TD13  a           :Place ;
+        skos:prefLabel      "'chad dkar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8187D2F7763D9D3D ;
+        :placeEvent         bdr:EV2808A01077D2F7E0 , bdr:EVCD18BE7DADE9152D ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8187D2F7763D9D3D
+        a                   :Note ;
+        :noteText           "duplicate of G2CN11085\n\nAlexander Gardner in Treasury of Lives\n<http://treasuryoflives.org/biographies/view/Khyungpo-Naljor/6285> notes that Khyungpo Neljor founded Chakar in the Penyul ('phen yul) in the Shang valley in 1121"@en .
+}

@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1688 {
+    bda:G1688  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1688 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f8/G1688.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1688 ;
+        adm:logEntry        bda:LG3B6D39B048D8EDEF , bda:LG6481EA83905C42A8 , bda:LG77A7E743B298B2DC , bda:LGB300AF719943F559 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G2CN10950 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG3B6D39B048D8EDEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-10T13:59:54.703Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6481EA83905C42A8
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-06-24T13:06:29.53Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G2cn10950"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG77A7E743B298B2DC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB300AF719943F559
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-06T16:42:50.073Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1688  a            :Place ;
+        skos:altLabel       "sde dge rtags 'phel dgon/"@bo-x-ewts ;
+        skos:prefLabel      "rtags 'phel dgon/"@bo-x-ewts , "Derge Takpel Gon"@en ;
+        :isRoot             true ;
+        :note               bdr:NT9C38918AAC36F1A8 , bdr:NTF53CEF8CFCABBE69 ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT9C38918AAC36F1A8
+        a                   :Note ;
+        :contentLocationStatement  "p. 146" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bka' brgyud monastery founded in 1747 (rab byung 13 me yos) by a nephew (dbon po) of tsha tsha chos 'dzin rgyal po, blo gros rgya mtsho. the monastery was named rtags 'phel bsam gtan chos 'khor gling; the statement that it was founded by one sku skye blo sprul mchog needs to be invstigated. formerly there were more than 50 monks; at present there are about 20."@en .
+    
+    bdr:NTF53CEF8CFCABBE69
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 603" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "karma bka' brgyud monastery\nfounded in 1747 by blo gros rgya mtsho, the dbon of tshar tshar chos 'dzin rgyal po\nteaching and practice establishment\nhad about 50 monks\nrestored through the efforts of bla bskos bsod nams dbang rgyal with the help of patrons from pe cin, kong tung, hrin kreng and the man ju wun phu'u yin and wu phu'i cheng"@en .
+}

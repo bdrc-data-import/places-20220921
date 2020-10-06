@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2349 {
+    bda:G2349  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2349 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e8/G2349.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2349 ;
+        adm:logEntry        bda:LG677C4C8133EFB8C9 , bda:LG8EFA5B4BCB029534 , bda:LGA65DC4CDE50F1A13 , bda:LGIM454E022964 , bda:LGIMAF5F209484 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG677C4C8133EFB8C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:35:38.893Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8EFA5B4BCB029534
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T11:40:37.336Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGA65DC4CDE50F1A13
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM454E022964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T17:05:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:gzimsKhang to khamsTshan"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMAF5F209484
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:21:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from residentialHouse to gzimsKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2349  a            :Place ;
+        skos:prefLabel      "har gdong khams tshan (se ra byes)"@bo-x-ewts , "Seraje Hardong Khamtsen"@en ;
+        :isRoot             true ;
+        :note               bdr:NTEF30507DBC89CB87 ;
+        :placeContains      bdr:G2CN10863 ;
+        :placeLocatedIn     bdr:G155 ;
+        :placeType          bdr:PT0039 .
+    
+    bdr:NTEF30507DBC89CB87
+        a                   :Note ;
+        :contentLocationStatement  "p. 117" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "one of the 17 residential houses of se ra byes college of se ra monastery"@en .
+}

@@ -1,0 +1,35 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN409 {
+    bda:G3CN409  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN409 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "ea/G3CN409.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN409 ;
+        adm:logEntry        bda:LG4A23C4952F07A87D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4A23C4952F07A87D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-01T16:34:58.7Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN409  a          :Place ;
+        skos:prefLabel      "lho bal/"@bo-x-ewts ;
+        :isRoot             true .
+}

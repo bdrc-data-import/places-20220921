@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4378 {
+    bda:G4378  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4378 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "16/G4378.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4378 ;
+        adm:logEntry        bda:LG691866DD871393C4 , bda:LG75B29B4C5C86C301 , bda:LG7A0AAF50E63D1284 , bda:LG85805D431F5A25E5 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG691866DD871393C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-30T10:50:27.466Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG75B29B4C5C86C301
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-04T15:56:28.729Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7A0AAF50E63D1284
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG85805D431F5A25E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-16T11:08:04.466Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV314EC6162409FF48
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G4378  a            :Place ;
+        skos:altLabel       "nag chu ljongs nag sdom mthil dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "sdom mthil dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2158593FCBB104C8 ;
+        :placeEvent         bdr:EV314EC6162409FF48 ;
+        :placeLocatedIn     bdr:G2143 , bdr:G3633 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT2158593FCBB104C8
+        a                   :Note ;
+        :contentLocationStatement  "p. 552" ;
+        :noteSource         bdr:MW20850 ;
+        :noteText           "dgon lag of mtshur phu monastery:\nnag chu ljongs nag sdom mthil dgon pa"@en .
+}

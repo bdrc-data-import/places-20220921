@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR78 {
+    bda:G1KR78  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR78 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "21/G1KR78.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR78 ;
+        adm:logEntry        bda:LG502F5DA528831270 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513229200:27" ;
+        adm:place_id_lex    "513229200:27" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG502F5DA528831270
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-08T12:33:25.018Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVC47B92BDEFE4A92C
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1KR78  a           :Place ;
+        skos:altLabel       "o rgyan 'phel rgyas gling /"@bo-x-ewts , "sa'i so o rgyan 'phel rgyas gling /"@bo-x-ewts , "卓克基镇西索寺院"@zh-hans , "xisuo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sa'i so dgon/"@bo-x-ewts , "西索寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0C8AECAFDB04742D ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVC47B92BDEFE4A92C ;
+        :placeGonpaPerEcumen  "6.25" ;
+        :placeLat           "31.86885" ;
+        :placeLocatedIn     bdr:G2330 ;
+        :placeLong          "102.28785" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID0C8AECAFDB04742D
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR78" .
+}

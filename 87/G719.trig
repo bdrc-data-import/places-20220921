@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G719 {
+    bda:G719  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G719 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "87/G719.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G719 ;
+        adm:logEntry        bda:LG35C285061CD7C3CD , bda:LGB97FE4EBCAE0C4D7 , bda:LGD663E06D8AF22037 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG35C285061CD7C3CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-19T12:35:36.058Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB97FE4EBCAE0C4D7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD663E06D8AF22037
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-16T15:28:42.982Z"^^xsd:dateTime ;
+        adm:logMessage      "changed typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G719  a             :Place ;
+        skos:altLabel       "'bri gung gzho stod/"@bo-x-ewts ;
+        skos:prefLabel      "gzhu stod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1EA1A713FA9E8CB1 ;
+        :placeLocatedIn     bdr:G3CN16 ;
+        :placeType          bdr:PT0082 .
+    
+    bdr:NT1EA1A713FA9E8CB1
+        a                   :Note ;
+        :contentLocationStatement  "p. 56" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "location of the gter sgrom from which the gter ma of rin chen phun tshogs were removed"@en .
+}

@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN502 {
+    bda:G3CN502  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN502 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e0/G3CN502.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN502 ;
+        adm:logEntry        bda:LG4E2BC45386D526AE , bda:LG837992223C796D96 , bda:LGA4649EDCC710B241 , bda:LGE31D222116778565 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4E2BC45386D526AE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-23T14:35:06.468Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG837992223C796D96
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-12T09:43:13.849Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA4649EDCC710B241
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-29T09:56:52.014Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE31D222116778565
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-10T16:30:16.592Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV073665FDF66FD368
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0700"^^xsd:gYear .
+    
+    bdr:G3CN502  a          :Place ;
+        skos:altLabel       "mong kar (pho brang)"@bo-x-ewts ;
+        skos:prefLabel      "mong kar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT10C47562B60F79E7 , bdr:NTFE75EF3CE6E56D0E ;
+        :placeEvent         bdr:EV073665FDF66FD368 ;
+        :placeLocatedIn     bdr:G3CN580 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NT10C47562B60F79E7
+        a                   :Note ;
+        :contentLocationStatement  "p. 341" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"བྱི་བའི་ལོ་ ༧༠༠ ལ་བབ་སྟེ། བཙན་པོ་དབྱརད་མོང་ཀར་ནས་ཆབ་སྲིད་ལ་ཤ་གུ་ཉིང་སུམ་ཁོལ་དུ་གཤེགས་ཤིང་།\" ཞེས་གསལ།"@bo .
+    
+    bdr:NTFE75EF3CE6E56D0E
+        a                   :Note ;
+        :noteText           "རུ་ལག་གི་སྟོང་སྡེ་བཅུ་ཡི་ནང་ཚན་མང་ཀར་(G3CN71)ཡིན་པར་དྭོགས་པ་དཔྱད་རྒྱུ།"@en .
+}

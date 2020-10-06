@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11043 {
+    bda:G2CN11043  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11043 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "29/G2CN11043.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11043 ;
+        adm:logEntry        bda:LG62D863B73AE38660 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG62D863B73AE38660
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-26T15:20:48.508Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2CN11043  a        :Place ;
+        skos:prefLabel      "rgya 'bum sgang zhi khro'i lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8549BE5D3B442F12 ;
+        :placeLocatedIn     bdr:G10 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NT8549BE5D3B442F12
+        a                   :Note ;
+        :contentLocationStatement  "p. 123" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "rnying ma pa temple at lhasa"@en .
+}

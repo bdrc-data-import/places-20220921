@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4358 {
+    bda:G4358  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4358 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "41/G4358.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4358 ;
+        adm:logEntry        bda:LG2EFC3EBA2803AA54 , bda:LGA9C74EC7D8DF1932 , bda:LGAAF69BA1F857A2CF , bda:LGB3F7FEA4A8450753 , bda:LGD22855FD2B4FF71F , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2EFC3EBA2803AA54
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-11T12:29:44.802Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA9C74EC7D8DF1932
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAAF69BA1F857A2CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-25T12:12:22.344Z"^^xsd:dateTime ;
+        adm:logMessage      "moved contains 3 G#s for temporary needs"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB3F7FEA4A8450753
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-26T08:43:24.039Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD22855FD2B4FF71F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-11T12:24:12.667Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, location, contains & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4358  a            :Place ;
+        skos:altLabel       "byang sa rgyab stong /"@bo-x-ewts , "dwang ra khyung rdzong /"@bo-x-ewts , "dwangs ra khyung rdzong /"@bo-x-ewts , "nag tshang tsho brgyad/"@bo-x-ewts , "nag tshang tsho drug"@bo-x-ewts ;
+        skos:prefLabel      "nag tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0B3582C5A1B3D416 , bdr:NT69D0FD0EB2214A80 ;
+        :placeIsNear        bdr:G2142 , bdr:G2377 , bdr:G2390 ;
+        :placeLocatedIn     bdr:G3189 ;
+        :placeType          bdr:PT0068 .
+    
+    bdr:NT0B3582C5A1B3D416
+        a                   :Note ;
+        :contentLocationStatement  "v. 8(17)(1994), pp. 291-292" ;
+        :noteSource         bdr:MW19813 ;
+        :noteText           "contains reminiscences about the period 1949-1950"@en .
+    
+    bdr:NT69D0FD0EB2214A80
+        a                   :Note ;
+        :contentLocationStatement  "V. 3, P. 461-478" ;
+        :noteSource         bdr:MW1PD96945 ;
+        :noteText           "ནག་ཚང་ཚོ་དྲུག་དང་འབྲེལ་བའི་ལོ་རྒྱུས་ལས། \"བྱང་ས་རྒྱབ་སྟོང་\"ཞེས་ཟེར་བའི་བྱང་ཐང་གི་ཆ་ཤས་དེ་ནི་ \"དེང་རབས་ལ་མཚོན་ན་མཚོ་གཉིས་དོན་གཅོད་ཁྲུའུ་（༢༠༡༢་ནས་བཟུང་མཚོ་གཉིས་རྫོང་བཙུགས་ཟིན།）དང་། འོམ་བུ་དོན་གཅོད་ཁྲུའུ། སྦ་ཚ་ཆུས་ཕུད་ཤན་རྩ་རྫོང་ཡོངས་རྫོགས་ཡིན་པ་\"དང་། གནའ་དུས་ནི་《སྐྱབས་སྟོན་ཁྲི་འབྲེལ་》ལས། ཧ་ལམ་ཞང་ཞུང་གི་ཁོངས་ཡིན་པ་ཏེ་ནག་ཚང་ལ་དྭང་ར་ཁྱུང་རྫོང་ཞེས་འབོད་པ་དང་། དེ་རྗེས་དགའ་ལྡན་ཚེ་དབང་གིས་༡༦༨༡ལོ་ནས་བཟུང་མངའ་རིས་སྐོར་གསུམ་དང་ཆབས་གཅིག་བོད་སྡེ་པ་གཞུང་གི་མངའ་ཞབས་སུ་བསྡུས་ནས་ཐད་སྐྱོངས་བྱས་པར་གསལ།"@bo .
+}

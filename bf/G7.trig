@@ -1,0 +1,113 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G7 {
+    bda:G7  a               adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G7 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "bf/G7.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G7 ;
+        adm:logEntry        bda:LG046816CFEB09B820 , bda:LG1DF9B577187E733A , bda:LG64534329AC51AB69 , bda:LGAABCD916095505BB , bda:LGBAFE8A8E3992D536 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542227100:542227101" ;
+        adm:place_id_lex    "542227100:542227101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG046816CFEB09B820
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-07T12:13:21.775Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & linked with sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1DF9B577187E733A
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-07T16:38:16.173Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG64534329AC51AB69
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:32:42.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAABCD916095505BB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBAFE8A8E3992D536
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-02T11:02:27.342Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1A97C32F167345BF
+        a                   :PlaceFounded ;
+        :onYear             "1150"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G7  a               :Place ;
+        skos:altLabel       "lho brag shar smra bo lcog"@bo-x-ewts , "smra'o cog"@bo-x-ewts , "smra 'o lcog"@bo-x-ewts , "smra bo cog"@bo-x-ewts , "mowujue si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "smra bo lcog"@bo-x-ewts , "Mawochok"@en-x-mixed , "莫吾觉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7A88D95FE117D862 ;
+        :isRoot             true ;
+        :note               bdr:NT02C6363223845601 , bdr:NT129446B804E52917 , bdr:NT81B4D0E6EEA6A0D2 , bdr:NTEAFAA43255993359 ;
+        :placeEvent         bdr:EV1A97C32F167345BF ;
+        :placeGonpaPerEcumen  "2.42" ;
+        :placeLat           "28.43163" ;
+        :placeLocatedIn     bdr:G2132 ;
+        :placeLong          "91.47381" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID7A88D95FE117D862
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G7" .
+    
+    bdr:NT02C6363223845601
+        a                   :Note ;
+        :noteText           "the residence of nyang ral nyi ma 'od zer in mtsho smad, lho brag, and the seat of the nyang lineage."@en .
+    
+    bdr:NT129446B804E52917
+        a                   :Note ;
+        :contentLocationStatement  "pp. 261-268" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "description"@en .
+    
+    bdr:NT81B4D0E6EEA6A0D2
+        a                   :Note ;
+        :contentLocationStatement  "p. 210" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "rnying ma pa monastery of the mnga' bdag pa lineage in lho brag\nthis source transcribes in full the lho smra 'o lcog gi gnas yig mthong gsal me long"@en .
+    
+    bdr:NTEAFAA43255993359
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 119-121" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

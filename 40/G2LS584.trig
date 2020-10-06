@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS584 {
+    bda:G2LS584  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS584 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "40/G2LS584.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS584 ;
+        adm:logEntry        bda:LG374BDB6D92B0B703 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522203:19" ;
+        adm:place_id_lex    "542522203:19" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG374BDB6D92B0B703
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:55:43.268Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVBA9638C35265FD0F
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVE3099A7F4AEFB9A5
+        a                   :PlaceFounded ;
+        :note               bdr:NTBE77B0FB83047CF9 ;
+        :onYear             "1350"^^xsd:gYear .
+    
+    bdr:G2LS584  a          :Place ;
+        skos:altLabel       "Chuser"@bo-x-phon-en , "Chuser"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "chu gser dgon/"@bo-x-ewts , "曲色寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID970566D6AACA75CD ;
+        :isRoot             true ;
+        :note               bdr:NT12109859B32B735A ;
+        :placeEvent         bdr:EVBA9638C35265FD0F , bdr:EVE3099A7F4AEFB9A5 ;
+        :placeGonpaPerEcumen  "2.93" ;
+        :placeLat           "31.58000" ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeLong          "79.10000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID970566D6AACA75CD
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2LS584" .
+    
+    bdr:NT12109859B32B735A
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 84" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "founded during Lochen rinchen zangpo. One of the branch of Tholing monastery"@en .
+    
+    bdr:NTBE77B0FB83047CF9
+        a                   :Note ;
+        :noteText           "gsang sngags gsar ma/"@bo-x-ewts .
+}

@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4660 {
+    bda:G4660  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4660 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "f6/G4660.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4660 ;
+        adm:logEntry        bda:LG290B5FB899692019 , bda:LG346F37AC8A3218BB , bda:LG4BE0A4C33D6335C8 , bda:LG58A6F71CC8F2E372 , bda:LG6A681E855A0F7B75 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330215:125" ;
+        adm:place_id_lex    "513330215:125" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG290B5FB899692019
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-11T15:08:41.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added shar rdza ri khrod kyi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG346F37AC8A3218BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T16:44:19.402Z"^^xsd:dateTime ;
+        adm:logMessage      "added sge dge rdzong"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LG4BE0A4C33D6335C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-03T16:14:37.343Z"^^xsd:dateTime ;
+        adm:logMessage      "changed place type. ms"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LG58A6F71CC8F2E372
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-09T15:53:12.54Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6A681E855A0F7B75
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2ADD79A1CEB82BC5
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G4660  a            :Place ;
+        skos:altLabel       "gyer rdza ri khrod/"@bo-x-ewts , "shar rdza ri khrod/"@bo-x-ewts , "ji zha ri wa"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "shar rdza ri khrod/"@bo-x-ewts , "基扎作寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE24667250CD5B416 ;
+        :isRoot             true ;
+        :note               bdr:NT7A069C5EB27D6899 ;
+        :placeContains      bdr:G3JT12585 ;
+        :placeEvent         bdr:EV2ADD79A1CEB82BC5 ;
+        :placeGonpaPerEcumen  "20.75" ;
+        :placeLat           "32.00000" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "99.48333" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:IDE24667250CD5B416
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4660" .
+    
+    bdr:NT7A069C5EB27D6899
+        a                   :Note ;
+        :contentLocationStatement  "p. 158" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bon hermitage called gyer rdza ri khrod or shar rdza ri khrod; monastery was founded in 1893 in sde dge territories by shar rdza pa bkra shis rgyal mtshan when he was 34 years of age. shar rdza bkra shis rgyal mtshan according to this source passed away in 1935 in a rainbow body; the monastery formerly had from 200-300 monks. \nthe data base gives the birth and death years for shar rdza bkra shis rgyal mtshan as 1859-1935."@en .
+}

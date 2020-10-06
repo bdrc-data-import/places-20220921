@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1677 {
+    bda:G1677  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1677 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "15/G1677.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1677 ;
+        adm:logEntry        bda:LG8CDD13C0CEC93570 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330216:163" ;
+        adm:place_id_lex    "513330216:163" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8CDD13C0CEC93570
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV16B747C37A0BFE36
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1677  a            :Place ;
+        skos:altLabel       "ra skor dgon/"@bo-x-ewts , "sde dge ra skor dgon/"@bo-x-ewts , "ran gu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ra skor dgon/"@bo-x-ewts , "然姑寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID336D0C4266A9FE6E ;
+        :isRoot             true ;
+        :note               bdr:NT246BD9D3A61AD2B7 ;
+        :placeEvent         bdr:EV16B747C37A0BFE36 ;
+        :placeGonpaPerEcumen  "6.52" ;
+        :placeLat           "32.18333" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "99.45000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID336D0C4266A9FE6E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1677" .
+    
+    bdr:NT246BD9D3A61AD2B7
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 526" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma pa monastery"@en .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1632 {
+    bda:G1KR1632  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1632 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "9b/G1KR1632.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1632 ;
+        adm:logEntry        bda:LG6F396AB99360D678 , bda:LGB2D44974639BFC98 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542334101:542334106" ;
+        adm:place_id_lex    "542334101:542334106" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6F396AB99360D678
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-10T14:01:52.501Z"^^xsd:dateTime ;
+        adm:logMessage      "aranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB2D44974639BFC98
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-11T16:19:57.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV4EF98FB26AC536ED
+        a                   :PlaceFounded ;
+        :onYear             "1747"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1KR1632  a         :Place ;
+        skos:altLabel       "bka' brgyud dgon/"@bo-x-ewts , "亚东噶举寺"@zh-hans , "gaju si"@zh-latn-pinyin-x-ndia , "yadong gaju si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gro mo bka' brgyud dgon/"@bo-x-ewts , "Dromo Kagyu Gon"@en-x-mixed , "噶举寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID27E6973CE1A93F77 ;
+        :isRoot             true ;
+        :note               bdr:NTF09072ECA516F9A8 ;
+        :placeEvent         bdr:EV4EF98FB26AC536ED ;
+        :placeGonpaPerEcumen  "8.14" ;
+        :placeLat           "27.43333" ;
+        :placeLocatedIn     bdr:G2172 ;
+        :placeLong          "88.91666" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID27E6973CE1A93F77
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1632" .
+    
+    bdr:NTF09072ECA516F9A8
+        a                   :Note ;
+        :noteText           "date according to Yadong Xian Wenwuzhi (1993).  Probably temple where 14th DL sought refuge in 1950 when Chinese reached Lhasa."@en .
+}

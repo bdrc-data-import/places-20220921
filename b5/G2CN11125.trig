@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11125 {
+    bda:G2CN11125  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11125 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b5/G2CN11125.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11125 ;
+        adm:logEntry        bda:LG643268A0D3F338BF , bda:LG69BD35A1CBB2C2FC , bda:LG6B4E58C7AC0F2CEC , bda:LGA25C66DC86DBD419 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG643268A0D3F338BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-25T15:01:36.728Z"^^xsd:dateTime ;
+        adm:logMessage      "added G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG69BD35A1CBB2C2FC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-09-30T16:59:11.723Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6B4E58C7AC0F2CEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-10T12:11:38.897Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA25C66DC86DBD419
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-30T17:19:11.016Z"^^xsd:dateTime ;
+        adm:logMessage      "linked with founder"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV3E2800444126705A
+        a                   :PlaceFounded ;
+        :onYear             "1190"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EVB57E56A578066BEF
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2CN11126 ;
+        :onYear             "1190"^^xsd:gYear .
+    
+    bdr:G2CN11125  a        :Place ;
+        skos:altLabel       "dbang ldan zhu yi gdan sa/"@bo-x-ewts ;
+        skos:prefLabel      "dbang ldan lhun grub sgang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTBAE3015CA217F54E ;
+        :placeEvent         bdr:EV3E2800444126705A , bdr:EVB57E56A578066BEF ;
+        :placeIsNear        bdr:G3533 ;
+        :placeLocatedIn     bdr:G2121 , bdr:G2174 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTBAE3015CA217F54E
+        a                   :Note ;
+        :contentLocationStatement  "p. 26-27" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "ཞུ་ཡི་གདན་ས་གཙོ་བོ་ཡིན་ལ། ༡༡༩༠ལྷག་ཙམ་དུ་སངས་རྒྱས་ཞུ་ཆེན་གྱིས་གདན་ས་བཙུགས། སྔར་དར་རྒྱས་ཆེ་ཞིང་ཞུ་བླ་མ་ཁྲི་གདུང་རིམ་བྱོན་གྱི་བསྐྱངས་སྐོར་གསལ། དགོན་གནས་ཆགས་ཡུལ་པ་སྣམ་རྫོང་དབང་ལྡན་ཤང་ཁོངས་ཏེ། རྒྱལ་རྩེ་རྫོང་རི་ཞིང་ཤང་དང་ལ་ཕར་རྒྱབ་ཚུར་རྒྱབ་དུ་གནས། ཞིབ་ཆའི་ས་གནས་ནི་Googleས་ཁྲའི་གཞུང་ཐིག་89.09.22.93\"Eདང་། འཕྲེད་ཐིག་28.52.37.36''Nཡིན་ཏེ། དེ་སྐོར་མུ་མཐུད་དཔྱད་བྱའོ།"@bo .
+}

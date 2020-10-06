@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G396 {
+    bda:G396  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G396 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b5/G396.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G396 ;
+        adm:logEntry        bda:LG552D88E33E80F6E4 , bda:LGECD6F8262FD180C1 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG552D88E33E80F6E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-08T10:14:41.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGECD6F8262FD180C1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G396  a             :Place ;
+        skos:prefLabel      "shangs bkra shis chos sdings/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1E76A15D7F787817 ;
+        :placeLocatedIn     bdr:G2171 , bdr:G4684 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1E76A15D7F787817
+        a                   :Note ;
+        :noteText           "major dge lugs monastery in the shangs valley in the tibetan autonomous region"@en .
+}

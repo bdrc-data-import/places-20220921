@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1668 {
+    bda:G1668  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1668 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "84/G1668.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1668 ;
+        adm:logEntry        bda:LG2E05551C925358FE , bda:LG3940D3B08DE5341F , bda:LGF983AB4E5653871D , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330219:139" ;
+        adm:place_id_lex    "513330219:139" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2E05551C925358FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T09:05:08.822Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3940D3B08DE5341F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-07T09:36:32.247Z"^^xsd:dateTime ;
+        adm:logMessage      "added note from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF983AB4E5653871D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVD2B360C3000CC25C
+        a                   :PlaceFounded ;
+        :onYear             "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1668  a            :Place ;
+        skos:altLabel       "nya 'ge dgon/"@bo-x-ewts , "sde dge nyaH 'ge dgon/"@bo-x-ewts , "niangu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "nyaH 'ge dgon/"@bo-x-ewts , "年古寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCC793C3B1CA06FC8 ;
+        :isRoot             true ;
+        :note               bdr:NT142763B0FE073E88 , bdr:NT38F2CC8A34B9F922 ;
+        :placeEvent         bdr:EVD2B360C3000CC25C ;
+        :placeGonpaPerEcumen  "14" ;
+        :placeLat           "32.16667" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "99.35000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDCC793C3B1CA06FC8
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1668" .
+    
+    bdr:NT142763B0FE073E88
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 639-640" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs pa monastery\nདགོན་འདིའི་ལོ་རྒྱུས་མདོར་བསྡུས་གསལ།"@en .
+    
+    bdr:NT38F2CC8A34B9F922
+        a                   :Note ;
+        :contentLocationStatement  "p. 153" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "dge lugs monastery founded in 1662 by hor chos rje ngag dbang phun tshogs phyogs las rnam rgyal in the territory of;  gling ri nya tsha a brtan; formerly it had more than 150 monks and lamas; now has about 70 monks."@en .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4235 {
+    bda:G4235  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4235 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "53/G4235.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4235 ;
+        adm:logEntry        bda:LG095E0BF8E097AAA4 , bda:LG52168969D6D05ED1 , bda:LGA2A03F6328345F21 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG095E0BF8E097AAA4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-02T09:13:46.683Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG52168969D6D05ED1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA2A03F6328345F21
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-25T11:03:24.526Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVB48B9108ADE192CF
+        a                   :PlaceFounded ;
+        :onYear             "1579"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVF55C452E10F5DE8D
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P999 ;
+        :onYear             "1579"^^xsd:gYear .
+    
+    bdr:G4235  a            :Place ;
+        skos:altLabel       "chab cha theg chen chos 'khor gling /"@bo-x-ewts ;
+        skos:prefLabel      "chab tshab theg chen chos 'khor gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT940D3AD61BEF61B8 , bdr:NTE55A9B9A48532BDA ;
+        :placeEvent         bdr:EVB48B9108ADE192CF , bdr:EVF55C452E10F5DE8D ;
+        :placeLocatedIn     bdr:G1698 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT940D3AD61BEF61B8
+        a                   :Note ;
+        :contentLocationStatement  "p. 2326" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1579. tA la'i bla ma bsod nams rgya mtsho dang sog po al than rgyal po gnyis kyis chab tshab chen chos 'khor gling btab"@en .
+    
+    bdr:NTE55A9B9A48532BDA
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 87" ;
+        :noteSource         bdr:MW2CZ7990 ;
+        :noteText           "རྒྱལ་བ་བསོད་ནམས་རྒྱ་མཚོ་དང་སོག་པོ་ཨལ་ཐན་རྒྱལ་པོ་གཉིས་ཐོག་མར་ཨ་མདོ་ཆབ་ཆར་མཇལ་ཞིང་ཆབ་ཆ་ཐེག་ཆེན་ཆོས་འཁོར་གླིང་བཏབ་པ་སོགས་གསལ།"@bo .
+}

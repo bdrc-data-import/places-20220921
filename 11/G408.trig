@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G408 {
+    bda:G408  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G408 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "11/G408.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G408 ;
+        adm:logEntry        bda:LG4EF0C62B282B30E3 , bda:LGF55CB22D6B298D71 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG4EF0C62B282B30E3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF55CB22D6B298D71
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-08T10:23:13.728Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrwn in favor of G574"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G408  a             :Place ;
+        skos:altLabel       "shab smad sgom gnas dgon/"@bo-x-ewts ;
+        skos:prefLabel      "sgom gnas dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT34E0F6A078BA8263 , bdr:NT97603FFCB311B9A0 .
+    
+    bdr:NT34E0F6A078BA8263
+        a                   :Note ;
+        :noteText           "small rnying ma monastery located in the shab area of the tibetan autonomous region"@en .
+    
+    bdr:NT97603FFCB311B9A0
+        a                   :Note ;
+        :noteText           "withdrwn in favor of G574"@en .
+}

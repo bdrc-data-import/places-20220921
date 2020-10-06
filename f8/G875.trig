@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G875 {
+    bda:G875  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G875 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "f8/G875.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G875 ;
+        adm:logEntry        bda:LG02BD62FB00FF33DE , bda:LG0CFCC96C6373D375 , bda:LG20A679AE3C487DC6 , bda:LG9811A6FE98E086BC , bda:LGE1E20B6DD09DD565 , bda:LGE97F505AFFAF5015 , bda:LGED39C0B678FC372F , bda:LGF6B70774397D7272 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02BD62FB00FF33DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-05T16:12:09.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added note & type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0CFCC96C6373D375
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-10T09:59:06.478Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG20A679AE3C487DC6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-05T15:58:07.665Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9811A6FE98E086BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-10T09:47:27.313Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings& added name, place type and notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE1E20B6DD09DD565
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-05T11:27:07.655Z"^^xsd:dateTime ;
+        adm:logMessage      "added wylie name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE97F505AFFAF5015
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGED39C0B678FC372F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF6B70774397D7272
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-20T11:49:09.235Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G875  a             :Place ;
+        skos:altLabel       "la stod lho'i dpyad lung shar bong ra/"@bo-x-ewts , "la stod spyang lung shar kha'i bong ra/"@bo-x-ewts , "spyang lung shar kha'i bong ra/"@bo-x-ewts ;
+        skos:prefLabel      "dpyad lung shar bong ra/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT22BC106BB2A7329C , bdr:NTAF15950B13A1311F ;
+        :placeLocatedIn     bdr:G4794 ;
+        :placeType          bdr:PT0020 .
+    
+    bdr:NT22BC106BB2A7329C
+        a                   :Note ;
+        :contentLocationStatement  "1717" ;
+        :noteSource         bdr:MW19801 ;
+        :noteText           "འདིར་ལ་སྟོད་སྤྱང་ལུང་ཤར་ཁའི་བོང་ར་ལ་སྐུ་འཁྲུངས་ཞེས་འཁོད། དེས་ན་ས་མིང་འདིར་\"དཔྱང་ལུང་ཤར་\"(dpyang lung shar)ཞེས་ཀྱང་བྲིས་སྲོལ་ཡོད་བཟོ་ཆེ་ཞིང་། \"བོང་ར་\"ཞེས་པ་སྡེ་མིང་དང་ཁྱིམ་མིང་གང་རུང་ཡིན་སྲིད་མོད། འདི་སྐོར་རྒྱུ་ཆ་རྙེད་རིམ་བཞིན་ཁ་སྣོན་དང་བཟོ་བཅོས་ཞུ་རྒྱུ།"@bo .
+    
+    bdr:NTAF15950B13A1311F
+        a                   :Note ;
+        :contentLocationStatement  "p. 329" ;
+        :noteSource         bdr:MW19803 ;
+        :noteText           "ཤོང་སྟོན་རྡོ་རྗེ་རྒྱལ་མཚན་འཁྲུངས་ས་སྟེ། ལ་སྟོད་ལྷོའི་དཔྱད་ལུང་ཤར་ཟེར་བའི་ཡུལ་ཚོའི་བོང་ར་ཞེས་པར་སྐུ་བལྟམས་ཞེས་འཁོད།"@bo .
+}

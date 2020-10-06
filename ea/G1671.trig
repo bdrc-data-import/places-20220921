@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1671 {
+    bda:G1671  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1671 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ea/G1671.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1671 ;
+        adm:logEntry        bda:LG1BD3551B90192D7E , bda:LG2AFE2B25B6555C4F , bda:LG6FFB7668522005C5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330215:120" ;
+        adm:place_id_lex    "513330215:120" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1BD3551B90192D7E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2AFE2B25B6555C4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-06T15:38:52.38Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from the sde dge political history"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6FFB7668522005C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T09:16:22.351Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA710BE0B73E6CA5A
+        a                   :PlaceFounded ;
+        :onYear             "1864"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1671  a            :Place ;
+        skos:altLabel       "btsun dgon kun gsal chos gling /"@bo-x-ewts , "sde dge rdza spang thang dgon/"@bo-x-ewts , "spang thang dgon/"@bo-x-ewts , "bengdong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdza spang thang dgon/"@bo-x-ewts , "崩东寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID512FD270B2366620 ;
+        :isRoot             true ;
+        :note               bdr:NT0A7F9ECE966E99C4 , bdr:NT576CABD71E423B21 ;
+        :placeEvent         bdr:EVA710BE0B73E6CA5A ;
+        :placeGonpaPerEcumen  "20.75" ;
+        :placeLat           "32.00000" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "99.48333" ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:ID512FD270B2366620
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1671" .
+    
+    bdr:NT0A7F9ECE966E99C4
+        a                   :Note ;
+        :contentLocationStatement  "p. 152" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "dge lugs nunnery in the kingdom of sde dge; this was founded in 1864 at the behest of skyabs mgon thams cad mkhyen pa bsod nams tshe dbang, the son of the dpon mo; it was home to more that 30 nuns"@en .
+    
+    bdr:NT576CABD71E423B21
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 642" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs pa religious establishment (nunnery )\nདགོན་འདིའི་ལོ་རྒྱུས་མདོར་བསྡུས་གསལ།"@en .
+}

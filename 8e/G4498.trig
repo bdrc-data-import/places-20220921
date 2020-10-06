@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4498 {
+    bda:G4498  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4498 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "8e/G4498.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4498 ;
+        adm:logEntry        bda:LG5F0EA2AE2AC8D267 , bda:LG78FFF6573F3FD66C , bda:LG853C2F9C3E552795 , bda:LG8AA8D2C9EFCDE4EC , bda:LG977BCA6AB31D7C3F , bda:LG98C97DA572000177 , bda:LGCE1396F601C804A6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5F0EA2AE2AC8D267
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T11:15:01.605Z"^^xsd:dateTime ;
+        adm:logMessage      "added Near G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG78FFF6573F3FD66C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T15:26:27.486Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG853C2F9C3E552795
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-12-01T11:17:04.633Z"^^xsd:dateTime ;
+        adm:logMessage      "added Near G841"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8AA8D2C9EFCDE4EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:14:21.653Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from mountain to ri"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG977BCA6AB31D7C3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T11:25:13.554Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG98C97DA572000177
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T11:14:13.728Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCE1396F601C804A6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:EVE0CEBA1AEEF4F722
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P11MS156 ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:G4498  a            :Place ;
+        skos:altLabel       "gnas chen bon ri/"@bo-x-ewts , "kong po bon ri/"@bo-x-ewts ;
+        skos:prefLabel      "bon ri/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT57288328E36E4927 , bdr:NT9A4A1E4A5E7B9C1F ;
+        :placeEvent         bdr:EVE0CEBA1AEEF4F722 ;
+        :placeIsNear        bdr:G1KR1855 , bdr:G4499 , bdr:G4502 , bdr:G841 ;
+        :placeLocatedIn     bdr:G2123 , bdr:G640 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT57288328E36E4927
+        a                   :Note ;
+        :contentLocationStatement  "p. 229-232" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "འདི་ནི་བན་བོན་གཉིས་ཀའི་གནས་ཆེན་ཞིག་ཏེ། གནས་ཆེན་བོན་རིའི་ལྡེབས་སུ་སྲིད་རྒྱལ་དགོན་ཆེན་དང་། སྟག་རྩེ་དགོན། སྟག་བྲོ་དགོན། སྒྱིལ་རི་དགོན། དགོན་རྙིང་། སྲིམ་མོ་ཕུག དབུས་ཕུག ཡང་དབེས། བྱ་དེ་ཕུག་སོགས་དགོན་གནས་དགུ་ཙམ་ཞིག་དང་། རྒྱབ་རིར་ལྷ་རི་གྱང་དོ་དགོན་དང་། གསང་གླིང་དགོན། ཕུག་གུ་དགོན། ཉི་མ་དགོན། ཐུགས་དཀར་བྲག བྲག་དཀར་ཞབས་རྗེས་དགོན། རྫོང་ཆུང་སྟེང་། དུར་ཁྲོད་མི་ཡུལ་སྐྱིད་མཐོང་སོགས་དགོན་གནས་མང་དུ་གནས་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NT9A4A1E4A5E7B9C1F
+        a                   :Note ;
+        :contentLocationStatement  "'phar ma (2003)" ;
+        :noteSource         bdr:MW28826 ;
+        :noteText           "bon sacred mountain in kong po"@en .
+}

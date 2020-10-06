@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1089 {
+    bda:G1089  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1089 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "c4/G1089.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1089 ;
+        adm:logEntry        bda:LG00F95A0A17880E39 , bda:LG1DB6B5EC73CD8D33 , bda:LG68201AAD08443DD7 , bda:LG69A008440EF785BA , bda:LGB99A4A5EDEC93DDA , bda:LGBDC6E3C4A39C20BE , bda:LGD17D08EDB640925B , bda:LGF69D99E164F2DE0B , bda:LGF8781AEA9D9A9133 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00F95A0A17880E39
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-10T15:08:55.189Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1DB6B5EC73CD8D33
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-12T15:04:44.279Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rgyalKhab to phyiRgyal"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG68201AAD08443DD7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG69A008440EF785BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:22:12.981Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from principality to rgyalKhab"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGB99A4A5EDEC93DDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T11:28:07.334Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBDC6E3C4A39C20BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-06T10:07:02.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD17D08EDB640925B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-10T15:10:28.359Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF69D99E164F2DE0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-03T09:51:18.284Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, type & contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF8781AEA9D9A9133
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-10T12:47:03.609Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1089  a            :Place ;
+        skos:altLabel       "skyid shod 'o thang /"@bo-x-ewts ;
+        skos:prefLabel      "skyid shod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA9BBF0D8FB951DAB ;
+        :placeContains      bdr:G1184 , bdr:G2800 , bdr:G3154 ;
+        :placeLocatedIn     bdr:G3CN48 ;
+        :placeType          bdr:PT0055 .
+    
+    bdr:NTA9BBF0D8FB951DAB
+        a                   :Note ;
+        :contentLocationStatement  "p. 2324,2328" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1575. rin spungs pa'i dmag dpung khri lhag tsam skyid shod du yong nas sgal byang smon gsum bcom\n1607. kar srid gtsang skur dang bcas pa'i dmag dpung lha sar 'byor nas skyid shod dga' ldan pa'i srid dbang sde bcad yongs rdzogs phrogs/ sras rnams btson du bzung"@en .
+}

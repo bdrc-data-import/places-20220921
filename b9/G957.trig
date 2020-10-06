@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G957 {
+    bda:G957  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G957 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b9/G957.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G957 ;
+        adm:logEntry        bda:LG17AC4FDDF472B752 , bda:LG19245207A995EF91 , bda:LG5DF3A43864C0183F , bda:LGCA7E2F72638F1BE0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG17AC4FDDF472B752
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-05-22T14:23:08.22Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G2800"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG19245207A995EF91
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-05T15:17:49.04Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5DF3A43864C0183F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCA7E2F72638F1BE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-05T15:14:39.396Z"^^xsd:dateTime ;
+        adm:logMessage      "reuse G# & created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G957  a             :Place ;
+        skos:prefLabel      "se ra byes kyi ri khrod bcu/"@bo-x-ewts , "Ten Ritro of Seraje College"@en ;
+        :isRoot             true ;
+        :placeContains      bdr:G156 , bdr:G2507 , bdr:G2508 , bdr:G2509 , bdr:G2510 , bdr:G2511 , bdr:G2512 , bdr:G2513 , bdr:G2514 , bdr:G402 ;
+        :placeLocatedIn     bdr:G155 ;
+        :placeType          bdr:PT0021 .
+}

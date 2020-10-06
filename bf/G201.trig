@@ -1,0 +1,145 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G201 {
+    bda:G201  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G201 ;
+        adm:facetIndex      20 ;
+        adm:gitPath         "bf/G201.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G201 ;
+        adm:logEntry        bda:LG054C051CE063DBDA , bda:LG0E1BC61EC740060F , bda:LG19E01E078F220066 , bda:LG3E518BC610CEFEF2 , bda:LG4E448778D5892D42 , bda:LG7A7858ADD83E2188 , bda:LG8E175774DC3BDC5D , bda:LGC3606BFE7DED534A , bda:LGD16C26F793ECB9AF , bda:LGEEEC671748B9046C , bda:LGF3E1317C9FD7D4B5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542326202:542326111" ;
+        adm:place_id_lex    "542326202:542326111" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG054C051CE063DBDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-16T15:15:45.818Z"^^xsd:dateTime ;
+        adm:logMessage      "office"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG0E1BC61EC740060F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-22T11:16:46.892Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG19E01E078F220066
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T16:34:07.481Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG3E518BC610CEFEF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-04T15:13:01.49Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG4E448778D5892D42
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:43:36.068Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG7A7858ADD83E2188
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-03-01T09:55:52.573Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG8E175774DC3BDC5D
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-10T15:19:19.008Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC3606BFE7DED534A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-17T09:33:53.764Z"^^xsd:dateTime ;
+        adm:logMessage      "added G390"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGD16C26F793ECB9AF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEEEC671748B9046C
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-16T11:06:37.053Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGF3E1317C9FD7D4B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-22T11:59:39.029Z"^^xsd:dateTime ;
+        adm:logMessage      "added events"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4DFE05A8DA6FDEB9
+        a                   :PlaceFounded ;
+        :onYear             "1230"^^xsd:gYear .
+    
+    bdr:EV8D392C079E071A51
+        a                   :PlaceFounded ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionJonang .
+    
+    bdr:G201  a             :Place ;
+        skos:altLabel       "jo mo nang dgon/"@bo-x-ewts , "jo nang rgyal ba'i ri khrod/"@bo-x-ewts , "Jomonang Gon"@en , "觉朗寺"@zh-hans , "觉朗通卓钦摩大佛塔"@zh-hans , "juelang si"@zh-latn-pinyin-x-ndia , "juenang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "jo nang dgon pa/"@bo-x-ewts , "Jonang Gon"@en , "觉囊寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA6A2B5E54211347D ;
+        :isRoot             true ;
+        :note               bdr:NT7BADDF9E3A6FB26E , bdr:NT8D7457D1AE3BB617 , bdr:NTF0A8816CA56F74A8 ;
+        :placeEvent         bdr:EV4DFE05A8DA6FDEB9 , bdr:EV8D392C079E071A51 ;
+        :placeGonpaPerEcumen  "7.43" ;
+        :placeIsNear        bdr:G1AG61 , bdr:G3JT12529 ;
+        :placeLat           "29.35000" ;
+        :placeLocatedIn     bdr:G2167 ;
+        :placeLong          "88.00000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA6A2B5E54211347D
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G201" .
+    
+    bdr:NT7BADDF9E3A6FB26E
+        a                   :Note ;
+        :noteText           "founded by kun spangs thugs rje brtson 'grus (mkhyen brtse gdan rabs p. 498)"@en .
+    
+    bdr:NT8D7457D1AE3BB617
+        a                   :Note ;
+        :contentLocationStatement  "p. 336" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "important monastery of the jo nang tradition in the tibetan autonomous region; this had been the seat of the early jo nang pa masters including kun mkhyen dol po pa. \nat the time of kaH thog si tu's visit the presiding lama (belonging to the dge lugs tradition) was rdzong rtse sprul sku who had undertaken some restorations."@en .
+    
+    bdr:NTF0A8816CA56F74A8
+        a                   :Note ;
+        :contentLocationStatement  "p. 104" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "important religious establishment of the jo nang tradition located in lha rtse rdzong. the main protector mountain deity of the monastery is nags rgyal, one of the lha chen brtan ma bcu gnyis. the original hermitage was founded by kun spangs thugs rje brtson 'grus. it later became a seat of dol po pa shes rab rgyal mtshan who established the jo nang mchod rten chen mo in 1230. tA ra nA tha founded in 1615 rtag brtan phun tshogs gling which became the main seat of the sect. the jo nang monastery is located in the phun tshogs gling shang of lha rtse rdzong . it is located at a distance of about 3 km. from to the south of phun tshogs gling monastery."@en .
+}

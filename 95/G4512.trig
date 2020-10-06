@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4512 {
+    bda:G4512  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4512 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "95/G4512.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4512 ;
+        adm:logEntry        bda:LGC3A2F4D8D5D01ED8 , bda:LGD606A857A40599AD , bda:LGD68D156AABAAE0AB , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC3A2F4D8D5D01ED8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T14:27:45.556Z"^^xsd:dateTime ;
+        adm:logMessage      "added steng chen rdzong"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGD606A857A40599AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-27T11:23:48.666Z"^^xsd:dateTime ;
+        adm:logMessage      "changed names, added coords & event & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD68D156AABAAE0AB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVCF285B521CE83245
+        a                   :PlaceFounded ;
+        :onYear             "1408"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G4512  a            :Place ;
+        skos:altLabel       "guogong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ko bo dgon/"@bo-x-ewts , "Kowo Monastery"@en , "果贡寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT43D7D918928A6945 , bdr:NTD47693E159D7513A ;
+        :placeEvent         bdr:EVCF285B521CE83245 ;
+        :placeLat           "31.450110" ;
+        :placeLocatedIn     bdr:G2188 ;
+        :placeLong          "95.591112" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT43D7D918928A6945
+        a                   :Note ;
+        :noteText           "Founded by Ko bo Ye shes rgyal mtshan. At the base of the mountain where the local deity ’Jag rgyal smug po resides.\n\n4 lamas -  80 monks"@en .
+    
+    bdr:NTD47693E159D7513A
+        a                   :Note ;
+        :contentLocationStatement  "p. 163-164" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "སྟེང་ཆེན་གྲོང་རྡལ་གྱི་ཁོངས་སུ་གནས། ༡༤༠༨ལོར་ཀོ་ཡེ་ཤེས་རྒྱལ་མཚན་གྱིས་ཕྱག་བཏབ། དགོན་འདིར་འོལ་མོ་ལུང་རིངས་ཀྱི་ལྡེབས་རིས་ཁྱད་འཕགས་བཞུགས་ཚུལ་སོགས་གསལ།"@bo .
+}

@@ -1,0 +1,138 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G20 {
+    bda:G20  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G20 ;
+        adm:facetIndex      18 ;
+        adm:gitPath         "7b/G20.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G20 ;
+        adm:logEntry        bda:LG136A82C76E79F036 , bda:LG22A2B9592C13467F , bda:LG2D28C9B4E97644E6 , bda:LG35108B28CFE47D46 , bda:LG70BA71B14ABED9C2 , bda:LG8B8E7A47D002F49E , bda:LGB0890602F6DB4E1C , bda:LGE11231359AD68750 , bda:LGE79951D3F6506089 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330210:168" ;
+        adm:place_id_lex    "513330210:168" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG136A82C76E79F036
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-21T15:00:19.917Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG22A2B9592C13467F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-18T09:24:32.868Z"^^xsd:dateTime ;
+        adm:logMessage      "added zhe chen dgon gyi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG2D28C9B4E97644E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-07-11T17:07:06.761Z"^^xsd:dateTime ;
+        adm:logMessage      "added records and notes"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LG35108B28CFE47D46
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:49:05.812Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00009 .
+    
+    bda:LG70BA71B14ABED9C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-25T12:48:36.312Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8B8E7A47D002F49E
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:50:01.126Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGB0890602F6DB4E1C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE11231359AD68750
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-14T17:19:16.91Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted brackets"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE79951D3F6506089
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-15T16:16:23.254Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVB29939136D1E6F85
+        a                   :PlaceFounded ;
+        :onYear             "1690"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVD3382F86ED5670BA
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P690 ;
+        :notAfter           "1735"^^xsd:gYear ;
+        :notBefore          "1734"^^xsd:gYear .
+    
+    bdr:G20  a              :Place ;
+        skos:altLabel       "sde dge ze chen dgon/"@bo-x-ewts , "sde dge zhe chen dgon/"@bo-x-ewts , "ze chen dgon/"@bo-x-ewts , "zhe chen bstan gnyis dar rgyas gling /"@bo-x-ewts , "xieqing si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zhe chen dgon/"@bo-x-ewts , "Zhechen Tennyi Dargyeling"@en , "协庆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID814DD5FE78F22D72 ;
+        :isRoot             true ;
+        :note               bdr:NT2F048900133E9FCB , bdr:NTA991313FABC5AA34 , bdr:NTC431E7D5A5FC9E63 ;
+        :placeContains      bdr:G2JM244 , bdr:G3JT12622 ;
+        :placeEvent         bdr:EVB29939136D1E6F85 , bdr:EVD3382F86ED5670BA ;
+        :placeGonpaPerEcumen  "3.81" ;
+        :placeLat           "32.13334" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "98.85000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID814DD5FE78F22D72
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G20" .
+    
+    bdr:NT2F048900133E9FCB
+        a                   :Note ;
+        :contentLocationStatement  "p.129" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "rnying ma monastery in sde dge rdzong; this monastery was according to this source first founded as zhe chen o rgyan chos rdzong as a sgrub sde in 1692 (rab byung 12 chu sprel) by gter chen nyi ma grags pa.\n\nformerly had more than 700 monks; now has about 150 monks."@en .
+    
+    bdr:NTA991313FABC5AA34
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 535" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "one of the six great rnying ma monasteries of tibet"@en .
+    
+    bdr:NTC431E7D5A5FC9E63
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 535-543" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "འདིར་དགོན་འདིའི་ལོ་རྒྱུས་གནད་ཚང་བཞུགས།"@bo .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2629 {
+    bda:G2629  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2629 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "16/G2629.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2629 ;
+        adm:logEntry        bda:LG1EE43997F81649A8 , bda:LG230E6F8986322F2F , bda:LG649073DF7986067C , bda:LG7513CD68479BAD17 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1EE43997F81649A8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG230E6F8986322F2F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-06T11:16:16.815Z"^^xsd:dateTime ;
+        adm:logMessage      "G2643 tshab brjes byas"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG649073DF7986067C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-23T12:08:15.495Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed & added all info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7513CD68479BAD17
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-07T12:43:02.053Z"^^xsd:dateTime ;
+        adm:logMessage      "added name in chinese & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2627CD320CD3D4E6
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G2629  a            :Place ;
+        skos:prefLabel      "ga ya d+ha ra'i sgrub phug"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV2627CD320CD3D4E6 ;
+        :placeLocatedIn     bdr:G2167 ;
+        :placeType          bdr:PT0036 .
+}

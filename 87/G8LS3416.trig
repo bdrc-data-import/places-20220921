@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G8LS3416 {
+    bda:G8LS3416  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G8LS3416 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "87/G8LS3416.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G8LS3416 ;
+        adm:logEntry        bda:LG3C087A34D285E081 , bda:LG3E8A08C1E5D25D72 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1PD110084 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG3C087A34D285E081
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-12-05T09:08:03.61Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1PD110084"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3E8A08C1E5D25D72
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-03-18T10:17:13.155Z"^^xsd:dateTime ;
+        adm:logMessage      "provisionally released"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G8LS3416  a         :Place ;
+        skos:altLabel       "dben can gsang sngags rab gling dgon/"@bo-x-ewts ;
+        skos:prefLabel      "dben can dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCAE876B2C3FEB62C , bdr:NTF15C38337FA52FCE ;
+        :placeLocatedIn     bdr:G1398 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTCAE876B2C3FEB62C
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1PD110084"@en .
+    
+    bdr:NTF15C38337FA52FCE
+        a                   :Note ;
+        :noteSource         bdr:MW1KG879 ;
+        :noteText           "p. 191-192"@en .
+}

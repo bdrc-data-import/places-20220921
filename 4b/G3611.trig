@@ -1,0 +1,117 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3611 {
+    bda:G3611  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3611 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "4b/G3611.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3611 ;
+        adm:logEntry        bda:LG5C7CF6206C659AB2 , bda:LG90A2744FE2F7E546 , bda:LGB8DAA41E9B9605E6 , bda:LGDA9D861C00AB0FA9 , bda:LGE4D9B5AF690D80DF , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542233101:542233102" ;
+        adm:place_id_lex    "542233101:542233102" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5C7CF6206C659AB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:21:04.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG90A2744FE2F7E546
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB8DAA41E9B9605E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-29T09:04:15.06Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, note & normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDA9D861C00AB0FA9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-19T14:35:47.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE4D9B5AF690D80DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-09T10:28:54.577Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0EFD5B547AFC8D1B
+        a                   :PlaceConverted ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EV75963CCDFC80AAE9
+        a                   :PlaceFounded ;
+        :onYear             "0700"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:EVE5CF2FB6BF93272B
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P79 ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:G3611  a            :Place ;
+        skos:altLabel       "lho stag lung /"@bo-x-ewts , "stag lung gwa tshang zhol thar gling chos gter/"@bo-x-ewts , "stag lung thar gling chos sde/"@bo-x-ewts , "yar 'brog stag lung /"@bo-x-ewts , "Lho Taklung"@en-x-mixed , "Yardrok Taklung Tarling Chode"@en-x-mixed , "南达隆寺"@zh-hans , "dalong si"@zh-latn-pinyin-x-ndia , "nan dalong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "stag lung dgon/"@bo-x-ewts , "Taklung Gon"@en-x-mixed , "达隆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0A45FE0C9B7733A8 ;
+        :isRoot             true ;
+        :note               bdr:NT0A4ECECC5EC19B4A , bdr:NT6D21109F9E7C72B3 , bdr:NTF2858CCA0021E155 ;
+        :placeEvent         bdr:EV0EFD5B547AFC8D1B , bdr:EV75963CCDFC80AAE9 , bdr:EVE5CF2FB6BF93272B ;
+        :placeGonpaPerEcumen  "2.21" ;
+        :placeLat           "28.81215" ;
+        :placeLocatedIn     bdr:G2136 , bdr:G4683 ;
+        :placeLong          "90.44607" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID0A45FE0C9B7733A8
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3611" .
+    
+    bdr:NT0A4ECECC5EC19B4A
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 139-140" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "ancient monastery in sna dkar rtse rdzong\nconnected with the great stag tshang lo tsA ba shes rab rgyal mtshan\nformerly followed the sa skya and tshar pa tradition\nmany ancient murals are still visible here\nnear here is found the ruins of the seat of rtse sprul rin po che"@en .
+    
+    bdr:NT6D21109F9E7C72B3
+        a                   :Note ;
+        :contentLocationStatement  "note moved from G252(dup.)" ;
+        :noteText           "sa skya monastery in dbus in the yar 'brog area; connected with the activities of stag tshang lo tsA ba"@en .
+    
+    bdr:NTF2858CCA0021E155
+        a                   :Note ;
+        :noteText           "Imperial founding from Hazod per. Com."@en .
+}

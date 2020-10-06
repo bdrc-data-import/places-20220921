@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10922 {
+    bda:G2CN10922  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10922 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "9f/G2CN10922.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10922 ;
+        adm:logEntry        bda:LG04374899537E1788 , bda:LG326987E18AF0C74D , bda:LG577892EA3FBAD042 , bda:LG797316964B6AFE28 , bda:LG7AF2B51554565E11 , bda:LG80389CCCE031846A , bda:LG8E765DBDE32D0BF7 , bda:LGA0FEC570FB48F53F , bda:LGCD5F740AE665F298 , bda:LGFF61D97F29279065 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04374899537E1788
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T12:24:50.281Z"^^xsd:dateTime ;
+        adm:logMessage      "edited place contained"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG326987E18AF0C74D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-19T16:16:58.313Z"^^xsd:dateTime ;
+        adm:logMessage      "added as par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG577892EA3FBAD042
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T14:48:07.744Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains in info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG797316964B6AFE28
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-05T09:56:43.004Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7AF2B51554565E11
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-22T14:41:39.889Z"^^xsd:dateTime ;
+        adm:logMessage      "added region"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG80389CCCE031846A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-12T15:28:20.688Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8E765DBDE32D0BF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-30T16:35:30.841Z"^^xsd:dateTime ;
+        adm:logMessage      "added date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGA0FEC570FB48F53F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-24T09:13:04.433Z"^^xsd:dateTime ;
+        adm:logMessage      "delete g2128"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGCD5F740AE665F298
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2128"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGFF61D97F29279065
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-22T17:33:14.992Z"^^xsd:dateTime ;
+        adm:logMessage      "added region"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV5C40D291BE6E1291
+        a                   :PlaceFounded ;
+        :notAfter           "1399"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear .
+    
+    bdr:G2CN10922  a        :Place ;
+        skos:prefLabel      "gnam 'brug dgon gyi par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV5C40D291BE6E1291 ;
+        :placeLocatedIn     bdr:G2128 , bdr:G45 ;
+        :placeType          bdr:PT0059 .
+}

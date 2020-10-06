@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3881 {
+    bda:G3881  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3881 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "33/G3881.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3881 ;
+        adm:logEntry        bda:LG27E3A1D837E20877 , bda:LG5550398E020DD1C2 , bda:LG667409D36FCEF33E , bda:LGAFDB1387151370A3 , bda:LGF2A927F1B4276459 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG27E3A1D837E20877
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T14:29:59.484Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5550398E020DD1C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T11:50:42.677Z"^^xsd:dateTime ;
+        adm:logMessage      "added 6 of grwaThang as contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG667409D36FCEF33E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAFDB1387151370A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-19T15:00:37.343Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2A927F1B4276459
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T11:09:19.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added 5 grwaThang as contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1EDA05D1BDA38F94
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P412 ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:G3881  a            :Place ;
+        skos:altLabel       "dga' ldan rab rgyas gling /"@bo-x-ewts , "g.yon ru dga' ldan rab rgyas gling /"@bo-x-ewts , "gur dgon dga' ldan rab rgyas gling /"@bo-x-ewts , "rab gling gur dkar dgon/"@bo-x-ewts ;
+        skos:prefLabel      "g.yon ru dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0D3BF7AD794BF937 ;
+        :placeContains      bdr:G3884 , bdr:G3885 , bdr:G3886 , bdr:G3887 , bdr:G3888 , bdr:G3889 ;
+        :placeEvent         bdr:EV1EDA05D1BDA38F94 ;
+        :placeLocatedIn     bdr:G2304 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0D3BF7AD794BF937
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 47-51" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs pa monastery in li thang rdzong\nཁྲི་ཆེན་ངག་དབང་མཆོག་ལྡན་གྱིས་མདོ་ཁམས་སྨད་དུ་ཕེབས་ཏེ། དགེ་ལྡན་པའི་དགོན་སྡེ་གུར་དཀར་པོའི་དགོན་པ་བཅུ་གསུམ་བཏབ་པའི་ནང་ཚན་ལས་ཐོག་མར་བཏབ་པའི་དགོན་སྡེ་འདི་ཡིན་པར་འཁོད།"@en .
+}

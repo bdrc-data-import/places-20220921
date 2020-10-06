@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1489 {
+    bda:G1489  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1489 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "7a/G1489.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1489 ;
+        adm:logEntry        bda:LG3676EBB0DAE92D35 , bda:LG6315DB3A0D9FF6E7 , bda:LG6C92FE0CF1315DEA , bda:LGE4668957A69E7F4C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3676EBB0DAE92D35
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6315DB3A0D9FF6E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-25T10:01:41.748Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6C92FE0CF1315DEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T17:43:12.162Z"^^xsd:dateTime ;
+        adm:logMessage      "english"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGE4668957A69E7F4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-17T16:27:39.222Z"^^xsd:dateTime ;
+        adm:logMessage      "added full info with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVF30B851E40A5423A
+        a                   :PlaceFounded ;
+        :notAfter           "1922"^^xsd:gYear ;
+        :notBefore          "1407"^^xsd:gYear .
+    
+    bdr:G1489  a            :Place ;
+        skos:altLabel       "dar mdo lcags la/"@bo-x-ewts , "mi nyag lcags la/"@bo-x-ewts , "Chakla Kingdom"@en , "mingzheng tusi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lcags la/"@bo-x-ewts , "Dardo Chakla"@en , "明正土司"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTC19C61747742C38A ;
+        :placeContains      bdr:G4643 ;
+        :placeEvent         bdr:EVF30B851E40A5423A ;
+        :placeLocatedIn     bdr:G1033 , bdr:G1272 ;
+        :placeType          bdr:PT0027 .
+    
+    bdr:NTC19C61747742C38A
+        a                   :Note ;
+        :noteText           "རྒྱལ་རོང་རྒྱལ་ཁབ་བཅོ་བརྒྱད་དུ་གྲགས་པའི་ནང་ཚན་ཞིག་སྟེ། དེང་སང་གི་དར་མདོ་རྫོང་དང་ཉག་ཆུ་རྫོང་། རྟ་འུག་རྫོང་། ལེའང་ཧྲན་ཀྲོའུ་ཁུལ་གྱི་མན་ཉིང་རྫོང་བཅས་ཀྱི་ས་ཆ་ཕལ་ཆེར་ཚུད་ཡོད།\n༡༤༠༧ལོར་བཙུགས་པ་ནས་བཟུང་༡༩༢༢བར་རྒྱལ་བརྒྱུད་མི་རབས་བཅུ་གཉིས་བྱུང་ཡོད་པར་གསལ།"@bo .
+}

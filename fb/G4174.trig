@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4174 {
+    bda:G4174  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4174 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fb/G4174.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4174 ;
+        adm:logEntry        bda:LG5566AF42E6E0E841 , bda:LG6C48C3A79B856C3B , bda:LGE61323EB8F6A6562 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5566AF42E6E0E841
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6C48C3A79B856C3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-27T11:50:44.131Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE61323EB8F6A6562
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-02T12:39:57.902Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV3B4BCF11247D8874
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P8773 .
+    
+    bdr:EVDBC1A3040BFF0DCD
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G4174  a            :Place ;
+        skos:prefLabel      "zangs mtsho sgrub sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0C7C3958F2C98A20 , bdr:NT252A67AFB209EDFA ;
+        :placeEvent         bdr:EV3B4BCF11247D8874 , bdr:EVDBC1A3040BFF0DCD ;
+        :placeType          bdr:PT0064 .
+    
+    bdr:NT0C7C3958F2C98A20
+        a                   :Note ;
+        :contentLocationStatement  "p. 280" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "mention that this hermitage was fonded by 'od gsal klong yangs"@en .
+    
+    bdr:NT252A67AFB209EDFA
+        a                   :Note ;
+        :noteText           "འཕྱོངས་རྒྱས་ཁུལ་དུ་ཡོད་པར་དྭོགས་པ་དཔྱད་རྒྱུ།"@bo .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2119 {
+    bda:G2119  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2119 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "97/G2119.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2119 ;
+        adm:logEntry        bda:LG0CE798A7B583289C , bda:LG0D8184461DF848F4 , bda:LG277B66828E4B1671 , bda:LG3E8B401E4DE3CF8C , bda:LGB128194D991AFB68 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0CE798A7B583289C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-06T09:59:27.676Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & 2 contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0D8184461DF848F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-08T10:11:43.987Z"^^xsd:dateTime ;
+        adm:logMessage      "added snye mo shags ram skyid khang pa'i par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG277B66828E4B1671
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-24T14:23:37.752Z"^^xsd:dateTime ;
+        adm:logMessage      "added P# and O#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3E8B401E4DE3CF8C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB128194D991AFB68
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-21T16:57:48.455Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location & moved contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2119  a            :Place ;
+        skos:prefLabel      "snye mo khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF512AD811CD1BD9D ;
+        :placeContains      bdr:G3JT12515 ;
+        :placeLocatedIn     bdr:G3CN138 ;
+        :placeType          bdr:PT0057 .
+    
+    bdr:NTF512AD811CD1BD9D
+        a                   :Note ;
+        :contentLocationStatement  "p. 415" ;
+        :noteSource         bdr:MW20170 ;
+        :noteText           "administrative taxation region equivent to a rdzong in the 1830 settlement document"@en .
+}

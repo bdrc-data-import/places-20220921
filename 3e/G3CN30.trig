@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN30 {
+    bda:G3CN30  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN30 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3e/G3CN30.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN30 ;
+        adm:logEntry        bda:LG297EB5B7488DA19F , bda:LG2F97E352FA45F09D , bda:LG83DEC767014C10A6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG297EB5B7488DA19F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-19T11:17:38.112Z"^^xsd:dateTime ;
+        adm:logMessage      "created records & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2F97E352FA45F09D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-24T15:25:54.366Z"^^xsd:dateTime ;
+        adm:logMessage      "need changed to new type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG83DEC767014C10A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-07T10:08:03.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese names & pinyin"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV8AA1C4E17B6DE31B
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0799"^^xsd:gYear ;
+        :notBefore          "0700"^^xsd:gYear .
+    
+    bdr:G3CN30  a           :Place ;
+        skos:altLabel       "kho tAn/"@bo-x-ewts , "lcang rwa smug po/"@bo-x-ewts , "和阗（今和田一带）"@zh-hans , "hetian"@zh-latn-pinyin-x-ndia , "yutian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "li yul lcang ra smug po/"@bo-x-ewts , "khotan"@en , "于阗"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTC6F34C03588327F0 ;
+        :placeEvent         bdr:EV8AA1C4E17B6DE31B ;
+        :placeLocatedIn     bdr:G3167 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NTC6F34C03588327F0
+        a                   :Note ;
+        :contentLocationStatement  "p. 35" ;
+        :noteSource         bdr:MW00EGS1017172 ;
+        :noteText           "ལི་ཡུལ་ལྕང་ར་སྨུག་པོ་ནི་ལི་ཡུལ་༼དེང་གི་ཤིན་ཅང་༽གྱི་ནང་ཚན་ཁོ་ཏཱན་ཟེར་བའི་གྲོང་ཁྱེར་༼ས་ཁུལ་༽ཡིན་པ་གསལ།"@bo .
+}

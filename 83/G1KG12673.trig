@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KG12673 {
+    bda:G1KG12673  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KG12673 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "83/G1KG12673.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KG12673 ;
+        adm:logEntry        bda:LG1028272BA99F782B , bda:LG11CB3BA479604794 , bda:LG120E3D8D87396B7E , bda:LG1F2339707C3D85EB , bda:LGA093658ECD56791B , bda:LGAA37198C7267E071 , bda:LGAE227C2E5688351B , bda:LGCA94E83C337249D6 , bda:LGFC410983EAFF01E8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1028272BA99F782B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G3188"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG11CB3BA479604794
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-15T14:41:49.901Z"^^xsd:dateTime ;
+        adm:logMessage      "added G3JT12629"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG120E3D8D87396B7E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-08-01T15:03:12.902Z"^^xsd:dateTime ;
+        adm:logMessage      "created topic as printery"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG1F2339707C3D85EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T13:23:38.281Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA093658ECD56791B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-11T16:50:13.689Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGAA37198C7267E071
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-24T10:25:21.925Z"^^xsd:dateTime ;
+        adm:logMessage      "added G3188"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGAE227C2E5688351B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-17T10:42:56.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added founded date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGCA94E83C337249D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-22T14:51:43.937Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGFC410983EAFF01E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-06T10:35:10.509Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVBF6450F85D260093
+        a                   :PlaceFounded ;
+        :notAfter           "2099"^^xsd:gYear ;
+        :notBefore          "2000"^^xsd:gYear .
+    
+    bdr:G1KG12673  a        :Place ;
+        skos:prefLabel      "bod yig gsar 'gyur me long par khang /"@bo-x-ewts , "tibet mirror press"@en ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVBF6450F85D260093 ;
+        :placeLocatedIn     bdr:G3188 , bdr:G3JT12629 ;
+        :placeType          bdr:PT0059 .
+}

@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1479 {
+    bda:G1479  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1479 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b6/G1479.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1479 ;
+        adm:logEntry        bda:LG682CE4891D4C2483 , bda:LGFA0A790493864EBA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1366 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG682CE4891D4C2483
+        a                   adm:WithdrawData ;
+        adm:logDate         "2010-07-01T16:04:12.382Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of g1366"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFA0A790493864EBA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1479  a            :Place ;
+        skos:prefLabel      "sde dge"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT082A67C2D197C3CE .
+    
+    bdr:NT082A67C2D197C3CE
+        a                   :Note ;
+        :noteText           "withdrawn in favor of g1366"@en .
+}

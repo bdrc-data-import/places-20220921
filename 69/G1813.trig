@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1813 {
+    bda:G1813  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1813 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "69/G1813.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1813 ;
+        adm:logEntry        bda:LG36EC944963970F8A , bda:LG37225D3071CD8F4D , bda:LG73DEA9398770B1CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG36EC944963970F8A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG37225D3071CD8F4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:zhangxiang to shang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG73DEA9398770B1CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T09:39:03.581Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type (ADD: shang)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1813  a            :Place ;
+        skos:prefLabel      "zar phu zhang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD6BB3C913ED35747 ;
+        :placeLocatedIn     bdr:G799 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NTD6BB3C913ED35747
+        a                   :Note ;
+        :contentLocationStatement  "p. [1] of preliminaries" ;
+        :noteSource         bdr:MW20134 ;
+        :noteText           "biodata of o rgyan rdo rje who was born in zar phu zhang, of gra nang rdzong, in lho kha khul"@en .
+}

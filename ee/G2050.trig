@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2050 {
+    bda:G2050  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2050 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ee/G2050.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2050 ;
+        adm:logEntry        bda:LG3F054578C44B912D , bda:LGE66DB71B85AA356E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3F054578C44B912D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE66DB71B85AA356E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T09:49:01.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV7680136334F18500
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2050  a            :Place ;
+        skos:altLabel       "mal gro gzi sbug dgon/"@bo-x-ewts ;
+        skos:prefLabel      "gzi sbug dog mo dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8D2386D0EB25F81C , bdr:NTEC16691402D2D76E ;
+        :placeEvent         bdr:EV7680136334F18500 ;
+        :placeLocatedIn     bdr:G2030 , bdr:G237 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8D2386D0EB25F81C
+        a                   :Note ;
+        :contentLocationStatement  "p. 117" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "one of the 23 affiliates (gzhis gras) of se ra smad grwa tshang"@en .
+    
+    bdr:NTEC16691402D2D76E
+        a                   :Note ;
+        :contentLocationStatement  "p. 40" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa monastery in gzi sbug shang of mal gro gung dkar rdzong\nfounded by skyes bu ye shes rdo rje\naffiliated to 'on chos sding bla brang\nhad 20 monks in 1959\nrestored"@en .
+}

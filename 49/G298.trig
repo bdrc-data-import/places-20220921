@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G298 {
+    bda:G298  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G298 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "49/G298.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G298 ;
+        adm:logEntry        bda:LG0B1B38B7B4A4CF6A , bda:LG1A92897F05C1569B , bda:LG1D4DC7545F391E74 , bda:LG809B3A3C1D652916 , bda:LGAB10004FEC5AD8A7 , bda:LGABB49AFD6BD158CC , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623022210:623022119" ;
+        adm:place_id_lex    "623022210:623022119" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B1B38B7B4A4CF6A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-31T15:55:06.306Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1A92897F05C1569B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-16T15:26:36.13Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG1D4DC7545F391E74
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-20T15:49:56.045Z"^^xsd:dateTime ;
+        adm:logMessage      "added"@en ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG809B3A3C1D652916
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T14:21:31.546Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGAB10004FEC5AD8A7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGABB49AFD6BD158CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-26T15:54:56.089Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVF673FCB5D1C652D6
+        a                   :PlaceFounded ;
+        :onYear             "1587"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G298  a             :Place ;
+        skos:altLabel       "khya dge dgon legs bshad gling /"@bo-x-ewts , "legs bshad gling /"@bo-x-ewts , "qiagai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "khya dge dgon/"@bo-x-ewts , "Kyage Gon Leksheling"@en , "恰盖寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB59371AAF8484A29 ;
+        :isRoot             true ;
+        :note               bdr:NT213D522A747800A6 , bdr:NT6883E8B0EF2D68A5 , bdr:NTF430DA949D1371EA ;
+        :placeEvent         bdr:EVF673FCB5D1C652D6 ;
+        :placeGonpaPerEcumen  "1.92" ;
+        :placeLat           "34.85179" ;
+        :placeLocatedIn     bdr:G2203 ;
+        :placeLong          "103.41585" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDB59371AAF8484A29
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G298" .
+    
+    bdr:NT213D522A747800A6
+        a                   :Note ;
+        :noteText           "dge lugs pa monastery in co ne county, kan lho prefecture"@en .
+    
+    bdr:NT6883E8B0EF2D68A5
+        a                   :Note ;
+        :contentLocationStatement  "p. 536" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "founded in 1587; geluk,"@en .
+    
+    bdr:NTF430DA949D1371EA
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 83" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "monastery in the kan lho autonomous tibetan prefecture"@en .
+}

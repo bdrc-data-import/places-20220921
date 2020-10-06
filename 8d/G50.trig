@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G50 {
+    bda:G50  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G50 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "8d/G50.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G50 ;
+        adm:logEntry        bda:LG64341FE3DF8BF33F , bda:LG9989773A0CD66124 , bda:LGEE7CFB28DF49994D , bda:LGF228DF7E8CE5E202 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG64341FE3DF8BF33F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9989773A0CD66124
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-12T14:27:33.058Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEE7CFB28DF49994D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-10T12:11:14.477Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, lineage & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF228DF7E8CE5E202
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-12T16:30:02.522Z"^^xsd:dateTime ;
+        adm:logMessage      "added location with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV77203054FDB92A59
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionDrukpaKagyu .
+    
+    bdr:G50  a              :Place ;
+        skos:altLabel       "'brug dgon khams pa sgar/"@bo-x-ewts , "sga nyag khams pa sgar/"@bo-x-ewts , "sga nyag khams pa sgar་thub bstan phun tshogs gling /"@bo-x-ewts , "thub bstan phun tshogs gling /"@bo-x-ewts ;
+        skos:prefLabel      "khams pa sgar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT494281980375BA4E , bdr:NT59E37F8B11A548D6 , bdr:NTA21843CEB44BBA2E , bdr:NTBB29BB2484F68B43 , bdr:NTE50D153ACAD49589 ;
+        :placeEvent         bdr:EV77203054FDB92A59 ;
+        :placeLocatedIn     bdr:G2185 , bdr:G682 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT494281980375BA4E
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 46" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "'brug pa dkar brgyud monastery in khams"@en .
+    
+    bdr:NT59E37F8B11A548D6
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 139" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "དགོན་འདི་ནི་མདོ་ཁམས་ལྷ་ཐོག་རྒྱལ་པོའི་མངའ་ཁོངས། ཁ་སྟག་དཀར་མོའི་རི་ཁུལ་དུ་ཡོད་པ་གསལ།"@bo .
+    
+    bdr:NTA21843CEB44BBA2E
+        a                   :Note ;
+        :noteText           "G1KR1011 འདི་གཉིས་དགོན་པ་གཅིག་ཡིན་དྭོགས་ཡོད་པ་དཔྱད་རྒྱུ།"@en .
+    
+    bdr:NTBB29BB2484F68B43
+        a                   :Note ;
+        :contentLocationStatement  "p. 2" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "སྐུ་གསུང་ཐུགས་རྟེན་ཇི་ཡོད་ཀྱི་ཐོ་འཁོད་པ་ལས། ཁྱད་པར་དུ་དཔེ་ཆ་པོད་༢༥༤༢ལས་བརྒལ་བ་ཡོད་པ་གསལ།"@bo .
+    
+    bdr:NTE50D153ACAD49589
+        a                   :Note ;
+        :contentLocationStatement  "p. 4" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "described in some detailed by kaH thog si tu\nsaid to have almost 200 monks when he visited"@en .
+}

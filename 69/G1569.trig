@@ -1,0 +1,107 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1569 {
+    bda:G1569  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1569 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "69/G1569.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1569 ;
+        adm:logEntry        bda:LG04535A55958373BB , bda:LG48C0C22D3337543B , bda:LG68E26174DFB4B4F2 , bda:LGBEC6A57ABBB7E57C , bda:LGD7164EF35488DEEF , bda:LGFCECEF401273794D , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513328206:316" ;
+        adm:place_id_lex    "513328206:316" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04535A55958373BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T10:30:57.355Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese name & arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG48C0C22D3337543B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T09:33:12.247Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G00KG01060 (dup. )"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG68E26174DFB4B4F2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBEC6A57ABBB7E57C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-06T16:25:47.659Z"^^xsd:dateTime ;
+        adm:logMessage      "phonetics"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGD7164EF35488DEEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-10T15:15:15.678Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFCECEF401273794D
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-05-24T07:51:48.421Z"^^xsd:dateTime ;
+        adm:logMessage      "added variant names"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV7B36637D1C873739
+        a                   :PlaceFounded ;
+        :onYear             "1725"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G1569  a            :Place ;
+        skos:altLabel       "dkar mdzes glang sna dgon/"@bo-x-ewts , "glang nag dgon pa/"@bo-x-ewts , "thub bstan bsam grub mthong grol gling /"@bo-x-ewts , "tre hor glang sna dgon/"@bo-x-ewts , "郎乃寺"@zh-hans , "langnai si"@zh-latn-pinyin-x-ndia , "nongla si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "glang sna dgon/"@bo-x-ewts , "Langna Gon"@en , "弄拉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID27B3495E156644C7 ;
+        :isRoot             true ;
+        :note               bdr:NT8AA53CBA18C322CD , bdr:NTDEDC67C002D222D8 ;
+        :placeEvent         bdr:EV7B36637D1C873739 ;
+        :placeGonpaPerEcumen  "56.41" ;
+        :placeLat           "31.66667" ;
+        :placeLocatedIn     bdr:G621 , bdr:G811 ;
+        :placeLong          "99.68333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID27B3495E156644C7
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1569" .
+    
+    bdr:NT8AA53CBA18C322CD
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 173" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "sa skya pa monastery founded by 'gro mgon 'phags pa while he was in khams"@en .
+    
+    bdr:NTDEDC67C002D222D8
+        a                   :Note ;
+        :noteText           "langnag gonpa is build in 1276 by dogon choegyal phagpa of sakya"@en .
+}

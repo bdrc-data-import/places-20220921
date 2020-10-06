@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3964 {
+    bda:G3964  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3964 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c7/G3964.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3964 ;
+        adm:logEntry        bda:LG2841A0E69ED14FBF , bda:LG95589DB38E5430D8 , bda:LGE17D84EC63424473 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513332202:375" ;
+        adm:place_id_lex    "513332202:375" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2841A0E69ED14FBF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG95589DB38E5430D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-11T10:34:06.144Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE17D84EC63424473
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-16T14:11:42.983Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV524F93253607CF55
+        a                   :PlaceFounded ;
+        :onYear             "1805"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G3964  a            :Place ;
+        skos:altLabel       "lingji si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "klu dkyil dgon/"@bo-x-ewts , "岭机寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2D023579006CEB37 ;
+        :isRoot             true ;
+        :note               bdr:NT9644EE91F509EF8C , bdr:NTC547C416F9EF36C5 ;
+        :placeEvent         bdr:EV524F93253607CF55 ;
+        :placeGonpaPerEcumen  "17.04" ;
+        :placeLat           "32.51667" ;
+        :placeLocatedIn     bdr:G3957 ;
+        :placeLong          "97.85000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID2D023579006CEB37
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3964" .
+    
+    bdr:NT9644EE91F509EF8C
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 272-275" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "kam tshang bka' brgyud monastery in rdza chu kha rdzong"@en .
+    
+    bdr:NTC547C416F9EF36C5
+        a                   :Note ;
+        :contentLocationStatement  "p. 148" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bka' brgyud monastery founded in 1185 (rab byung 3 shing glang) by grub thob rgod 'phur ba on top of the klu rgyal ma dros pa'i pho brang.\n\nnow has 23 monks and lamas."@en .
+}

@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G728 {
+    bda:G728  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G728 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "49/G728.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G728 ;
+        adm:logEntry        bda:LG1582B319175ACBEB , bda:LG1BC82F264B60BB91 , bda:LGE2D143BC886C836A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG1582B319175ACBEB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-15T14:49:16.701Z"^^xsd:dateTime ;
+        adm:logMessage      "added note for withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1BC82F264B60BB91
+        a                   adm:WithdrawData ;
+        adm:logDate         "2010-04-02T11:05:11.065Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn infavor of g4250"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE2D143BC886C836A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G728  a             :Place ;
+        skos:prefLabel      "la stod byang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT06D322535293F4D6 .
+    
+    bdr:NT06D322535293F4D6
+        a                   :Note ;
+        :noteText           "withdrawn infavor of g4250"@en .
+}

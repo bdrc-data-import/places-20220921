@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G241 {
+    bda:G241  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G241 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "a3/G241.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G241 ;
+        adm:logEntry        bda:LG121A5D518A789DFA , bda:LG463C3435389764AE , bda:LG507D0CD486852A7C , bda:LGA18F3CD61AB3EF3F , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG121A5D518A789DFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T11:54:29.492Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG463C3435389764AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-04T09:10:03.522Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG507D0CD486852A7C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA18F3CD61AB3EF3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-22T16:30:55.751Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag gcig"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G241  a             :Place ;
+        skos:altLabel       "bu phug mdo sngags dar rgyas gling /"@bo-x-ewts , "mdo sngags dar rgyas gling (bya phug)"@bo-x-ewts ;
+        skos:prefLabel      "bya phug mdo sngags dar rgyas gling /"@bo-x-ewts , "Japuk Do-ngak Dargyeling"@en ;
+        :isRoot             true ;
+        :note               bdr:NT0D5E0D0FBE414967 , bdr:NT69D516D77B6C7F19 ;
+        :placeLocatedIn     bdr:G2187 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0D5E0D0FBE414967
+        a                   :Note ;
+        :noteText           "dge lugs pa monastery connected with the rta tshag or kun bde gling group of properties"@en .
+    
+    bdr:NT69D516D77B6C7F19
+        a                   :Note ;
+        :contentLocationStatement  "p. 223" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "the name given in this source is bu phug mdo sngags dar rgyas gling. this is probably a misprint for bya phug mdo sngags dar rgyas gling which also occurs at the end of this article. the monastery was founded in 1469 by a teacher called rta nag mkhan chen whose full name is not given. the monastery is mentioned in a variety of documents from the kun bde gling archives. in 1698 (sa stag) the monastic complement was about 110 monks. the baidurya ser po records a name for a sgo mang mkhan po gung ru sangs rgyas bkra shis who was born at bya phug. this form is also found in the chos 'byung 'jam dbyangs bzhad pa. the place name of bya phug is noted as belonging to nag shog shang of lho rong rdzong."@en .
+}

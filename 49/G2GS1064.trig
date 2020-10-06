@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1064 {
+    bda:G2GS1064  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1064 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "49/G2GS1064.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1064 ;
+        adm:logEntry        bda:LG2D4E1F6B7DA1EAC9 , bda:LG4C69BF2B916EB583 , bda:LG5A74D19FE032F5FF , bda:LG755DB50EF154117D , bda:LG821285B736959EAE , bda:LG91AA334155F49052 , bda:LG9872E39E877FF625 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2D4E1F6B7DA1EAC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:19:35.197Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeOfPilgrimage to gnas"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG4C69BF2B916EB583
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-15T14:50:24.268Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5A74D19FE032F5FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-11T14:54:01.275Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG755DB50EF154117D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-06-02T13:56:45.403Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG821285B736959EAE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-06T15:04:43.842Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG91AA334155F49052
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-15T12:00:22.741Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9872E39E877FF625
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-02T15:11:33.943Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2GS1064  a         :Place ;
+        skos:altLabel       "jo mo kha rag"@bo-x-ewts ;
+        skos:prefLabel      "kha rag"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3D931858504E566B , bdr:NT5470FD7AC8DB4A76 ;
+        :placeContains      bdr:G558 ;
+        :placeLocatedIn     bdr:G2176 , bdr:G3176 ;
+        :placeType          bdr:PT0042 .
+    
+    bdr:NT3D931858504E566B
+        a                   :Note ;
+        :noteText           "place of pilgrimage in central tibet"@en .
+    
+    bdr:NT5470FD7AC8DB4A76
+        a                   :Note ;
+        :contentLocationStatement  "p. 2" ;
+        :noteSource         bdr:MW1KG5341 ;
+        :noteText           "དབུས་གཙང་གཉིས་ཀྱི་བར་ན་གནས་པའི་གནས་རི་གྲགས་ཅན་ཞིག་ཏེ། རྡོ་རྗེ་གཡུ་སྒྲོན་མའི་གནས་སུ་གྲགས།"@bo .
+}

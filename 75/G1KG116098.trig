@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KG116098 {
+    bda:G1KG116098  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KG116098 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "75/G1KG116098.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KG116098 ;
+        adm:logEntry        bda:LG179ACDE683180F2C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG179ACDE683180F2C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-17T15:24:18.848Z"^^xsd:dateTime ;
+        adm:logMessage      "created place record"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:EV2ACC06FB1843B989
+        a                   :PlaceFounded ;
+        :onYear             "1779"^^xsd:gYear .
+    
+    bdr:G1KG116098  a       :Place ;
+        skos:altLabel       "thub bstan mdo sde brag"@bo-x-ewts ;
+        skos:prefLabel      "mdo sde brag dgon pa/"@bo-x-ewts , "dodedrak monastery"@en ;
+        :isRoot             true ;
+        :note               bdr:NT808B2AC5E7E624B1 ;
+        :placeEvent         bdr:EV2ACC06FB1843B989 ;
+        :placeLocatedIn     bdr:G4706 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT808B2AC5E7E624B1
+        a                   :Note ;
+        :noteText           "Dodedrak monastery was established by the 13th Je Khenpo Yonten Thaye in 1779 before he came the 13th Chief Abbot of Bhutan."@en .
+}

@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3JT12564 {
+    bda:G3JT12564  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3JT12564 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "9d/G3JT12564.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3JT12564 ;
+        adm:logEntry        bda:LG18E7F2FEF1D44BA3 , bda:LG2EEFE06038B9A40C , bda:LG6E63C3368F6FDB50 , bda:LG98A6DD5B1147DB0B , bda:LGA5E37133C66C62A5 , bda:LGAE7CC03A74DC2235 , bda:LGC7DF39E2F02EB339 , bda:LGD74CE7E8E73F9C6E , bda:LGFBAFD0ECBD2966A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18E7F2FEF1D44BA3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-02T16:05:53.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG2EEFE06038B9A40C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T15:39:00.096Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains in info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6E63C3368F6FDB50
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T13:59:02.859Z"^^xsd:dateTime ;
+        adm:logMessage      "par khang gi mchan bu med pa bzo yod"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG98A6DD5B1147DB0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G1326"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGA5E37133C66C62A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-04T12:13:07.696Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGAE7CC03A74DC2235
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-30T09:36:07.384Z"^^xsd:dateTime ;
+        adm:logMessage      "added date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC7DF39E2F02EB339
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-22T16:28:12.101Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD74CE7E8E73F9C6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-22T14:49:25.949Z"^^xsd:dateTime ;
+        adm:logMessage      "added place contained"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGFBAFD0ECBD2966A4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-03-04T14:51:16.019Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:EVF23D14DE87E5D68B
+        a                   :PlaceFounded ;
+        :notAfter           "1899"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:G3JT12564  a        :Place ;
+        skos:altLabel       "tre hor khang gsar bla brang par khang /"@bo-x-ewts ;
+        skos:prefLabel      "khang gsar bla brang par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1CB9F2E7B360A64F ;
+        :placeEvent         bdr:EVF23D14DE87E5D68B ;
+        :placeLocatedIn     bdr:G500 ;
+        :placeType          bdr:PT0059 .
+    
+    bdr:NT1CB9F2E7B360A64F
+        a                   :Note ;
+        :contentLocationStatement  "p. 229-230" ;
+        :noteSource         bdr:MW23185 ;
+        :noteText           "tre hor khang gsar bla brang nas dpar du skrun par gsal/"@en .
+}

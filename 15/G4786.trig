@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4786 {
+    bda:G4786  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4786 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "15/G4786.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4786 ;
+        adm:logEntry        bda:LG2E2FCD5B9D9274E1 , bda:LG8C4B6478DE8F5C5A , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2E2FCD5B9D9274E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-16T12:07:46.695Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8C4B6478DE8F5C5A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8C9CAB5A9A31800F
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P10299 ;
+        :onYear             "1412"^^xsd:gYear .
+    
+    bdr:G4786  a            :Place ;
+        skos:altLabel       "bkra shis lhun grub(rong bo)"@bo-x-ewts , "kA la ri dgon sde bkra shis lhun grub/"@bo-x-ewts ;
+        skos:prefLabel      "kA la ri sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT591B90C71C5A1420 , bdr:NT72BEB90AEDF34F1A ;
+        :placeEvent         bdr:EV8C9CAB5A9A31800F ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT591B90C71C5A1420
+        a                   :Note ;
+        :contentLocationStatement  "p. 19" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "hermitage founded in 1412 in the rong po area by a direct disciple of tsong kha pa, rong po ljags nag pa dge 'dun rgyal mtshan; famed for its mgon khang for mgon po gur and bram gzugs"@en .
+    
+    bdr:NT72BEB90AEDF34F1A
+        a                   :Note ;
+        :contentLocationStatement  "p. 21" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "dge lugs hermitage in the rong bo area of a mdo"@en .
+}

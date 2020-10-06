@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2338 {
+    bda:G2338  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2338 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "eb/G2338.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2338 ;
+        adm:logEntry        bda:LG17E5814C2741B614 , bda:LG75D3E76EF9A39827 , bda:LG87D74909D6BE1D5E , bda:LGB11DAA33D00B3614 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG17E5814C2741B614
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T16:02:36.39Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG75D3E76EF9A39827
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from county to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG87D74909D6BE1D5E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB11DAA33D00B3614
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T14:38:31.585Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2338  a            :Place ;
+        skos:altLabel       "rnam 'phel rdzong /"@bo-x-ewts ;
+        skos:prefLabel      "nan phing rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT752E839A6445235B , bdr:NTFACCBC15BDFBF944 ;
+        :placeLocatedIn     bdr:G636 ;
+        :placeType          bdr:PT0056 .
+    
+    bdr:NT752E839A6445235B
+        a                   :Note ;
+        :noteText           "རྫོང་འདི་ལ་༡༩༩༨ལོར་\"གཟི་ཚ་སྡེ་དགུ་རྫོང་\"༼G2394༽ཞེས་གསར་དུ་མིང་བཏགས་ཟིན་པས་དེར་གཟིགས།"@bo .
+    
+    bdr:NTFACCBC15BDFBF944
+        a                   :Note ;
+        :noteText           "county in rnga ba autonomous prefecture of sichuan province\npinyin: nanping"@en .
+}

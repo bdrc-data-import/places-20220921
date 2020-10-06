@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11122 {
+    bda:G2CN11122  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11122 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e3/G2CN11122.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11122 ;
+        adm:logEntry        bda:LG949085A4D5A200FA , bda:LG97061361C9B36D7D , bda:LGA9771D8AA2A3E7F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG949085A4D5A200FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-24T15:29:03.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG97061361C9B36D7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-09T15:37:12.794Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA9771D8AA2A3E7F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-09-24T14:46:16.433Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2CN11122  a        :Place ;
+        skos:altLabel       "gangs ri spu rgyal/"@bo-x-ewts , "spu rgyal gnas ri/"@bo-x-ewts ;
+        skos:prefLabel      "spu rgyal gangs bzang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD72E083BAD0544AB ;
+        :placeIsNear        bdr:G1KR1756 , bdr:G1KR1757 ;
+        :placeLocatedIn     bdr:G2150 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NTD72E083BAD0544AB
+        a                   :Note ;
+        :contentLocationStatement  "p. 146" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "སྦྲ་ཆེན་རྫོང་ནང་གནས་པའི་བན་བོན་གཉིས་ཀའི་གནས་མཆོག་ཞིག་ཏེ། ཕྱོགས་བཞིར་བོན་དགོན་བཞི་ཡོད་ཚུལ་དང་། ཞིབ་པ་གཏེར་སྟོན་བདེ་ཆེན་གླིང་པའི་གཏེར་ལུང་དཀར་ཆག་ཏུ་གསལ་ཚུལ་འཁོད།"@bo .
+}

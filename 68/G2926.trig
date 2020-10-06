@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2926 {
+    bda:G2926  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2926 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "68/G2926.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2926 ;
+        adm:logEntry        bda:LG3525572E7352CF75 , bda:LG4653CA9C88CA3E03 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3525572E7352CF75
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4653CA9C88CA3E03
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T11:52:16.403Z"^^xsd:dateTime ;
+        adm:logMessage      "cleaned up, added lineage & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1B649FF85CC4B91F
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G2926  a            :Place ;
+        skos:prefLabel      "o rgyan khrus chu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT162402D6D9D870DC ;
+        :placeEvent         bdr:EV1B649FF85CC4B91F ;
+        :placeLocatedIn     bdr:G2944 , bdr:G2949 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT162402D6D9D870DC
+        a                   :Note ;
+        :contentLocationStatement  "p. 125" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "rnying ma pa establishment in brag skas chus, spo bo rdzong"@en .
+}

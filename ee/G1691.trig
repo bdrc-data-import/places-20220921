@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1691 {
+    bda:G1691  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1691 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ee/G1691.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1691 ;
+        adm:logEntry        bda:LG0F23FBDE8923E942 , bda:LG284C97D0D94DEEDA , bda:LGF3326EA5228A25B2 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330204:169" ;
+        adm:place_id_lex    "513330204:169" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0F23FBDE8923E942
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-24T16:39:03.871Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG284C97D0D94DEEDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-11T09:26:58.918Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF3326EA5228A25B2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVBB6357C791CBEDC3
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1691  a            :Place ;
+        skos:altLabel       "a lo dpal 'byor dgon/"@bo-x-ewts , "dpal 'byor sgang /"@bo-x-ewts , "sde dge dpal 'byor dgon/"@bo-x-ewts , "bajue si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpal 'byor dgon/"@bo-x-ewts , "班觉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID60D88F5D615BD6D0 ;
+        :isRoot             true ;
+        :note               bdr:NT8C4C37057A06397B , bdr:NT9990829E93115408 ;
+        :placeEvent         bdr:EVBB6357C791CBEDC3 ;
+        :placeGonpaPerEcumen  "16.52" ;
+        :placeLat           "31.70000" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "98.58334" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID60D88F5D615BD6D0
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1691" .
+    
+    bdr:NT8C4C37057A06397B
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 610" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "bka' brgyud monastery\nདགོན་འདིའི་ལོ་རྒྱུས་མདོར་བསྡུས་གསལ།"@en .
+    
+    bdr:NT9990829E93115408
+        a                   :Note ;
+        :contentLocationStatement  "p. 147" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bka' brgyud monastery with the name a lo dpal 'byor dgon located in sde dge territory; founded in 1472 (8th rab byung me sbrul) by the 7th karma pa chos grags rgya mtsho in the a lo territories as a kam tshang bka' brgyud monastery; now has more than 30 monks"@en .
+}

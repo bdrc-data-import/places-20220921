@@ -1,0 +1,43 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX440000000 {
+    bda:G9GBX440000000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX440000000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "ab/G9GBX440000000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX440000000 ;
+        adm:logEntry        bda:LGAB6EF227489ADA44 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGAB6EF227489ADA44
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX440000000
+        a                   :Place ;
+        skos:altLabel       "guang dong sheng"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Guangdong Province"@en , "广东省"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX440100000 , bdr:G9GBX440200000 , bdr:G9GBX440300000 , bdr:G9GBX440400000 , bdr:G9GBX440500000 , bdr:G9GBX440600000 , bdr:G9GBX440700000 , bdr:G9GBX440800000 , bdr:G9GBX440900000 , bdr:G9GBX441200000 , bdr:G9GBX441300000 , bdr:G9GBX441400000 , bdr:G9GBX441500000 , bdr:G9GBX441600000 , bdr:G9GBX441700000 , bdr:G9GBX441800000 , bdr:G9GBX441900000 , bdr:G9GBX442000000 , bdr:G9GBX442000001 , bdr:G9GBX442000002 , bdr:G9GBX442000003 , bdr:G9GBX442000004 , bdr:G9GBX442000005 , bdr:G9GBX442000006 , bdr:G9GBX445100000 , bdr:G9GBX445200000 , bdr:G9GBX445300000 ;
+        :placeGB2260-2013   "440000000" ;
+        :placeLat           "23.1189117" ;
+        :placeLong          "113.2614288" ;
+        :placeType          bdr:PT0060 .
+}

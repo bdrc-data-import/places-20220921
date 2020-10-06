@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2055 {
+    bda:G2055  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2055 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "47/G2055.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2055 ;
+        adm:logEntry        bda:LG0DE9F7205F336A16 , bda:LG3334F30322A9AD33 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0DE9F7205F336A16
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T09:57:31.025Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3334F30322A9AD33
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV51D1FC233172CED5
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G2055  a            :Place ;
+        skos:prefLabel      "sman rtse dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9F2FF612B0434AE9 ;
+        :placeEvent         bdr:EV51D1FC233172CED5 ;
+        :placeLocatedIn     bdr:G2028 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT9F2FF612B0434AE9
+        a                   :Note ;
+        :contentLocationStatement  "p. 40" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "small bka' brgyud monastery in sbrag mda' shang of mal gro gung dkar rdzong, tibetan autonomous region"@en .
+}

@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1301 {
+    bda:G1301  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1301 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "21/G1301.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1301 ;
+        adm:logEntry        bda:LG4C6F0213CF7F06AF , bda:LG7B8DBFC1F18A2DC4 , bda:LGAA58519644A4DDD7 , bda:LGB8FED2B1D8E7E228 , bda:LGC419AA42FB88226D , bda:LGC9A276A22366067D , bda:LGD7693ADB54BFAB80 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4C6F0213CF7F06AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-06T12:50:47.365Z"^^xsd:dateTime ;
+        adm:logMessage      "changed loctaion"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7B8DBFC1F18A2DC4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAA58519644A4DDD7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-23T16:53:20.25Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB8FED2B1D8E7E228
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-30T12:06:27.389Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC419AA42FB88226D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-29T10:02:01.657Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC9A276A22366067D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-15T16:38:15.393Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD7693ADB54BFAB80
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-15T16:36:52.466Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1301  a            :Place ;
+        rdfs:comment        "thu med dang thor god gcig gam tha thad sna tshogs snang ba dpyad gzhi la/ lar o rod tsho bzhi'i 'phel 'gyur la zhib dpyad bya rgyu mang bas rjes nas kha snon dang legs bcos zhu rgyu'i brjed thor/" ;
+        skos:altLabel       "khal mug (deng dus)"@bo-x-ewts , "thor god/"@bo-x-ewts , "thor gwod/"@bo-x-ewts , "卡尔梅克（现代）"@zh-hans ;
+        skos:prefLabel      "thu med/"@bo-x-ewts , "Torghut"@en , "Tоргууд"@mn , "土尔扈特（清代）"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTA43894998914EAB1 , bdr:NTF42E55EAC1E14E76 ;
+        :placeLocatedIn     bdr:G4959 , bdr:G584 ;
+        :placeType          bdr:PT0081 .
+    
+    bdr:NTA43894998914EAB1
+        a                   :Note ;
+        :contentLocationStatement  "p. 1162" ;
+        :noteSource         bdr:MW29329 ;
+        :noteText           "sog po o rod tsho bzhi'i ya gyal zhig"@bo-x-ewts .
+    
+    bdr:NTF42E55EAC1E14E76
+        a                   :Note ;
+        :noteText           "see C2CN10979"@en .
+}

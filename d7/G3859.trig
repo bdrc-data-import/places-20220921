@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3859 {
+    bda:G3859  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3859 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "d7/G3859.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3859 ;
+        adm:logEntry        bda:LG72DD8E0B1F4D2266 , bda:LGAA7278A215894F5A , bda:LGC3227A418FA2CCEA , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG72DD8E0B1F4D2266
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAA7278A215894F5A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T11:11:50.589Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC3227A418FA2CCEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-12T15:38:42.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV01E9274C12C845EA
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:EV69826B4BFA0ECE42
+        a                   :PlaceConverted ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV97ED4EDD78F960D0
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1855 ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear .
+    
+    bdr:G3859  a            :Place ;
+        skos:altLabel       "gnas sgo srid gsum zil gnon lha khang /"@bo-x-ewts ;
+        skos:prefLabel      "gnas sgo zil gnon lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD2820787FCEA8E7C ;
+        :placeEvent         bdr:EV01E9274C12C845EA , bdr:EV69826B4BFA0ECE42 , bdr:EV97ED4EDD78F960D0 ;
+        :placeLocatedIn     bdr:G2306 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NTD2820787FCEA8E7C
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, pp. 509-510" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs temple complex  in 'dab pa rdzong"@en .
+}

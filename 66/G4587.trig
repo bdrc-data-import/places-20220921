@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4587 {
+    bda:G4587  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4587 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "66/G4587.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4587 ;
+        adm:logEntry        bda:LG392F2EC8B5B4AA86 , bda:LGBBB386A4728077FE , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540121206:540121119" ;
+        adm:place_id_lex    "540121206:540121119" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG392F2EC8B5B4AA86
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBBB386A4728077FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-02T11:58:36.152Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV72B6B3E3C91FF376
+        a                   :PlaceFounded ;
+        :onYear             "1900"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4587  a            :Place ;
+        skos:altLabel       "lhun grub rdzong dgon pa gsar pa/"@bo-x-ewts , "新寺"@zh-hans , "gongbasa si"@zh-latn-pinyin-x-ndia , "xin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dgon pa gsar pa/"@bo-x-ewts , "Gonpa Sarpa"@en-x-mixed , "贡巴萨寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID620A6508C816BFED ;
+        :isRoot             true ;
+        :note               bdr:NTF35089B1DDA14801 ;
+        :placeEvent         bdr:EV72B6B3E3C91FF376 ;
+        :placeGonpaPerEcumen  "24.38" ;
+        :placeLat           "30.03009" ;
+        :placeLocatedIn     bdr:G2127 ;
+        :placeLong          "91.26847" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID620A6508C816BFED
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4587" .
+    
+    bdr:NTF35089B1DDA14801
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 186-187" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

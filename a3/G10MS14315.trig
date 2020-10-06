@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G10MS14315 {
+    bda:G10MS14315  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G10MS14315 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a3/G10MS14315.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G10MS14315 ;
+        adm:logEntry        bda:LG4C8889D9EBA98013 , bda:LG51D78CBE587CDD43 , bda:LGC12A0EC601411170 , bda:LGE844845D611211E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4C8889D9EBA98013
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-25T13:29:53.91Z"^^xsd:dateTime ;
+        adm:logMessage      "created new place, released"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG51D78CBE587CDD43
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-01T10:26:13.48Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC12A0EC601411170
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE844845D611211E1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-25T13:26:52.822Z"^^xsd:dateTime ;
+        adm:logMessage      "created new place"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G10MS14315  a       :Place ;
+        skos:altLabel       "chos sde dgon/"@bo-x-ewts ;
+        skos:prefLabel      "mnga' ris chos sde dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT78B0F9CEF2313171 ;
+        :placeContains      bdr:G10MS14316 ;
+        :placeLocatedIn     bdr:G571 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT78B0F9CEF2313171
+        a                   :Note ;
+        :noteText           "jo nang monastery, converted to dge lugs"@en .
+}

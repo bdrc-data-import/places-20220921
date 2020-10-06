@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2365 {
+    bda:G2365  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2365 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "39/G2365.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2365 ;
+        adm:logEntry        bda:LG00365E216E11A2B7 , bda:LGFFE331B5178240E2 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00365E216E11A2B7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFFE331B5178240E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T11:48:11.038Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV00AA0C005B209196
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P3476 ;
+        :onYear             "1119"^^xsd:gYear .
+    
+    bdr:G2365  a            :Place ;
+        skos:altLabel       "rin chen sgang dgon pa (stag rtse)"@bo-x-ewts ;
+        skos:prefLabel      "stag rtse rin chen sgang dgon pa/"@bo-x-ewts , "Taktse Rinchengang Gonpa"@en ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV00AA0C005B209196 ;
+        :placeType          bdr:PT0037 .
+}

@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1898 {
+    bda:G1898  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1898 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "20/G1898.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1898 ;
+        adm:logEntry        bda:LG35EADE302D0BBF52 , bda:LG962DE623EEEAADFF , bda:LGFF2515F11BAFEC92 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632521206:431" ;
+        adm:place_id_lex    "632521206:534" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG35EADE302D0BBF52
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T16:09:27.916Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG962DE623EEEAADFF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T10:29:49.957Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFF2515F11BAFEC92
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0438EF1F021866CC
+        a                   :PlaceFounded ;
+        :onYear             "1984"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV8A56DC29E1F89FC7
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P6770 ;
+        :onYear             "1980"^^xsd:gYear .
+    
+    bdr:G1898  a            :Place ;
+        skos:altLabel       "ngo mtshar thar 'dren gling /"@bo-x-ewts , "rgya ye dgon ngo mtshar thar 'dren gling /"@bo-x-ewts , "甲乙俄察塔占林"@zh-hans , "jiayi eca tazhenlin"@zh-latn-pinyin-x-ndia , "jiayi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgya ye dgon/"@bo-x-ewts , "Gyaye Gon Ngotsar Tardrenling"@en , "甲乙寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF7F5618887F1F95D ;
+        :isRoot             true ;
+        :note               bdr:NT50E7CAE3E79CA225 ;
+        :placeEvent         bdr:EV0438EF1F021866CC , bdr:EV8A56DC29E1F89FC7 ;
+        :placeGonpaPerEcumen  "2.43" ;
+        :placeLat           "36.49279" ;
+        :placeLocatedIn     bdr:G1698 ;
+        :placeLong          "100.67160" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF7F5618887F1F95D
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1898" .
+    
+    bdr:NT50E7CAE3E79CA225
+        a                   :Note ;
+        :contentLocationStatement  "p. 422" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "monastery in gung ho rdzong, mtsho lho bod rigs rang skyong khul, located 28 km. to the north of chab cha grong rdal\nand about 27 km. to the northwest of rigs smon zhang on the banks of the kokonor lake\nfounded in 1984 by the gung ri mkha' 'gro ma dam tshig sgrol ma in accordance with the wishes of the 7th panchen lama"@en .
+}

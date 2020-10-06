@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G574 {
+    bda:G574  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G574 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "63/G574.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G574 ;
+        adm:logEntry        bda:LG0B50B49957499CED , bda:LG0BEC949CF5CF6789 , bda:LG267A360D570F7B1E , bda:LGBBBFCE1947869DBA , bda:LGC953AD3FAE93D093 , bda:LGD27C0D150237C205 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B50B49957499CED
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-07T12:08:18.056Z"^^xsd:dateTime ;
+        adm:logMessage      "added location as sakya county"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0BEC949CF5CF6789
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG267A360D570F7B1E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-28T17:13:34.416Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBBBFCE1947869DBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-27T15:07:51.912Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location & place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC953AD3FAE93D093
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G546"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGD27C0D150237C205
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G574  a             :Place ;
+        skos:altLabel       "gtsang stod khro phu shab smad sgom gnas dgon pa/"@bo-x-ewts , "khro phu shab smad sgom gnas dgon pa/"@bo-x-ewts , "shab smad sgom gnas dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "sgom gnas dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8282F66A0AD8F7F6 ;
+        :placeLocatedIn     bdr:G2169 , bdr:G546 , bdr:G953 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8282F66A0AD8F7F6
+        a                   :Note ;
+        :noteText           "small rnying ma monastery located in the shab area of the tibetan autonomous region"@en .
+}

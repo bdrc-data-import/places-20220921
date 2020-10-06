@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2312 {
+    bda:G2312  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2312 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "09/G2312.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2312 ;
+        adm:logEntry        bda:LG16DEDA8184870ED9 , bda:LG304D28ACF382001A , bda:LG402750DDF1C26783 , bda:LG58BF1A1578A68975 , bda:LG7F048B8B3A5E6DAB , bda:LGC442FA7D61857EEF , bda:LGC4A11E0390B28CD4 , bda:LGDBFBF62E41645F26 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG16DEDA8184870ED9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-30T10:51:33.03Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in english"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG304D28ACF382001A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T10:02:03.787Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG402750DDF1C26783
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-08T10:12:17.255Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG58BF1A1578A68975
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7F048B8B3A5E6DAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2382"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGC442FA7D61857EEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-26T12:32:58.958Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC4A11E0390B28CD4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-30T10:34:49.604Z"^^xsd:dateTime ;
+        adm:logMessage      "added note & normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDBFBF62E41645F26
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-25T11:59:33.958Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2312  a            :Place ;
+        skos:altLabel       "mtsho byang bod rigs rang skyong khul/"@bo-x-ewts , "mtsho byang khul/"@bo-x-ewts , "north kokonor autonomous tibetan prefecture"@en , "haibei zhou"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mtsho byang rang skyong khul/"@bo-x-ewts , "North Kokonor Prefecture"@en , "海北州"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT0E3B0833A351E307 , bdr:NT4637690536F0E904 ;
+        :placeContains      bdr:G2314 , bdr:G2315 , bdr:G2316 , bdr:G2382 ;
+        :placeLocatedIn     bdr:G977 ;
+        :placeType          bdr:PT0002 .
+    
+    bdr:NT0E3B0833A351E307
+        a                   :Note ;
+        :noteText           "༡༩༥༣ལོའི་ཟླ་༡༢ཚེས་༣༡ལ་མཚོ་བྱང་བོད་རིགས་རང་སྐྱོང་ལྗོངས་བཙུགས་ཤིང་། ཡང་༡༩༥༥ལོའི་ཟླ་༥ཚེས་༢༠ལ་མཚོ་བྱང་བོད་རིགས་རང་སྐྱོང་ཁུལ་ཞེས་མིང་བསྒྱུར་བྱས། དེ་ཁོངས་སུ་རྫོང་བཞི་ཡོད་པ་ནི། རྐང་ཚ་དང་ཆི་ལེན། སེམས་ཉིད། མདའ་བཞི་བཅས་སོ།"@bo .
+    
+    bdr:NT4637690536F0E904
+        a                   :Note ;
+        :noteText           "autonomous tibetan prefecture in qinghai province\npinyin: haibeizhou\nthis has four or five rdzong:\nthe pinyin source gives 5:\nhaiyan\nmenyuan\ngancha\nqilian\ntianjun\naccording to the tshig mdzod chen mo there are four rdzong:\nta'e yan\nrkang tsha\nchi len\nmong yon hu'e rigs rang skyong rdzong"@en .
+}

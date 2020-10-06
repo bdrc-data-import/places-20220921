@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3950 {
+    bda:G3950  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3950 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "3a/G3950.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3950 ;
+        adm:logEntry        bda:LG28EFC603D61E26D6 , bda:LG43B27AE6B59E98FD , bda:LGCE189178344E8A58 , bda:LGFB1CFFC39B26B83C , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513332207:365" ;
+        adm:place_id_lex    "513332207:365" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG28EFC603D61E26D6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG43B27AE6B59E98FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-07T09:14:00.664Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCE189178344E8A58
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-16T11:05:37.165Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFB1CFFC39B26B83C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-07T09:26:10.946Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV9A1CB9F2BD1EB2F9
+        a                   :PlaceFounded ;
+        :onYear             "1675"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3950  a            :Place ;
+        skos:altLabel       "baruo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ba rod dgon/"@bo-x-ewts , "巴若寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD540B6D2A67DE970 ;
+        :isRoot             true ;
+        :note               bdr:NTA1226A917EF0FDD3 , bdr:NTF5CA56E68658F9B6 ;
+        :placeEvent         bdr:EV9A1CB9F2BD1EB2F9 ;
+        :placeGonpaPerEcumen  "0.93" ;
+        :placeLat           "33.38334" ;
+        :placeLocatedIn     bdr:G2301 ;
+        :placeLong          "97.80000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD540B6D2A67DE970
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3950" .
+    
+    bdr:NTA1226A917EF0FDD3
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 226-230" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs monastery in ser shul rdzong"@en .
+    
+    bdr:NTF5CA56E68658F9B6
+        a                   :Note ;
+        :contentLocationStatement  "p. 152" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "dge lugs monastery; founded by jo bo skal bzang dge legs rnam rgyal; moved from shag khog in about 1870; the chab mdo lcags rwa rin po che ngag dbang 'phrin las performed the rites of sa 'dl and rab gnas; formerly had about 300 monks; now there are about 50 monks"@en .
+}

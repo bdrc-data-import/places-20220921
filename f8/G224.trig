@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G224 {
+    bda:G224  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G224 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "f8/G224.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G224 ;
+        adm:logEntry        bda:LG28EAC4F290E9BBF5 , bda:LG8B1E14CBAF4D367C , bda:LGF90EE547180CA540 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG28EAC4F290E9BBF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T17:12:30.916Z"^^xsd:dateTime ;
+        adm:logMessage      "added name with note & person of founder"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8B1E14CBAF4D367C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T17:21:01.794Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected tibetan note, added english note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF90EE547180CA540
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV408E3602AC5599E3
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P422 ;
+        :onYear             "1683"^^xsd:gYear .
+    
+    bdr:G224  a             :Place ;
+        skos:altLabel       "rdzong dkar bka' gdams pho brang bkra shis gling /"@bo-x-ewts ;
+        skos:prefLabel      "rdzong dkar dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT77C773CACC50F941 , bdr:NT824BA56BFBF84A81 , bdr:NT83F8F5EE1147E434 ;
+        :placeEvent         bdr:EV408E3602AC5599E3 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT77C773CACC50F941
+        a                   :Note ;
+        :noteText           "established in 1683 by ma Ni ba shes rab bkra shis"@en .
+    
+    bdr:NT824BA56BFBF84A81
+        a                   :Note ;
+        :contentLocationStatement  "p. 694" ;
+        :noteSource         bdr:MW19803 ;
+        :noteText           "dgon 'di ni rtis tshang ma Ni ba shes rab bkra shis kyis 1683 lor phyag btab cing / mtshan cha tshang ni/ \" rdzong dkar bka' gdams pho brang bkra shis gling \" yin par gsal/"@en .
+    
+    bdr:NT83F8F5EE1147E434
+        a                   :Note ;
+        :noteText           "dge lugs pa monastery in a mdo"@en .
+}

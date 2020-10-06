@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1GS148169 {
+    bda:G1GS148169  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1GS148169 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "50/G1GS148169.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1GS148169 ;
+        adm:logEntry        bda:LG0846686EAF3C05B3 , bda:LG9F40F69B17C564AA , bda:LGCC13A7544E49610F , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0846686EAF3C05B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-09T09:23:28.828Z"^^xsd:dateTime ;
+        adm:logMessage      "checked"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9F40F69B17C564AA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-06-08T23:15:24.421Z"^^xsd:dateTime ;
+        adm:logMessage      "problems in saving"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCC13A7544E49610F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-04T12:32:02.1Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1GS148169  a       :Place ;
+        skos:prefLabel      "nyung /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT26B82AFA81A7638F ;
+        :placeContains      bdr:G1GS148168 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT26B82AFA81A7638F
+        a                   :Note ;
+        :noteText           "probably a valley in the gtsang area of the tibetan autonomous region"@en .
+}

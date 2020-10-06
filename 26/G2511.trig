@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2511 {
+    bda:G2511  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2511 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "26/G2511.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2511 ;
+        adm:logEntry        bda:LG2A4E7E30D2B3538B , bda:LG3448CBC17EA3E20D , bda:LGDCB30917762E2D1C , bda:LGEAA05AB468CA06E6 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540102203:540101138" ;
+        adm:place_id_lex    "540102203:540101138" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2A4E7E30D2B3538B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-05T14:20:26.469Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3448CBC17EA3E20D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDCB30917762E2D1C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-24T14:01:44.542Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEAA05AB468CA06E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-05T15:15:21.74Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV63948821081F100F
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVE87DDA92B1DD2FAB
+        a                   :PlaceFounded ;
+        :onYear             "1150"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G2511  a            :Place ;
+        skos:altLabel       "se ra byes kyi ke'u tshang nub ri khrod/"@bo-x-ewts , "geiwucang xisi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ke'u tshang nub ri khrod/"@bo-x-ewts , "Keutsang Nub Ritro"@en-x-mixed , "给乌仓西寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE19A8194AF1E60A7 ;
+        :isRoot             true ;
+        :note               bdr:NTC0A0F55329A06BBC ;
+        :placeEvent         bdr:EV63948821081F100F , bdr:EVE87DDA92B1DD2FAB ;
+        :placeGonpaPerEcumen  "133.91" ;
+        :placeLat           "29.70598" ;
+        :placeLocatedIn     bdr:G2800 , bdr:G957 ;
+        :placeLong          "91.13696" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:IDE19A8194AF1E60A7
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2511" .
+    
+    bdr:NTC0A0F55329A06BBC
+        a                   :Note ;
+        :contentLocationStatement  "p. 118" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "one of the ten ri khrod belonging to se ra byes college"@en .
+}

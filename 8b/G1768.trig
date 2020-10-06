@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1768 {
+    bda:G1768  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1768 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8b/G1768.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1768 ;
+        adm:logEntry        bda:LGD31654C22DE8E7CE , bda:LGIM035E0028DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD31654C22DE8E7CE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM035E0028DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from zhangxiang to shang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1768  a            :Place ;
+        skos:prefLabel      "khra ma ho zhang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7F01C762EA9D9BBA ;
+        :placeContains      bdr:G1728 ;
+        :placeLocatedIn     bdr:G1754 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT7F01C762EA9D9BBA
+        a                   :Note ;
+        :contentLocationStatement  "p. 210" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "located in rma chen rdzong\nthis zhang is the location of 'bos lam dgon"@en .
+}

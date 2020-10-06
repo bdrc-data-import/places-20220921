@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1GS136662 {
+    bda:G1GS136662  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1GS136662 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "82/G1GS136662.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1GS136662 ;
+        adm:logEntry        bda:LG5677753FD65870DD , bda:LG667BBDEE4D7E1296 , bda:LGC5A2A7FCC5511C4E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5677753FD65870DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T13:31:37.345Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG667BBDEE4D7E1296
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:09:33.646Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from estate to gzhisKa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC5A2A7FCC5511C4E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-12-14T23:39:43.296Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1GS136662  a       :Place ;
+        skos:prefLabel      "bsam 'grub mthong smon gzhis ka"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1066653677D32961 , bdr:NT364AA2A8B00ED30D ;
+        :placeLocatedIn     bdr:G2164 ;
+        :placeType          bdr:PT0015 .
+    
+    bdr:NT1066653677D32961
+        a                   :Note ;
+        :noteText           "མཐོང་སྨོན་རྫོང་གི་སྔོན་དུས་ཀྱི་\"མཐོང་སྨོན་གཞིས་ཀ་\"དེ། འདི་ཡིན་མིན་མུ་མཐུད་དཔྱད་རྒྱུ།"@bo .
+    
+    bdr:NT364AA2A8B00ED30D
+        a                   :Note ;
+        :noteText           "in the early 16th century was the main estate of the thon pa family"@en .
+}

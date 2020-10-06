@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3523 {
+    bda:G3523  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3523 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "ad/G3523.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3523 ;
+        adm:logEntry        bda:LG8E0867350193DC4B , bda:LG9A0131651259600D , bda:LGC105F772EB40F060 , bda:LGE0698AFCA7B87045 , bda:LGF6A7063E68FE84B6 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542222202:542222103" ;
+        adm:place_id_lex    "542222202:542222103" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8E0867350193DC4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T16:06:12.173Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & GIS ID & 2 note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A0131651259600D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-19T15:53:40.709Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, type, location & info from G2811(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC105F772EB40F060
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:49.539Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE0698AFCA7B87045
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF6A7063E68FE84B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T16:13:08.308Z"^^xsd:dateTime ;
+        adm:logMessage      "copy note in english from dup. G2811"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4B104BD6C51B3315
+        a                   :PlaceFounded ;
+        :onYear             "1250"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3523  a            :Place ;
+        skos:altLabel       "sbrags kyi tshal gseb lha khang /"@bo-x-ewts , "tshal gseb lha khang /"@bo-x-ewts , "casai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tshar gseb ri khrod/"@bo-x-ewts , "Tsharseb Ritro"@en-x-mixed , "擦赛寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID33AC4F0F6E25BDC8 ;
+        :isRoot             true ;
+        :note               bdr:NT84C3482726A00C15 , bdr:NT8A6A9C9088F41EEA , bdr:NTF9ACA0A957ED9DED ;
+        :placeContains      bdr:G2CN10892 ;
+        :placeEvent         bdr:EV4B104BD6C51B3315 ;
+        :placeGonpaPerEcumen  "17.37" ;
+        :placeLat           "29.43952" ;
+        :placeLocatedIn     bdr:G2804 , bdr:G799 ;
+        :placeLong          "91.29204" ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:ID33AC4F0F6E25BDC8
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3523" .
+    
+    bdr:NT84C3482726A00C15
+        a                   :Note ;
+        :contentLocationStatement  "p. 218" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "temple in the sgrags valley supported lavishly by the zur khang family\nhere were held the blocks for printing a number of rnying ma pa books including snying thig bu gsum and mdzod bdun"@en .
+    
+    bdr:NT8A6A9C9088F41EEA
+        a                   :Note ;
+        :contentLocationStatement  "p. 218" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "བསྒྲགས་ཡོངས་རྫོགས་གཤམ་ཚལ་གསེབ་ལྷ་ཁང་ཀ་བཞི་མར། སྟོན་པ་གཙོ་འཁོར་ནས་གཙོས་འཇིགས་གླིང་ཟུར་རྗེ་གླིང་པ་སོགས་ཀྱི་སྐུ་བརྙན་སོགས་རྟེན་གསུམ་སྣ་ཚོགས་ཡོད་ཅིང་། ཁྱད་པར་དུ་མགོན་ཁང་གི་\"གཏོར་སྒྲོམ་སོགས་ཟུར་ཁང་པས་བཞེངས་པ་དང་། སྙིང་ཐིག་བུ་གསུམ། མཛོད་བདུན་བཅས་ཀྱི་སྤར་ཤིང་ཡོད་འདུག་གོ་\"ཅེས་འཁོད།"@bo .
+    
+    bdr:NTF9ACA0A957ED9DED
+        a                   :Note ;
+        :contentLocationStatement  "p. 20" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "རི་ཁྲོད་དེ་ནི་ཨོ་རྒྱན་ཟུར་རྗེ་གླིང་པས་ཕྱག་བཏབ་པའི་བཙུན་མའི་དགོན་ཆུང་ཞིག་ཏེ། དེར་སྙིང་ཐིག་མཛོད་བདུན་སོགས་ཀྱི་སྤར་ཤིང་སྤུས་ལེགས་ཡོད་པ་ཕྱིས་ཐོར་སྐྱོན་བྱུང་ནས་ཕལ་ཆེ་བ་རྡོར་བྲག་ཏུ་བཞུགས་པ་འཁོད།"@bo .
+}

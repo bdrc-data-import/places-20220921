@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3747 {
+    bda:G3747  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3747 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "c5/G3747.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3747 ;
+        adm:logEntry        bda:LG0669A6B4F078C8E2 , bda:LG5A33D8564BF6245D , bda:LGA977129F3CE023CC , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513334207:267" ;
+        adm:place_id_lex    "513334207:267" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0669A6B4F078C8E2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5A33D8564BF6245D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGA977129F3CE023CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T14:15:37.54Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type 7 arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVB09A8C9F0CD881F3
+        a                   :PlaceFounded ;
+        :onYear             "1700"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3747  a            :Place ;
+        skos:altLabel       "le thang rnying ma grwa tshang /"@bo-x-ewts , "宁玛扎冲寺/宁玛寺"@zh-hans , "ningma zhacang"@zh-latn-pinyin-x-ndia , "ningma zhachong si/ningma si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "li thang rnying ma grwa tshang /"@bo-x-ewts , "宁玛扎仓"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8323FCCFBB30F0AB ;
+        :isRoot             true ;
+        :note               bdr:NTBB72DE45AAFA71C1 ;
+        :placeEvent         bdr:EVB09A8C9F0CD881F3 ;
+        :placeGonpaPerEcumen  "2.23" ;
+        :placeLat           "29.91667" ;
+        :placeLocatedIn     bdr:G2304 ;
+        :placeLong          "100.31667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID8323FCCFBB30F0AB
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3747" .
+    
+    bdr:NTBB72DE45AAFA71C1
+        a                   :Note ;
+        :contentLocationStatement  "p. 167" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "a rnying ma pa religious establishment  belonging to the kaH thog tradition listed among the thor bu in the list of si tu chos kyi rgya mtsho\nothography: le thang rnying ma grwa tshang"@en .
+}

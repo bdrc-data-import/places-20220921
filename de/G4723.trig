@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4723 {
+    bda:G4723  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4723 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "de/G4723.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4723 ;
+        adm:logEntry        bda:LG09E95F66F6A86090 , bda:LG263A8C334EEFA944 , bda:LG394CA3915AA12DBC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG09E95F66F6A86090
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-03T15:12:49.094Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG263A8C334EEFA944
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG394CA3915AA12DBC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:EVB1A751579E734B17
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P613 ;
+        :notAfter           "1899"^^xsd:gYear ;
+        :notBefore          "1800"^^xsd:gYear .
+    
+    bdr:G4723  a            :Place ;
+        skos:prefLabel      "chos rtse bshad grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA4E14A20DD3E26FF ;
+        :placeEvent         bdr:EVB1A751579E734B17 ;
+        :placeLocatedIn     bdr:G4713 ;
+        :placeType          bdr:PT0038 .
+    
+    bdr:NTA4E14A20DD3E26FF
+        a                   :Note ;
+        :contentLocationStatement  "f. 186r-186v" ;
+        :noteSource         bdr:MW19809 ;
+        :noteText           "teaching institution established by dge bshes smin drug with the patronage of o rgyan dbang phyug"@en .
+}

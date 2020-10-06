@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3889 {
+    bda:G3889  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3889 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9f/G3889.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3889 ;
+        adm:logEntry        bda:LG2EEA86A5A0336090 , bda:LG807C5AD23F9F630D , bda:LG9655443E220CF524 , bda:LGF38ACC15D908B91C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2EEA86A5A0336090
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG807C5AD23F9F630D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9655443E220CF524
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T11:50:58.807Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF38ACC15D908B91C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T14:30:06.323Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3889  a            :Place ;
+        skos:prefLabel      "hor rnying grwa tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA8F417E594587EFA ;
+        :placeLocatedIn     bdr:G2304 , bdr:G3881 ;
+        :placeType          bdr:PT0040 .
+    
+    bdr:NTA8F417E594587EFA
+        a                   :Note ;
+        :noteText           "dge lugs grwa tshang in li thang rdzong /"@bo-x-ewts .
+}

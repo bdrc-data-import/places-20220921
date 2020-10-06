@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1999 {
+    bda:G1999  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1999 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8b/G1999.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1999 ;
+        adm:logEntry        bda:LGD2EB4E775AC3FD17 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD2EB4E775AC3FD17
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1999  a            :Place ;
+        skos:prefLabel      "rin spungs khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0B0C38D762834F06 , bdr:NT9D00EFDB7437700C ;
+        :placeType          bdr:PT0057 .
+    
+    bdr:NT0B0C38D762834F06
+        a                   :Note ;
+        :contentLocationStatement  "p. 2324" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1563. sa skya dang byang pa bdag po ma mthun pa'i dbang gis sa skya'i rgyab langs rin spungs pas byas te g.yas ru byang pa'i thog tu dmag grangs\n1568. rin spungs pa'i dmag pa snam du drangs/ pa snam khyung rtse ba rin spungs par mgo btags\n1575. rin spungs pa'i dmag dpung khri lhag tsam skyid shod du yong nas sgal byang smon gsum bcom"@en .
+    
+    bdr:NT9D00EFDB7437700C
+        a                   :Note ;
+        :contentLocationStatement  "p. 421" ;
+        :noteSource         bdr:MW20170 ;
+        :noteText           "administrative taxation region equivent to a rdzong in the 1830 settlement document"@en .
+}

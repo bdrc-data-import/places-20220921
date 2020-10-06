@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G778 {
+    bda:G778  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G778 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "07/G778.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G778 ;
+        adm:logEntry        bda:LG27F5C62DF6576985 , bda:LG4F87E4200EDAACD2 , bda:LGA97731C16F521335 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG27F5C62DF6576985
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-10T11:17:22.517Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4F87E4200EDAACD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-02T09:39:03.659Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA97731C16F521335
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G778  a             :Place ;
+        skos:prefLabel      "dha li kha/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT678807E37DC5DF1B , bdr:NTFCED4CD5D600222D ;
+        :placeLocatedIn     bdr:G3205 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT678807E37DC5DF1B
+        a                   :Note ;
+        :noteText           "traditional place name of a locality in bhutan\none of the four kha"@en .
+    
+    bdr:NTFCED4CD5D600222D
+        a                   :Note ;
+        :contentLocationStatement  "p. 227-228" ;
+        :noteSource         bdr:MW19809 ;
+        :noteText           "shar phyogs 'khor lo rtsibs brgyad kyi mtha' bkra shis sgang nas kha ling gdung bsam kha tshun dang / lho bkra shis rtags brgyad dar dkar nas dpag bsam kha dang g+h Ti kha/ nub rin chen sna bdun spungs pa'i phyogs nas dha li kha dang gro mo phag ri'i la mtshams tshun dang / byang kha ba can gyi ri mtshams nas gling bzhi mgar sa stag rte kha tshun phyag tu son zhes sogs 'khod pa la dpyad gzhi che/"@en .
+}

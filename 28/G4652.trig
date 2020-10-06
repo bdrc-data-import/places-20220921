@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4652 {
+    bda:G4652  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4652 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "28/G4652.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4652 ;
+        adm:logEntry        bda:LG0ACDB9CB81CC77EB , bda:LG7C84BFFDD7E4F77B , bda:LGB574FF1277F9C0C2 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513232203:165" ;
+        adm:place_id_lex    "513232203:165" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0ACDB9CB81CC77EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-02T16:15:34.472Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7C84BFFDD7E4F77B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB574FF1277F9C0C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-03T15:08:40.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA2708C3BE79DE2C4
+        a                   :PlaceFounded ;
+        :onYear             "1751"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4652  a            :Place ;
+        skos:altLabel       "'bras spungs thos bsam rnam rgyal gling /"@bo-x-ewts , "byams me dgon thos bsam rnam rgyal gling /"@bo-x-ewts , "thos bsam rnam rgyal gling /"@bo-x-ewts , "若尔盖县哲蚌寺"@zh-hans , "ruo'ergai xian zhebang si"@zh-latn-pinyin-x-ndia , "zhebang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "byams me dgon/"@bo-x-ewts , "哲蚌寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID36B48B5ACECB14E6 ;
+        :isRoot             true ;
+        :note               bdr:NTEC535BF788AF77F4 , bdr:NTF450F7B3BA8D47FC ;
+        :placeEvent         bdr:EVA2708C3BE79DE2C4 ;
+        :placeGonpaPerEcumen  "1.29" ;
+        :placeLat           "33.71830" ;
+        :placeLocatedIn     bdr:G299 ;
+        :placeLong          "102.46394" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID36B48B5ACECB14E6
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4652" .
+    
+    bdr:NTEC535BF788AF77F4
+        a                   :Note ;
+        :noteText           "monastery founded by 'bras spungs blo bzang chos kyi sbyin pa"@en .
+    
+    bdr:NTF450F7B3BA8D47FC
+        a                   :Note ;
+        :contentLocationStatement  "p. 37" ;
+        :noteSource         bdr:MW29636 ;
+        :noteText           "this monastery was founded in 1793 by 'bras spungs blo bzang chos kyi sbyin pa 91730-1805). there were two main bla brang in the monastery: seng tshang and dpon bla\n\n(from dup. G4693)"@en .
+}

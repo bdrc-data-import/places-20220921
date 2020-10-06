@@ -1,0 +1,118 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G457 {
+    bda:G457  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G457 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "a7/G457.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G457 ;
+        adm:logEntry        bda:LG283F94F300D87965 , bda:LG2F256067EE35DDB2 , bda:LG7E61122F40E3B43D , bda:LG9F7331F4CF639711 , bda:LGA21B4EF8CD2FB725 , bda:LGA976F3160EEB32FB , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542331201:542331101" ;
+        adm:place_id_lex    "542331201:542331101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG283F94F300D87965
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-30T14:35:39.866Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2F256067EE35DDB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-03T14:01:13.999Z"^^xsd:dateTime ;
+        adm:logMessage      "located par khang"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7E61122F40E3B43D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-11T16:39:19.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added affiliation, shangs pa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9F7331F4CF639711
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA21B4EF8CD2FB725
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-11T15:32:20.425Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA976F3160EEB32FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-11T17:24:50.166Z"^^xsd:dateTime ;
+        adm:logMessage      "edited dates and affiliations"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0ED974A8CFF21DCF
+        a                   :PlaceConverted ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionShangpaKagyu .
+    
+    bdr:EV1F7F21BDA57F59DC
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV969EE389CE90B7C1
+        a                   :PlaceFounded ;
+        :onYear             "0750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G457  a             :Place ;
+        skos:altLabel       "gnas snying dgon pa/"@bo-x-ewts , "naining si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gnas rnying dgon pa/"@bo-x-ewts , "Nenying"@en , "乃宁寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6BB93441C5EE2D62 ;
+        :isRoot             true ;
+        :note               bdr:NT48C218A4F3323B9A , bdr:NT6DBD2018C8A70ACD ;
+        :placeContains      bdr:G1KG15418 ;
+        :placeEvent         bdr:EV0ED974A8CFF21DCF , bdr:EV1F7F21BDA57F59DC , bdr:EV969EE389CE90B7C1 ;
+        :placeGonpaPerEcumen  "7.17" ;
+        :placeLat           "28.81667" ;
+        :placeLocatedIn     bdr:G2173 ;
+        :placeLong          "89.65000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID6BB93441C5EE2D62
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G457" .
+    
+    bdr:NT48C218A4F3323B9A
+        a                   :Note ;
+        :noteText           "dates/sects from Situ's Guide, called the 'Bodhgaya of Tibet'"@en .
+    
+    bdr:NT6DBD2018C8A70ACD
+        a                   :Note ;
+        :contentLocationStatement  "p. 59" ;
+        :noteSource         bdr:MW20212 ;
+        :noteText           "monastic seat of the gnas rnying tradition which merged with the dge lugs pa; \nthe 7th khri of dga' ldan blo gros brtan pa was from this tradition"@en .
+}

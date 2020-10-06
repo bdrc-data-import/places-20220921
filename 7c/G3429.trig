@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3429 {
+    bda:G3429  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3429 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "7c/G3429.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3429 ;
+        adm:logEntry        bda:LG2D192ABD060486FB , bda:LG4C854DD1559774AD , bda:LG6A121C92B9BEF22F , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542228201:542228105" ;
+        adm:place_id_lex    "542228201:542228105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2D192ABD060486FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-27T14:33:44.66Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4C854DD1559774AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from templecomplex to lhaKhang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6A121C92B9BEF22F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV15AA10C6636EE6A9
+        a                   :PlaceConverted ;
+        :onYear             "1750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVD3DB9758555430ED
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G3429  a            :Place ;
+        skos:altLabel       "lho brag sras mkhar dgu thog"@bo-x-ewts , "塞卡尔古陀寺"@zh-hans , "seka-er gutuo si"@zh-latn-pinyin-x-ndia , "seka gutuo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sras mkhar dgu thog"@bo-x-ewts , "Sekhar Guthok"@en-x-mixed , "色喀古陀寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAE4367D60ED77D2A ;
+        :isRoot             true ;
+        :note               bdr:NTA810200059197B89 , bdr:NTADDF385604D9C99E ;
+        :placeEvent         bdr:EV15AA10C6636EE6A9 , bdr:EVD3DB9758555430ED ;
+        :placeGonpaPerEcumen  "6.43" ;
+        :placeLat           "28.18559" ;
+        :placeLocatedIn     bdr:G2134 ;
+        :placeLong          "90.83574" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:IDAE4367D60ED77D2A
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3429" .
+    
+    bdr:NTA810200059197B89
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 130-132" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "description"@en .
+    
+    bdr:NTADDF385604D9C99E
+        a                   :Note ;
+        :contentLocationStatement  "p. 230" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "important pilgrimage complex visited by kaH thog si tu in 1919; for the description he cites the printed gnas yig\nimportant collections of thangkas painted under the patronage of klong rdol bla ma and a collection of books"@en .
+}

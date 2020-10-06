@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4802 {
+    bda:G4802  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4802 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "5e/G4802.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4802 ;
+        adm:logEntry        bda:LG21ACF159FCD1AD1F , bda:LG2FC4D6B3A401DF3D , bda:LG47E16E72FBFED323 , bda:LG525A34A165B3C7D8 , bda:LG6C5CCD73BFDD946D , bda:LG729516609B7B3604 , bda:LGB92795EFC1FAFA33 , bda:LGBB85D5ABC6D36C0B , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG21ACF159FCD1AD1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T12:25:34.79Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2FC4D6B3A401DF3D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T14:44:44.241Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG47E16E72FBFED323
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-24T09:31:31.329Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG525A34A165B3C7D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-31T09:36:09.34Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6C5CCD73BFDD946D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-26T11:21:16.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG729516609B7B3604
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-31T13:05:53.806Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB92795EFC1FAFA33
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBB85D5ABC6D36C0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-20T16:37:29.37Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4802  a            :Place ;
+        skos:prefLabel      "yar stod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT37780EEEE837755C , bdr:NT83EFF9D3A806A9B7 ;
+        :placeContains      bdr:G1226 , bdr:G1953 , bdr:G2GS1065 , bdr:G4180 , bdr:G4459 ;
+        :placeLocatedIn     bdr:G1145 , bdr:G1513 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT37780EEEE837755C
+        a                   :Note ;
+        :contentLocationStatement  "p. 398" ;
+        :noteSource         bdr:MW8224 ;
+        :noteText           "སྤྱིར་ཡར་ཀླུང་གི་སྟོད་ཤམ་པོ་གངས་ཀྱི་ཉེ་འདབས་ས་ཁུལ་ལ་གོ་ལ། ཁྱད་པར་དུ་དུས་རབས་བཅུ་དྲུག་པའི་སྐབས་ཡར་སྟོད་རྒྱལ་ཆེན་གྱིས་མངའ་ཞབས་སམ་སྡེ་དཔོན་དེའི་མངའ་རིས་ལ་གོ ཕྱིས་སུ་ཡར་སྟོད་རྫོང་ཡང་ས་དེར་ཆགས། དེང་སང་སྣེ་གདོང་རྫོང་ཁོངས་སུ་གནས་སོ།"@bo .
+    
+    bdr:NT83EFF9D3A806A9B7
+        a                   :Note ;
+        :noteText           "name of the upper yar lung principality"@en .
+}

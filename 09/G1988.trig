@@ -1,0 +1,114 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1988 {
+    bda:G1988  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1988 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "09/G1988.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1988 ;
+        adm:logEntry        bda:LG40EE55C0F182AB73 , bda:LG4C398DA026418EE5 , bda:LG57475CCBEFFE0213 , bda:LG7F0039C38C499124 , bda:LG836039D7BD3D5FD9 , bda:LG8986798C2F3FF5D5 , bda:LGAFD84180AE725E2E , bda:LGD19B61DD8C45B0E1 , bda:LGE33ED47E1C90A496 , bda:LGF86241D5C90E73B1 , bda:LGFA6BA63160DCFC09 , bda:LGFD8B735CCCDB8728 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG40EE55C0F182AB73
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-17T11:16:55.574Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4C398DA026418EE5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-20T08:46:39.139Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG57475CCBEFFE0213
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-13T14:08:45.382Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7F0039C38C499124
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG836039D7BD3D5FD9
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-07T16:50:21.919Z"^^xsd:dateTime ;
+        adm:logMessage      "aaded contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8986798C2F3FF5D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-02-04T13:10:25.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGAFD84180AE725E2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G1PD108961"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGD19B61DD8C45B0E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-07T13:21:54.36Z"^^xsd:dateTime ;
+        adm:logMessage      "edited as (lo rgyus)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE33ED47E1C90A496
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-30T14:42:44.824Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF86241D5C90E73B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-08T10:16:02.223Z"^^xsd:dateTime ;
+        adm:logMessage      "takeout contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFA6BA63160DCFC09
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-18T11:58:48.158Z"^^xsd:dateTime ;
+        adm:logMessage      "bod yig la bsgyur yod"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGFD8B735CCCDB8728
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-05T13:03:34.605Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note (need to withdraw G755,G934 & Keep in to here)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1988  a            :Place ;
+        skos:altLabel       "myang stod shel dkar rgyal rtse/"@bo-x-ewts , "nyang stod rgyal rtse/"@bo-x-ewts , "rgyal rtse kron chus/（1959-1964）"@bo-x-ewts , "rgyal rtse sa khul/ [(1959-1964)]"@bo-x-ewts , "shel dkar rgyal rtse/"@bo-x-ewts , "江孜地区（1959-1964）"@zh-hans ;
+        skos:prefLabel      "rgyal rtse khul/ （lo rgyus thog）"@bo-x-ewts , "江孜专区（1959-1964）"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT214CE7A8EFF0F3FA , bdr:NTEBBF8E459C345FBB ;
+        :placeContains      bdr:G1420 , bdr:G853 , bdr:G934 ;
+        :placeLocatedIn     bdr:G971 ;
+        :placeType          bdr:PT0057 .
+    
+    bdr:NT214CE7A8EFF0F3FA
+        a                   :Note ;
+        :contentLocationStatement  "p. 449" ;
+        :noteSource         bdr:MW20170 ;
+        :noteText           "administrative taxation region equivent to a rdzong in the 1830 settlement document"@en .
+    
+    bdr:NTEBBF8E459C345FBB
+        a                   :Note ;
+        :noteText           "རྒྱལ་རྩེ་ཁུལ་ནི་དེང་གི་རྒྱལ་རྩེ་རྫོང་གི་ས་ཁོངས་ལས་རྒྱ་ཆེ་བ་ཞིག་ལ་གོ་སྟེ། ཁྱད་པར་རྒྱལ་རྩེ་ས་ཁུལ་ལ་ཁང་དམར་རྫོང་སོགས་རྫོང་ཁག་དྲུག་ཙམ་ཚུད་ཡོད་པ་ལོ་རྒྱུས་ཀྱི་གནས་སྐབས་ཤིག་གི་ས་མིང་དུ་གྱུར་ཡོད།"@bo .
+}

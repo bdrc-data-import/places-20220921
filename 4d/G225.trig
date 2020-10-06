@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G225 {
+    bda:G225  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G225 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "4d/G225.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G225 ;
+        adm:logEntry        bda:LG1569D40A56F12E86 , bda:LG1CB3B28A9F36E469 , bda:LG1FAD0362C0351F85 , bda:LG74B8FA287C75FCE0 , bda:LG75D68CCE033B7502 , bda:LGA63F17DF3B79765F , bda:LGF010EFCFBFB15CF3 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542301204:542306" ;
+        adm:place_id_lex    "542301204:542306" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1569D40A56F12E86
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-19T13:51:01.948Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG1CB3B28A9F36E469
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-07T16:57:14.468Z"^^xsd:dateTime ;
+        adm:logMessage      "added near"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1FAD0362C0351F85
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-18T10:30:09.367Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG74B8FA287C75FCE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:19:58.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain: \"par khang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG75D68CCE033B7502
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-11T16:55:55.296Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA63F17DF3B79765F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T12:02:39.093Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF010EFCFBFB15CF3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV255DE0A5718CE95A
+        a                   :PlaceFounded ;
+        :onYear             "1153"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G225  a             :Place ;
+        skos:altLabel       "那唐寺"@zh-hans , "natang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "snar thang dgon/"@bo-x-ewts , "Nartang Monastery"@en , "纳唐寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID75FC6BF8D3DA5393 ;
+        :isRoot             true ;
+        :note               bdr:NTF7CADEBABEC3BFF5 ;
+        :placeContains      bdr:G2CN10912 ;
+        :placeEvent         bdr:EV255DE0A5718CE95A ;
+        :placeGonpaPerEcumen  "7.33" ;
+        :placeLat           "29.18333" ;
+        :placeLocatedIn     bdr:G2170 ;
+        :placeLong          "88.75000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID75FC6BF8D3DA5393
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G225" .
+    
+    bdr:NTF7CADEBABEC3BFF5
+        a                   :Note ;
+        :noteText           "ancient bka' gdams pa monastery near bkra shis lhun po in gtsang; controlled by abbots from a series of families"@en .
+}

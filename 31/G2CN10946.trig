@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10946 {
+    bda:G2CN10946  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10946 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "31/G2CN10946.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10946 ;
+        adm:logEntry        bda:LG8B25B6993D10A56A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513328216:302" ;
+        adm:place_id_lex    "513328216:302" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8B25B6993D10A56A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-12-18T11:19:18.405Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV1CF61CECFFD68BC0
+        a                   :PlaceFounded ;
+        :onYear             "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2CN10946  a        :Place ;
+        skos:altLabel       "dar rgyas dgon (dkar mdzes rdzong)"@bo-x-ewts , "大吉岭寺"@zh-hans , "da ji ling si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dar rgyas gling /"@bo-x-ewts , "大吉岭寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE37A868FA738F0CD ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV1CF61CECFFD68BC0 ;
+        :placeGonpaPerEcumen  "13.92" ;
+        :placeLat           "31.95000" ;
+        :placeLocatedIn     bdr:G621 ;
+        :placeLong          "100.26667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE37A868FA738F0CD
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2CN10946" .
+}

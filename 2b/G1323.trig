@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1323 {
+    bda:G1323  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1323 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2b/G1323.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1323 ;
+        adm:logEntry        bda:LG1D42CBDEB50D0050 , bda:LG55CEA0A46DDD80E0 , bda:LGDC9DE89BFAD8F76D , bda:LGE6EA1EDCBED3A4A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1D42CBDEB50D0050
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-30T14:27:05.671Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG55CEA0A46DDD80E0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDC9DE89BFAD8F76D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-09T10:52:31.529Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE6EA1EDCBED3A4A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T16:48:07.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1323  a            :Place ;
+        skos:altLabel       "gnod sbyin gang ba bzang po/"@bo-x-ewts , "ha'o gang bzang /"@bo-x-ewts ;
+        skos:prefLabel      "gangs ri gnod sbyin gang bzang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2175 , bdr:G971 ;
+        :placeType          bdr:PT0042 .
+}

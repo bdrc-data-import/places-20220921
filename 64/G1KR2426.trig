@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2426 {
+    bda:G1KR2426  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2426 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "64/G1KR2426.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2426 ;
+        adm:logEntry        bda:LG1D3A5B0A42CFBB0E , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632321206:651" ;
+        adm:place_id_lex    "632321206:24" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1D3A5B0A42CFBB0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-17T11:10:31.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added short name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV22EA3B779CB5A1A6
+        a                   :PlaceFounded ;
+        :onYear             "1300"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR2426  a         :Place ;
+        skos:altLabel       "mag gsar sman re'i bshad sgrub smin grol gling /"@bo-x-ewts , "Maksar"@bo-x-phon-en ;
+        skos:prefLabel      "dmu gsal sgar 'og ma/"@bo-x-ewts , "木合沙下寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCE8B52683801AB71 ;
+        :isRoot             true ;
+        :note               bdr:NT4DC2FEEFEFB03730 ;
+        :placeEvent         bdr:EV22EA3B779CB5A1A6 ;
+        :placeGonpaPerEcumen  "32.36" ;
+        :placeLat           "35.43186" ;
+        :placeLocatedIn     bdr:G984 ;
+        :placeLong          "101.91106" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDCE8B52683801AB71
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2426" .
+    
+    bdr:NT4DC2FEEFEFB03730
+        a                   :Note ;
+        :contentLocationStatement  "p. 457" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "need to compare: G1KR2424 & G1KR2425 & G1KR2426"@en .
+}

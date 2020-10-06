@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2260 {
+    bda:G2260  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2260 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bf/G2260.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2260 ;
+        adm:logEntry        bda:LG6BB9F4A8288F593C , bda:LG6E1ED884150F81A4 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6BB9F4A8288F593C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6E1ED884150F81A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T12:27:53.571Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2260  a            :Place ;
+        skos:prefLabel      "rtsa bu lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD1EF221186016ED5 ;
+        :placeLocatedIn     bdr:G2154 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NTD1EF221186016ED5
+        a                   :Note ;
+        :contentLocationStatement  "p. 9" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "sa skya pa temple located in zhing pa chu of spu hreng rdzong, mnga' ris prefecture\nformerly a dgon lag of gtsang byang chub gling\n\"da yod grwa pa gnyis/ slad grwa tshad gnyis\""@en .
+}

@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4185 {
+    bda:G4185  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4185 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "48/G4185.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4185 ;
+        adm:logEntry        bda:LG47F06A0A6396EE5A , bda:LG6B2B7D3779DC28D3 , bda:LG9A62A1FE6892875A , bda:LGCDB352303BC547A8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG47F06A0A6396EE5A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6B2B7D3779DC28D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-24T11:01:46.174Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A62A1FE6892875A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-19T09:08:13.095Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2nd location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCDB352303BC547A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-18T16:01:34.059Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV93C2698874413351
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G4185  a            :Place ;
+        skos:prefLabel      "ban pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT27D6276CFDC2DD7F , bdr:NTBBA7E407CC1203D1 ;
+        :placeContains      bdr:G4184 , bdr:G4186 ;
+        :placeEvent         bdr:EV93C2698874413351 ;
+        :placeLocatedIn     bdr:G3176 , bdr:G3CN58 ;
+        :placeType          bdr:PT0001 .
+    
+    bdr:NT27D6276CFDC2DD7F
+        a                   :Note ;
+        :contentLocationStatement  "p. 258" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོའི་སྐབས་སུ་བོད་རུ་རེ་རེ་ན་ཡུལ་དཔོན་བཅུ་དྲུག་རེ་ཡོད་པ་ལས། འདི་ནི་གཡོ་རུའི་ཡུལ་དཔོན་ཚན་བཅུ་དྲུག་གི་ཡུལ་སྡེ་དགུ་་པ་དེ་ཡིན་པར་གསལ། དེ་ཡང་ལྷོ་བྲག་གི་ཤར་རྒྱུད་དུ་གནས།"@bo .
+    
+    bdr:NTBBA7E407CC1203D1
+        a                   :Note ;
+        :contentLocationStatement  "pp. 272-273" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "subvalley of lho brag"@en .
+}

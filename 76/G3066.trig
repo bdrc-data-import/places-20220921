@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3066 {
+    bda:G3066  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3066 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "76/G3066.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3066 ;
+        adm:logEntry        bda:LG8D41C279BF072067 , bda:LGFB34345F91D517A9 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8D41C279BF072067
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T09:52:32.169Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFB34345F91D517A9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3066  a            :Place ;
+        skos:altLabel       "ge re lha khang /"@bo-x-ewts , "gye ri lha khang /"@bo-x-ewts ;
+        skos:prefLabel      "ge ri lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7AA9CE89B06BE708 , bdr:NT87B1F162FCF845A0 ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3016 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NT7AA9CE89B06BE708
+        a                   :Note ;
+        :contentLocationStatement  "p. 107" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "ancient temple founded in the 7th cent."@en .
+    
+    bdr:NT87B1F162FCF845A0
+        a                   :Note ;
+        :contentLocationStatement  "p. 60" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "ruins of a temple on the edge of ge ri grong tsho\nsaid to date from the 7th century when srong btsan sgam po conceived the intent to found a palace at the po ta la\nen route to lha sa he stopped at ge ri and saw the six syllable formula miraculuosly appeared\non the cliff he also saw the spyan ras gzigs kha sar pa Ni, sgrol ma, rta mgrin, etc. magnificently manifested just as if they were created by nepalese artisans\nthe king decided to build the temple on this spot"@en .
+}

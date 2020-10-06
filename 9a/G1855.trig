@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1855 {
+    bda:G1855  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1855 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "9a/G1855.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1855 ;
+        adm:logEntry        bda:LG257D8EF0FDAA2D35 , bda:LG867579071AED5047 , bda:LGFE2D1A71D898A88A , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632523202:333" ;
+        adm:place_id_lex    "632523202:365" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG257D8EF0FDAA2D35
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-16T14:27:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "languaged setings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG867579071AED5047
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T10:26:56.586Z"^^xsd:dateTime ;
+        adm:logMessage      "edited names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFE2D1A71D898A88A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV925E5252EBB4790D
+        a                   :PlaceFounded ;
+        :onYear             "1750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1855  a            :Place ;
+        skos:altLabel       "'gag bza' grwa tshang bkra shis dar rgyas gling /"@bo-x-ewts , "bkra shis dar rgyas gling /"@bo-x-ewts , "荣一寺"@zh-hans , "gouhouzha si"@zh-latn-pinyin-x-ndia , "rongyi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'gag bza' grwa tshang /"@bo-x-ewts , "苟后扎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFC4BC6F6898EFFA9 ;
+        :isRoot             true ;
+        :note               bdr:NTA091A7298FC713F6 , bdr:NTA6AAB01A50A05866 ;
+        :placeEvent         bdr:EV925E5252EBB4790D ;
+        :placeGonpaPerEcumen  "39.16" ;
+        :placeLat           "35.93186" ;
+        :placeLocatedIn     bdr:G1715 ;
+        :placeLong          "101.46082" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDFC4BC6F6898EFFA9
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1855" .
+    
+    bdr:NTA091A7298FC713F6
+        a                   :Note ;
+        :contentLocationStatement  "p. 133" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "dge lugs pa monastery in khri ka rdzong, mtsho lho bod rigs rang skyong khul\nlocated at a distance of about 21 km. to the southeast of the administrative seat of khri ka rdzong\na dgon lag of lA mo bde chen"@en .
+    
+    bdr:NTA6AAB01A50A05866
+        a                   :Note ;
+        :contentLocationStatement  "p. 301" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "'gag za'i grwa tshang \n'di ni 'phrang dmar lung du tsang nga dka' bcus btab pa dang grong dang 'brel ba/ klong rdol bla ma'i slob ma 'bro a lags kyis grong las bkyed de dgon pa ngos gtsang btab/"@bo-x-ewts .
+}

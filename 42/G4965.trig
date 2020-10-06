@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4965 {
+    bda:G4965  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4965 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "42/G4965.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4965 ;
+        adm:logEntry        bda:LG44F99C50E4EA057F , bda:LG490A00FE62252C23 , bda:LG7D770BF280DE4D22 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG44F99C50E4EA057F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-09T11:47:22.837Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG490A00FE62252C23
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7D770BF280DE4D22
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-09T11:36:32.465Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4965  a            :Place ;
+        skos:altLabel       "bya do nam mkha' do/"@bo-x-ewts , "bya dor ri khrod/"@bo-x-ewts ;
+        skos:prefLabel      "bya do dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT37BD1B250723FB4F , bdr:NTB9F0B667DFF5A420 ;
+        :placeLocatedIn     bdr:G1818 , bdr:G3418 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT37BD1B250723FB4F
+        a                   :Note ;
+        :noteText           "dge lugs hermitage located on the edge of the byang gnam mtsho; connected with ke'u tshang blo bzang 'jam dbyangs smon lam"@en .
+    
+    bdr:NTB9F0B667DFF5A420
+        a                   :Note ;
+        :contentLocationStatement  "p. 157-158" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "གནམ་མཚོའི་བྱང་ཁ་ན་ཆགས་པའི་དགོན་གནས་ཤིག་ཏེ། \"སྐུ་ཡི་གནས་མཆོག་བཀྲ་ཤིས་དོ་བ་ཆེ་དང་། གསུང་གི་གནས་མཆོག་བྱ་དོ་ནམ་མཁའ་དོ། ཐུགས་ཀྱི་གནས་མཆོག་མ་ཆགས་སེ་མོ་དོ་\"ཞེས་པ་དང་། ཡང་མཚོ་མཐའ་བཞིར་དགོན་རེ་ཡོད་པ་མཚོ་སྒོ་བཞི་ལས། འདི་ནི་བྱང་གི་མཚོ་སྒོར་བཤད་སྲོལ་ཡོད་པ་སོགས་གསལ།"@bo .
+}

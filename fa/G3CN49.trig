@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN49 {
+    bda:G3CN49  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN49 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fa/G3CN49.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN49 ;
+        adm:logEntry        bda:LGACD076EB36682F00 , bda:LGBA587AF7B9925ACF , bda:LGD12BF1E83E2D6E11 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGACD076EB36682F00
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T16:11:54.116Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBA587AF7B9925ACF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-06T15:59:31.907Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD12BF1E83E2D6E11
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T11:21:40.301Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as \"stongSde\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV7E6A3FAD6A6E2C2E
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN49  a           :Place ;
+        skos:altLabel       "yel rab stong bu chung /"@bo-x-ewts ;
+        skos:prefLabel      "yes rab stong bu chung /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFD361F4764A29870 ;
+        :placeEvent         bdr:EV7E6A3FAD6A6E2C2E ;
+        :placeLocatedIn     bdr:G2011 ;
+        :placeType          bdr:PT0073 .
+    
+    bdr:NTFD361F4764A29870
+        a                   :Note ;
+        :contentLocationStatement  "p. 101" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "དབུ་རུའི་སྟོང་སྡེ་བཅུའི་ནང་ཚན་གཅིག་ཡིན་པར་གསལ།"@bo .
+}

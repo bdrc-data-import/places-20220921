@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G444 {
+    bda:G444  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G444 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "94/G444.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G444 ;
+        adm:logEntry        bda:LGC5A4CB42F8F084CF , bda:LGD29193E15F301074 , bda:LGD59BEAF7820D68D8 , bda:LGD9D81270341CB091 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221202:542221113" ;
+        adm:place_id_lex    "542221202:542221113" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC5A4CB42F8F084CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-13T03:12:20.695Z"^^xsd:dateTime ;
+        adm:logMessage      "added note from bod kyi dgon sde khag gcig"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD29193E15F301074
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD59BEAF7820D68D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-12T09:02:55.892Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD9D81270341CB091
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:13:55.847Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV6A42C8DD90323140
+        a                   :PlaceFounded ;
+        :onYear             "1206"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionYazangKagyu .
+    
+    bdr:G444  a             :Place ;
+        skos:altLabel       "dga' ldan bsam gtan gling /"@bo-x-ewts , "g.ya' bzang dga' ldan bsam gtan gling /"@bo-x-ewts , "g.ya' bzang dgon/"@bo-x-ewts , "yasang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "g.ya' bzang dgon/"@bo-x-ewts , "Yazang Gon"@en-x-mixed , "亚桑寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC1A6DA4E6D7A6171 ;
+        :isRoot             true ;
+        :note               bdr:NT6E53B140EEA240F6 , bdr:NT99D6454F45D8A152 , bdr:NTBCFB2E64678D52AB ;
+        :placeEvent         bdr:EV6A42C8DD90323140 ;
+        :placeGonpaPerEcumen  "4.08" ;
+        :placeLat           "28.88721" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.90896" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC1A6DA4E6D7A6171
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G444" .
+    
+    bdr:NT6E53B140EEA240F6
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 53" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "གངས་རི་ཆེན་པོ་ཡར་ལྷ་ཤམ་པོའི་རི་འདབས་གཡའ་བཟང་གྲོང་གི་ནུབ་རིའི་ལྡེབས་སུ་དགོན་དེ་གནས་ཡོད། དེ་ནི་༡༢༠༦ལོར་གཡའ་བཟང་བཀའ་བརྒྱུད་པའི་སྲོལ་གཏོད་པོ་རྒྱལ་བ་གཡའ་བཟང་པས་ཕྱག་བཏབ་ནས་རྒྱུན་བཞུགས་མཛད། ཚོགས་པ་ཉིས་སྟོང་བརྒྱད་བརྒྱ་ཙམ་བྱུང་བར་གྲགས། མཐར་སྐུ་འཇའ་ལུས་སུ་ཕེབས་ནས་སྐུ་གདུང་རིང་བསྲེལ་མཁའ་འགྲོས་སྤྱན་དྲངས་པར་གྲགས་ཤིང་ཆོས་རྒྱལ་སྲོང་བཙན་གྱི་རྣམ་སྤྲུལ་ཡིན་པར་ཡང་གྲགས། སྐུ་ཕྲེང་རིམ་པ་དགུ་ཙམ་བྱུང་བ་ལ་དགུ་པ་ལྕང་གྲོང་སྤྱི་ཕྱག་སྟེ་སྤྲུལ་སྐུ་འཕྲིན་ལས་ཆོས་ཀྱི་རྒྱལ་མཚན་ཞེས་པ་ཡོད་པར་གསལ། སྔོན་དགོན་དེར་གསེར་ཟངས་ཀྱི་རྒྱལ་བ་ཤཱཀྱ་མུ་ནེ་མི་ཚད་མ་དང་། ཇོ་བོ་མི་སྐྱོད་རྡོ་རྗེ་སོགས་རྟེན་ཇི་སྙེད་ཅིག་བཞུགས་སུ་གསོལ་ཡོདསྐོར་ལས། ད་ལྟ་འཇིམ་སྐུ་མང་པོ་གསར་བཞེངས་གནང་ཡོད་ལ། སྔོན་རྒྱལ་བ་གཡའ་བཟང་པས་བོད་ཀྱི་ཁྲི་དཔོན་གནང་སྐབས་ཀྱི་སྲུང་མ་མགོན་པོ་ཕྱག་བཞི་པ་དང་། ལྷ་ཙན་ཌི་ཀ་སོགས་ཀྱི་སྐུ་བརྙན་ཡང་ཡོད་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NT99D6454F45D8A152
+        a                   :Note ;
+        :contentLocationStatement  "p. 134" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "this monastery was the main monastery of the g.ya' bzang bka' brgyud. founded in 1206 (me stag) by chos rje chos smon. located in g.ya' bzang grong tsho of chos sde gong shang of sne gdong rdzong near yar lha sham po gangs ri."@en .
+    
+    bdr:NTBCFB2E64678D52AB
+        a                   :Note ;
+        :contentLocationStatement  "p. 258" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "monastery mentioned by, but not visited by kaH thog si tu;\nthis is located in \"yar lung g.yas ngos\"\nthis was the main seat of the g.ya bzang bka' brgyud"@en .
+}

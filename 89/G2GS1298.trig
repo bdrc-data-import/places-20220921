@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1298 {
+    bda:G2GS1298  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1298 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "89/G2GS1298.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1298 ;
+        adm:logEntry        bda:LG105B6512F6B8FEA3 , bda:LG1A02D6B7229F39D2 , bda:LG7DA3E32621344700 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG105B6512F6B8FEA3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-15T17:00:34.428Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1A02D6B7229F39D2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-09-20T16:38:13.891Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7DA3E32621344700
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-21T10:28:17.516Z"^^xsd:dateTime ;
+        adm:logMessage      "restored"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2GS1298  a         :Place ;
+        skos:prefLabel      "gzhi bkram dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD2F937EF1A920346 ;
+        :placeLocatedIn     bdr:G2187 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTD2F937EF1A920346
+        a                   :Note ;
+        :contentLocationStatement  "p. 225" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "small dge lugs monastery located near the old lho rong rdzong;  founded in 1854 (shing stag). it had more or less 200 monks. it is located in khang gsar shang near the gzhis ka of rta tshag tshe dbang rgyal and is near the rta tshag lhun grub bde chen ri khrod. there is a mention of gzhi bkram dgon in the bsam yas dkar chag of bka' blon bshad sgra dbang phyug rgyal po"@en .
+}

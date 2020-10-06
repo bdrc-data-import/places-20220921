@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1TD32 {
+    bda:G1TD32  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1TD32 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b9/G1TD32.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1TD32 ;
+        adm:logEntry        bda:LG9C7CE198387036FC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9C7CE198387036FC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-29T17:47:17.68Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bdr:EVEEF9553344E7A987
+        a                   :PlaceFounded ;
+        :notAfter           "1429"^^xsd:gYear ;
+        :notBefore          "1420"^^xsd:gYear .
+    
+    bdr:EVFF43C4949EF761B5
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2778 ;
+        :notAfter           "1429"^^xsd:gYear ;
+        :notBefore          "1420"^^xsd:gYear .
+    
+    bdr:G1TD32  a           :Place ;
+        skos:altLabel       "rta mchog lha khang /"@bo-x-ewts , "rta mchog sgang lha khang /"@bo-x-ewts , "Tachog Lhakhang"@en ;
+        skos:prefLabel      "rta mchog sgang /"@bo-x-ewts , "Tachogang"@en ;
+        :isRoot             true ;
+        :note               bdr:NTB8F3F1169115CAE8 ;
+        :placeEvent         bdr:EVEEF9553344E7A987 , bdr:EVFF43C4949EF761B5 ;
+        :placeLat           "27.330990" ;
+        :placeLocatedIn     bdr:G3205 ;
+        :placeLong          "89.503977" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NTB8F3F1169115CAE8
+        a                   :Note ;
+        :noteText           "founded by Tangtong Gyelpo, probably around 1420 as noted by \nFrancoise Pommaret in Bhutan: Himalayan Mountain Kingdom pg.156-160"@en .
+}

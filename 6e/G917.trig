@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G917 {
+    bda:G917  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G917 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6e/G917.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G917 ;
+        adm:logEntry        bda:LG8DAC925FB312ADCC , bda:LG905242DDA2D359E9 , bda:LGC1BB17982AB6209B , bda:LGCB7C6FAC99ADE479 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8DAC925FB312ADCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG905242DDA2D359E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-07T16:38:24.106Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC1BB17982AB6209B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-10T12:32:09.172Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCB7C6FAC99ADE479
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G917  a             :Place ;
+        skos:altLabel       "co ne thang tshang /"@bo-x-ewts , "mdo smad thang tshang /"@bo-x-ewts ;
+        skos:prefLabel      "thang tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4E3C2FEBD05256C8 ;
+        :placeLocatedIn     bdr:G1164 ;
+        :placeType          bdr:PT0020 .
+    
+    bdr:NT4E3C2FEBD05256C8
+        a                   :Note ;
+        :contentLocationStatement  "v.2, p. 73" ;
+        :noteSource         bdr:MW1GS49973 ;
+        :noteText           "'jam dbyangs dkon mchog nyi ma \"co ne'i thang tshang\" du 'khrungs zhes gsal/"@bo-x-ewts .
+}

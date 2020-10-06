@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD110081 {
+    bda:G1PD110081  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD110081 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "77/G1PD110081.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD110081 ;
+        adm:logEntry        bda:LG49866929A0EBED37 , bda:LG76FDCEDBFAEC5A3F , bda:LGFC46110E3323CA1E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG49866929A0EBED37
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-03-01T09:52:39.72Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG76FDCEDBFAEC5A3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T12:21:58.577Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFC46110E3323CA1E
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-03-01T12:05:04.232Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bdr:G1PD110081  a       :Place ;
+        skos:altLabel       "'bras 'jongs mkha' spyod dpal ri dgon/"@bo-x-ewts ;
+        skos:prefLabel      "mkha' spyod dpal ri dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT09CFAB40EE1CE3D7 ;
+        :placeLocatedIn     bdr:G1398 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT09CFAB40EE1CE3D7
+        a                   :Note ;
+        :noteSource         bdr:MW1KG879 ;
+        :noteText           "p. 177"@en .
+}

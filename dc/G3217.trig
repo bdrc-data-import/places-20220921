@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3217 {
+    bda:G3217  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3217 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "dc/G3217.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3217 ;
+        adm:logEntry        bda:LG3D174129E05A1BEC , bda:LG55B34B3DAA72EDC6 , bda:LG76FDA6F305EFDD60 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3D174129E05A1BEC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG55B34B3DAA72EDC6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T09:04:16.431Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG76FDA6F305EFDD60
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-16T12:21:45.423Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3217  a            :Place ;
+        skos:altLabel       "rme dgon byams chen dar rgyas gling chos 'khor gling /"@bo-x-ewts , "rme dgon khri dar rgyas byang chub chos 'khor gling /"@bo-x-ewts , "sog bkra shis dar gling /"@bo-x-ewts ;
+        skos:prefLabel      "rme dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT18BD4C31315A2692 ;
+        :placeLocatedIn     bdr:G2337 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT18BD4C31315A2692
+        a                   :Note ;
+        :contentLocationStatement  "p. 3" ;
+        :noteSource         bdr:MW22359 ;
+        :noteText           "rnying ma monastic establishment"@en .
+}

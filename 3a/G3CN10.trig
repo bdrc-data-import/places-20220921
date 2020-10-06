@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN10 {
+    bda:G3CN10  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN10 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3a/G3CN10.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN10 ;
+        adm:logEntry        bda:LG6C509FCDFFF3DF69 , bda:LG96CED14019EB4A33 , bda:LGE8525D76C487060F , bda:LGF834B36E09FE2873 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6C509FCDFFF3DF69
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T11:25:59.398Z"^^xsd:dateTime ;
+        adm:logMessage      "added 13 contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG96CED14019EB4A33
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-12T16:28:34.733Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE8525D76C487060F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-15T11:48:12.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF834B36E09FE2873
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-13T15:53:07.161Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN10  a           :Place ;
+        skos:prefLabel      "khri skor bcu gsum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT01E97AA9DBFE4B21 ;
+        :placeContains      bdr:G3CN11 , bdr:G3CN12 , bdr:G3CN13 , bdr:G3CN14 , bdr:G3CN15 , bdr:G3CN16 , bdr:G3CN17 , bdr:G3CN18 , bdr:G3CN19 , bdr:G3CN20 , bdr:G4250 , bdr:G4260 , bdr:G4794 ;
+        :placeLocatedIn     bdr:G3186 ;
+        :placeType          bdr:PT0046 .
+    
+    bdr:NT01E97AA9DBFE4B21
+        a                   :Note ;
+        :contentLocationStatement  "p. 346, p. 1430" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "ཁྲི་སྐོར་བཅུ་གསུམ་གྱི་རྣམ་གྲངས་དང་ས་ཁུལ་དབྱེ་སྟངས་སོགས་གནད་བསྡུས་རིའུ་མིག་དང་བཅས་པ་གསལ།"@bo .
+}

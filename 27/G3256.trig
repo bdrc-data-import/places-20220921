@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3256 {
+    bda:G3256  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3256 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "27/G3256.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3256 ;
+        adm:logEntry        bda:LG244C3AB12333FEBC , bda:LG331BD5224015F1EB , bda:LG431CA804106D08DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG244C3AB12333FEBC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG331BD5224015F1EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG431CA804106D08DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-21T12:48:06.305Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3256  a            :Place ;
+        skos:prefLabel      "gle lung chos sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2891E8B798C3A762 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT2891E8B798C3A762
+        a                   :Note ;
+        :noteText           "the seat of the mus pa lineage"@en .
+}

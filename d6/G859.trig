@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G859 {
+    bda:G859  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G859 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d6/G859.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G859 ;
+        adm:logEntry        bda:LGA79EC088685EB742 , bda:LGAB76DD86C27714DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA79EC088685EB742
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-14T10:24:42.87Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type (from existed type \"sbasyul\" to \"sbasYul\")"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAB76DD86C27714DD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G859  a             :Place ;
+        skos:prefLabel      "yol mo gangs kyi ra ba/"@bo-x-ewts , "helambu"@en ;
+        :isRoot             true ;
+        :note               bdr:NTC0E09FC8C9A174CB ;
+        :placeType          bdr:PT0022 .
+    
+    bdr:NTC0E09FC8C9A174CB
+        a                   :Note ;
+        :contentLocationStatement  "f. 134r" ;
+        :noteSource         bdr:MW19708 ;
+        :noteText           "hidden land opened up through the revelations of yol mo sngags 'chang shAkya bzang po, who built a monastery here\nhe received instructions to open up this land from mchog ldan mgon po"@en .
+}

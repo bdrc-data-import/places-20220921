@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3625 {
+    bda:G3625  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3625 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "99/G3625.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3625 ;
+        adm:logEntry        bda:LG1AA08B8D68650B55 , bda:LG6D9C76B9D7BA388A , bda:LGBA52C9872A9076C0 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1AA08B8D68650B55
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6D9C76B9D7BA388A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T12:22:32.094Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBA52C9872A9076C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-01-05T14:12:38.951Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3625  a            :Place ;
+        skos:altLabel       "'chi med dkar mo stag tshang /"@bo-x-ewts , "rong me dkar mo stag tshang /"@bo-x-ewts ;
+        skos:prefLabel      "dkar mo stag tshang sgrub sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA35D5DE3553974FF , bdr:NTAD71C6C733D56C3A ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NTA35D5DE3553974FF
+        a                   :Note ;
+        :noteText           "a treasure site of mchog gyur gling pa and hermitage site of 'ju mi pham rgya mtsho to the northeast of rdzong sar monastery in sde dge. the current hermitage there houses monks from the rdzong sar khams byed bshad grwa in five-year retreats."@en .
+    
+    bdr:NTAD71C6C733D56C3A
+        a                   :Note ;
+        :contentLocationStatement  "565" ;
+        :noteSource         bdr:MW00EGS1016994 ;
+        :noteText           "ཀར་ལུ་རིན་པོ་ཆེས་རྫོང་སར་མཁྱེན་བརྩེ་ཆོས་ཀྱི་བློ་གྲོས་མཆོག་ལ་ཤངས་པའི་ཡིག་རྙིང་གི་དབང་ལུང་ཐམས་ཅད་ཕུལ་ཞིང་། དཀར་མོ་སྟག་ཚང་གི་སྒྲུབ་སྡེར་ཤངས་ཆོས་ཡོངས་རྫོགས་ཀྱི་དབང་ལུང་དང་། དུས་འཁོར་ལྷ་དགུའི་དབང་འཁྲིད་སོགས་གསུངས། ཀར་ལུ་རིན་པོ་ཆེ་ཉིད་ཀྱིས་ཀྱང་མཁྱེན་བརྩེ་རིན་པོ་ཆེའི་མདུན་ནས་གཏེར་གསར་ཕྱག་དྲུག་སོགས་དབང་ཆོས་དུ་མ་གསན་པས། ཕན་ཚུན་དགོངས་ཀློང་དབྱེར་མེད་དུ་འདྲེས་ཞེས་སོགས་གསལ།"@bo .
+}

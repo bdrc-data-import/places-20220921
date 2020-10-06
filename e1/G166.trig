@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G166 {
+    bda:G166  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G166 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e1/G166.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G166 ;
+        adm:logEntry        bda:LG0BABF778A94DB109 , bda:LG2FED8F01E1E9FCB2 , bda:LG84D68798F1960D83 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG0BABF778A94DB109
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2FED8F01E1E9FCB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-18T13:05:04.793Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG84D68798F1960D83
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-18T08:47:18.337Z"^^xsd:dateTime ;
+        adm:logMessage      "need to withdraw"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G166  a             :Place ;
+        skos:altLabel       "dga' ldan dam chos gling /"@bo-x-ewts , "gser khog dga' ldan dam chos gling /"@bo-x-ewts , "赛柯合寺"@zh-hans , "guanghui si"@zh-latn-pinyin-x-ndia , "saikehe guanba"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gser khog dgon/"@bo-x-ewts , "广惠寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT505E37A6A809BA41 , bdr:NT67E7A6D287627903 , bdr:NT8FD703310CADBCF2 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT505E37A6A809BA41
+        a                   :Note ;
+        :noteSource         bdr:MW20115 .
+    
+    bdr:NT67E7A6D287627903
+        a                   :Note ;
+        :contentLocationStatement  "v.1, p." ;
+        :noteSource         bdr:MW21509 ;
+        :noteText           "dge lugs pa monastery in a mdo\nregarded as one of the byang gi dgon chen bzhi: sku 'bum dgon pa, dgon lung byams pa gling, gser khog dgon, bya khyung dgon\n\n---from G1978"@en .
+    
+    bdr:NT8FD703310CADBCF2
+        a                   :Note ;
+        :noteText           "important dge lugs pa monastery in a mdo"@en .
+}

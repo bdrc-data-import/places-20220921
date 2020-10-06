@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4669 {
+    bda:G4669  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4669 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8a/G4669.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4669 ;
+        adm:logEntry        bda:LG923999DCD0C5B3AC , bda:LGF5F4EB7AB8B0C7C6 , bda:LGF7D566701337EA48 , bda:LGFCE75D0C8E356688 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG923999DCD0C5B3AC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF5F4EB7AB8B0C7C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF7D566701337EA48
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-27T10:09:37.942Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFCE75D0C8E356688
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-31T11:21:35.606Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G4669  a            :Place ;
+        skos:prefLabel      "klung shod jo dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT317C2C490E408147 ;
+        :placeLocatedIn     bdr:G928 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NT317C2C490E408147
+        a                   :Note ;
+        :contentLocationStatement  "pp. 400-405" ;
+        :noteSource         bdr:MW29401 ;
+        :noteText           "nunnery founded by the 12 lab skyabs mgon dbang chen dgyes rab rdo rje"@en .
+}

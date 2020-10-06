@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN24 {
+    bda:G3CN24  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN24 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ee/G3CN24.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN24 ;
+        adm:logEntry        bda:LGFE56D3794255AF82 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGFE56D3794255AF82
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-13T17:07:40.015Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN24  a           :Place ;
+        skos:altLabel       "dmar zla sgang /"@bo-x-ewts , "rma rdza mchong lung dar sgang /"@bo-x-ewts , "rma rdza sgang /"@bo-x-ewts ;
+        skos:prefLabel      "dmar rdza sgang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3D9A5105B79AEA58 , bdr:NT7D9BD72C2E9D79F8 ;
+        :placeLocatedIn     bdr:G2GS1325 ;
+        :placeType          bdr:PT0062 .
+    
+    bdr:NT3D9A5105B79AEA58
+        a                   :Note ;
+        :contentLocationStatement  "p.289" ;
+        :noteSource         bdr:MW00EGS1016725 ;
+        :noteText           "མིང་གི་རྣམ་གྲངས་རྣམས་གསལ།"@bo .
+    
+    bdr:NT7D9BD72C2E9D79F8
+        a                   :Note ;
+        :contentLocationStatement  "p.824" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "ཆུ་བཞི་སྒང་དྲུག་གི་རྣམ་གྲངས་འདྲེན་ཚུལ་རིགས་གཅིག་གསལ།"@bo .
+}

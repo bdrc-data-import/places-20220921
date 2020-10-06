@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4473 {
+    bda:G4473  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4473 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "87/G4473.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4473 ;
+        adm:logEntry        bda:LG385E4C36906D70EC , bda:LG86ED9F984C436447 , bda:LGAAFDD7A2D3F41B1B , bda:LGC661D1273B115636 , bda:LGFD21485043A950BC , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632126206:130" ;
+        adm:place_id_lex    "632126206:149" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG385E4C36906D70EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-09T11:50:36.248Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG86ED9F984C436447
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T14:11:17.985Z"^^xsd:dateTime ;
+        adm:logMessage      "aranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAAFDD7A2D3F41B1B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC661D1273B115636
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T09:17:52.609Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGFD21485043A950BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:31.28Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV811AC6ABB028231C
+        a                   :PlaceFounded ;
+        :onYear             "1644"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4473  a            :Place ;
+        skos:altLabel       "bde chen chos gling /"@bo-x-ewts , "chos bzang ri khrod bde chen chos gling /"@bo-x-ewts , "huayuan si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "chos bzang ri khrod/"@bo-x-ewts , "花园寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7F6F01BE9B6130D7 ;
+        :isRoot             true ;
+        :note               bdr:NT19DCE6A4FA10E050 , bdr:NT6B4193F41131F78C ;
+        :placeEvent         bdr:EV811AC6ABB028231C ;
+        :placeGonpaPerEcumen  "47.28" ;
+        :placeLat           "36.67451" ;
+        :placeLocatedIn     bdr:G1PD96101 ;
+        :placeLong          "102.24164" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID7F6F01BE9B6130D7
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4473" .
+    
+    bdr:NT19DCE6A4FA10E050
+        a                   :Note ;
+        :contentLocationStatement  "pp. 77-79" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "chos bzang ri khrod bde chen chos gling \n'di ni thu'u bkwan gong ma rje ngag dbang chos kyi rgya mtsho bzhugs shing thugs dam nyams rtogs shin tu 'phel/ rdo rje 'jigs byed/ sangs rgyas so lnga/ gnas brtan bcu drug rnams kyi zhal gzigs/ tshe blos btang gi bsam gtan pa bdun bzhugs pa'i sgrub sde btsugs/ rje chos kyi nyi ma'i sku dus sku gong mar bshags lha zhal gzigs pa'i gzims chung gyang logs la mi 'khrugs pa'i 'bur sku stong/ bar mtshams kyi yul ljongs la spyan ras gzigs kyi rigs drug 'dren tshul sogs rnam thar mang po'i bkod pa/ sangs rgyas so lnga'i sman sku byis pa lo brgyad kyi tshad tsam pa dang 'du khang gsar bzo/ steng 'og tu mchod khang/ mgon khang du dpal mgon bram gzugs kyi sku mi tshad long ba yum bzhi dang bcas pa/ bka' 'gyur khang sogs dri gtsang khang mang du yod pa'i bkod pa khyad thon/ bris 'bur gyi sku rten dang mchod rdzas rnams grangs mang po/ dge 'dun gyi gnas mal yo byad/ ja tshul gyi thebs sogs bzhag/ rje rang nyid kyis rab gnas mdzad de ri khrod la bde chen gling zhes ming btags/smon lam/ dbyar gnas/ lnga mchod/ dgu gtor/ gshegs gtor/dus mchod sogs kyi zhal 'don gyis mtshon pa'i phyag len rnams la dag ther dang/ khyad par bstan pa ji srid gnas kyi bar du zla re bzhin rdo rje rnal 'byor ma'i sgrub mchod lan gnyis re gtong rgyur dkyil 'khor gyi bca' shoms/ gos dang gser dngul sogs las grub pa'i mchod rdzas/ Da dril dbang chas sogs rnal 'byor gyi yo byad/ mchod 'phreng gi 'chams gos dang rus rgyan sogs shin tu spus legs/ dus bzhi'i sgrub mchod chen mo/ hor zla bcu gcig pa'i nyer lnga/ zla ba dang po dang bzhi pa bdun pa rnams kyi yar ngo'i tshes bcu rnams la mchod 'phreng la slebs pa na mchod gar ba rnams kyis 'chams gos dang rus rgyan sogs tshul mthun gyis gyon/ skabs gang yin gyi mchod rdzas rnams thogs te rol mo dang bcas gar 'gros kyis 'ong nas dkyil 'khor la g.yon bskor byas te mdun phyogs su 'grengs shing/cho ga ba rnams kyis skabs gang yin gyi mchod 'bul/ rig ma bcu drug gi 'chams dang bcas rdo rje glu sogs phyag len khungs thub gang yod kyi rta dbyangs dang phyag rgya/ mchod gar pa rnams kyi gar 'gros/rol mo pa rnams la dung chen dang rgya gling 'bud tshul/rnga sbub brdung lugs/ mchod g.yog pa rnams kyis mchod gtor bshams lugs/tshogs rdzas 'grem lugs tshun chad rje nyid nas bslabs/'di la gnang ba'i dpyid glu'i gdangs 'di rdo rje 'chang lcang skya rol ba'i rdo rje sku na rim gyis mdzad bzhin pa dang/ mkha' spyod zhal bzang lta ba'i smon lam gyi gdangs 'jam dbyangs bde ba'i rdo rjes mkha' 'gros glu len pa dngos su gsan nas de dang rnam pa mthun par mdzad pa'i byin rlabs can yin pas bcos bsgyur mi chog pa'i bka' bcad mdzad cing/ rje nyid kyis rnal 'byor gsang mtha'i nye lam la brten nas phyi nang gi mkha' spyod grub pa'i rtog pa gsar du brnyes pa'i tshul mdzad pa'i gnas yin/ de dang sa khad ha cang mi ring ba na sngon karma rol ba'i rdo rje yun ring du bzhugs nas byin gyis brlabs shing/ g.yas g.yon gyi brag ngos la dbang phyug yab yum gyi mtshan ma dngos su dod pa sogs rgyud sde rnams las rnal 'byor bsgrub pa'i gnas su bsngags pa'i mtshan nyid dang ldan par don grub gzhis ka gzims khang u rgyan gling rwa skor dang bcas pa/ de dang 'dabs chags par skyed tshal yid dga' chos 'phel/ mtha' bskor du ljon shing gi rwa ba/de'i nang du spangs ljongs dang bcos ma'i ri phran spel mas yongs su bskor cing dbus su dwangs bsil gyi chu mtsho chen po/ mtsho 'gram dang thang dang ri sul rnams su yul gru mi 'dra ba nas thon pa'i shing dang me tog rigs mi gcig pa'i tshal/bar bar du dbyibs bkod mi 'dra ba'i khang bzang thog gcig pa dang brtsegs ma shel gyi ba gam lta bu du ma dang/ rang byung gi lo ma'i spyil bu sogs bkod pa ngo mtshar ba/ pho brang theg chen chos kyi ba gam sogs gzims chung dang khang bskor rim pa du ma can yod"@en .
+    
+    bdr:NT6B4193F41131F78C
+        a                   :Note ;
+        :contentLocationStatement  "p. 79" ;
+        :noteSource         bdr:MW1PD95675 .
+}

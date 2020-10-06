@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1857 {
+    bda:G1857  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1857 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6c/G1857.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1857 ;
+        adm:logEntry        bda:LG79F83192F4294EB1 , bda:LGC7AA424B39AB10EF , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG79F83192F4294EB1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T16:28:36.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added reb gong rdzong"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGC7AA424B39AB10EF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1857  a            :Place ;
+        skos:altLabel       "rgya thang lha khang (stong che)"@bo-x-ewts ;
+        skos:prefLabel      "stong che rgya thang lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA157D7CD80637BDF ;
+        :placeLocatedIn     bdr:G1715 , bdr:G984 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTA157D7CD80637BDF
+        a                   :Note ;
+        :contentLocationStatement  "p. 196" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "temple in khri ka rdzong, mtsho lho bod rigs rang skyong khul\nlocated 15 km. to the southwest of khri ka rdzong mkhar in the sgang zer ba'i rtsa"@en .
+}

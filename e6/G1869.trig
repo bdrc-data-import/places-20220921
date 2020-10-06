@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1869 {
+    bda:G1869  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1869 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e6/G1869.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1869 ;
+        adm:logEntry        bda:LG1BB2C3CD74967957 , bda:LG20D90000A096D818 , bda:LG3EC1FE75DE44DD00 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1BB2C3CD74967957
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-03T16:28:04.758Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG20D90000A096D818
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3EC1FE75DE44DD00
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-17T08:50:51.671Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1869  a            :Place ;
+        skos:altLabel       "khri ka rdo ri sngags khang /"@bo-x-ewts ;
+        skos:prefLabel      "rdo ri sngags khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE7522BEF963919FD ;
+        :placeLocatedIn     bdr:G1715 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTE7522BEF963919FD
+        a                   :Note ;
+        :contentLocationStatement  "p. 209" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "monastery in khri ka rdzong, mtsho lho bod rigs rang skyong khul"@en .
+}

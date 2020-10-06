@@ -1,0 +1,42 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G10MS10288 {
+    bda:G10MS10288  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G10MS10288 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "de/G10MS10288.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G10MS10288 ;
+        adm:logEntry        bda:LGD6BAA473264653E2 , bda:LGEA9B7241AF8B18AA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LGD6BAA473264653E2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-10-17T11:47:15.186Z"^^xsd:dateTime ;
+        adm:logMessage      "created and added places contains"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGEA9B7241AF8B18AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-15T15:51:36.291Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from provisional to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G10MS10288  a       :Place ;
+        skos:prefLabel      "'phan po lhun grub rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeContains      bdr:G3400 , bdr:G3401 , bdr:G3402 , bdr:G3403 , bdr:G3404 , bdr:G3405 , bdr:G3406 , bdr:G3407 , bdr:G3408 , bdr:G3410 , bdr:G3411 .
+}

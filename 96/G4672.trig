@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4672 {
+    bda:G4672  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4672 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "96/G4672.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4672 ;
+        adm:logEntry        bda:LG6CC79FAA3D45B206 , bda:LG992358036E415A17 , bda:LGA7E8D98E66DFF0EB , bda:LGB420BD9F6EF7B04C , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1KR226 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG6CC79FAA3D45B206
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-03T09:37:39.988Z"^^xsd:dateTime ;
+        adm:logMessage      "added dup. note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG992358036E415A17
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-12-05T12:11:50.923Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1KR226"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA7E8D98E66DFF0EB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB420BD9F6EF7B04C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-05T17:10:32.704Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4672  a            :Place ;
+        skos:altLabel       "lung bzang ri khrod dga' ldan byang chub chos 'phel gling /"@bo-x-ewts , "the bo dga' ldan byang chub gling /"@bo-x-ewts ;
+        skos:prefLabel      "dga' ldan byang chub chos 'phel gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7E11CBFC8986727B ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT7E11CBFC8986727B
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR226"@en .
+}

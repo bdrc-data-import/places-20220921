@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4222 {
+    bda:G4222  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4222 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fa/G4222.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4222 ;
+        adm:logEntry        bda:LG23BC80EEC6D8906D , bda:LG24A46356EB1CAF10 , bda:LGD2D0173654143553 , bda:LGD4B4719A004C0084 , bda:LGFC6EA7693E696D5F , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG23BC80EEC6D8906D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-16T09:35:40.449Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG24A46356EB1CAF10
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-21T15:45:25.634Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & Near"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD2D0173654143553
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD4B4719A004C0084
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-08T16:52:05.896Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & link"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFC6EA7693E696D5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-03T10:52:01.628Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4222  a            :Place ;
+        skos:altLabel       "gcig char phu/"@bo-x-ewts ;
+        skos:prefLabel      "cig char phu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA164AEE0A9EF6D91 ;
+        :placeIsNear        bdr:G4631 ;
+        :placeLocatedIn     bdr:G2100 ;
+        :placeType          bdr:PT0082 .
+    
+    bdr:NTA164AEE0A9EF6D91
+        a                   :Note ;
+        :contentLocationStatement  "pp. 331-335" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "name of a place near the tsa ri pilgrimage"@en .
+}

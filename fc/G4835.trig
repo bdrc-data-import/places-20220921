@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4835 {
+    bda:G4835  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4835 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fc/G4835.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4835 ;
+        adm:logEntry        bda:LG3B6094F8492B28E9 , bda:LG9FC40C4603233EBC , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623024209:623024128" ;
+        adm:place_id_lex    "623024209:623024128" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3B6094F8492B28E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-07T10:06:53.309Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9FC40C4603233EBC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV9F421C87CEC28943
+        a                   :PlaceFounded ;
+        :onYear             "1599"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4835  a            :Place ;
+        skos:altLabel       "zhedoulong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'bras dog lung dgon pa/"@bo-x-ewts , "哲豆隆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA4836479F0DD259F ;
+        :isRoot             true ;
+        :note               bdr:NTF63297F39E068219 ;
+        :placeEvent         bdr:EV9F421C87CEC28943 ;
+        :placeGonpaPerEcumen  "6.64" ;
+        :placeLat           "34.02607" ;
+        :placeLocatedIn     bdr:G2199 ;
+        :placeLong          "103.83048" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA4836479F0DD259F
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4835" .
+    
+    bdr:NTF63297F39E068219
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, p. 132" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "monastery in the kan lho autonomous tibetan prefecture"@en .
+}

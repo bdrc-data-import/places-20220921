@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1664 {
+    bda:G1664  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1664 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "a7/G1664.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1664 ;
+        adm:logEntry        bda:LG3FC910A2C20BBD08 , bda:LG4E3478EB3F3B7D88 , bda:LG9B73B599528A2B52 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330219:138" ;
+        adm:place_id_lex    "513330219:138" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3FC910A2C20BBD08
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4E3478EB3F3B7D88
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-08T21:40:31.798Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9B73B599528A2B52
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T09:01:28.322Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV095744E46E14E154
+        a                   :PlaceFounded ;
+        :onYear             "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1664  a            :Place ;
+        skos:altLabel       "sde dge zer 'phro dgon/"@bo-x-ewts , "zer 'phro bsam gtan g.yung drung gling /"@bo-x-ewts , "secuo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zer 'phro dgon/"@bo-x-ewts , "色措寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0E127470C46449D5 ;
+        :isRoot             true ;
+        :note               bdr:NT42A1BDF53834D258 , bdr:NTEAE4A231B10A265A ;
+        :placeEvent         bdr:EV095744E46E14E154 ;
+        :placeGonpaPerEcumen  "14" ;
+        :placeLat           "32.16667" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "99.35000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID0E127470C46449D5
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1664" .
+    
+    bdr:NT42A1BDF53834D258
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 636" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "bon po monastery\nདགོན་འདིའི་ལོ་རྒྱུས་མདོར་བསྡུས་ངག་ཐོག་ནས་བྱུང་བ་ཞིག་གསལ།"@en .
+    
+    bdr:NTEAE4A231B10A265A
+        a                   :Note ;
+        :contentLocationStatement  "p. 157" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bon monastery founded more than 800 years ago by one bon po bla ma mkhas grub dam pa; now has about 68 monks and lamas."@en .
+}

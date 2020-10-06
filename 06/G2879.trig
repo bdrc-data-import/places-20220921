@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2879 {
+    bda:G2879  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2879 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "06/G2879.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2879 ;
+        adm:logEntry        bda:LG506B53A6695E5B69 , bda:LG62BBAB95A427071F , bda:LG66ED7A4919B0A041 , bda:LGA3D3E99B3BBDE90F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG506B53A6695E5B69
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG62BBAB95A427071F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T14:14:13.953Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG66ED7A4919B0A041
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:hermitage to riKhrod"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGA3D3E99B3BBDE90F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-20T15:52:53.556Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2879  a            :Place ;
+        skos:prefLabel      "mtha' dkar/"@bo-x-ewts , "Takar"@en ;
+        :isRoot             true ;
+        :note               bdr:NT107289C6B9594D84 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT107289C6B9594D84
+        a                   :Note ;
+        :contentLocationStatement  "prelims." ;
+        :noteSource         bdr:MW20509 ;
+        :noteText           "hermitage located in northern nepal or southern tibet"@en .
+}

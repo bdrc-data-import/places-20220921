@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1100 {
+    bda:G1100  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1100 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1a/G1100.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1100 ;
+        adm:logEntry        bda:LG5069F799585E8A40 , bda:LG6B4C028C646C5864 , bda:LGFCE7E5482198E9C4 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5069F799585E8A40
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-09T15:32:47.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6B4C028C646C5864
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-12-03T13:27:19.621Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFCE7E5482198E9C4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1100  a            :Place ;
+        skos:altLabel       "bA lha sgang /"@bo-x-ewts , "bha lha sgang /"@bo-x-ewts , "dpal lha sgang /"@bo-x-ewts , "mdo smad lha lung rab dga'"@bo-x-ewts , "mi nyag lha sgang /"@bo-x-ewts ;
+        skos:prefLabel      "lha sgang ring mo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDC047D6AF3DD6952 ;
+        :placeContains      bdr:G3791 ;
+        :placeLocatedIn     bdr:G1033 , bdr:G1135 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NTDC047D6AF3DD6952
+        a                   :Note ;
+        :contentLocationStatement  "p. 288-314" ;
+        :noteSource         bdr:MW29295 ;
+        :noteText           "མདོ་ཁམས་གནས་ཆེན་ཉེར་ལྔའི་གྲས་ཤིག"@bo .
+}

@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1709 {
+    bda:G1709  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1709 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "7e/G1709.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1709 ;
+        adm:logEntry        bda:LG4F86EFFBC6697EDD , bda:LG6EB2BF26CB81DEBE , bda:LG95D162D859F6789F , bda:LGB06790A0484BA083 , bda:LGC7DD90850F3CB1E4 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632127216:193" ;
+        adm:place_id_lex    "632127216:17" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4F86EFFBC6697EDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-14T12:41:20.536Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG6EB2BF26CB81DEBE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG95D162D859F6789F
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-18T12:33:06.496Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB06790A0484BA083
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:12.636Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGC7DD90850F3CB1E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T14:21:47.717Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV04CE2A7D6E25253F
+        a                   :PlaceConverted ;
+        :onYear             "1677"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV723DC45E5BEE5308
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P6449 ;
+        :onYear             "1677"^^xsd:gYear .
+    
+    bdr:EV96BAC4DDF794E21C
+        a                   :PlaceFounded ;
+        :onYear             "1252"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1709  a            :Place ;
+        skos:altLabel       "dgon ldan bkra shis chos gling /"@bo-x-ewts , "er dris dgon/"@bo-x-ewts , "ser dris dgon dgon ldan bkra shis chos gling /"@bo-x-ewts , "Serdri"@bo-x-phon-en , "晒赤寺"@zh-hans , "色只寺"@zh-hans , "赛支寺"@zh-hans , "赛智寺"@zh-hans , "赛治寺"@zh-hans , "赛治寺/赛智寺"@zh-hans , "saizhi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ser dris dgon/"@bo-x-ewts , "Serdi Gonden Tashi Choling"@en , "赛支寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID411D8B1334AA07EB ;
+        :isRoot             true ;
+        :note               bdr:NT251F9C8E97FE0A44 , bdr:NT3E385816DB898E1C ;
+        :placeEvent         bdr:EV04CE2A7D6E25253F , bdr:EV723DC45E5BEE5308 , bdr:EV96BAC4DDF794E21C ;
+        :placeGonpaPerEcumen  "96.76" ;
+        :placeLat           "36.08823" ;
+        :placeLocatedIn     bdr:G1PD96109 ;
+        :placeLong          "102.54711" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID411D8B1334AA07EB
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1709" .
+    
+    bdr:NT251F9C8E97FE0A44
+        a                   :Note ;
+        :contentLocationStatement  "p. 108" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་མ་ཎི་བ་བློ་བཟང་འོད་ཟེར་གྱིས་1677ལོར་ཕྱག་བཏབ།"@bo .
+    
+    bdr:NT3E385816DB898E1C
+        a                   :Note ;
+        :contentLocationStatement  "p. 300" ;
+        :noteSource         bdr:MW20115 ;
+        :noteText           "dge lugs pa monastery founded by pa kru'u bla ma manydzu shrI blo bzang 'od zer (source cites the bca' yig written by ma Ni paNDi ta)"@en .
+}

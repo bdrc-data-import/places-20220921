@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1863 {
+    bda:G1KR1863  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1863 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a9/G1KR1863.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1863 ;
+        adm:logEntry        bda:LG3E5C893BA20B4BE3 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542622100:560" ;
+        adm:place_id_lex    "542622100:560" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3E5C893BA20B4BE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T11:21:26.596Z"^^xsd:dateTime ;
+        adm:logMessage      "checkout"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVAD693BABE3FF58EC
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1KR1863  a         :Place ;
+        skos:altLabel       "Riga si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "日嘎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB974029ECF258ABE ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVAD693BABE3FF58EC ;
+        :placeGonpaPerEcumen  "1.41" ;
+        :placeLat           "30.05000" ;
+        :placeLocatedIn     bdr:G2125 ;
+        :placeLong          "92.86667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDB974029ECF258ABE
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1863" .
+}

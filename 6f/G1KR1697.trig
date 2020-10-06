@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1697 {
+    bda:G1KR1697  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1697 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "6f/G1KR1697.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1697 ;
+        adm:logEntry        bda:LGBCC2534C8B846E00 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542423210:432" ;
+        adm:place_id_lex    "542423210:432" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBCC2534C8B846E00
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-08T13:11:55.695Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in tibetan & Gis Coords & events & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV2571136F6DBE37D8
+        a                   :PlaceRebuilt ;
+        :notAfter           "1986"^^xsd:gYear ;
+        :notBefore          "1985"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EV76AD256C771B061F
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P9331 ;
+        :onYear             "1240"^^xsd:gYear .
+    
+    bdr:EVE7A7381EE7D30B4A
+        a                   :PlaceFounded ;
+        :onYear             "1240"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1697  a         :Place ;
+        skos:altLabel       "dngul kho dgon g.yung drung dar rgyas gling /"@bo-x-ewts , "沃科寺"@zh-hans , "eke si"@zh-latn-pinyin-x-ndia , "woke si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dngul kho dgon/"@bo-x-ewts , "俄可寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC57A29933CCEBCF0 ;
+        :isRoot             true ;
+        :note               bdr:NTDEC821E16C0F12F5 , bdr:NTE16C40B41182B79A , bdr:NTEF4FAF58DD933AA8 ;
+        :placeEvent         bdr:EV2571136F6DBE37D8 , bdr:EV76AD256C771B061F , bdr:EVE7A7381EE7D30B4A ;
+        :placeGonpaPerEcumen  "5.06" ;
+        :placeLat           "31.183932" ;
+        :placeLocatedIn     bdr:G2386 ;
+        :placeLong          "94.129151" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC57A29933CCEBCF0
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1697" .
+    
+    bdr:NTDEC821E16C0F12F5
+        a                   :Note ;
+        :contentLocationStatement  "p. 399, 416" ;
+        :noteSource         bdr:MW23671 ;
+        :noteText           "bon monastery restored in 1985/1986 (me stag)..\ncomplement of 5 monks.\nrestored through the efforts of a bu bsam med and thub bstan. [this note moved from G3425(dup.)]"@en .
+    
+    bdr:NTE16C40B41182B79A
+        a                   :Note ;
+        :contentLocationStatement  "pp. 90-93" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "bon monastery said to have been founded in 1240 by kyu ru 'od zer rgyal mtshan. [this note moved from G3425(dup.)]"@en .
+    
+    bdr:NTEF4FAF58DD933AA8
+        a                   :Note ;
+        :noteText           "Founded by Kyu ra ’od zer.\n30 monks"@en .
+}

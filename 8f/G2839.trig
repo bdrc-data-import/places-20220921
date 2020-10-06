@@ -1,0 +1,118 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2839 {
+    bda:G2839  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2839 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "8f/G2839.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2839 ;
+        adm:logEntry        bda:LG002BDD4E68F88319 , bda:LGAA0EFB9E6B82B7F9 , bda:LGB8C5B4A83D817476 , bda:LGBE7D578381E75A2C , bda:LGD52E65F4F44EC9CD , bda:LGE5D2E261748C1576 , bda:LGE90ACC5E8D9C3A7C , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542323203:542323116" ;
+        adm:place_id_lex    "542323203:542323116" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG002BDD4E68F88319
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T13:58:38.295Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGAA0EFB9E6B82B7F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-20T11:09:35.027Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB8C5B4A83D817476
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T16:14:27.119Z"^^xsd:dateTime ;
+        adm:logMessage      "skyid sbug byang chub bsam gtan gling sogs ming gsum bsnan"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBE7D578381E75A2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-17T14:34:59.538Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD52E65F4F44EC9CD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE5D2E261748C1576
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-16T10:53:41.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage,  note & sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE90ACC5E8D9C3A7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T16:15:34.379Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV88C58C4E3FD5E3B3
+        a                   :PlaceFounded ;
+        :onYear             "1218"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionDrukpaKagyu .
+    
+    bdr:G2839  a            :Place ;
+        skos:altLabel       "byang chub bsam gtan gling /"@bo-x-ewts , "gtsang nyang stod skyid sbug byang chub bsam gtan gling /"@bo-x-ewts , "nyang stod skyid sbug"@bo-x-ewts , "年堆吉布寺"@zh-hans , "jibu si"@zh-latn-pinyin-x-ndia , "niandui jibu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "skyid sbug dgon/"@bo-x-ewts , "Nyangto Kyibu Gon"@en , "吉布寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8282428722ED642B ;
+        :isRoot             true ;
+        :note               bdr:NT323F073D42AE3DD3 , bdr:NT40FE1FBC231B7468 , bdr:NT68B401AC962CD48E ;
+        :placeEvent         bdr:EV88C58C4E3FD5E3B3 ;
+        :placeGonpaPerEcumen  "9.68" ;
+        :placeLat           "29.03333" ;
+        :placeLocatedIn     bdr:G2175 , bdr:G971 ;
+        :placeLong          "89.48333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID8282428722ED642B
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2839" .
+    
+    bdr:NT323F073D42AE3DD3
+        a                   :Note ;
+        :noteText           "esoteric institute of levitation, also called ma ha skad gtong ba"@en .
+    
+    bdr:NT40FE1FBC231B7468
+        a                   :Note ;
+        :contentLocationStatement  "p. 370" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "ཐོག་མར་འགྲོ་མགོན་གཙང་པ་རྒྱ་རས་ཀྱི་སྒྲུབ་གནས་ཡིན་ཅིང་། ཕྱིས་གོང་དཀར་འབྲུག་བདེ་ཆེན་ཆོས་འཁོར་(G47)གྱི་དགོན་ལག་ཡིན་པ་གསལ།"@bo .
+    
+    bdr:NT68B401AC962CD48E
+        a                   :Note ;
+        :contentLocationStatement  "p. 402" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "'brug pa dkar brgyud monastery in the upper nyang valley in gtsang\nthis was a site on which gtsang pa rgya ras had meditated and is a dgon lag of bde chen chos 'khor\nthe seat of the skyid sbug incarnation lineage"@en .
+}

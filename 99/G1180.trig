@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1180 {
+    bda:G1180  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1180 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "99/G1180.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1180 ;
+        adm:logEntry        bda:LG3C4B1692F0593383 , bda:LG52DD03E31D736D75 , bda:LG59160AAB407C9F20 , bda:LGA4F99137CE776863 , bda:LGAA9C7ACBD3EF7E14 , bda:LGBC7C20CA49397C90 , bda:LGDCA4D49721AC997C , bda:LGDEA5292E26A89357 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3C4B1692F0593383
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-04T14:32:22.354Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG52DD03E31D736D75
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-26T11:15:54.47Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG59160AAB407C9F20
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-04T13:45:02.605Z"^^xsd:dateTime ;
+        adm:logMessage      "chaged settings to release & cleanup brackets"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA4F99137CE776863
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:40:27.8Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from village to grongTsho"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGAA9C7ACBD3EF7E14
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBC7C20CA49397C90
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-05T17:33:41.523Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDCA4D49721AC997C
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-02-16T12:41:15.151Z"^^xsd:dateTime ;
+        adm:logMessage      "added zha lu and note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDEA5292E26A89357
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-07T10:40:37.443Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1180  a            :Place ;
+        skos:altLabel       "zhwa lu/"@bo-x-ewts ;
+        skos:prefLabel      "zha lu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT033C89053852CCE3 ;
+        :placeContains      bdr:G275 ;
+        :placeLocatedIn     bdr:G3175 , bdr:G4146 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT033C89053852CCE3
+        a                   :Note ;
+        :noteText           "དེང་སང་གཞིས་ཀ་རྩེ་་རྫོང་ཁོངས་ཀྱི་ས་ཆ་ཞིག་སྟེ། ཡིག་རྙིང་ལ་ཞྭ་ལུ་ཞེས་བྲིས་པ་མང་ཡང་དུས་ཕྱིས་ཞ་ལུ་ཞེས་ཝ་ཟུར་མེད་པར་བྲིས་པ་མང་བར་སྣང།《བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོའི་》ཤོག་ངོས་P.2369ལ་གསལ།"@bo .
+}

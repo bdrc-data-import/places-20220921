@@ -1,0 +1,119 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G70 {
+    bda:G70  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G70 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "0a/G70.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G70 ;
+        adm:logEntry        bda:LG23846A9D9FA758D1 , bda:LG258D34167BB57010 , bda:LG38810E613EDD7844 , bda:LG624652BD015F96F0 , bda:LG94306370A77A4632 , bda:LGFFD51B51D1DFB728 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542124101:277" ;
+        adm:place_id_lex    "542124101:277" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG23846A9D9FA758D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-21T16:49:06.633Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag gcig"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG258D34167BB57010
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG38810E613EDD7844
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-16T10:17:49.922Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG624652BD015F96F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-15T10:50:35.097Z"^^xsd:dateTime ;
+        adm:logMessage      "added outline link"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG94306370A77A4632
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-23T14:09:23.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGFFD51B51D1DFB728
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-16T16:28:34.8Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4F2875BA39FE14A4
+        a                   :PlaceFounded ;
+        :onYear             "1276"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:EVD6C9AF5205F28DFC
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1019 ;
+        :onYear             "1276"^^xsd:gYear .
+    
+    bdr:G70  a              :Place ;
+        skos:altLabel       "dbyi shod dpal gyi ri bo che/"@bo-x-ewts , "dbyi shod ri bo che/"@bo-x-ewts , "khams ri bo che/"@bo-x-ewts , "lha khang khra 'jigs ma/"@bo-x-ewts , "stag lung mar thang ri bo che/"@bo-x-ewts , "昌吉玛寺"@zh-hans , "类乌齐拉康寺"@zh-hans , "changjima si"@zh-latn-pinyin-x-ndia , "Leiwuqi lakang si"@zh-latn-pinyin-x-ndia , "Leiwuqi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ri bo che dgon pa/"@bo-x-ewts , "类乌齐寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA3AB44E390CF1AF4 ;
+        :isRoot             true ;
+        :note               bdr:NT07A5107561DB49AF , bdr:NT0D15B284575EE8CB , bdr:NT448B6479554C8255 ;
+        :placeEvent         bdr:EV4F2875BA39FE14A4 , bdr:EVD6C9AF5205F28DFC ;
+        :placeGonpaPerEcumen  "2.43" ;
+        :placeIsNear        bdr:G1AG58 ;
+        :placeLat           "31.38333" ;
+        :placeLocatedIn     bdr:G2186 ;
+        :placeLong          "96.50000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA3AB44E390CF1AF4
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G70" .
+    
+    bdr:NT07A5107561DB49AF
+        a                   :Note ;
+        :contentLocationStatement  "p. 218" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "large monastery of the stag lung bka' brgyud tradition located in chab mdo prefecture, ri bo che rdzong. founded by sangs rgyas dbon grags pa dpal 'od  in 1276 (rab byung 4 me byi). after the founding of ri bo che the stag lung bka' brgyud tradition split into the ya thang and ma thang. there were 3800 monks at ri bo che. from 1276 to about 1918 the monastery was in charge of the gdung brgyud of the stag lung tradition. in 1918 the ri bo che rje drung's nephew mgar ra bla ma exercised power. the treasures of ri bo che have been described in kaH thog si tu's guide.\n\n\"spyi lo 1918 tsam ri bo che rje drung gi sku tsha gras mgar ra bla ma'i don rkyen zer ba zhig byung rjes dngos don thog dgon pa gzhung bzhes byas te ri bo che'i bla gnyer zhes rje drung nas do dam byed pa yin.\""@en .
+    
+    bdr:NT0D15B284575EE8CB
+        a                   :Note ;
+        :noteText           "founded in 1276 by sangs rgyas dbon"@en .
+    
+    bdr:NT448B6479554C8255
+        a                   :Note ;
+        :contentLocationStatement  "p. 387" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "great monastery of the stag lung bka' brgyud pa tradition in khams (chab mdo prefecture, tibetan autonomous region)\nvisited by kaH thog si tu chos kyi rgya mtsho in 1918 and described in great detail"@en .
+}

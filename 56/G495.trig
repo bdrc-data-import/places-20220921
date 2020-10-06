@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G495 {
+    bda:G495  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G495 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "56/G495.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G495 ;
+        adm:logEntry        bda:LG4457DD5866BBDA8C , bda:LGB2160BD57E0FF55C , bda:LGFA877EDD9B4FB0A7 , bda:LGFE0C6ED90E7885FB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4457DD5866BBDA8C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB2160BD57E0FF55C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:53.539Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFA877EDD9B4FB0A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-11T14:53:06.952Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFE0C6ED90E7885FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-12T12:32:53.106Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:G495  a             :Place ;
+        skos:altLabel       "gangs ra nges gsang rdo rje gling /"@bo-x-ewts , "rin spungs gong ra nges gsang gling /"@bo-x-ewts ;
+        skos:prefLabel      "gong ra nges gsang rdo rje gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE83F123A36B10C23 ;
+        :placeContains      bdr:G2CN10893 ;
+        :placeLocatedIn     bdr:G2176 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTE83F123A36B10C23
+        a                   :Note ;
+        :noteText           "rnying ma establishment located in the tibetan autonomous region\nfounded by rang gter 'jam dpal rdo rje, aka bde chen gling pa\nthis was the seat of the famous scholar gong ra lo chen"@en .
+}

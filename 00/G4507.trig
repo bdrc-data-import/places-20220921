@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4507 {
+    bda:G4507  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4507 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "00/G4507.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4507 ;
+        adm:logEntry        bda:LG426DA7360CF402D5 , bda:LGE98D155C2E37944A , bda:LGF2EFAF9B64F10280 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG426DA7360CF402D5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE98D155C2E37944A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-26T12:01:22.368Z"^^xsd:dateTime ;
+        adm:logMessage      "added info, coords, event & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2EFAF9B64F10280
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T15:22:04.056Z"^^xsd:dateTime ;
+        adm:logMessage      "added steng chen rdzong"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0EE4BC87F7587E30
+        a                   :PlaceFounded ;
+        :onYear             "1704"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G4507  a            :Place ;
+        skos:prefLabel      "re ne dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5F58CD74243AFE02 , bdr:NTFCA0D78ACF8D4201 ;
+        :placeEvent         bdr:EV0EE4BC87F7587E30 ;
+        :placeLat           "31.685097" ;
+        :placeLocatedIn     bdr:G2188 ;
+        :placeLong          "95.053417" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT5F58CD74243AFE02
+        a                   :Note ;
+        :contentLocationStatement  "p. 199-200" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "དགོན་འདི་སྟེང་ཆེན་རྫོང་ཁོངས་ཀྱི་བོན་དགོན་ཅུང་ཆེ་གྲས་ཤིག་ཏེ། ཟམ་ཞིག་ཤང་རེ་ནེ་གྲོང་ཚོར་གནས། ༡༧༠༤ལོར་སྣང་ཞིག་ཟླ་བ་རྒྱལ་མཚན་གྱིས་ཕྱག་བཏབ།"@bo .
+    
+    bdr:NTFCA0D78ACF8D4201
+        a                   :Note ;
+        :noteText           "Founded by Snang zhig Zla ba rgyal mtshan. One of the larger Bonpo monasteries belonging to Steng chen rdzong.\n\n1 lama -  60 monks"@en .
+}

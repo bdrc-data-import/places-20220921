@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G380 {
+    bda:G380  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G380 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "b1/G380.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G380 ;
+        adm:logEntry        bda:LG2C7E2C2F4EBB96AB , bda:LG5827AA85F22D120F , bda:LG98AAB715CABF8DB3 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513328203:323" ;
+        adm:place_id_lex    "513328203:323" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C7E2C2F4EBB96AB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5827AA85F22D120F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-11T12:59:19.867Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG98AAB715CABF8DB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-06T13:37:57.637Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVC3A3564D884287CE
+        a                   :PlaceFounded ;
+        :onYear             "1649"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G380  a             :Place ;
+        skos:altLabel       "be ri dpal ldan 'gro phan gling /"@bo-x-ewts , "be ru dgon/"@bo-x-ewts , "bon ru dgon/"@bo-x-ewts , "dpal ldan 'gro phan gling /"@bo-x-ewts , "pad ri dgon/"@bo-x-ewts , "白日寺"@zh-hans , "baili si"@zh-latn-pinyin-x-ndia , "bairi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "be ri dgon/"@bo-x-ewts , "白利寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2A063B7081B186D6 ;
+        :isRoot             true ;
+        :note               bdr:NT3C801830519113DE , bdr:NT5653061998F08792 ;
+        :placeEvent         bdr:EVC3A3564D884287CE ;
+        :placeGonpaPerEcumen  "55.67" ;
+        :placeLat           "31.61667" ;
+        :placeLocatedIn     bdr:G621 ;
+        :placeLong          "99.86667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID2A063B7081B186D6
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G380" .
+    
+    bdr:NT3C801830519113DE
+        a                   :Note ;
+        :contentLocationStatement  "p. 20-35" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "འདིར་དགོན་འདིའི་ལོ་རྒྱུས་གནད་ཚང་དཔྱད་གཞིའི་དཔེ་ཐོ་ཁ་ཤས་དང་བཅས་པ་བཞུགས།"@bo .
+    
+    bdr:NT5653061998F08792
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 20" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs pa monastery in dkar mdzes counts of the dkar mdzes prefecture; seat of the dge rtag sprul sku lineage"@en .
+}

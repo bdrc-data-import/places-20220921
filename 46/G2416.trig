@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2416 {
+    bda:G2416  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2416 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "46/G2416.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2416 ;
+        adm:logEntry        bda:LG030C73CD37FFF1A5 , bda:LG917B09760AB87A11 , bda:LGA0ADB720814C0AB2 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540124201:540124112" ;
+        adm:place_id_lex    "540124201:540124112" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG030C73CD37FFF1A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-04T09:39:29.619Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG917B09760AB87A11
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-04T09:12:52.716Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA0ADB720814C0AB2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVAFDCF607538A0280
+        a                   :PlaceFounded ;
+        :onYear             "1250"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G2416  a            :Place ;
+        skos:altLabel       "jicai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "skyid tshal dgon pa/"@bo-x-ewts , "Kyitsal"@en , "吉彩寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD55A3AD6F3FB3987 ;
+        :isRoot             true ;
+        :note               bdr:NT748C2691A1C2F768 , bdr:NTBEF030AC896DFE20 ;
+        :placeEvent         bdr:EVAFDCF607538A0280 ;
+        :placeGonpaPerEcumen  "4.27" ;
+        :placeLat           "29.26388" ;
+        :placeLocatedIn     bdr:G2128 ;
+        :placeLong          "90.48647" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD55A3AD6F3FB3987
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2416" .
+    
+    bdr:NT748C2691A1C2F768
+        a                   :Note ;
+        :contentLocationStatement  "p. 32" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "sa skya pa monastery located in skyid tshal grong tsho, tsha rag shang, chu shur rdzong, lha sa prefecture\nsaid to have been founded by sa chen kun dga' snying po\nadministered by (dgon bdag), sa skya dgon\nin 1959 had a total of 50 monks\nafter restoration, in 1989 authorized number of monks was 11"@en .
+    
+    bdr:NTBEF030AC896DFE20
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 138-139" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

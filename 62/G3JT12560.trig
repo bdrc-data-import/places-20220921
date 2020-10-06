@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3JT12560 {
+    bda:G3JT12560  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3JT12560 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "62/G3JT12560.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3JT12560 ;
+        adm:logEntry        bda:LG93C43F029B4A686D , bda:LGA3F1A81E43736574 , bda:LGBAB0AABF1B1C4906 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG93C43F029B4A686D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-17T10:43:32.797Z"^^xsd:dateTime ;
+        adm:logMessage      "added founded date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGA3F1A81E43736574
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-26T15:01:06.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGBAB0AABF1B1C4906
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T13:58:59.291Z"^^xsd:dateTime ;
+        adm:logMessage      "par khang gi mchan bu med pa bzo yod"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:EV8B100181357B7657
+        a                   :PlaceFounded ;
+        :notAfter           "1999"^^xsd:gYear ;
+        :notBefore          "1900"^^xsd:gYear .
+    
+    bdr:G3JT12560  a        :Place ;
+        skos:prefLabel      "rje 'bum lha khang gi par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV8B100181357B7657 ;
+        :placeLocatedIn     bdr:G4554 ;
+        :placeType          bdr:PT0059 .
+}

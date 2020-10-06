@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G190 {
+    bda:G190  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G190 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "55/G190.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G190 ;
+        adm:logEntry        bda:LG0D0AFE359582595F , bda:LG568B08587181C017 , bda:LG639EF72A71CE06BD , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D0AFE359582595F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T13:56:42.915Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG568B08587181C017
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG639EF72A71CE06BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T11:43:18.58Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G190  a             :Place ;
+        skos:altLabel       "rta log yang dben spang dkar rnam rgyal chos gling /"@bo-x-ewts , "spang dkar rnam rgyal chos gling /"@bo-x-ewts ;
+        skos:prefLabel      "rta log yang dben/"@bo-x-ewts , "Talok Yangwen Pankar Namgyal Choling"@en ;
+        :isRoot             true ;
+        :note               bdr:NTEA97B13E1BE24276 ;
+        :placeLocatedIn     bdr:G3205 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NTEA97B13E1BE24276
+        a                   :Note ;
+        :noteText           "small hermitage of the 'brug pa dkar brgyud pa tradition in bhutan"@en .
+}

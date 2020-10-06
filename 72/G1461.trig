@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1461 {
+    bda:G1461  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1461 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "72/G1461.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1461 ;
+        adm:logEntry        bda:LG415491BB66214637 , bda:LG74D5CBB8C2012CE8 , bda:LG80376991A73D1628 , bda:LGEFF447689C5D92CC , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG415491BB66214637
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-31T14:25:08.973Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"nyang po grab\" & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG74D5CBB8C2012CE8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG80376991A73D1628
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-31T14:05:56.556Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup name & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEFF447689C5D92CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-04T16:12:11.751Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1461  a            :Place ;
+        skos:altLabel       "nyang po grab/"@bo-x-ewts , "nyang po grabs/"@bo-x-ewts ;
+        skos:prefLabel      "grab/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT65720A142A7A4A1B ;
+        :placeLocatedIn     bdr:G1042 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT65720A142A7A4A1B
+        a                   :Note ;
+        :noteText           "དཔེ་མཛོད་འདི་རང་གི་དྲ་རྒྱར་བཤར་འཚོལ་བྱ་ས་ན།་\"ཉང་པོ་གྲབ་\" ཏུ་ཉུང་མཐར་བླ་མ་བཅུ་ཙམའཁྲུངས་མྱོང་བ་གསལ། གཞན་གྲབ་འདི་ཀོང་སྟོད་ཉང་པོ་དང་དེང་གི་ལྷུན་གྲུབ་རྫོང་དབར་ན་ཡོད་པར་དྭོགས་པ་མུ་མཐུད་དཔྱད་གཞིའོ།"@bo .
+}

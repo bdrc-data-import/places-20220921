@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1660 {
+    bda:G1KR1660  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1660 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "a9/G1KR1660.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1660 ;
+        adm:logEntry        bda:LG0B59B4E6D46B8DAB , bda:LG4B39CD38041C0C5F , bda:LGEFC77FC48E087A8F , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542421207:410" ;
+        adm:place_id_lex    "542421207:411" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B59B4E6D46B8DAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-03-10T12:17:10.161Z"^^xsd:dateTime ;
+        adm:logMessage      "added Tibetan name & linked with sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4B39CD38041C0C5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-03-17T18:17:22.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEFC77FC48E087A8F
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-03-10T12:22:41.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV8B59CAAE5D03FA08
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1KR1660  a         :Place ;
+        skos:altLabel       "lho rta rna dgon/"@bo-x-ewts , "rta rna dgon gsang sngags bde chen gling /"@bo-x-ewts , "仲俄寺"@zh-hans , "南达那寺"@zh-hans , "Zhong'e si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rta rna dgon/"@bo-x-ewts , "South Tana Monastery"@en , "达那寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID48A7D160AAFBC921 ;
+        :isRoot             true ;
+        :note               bdr:NT574468FEBC31D939 ;
+        :placeEvent         bdr:EV8B59CAAE5D03FA08 ;
+        :placeGonpaPerEcumen  "3.3" ;
+        :placeLat           "31.53333" ;
+        :placeLocatedIn     bdr:G2147 ;
+        :placeLong          "92.73333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID48A7D160AAFBC921
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1660" .
+    
+    bdr:NT574468FEBC31D939
+        a                   :Note ;
+        :contentLocationStatement  "90-131" ;
+        :noteSource         bdr:MW2DB16418 ;
+        :noteText           "སྤྱིར་རྟ་རྣ་དགོན་གྱི་བླ་རབས་ནི།\nཧུཾ་ཀ་རའི་གདུང་རྒྱུད་དང་། ཕལ་ཆེར་ས་སྐྱའི་འཁོན་གདུང་དུ་ཡང་གསུངས།\n༡, ཉེ་བརྒྱུད། ཡེལ་པ་ཡེ་ཤེས་བརྩེགས་པས་ ༡༡༨༨ལ་ནང་ཆེན་གྱི་བྱང་རྟ་རྣ་དགོན་པ་བཏབ། མཐའ་མ་གཏེར་ཆེན་ཉི་མའི་སྙིང་པོའི་བར་བརྒྱུད་རྗེས་ལྷོ་རྣའི་བརྒྱུད་པའང་མཆེད།\n\n༢, ཤིན་ཏུ་ཉེ་བརྒྱུད། ༡༩༢༧ལོར་འཇིགས་མེད་ཆོས་གྲགས་ཀྱིས་སྐྱིལ་ཀྲུང་ཆོས་ཐང་བར་མ་དང་། ཟང་ཐོག་ཟེར་བར་དགོན་བཏབ།\n\nབྱེ་བྲག་ལྷོ་རྟ་རྣ་དགོན་གྱི་བླ་རབས་ནི།\n\nགཏེར་ཆེན་ཉི་མའི་སྙིང་པོའི་གདུང་སྲས་ཨོ་རྒྱན་བསྟན་འཕེལ།\nདེའི་གདུང་སྲས་དང་ཉེ་སྙིང་སྤྲུལ་སྐུ་ཟུང་འཇུག་ཨོ་རྒྱན་བསྟན་འཛིན། དེས་༡༩༠༠ཙམ་ལ་ནག་ཆུའི་སྐྱིལ་ཀྲུང་ཆོས་ཐང་བར་མར་དགོན་ས་བཟུང་།\nའཇའ་ལུས་རྡོ་རྗེ་༡༨༢༥ལ་འཁྲུངས་པ་དང་། མདོ་སྔགས་ཆོས་ཀྱི་གླིང་པའི་ཆོས་བདག་ཨོ་རྒྱན་བསྟན་འཛིན་ཡབ་སྲས་ཀྱིས་མཛད་རྗེས། བཀའ་རྙིང་ཟུང་འཇུག་ཏུ་གྱུར།\nདེ་སྲས་བྱ་བཏང་གི་སྐུ་སྐྱེ་འཇིགས་མེད་ཆོས་གྲགས་སམ། ཚེ་དབང་འབྲུག་གྲགས་མི་ཤིག་དབྱིངས་ཀྱི་རྡོ་རྗེ་༡༨༨༢ལ་འཁྲུངས། དེའི་རྩ་བའི་བླ་མ་འཇའ་ལུས་རྡོ་རྗེ་སྟེ། དེས་༡༩༢༧ལོར་ལྷོ་རྟ་རྣ་དགོན་དངོས་སུ་བཏབ།\nདེ་སྲས་འཇའ་སྤྲུལ་སྣང་གསལ་རིན་ཆེན་༡༩༠༩ནས་༡༩༦༠བར་བཞུགས་། གསུང་པོད་ལྔ་བཅུ་ལྷག་ཡོད་གསུང་།\nདེ་ནས་ཨོ་རྒྱན་ལྷ་སྲས་སམ་མཆོག་སྤྲུལ་བསྟན་པའི་རྒྱལ་མཚན་ནི་ཨོ་རྒྱན་བསྟན་འཛིན་གྱི་ཡང་སྲིད་དེ་མ་ཐག་པར་བཞེད་མོད་༡༩༡༣ནས་༡༩༤༣བར་ལས་མ་བཞུགས། \nདེ་ཡང་ཡབ་རྗེ་སྣང་གསལ་རིན་ཆེན་ལ་གདུང་སྲས་བཞི་ཡོད་པར་གསལ་བ་ལས། \nགདུང་སྲས་དང་པོ་འཇིགས་སྤྲུལ་དྭགས་པོ་བློ་གྲོས་རྒྱ་མཚོ་༡༩༣༡ལ་འཁྲུངས་པ་དེ་ནི་བཅུ་ཕྲག་རིག་སྨྲ་བ་སྨན་རྩིས་མཁས་དབང་མཁྱེན་རབ་ནོར་བུ་ཡང་ཧང་སངས་པ་ཞིག་ཡིན་ཚུལ་གསལ་བ་རིག་གསར་སྐབས་གཤེགས་འདྲ་བ་ཤིན་ཏུ་ཕངས།\nགདུང་སྲས་གཉིས་པ་ཐོགས་མེད་ནི་༡༩༣༥ལ་འཁྲུངས་པ་མཁྱེན་བརྩེའི་མྱུ་གུ་ཡིན་པ་གསུང་པོད་ཉི་ཤུ་ལོངས་པ་མཛད་ཀྱང་མང་པོས་མེ་ཤེས་པའི་ད་བཞུགས་བཅུ་ཕྲག་རིག་སྨྲའི་མཁས་དབང་ཞིག་ཡིན་སྲིད་པ་ཞིག་དང་།\nགདུང་སྲས་གསུམ་པ་ནམ་མཁའ་དབང་ཆེན་༡༩༤༠ལ་འཁྲུངས།་\nགདུང་སྲས་བཞི་པ་སྤྲུལ་སྐུ་སྙན་གྲགས་རྒྱལ་མཚན་ནམ་རིག་འཛིན་དངོས་གྲུབ་རྒྱ་མཚོ་ཡིན་པ་བཅས་ཏེ། \nའདི་རྣམས་ཀྱང་ལྷོ་རྟ་རྣ་དགོན་གྱི་ལོ་རྒྱུས་ལས་བཏུས་ཏེ་གོ་བདེ་མཐོང་བདེའི་ལུགས་སུ་ཟིན་བྲིས་བཏབ་པའོ།"@bo .
+}

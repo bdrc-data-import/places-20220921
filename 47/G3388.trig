@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3388 {
+    bda:G3388  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3388 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "47/G3388.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3388 ;
+        adm:logEntry        bda:LG401CD3EE6B265179 , bda:LG6A6EF2D0F65C872D , bda:LGE33998F476A18003 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG401CD3EE6B265179
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-27T10:28:37.369Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6A6EF2D0F65C872D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-26T11:00:20.422Z"^^xsd:dateTime ;
+        adm:logMessage      "correted typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE33998F476A18003
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5E8BAABE46B659C5
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P231 ;
+        :onYear             "1920"^^xsd:gYear .
+    
+    bdr:EV70508149D2999661
+        a                   :PlaceFounded ;
+        :onYear             "1920"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3388  a            :Place ;
+        skos:altLabel       "dge ldan lugs bzang kun 'phel gling /"@bo-x-ewts , "sgrub sde dgon dge ldan lugs bzang bzang kun 'phel gling /"@bo-x-ewts ;
+        skos:prefLabel      "'bri ru sgrub sde dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT72421A5009082262 ;
+        :placeEvent         bdr:EV5E8BAABE46B659C5 , bdr:EV70508149D2999661 ;
+        :placeLocatedIn     bdr:G2386 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT72421A5009082262
+        a                   :Note ;
+        :contentLocationStatement  "p. 312, 415" ;
+        :noteSource         bdr:MW23671 ;
+        :noteText           "gelug monastery restored in 1986.\ncomplement of 6 monks.\nrestored through the efforts of khyung sprul bskal bzang bstan 'dzin and mkhan bskal bzang bslab gsum.\nhead lama: zhung phrul bskal bzang bstan 'dzin.\n\nfounded in 1920 by stag phu rje btsun ngag dbang blo bzang 'jam dpal bstan pa'[i dngos grub (alias padma badzra).\nbca' yig by 13th dalai lama.\naccording to 1961 rdzong yig had 60 monks or 70 monks according to the nag chu'i dpyad gzhi.\ndestroyed as a result of the cultural revolution."@en .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3214 {
+    bda:G3214  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3214 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6b/G3214.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3214 ;
+        adm:logEntry        bda:LG054A7C68E362ADFB , bda:LG5DD49E15086C77CC , bda:LG8CACF62E08D0D2BC , bda:LGB5834009F1D20278 , bda:LGDE51779C10625F65 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG054A7C68E362ADFB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-12T14:24:37.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5DD49E15086C77CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-06-13T14:19:53.818Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8CACF62E08D0D2BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-12T15:50:49.624Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & locations"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB5834009F1D20278
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:14:21.653Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from mountain to ri"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGDE51779C10625F65
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G3214  a            :Place ;
+        skos:altLabel       "rma chen spom ra/"@bo-x-ewts , "rma rgyal gangs ri/"@bo-x-ewts , "rma rgyal spom ra/"@bo-x-ewts , "ani maqin xueshan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "a myes rma chen/"@bo-x-ewts , "阿尼玛卿雪山"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTB27300681D2F01C4 ;
+        :placeLocatedIn     bdr:G1754 , bdr:G1GS140300 , bdr:G578 ;
+        :placeType          bdr:PT0042 .
+    
+    bdr:NTB27300681D2F01C4
+        a                   :Note ;
+        :noteText           "see alsomountain deity styled nor bdag: T1927"@en .
+}

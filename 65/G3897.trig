@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3897 {
+    bda:G3897  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3897 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "65/G3897.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3897 ;
+        adm:logEntry        bda:LG99FA0B3AE747C2E2 , bda:LGB08D50F5844E596B , bda:LGB76E8C77CB225720 , bda:LGF23572095DD4984D , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G3883 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG99FA0B3AE747C2E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T16:07:04.268Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB08D50F5844E596B
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-05-28T12:00:08.286Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G3883"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB76E8C77CB225720
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2304"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGF23572095DD4984D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3897  a            :Place ;
+        skos:prefLabel      "sman lung ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT34674B2EFD8B66C4 , bdr:NT8338D0632D1D7D7B ;
+        :placeLocatedIn     bdr:G2304 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT34674B2EFD8B66C4
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G3883"@en .
+    
+    bdr:NT8338D0632D1D7D7B
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 63-64" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs hermitage in li thang rdzong"@en .
+}

@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4502 {
+    bda:G4502  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4502 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b5/G4502.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4502 ;
+        adm:logEntry        bda:LG88474F165112C6BE , bda:LGD6D58F45D32C2679 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG88474F165112C6BE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD6D58F45D32C2679
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T11:04:19.07Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note & event, linked with founder"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4695B932DFF8166F
+        a                   :PlaceFounded ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EVC53C510575D9F15F
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P9318 ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:G4502  a            :Place ;
+        skos:prefLabel      "rdzong chung steng dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT147ABE55BC835A4F , bdr:NTF0D3D476867475B1 ;
+        :placeEvent         bdr:EV4695B932DFF8166F , bdr:EVC53C510575D9F15F ;
+        :placeIsNear        bdr:G4498 ;
+        :placeLocatedIn     bdr:G2123 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT147ABE55BC835A4F
+        a                   :Note ;
+        :contentLocationStatement  "p. 230-231" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "བོན་རིའི་རྒྱབ་རིར་གནས་པ་གསལ།"@bo .
+    
+    bdr:NTF0D3D476867475B1
+        a                   :Note ;
+        :contentLocationStatement  "'phar ba (2003). pp. 96-97" ;
+        :noteSource         bdr:MW28826 ;
+        :noteText           "bon po monastery in the vicinity of the bon ri in kong po\nfounded by the bon teacher g.yung drung tshul khrims\ncompletely destroyed during the cultural revolution; restored in 1993 by tshul khrims dri med alias rgyal bu rin po che\nserves as a medical center with its two religious practitoners"@en .
+}

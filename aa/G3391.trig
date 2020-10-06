@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3391 {
+    bda:G3391  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3391 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "aa/G3391.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3391 ;
+        adm:logEntry        bda:LG173D6F1A332B04B5 , bda:LG83D956D59137A4AF , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG173D6F1A332B04B5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG83D956D59137A4AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-27T11:02:53.634Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3391  a            :Place ;
+        skos:altLabel       "dar rgyas gling /"@bo-x-ewts , "rwa khyim dgon dar rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "rwa khyim dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT000B3A5704EBE17A ;
+        :placeLocatedIn     bdr:G2386 , bdr:G3427 , bdr:G3428 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT000B3A5704EBE17A
+        a                   :Note ;
+        :contentLocationStatement  "p. 335, 415" ;
+        :noteSource         bdr:MW23671 ;
+        :noteText           "gelug monastery restored in 1986.\ncomplement of 8 monks.\nrestored through the efforts of dge slong byams pa."@en .
+}

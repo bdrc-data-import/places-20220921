@@ -1,0 +1,43 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX360000000 {
+    bda:G9GBX360000000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX360000000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "8f/G9GBX360000000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX360000000 ;
+        adm:logEntry        bda:LG8E0C3F9EF865759D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG8E0C3F9EF865759D
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX360000000
+        a                   :Place ;
+        skos:altLabel       "jiang xi sheng"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Jiangxi Province"@en , "江西省"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX360100000 , bdr:G9GBX360200000 , bdr:G9GBX360300000 , bdr:G9GBX360400000 , bdr:G9GBX360500000 , bdr:G9GBX360600000 , bdr:G9GBX360700000 , bdr:G9GBX360800000 , bdr:G9GBX360900000 , bdr:G9GBX361000000 , bdr:G9GBX361100000 ;
+        :placeGB2260-2013   "360000000" ;
+        :placeLat           "28.6759911" ;
+        :placeLong          "115.8999176" ;
+        :placeType          bdr:PT0060 .
+}

@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1932 {
+    bda:G1932  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1932 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "83/G1932.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1932 ;
+        adm:logEntry        bda:LGACCF64D6399EC2F7 , bda:LGB99E6C07E2EC1147 , bda:LGE1BFBFBDFC378AA2 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGACCF64D6399EC2F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T14:04:30.139Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGB99E6C07E2EC1147
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-12T09:22:10.555Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE1BFBFBDFC378AA2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV164E91AD5CC604BD
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P6821 ;
+        :onYear             "1944"^^xsd:gYear .
+    
+    bdr:EVF7AB1943D8BA2C93
+        a                   :PlaceFounded ;
+        :onYear             "1944"^^xsd:gYear .
+    
+    bdr:G1932  a            :Place ;
+        skos:altLabel       "dam chos byin rlabs dga' 'khyil gling /"@bo-x-ewts , "gser khang dgon dam chos byin rlabs dga' 'khyil gling /"@bo-x-ewts , "Serkhang Gon Damcho Jinlap Gakyil Ling"@en ;
+        skos:prefLabel      "gser khang dgon/"@bo-x-ewts , "Serkhang Gon"@en ;
+        :isRoot             true ;
+        :note               bdr:NT68CFD2FF0AAEA389 ;
+        :placeEvent         bdr:EV164E91AD5CC604BD , bdr:EVF7AB1943D8BA2C93 ;
+        :placeLocatedIn     bdr:G1518 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT68CFD2FF0AAEA389
+        a                   :Note ;
+        :contentLocationStatement  "p. 756" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "dge lugs pa monastery in 'ba' lung zhang, thun te county, mtsho lho bod rigs rang skyong khul\nlocated 13 km. to the east of 'ba' lung zhang\nfounded in 1944 by 'jam dbyangs blo bzang rgya mtsho"@en .
+}

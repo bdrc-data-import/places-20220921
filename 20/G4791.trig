@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4791 {
+    bda:G4791  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4791 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "20/G4791.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4791 ;
+        adm:logEntry        bda:LG78F63E06DFDC40F6 , bda:LGFF5E8991606E60A6 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513323210:4" ;
+        adm:place_id_lex    "513323210:4" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG78F63E06DFDC40F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-06T11:04:33.159Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFF5E8991606E60A6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5643A0198929793D
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P10320 ;
+        :onYear             "1812"^^xsd:gYear .
+    
+    bdr:EV8060BEFEC155634A
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4791  a            :Place ;
+        skos:altLabel       "chos 'khor gling /"@bo-x-ewts , "gling chen dgon chos 'khor gling /"@bo-x-ewts , "lingqing si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gling chen dgon/"@bo-x-ewts , "岭青寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID90E8E6BC544C8743 ;
+        :isRoot             true ;
+        :note               bdr:NTB381DE4902D85384 ;
+        :placeEvent         bdr:EV5643A0198929793D , bdr:EV8060BEFEC155634A ;
+        :placeGonpaPerEcumen  "40.29" ;
+        :placeLat           "30.90000" ;
+        :placeLocatedIn     bdr:G2310 ;
+        :placeLong          "101.93333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID90E8E6BC544C8743
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4791" .
+    
+    bdr:NTB381DE4902D85384
+        a                   :Note ;
+        :contentLocationStatement  "p. 776" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "monastery in the tsha kho area of a mdo\nthis small monastery was dge lugs, rnying ma and bon\nit was founded in 1812 through the efforts of blo bzang sangs rgyas and pa waM rgyal po dkon mchog tshe brtan\n\ngling chen dgon chos 'khor gling \ntsha kho'i spro snang du dge rnying bon gsum tshogs pa'i dgon chung zhig yod pa gzhi byas te rab byung bcu bzhi pa'i chu sprel (1812) lor bshes gnyen chen po blo bzang sangs rgyas dang/ pa wam rgyal po dkon mchog tshe brtan mchod yon gyis btab/ der bla ma blo bzang don grub kyis lha sa nas spyan drangs pa'i jo sku dang bka' 'gyur 'phang dpar sogs bzhugs/ (p. 776-777)"@en .
+}

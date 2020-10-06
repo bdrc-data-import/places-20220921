@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2853 {
+    bda:G2853  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2853 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b7/G2853.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2853 ;
+        adm:logEntry        bda:LG96F671D49373DAFE , bda:LGB5AF4F37C0D6CC21 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG96F671D49373DAFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-16T11:12:26.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB5AF4F37C0D6CC21
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVB369A8BF90A4B7A6
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G2853  a            :Place ;
+        skos:prefLabel      "rA ga ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT59658A04832BD7B2 ;
+        :placeEvent         bdr:EVB369A8BF90A4B7A6 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT59658A04832BD7B2
+        a                   :Note ;
+        :contentLocationStatement  "p. 41" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "rnying ma pa monastery of about 30 monks belonging to the stag sham or chos rje gling pa traditions"@en .
+}

@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G459 {
+    bda:G459  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G459 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "46/G459.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G459 ;
+        adm:logEntry        bda:LGC5B60E7B794DEDC5 , bda:LGF263B448BD10A083 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G265 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LGC5B60E7B794DEDC5
+        a                   adm:WithdrawData ;
+        adm:logDate         "2010-09-10T14:13:40.008Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G265"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF263B448BD10A083
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G459  a             :Place ;
+        skos:prefLabel      "bya rgod gshongs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2BBBBA65BD0B316F , bdr:NTD9A89A7CA5F3B706 .
+    
+    bdr:NT2BBBBA65BD0B316F
+        a                   :Note ;
+        :noteText           "withdrawn in favor of  G265"@en .
+    
+    bdr:NTD9A89A7CA5F3B706
+        a                   :Note ;
+        :noteText           "small sa skya teaching and meditation establishment in the gtsang area of the tibetan autonomous region"@en .
+}

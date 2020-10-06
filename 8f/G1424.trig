@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1424 {
+    bda:G1424  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1424 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8f/G1424.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1424 ;
+        adm:logEntry        bda:LG7E895646F6EA2671 , bda:LGB93C092D0B7A6D5F , bda:LGDFB2E09C5196351B , bda:LGF1486B2F06129200 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG7E895646F6EA2671
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-05T16:41:09.585Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB93C092D0B7A6D5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-05T12:18:26.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDFB2E09C5196351B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-05T10:32:44.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF1486B2F06129200
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1424  a            :Place ;
+        skos:altLabel       "gtsang lung nag thang sbe/"@bo-x-ewts ;
+        skos:prefLabel      "gtsang lung nag thang spe/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF2E39AD73BE026B6 ;
+        :placeLocatedIn     bdr:G1300 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NTF2E39AD73BE026B6
+        a                   :Note ;
+        :noteText           "G618 'di gnyis dbar mi 'dra sa ci yod rgyu cha rnyed rim bzhin kha skong rgyu/"@en .
+}

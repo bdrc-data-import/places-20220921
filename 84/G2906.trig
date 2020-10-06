@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2906 {
+    bda:G2906  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2906 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "84/G2906.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2906 ;
+        adm:logEntry        bda:LG097F4599F7F0D9D8 , bda:LGB109DC1953CD3980 , bda:LGCE5A200DF26E7E82 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1KR1884 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG097F4599F7F0D9D8
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-11-06T13:47:08.532Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1KR1884"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB109DC1953CD3980
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T11:28:01.584Z"^^xsd:dateTime ;
+        adm:logMessage      "cleaned up & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCE5A200DF26E7E82
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVCD96B57DF1ECD2C2
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G2906  a            :Place ;
+        skos:altLabel       "phu lung chos lding rin chen spungs gdan sa 'og min byang chub gling /"@bo-x-ewts , "phu lung dgon 'og min byang chub gling /"@bo-x-ewts ;
+        skos:prefLabel      "phu lung dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT397F6693C5D70B9B , bdr:NTA5CE8C636543B7EC ;
+        :placeEvent         bdr:EVCD96B57DF1ECD2C2 ;
+        :placeLocatedIn     bdr:G2944 , bdr:G2947 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT397F6693C5D70B9B
+        a                   :Note ;
+        :contentLocationStatement  "p. 66, 125" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "karma kam tshang bka' brgyud pa monastery in chu mdo chus, spo bo rdzong\nfounded by mgar dam pa"@en .
+    
+    bdr:NTA5CE8C636543B7EC
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR1884"@en .
+}

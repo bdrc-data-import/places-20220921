@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G934 {
+    bda:G934  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G934 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "20/G934.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G934 ;
+        adm:logEntry        bda:LG17D8DE4D21B1D6C2 , bda:LG2FE6B044D7A9FFA2 , bda:LG77F4C2A46F4F5F1C , bda:LGBA99482F79B8D1BD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG17D8DE4D21B1D6C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-30T13:57:03.041Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged name & added location & type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2FE6B044D7A9FFA2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG77F4C2A46F4F5F1C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-12T12:25:00.085Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBA99482F79B8D1BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-24T15:27:58.137Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:G934  a             :Place ;
+        skos:altLabel       "rgyal rtse rdzong mkhar/"@bo-x-ewts , "jiangzi chengbao"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyal mkhar rtse/"@bo-x-ewts , "江孜城堡"@zh-hans ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G1988 ;
+        :placeType          bdr:PT0051 .
+}

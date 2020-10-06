@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2583 {
+    bda:G2583  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2583 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c1/G2583.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2583 ;
+        adm:logEntry        bda:LG08B7ADC26E29F5EA , bda:LG593021191DBD1A8B , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG08B7ADC26E29F5EA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG593021191DBD1A8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-06T11:09:37.422Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & names in chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2583  a            :Place ;
+        skos:altLabel       "reai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ra geb dgon/"@bo-x-ewts , "热艾寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTB3A244AF5232B286 ;
+        :placeLocatedIn     bdr:G2326 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTB3A244AF5232B286
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 46" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "'brug pa bka' brgyud pa monastery in yus hru'u prefecture, qinghai province"@en .
+}

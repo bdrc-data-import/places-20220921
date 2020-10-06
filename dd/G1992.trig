@@ -1,0 +1,40 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1992 {
+    bda:G1992  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1992 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "dd/G1992.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1992 ;
+        adm:logEntry        bda:LG8A89F8842E0AD00F , bda:LGAF73E3AF0C5233F8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8A89F8842E0AD00F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAF73E3AF0C5233F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from dzong to sngarGyiRdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1992  a            :Place ;
+        skos:prefLabel      "mda' mkhar rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeType          bdr:PT0056 .
+}

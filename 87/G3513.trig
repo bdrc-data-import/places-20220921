@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3513 {
+    bda:G3513  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3513 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "87/G3513.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3513 ;
+        adm:logEntry        bda:LG909D9CAE1C3F7381 , bda:LGE0A02B8D04C2A2E8 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542223102:542223110" ;
+        adm:place_id_lex    "542223102:542223110" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG909D9CAE1C3F7381
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE0A02B8D04C2A2E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-08T16:01:15.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added info."@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2DDDA8C183768B7A
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVAEA798D99A435996
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G3513  a            :Place ;
+        skos:altLabel       "thub bstan bdun phud chos 'khor/"@bo-x-ewts , "Dunpu Chokhor"@bo-x-phon-en , "Dunpu Chokhor"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bdun phud chos 'khor/"@bo-x-ewts , "顿配曲果寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID65FD02AA33DEA517 ;
+        :isRoot             true ;
+        :note               bdr:NT27707BCDBE672E9E , bdr:NT910885518E670857 , bdr:NTDC125E1A66514ED2 ;
+        :placeEvent         bdr:EV2DDDA8C183768B7A , bdr:EVAEA798D99A435996 ;
+        :placeGonpaPerEcumen  "8.91" ;
+        :placeLat           "29.25965" ;
+        :placeLocatedIn     bdr:G2135 ;
+        :placeLong          "91.15054" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID65FD02AA33DEA517
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3513" .
+    
+    bdr:NT27707BCDBE672E9E
+        a                   :Note ;
+        :noteText           "14th DL stayed here on flight to India in 1959"@en .
+    
+    bdr:NT910885518E670857
+        a                   :Note ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "brief description"@en .
+    
+    bdr:NTDC125E1A66514ED2
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 14" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "འདི་ནི་གཏེར་སྟོན་གྲྭ་པ་མངོན་ཤེས་ཀྱིས་བཞེངས་པའི་གནས་གཙོ་ཆེ་བ་བདུན་གྱི་ཕུད་དུ་གྲགས་ལ། ཕྱིས་སུ་ཤེལ་གྲོང་པཎ་ཆེན་བློ་གྲོས་ཆོས་ཀྱི་རྒྱལ་པོས་ད་ལྟའི་གྲྭ་ཚང་བཙུགས། ས་སྐྱ་མཚར་ལུགས་གཙོར་གྱུར་ཕྱག་བཞེས་མཛད། ནང་རྟེན་ཁྱད་འཕགས་ཤཱ་རིའི་བུའི་སྐུ་ཆོས་ཀྱི་ཚལ་བུ་དང་སློབ་དཔོན་ཙནྜ་གོ་མིའི་ཐུགས་དམ་གྱི་རྟེན་སྒྲོལ་ལྗང་གི་སྐུ་བྱིན་ཅན་སོགས་བཞུགས་པར་འཁོད།"@bo .
+}

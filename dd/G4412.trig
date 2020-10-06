@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4412 {
+    bda:G4412  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4412 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "dd/G4412.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4412 ;
+        adm:logEntry        bda:LG3E4C5252C50F6030 , bda:LGED51F8E2899D032D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3E4C5252C50F6030
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T10:28:03.281Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGED51F8E2899D032D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4412  a            :Place ;
+        skos:prefLabel      "bon po lung dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT51F37DDA88D71FD5 ;
+        :placeLocatedIn     bdr:G2129 , bdr:G3283 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT51F37DDA88D71FD5
+        a                   :Note ;
+        :contentLocationStatement  "p. 43" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "nyinma monastery in kha ru shang, snye mo rdzong\nname of founder and date of foundation unknown\nadministratively controlled by tshe smon gling bla brang\nsanctioned monk component: 7"@en .
+}

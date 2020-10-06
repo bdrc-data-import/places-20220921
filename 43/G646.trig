@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G646 {
+    bda:G646  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G646 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "43/G646.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G646 ;
+        adm:logEntry        bda:LG0451C05F62154830 , bda:LG1350EE45AB77EAAA , bda:LGA1A23484D0C854C5 , bda:LGA5BCCA6B7D35DD28 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0451C05F62154830
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG1350EE45AB77EAAA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA1A23484D0C854C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-28T12:44:44.163Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA5BCCA6B7D35DD28
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-03T10:55:44.559Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected name & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G646  a             :Place ;
+        skos:altLabel       "gtsang g.yas ru'i rong stod phyug mo/"@bo-x-ewts , "rong stod phyug mo/"@bo-x-ewts ;
+        skos:prefLabel      "rong stod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G3174 ;
+        :placeType          bdr:PT0083 .
+}

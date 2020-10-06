@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1611 {
+    bda:G1611  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1611 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ae/G1611.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1611 ;
+        adm:logEntry        bda:LG5310658FF9DD9B64 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513329100:227" ;
+        adm:place_id_lex    "513329100:227" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5310658FF9DD9B64
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVB3505771AE6578C9
+        a                   :PlaceFounded ;
+        :onYear             "1769"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1611  a            :Place ;
+        skos:altLabel       "nyag rong gong rgyal dgon/"@bo-x-ewts , "gong jia si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gong rgyal dgon/"@bo-x-ewts , "贡加寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID29C2C313CC1A1E9A ;
+        :isRoot             true ;
+        :note               bdr:NT11D22EA291AC61D4 ;
+        :placeEvent         bdr:EVB3505771AE6578C9 ;
+        :placeGonpaPerEcumen  "77.17" ;
+        :placeLat           "31.00000" ;
+        :placeLocatedIn     bdr:G1246 ;
+        :placeLong          "100.33334" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID29C2C313CC1A1E9A
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1611" .
+    
+    bdr:NT11D22EA291AC61D4
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 396" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "bon po monastery"@en .
+}

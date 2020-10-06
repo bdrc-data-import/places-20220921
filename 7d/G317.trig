@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G317 {
+    bda:G317  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G317 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "7d/G317.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G317 ;
+        adm:logEntry        bda:LG1BD7BBE2B6D8CC6B , bda:LG7AA0253EB95BA924 , bda:LG9CDEBC1777EF4CF1 , bda:LGAB1662C891572090 , bda:LGB7D55024C22BC35E , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542335101:542335102" ;
+        adm:place_id_lex    "542335101:542335102" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1BD7BBE2B6D8CC6B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7AA0253EB95BA924
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-14T14:36:40.189Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag gcig gi ngo sprod"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9CDEBC1777EF4CF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T09:26:25.16Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAB1662C891572090
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-22T11:34:57.647Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB7D55024C22BC35E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:47.061Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1EB26B03C476276E
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G317  a             :Place ;
+        skos:altLabel       "brag dkar rta so dgon/"@bo-x-ewts , "chaga-er dasuo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "brag dkar rta so/"@bo-x-ewts , "Drakar Taso"@en-x-mixed , "查嘎尔达索寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1B626C89E4FD03F2 ;
+        :isRoot             true ;
+        :note               bdr:NT59E0C06099C56FAA , bdr:NTF6005DD0643902EA ;
+        :placeContains      bdr:G2CN10902 ;
+        :placeEvent         bdr:EV1EB26B03C476276E ;
+        :placeGonpaPerEcumen  "6.08" ;
+        :placeLat           "28.60000" ;
+        :placeLocatedIn     bdr:G2161 ;
+        :placeLong          "85.25000" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID1B626C89E4FD03F2
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G317" .
+    
+    bdr:NT59E0C06099C56FAA
+        a                   :Note ;
+        :noteText           "small establishment practicing the ras chung snyan brgyud and related teachings in the western part of the tibetan autonomous region"@en .
+    
+    bdr:NTF6005DD0643902EA
+        a                   :Note ;
+        :contentLocationStatement  "p. 60" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "this small hermitage iis located in skyid grong rdzong. it had been meditation cave of mi la ras pa. it is located about 26 km to south of rdzong dga' shang of the rdzong. \n\nit is called the white rock horse's tooth because there is a large white boulder among the black cliffs of the locale; the explanation of this is to be found in the pilgrimage guide in the biography of dga' bzhi bstan 'dzin dpal 'byor on page 518.\n\n\nthe temple was founded by rtogs ldan rna ral pa, a student of stag lung thang pa. it had almost 70 monks according to the stag lung chos 'byung of ngag dbang rnam rgyal."@en .
+}

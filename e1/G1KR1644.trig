@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1644 {
+    bda:G1KR1644  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1644 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "e1/G1KR1644.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1644 ;
+        adm:logEntry        bda:LGBE71BE9AC68DBF16 , bda:LGDF8801900D418334 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542335101:542335106" ;
+        adm:place_id_lex    "542335101:542335105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBE71BE9AC68DBF16
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-04T12:11:20.874Z"^^xsd:dateTime ;
+        adm:logMessage      "added name (pinyin to tibetan) with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDF8801900D418334
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-08T16:41:55.036Z"^^xsd:dateTime ;
+        adm:logMessage      "added note in tibetan"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV2607D97059E5DE8A
+        a                   :PlaceFounded ;
+        :onYear             "1700"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1644  a         :Place ;
+        skos:altLabel       "bsam gtan gling /"@bo-x-ewts , "ja dur dgon_[?]"@bo-x-ewts , "Samtenling"@en , "jiatu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bya dur dgon/"@bo-x-ewts , "Jadur"@en , "甲土寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID46F74B50E667535E ;
+        :isRoot             true ;
+        :note               bdr:NT7F4585FB5771AAE6 , bdr:NT95962174F8DF26B2 , bdr:NTB473088B85991862 ;
+        :placeEvent         bdr:EV2607D97059E5DE8A ;
+        :placeGonpaPerEcumen  "6.08" ;
+        :placeLat           "28.43333" ;
+        :placeLocatedIn     bdr:G2161 ;
+        :placeLong          "85.33334" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID46F74B50E667535E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1644" .
+    
+    bdr:NT7F4585FB5771AAE6
+        a                   :Note ;
+        :noteText           "དགོན་མིང་དངོས་ཇི་ཡིན་གསལ་ཁ་མ་རྙེད་པས་རྒྱ་ཡིག་གི་མིང་དེ་ལས་སྒྲ་བསྒྱུར་ཙམ་ཞིག་གནས་སྐབས་ཤིག་སྟོང་ཆ་ཁ་སྐོངས་ཞུས་པ་ཙམ་མོ།"@bo .
+    
+    bdr:NT95962174F8DF26B2
+        a                   :Note ;
+        :noteText           "in Yangchu Tangkar village near Kyirong town (Chan).  Not in Osaka Bon temple survey volume.  Supplied tsampa to Bonpo travelling to Kailash and back.  Founding date estimated"@en .
+    
+    bdr:NTB473088B85991862
+        a                   :Note ;
+        :noteText           "missing original name in tibetan"@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G205 {
+    bda:G205  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G205 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "65/G205.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G205 ;
+        adm:logEntry        bda:LG094CDEACD94175B3 , bda:LG91D60D363EF75A55 , bda:LGDFB48624D248443B , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG094CDEACD94175B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:51:50.298Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG91D60D363EF75A55
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-25T15:46:23.157Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDFB48624D248443B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G205  a             :Place ;
+        skos:altLabel       "lo ro bkra shis mthong smon/"@bo-x-ewts ;
+        skos:prefLabel      "bkra shis mthong smon dgon/"@bo-x-ewts , "Loro Tashi Tongmon"@en ;
+        :isRoot             true ;
+        :note               bdr:NT60C0CE446F550802 ;
+        :placeLocatedIn     bdr:G1192 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT60C0CE446F550802
+        a                   :Note ;
+        :contentLocationStatement  "p. 265" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "'brug pa dkar brgyud monastery in lo ro; not visited by kaH thog si tu; this monastery was founded by the third 'brug chen 'jam dbyangs chos kyi grags pa"@en .
+}

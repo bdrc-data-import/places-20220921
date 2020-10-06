@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2190 {
+    bda:G2190  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2190 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "f7/G2190.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2190 ;
+        adm:logEntry        bda:LG69FEA804214122A7 , bda:LG70F9CE60DC386AC2 , bda:LG9BFDB34DF253FA9C , bda:LGC755CAFCB88CF68D , bda:LGCBC932FB43E69D09 , bda:LGFB1095DA67E70B1F , bda:LGFD593914A4A0A77F , bda:LGIM0A2D5DA707 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG69FEA804214122A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G1PD89995"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG70F9CE60DC386AC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:county to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9BFDB34DF253FA9C
+        a                   adm:WithdrawData ;
+        adm:logDate         "2012-11-20T16:56:07.422Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn (dup. with G2944)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC755CAFCB88CF68D
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-16T12:21:45.917Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCBC932FB43E69D09
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-15T09:33:13.706Z"^^xsd:dateTime ;
+        adm:logMessage      "added note as withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFB1095DA67E70B1F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFD593914A4A0A77F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2177"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM0A2D5DA707
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rdzong to sngarGyiRdzong"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2190  a            :Place ;
+        skos:prefLabel      "spo smad rdzong /"@bo-x-ewts , "bomi"@zh-latn-pinyin-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT0A64E53B56105A5A , bdr:NTB6A7AB1827603598 ;
+        :placeType          bdr:PT0056 .
+    
+    bdr:NT0A64E53B56105A5A
+        a                   :Note ;
+        :noteText           "withdrawn in favoe of G2944"@en .
+    
+    bdr:NTB6A7AB1827603598
+        a                   :Note ;
+        :noteText           "one of the 13  new counties (rdzong) of chab mdo prefecture (sa khul)"@en .
+}

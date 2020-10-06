@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2105 {
+    bda:G2105  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2105 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "90/G2105.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2105 ;
+        adm:logEntry        bda:LGF7E6C8F8016349E5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGF7E6C8F8016349E5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2105  a            :Place ;
+        skos:prefLabel      "do rdzong khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0D2997F761EA4FBD ;
+        :placeType          bdr:PT0057 .
+    
+    bdr:NT0D2997F761EA4FBD
+        a                   :Note ;
+        :contentLocationStatement  "p. 245" ;
+        :noteSource         bdr:MW20170 ;
+        :noteText           "administrative taxation region equivent to a rdzong in the 1830 settlement document"@en .
+}

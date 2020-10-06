@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1085 {
+    bda:G1085  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1085 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ba/G1085.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1085 ;
+        adm:logEntry        bda:LG18AE50609CADFC9A , bda:LG9A222E4021AB862C , bda:LGBE3E2AC5A14F484B , bda:LGE73C40449D1F0D68 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18AE50609CADFC9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-05T12:23:48.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added language encoding & place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A222E4021AB862C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBE3E2AC5A14F484B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T15:56:26.048Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type & location & added GIS info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE73C40449D1F0D68
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1085  a            :Place ;
+        skos:altLabel       "la dwags sles/"@bo-x-ewts , "mang yul la dwags sles/"@bo-x-ewts , "sle/"@bo-x-ewts ;
+        skos:prefLabel      "gle/"@bo-x-ewts , "Leh"@en ;
+        :isRoot             true ;
+        :placeLat           "34.145397" ;
+        :placeLocatedIn     bdr:G3182 ;
+        :placeLong          "77.567614" ;
+        :placeType          bdr:PT0008 .
+}

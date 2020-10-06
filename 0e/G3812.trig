@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3812 {
+    bda:G3812  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3812 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "0e/G3812.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3812 ;
+        adm:logEntry        bda:LG286A3F407ED2937B , bda:LG7E9E4E68BE681050 , bda:LG8214D397E4C7AF1C , bda:LGA7416AFF3E622AF5 , bda:LGC727C14CB40CF5B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG286A3F407ED2937B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-15T16:38:46.635Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7E9E4E68BE681050
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-13T11:37:50.609Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8214D397E4C7AF1C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T08:41:16.414Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA7416AFF3E622AF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-25T15:04:56.205Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC727C14CB40CF5B3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:EV17CDF7850F76C495
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2PD17097 ;
+        :onYear             "1985"^^xsd:gYear .
+    
+    bdr:EVECE305C6CE733F71
+        a                   :PlaceFounded ;
+        :onYear             "1985"^^xsd:gYear .
+    
+    bdr:G3812  a            :Place ;
+        skos:altLabel       "ya chen o rgyan bsam gtan gling /"@bo-x-ewts ;
+        skos:prefLabel      "ya chen dgon/"@bo-x-ewts , "Yachen monastery"@en , "亚青寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT6BEC97A02AA8680E , bdr:NT7954B7047EFC0BA6 ;
+        :placeEvent         bdr:EV17CDF7850F76C495 , bdr:EVECE305C6CE733F71 ;
+        :placeLocatedIn     bdr:G2300 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT6BEC97A02AA8680E
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, pp. 184-186" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery in dpal yul rdzong"@en .
+    
+    bdr:NT7954B7047EFC0BA6
+        a                   :Note ;
+        :contentLocationStatement  "p. 129" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "rnying ma monastery located in sde dge territory; this monaster was founded in the 4th rab byung cycle (1207-1266) by a student of kaH dam pa bde bshegs, byang chub 'bum, as a chos sgar at khrom ya chen sum mdo; in recent times （1985）mkhan po a khyung has revitalized this as a place of several thousand nuns (jo ser)"@en .
+}

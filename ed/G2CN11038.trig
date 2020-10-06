@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11038 {
+    bda:G2CN11038  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11038 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ed/G2CN11038.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11038 ;
+        adm:logEntry        bda:LG114C3DE3D77F0897 , bda:LG6CE43CDAFAB8273A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG114C3DE3D77F0897
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-23T14:07:08.739Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6CE43CDAFAB8273A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-23T13:58:02.737Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2CN11038  a        :Place ;
+        skos:altLabel       "sman lung dgon/"@bo-x-ewts ;
+        skos:prefLabel      "man lung dgon/"@bo-x-ewts , "Manlung Monastery"@en ;
+        :isRoot             true ;
+        :note               bdr:NT28521D1267A2FA24 , bdr:NT323A4D6F14923F84 ;
+        :placeLocatedIn     bdr:G2175 , bdr:G3572 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT28521D1267A2FA24
+        a                   :Note ;
+        :contentLocationStatement  "p. 111" ;
+        :noteSource         bdr:MW27024 ;
+        :noteText           "མྱང་ཆོས་འབྱུང་ནང་དུ། \"མན་ལུང་དགོན་པ་དེ་ཐོགས་ཤིན་ཏུ་སྔ་སྟེ་ལོ་སྟོན་རྡོ་རྗེ་དབང་ཕྱུག་(P1524)གི་མཁན་བུ་ཀྱི་ཨཱ་ཙ་རྱ་ཡེ་ཤེས་དབང་པོའི་མཁན་བུ་ཕྱི་ཚར་བཞིའི་ནང་ཚན་མོན་བཙུན་གཡུ་སྟོན་དང་། ཕུག་སྟོན་ཡེ་ཤེས་ཡོན་ཏན་གཉིས་ཀྱིས་མན་ལུང་བཟུང་ངོ། \" ཞེས་འཁོད་པ་དང་། གཞན་ད་དུང་\"དེ་ལྟ་བུའི་སྐྱེས་བུ་ཆེན་པོ་བྲན་སྟོན་མཐའ་བྲལ་(P7250)གྱི་དགོན་པ་མན་ལུང་ཟེར་བ་གནས་གཞི་དང་བྲན་སྟོན་གྱི་དབོན་རྒྱུད་དང་བཅས་པ་ཡོད་དོ།\" ཞེས་སོགས་གསལ།"@bo .
+    
+    bdr:NT323A4D6F14923F84
+        a                   :Note ;
+        :contentLocationStatement  "402-403" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "དབུས་གཙང་གནས་ཡིག་ནང་དུ། ཁལ་ཁ་ཀ་ཤོད་གོང་དེར་། ཟུར་ལུང་དཔལ་ཆེན་ལྷ་ཁང་ན། མན་ལུང་གུ་རུ་(p5291)ཡིན་ཟེར་བ་བླ་མ་རལ་པ་ཅན་ཆུ་པ་དམར་པོ་མནབ་པ་ཞིག་གི་སྐུ་སོགས་སྣང་བར་འཁོད་པ་དང་། གཞན་ཡང་། \"ལུང་ཕུ་འདིར། སྨན་ལུང་མི་བསྐྱོད་རྡོ་རྗེའི་གདན་ས་དེང་སང་ཆེར་གོག རི་ཁྲོད་དུ་སྒྲུབ་པ་ཁ་ཤས་ཡོད་པར་སྣང་། གཏེར་མའི་ཕྱོགས་ཀྱི་དཔེ་ཆ་མང་པོ་ཡོད་འདུག\"ཞེས་པ་སོགས་གསལ།"@bo .
+}

@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1163 {
+    bda:G1KR1163  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1163 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "15/G1KR1163.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1163 ;
+        adm:logEntry        bda:LG1EBAB1E734535DB0 , bda:LG4BDCB15CE3DFFE52 , bda:LG88F6333D2DD132F5 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542125203:241" ;
+        adm:place_id_lex    "542125203:241" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1EBAB1E734535DB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-16T12:26:59.85Z"^^xsd:dateTime ;
+        adm:logMessage      "update list of names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4BDCB15CE3DFFE52
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-16T12:14:39.652Z"^^xsd:dateTime ;
+        adm:logMessage      "added tibetan name & event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG88F6333D2DD132F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-27T15:40:46.462Z"^^xsd:dateTime ;
+        adm:logMessage      "added Gis Coords & note, linked with founder"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV4E579565EE29B602
+        a                   :PlaceFounded ;
+        :onYear             "1869"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EV86BD0B37449B4C8E
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P9307 ;
+        :onYear             "1869"^^xsd:gYear .
+    
+    bdr:G1KR1163  a         :Place ;
+        skos:altLabel       "jiaguo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgya sgo dgon/"@bo-x-ewts , "加果寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6651FEED0929AF09 ;
+        :isRoot             true ;
+        :note               bdr:NT1EC6BEC583DAED4D , bdr:NT755D973BB735B5E3 ;
+        :placeEvent         bdr:EV4E579565EE29B602 , bdr:EV86BD0B37449B4C8E ;
+        :placeGonpaPerEcumen  "8.06" ;
+        :placeLat           "31.222107" ;
+        :placeLocatedIn     bdr:G2188 ;
+        :placeLong          "95.376123" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID6651FEED0929AF09
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1163" .
+    
+    bdr:NT1EC6BEC583DAED4D
+        a                   :Note ;
+        :contentLocationStatement  "p. 178" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "༡༨༦༩ལོར་བསམ་གཏན་ཚུལ་ཁྲིམས་ཀྱིས་བཏབ། གཏམ་སྟོད་ཤང་གཏམ་སྟོད་གྲོང་ཚོར་གནས།"@bo .
+    
+    bdr:NT755D973BB735B5E3
+        a                   :Note ;
+        :noteText           "1 lama -  50 monks"@en .
+}

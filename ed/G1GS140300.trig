@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1GS140300 {
+    bda:G1GS140300  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1GS140300 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ed/G1GS140300.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1GS140300 ;
+        adm:logEntry        bda:LG193D9C21803CC4F8 , bda:LGFC36770BA2DA53AB , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG193D9C21803CC4F8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-02-14T12:06:31.031Z"^^xsd:dateTime ;
+        adm:logMessage      "completed"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFC36770BA2DA53AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-12T14:25:07.509Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1GS140300  a       :Place ;
+        skos:prefLabel      "mdo smad gnas mchog gsum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT544E45E24582982A ;
+        :placeContains      bdr:G1PD83959 , bdr:G2DB25462 , bdr:G3214 ;
+        :placeLocatedIn     bdr:G1202 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT544E45E24582982A
+        a                   :Note ;
+        :noteText           "the three great pilgrimage sites of a mdo are: rma rgyal gangs ri; mtsho sngon khri shor rgyal mo; gnas mchog brag dkar sprel rdzong"@en .
+}

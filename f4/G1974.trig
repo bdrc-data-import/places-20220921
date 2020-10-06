@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1974 {
+    bda:G1974  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1974 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f4/G1974.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1974 ;
+        adm:logEntry        bda:LG07E54F38929263A7 , bda:LG69D7E668C204BF85 , bda:LG83FDB94CBAAC62B9 , bda:LGC2A709C808FE00DB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07E54F38929263A7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG69D7E668C204BF85
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-08-03T10:30:14.289Z"^^xsd:dateTime ;
+        adm:logMessage      "created New record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG83FDB94CBAAC62B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-19T16:27:42.634Z"^^xsd:dateTime ;
+        adm:logMessage      "reused the G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC2A709C808FE00DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-08-03T10:36:10.154Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1974  a            :Place ;
+        skos:altLabel       "ldum ra/"@bo-x-ewts , "nub ra/"@bo-x-ewts ;
+        skos:prefLabel      "ldum rwa/"@bo-x-ewts , "Nubra Valley"@en ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G3182 .
+}

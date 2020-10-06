@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1759 {
+    bda:G1KR1759  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1759 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "a8/G1KR1759.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1759 ;
+        adm:logEntry        bda:LG1EC66C32B6B13B6B , bda:LG7A41B37BDD5FFE95 , bda:LGABE6C82A764E1DF7 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542430206:495" ;
+        adm:place_id_lex    "542430206:495" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1EC66C32B6B13B6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-23T12:57:56.748Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in tibetan & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7A41B37BDD5FFE95
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-04T16:57:37.777Z"^^xsd:dateTime ;
+        adm:logMessage      "added Gis Coords"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGABE6C82A764E1DF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-23T13:00:47.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV2A3D13F88A515B8F
+        a                   :PlaceRebuilt ;
+        :onYear             "1687"^^xsd:gYear .
+    
+    bdr:EVC5EF8848631118AB
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1759  a         :Place ;
+        skos:altLabel       "dwangs ra g.yu bun dgon/"@bo-x-ewts , "玉本寺"@zh-hans , "yuben si"@zh-latn-pinyin-x-ndia , "yupeng si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "g.yu bun dgon/"@bo-x-ewts , "玉彭寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDCA9BC770A082A7A ;
+        :isRoot             true ;
+        :note               bdr:NT21EFE4DC2792B6F1 , bdr:NTA472C7A91BAA5A8A ;
+        :placeEvent         bdr:EV2A3D13F88A515B8F , bdr:EVC5EF8848631118AB ;
+        :placeGonpaPerEcumen  "0.76" ;
+        :placeIsNear        bdr:G2400 ;
+        :placeLat           "31.176703" ;
+        :placeLocatedIn     bdr:G2377 ;
+        :placeLong          "86.809965" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDDCA9BC770A082A7A
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1759" .
+    
+    bdr:NT21EFE4DC2792B6F1
+        a                   :Note ;
+        :contentLocationStatement  "p. 75-76" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "མི་ལོ་སུམ་སྟོང་ལྷག་ཙམ་གོང་གི་ལོ་རྒྱུས་དང་འབྲེལ་བ་ཡོད་སྐོར་དང་། ཁྱད་པར་མུ་ཁྲི་བཙན་པོའི་སྐབས་ཀྱི་འདུ་གནས་སོ་བདུན་གྱི་ནང་གསེས་དང་། བོན་གྱི་མ་བརྒྱུད་གནས་ཆེན་ཉེར་བཞིའི་གྲས་ཡིན་ཚུལ་སོགས་འཁོད།"@bo .
+    
+    bdr:NTA472C7A91BAA5A8A
+        a                   :Note ;
+        :noteText           "W25095 lists it as dwangs ra g.yu bun dgon (nyi ma rdzong). One of the twenty four sacred places mentioned in the Bonpo Ma rgyu early Zhang zhung references."@en .
+}

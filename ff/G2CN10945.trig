@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10945 {
+    bda:G2CN10945  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10945 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ff/G2CN10945.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10945 ;
+        adm:logEntry        bda:LG742A502A5011E32E , bda:LGD2330B047B6AF01A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542323100:542323106" ;
+        adm:place_id_lex    "542323100:542323106" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG742A502A5011E32E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-10T14:01:44.705Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD2330B047B6AF01A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-12-18T10:57:35.773Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV7FA74FE44CA8EB2F
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk , bdr:TraditionSakya .
+    
+    bdr:EV83CB1D59F8B54914
+        a                   :PlaceFounded ;
+        :onYear             "1425"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G2CN10945  a        :Place ;
+        skos:altLabel       "sku 'bum mchod rten mthong grol chen mo/"@bo-x-ewts , "Gyangtse Kumbum Stupa"@en , "白居寺万佛塔"@zh-hans , "jiangzi baiju wanfo ta"@zh-latn-pinyin-x-ndia , "jiangzi wanfo ta"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyal rtse sku 'bum mchod rten/"@bo-x-ewts , "Gyangtse Kumbum"@en , "江孜万佛塔"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCEED3B4D28F52911 ;
+        :isRoot             true ;
+        :note               bdr:NT5C852EA625F92811 ;
+        :placeEvent         bdr:EV7FA74FE44CA8EB2F , bdr:EV83CB1D59F8B54914 ;
+        :placeGonpaPerEcumen  "27.01" ;
+        :placeLat           "28.95000" ;
+        :placeLocatedIn     bdr:G1511 , bdr:G2175 ;
+        :placeLong          "89.60000" ;
+        :placeType          bdr:PT0072 .
+    
+    bdr:IDCEED3B4D28F52911
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2CN10945" .
+    
+    bdr:NT5C852EA625F92811
+        a                   :Note ;
+        :noteText           "Situ calls it the 'Great Chorten'"@en .
+}

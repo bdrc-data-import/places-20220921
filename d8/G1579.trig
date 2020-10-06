@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1579 {
+    bda:G1579  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1579 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "d8/G1579.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1579 ;
+        adm:logEntry        bda:LG54699520B2AD0428 , bda:LG6ADDA6DB2E03A46F , bda:LG96A885420BD3ED02 , bda:LGAE9AA035CBC2A469 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513329201:178" ;
+        adm:place_id_lex    "513329201:181" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG54699520B2AD0428
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-08T11:21:05.681Z"^^xsd:dateTime ;
+        adm:logMessage      "added nyag dpal ldan byams 'byor dgon gyi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG6ADDA6DB2E03A46F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-17T08:59:07.073Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG96A885420BD3ED02
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-07T08:53:07.135Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAE9AA035CBC2A469
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVC970219798478BB6
+        a                   :PlaceFounded ;
+        :onYear             "0841"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1579  a            :Place ;
+        skos:altLabel       "nyag rong byams 'byor dgon/"@bo-x-ewts , "将觉寺"@zh-hans , "jiangjue si"@zh-latn-pinyin-x-ndia , "niji si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "byams 'byor dgon/"@bo-x-ewts , "姜觉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2F901510A6ECF827 ;
+        :isRoot             true ;
+        :note               bdr:NTCC2BC5D09D7B9333 ;
+        :placeContains      bdr:G3JT12516 ;
+        :placeEvent         bdr:EVC970219798478BB6 ;
+        :placeGonpaPerEcumen  "10.07" ;
+        :placeLat           "31.18333" ;
+        :placeLocatedIn     bdr:G1246 ;
+        :placeLong          "100.30000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID2F901510A6ECF827
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1579" .
+    
+    bdr:NTCC2BC5D09D7B9333
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 211" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma pa monastery\nཀཿཐོག་པའི་དགོན་ལག་བར་སྐབས་ཉག་དཔོན་གྱིས་སྦྱིན་བདག་བྱེད་མྱོང་བ་ཞིག་ཏེ། འདིར་དགོན་འདིའི་ལོ་རྒྱུས་གནད་ཚང་མཁན་པོ་བསོད་ནམས་བསྟན་པ་དང་བྱ་ཚེ་རིང་གིས་བསྒྲིགས་པ་བཞུགས།"@en .
+}

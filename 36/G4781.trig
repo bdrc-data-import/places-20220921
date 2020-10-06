@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4781 {
+    bda:G4781  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4781 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "36/G4781.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4781 ;
+        adm:logEntry        bda:LG048A8D8BEB05F4C3 , bda:LG9587CEFB0DBA8939 , bda:LGACA031EF1AB736B2 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542322100:542322101" ;
+        adm:place_id_lex    "542322100:542322101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG048A8D8BEB05F4C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-03T16:56:33.308Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & aranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9587CEFB0DBA8939
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGACA031EF1AB736B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-15T09:39:56.252Z"^^xsd:dateTime ;
+        adm:logMessage      "added a name with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV2FE70170D8F4242E
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk , bdr:TraditionSakya .
+    
+    bdr:EVAD6597BBE8E71663
+        a                   :PlaceFounded ;
+        :onYear             "1250"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EVE2285160F4AA85F9
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G4781  a            :Place ;
+        skos:altLabel       "karma gsung rab gling /"@bo-x-ewts , "shangs dga' ldan chos 'khor/"@bo-x-ewts , "gandan quguo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dga' ldan chos 'khor/"@bo-x-ewts , "Ganden Chokhor"@en-x-mixed , "甘典曲果寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD15F6EBBA6F5CCD4 ;
+        :isRoot             true ;
+        :note               bdr:NT762FAAAE997B8453 , bdr:NTCB9D47ECE2EA025A , bdr:NTF6FE041369A8CE1D ;
+        :placeEvent         bdr:EV2FE70170D8F4242E , bdr:EVAD6597BBE8E71663 , bdr:EVE2285160F4AA85F9 ;
+        :placeGonpaPerEcumen  "20.83" ;
+        :placeLat           "29.70000" ;
+        :placeLocatedIn     bdr:G2171 , bdr:G4684 ;
+        :placeLong          "89.11667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD15F6EBBA6F5CCD4
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4781" .
+    
+    bdr:NT762FAAAE997B8453
+        a                   :Note ;
+        :contentLocationStatement  "p. 353" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "once a famous dge lugs religious establishment in the shangs valley"@en .
+    
+    bdr:NTCB9D47ECE2EA025A
+        a                   :Note ;
+        :noteText           "Chan states it used to be largest gonpa in Shang with 150 Sakya and Geluk monks, thus show as Sakya in 1250 even though not sure what founding sect was."@en .
+    
+    bdr:NTF6FE041369A8CE1D
+        a                   :Note ;
+        :contentLocationStatement  "p. 486" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "dge dgon chen po rnam gling rdzong 'og tu yod pa der grwa lng abrgya/ sngar karma gsung rab gling zhes grags sogs gsal bas/ thog ma'i chos brgyud karma bka' brgyud yin par dwogs pa dpyad gzhi'o/"@en .
+}

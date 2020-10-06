@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN569 {
+    bda:G3CN569  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN569 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c1/G3CN569.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN569 ;
+        adm:logEntry        bda:LG31BC07C43DA5ED15 , bda:LG7C9534B8E4B457E9 , bda:LGDA85BBBC7000DF1B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG31BC07C43DA5ED15
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-10T15:27:52.563Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7C9534B8E4B457E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-06T15:13:56.273Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDA85BBBC7000DF1B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-06T13:00:26.58Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV845B5F239AC9CC0B
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0707"^^xsd:gYear .
+    
+    bdr:G3CN569  a          :Place ;
+        skos:prefLabel      "lha gab/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEE0A6FE5201D9E03 ;
+        :placeContains      bdr:G3CN577 ;
+        :placeEvent         bdr:EV845B5F239AC9CC0B ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NTEE0A6FE5201D9E03
+        a                   :Note ;
+        :contentLocationStatement  "p. 373" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"ལུག་གི་ལོ་ ༧༠༧ ལ་བབ། བཙན་པོ་དབྱརད་བལ་པོ་ན་བཞུགས། ཕྱི་དྲོན་ན་བཞུགས། དབྱར་འདུན་ལྷ་གབ་དུ་དབོན་ད་རྒྱལ་དང་། བློན་ཆེན་པོ་ཁྲི་གཟིགས་ཀྱིས་བསྡུས་ཏེ། མངན་གྱི་ཁབ་སོའི་ཁྲམ་སྤོས།\"ཞེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་ཁྲི་ལྡེ་གཙུག་བཙན་སྐུ་ན་ཕྲ་བའི་སྐབས་ཕྱི་ཁྲི་མ་ལོད་ཀྱིས་རྒྱབ་སྐྱོར་བྱས་པའི་འདུན་མ་ཆེན་པོ་བྱེད་ས་ཞིག་ཡིན་པ་ཤེས།"@bo .
+}

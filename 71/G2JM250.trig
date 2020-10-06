@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2JM250 {
+    bda:G2JM250  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2JM250 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "71/G2JM250.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2JM250 ;
+        adm:logEntry        bda:LG2DF4DD7FA5D17D75 , bda:LG61A6444879F2E149 , bda:LGCB2EF6011B4FD21B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2DF4DD7FA5D17D75
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-14T16:53:27.515Z"^^xsd:dateTime ;
+        adm:logMessage      "added records"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LG61A6444879F2E149
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGCB2EF6011B4FD21B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T16:56:18.858Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2JM250  a          :Place ;
+        skos:altLabel       "glag brag rdzong bshad grwa thub bstan bshad sgrub 'phel rgyas gling /"@bo-x-ewts , "thub bstan bshad sgrub 'phel rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "glag brag rdzong bshad grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB7A8BD70DA7B093F ;
+        :placeType          bdr:PT0038 .
+    
+    bdr:NTB7A8BD70DA7B093F
+        a                   :Note ;
+        :contentLocationStatement  "316" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "A Nyingma college founded by bsod nams chos 'grub in his home district after completing his studies at rdzogs chen dgon pa."@en .
+}

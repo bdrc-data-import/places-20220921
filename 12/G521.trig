@@ -1,0 +1,105 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G521 {
+    bda:G521  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G521 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "12/G521.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G521 ;
+        adm:logEntry        bda:LG25FD5BBA22754263 , bda:LG3F09E71CCE262A82 , bda:LGA21CEE6CC721D0DE , bda:LGAED2B341DCE085A2 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540124202:540124107" ;
+        adm:place_id_lex    "540124202:540124107" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG25FD5BBA22754263
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG3F09E71CCE262A82
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-17T11:14:10.893Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & linked with source"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA21CEE6CC721D0DE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAED2B341DCE085A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-13T09:52:58.265Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV788C79BDEEA53154
+        a                   :PlaceFounded ;
+        :onYear             "1150"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:EV93DD64A0B0644B3B
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P00AG02484 ;
+        :onYear             "1181"^^xsd:gYear .
+    
+    bdr:EVC69DDC5357FFDC36
+        a                   :PlaceConverted ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G521  a             :Place ;
+        skos:altLabel       "snye phu shug gseb dgon/"@bo-x-ewts , "snye phu shugs gsebs dgon/"@bo-x-ewts , "雄色寺"@zh-hans , "xiongse si"@zh-latn-pinyin-x-ndia , "xiuse si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "shug gseb dgon/"@bo-x-ewts , "Shukseb Gon"@en-x-mixed , "休色寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF86A7327D2DD7840 ;
+        :isRoot             true ;
+        :note               bdr:NT52C7C2C2484ECCB2 , bdr:NT8DE03C266C034797 , bdr:NT9E7D1EC5C4F2A247 ;
+        :placeEvent         bdr:EV788C79BDEEA53154 , bdr:EV93DD64A0B0644B3B , bdr:EVC69DDC5357FFDC36 ;
+        :placeGonpaPerEcumen  "19.05" ;
+        :placeLat           "29.43412" ;
+        :placeLocatedIn     bdr:G2128 , bdr:G2451 ;
+        :placeLong          "91.00229" ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:IDF86A7327D2DD7840
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G521" .
+    
+    bdr:NT52C7C2C2484ECCB2
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 133-135" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT8DE03C266C034797
+        a                   :Note ;
+        :contentLocationStatement  "p. 43" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "now a major rnying ma pa monastery in tshal sne shang, chu shur rdzong, lha sa prefecture\nfounded in 1181 as a monastery by a student of phag mo gru pa, gyer sgom pa tshul khrims sengge\nthe mother monastery of the shug gseb bka' brgyud pa\ndeclined gradually and in the 17th century under the administration (dgon bdag) of the snon be ser dgon located in stod lung bde chen rdzong \nbecame a nunnery through the efforts of the shug gseb rje btsun chos nyid bzang mo following the rnying ma pa lho gter teachings\nhad in 1959 about 400 nuns\nnow restored"@en .
+    
+    bdr:NT9E7D1EC5C4F2A247
+        a                   :Note ;
+        :contentLocationStatement  "p. 173" ;
+        :noteSource         bdr:MW8224 ;
+        :noteText           "1698\ndge lugs pa monastery in the rgya ma area\nfounded by lha lung kun dga' dbang phyug\nang 2  17 monks\nfollowed the ritual manuals of rgyud smad and monks went to byang rtse, bde yangs, byes, brag dbar\nabbot in 1698 was mngon dga' sku skye ngag dbang phun tshogs\nrecurrence of the name lha lung in the abbatial succession list suggests a connection with the lineage"@en .
+}

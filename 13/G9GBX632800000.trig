@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX632800000 {
+    bda:G9GBX632800000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX632800000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "13/G9GBX632800000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX632800000 ;
+        adm:logEntry        bda:LGF2EAE87EB50C4FCD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGF2EAE87EB50C4FCD
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX632800000
+        a                   :Place ;
+        skos:altLabel       "hai xi meng gu zu cang zu zi zhi zhou"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Haixi Mongolian-Tibetan Autonomous Prefecture of"@en , "海西蒙古族藏族自治州"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX632801000 , bdr:G9GBX632802000 , bdr:G9GBX632821000 , bdr:G9GBX632822000 , bdr:G9GBX632823000 ;
+        :placeGB2260-2013   "632800000" ;
+        :placeLat           "38.1313666" ;
+        :placeLocatedIn     bdr:G9GBX630000000 ;
+        :placeLong          "93.2945359" ;
+        :placeType          bdr:PT0057 .
+}

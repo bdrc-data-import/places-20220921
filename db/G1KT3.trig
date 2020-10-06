@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KT3 {
+    bda:G1KT3  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KT3 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "db/G1KT3.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KT3 ;
+        adm:logEntry        bda:LG723731704D8F48CA , bda:LG8B46F45BC4C4E3CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG723731704D8F48CA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-24T16:56:13.611Z"^^xsd:dateTime ;
+        adm:logMessage      "Update record"@en ;
+        adm:logWho          bdu:U00004 .
+    
+    bda:LG8B46F45BC4C4E3CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-11T14:35:30.714Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00004 .
+    
+    bdr:EV4B652D9B1D024012
+        a                   :PlaceFounded ;
+        :onYear             "1650"^^xsd:gYear .
+    
+    bdr:G1KT3  a            :Place ;
+        skos:prefLabel      "dmag spyi khang /"@bo-x-ewts , "Makchikhang"@en ;
+        :isRoot             true ;
+        :note               bdr:NT51CB4917DAADC45E , bdr:NTC15ECBF85F2E4613 , bdr:NTF1007F968B58D289 ;
+        :placeEvent         bdr:EV4B652D9B1D024012 ;
+        :placeLat           "29.657419" ;
+        :placeLocatedIn     bdr:G2800 ;
+        :placeLong          "91.118395" .
+    
+    bdr:NT51CB4917DAADC45E
+        a                   :Note ;
+        :contentLocationStatement  "408-411" ;
+        :noteSource         bdr:MW1PD96945 .
+    
+    bdr:NTC15ECBF85F2E4613
+        a                   :Note ;
+        :contentLocationStatement  "pp. 60, 112, 296" ;
+        :noteText           "Larsen, Knud, and Amund Sinding-Larsen. 2001. The Lhasa atlas: traditional Tibetan architecture and townscape. London: Serindia."@en .
+    
+    bdr:NTF1007F968B58D289
+        a                   :Note ;
+        :noteText           "The Makchikhang, or armory, is located within the Shol at the base of the Potala Palace."@en .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1236 {
+    bda:G2GS1236  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1236 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ce/G2GS1236.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1236 ;
+        adm:logEntry        bda:LG29F06D83B98289C4 , bda:LG2CFF3365097FF884 , bda:LG82E32B408C447702 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1KR1020 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG29F06D83B98289C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-08-09T16:18:38.911Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2CFF3365097FF884
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T15:31:00.276Z"^^xsd:dateTime ;
+        adm:logMessage      "added 'jo mda' rdzong"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LG82E32B408C447702
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-09-30T14:17:01.481Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1KR1020"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2GS1236  a         :Place ;
+        skos:prefLabel      "rdis bon dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAC9DA5580283C367 , bdr:NTF34313F5F4192DC0 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTAC9DA5580283C367
+        a                   :Note ;
+        :contentLocationStatement  "p. 158" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bon monastery in sde dge territory; no other information given"@en .
+    
+    bdr:NTF34313F5F4192DC0
+        a                   :Note ;
+        :noteText           "སྡིག་བོན་དགོན་དང་\"རྡིས་བོན་དགོན་\"ཞེས་པ་དགོན་གཅིག་ཡིན་པར་གསལ་བས། ཨང་གྲངས་G1KR1020འདིས་འཐུས་པར་བྱས་སོ།"@en .
+}

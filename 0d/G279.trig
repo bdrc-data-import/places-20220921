@@ -1,0 +1,107 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G279 {
+    bda:G279  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G279 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "0d/G279.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G279 ;
+        adm:logEntry        bda:LG87CB98DB9C19F73C , bda:LG8A628A40DFECC7A8 , bda:LG8E732843FD10CCA0 , bda:LGA69FE399ED3A030B , bda:LGB33E194FC90501B7 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542325100:542325105" ;
+        adm:place_id_lex    "542325100:542325105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG87CB98DB9C19F73C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T13:45:23.576Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG8A628A40DFECC7A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T08:52:07.729Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8E732843FD10CCA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T08:49:46.444Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA69FE399ED3A030B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB33E194FC90501B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-11T15:25:07.854Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV864B8FCF5B7D3993
+        a                   :PlaceFounded ;
+        :onYear             "1212"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G279  a             :Place ;
+        skos:altLabel       "khro phu byams chen chos sde/"@bo-x-ewts , "Trupu Monastery"@en , "绰浦寺"@zh-hans , "chaopu si"@zh-latn-pinyin-x-ndia , "chuopu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "khro phu dgon/"@bo-x-ewts , "Tropu Gon"@en-x-mixed , "超浦寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5526137E42453626 ;
+        :contentLocationStatement  "Coordinates: latitude 29°11,823 longitude 88°23,288 Altitude: 3923(m) (sheehy_tibet_coordinates_2014)" ;
+        :isRoot             true ;
+        :note               bdr:NT20C038A0B073A7F4 , bdr:NT6FE318B7EBFF44F0 , bdr:NTB65A4C32116A3F6D ;
+        :placeEvent         bdr:EV864B8FCF5B7D3993 ;
+        :placeGonpaPerEcumen  "17.58" ;
+        :placeLat           "29.21667" ;
+        :placeLocatedIn     bdr:G2169 ;
+        :placeLong          "88.40000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID5526137E42453626
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G279" .
+    
+    bdr:NT20C038A0B073A7F4
+        a                   :Note ;
+        :contentLocationStatement  "p. 2284" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "monastic seat of the khro phu bka' brgyud, one of the eight lesser traditions of the mar pa bka' brgyud located in the tibetan autonomous region\n\n1212. khro phu gtsug lag khang gi byams chen bzhengs grub"@en .
+    
+    bdr:NT6FE318B7EBFF44F0
+        a                   :Note ;
+        :noteText           "Declined to only 30 monks by 19th-20th centuries.  Date according to Xian Wenwuzhi.  May not be Survey of India's Dzau Gonpa, but a possibility 'till better location data are available."@en .
+    
+    bdr:NTB65A4C32116A3F6D
+        a                   :Note ;
+        :contentLocationStatement  "p. 347" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "this was the seat of the masters of the khro phu bka' brgyud"@en .
+}

@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN28 {
+    bda:G3CN28  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN28 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "5a/G3CN28.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN28 ;
+        adm:logEntry        bda:LG14476EE5666A4FF4 , bda:LG28D99886D4C4CCD4 , bda:LG625DB6205670A7E5 , bda:LG8AF1664D5F0E426B , bda:LGAD837233C29BAB59 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG14476EE5666A4FF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-19T17:03:00.697Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG28D99886D4C4CCD4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T13:03:18.469Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG625DB6205670A7E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-19T14:58:40.941Z"^^xsd:dateTime ;
+        adm:logMessage      "added 4 contains & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8AF1664D5F0E426B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-18T17:05:40.829Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note (need add type)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAD837233C29BAB59
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-19T16:46:00.314Z"^^xsd:dateTime ;
+        adm:logMessage      "take out 2 khri sde"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVC23B9BABA79A410B
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0999"^^xsd:gYear ;
+        :notBefore          "0900"^^xsd:gYear .
+    
+    bdr:G3CN28  a           :Place ;
+        skos:prefLabel      "zhang zhung dang ya rtse skor/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT29AB7C1723F2A3C3 , bdr:NT38DEF5D7C112826F ;
+        :placeContains      bdr:G3165 , bdr:G3170 , bdr:G3CN31 , bdr:G731 ;
+        :placeEvent         bdr:EVC23B9BABA79A410B ;
+        :placeLocatedIn     bdr:G3164 ;
+        :placeType          bdr:PT0007 .
+    
+    bdr:NT29AB7C1723F2A3C3
+        a                   :Note ;
+        :contentLocationStatement  "p. 21" ;
+        :noteSource         bdr:MW1GS56008 ;
+        :noteText           "མངའ་རིས་ཆོས་འབྱུང་འདིར་ཡང་ས་ཚིག་ངོས་འཛིན་བྱེད་སྟངས་འདི་ནི་ཡིན་རྟོན་རུང་བར་འདོད་པ་གསལ།"@bo .
+    
+    bdr:NT38DEF5D7C112826F
+        a                   :Note ;
+        :contentLocationStatement  "p. 42-43" ;
+        :noteSource         bdr:MW20844 ;
+        :noteText           "དེ་ཡངབཀྲ་ཤིས་མགོན་གྱི་མངའ་རིས་ཏེ། གུ་གེ་སྤུ་རང་། ཡ་རྩེ་དང་བཅས་པ་རྣམས་ཡིན།\n\nམངའ་རིས་སྐོར་གསུམ་གྱི་ངོས་འཛིན་བྱེད་ལུགས་འདི་ནི་ལ་དྭགས་རྒྱལ་རབས་དང་ཀ་ཐོག་རིག་འཛིན་ཚེ་དབང་ནོར་བུས་གཙོས་མཁས་པ་ཁག་གཅིག་གི་དགོངས་བཞེད་ཡིན་ཅིང་། དེ་ཡང་དོན་དངོས་ཀྱི་ས་མཚམས་སྦྲེལ་སྟངས་དང་མཐུན་ཤོས་སུ་ཆགས་འདུག་པས། འདིར་ཡང་ལུགས་འདི་གཙོ་བར་བཟུང་བ་ཡིན།"@bo .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4292 {
+    bda:G4292  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4292 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "39/G4292.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4292 ;
+        adm:logEntry        bda:LG5054E6F04F9B8F9E , bda:LG923DB482DE07857E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5054E6F04F9B8F9E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG923DB482DE07857E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-10T12:10:11.792Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV08D0A0F027429B22
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4292  a            :Place ;
+        skos:prefLabel      "chu mdo rdo rje rdzong dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD7C3F5F087F503CD ;
+        :placeEvent         bdr:EV08D0A0F027429B22 ;
+        :placeLocatedIn     bdr:G2944 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTD7C3F5F087F503CD
+        a                   :Note ;
+        :contentLocationStatement  "v. 18, p. 259" ;
+        :noteSource         bdr:MW19813 ;
+        :noteText           "dge lugs pa monastery regarded as an affiliate of chab mdo"@en .
+}

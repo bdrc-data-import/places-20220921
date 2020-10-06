@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1683 {
+    bda:G1683  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1683 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "1d/G1683.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1683 ;
+        adm:logEntry        bda:LG30E37119F4C225AA , bda:LG4CF80E16AA852422 , bda:LG5057DAC0139265B2 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330209:131" ;
+        adm:place_id_lex    "513330209:131" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG30E37119F4C225AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-24T10:13:16.932Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4CF80E16AA852422
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-11T09:46:56.768Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyud"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5057DAC0139265B2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV226F5EE135F70395
+        a                   :PlaceFounded ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EV6A2B5DE3DE34C6AA
+        a                   :PlaceFounded ;
+        :onYear             "1475"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1683  a            :Place ;
+        skos:altLabel       "sde dge ja chu dgon/"@bo-x-ewts , "thub bstan dga' tshal chos 'khor gling /"@bo-x-ewts , "jiaqu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ja chu dgon/"@bo-x-ewts , "甲曲寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA26C8DD32AF4908C ;
+        :isRoot             true ;
+        :note               bdr:NT2553C5A6E6CF5B77 , bdr:NT49B57DB5F5C2A45D ;
+        :placeEvent         bdr:EV226F5EE135F70395 , bdr:EV6A2B5DE3DE34C6AA ;
+        :placeGonpaPerEcumen  "8.28" ;
+        :placeLat           "32.33333" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "98.36667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA26C8DD32AF4908C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1683" .
+    
+    bdr:NT2553C5A6E6CF5B77
+        a                   :Note ;
+        :contentLocationStatement  "p. 147" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bka' brgyud monastery in sde dge territory; first founded in the 9th rab byung (1507-1566) by the 7th karma pa chos grags rgya mtsho; later because of an earthquake and other misfortunes reestablished by one grub pa mchog sbyin in 1688 (rab byung 11 (1627-1686) and given name ja chu dgon; the practices followed were karma kaM tshang and the gter ma revelations of bdud 'dul rdo rje.\n\nformerly there were more than 130 monks and now there are more than 100."@en .
+    
+    bdr:NT49B57DB5F5C2A45D
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 552" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "monastery in sde dge practicing both rnying ma and bka' brgyud teachings"@en .
+}

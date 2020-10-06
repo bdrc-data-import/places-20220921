@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G627 {
+    bda:G627  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G627 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3a/G627.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G627 ;
+        adm:logEntry        bda:LG2ED6810A1F076B3F , bda:LG94A02C02B99FE68C , bda:LGB2363D62CB4A3C87 , bda:LGE04E32068FC71F84 , bda:LGE325FE7CCC42DB26 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2ED6810A1F076B3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG94A02C02B99FE68C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-30T16:44:54.561Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB2363D62CB4A3C87
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-28T10:36:00.799Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE04E32068FC71F84
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE325FE7CCC42DB26
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-09T16:26:17.719Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G627  a             :Place ;
+        skos:altLabel       "g.yu 'brong khyung gsum gyi lha zhol lte thang /"@bo-x-ewts , "reb kong stod kyi lte thang /"@bo-x-ewts ;
+        skos:prefLabel      "lte thang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2369 ;
+        :placeType          bdr:PT0055 .
+}

@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2JM245 {
+    bda:G2JM245  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2JM245 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "91/G2JM245.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2JM245 ;
+        adm:logEntry        bda:LG2C00128A390E8FF6 , bda:LG3AA5A4B2C3418BFC , bda:LG4B88ED0D3DCA0D4C , bda:LG8483E2FFA715B43B , bda:LG878AF19371003F85 , bda:LGD030373EE84474CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C00128A390E8FF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG3AA5A4B2C3418BFC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-11T17:07:02.794Z"^^xsd:dateTime ;
+        adm:logMessage      "added records and notes"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LG4B88ED0D3DCA0D4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T12:55:36.449Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8483E2FFA715B43B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T12:59:41.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG878AF19371003F85
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T12:42:44.844Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD030373EE84474CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-07-14T16:53:39.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added records"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bdr:G2JM245  a          :Place ;
+        skos:altLabel       "bshad sgrub bstan pa'i 'byung gnas/"@bo-x-ewts , "bshad sgrub bstan pa'i 'byung gnas rdza rgyud dge mang bshad grwa/"@bo-x-ewts , "rdza rgyud dge mang bshad grwa bshad sgrub bstan pa'i 'byung gnas/"@bo-x-ewts ;
+        skos:prefLabel      "dge mang bshad grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCB5E65F51B7839A2 ;
+        :placeLocatedIn     bdr:G3954 ;
+        :placeType          bdr:PT0038 .
+    
+    bdr:NTCB5E65F51B7839A2
+        a                   :Note ;
+        :contentLocationStatement  "314" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "Founded by o rgyan bstan 'dzin nor bu mchog, a student of the 4th rdzogs chen mi 'gyur nam mkha'i rdo rje, gzhan phan mtha' yas, dpal sprul, & mkhan chen pad+ma badz+ra\n\n--Staff includes: \nrgya kong gzhan dga'\ndge mang yon dga' \nmi nyag kun bsod\ndge gong kun dpal\n\n--Abbots include:\nmkhan chen gzhan dga' \nyon tan rgya mtsho\ndbang rdis\ndbang lo\npad+ma dbang rgyal\n\n\n--Especially noted for its teaching of the phyogs bcu mun sel, a commentary on the gsang ba snying po by klong chen pa."@en .
+}

@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G808 {
+    bda:G808  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G808 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5f/G808.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G808 ;
+        adm:logEntry        bda:LG1EC871F5192D7FD2 , bda:LGB3FA9EAE658017CA , bda:LGDF0D06C2137CCB27 , bda:LGE6A4BC7647D95BE0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1EC871F5192D7FD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGB3FA9EAE658017CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-06T16:01:14.056Z"^^xsd:dateTime ;
+        adm:logMessage      "added short name & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDF0D06C2137CCB27
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-14T09:58:19.675Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE6A4BC7647D95BE0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G808  a             :Place ;
+        skos:altLabel       "mdo smad reb gong rgyal thang /"@bo-x-ewts ;
+        skos:prefLabel      "reb gong rgyal thang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2369 ;
+        :placeType          bdr:PT0020 .
+}

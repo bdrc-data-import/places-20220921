@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS553 {
+    bda:G2LS553  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS553 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ec/G2LS553.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS553 ;
+        adm:logEntry        bda:LG7547FAC2B2870FCF , bda:LG75D115990B4F20E8 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522201:15" ;
+        adm:place_id_lex    "542522201:15" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7547FAC2B2870FCF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:55:27.994Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG75D115990B4F20E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T10:52:53.824Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV66327A98217E1328
+        a                   :PlaceConverted ;
+        :onYear             "1550"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVDE8C138FD21A6B83
+        a                   :PlaceFounded ;
+        :onYear             "1250"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionTodrukKagyu .
+    
+    bdr:G2LS553  a          :Place ;
+        skos:altLabel       "byang chub gling dgon/"@bo-x-ewts , "gsum 'khyil byang chub gling dgon/"@bo-x-ewts ;
+        skos:prefLabel      "gsum 'khyil dgon/"@bo-x-ewts , "Sumkyil"@en-x-mixed ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3519D1D36E18AB84 ;
+        :isRoot             true ;
+        :note               bdr:NT7F5E8106665069B5 ;
+        :placeEvent         bdr:EV66327A98217E1328 , bdr:EVDE8C138FD21A6B83 ;
+        :placeGonpaPerEcumen  "2.88" ;
+        :placeLat           "32.18000" ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeLong          "78.90000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID3519D1D36E18AB84
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2LS553" .
+    
+    bdr:NT7F5E8106665069B5
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 76" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "founded by Canglung Lama one of the disciple of Gotsang pa. Converted into Gelugpa in 16th century. Follow the trantric pracitice of lower tantric collge of gelugpa."@en .
+}

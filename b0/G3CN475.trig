@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN475 {
+    bda:G3CN475  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN475 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b0/G3CN475.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN475 ;
+        adm:logEntry        bda:LG3FDFBEF331E6508F , bda:LG40772CFE3B757C62 , bda:LGCC05731A4FB1081E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3FDFBEF331E6508F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-17T12:32:48.627Z"^^xsd:dateTime ;
+        adm:logMessage      "added note & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG40772CFE3B757C62
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-16T16:48:25.518Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCC05731A4FB1081E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-13T16:18:36.274Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV9280404FB977D2F7
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0651"^^xsd:gYear .
+    
+    bdr:G3CN475  a          :Place ;
+        skos:altLabel       "nyen mkhar/"@bo-x-ewts ;
+        skos:prefLabel      "nyen kar/"@bo-x-ewts , "Nyenkar"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NTAB4F016D399E4FC4 ;
+        :placeEvent         bdr:EV9280404FB977D2F7 ;
+        :placeLocatedIn     bdr:G2011 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NTAB4F016D399E4FC4
+        a                   :Note ;
+        :contentLocationStatement  "p. 262, p. 264" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"ཕག་གི་ལོ་༦༥༡ལ་བབ་སྟེ། བཙན་པོ་ཉེན་ཀར་ན་བཞུགས་ཤིང་།\" ཞེས་གསལ།"@bo .
+}

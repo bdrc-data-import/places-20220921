@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2DB94308 {
+    bda:G2DB94308  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2DB94308 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "31/G2DB94308.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2DB94308 ;
+        adm:logEntry        bda:LG2C46985CEE3D8859 , bda:LG5DB234E6115CFBD8 , bda:LG6A1DCF5205F1CF85 , bda:LG7014BEBEF536A358 , bda:LG9F9CDC5A1391A497 , bda:LGD669912C34D8FEF1 , bda:LGEF678D4F07FDD19A , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1PD95843 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG2C46985CEE3D8859
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-17T15:33:38.2Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG5DB234E6115CFBD8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-16T10:16:08.919Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to withdrawn"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6A1DCF5205F1CF85
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-09T15:52:08.695Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7014BEBEF536A358
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-03-15T10:43:28.564Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1PD95843"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9F9CDC5A1391A497
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-11-09T15:28:40.449Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD669912C34D8FEF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-18T15:18:55.807Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGEF678D4F07FDD19A
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-09T15:44:04.818Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2DB94308  a        :Place ;
+        skos:altLabel       "dafo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ta ho zi/"@bo-x-ewts , "大佛寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTA228156F92F2F300 , bdr:NTE741CC97D66E5306 ;
+        :placeLocatedIn     bdr:G598 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTA228156F92F2F300
+        a                   :Note ;
+        :contentLocationStatement  "p. 7" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "founded in 1390; geluk, branch of guanghui si"@en .
+    
+    bdr:NTE741CC97D66E5306
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1PD95843"@en .
+}

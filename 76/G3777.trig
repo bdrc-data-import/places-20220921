@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3777 {
+    bda:G3777  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3777 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "76/G3777.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3777 ;
+        adm:logEntry        bda:LG71EF91F0FFDEFE1F , bda:LGF58B1491DBC3D6AA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G4261 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG71EF91F0FFDEFE1F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF58B1491DBC3D6AA
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-04-11T10:07:42.23Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G4261"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3777  a            :Place ;
+        skos:prefLabel      "jo khang (lha sa)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT22286B4EC765D430 , bdr:NTC6BAC1BA52CB1F5F .
+    
+    bdr:NT22286B4EC765D430
+        a                   :Note ;
+        :noteSource         bdr:MW25139 ;
+        :noteText           "pilgrimage guide"@en .
+    
+    bdr:NTC6BAC1BA52CB1F5F
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G4261"@en .
+}

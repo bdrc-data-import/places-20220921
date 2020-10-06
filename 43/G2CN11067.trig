@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11067 {
+    bda:G2CN11067  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11067 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "43/G2CN11067.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11067 ;
+        adm:logEntry        bda:LG3ABE3E203F36AD6F , bda:LG962BB6D69B0092BF , bda:LGD30413128EBC56EA , bda:LGF188DF9E2A7821E9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3ABE3E203F36AD6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-31T16:22:52.815Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG962BB6D69B0092BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-03T10:55:03.798Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD30413128EBC56EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T15:33:41.839Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF188DF9E2A7821E9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-05-31T16:03:39.664Z"^^xsd:dateTime ;
+        adm:logMessage      "created record (from Dr. Maho Iuchi's list)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV816E17F80669BD9A
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2CN11068 ;
+        :notAfter           "1399"^^xsd:gYear ;
+        :notBefore          "1300"^^xsd:gYear .
+    
+    bdr:EVDE9616FB9C1EEF1E
+        a                   :PlaceFounded ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear .
+    
+    bdr:G2CN11067  a        :Place ;
+        skos:altLabel       "gdan sa grang phu lung /"@bo-x-ewts ;
+        skos:prefLabel      "grang phu lung /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6DA25BB8D6125D1B , bdr:NT89468641AFC4E769 ;
+        :placeEvent         bdr:EV816E17F80669BD9A , bdr:EVDE9616FB9C1EEF1E ;
+        :placeLocatedIn     bdr:G663 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT6DA25BB8D6125D1B
+        a                   :Note ;
+        :contentLocationStatement  "p. 634-638" ;
+        :noteSource         bdr:MW26009 ;
+        :noteText           "གྲང་ཕུ་ལུང་པ་ཡོན་ཏན་རྒྱ་མཚོས་གཙོས་པའི། དབང་གྲགས་ཆོས་གྲགས་དཀོན་གྲགས་བྱང་གྲགས་ཏེ་གྲགས་པ་བཞི་བྱ་བ་རྣམས་ཀྱིས། སྟག་ལོའི་སོས་ཀ་ཅིག་ལ་བཏབ་པ་ཡིན་ཞེས་གསལ།"@bo .
+    
+    bdr:NT89468641AFC4E769
+        a                   :Note ;
+        :noteText           "grang phu dang gram phu 'bri tshul gnyis yod min mu mthud dpyad rgyu/"@bo-x-ewts .
+}

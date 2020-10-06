@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2862 {
+    bda:G2862  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2862 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "eb/G2862.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2862 ;
+        adm:logEntry        bda:LG5C57DB2521BD52A8 , bda:LG62C959AE7CDD4B79 , bda:LG72A7BBA327573E4F , bda:LG831805553FB9F652 , bda:LG84A8ED73C06AB005 , bda:LGF6EFFB666536EEC0 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5C57DB2521BD52A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-21T10:28:15.753Z"^^xsd:dateTime ;
+        adm:logMessage      "restored"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG62C959AE7CDD4B79
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG72A7BBA327573E4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-14T09:01:16.331Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG831805553FB9F652
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-20T17:08:25.783Z"^^xsd:dateTime ;
+        adm:logMessage      "added note from bod kyi dgon sde khag gcig gi ngo sprod"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG84A8ED73C06AB005
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-09T16:09:27.923Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF6EFFB666536EEC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-16T11:28:32.951Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV6300CA8CBF787808
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2862  a            :Place ;
+        skos:altLabel       "rdzi thog dgon/"@bo-x-ewts ;
+        skos:prefLabel      "dzi tho dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT007B26C33862AE31 , bdr:NT2574A1A00BE7991B ;
+        :placeEvent         bdr:EV6300CA8CBF787808 ;
+        :placeLocatedIn     bdr:G2187 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT007B26C33862AE31
+        a                   :Note ;
+        :contentLocationStatement  "p. 224" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "larger monastery located in lho rong rdzong grong brdal in the chab mdo prefecture. this monastery was founded by on bla ma dkon mchog mtshan can, who was both a sa skya and dge lugs pa master. in about 1630 the kha drug drung pa of sho pa mdo became dgon bdag of the monastery and was passed on to de mo sprul sku lha dbang rnam rgyal. later in 1899 it was handed over to the bstan rgyas gling along with its extensive estates. in 1698 (sa stag) had about 150 monks. \n\"da lta chab mdo nas dpal 'bar bar gyi gzhung lam nye brgyud du yod\""@en .
+    
+    bdr:NT2574A1A00BE7991B
+        a                   :Note ;
+        :contentLocationStatement  "p. 43" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "dge lugs monastery of about 300 monks and an enormous wall of over a 1000 books (chos brtsigs pu sti stong tsam), formerly belonging to the de mo tshang\nlocated in the lho rong rdzong of chab mdo prefecture of the tibetan autonomous region"@en .
+}

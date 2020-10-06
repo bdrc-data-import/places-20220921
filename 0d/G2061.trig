@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2061 {
+    bda:G2061  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2061 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "0d/G2061.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2061 ;
+        adm:logEntry        bda:LGB100C14500131656 , bda:LGB11F73F5615D4042 , bda:LGF7E7EDFC0CF6B638 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540127202:540127115" ;
+        adm:place_id_lex    "540127202:540127115" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGB100C14500131656
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:53:35.42Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGB11F73F5615D4042
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF7E7EDFC0CF6B638
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-26T09:54:44.668Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV9F72688F23414E91
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionDrigungKagyu .
+    
+    bdr:G2061  a            :Place ;
+        skos:altLabel       "mal gro gung dkar rin chen gling dgon/"@bo-x-ewts , "仁钦林寺"@zh-hans , "rennqinglin si"@zh-latn-pinyin-x-ndia , "rennqinlin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rin chen gling dgon/"@bo-x-ewts , "Rinchenling"@en-x-mixed , "仁青林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB361647E1361ED5C ;
+        :isRoot             true ;
+        :note               bdr:NTB64CD97878B43FD2 , bdr:NTC003BE628B2DDD33 ;
+        :placeEvent         bdr:EV9F72688F23414E91 ;
+        :placeGonpaPerEcumen  "5.68" ;
+        :placeLat           "29.73851" ;
+        :placeLocatedIn     bdr:G2014 , bdr:G2029 ;
+        :placeLong          "91.97096" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDB361647E1361ED5C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2061" .
+    
+    bdr:NTB64CD97878B43FD2
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 221" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTC003BE628B2DDD33
+        a                   :Note ;
+        :contentLocationStatement  "p. 39" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa monastery in bkra shis sgang shang of mal gro gung dkar rdzong\nfounded in 1481 by bka' brgyud bla ma byang sems dge 'dun rin chen\nresponsibility rests with the rtse yig tshang\nhad 50 monks in 1959\nrestored"@en .
+}

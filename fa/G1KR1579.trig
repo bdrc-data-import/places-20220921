@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1579 {
+    bda:G1KR1579  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1579 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fa/G1KR1579.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1579 ;
+        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542327100:542327112" ;
+        adm:place_id_lex    "542327100:542327112" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV706279930AC8180A
+        a                   :PlaceFounded ;
+        :onYear             "1400"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1KR1579  a         :Place ;
+        skos:altLabel       "Cholung Gonsar"@bo-x-phon-en , "Cholung Gonsar"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "chos lung dgon gsar/"@bo-x-ewts , "曲鲁贡萨寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFFC0309CE4F7F4B6 ;
+        :isRoot             true ;
+        :note               bdr:NTCFD818B23C0EDF91 ;
+        :placeEvent         bdr:EV706279930AC8180A ;
+        :placeGonpaPerEcumen  "1.1" ;
+        :placeLat           "29.40000" ;
+        :placeLocatedIn     bdr:G2162 ;
+        :placeLong          "87.30000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDFFC0309CE4F7F4B6
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1579" .
+    
+    bdr:NTCFD818B23C0EDF91
+        a                   :Note ;
+        :noteText           "has a small, but old hall"@en .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00EGS1017047 {
+    bda:G00EGS1017047
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00EGS1017047 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "48/G00EGS1017047.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00EGS1017047 ;
+        adm:logEntry        bda:LG22B5523027350B48 , bda:LG4A0153C8D063454F , bda:LG5FA29CD222598BA9 , bda:LG7E3ED35D4B908E06 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG22B5523027350B48
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-13T13:02:12.379Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4A0153C8D063454F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-25T22:37:24.265Z"^^xsd:dateTime ;
+        adm:logMessage      "published for support of cataloging record"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5FA29CD222598BA9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-31T12:38:25.039Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7E3ED35D4B908E06
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T09:49:06.513Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G00EGS1017047
+        a                   :Place ;
+        skos:altLabel       "sgrub brgyud thub bstan chos 'phel gling (sga)"@bo-x-ewts ;
+        skos:prefLabel      "sgrub brgyud thub bstan chos 'phel gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB3374BF9592F5FD7 , bdr:NTD4D2556C6C66075B ;
+        :placeLocatedIn     bdr:G2326 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTB3374BF9592F5FD7
+        a                   :Note ;
+        :noteText           "གནས་ཡུལ་སྒ་ཡིན་ན་ཡུས་ཧྲུའུ་རྫོང་ཡིན་པར་བདམས་ཡོད་དེ། ད་དུང་བརྟག་བྱའོ།"@bo .
+    
+    bdr:NTD4D2556C6C66075B
+        a                   :Note ;
+        :noteText           "drigung kagyu monastery founded in 1668 by the drigung master drubgyu nyima"@en .
+}

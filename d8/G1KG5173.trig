@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KG5173 {
+    bda:G1KG5173  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KG5173 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d8/G1KG5173.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KG5173 ;
+        adm:logEntry        bda:LG0C1F09E99FAE7CAF , bda:LG1576CE356B9C2D3A , bda:LG4C8D9D82F390798D , bda:LGBB1D906B150C2EFA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0C1F09E99FAE7CAF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:43:00.025Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from country to phyiRgyal"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG1576CE356B9C2D3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-16T14:29:20.991Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4C8D9D82F390798D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-05-17T13:42:04.424Z"^^xsd:dateTime ;
+        adm:logMessage      "created place"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBB1D906B150C2EFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-14T12:21:31.351Z"^^xsd:dateTime ;
+        adm:logMessage      "released from provisional"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:G1KG5173  a         :Place ;
+        skos:altLabel       "sing ga la/"@bo-x-ewts , "ceylon"@en , "sinhala"@en ;
+        skos:prefLabel      "sing+ga la/"@bo-x-ewts , "sri lanka"@en ;
+        :isRoot             true ;
+        :placeType          bdr:PT0010 .
+}

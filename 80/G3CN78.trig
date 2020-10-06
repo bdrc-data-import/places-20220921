@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN78 {
+    bda:G3CN78  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN78 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "80/G3CN78.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN78 ;
+        adm:logEntry        bda:LG11B5F7E296D87513 , bda:LG30625AED27C65568 , bda:LG9C96AC45272DD6F3 , bda:LGDE675BD9F46E6743 , bda:LGDFD093D9B11A2EC9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG11B5F7E296D87513
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T11:47:43.289Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG30625AED27C65568
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T12:08:33.279Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as \"stongSde\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9C96AC45272DD6F3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-10T10:44:49.159Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDE675BD9F46E6743
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-27T12:35:44.09Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains \"'bri mtshams\" & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDFD093D9B11A2EC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-26T16:41:06.054Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVFFBA561D60FC08FE
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN78  a           :Place ;
+        skos:altLabel       "gad phram/"@bo-x-ewts , "gad sram lung pa/"@bo-x-ewts ;
+        skos:prefLabel      "gad sram/"@bo-x-ewts , "Gad, Dram"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT0C940C97A4B2FC65 , bdr:NT4B7C9AC9504D6C06 , bdr:NT5FA2F3B1B5F87972 ;
+        :placeContains      bdr:G3162 ;
+        :placeEvent         bdr:EVFFBA561D60FC08FE ;
+        :placeLocatedIn     bdr:G3175 ;
+        :placeType          bdr:PT0073 .
+    
+    bdr:NT0C940C97A4B2FC65
+        a                   :Note ;
+        :contentLocationStatement  "p. 102" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "རུ་ལག་གི་སྟོང་སྡེ་བཅུ་ཡི་ནང་ཚན་ཞིག་ཡིན་པར་གསལ།"@bo .
+    
+    bdr:NT4B7C9AC9504D6C06
+        a                   :Note ;
+        :contentLocationStatement  "p. 202" ;
+        :noteSource         bdr:MW1KG16696 ;
+        :noteText           "འདི་ནི་དེང་སང་ལྟར་ན་ཀ་ལ་དང་དུས་སྣའི་བར་ཏེ་ཁང་དམར་རྫོང་དང་གྲོ་མོ་རྫོང་(གམ་པ་རྫོང་?)གི་མངའ་ཁོངས་སུ་གནས་པ་གསལ།"@bo .
+    
+    bdr:NT5FA2F3B1B5F87972
+        a                   :Note ;
+        :contentLocationStatement  "p. 257, p.258" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "འདིར་\"གད་སྲམ་\"ཞེས་གསལ་ཏེ། རུ་ལག་གི་སྟོང་སྡེ་བཅུའི་ནང་ཚན་ཡིན་ལ། ད་དུང་རུ་ལག་གི་ཡུལ་སྡེ་བཅུ་དྲུག་གི་ནང་ཚན་ཡིན་པའང་གསལ།"@bo .
+}

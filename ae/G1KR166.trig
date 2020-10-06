@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR166 {
+    bda:G1KR166  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR166 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ae/G1KR166.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR166 ;
+        adm:logEntry        bda:LG12288878B7499C0E , bda:LG52885B73734DFF81 , bda:LGF39C7F1F6E9EC20D , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513230209:115" ;
+        adm:place_id_lex    "513230209:115" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG12288878B7499C0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-07T12:00:03.797Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG52885B73734DFF81
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-30T09:33:06.035Z"^^xsd:dateTime ;
+        adm:logMessage      "added G3JT12512"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGF39C7F1F6E9EC20D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-10T10:56:30.422Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"gtsang chen …\" & note from G4327 & G3758(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVB19D5D140F917440
+        a                   :PlaceFounded ;
+        :onYear             "1717"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionJonang .
+    
+    bdr:G1KR166  a          :Place ;
+        skos:altLabel       "'dzam thang gtsang ba dgon bsam 'grub nor bu'i gling /"@bo-x-ewts , "gtsang chen dgon/"@bo-x-ewts , "gtsang chen sgar/"@bo-x-ewts , "gtsang pa dgon/"@bo-x-ewts , "shar 'dzam thang bsam 'grub nor bu'i gling /"@bo-x-ewts , "中壤塘寺"@zh-hans , "zangwa si"@zh-latn-pinyin-x-ndia , "zhong rangtang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gtsang ba dgon/"@bo-x-ewts , "藏哇寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4FA826C858287AAB ;
+        :isRoot             true ;
+        :note               bdr:NT56FFDC3E2E0F2647 ;
+        :placeContains      bdr:G3JT12512 ;
+        :placeEvent         bdr:EVB19D5D140F917440 ;
+        :placeGonpaPerEcumen  "8.41" ;
+        :placeLat           "32.34874" ;
+        :placeLocatedIn     bdr:G2336 ;
+        :placeLong          "101.16215" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID4FA826C858287AAB
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR166" .
+    
+    bdr:NT56FFDC3E2E0F2647
+        a                   :Note ;
+        :contentLocationStatement  "p. 47" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "religious establishment affiliated with kaH thog in the 14th cent.\n---note moved from G3758(dup.)"@en .
+}

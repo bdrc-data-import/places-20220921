@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11144 {
+    bda:G2CN11144  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11144 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a3/G2CN11144.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11144 ;
+        adm:logEntry        bda:LG51F9D233A40B559D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG51F9D233A40B559D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-18T10:27:38.733Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV323FBE6452D48242
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G2CN11144  a        :Place ;
+        skos:altLabel       "g.yung drung tre ston gling dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "du li dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4FECF35888AF7EB0 ;
+        :placeEvent         bdr:EV323FBE6452D48242 ;
+        :placeLat           "29.115626" ;
+        :placeLocatedIn     bdr:G4450 ;
+        :placeLong          "82.601447" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT4FECF35888AF7EB0
+        a                   :Note ;
+        :noteText           "Locate in Hurikot, Nepal"@en .
+}

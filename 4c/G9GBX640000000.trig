@@ -1,0 +1,43 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX640000000 {
+    bda:G9GBX640000000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX640000000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "4c/G9GBX640000000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX640000000 ;
+        adm:logEntry        bda:LG9409CF25C9A4522F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG9409CF25C9A4522F
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX640000000
+        a                   :Place ;
+        skos:altLabel       "ning xia hui zu zi zhi qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Ningxia"@en , "宁夏回族自治区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX640100000 , bdr:G9GBX640200000 , bdr:G9GBX640300000 , bdr:G9GBX640400000 , bdr:G9GBX640500000 ;
+        :placeGB2260-2013   "640000000" ;
+        :placeLat           "38.4680099" ;
+        :placeLong          "106.2719421" ;
+        :placeType          bdr:PT0060 .
+}

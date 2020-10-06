@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN4 {
+    bda:G3CN4  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN4 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "97/G3CN4.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN4 ;
+        adm:logEntry        bda:LG4ED83B476E234664 , bda:LGCE4E83E549BF8C6E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4ED83B476E234664
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-22T11:26:45.144Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCE4E83E549BF8C6E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-11-08T11:26:48.459Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN4  a            :Place ;
+        skos:altLabel       "yigong hu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "yid 'ong mtsho/"@bo-x-ewts , "Yiwong Lake"@en , "易贡湖"@zh-hans ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2944 , bdr:G2948 ;
+        :placeType          bdr:PT0028 .
+}

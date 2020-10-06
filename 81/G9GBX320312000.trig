@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX320312000 {
+    bda:G9GBX320312000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX320312000 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "81/G9GBX320312000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX320312000 ;
+        adm:logEntry        bda:LG1BC504FB6CE4B42A , bda:LGIME5430EC046 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG1BC504FB6CE4B42A
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME5430EC046
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-27T19:58:07.021Z"^^xsd:dateTime ;
+        adm:logMessage      "updating geometry for modern county"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX320312000
+        a                   :Place ;
+        skos:altLabel       "tong shan qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Copper mountain"@en , "铜山区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX320312001 , bdr:G9GBX320312002 , bdr:G9GBX320312003 , bdr:G9GBX320312004 , bdr:G9GBX320312005 , bdr:G9GBX320312006 , bdr:G9GBX320312007 , bdr:G9GBX320312008 , bdr:G9GBX320312009 , bdr:G9GBX320312051 , bdr:G9GBX320312052 , bdr:G9GBX320312102 , bdr:G9GBX320312103 , bdr:G9GBX320312104 , bdr:G9GBX320312105 , bdr:G9GBX320312106 , bdr:G9GBX320312107 , bdr:G9GBX320312108 , bdr:G9GBX320312109 , bdr:G9GBX320312111 , bdr:G9GBX320312112 , bdr:G9GBX320312113 , bdr:G9GBX320312114 , bdr:G9GBX320312115 , bdr:G9GBX320312116 , bdr:G9GBX320312117 , bdr:G9GBX320312118 , bdr:G9GBX320312119 , bdr:G9GBX320312120 , bdr:G9GBX320312401 , bdr:G9GBX320312402 ;
+        :placeGB2260-2013   "320312000" ;
+        :placeLocatedIn     bdr:G9GBX320300000 ;
+        :placeType          bdr:PT0011 ;
+        :placeWB2000        "481135" ;
+        :placeWB2010        "481681" ;
+        :placeWBArea        "2151.263441" .
+}

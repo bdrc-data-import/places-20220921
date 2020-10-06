@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2237 {
+    bda:G1KR2237  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2237 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "fd/G1KR2237.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2237 ;
+        adm:logEntry        bda:LG4628261DAC8C3433 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632126206:153" ;
+        adm:place_id_lex    "632126206:573" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4628261DAC8C3433
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-13T14:48:40.678Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV5250F406951707F2
+        a                   :PlaceFounded ;
+        :note               bdr:NT7EBF7E01C57C0373 .
+    
+    bdr:G1KR2237  a         :Place ;
+        skos:altLabel       "bkra tshe lha khang /"@bo-x-ewts , "bkra tshe sgrol ma gsung byon ma'i lha khang /"@bo-x-ewts , "zhaci si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bkra tshe dgon/"@bo-x-ewts , "扎慈寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD7B8AC62B629C14C ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV5250F406951707F2 ;
+        :placeGonpaPerEcumen  "47.28" ;
+        :placeLat           "36.75837" ;
+        :placeLocatedIn     bdr:G1PD96101 ;
+        :placeLong          "102.08857" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD7B8AC62B629C14C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2237" .
+    
+    bdr:NT7EBF7E01C57C0373
+        a                   :Note ;
+        :noteText           "tuzu"@en .
+}

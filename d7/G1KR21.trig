@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR21 {
+    bda:G1KR21  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR21 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d7/G1KR21.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR21 ;
+        adm:logEntry        bda:LG161606CC49302978 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513225101:131" ;
+        adm:place_id_lex    "513225101:131" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG161606CC49302978
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-09T12:05:01.188Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVF13515E0516CF7FC
+        a                   :PlaceFounded ;
+        :onYear             "1573"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR21  a           :Place ;
+        skos:altLabel       "bkra shis phun tshogs gling /"@bo-x-ewts , "rab dben dgon bkra shis phun tshogs gling /"@bo-x-ewts , "扎如寺 (在 宗教史要 中 - 位于九寨沟的寺庙中无与此寺相应名字的笨教寺院但专家指出该寺在九寨沟县. )"@zh-hans , "zharu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rab dben dgon/"@bo-x-ewts , "扎如寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID30986F7B53DD4A04 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVF13515E0516CF7FC ;
+        :placeGonpaPerEcumen  "1.4" ;
+        :placeLat           "33.24342" ;
+        :placeLocatedIn     bdr:G2394 ;
+        :placeLong          "103.95918" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID30986F7B53DD4A04
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR21" .
+}

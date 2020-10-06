@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G220 {
+    bda:G220  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G220 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "b1/G220.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G220 ;
+        adm:logEntry        bda:LG3A38FEAE3C0A85BF , bda:LG6368464EFFCB5877 , bda:LG85048BDC48A54F16 , bda:LGB3605A268C5AD1D7 , bda:LGDFB522BC857F95D9 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540102005:540101121" ;
+        adm:place_id_lex    "540102005:540101121" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3A38FEAE3C0A85BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T15:16:51.664Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG6368464EFFCB5877
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T13:39:07.597Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG85048BDC48A54F16
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB3605A268C5AD1D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:35:38.121Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDFB522BC857F95D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:49:34.718Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00009 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV69DA9E75A8B60806
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionTsalpaKagyu .
+    
+    bdr:EVAB480AEDE1E444FD
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G220  a             :Place ;
+        skos:altLabel       "mtsho smon gling /"@bo-x-ewts , "Tsemonling"@en-x-mixed , "cemenlin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tshe smon gling /"@bo-x-ewts , "Tsemon Ling"@en , "策门林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID34B72DBC512A6F73 ;
+        :isRoot             true ;
+        :note               bdr:NT29BBB7A68E4E44F0 , bdr:NT400C871080999A4B ;
+        :placeContains      bdr:G2CN10871 ;
+        :placeEvent         bdr:EV69DA9E75A8B60806 , bdr:EVAB480AEDE1E444FD ;
+        :placeGonpaPerEcumen  "6666.67" ;
+        :placeLat           "29.65680" ;
+        :placeLocatedIn     bdr:G2800 ;
+        :placeLong          "91.12927" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID34B72DBC512A6F73
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G220" .
+    
+    bdr:NT29BBB7A68E4E44F0
+        a                   :Note ;
+        :noteText           "seat in lha sa of the tshe smon gling or mtsho smon gling regency bla brang; one of the four gling of central tibet"@en .
+    
+    bdr:NT400C871080999A4B
+        a                   :Note ;
+        :noteText           "became a Regency Seat after Gelugpa conversion."@en .
+}

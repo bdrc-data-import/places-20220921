@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G302 {
+    bda:G302  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G302 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f0/G302.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G302 ;
+        adm:logEntry        bda:LG0661F06E9C765B0C , bda:LG6B9EF3316E79CA37 , bda:LGD86803D4734B62EC , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0661F06E9C765B0C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-06T10:10:55.755Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6B9EF3316E79CA37
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD86803D4734B62EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T12:22:05.551Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV76DE406F9AD0CED7
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionShangpaKagyu .
+    
+    bdr:G302  a             :Place ;
+        skos:altLabel       "skyer sgang dgon/"@bo-x-ewts ;
+        skos:prefLabel      "skyer sgang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT25158D520518135E , bdr:NTD8A3A29976304320 ;
+        :placeEvent         bdr:EV76DE406F9AD0CED7 ;
+        :placeLocatedIn     bdr:G1344 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT25158D520518135E
+        a                   :Note ;
+        :contentLocationStatement  "p. 133" ;
+        :noteSource         bdr:MW20441 ;
+        :noteText           "བླ་མ་རྨོག་ལྕོག་པའི་བཀའ་བཞིན་དབུས་སུ་ཨ་ཁུ་འབལ་ཚད་མའི་གདན་སར་ཕེབས། སྐྱེར་སྒང་དུ་སྐུ་འབུམ་བརྩིགས་ནས་གདན་ས་བྱས་པ་སོགས་གསལ།"@bo .
+    
+    bdr:NTD8A3A29976304320
+        a                   :Note ;
+        :noteText           "ancient hermitage of the shangs pa bka' brgyud located in the tibetan autonomous region"@en .
+}

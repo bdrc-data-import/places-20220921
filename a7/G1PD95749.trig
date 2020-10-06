@@ -1,0 +1,43 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD95749 {
+    bda:G1PD95749  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD95749 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a7/G1PD95749.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD95749 ;
+        adm:logEntry        bda:LG35F71312DB56CCF5 , bda:LG44A0316C6DE20CBC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG35F71312DB56CCF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T16:03:44.805Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG44A0316C6DE20CBC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-10-30T14:23:28.327Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bdr:G1PD95749  a        :Place ;
+        skos:altLabel       "dan yang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tan yang gong khyer/"@bo-x-ewts , "丹阳"@zh-hans ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G1PD95750 ;
+        :placeType          bdr:PT0008 .
+}

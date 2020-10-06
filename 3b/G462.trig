@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G462 {
+    bda:G462  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G462 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3b/G462.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G462 ;
+        adm:logEntry        bda:LG1AD2EF277AE0818F , bda:LG40C0BD6A91B1000C , bda:LG80643E166B270877 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1AD2EF277AE0818F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-20T15:19:33.649Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG40C0BD6A91B1000C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG80643E166B270877
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-02T15:09:13.826Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G462  a             :Place ;
+        skos:altLabel       "lung rigs dpal 'khyil/"@bo-x-ewts , "or tu su o tog tog chos grwa lung rigs dpal 'khyil/"@bo-x-ewts , "tog tog chos grwa lung rigs dpal 'khyil (or tu su)"@bo-x-ewts ;
+        skos:prefLabel      "or tu su o tog tog chos grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCF8834B60CB40C55 ;
+        :placeLocatedIn     bdr:G4685 , bdr:G603 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTCF8834B60CB40C55
+        a                   :Note ;
+        :noteText           "a dge lugs monastery in the ordos area of inner mongolia"@en .
+}

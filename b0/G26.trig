@@ -1,0 +1,119 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G26 {
+    bda:G26  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G26 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "b0/G26.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G26 ;
+        adm:logEntry        bda:LG2D1D67B6221F056A , bda:LG53F0D7E14DF78547 , bda:LGD158BC921FB6DEDB , bda:LGD3649B1BCC604F15 , bda:LGFA1AA48A31F0187E , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542231201:542231106" ;
+        adm:place_id_lex    "542231201:542231106" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2D1D67B6221F056A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:24:08.874Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG53F0D7E14DF78547
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-27T12:51:31.419Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGD158BC921FB6DEDB
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-13T12:41:42.913Z"^^xsd:dateTime ;
+        adm:logMessage      "added location G#s and related O# & P# from G3471(withdrawn)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD3649B1BCC604F15
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-06T13:48:36.89Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFA1AA48A31F0187E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV3CDE0C6477B0023E
+        a                   :PlaceFounded ;
+        :onYear             "1150"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EV6A9020CAD721F0A4
+        a                   :PlaceConverted ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:EV78513268702B534A
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P7753 ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1000"^^xsd:gYear .
+    
+    bdr:G26  a              :Place ;
+        skos:altLabel       "gnyal zangs po che/"@bo-x-ewts , "zangs po che/"@bo-x-ewts , "Zangpoche"@en-x-mixed , "sangqing si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zangs chen dgon/"@bo-x-ewts , "Zangchen Gon"@en , "桑青寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA7A2ED30727643A2 ;
+        :isRoot             true ;
+        :note               bdr:NT00BF32483F7D9398 , bdr:NT54911579C5522227 , bdr:NT6539D81D62094BDD ;
+        :placeEvent         bdr:EV3CDE0C6477B0023E , bdr:EV6A9020CAD721F0A4 , bdr:EV78513268702B534A ;
+        :placeGonpaPerEcumen  "1.71" ;
+        :placeLat           "28.29468" ;
+        :placeLocatedIn     bdr:G1990 , bdr:G3469 , bdr:G724 ;
+        :placeLong          "92.73174" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA7A2ED30727643A2
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G26" .
+    
+    bdr:NT00BF32483F7D9398
+        a                   :Note ;
+        :contentLocationStatement  "p. 259" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "dge lugs pa monastery founded by zangs chen pa; one of the six gnyal sde drug monasteries assigned as a benefice to the sde drug regency bla brang"@en .
+    
+    bdr:NT54911579C5522227
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 549" ;
+        :noteSource         bdr:MW22378 ;
+        :noteText           "one of the group of six monasteries in the gnyal area, assigned to the sde drug line of incarnations and benefices to him:\ngra 'or\nzangs po che\nrin chen steng\nngang skyal chos sde\nrte'u ra\ngser phye kha\n\nfounded by smyos ston chos 'bars's disciple dge bshes bsod nams 'byung gnas"@en .
+    
+    bdr:NT6539D81D62094BDD
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 112-113" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

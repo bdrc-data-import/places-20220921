@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1931 {
+    bda:G1931  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1931 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "0c/G1931.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1931 ;
+        adm:logEntry        bda:LGABB64674F47BB29B , bda:LGCA2952B5CA4F6DDB , bda:LGE53BE00CABE95380 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGABB64674F47BB29B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T14:03:01.671Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGCA2952B5CA4F6DDB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-12T09:15:15.839Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE53BE00CABE95380
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV45D4EC0950E232D0
+        a                   :PlaceFounded ;
+        :onYear             "1765"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1931  a            :Place ;
+        skos:altLabel       "don grub rab brtan gling /"@bo-x-ewts , "gtsang dgon don grub rab brtan gling /"@bo-x-ewts ;
+        skos:prefLabel      "gtsang dgon/"@bo-x-ewts , "Dondrub Rabtenling"@en ;
+        :isRoot             true ;
+        :note               bdr:NT1F6DB01B33C5E3D0 , bdr:NTCB160EF2429A2367 ;
+        :placeEvent         bdr:EV45D4EC0950E232D0 ;
+        :placeLocatedIn     bdr:G1518 , bdr:G2538 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1F6DB01B33C5E3D0
+        a                   :Note ;
+        :contentLocationStatement  "p. 675" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "dge lugs pa monastery in the eastern part of ho pe zhang, thun te rdzong, mtsho lho bod rigs rang skyong khul\nfounded in 1765 by gtsang paNDi ta bstan pa rgya mtsho"@en .
+    
+    bdr:NTCB160EF2429A2367
+        a                   :Note ;
+        :noteSource         bdr:MW19871 ;
+        :noteText           "history of the monastery"@en .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G862 {
+    bda:G862  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G862 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "61/G862.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G862 ;
+        adm:logEntry        bda:LG12639EB2C125501C , bda:LG2647BA4419C3C46D , bda:LG2BD841A6F109EA7A , bda:LG5A36867E970E1576 , bda:LGAECFF95CE27E7344 , bda:LGD0B120560349A43A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG12639EB2C125501C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-25T12:27:18.49Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & type. location, note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2647BA4419C3C46D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2BD841A6F109EA7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-25T13:22:23.434Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5A36867E970E1576
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T11:30:07.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added Near G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAECFF95CE27E7344
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-04T09:57:15.211Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, type & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD0B120560349A43A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-04T09:53:29.582Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G862  a             :Place ;
+        skos:altLabel       "dben rtsa/"@bo-x-ewts , "dge rgyas bye ma lho khud kyi phu dben sa/"@bo-x-ewts , "gtsang g.yas ru dge rgyas bye ma lho khud kyi phu dben sa/"@bo-x-ewts , "lha khud kyi phu dben sa/"@bo-x-ewts ;
+        skos:prefLabel      "dben sa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB1C8A75508FA6476 , bdr:NTC24545C08127BEAD ;
+        :placeIsNear        bdr:G660 ;
+        :placeLocatedIn     bdr:G3174 ;
+        :placeType          bdr:PT0082 .
+    
+    bdr:NTB1C8A75508FA6476
+        a                   :Note ;
+        :contentLocationStatement  "p. 192" ;
+        :noteSource         bdr:MW19836 ;
+        :noteText           "gtsang g.yas ru bde rgyas bye ma gling gi gtsug lag khang dang 'dabs chags pa na gtsang po 'bab pa'i 'gram lha khud kyi phu dben sa zhes par 1505 lor dben sa pa blo bzang don grub 'khrungs pa gsal/ \n\ndes na dge rgyas bye ma lha khang gi phu dben sa zhes par go na 'grig min mu mthud dpayd rgyu/"@en .
+    
+    bdr:NTC24545C08127BEAD
+        a                   :Note ;
+        :noteText           "see C2CN11017"@en .
+}

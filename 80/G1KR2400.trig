@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2400 {
+    bda:G1KR2400  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2400 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "80/G1KR2400.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2400 ;
+        adm:logEntry        bda:LGD5B7473C3DAB0402 , bda:LGE6420B3B9841BB43 , bda:LGEB0AF11970C19090 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632224501:558" ;
+        adm:place_id_lex    "632224501:515" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD5B7473C3DAB0402
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-18T14:47:35.171Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE6420B3B9841BB43
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-22T08:48:46.15Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEB0AF11970C19090
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-10T16:42:23.153Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV494E1124CCA0AA62
+        a                   :PlaceFounded ;
+        :onYear             "1951"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1KR2400  a         :Place ;
+        skos:altLabel       "bkra shis chos 'khor gling /"@bo-x-ewts , "dgon gong ma'i dgon bkra shis chos 'khor gling /"@bo-x-ewts , "gser rte'u dgon bkra shis chos 'khor gling /"@bo-x-ewts , "rkang tsha dgon gong ma/"@bo-x-ewts , "公贡麻寺"@zh-hans , "gong gongma si"@zh-latn-pinyin-x-ndia , "sairide si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gser rte'u dgon/"@bo-x-ewts , "赛日德寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF56F3A73E8B16A81 ;
+        :isRoot             true ;
+        :note               bdr:NTB29CBB8DCC755225 ;
+        :placeEvent         bdr:EV494E1124CCA0AA62 ;
+        :placeGonpaPerEcumen  "2.11" ;
+        :placeLat           "37.33187" ;
+        :placeLocatedIn     bdr:G2315 ;
+        :placeLong          "100.62766" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF56F3A73E8B16A81
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2400" .
+    
+    bdr:NTB29CBB8DCC755225
+        a                   :Note ;
+        :contentLocationStatement  "p. 138" ;
+        :noteSource         bdr:MW20197 ;
+        :noteText           "dge lugs pa monastery in rkang tsha rdzong, mtsho byang khul\nfounded in 1948\nrestored"@en .
+}

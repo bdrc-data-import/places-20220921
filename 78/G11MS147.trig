@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G11MS147 {
+    bda:G11MS147  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G11MS147 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "78/G11MS147.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G11MS147 ;
+        adm:logEntry        bda:LG2988804120BAB5B8 , bda:LG8EECA8BD12699D29 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2988804120BAB5B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-11T16:55:35.684Z"^^xsd:dateTime ;
+        adm:logMessage      "added near"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG8EECA8BD12699D29
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-07T11:35:59.289Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV04E907B1EFEFE1A3
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P11MS148 .
+    
+    bdr:EV9B00B8B30C2362A2
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionShangpaKagyu .
+    
+    bdr:G11MS147  a         :Place ;
+        skos:altLabel       "rta nag sa rdo rje gdan/"@bo-x-ewts ;
+        skos:prefLabel      "rta nag rdo rje gdan/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3D62F4DA321B0CDA , bdr:NT6679576A1AB05F31 ;
+        :placeEvent         bdr:EV04E907B1EFEFE1A3 , bdr:EV9B00B8B30C2362A2 ;
+        :placeIsNear        bdr:G2171 ;
+        :placeLocatedIn     bdr:G1291 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT3D62F4DA321B0CDA
+        a                   :Note ;
+        :contentLocationStatement  "p. 281" ;
+        :noteSource         bdr:MW8224 ;
+        :noteText           "note in baiDu r+ya ser pa"@en .
+    
+    bdr:NT6679576A1AB05F31
+        a                   :Note ;
+        :noteText           "shangs pa bka' brgyud monasatery founded by pha rgod kun dga' bzang po, great-grandfather to Dalai Lama 02, dge 'dun rgya mtsho - who was born at this monastery."@en .
+}

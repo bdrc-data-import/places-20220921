@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2019 {
+    bda:G1KR2019  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2019 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b7/G1KR2019.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2019 ;
+        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623024210:623024121" ;
+        adm:place_id_lex    "623024210:623024121" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV40349809023C5921
+        a                   :PlaceFounded ;
+        :onYear             "1770"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR2019  a         :Place ;
+        skos:altLabel       "Gaobao Si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "la rtsa'i sgam po bon dgon/"@bo-x-ewts , "高宝寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE3DCCE20D725E3F1 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV40349809023C5921 ;
+        :placeGonpaPerEcumen  "2.46" ;
+        :placeLat           "34.14347" ;
+        :placeLocatedIn     bdr:G2205 ;
+        :placeLong          "103.92111" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE3DCCE20D725E3F1
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2019" .
+}

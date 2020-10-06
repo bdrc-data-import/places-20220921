@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3019 {
+    bda:G3019  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3019 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "63/G3019.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3019 ;
+        adm:logEntry        bda:LG8A95F6A0F5874378 , bda:LGF07C942A50417D08 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8A95F6A0F5874378
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T16:21:42.172Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from kungHre to shang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF07C942A50417D08
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G3019  a            :Place ;
+        skos:prefLabel      "dar rgyas kung hre (stag rtse rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5FF04574C0C3799B ;
+        :placeLocatedIn     bdr:G3015 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT5FF04574C0C3799B
+        a                   :Note ;
+        :contentLocationStatement  "p. 43" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "one of the four kung hre in la mo chus, stag rtse county, lha sa prefecture\nthis kung hre had seven ru khag  and villages/monasteries\n1    khang gsar stag dar rgyas\n      benefice of  the dga' ldan byang rtse grwa tshang\n2    dar rgyas\n      benefice of the dga' ldan byang rtse grwa tshang\n3    ser khang\n      estate of the sger bshad sgra\n4    ser khang byang thang\n      estate of the sger bshad sgra\n5    bon po dgon gsar\n      benefice of the dga' ldan shar rtse grwa tshang\n6    bshad sgra 'og\n      estate of the bshad grwa family\n7    bshad sgra 'og\n      estate of the bshad grwa family"@en .
+}

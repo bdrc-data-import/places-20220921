@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G665 {
+    bda:G665  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G665 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "20/G665.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G665 ;
+        adm:logEntry        bda:LG22A8EF0A6B176FC6 , bda:LG73471911C3708087 , bda:LGDC4A35A052AEC7CD , bda:LGEDC59DC9DE2AE7F4 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542225100:542225104" ;
+        adm:place_id_lex    "542225100:542225104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG22A8EF0A6B176FC6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:39:24.869Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG73471911C3708087
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-14T09:17:07.665Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDC4A35A052AEC7CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:50:32.906Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00009 .
+    
+    bda:LGEDC59DC9DE2AE7F4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4070A7AFCC2F231A
+        a                   :PlaceFounded ;
+        :onYear             "1550"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G665  a             :Place ;
+        skos:altLabel       "'phyong rgyas dpal ri chos sde/"@bo-x-ewts , "dpal ri chos sde/"@bo-x-ewts , "dpal ri gsang sngags pho brang /"@bo-x-ewts , "dpal ri theg chen gling /"@bo-x-ewts , "bairi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpal ri dgon/"@bo-x-ewts , "Palri Gon"@en-x-mixed , "白日寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA01FE7F97C44D332 ;
+        :isRoot             true ;
+        :note               bdr:NTB0B9E8F84B67E78B , bdr:NTC8F85C53C150ADDB , bdr:NTD833B0A0DBD610E4 ;
+        :placeEvent         bdr:EV4070A7AFCC2F231A ;
+        :placeGonpaPerEcumen  "9.94" ;
+        :placeLat           "28.96830" ;
+        :placeLocatedIn     bdr:G2133 ;
+        :placeLong          "91.66075" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA01FE7F97C44D332
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G665" .
+    
+    bdr:NTB0B9E8F84B67E78B
+        a                   :Note ;
+        :contentLocationStatement  "pp. 258-260" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "description\nlarge rnying ma monastery in 'phyong rgyas; there existed here the paper mache images of the rig 'dzin brgyad in life size made by 'jigs med gling pa; the reliquaries of two dpal ri mtsho rgyal sprul sku; various books; many thangkas; near here are the birthplaces of 'jigs med gling pa and 'phreng po gter chen"@en .
+    
+    bdr:NTC8F85C53C150ADDB
+        a                   :Note ;
+        :noteText           "founding date of 1550 from Guntram's advice, Chophel says c. 1050 founding date."@en .
+    
+    bdr:NTD833B0A0DBD610E4
+        a                   :Note ;
+        :contentLocationStatement  "p. 206" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "monastery in the 'phyong rgyas area near the burial tumuli of the ancient kings\nconnected with gter ston shes rab 'od zer"@en .
+}

@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3509 {
+    bda:G3509  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3509 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "fa/G3509.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3509 ;
+        adm:logEntry        bda:LG14A0209AF0CFCABB , bda:LG5D01EE675B17CEB5 , bda:LG6C15F1ED136D20F6 , bda:LG98103839728EE298 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542223103:542223103" ;
+        adm:place_id_lex    "542223103:542223103" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG14A0209AF0CFCABB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-08T10:56:53.058Z"^^xsd:dateTime ;
+        adm:logMessage      "added info."@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5D01EE675B17CEB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-11T14:57:36.511Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6C15F1ED136D20F6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG98103839728EE298
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-03T13:40:47.528Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G419(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVF2A3E39BD712049C
+        a                   :PlaceFounded ;
+        :onYear             "1447"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G3509  a            :Place ;
+        skos:altLabel       "gangs dkar rdo rje gdan/"@bo-x-ewts , "gong dkar rdo rje gdan/"@bo-x-ewts , "gongga qude si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gong dkar chos sde/"@bo-x-ewts , "Gongkar Chode"@en-x-mixed , "贡嘎曲德寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE86050E9F79B3D17 ;
+        :contentLocationStatement  "Coordinates: latitude 29°11,619 longitude 91°46,318 Altitude: 3587(m) (sheehy_tibet_coordinates_2014)" ;
+        :isRoot             true ;
+        :note               bdr:NT35E4E5FDBF242E48 , bdr:NT3E04BF5B8F9855C2 , bdr:NT781C3219D9FE14D0 ;
+        :placeContains      bdr:G1KG15421 ;
+        :placeEvent         bdr:EVF2A3E39BD712049C ;
+        :placeGonpaPerEcumen  "11.18" ;
+        :placeLat           "29.25615" ;
+        :placeLocatedIn     bdr:G2135 ;
+        :placeLong          "90.81532" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE86050E9F79B3D17
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3509" .
+    
+    bdr:NT35E4E5FDBF242E48
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 5-6" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description of this sa skya institution connected with the ruler rdzong pa kun dga' rnam rgyal or grwa lnga rgyal po"@en .
+    
+    bdr:NT3E04BF5B8F9855C2
+        a                   :Note ;
+        :contentLocationStatement  "note moved from  G419(dup.)" ;
+        :noteText           "once a great sa skya religious establishment and palace of a dynasty of hierarchs\nfounded by kun dga' rnam rgyal\nonce maintained a mixture of the sa skya rdzong lugs and the bu lugs"@en .
+    
+    bdr:NT781C3219D9FE14D0
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 5-6" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "དགོན་དེ་ཕྱག་འདེབས་པ་པོ་ནི་སྣེ་གདོང་རྒྱལ་པོའི་སྲས་གོང་དཀར་རྡོ་རྗེ་གདན་ཀུན་དགའ་རྣམ་རྒྱལ་ཡིན་ཞིང་། གཙང་བཀྲ་ཤིས་ལྷུན་པོ་དང་དུས་མཉམ་དུ་ཕྱག་བཏབ་པ་དང་། ས་སྐྱ་ངོར་ལུགས་གཙོར་གྱུར་རིས་མེད་གཞུང་དགོན་ཞིག་ཡིན་པ་སོགས་འཁོད། ད་ལྟ་ཡང་རྟེན་གཙོ་ཐུབ་ཆེན་གྱི་ཐུགས་ཀར་པཎ་ཆེན་གྷ་ཡ་དྷ་རའི་དབུ་ཐོད་བཞུགས།"@bo .
+}

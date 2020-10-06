@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1799 {
+    bda:G1799  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1799 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e8/G1799.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1799 ;
+        adm:logEntry        bda:LG05C799EE3E813042 , bda:LGE3B5AFF98DEF3D9D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG05C799EE3E813042
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T14:37:53.442Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGE3B5AFF98DEF3D9D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVFBB1C596EBF65B28
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P6007 ;
+        :onYear             "1826"^^xsd:gYear .
+    
+    bdr:G1799  a            :Place ;
+        skos:prefLabel      "brag shur dgon/"@bo-x-ewts , "Drakshur Gon"@en ;
+        :isRoot             true ;
+        :note               bdr:NTADFBE9E41A29FBB6 ;
+        :placeEvent         bdr:EVFBB1C596EBF65B28 ;
+        :placeLocatedIn     bdr:G1756 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTADFBE9E41A29FBB6
+        a                   :Note ;
+        :contentLocationStatement  "p. 155" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "rnying ma pa monastery of the kaH thog tradition\nfirst founded in 1826 by gyi lung thugs mchog rdo rje and bkra shis rgya mtsho\nin 1910 reestblished by an unnamed bla ma"@en .
+}

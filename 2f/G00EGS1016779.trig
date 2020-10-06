@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00EGS1016779 {
+    bda:G00EGS1016779
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00EGS1016779 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2f/G00EGS1016779.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00EGS1016779 ;
+        adm:logEntry        bda:LG2CC27A8AAF86B103 , bda:LGDF192C89EF85AD7C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:C2CN11029 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG2CC27A8AAF86B103
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-01-28T15:09:32.963Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of C2CN11029"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDF192C89EF85AD7C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-05T13:03:29.031Z"^^xsd:dateTime ;
+        adm:logMessage      "second attempt to publish"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G00EGS1016779
+        a                   :Place ;
+        skos:prefLabel      "be ri nya mtsho dge rgyal (yus hru'u)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9A5AE0CD7CE57464 , bdr:NTCA1C1D2ED07F4D61 ;
+        :placeLocatedIn     bdr:G1467 .
+    
+    bdr:NT9A5AE0CD7CE57464
+        a                   :Note ;
+        :noteText           "traditional tribe and ruling family"@en .
+    
+    bdr:NTCA1C1D2ED07F4D61
+        a                   :Note ;
+        :noteText           "see C2CN11029"@en .
+}

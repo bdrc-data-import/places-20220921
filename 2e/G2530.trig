@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2530 {
+    bda:G2530  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2530 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "2e/G2530.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2530 ;
+        adm:logEntry        bda:LG0546B801E594F8B3 , bda:LG6E5557D87B596127 , bda:LG7CA0C157398E9E9E , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623001200:623027105" ;
+        adm:place_id_lex    "623001200:623027105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0546B801E594F8B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-30T15:14:39.568Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6E5557D87B596127
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7CA0C157398E9E9E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T10:54:51.579Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV7B9C7039B4E3DD7B
+        a                   :PlaceFounded ;
+        :onYear             "1750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2530  a            :Place ;
+        skos:altLabel       "dga' ldan bshad sgrub 'phel rgyas gling /"@bo-x-ewts , "kha gya'i sgar rnying dga' ldan bshad sgrub 'phel rgyas gling /"@bo-x-ewts , "kha gya smad dgon/"@bo-x-ewts , "Khagyamey Gon"@en , "kajia jiusi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "kha gya'i sgar rnying /"@bo-x-ewts , "Khagya Garnying Gon"@en , "卡加旧寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA2DB7652164EC557 ;
+        :isRoot             true ;
+        :note               bdr:NT056DA6704EABF8E2 , bdr:NTC1E68F72D9EFA87B ;
+        :placeEvent         bdr:EV7B9C7039B4E3DD7B ;
+        :placeGonpaPerEcumen  "14.82" ;
+        :placeLat           "35.06531" ;
+        :placeLocatedIn     bdr:G2396 , bdr:G2531 ;
+        :placeLong          "102.88647" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA2DB7652164EC557
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2530" .
+    
+    bdr:NT056DA6704EABF8E2
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, p. 31" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "dge lugs pa monastery located in kha gya smad zhang in bsang chu rdzong, kan lho khul"@en .
+    
+    bdr:NTC1E68F72D9EFA87B
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, foldout" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "dge lugs pa monastery in kan lho prefecture\nseat of the 'gying rgan incarnations"@en .
+}

@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1259 {
+    bda:G1259  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1259 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d8/G1259.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1259 ;
+        adm:logEntry        bda:LG595EF2A90828A9CA , bda:LG5D204CBEB2687D09 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:C2CN10976 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG595EF2A90828A9CA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5D204CBEB2687D09
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-01-15T11:42:07.556Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of C2CN10976"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1259  a            :Place ;
+        skos:prefLabel      "mdo smad tsa yus dpon brgyud/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5FEF9EB518049DE6 .
+    
+    bdr:NT5FEF9EB518049DE6
+        a                   :Note ;
+        :noteText           "see C2CN10976"@en .
+}

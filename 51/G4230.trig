@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4230 {
+    bda:G4230  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4230 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "51/G4230.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4230 ;
+        adm:logEntry        bda:LG026EAC5C4954973E , bda:LG112D8D6F4A5FA71A , bda:LG366A12C3E7D2AF1D , bda:LGEED55286C4E05BB4 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG026EAC5C4954973E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-25T10:13:59.386Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & events, revised 2nd note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG112D8D6F4A5FA71A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-25T10:26:49.563Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG366A12C3E7D2AF1D
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-14T14:36:55.035Z"^^xsd:dateTime ;
+        adm:logMessage      "གནས་ཚུལ་གསར་དུ་བཅུག"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGEED55286C4E05BB4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0D200C84667D5AED
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV4E7AAE2089527869
+        a                   :PlaceRebuilt ;
+        :notAfter           "1699"^^xsd:gYear ;
+        :notBefore          "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV56DE73ACDB569F63
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P3CN360 .
+    
+    bdr:G4230  a            :Place ;
+        skos:altLabel       "ka mtho dgon/"@bo-x-ewts ;
+        skos:prefLabel      "dga' ldan bshad sgrub gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0C1ED9F6E5F09324 , bdr:NT299252D8B38AB707 ;
+        :placeEvent         bdr:EV0D200C84667D5AED , bdr:EV4E7AAE2089527869 , bdr:EV56DE73ACDB569F63 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0C1ED9F6E5F09324
+        a                   :Note ;
+        :contentLocationStatement  "p. 2322" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1550. ba so sprul skus khams khul du bshad sgrub gling phyag btab\ncan this date be accurate?; the ba so sprul sku would have been only 13 years old"@en .
+    
+    bdr:NT299252D8B38AB707
+        a                   :Note ;
+        :contentLocationStatement  "p. 325" ;
+        :noteSource         bdr:MW8224 ;
+        :noteText           "གུང་རུ་ཞེ་སྟེང་པ་ཆོས་རྒྱལ་བཟང་པོས་ཐོག་མར་\"ཀ་མཐོ་དགོན་པ\"བཏབ། ཕྱིས་སྒོ་ཤར།(sgo shar) རི་ཁྲོད།(ri khrod) ཀ་མཐོ་གསུམ་གྱི་དགོན་ལག་གདོང་སྐིས།(gdong skis) ཀ་རུག(ka rug) འབྲི་རྔ།('bri rnga) ཀ་དགོན་(ka dgon)རྣམས་ཏེ་ཁྱོན་བསྡོམས་དགོན་ཁག་བདུན་ཚ་བ་རྣམ་རྒྱལ་བཀྲ་ཤིས་(tsha ba rnam rgyal bkra shis)ཀྱིས་སྦྱིན་བདག་དང་བ་སོ་སྤྲུལ་སྐུ་ངག་དབང་ཆོས་ཀྱི་དབང་ཕྱུག་གིས་་ས་ཆོག་མཛད་དེ་ཤོ་པ་མདོར་(sho pa mdo)དགོན་གསར་དུ་བཏིང། དགོན་རྙིང་བདུན་པོ་ཁྱོན་གཅིག་ཏུ་རྟེན་གསུམ་དགེ་འདུན་དང་བཅས་དེར་སྤོས། པཎ་ཆེན་བློ་བཟང་ཆོས་རྒྱན་གྱིས་དགའ་ལྡན་བཤད་སྒྲུབ་གླིང་ཞེས་འདོགས་པར་མཛད་པ་སོགས་གསལ།"@en .
+}

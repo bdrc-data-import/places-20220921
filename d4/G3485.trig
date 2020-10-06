@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3485 {
+    bda:G3485  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3485 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d4/G3485.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3485 ;
+        adm:logEntry        bda:LGC2479CB8F75B3190 , bda:LGC9809982BB0B1C47 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC2479CB8F75B3190
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-03T10:27:18.297Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC9809982BB0B1C47
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVBFC6BB393DE36840
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2778 ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:G3485  a            :Place ;
+        skos:altLabel       "gla tshal (ba ri)"@bo-x-ewts , "nyang po ba ri gla tshal/"@bo-x-ewts ;
+        skos:prefLabel      "ba ri gla tshal/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT644750558F977897 ;
+        :placeEvent         bdr:EVBFC6BB393DE36840 ;
+        :placeLocatedIn     bdr:G1042 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT644750558F977897
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 550" ;
+        :noteSource         bdr:MW22378 ;
+        :noteText           "small dge lugs pa monastery in nyang po founded by thang stong rgyal po and subsequently turned into a dge lugs pa establishment\n\nit was here that thang stong rgyal po bound klu bdud to protect the dharma"@en .
+}

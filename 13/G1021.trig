@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1021 {
+    bda:G1021  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1021 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "13/G1021.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1021 ;
+        adm:logEntry        bda:LG8595C8E69363BC7B , bda:LGB01738C5174DD5C4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G210 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG8595C8E69363BC7B
+        a                   adm:WithdrawData ;
+        adm:logDate         "2010-09-10T16:20:39.768Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G210"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGB01738C5174DD5C4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1021  a            :Place ;
+        skos:prefLabel      "sa skya/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD7FC25DFF2693EF7 .
+    
+    bdr:NTD7FC25DFF2693EF7
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G210"@en .
+}

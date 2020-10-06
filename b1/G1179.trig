@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1179 {
+    bda:G1179  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1179 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "b1/G1179.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1179 ;
+        adm:logEntry        bda:LG213D679C279103D3 , bda:LG32459BE1AE94047C , bda:LG65904A0B728CA07A , bda:LG9FCE8083A7EFFE5B , bda:LGA09DEF3CBD02B303 , bda:LGB968E47E7163BC1A , bda:LGDB742997C197435A , bda:LGE522E06EB03E0BA1 , bda:LGF6B584483CECFD81 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG213D679C279103D3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG32459BE1AE94047C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-28T11:50:49.852Z"^^xsd:dateTime ;
+        adm:logMessage      "added P#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG65904A0B728CA07A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-07T10:39:49.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added lha lung klu sdings par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG9FCE8083A7EFFE5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-03T10:34:06.626Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA09DEF3CBD02B303
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-19T09:55:36.438Z"^^xsd:dateTime ;
+        adm:logMessage      "added location, reorganized contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB968E47E7163BC1A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-13T12:00:55.767Z"^^xsd:dateTime ;
+        adm:logMessage      "added lho brag bla bo dgon pa'i par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGDB742997C197435A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-12T10:24:03.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and source printery"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGE522E06EB03E0BA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T09:30:08.363Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain & place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF6B584483CECFD81
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-02T11:35:41.963Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1179  a            :Place ;
+        skos:prefLabel      "lho brag khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT660C0BA880BFD166 ;
+        :placeContains      bdr:G3JT12517 , bdr:G3JT12573 , bdr:G3JT12590 ;
+        :placeLocatedIn     bdr:G3CN58 ;
+        :placeType          bdr:PT0057 .
+    
+    bdr:NT660C0BA880BFD166
+        a                   :Note ;
+        :noteText           "ལྷོ་བྲག་ཁུལ་ནི་དེང་གི་ལྷོ་བྲག་རྫོང་ལས་གཞི་རྒྱ་ཆེ་བའི་ས་ཁུལ་ཞིག་ལ་གོ་དགོས་པའང་། དེང་སང་གི་མཚོ་སྨད་རྫོང་ཕྱོགས་ཀྱང་ཚུད་པ་ཞིག་ཡིན་པར་སྣང་ཏེ། དཔེར་ན་ལྷོ་བྲག་སྨྲ་བོ་ཅོག་ནི་མཚོ་སྨད་དུ་ཡོད་པ་སོགས་དཔྱད་བྱའོ།"@bo .
+}

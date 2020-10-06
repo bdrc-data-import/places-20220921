@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00JR666 {
+    bda:G00JR666  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00JR666 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "52/G00JR666.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00JR666 ;
+        adm:logEntry        bda:LG0A29FDBA0462A0B6 , bda:LG768DF5C1B46F6033 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A29FDBA0462A0B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-10-28T16:15:19.274Z"^^xsd:dateTime ;
+        adm:logMessage      "more info added"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LG768DF5C1B46F6033
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-10-24T11:58:36.543Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G00JR666  a         :Place ;
+        skos:prefLabel      "bde chen gsang ba phug"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCBC22050D655712E ;
+        :placeLocatedIn     bdr:G655 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NTCBC22050D655712E
+        a                   :Note ;
+        :noteText           "treasure revelation site of spo bo gter ston bdud 'dul rdo rje's dam chos dgongs pa yongs 'dus cycle; he was active here ca. 1644"@en .
+}

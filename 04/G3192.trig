@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3192 {
+    bda:G3192  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3192 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "04/G3192.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3192 ;
+        adm:logEntry        bda:LG070CA64EB3D6EC59 , bda:LG6353B412247B6FA2 , bda:LG84EBF470C76447B7 , bda:LGC478FF6EBB15A336 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG070CA64EB3D6EC59
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:20:47.523Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from province to zhingChen"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6353B412247B6FA2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG84EBF470C76447B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-23T12:15:15.219Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & changed type as grong khyer"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC478FF6EBB15A336
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-20T15:28:47.374Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3192  a            :Place ;
+        skos:altLabel       "shang kang /"@bo-x-ewts , "zhang kang /"@bo-x-ewts , "xiang gang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "hong kong /"@bo-x-ewts , "hong kong"@en , "香港"@zh-hans ;
+        :isRoot             true ;
+        :placeType          bdr:PT0008 .
+}

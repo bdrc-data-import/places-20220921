@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX211102000 {
+    bda:G9GBX211102000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX211102000 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c0/G9GBX211102000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX211102000 ;
+        adm:logEntry        bda:LG2D3665FA97E87CEE , bda:LGIME5430EC046 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG2D3665FA97E87CEE
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME5430EC046
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-27T19:58:07.021Z"^^xsd:dateTime ;
+        adm:logMessage      "updating geometry for modern county"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX211102000
+        a                   :Place ;
+        skos:altLabel       "shuang tai zi qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "pairs of table area"@en , "双台子区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX211102001 , bdr:G9GBX211102002 , bdr:G9GBX211102003 , bdr:G9GBX211102004 , bdr:G9GBX211102005 , bdr:G9GBX211102006 , bdr:G9GBX211102007 , bdr:G9GBX211102008 , bdr:G9GBX211102009 , bdr:G9GBX211102201 , bdr:G9GBX211102400 ;
+        :placeGB2260-2013   "211102000" ;
+        :placeLat           "41.1905476" ;
+        :placeLocatedIn     bdr:G9GBX211100000 ;
+        :placeLong          "122.0602942" ;
+        :placeRegionPoly    "{\"type\":\"Feature\",\"geometry\": { \"type\": \"Polygon\", \"coordinates\": [ [ [ 121.975708008509145, 41.184272765851993 ], [ 121.973541260258955, 41.190212250193333 ], [ 121.971656798443362, 41.19821166976471 ], [ 121.96977996859107, 41.207355498862412 ], [ 121.971527100730512, 41.215831757269093 ], [ 121.977828979598328, 41.226158142241154 ], [ 121.991691589211882, 41.238117217794432 ], [ 122.006240845031726, 41.240009308217466 ], [ 122.026313781775372, 41.232769011895904 ], [ 122.037887573064765, 41.224578857076231 ], [ 122.055793761571593, 41.224414824988308 ], [ 122.071853638215984, 41.224704742369653 ], [ 122.087631225459305, 41.224761962673405 ], [ 122.091888427467808, 41.221801757759749 ], [ 122.089813232187979, 41.214015960893612 ], [ 122.085922240870133, 41.204158783157226 ], [ 122.081443786881323, 41.193618773890911 ], [ 122.079643250329426, 41.189495087317951 ], [ 122.080886840809299, 41.184005736990763 ], [ 122.089363098412932, 41.185409546246404 ], [ 122.095542907684134, 41.18737411499508 ], [ 122.08940887511956, 41.180213928285923 ], [ 122.084556580040285, 41.172935485977654 ], [ 122.079696655303039, 41.162422179821263 ], [ 122.066360473557864, 41.157165527350294 ], [ 122.055442809586481, 41.160804748793929 ], [ 122.038063048857893, 41.162826538447533 ], [ 122.012580871619164, 41.164848327813907 ], [ 121.988723755135638, 41.176979065130112 ], [ 121.975708008509145, 41.184272765851993 ] ] ] } }" ;
+        :placeType          bdr:PT0011 ;
+        :placeWB2000        "165855" ;
+        :placeWB2010        "185314" ;
+        :placeWBArea        "66.955099" .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G245 {
+    bda:G245  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G245 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "0c/G245.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G245 ;
+        adm:logEntry        bda:LG2468A1270A120686 , bda:LG263D772204DB58A4 , bda:LG57049AF12EF0FF3C , bda:LGD01E1D0664280AF4 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2468A1270A120686
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-13T17:16:54.01Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG263D772204DB58A4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG57049AF12EF0FF3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-13T17:26:23.407Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD01E1D0664280AF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T12:03:57.512Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0E8DDEB5F49AA7DE
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1039 ;
+        :onYear             "1449"^^xsd:gYear .
+    
+    bdr:EV308737FA0B529423
+        a                   :PlaceFounded ;
+        :onYear             "1449"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G245  a             :Place ;
+        skos:altLabel       "skyed tshal/"@bo-x-ewts ;
+        skos:prefLabel      "'bras yul skyed tshal dgon/"@bo-x-ewts , "Dreyul Kyetsal"@en ;
+        :isRoot             true ;
+        :note               bdr:NT51D88F5D2B3DA5BC ;
+        :placeEvent         bdr:EV0E8DDEB5F49AA7DE , bdr:EV308737FA0B529423 ;
+        :placeLocatedIn     bdr:G2176 , bdr:G4710 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT51D88F5D2B3DA5BC
+        a                   :Note ;
+        :contentLocationStatement  "p. 343" ;
+        :noteSource         bdr:MW10247 ;
+        :noteText           "sa skya pa monastery and teaching establishment in gtsang\nfounded in 1449 by byams chen rab byams pa"@en .
+}

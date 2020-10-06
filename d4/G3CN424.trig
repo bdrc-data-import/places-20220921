@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN424 {
+    bda:G3CN424  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN424 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d4/G3CN424.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN424 ;
+        adm:logEntry        bda:LGA76B1B9877B4FB4B , bda:LGAF3AEB113E16B606 , bda:LGE911F2EE9A85CDDA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA76B1B9877B4FB4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-30T15:26:09.649Z"^^xsd:dateTime ;
+        adm:logMessage      "added 9 contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAF3AEB113E16B606
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-09-30T12:16:45.339Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE911F2EE9A85CDDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-01T12:13:56.673Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV04F0512E9820E4DC
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN424  a          :Place ;
+        rdfs:comment        "chos rgyal srong btsan sgam pos mtha' 'dul yang 'dul ru gnon gyi gtsug lag khang rnams bzhengs pa dang 'brel 'byung ba'i kha gnon gyi gtsug lag khang dgu yang bzhengs par gsal/" ;
+        skos:prefLabel      "'byung ba'i kha gnon gyi gtsug lag khang dgu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4E63E617FEFC10E4 , bdr:NT64D6552D2C9E0975 ;
+        :placeContains      bdr:G3CN415 , bdr:G3CN416 , bdr:G3CN417 , bdr:G3CN418 , bdr:G3CN419 , bdr:G3CN420 , bdr:G3CN421 , bdr:G3CN422 , bdr:G3CN423 ;
+        :placeEvent         bdr:EV04F0512E9820E4DC ;
+        :placeLocatedIn     bdr:G3196 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NT4E63E617FEFC10E4
+        a                   :Note ;
+        :contentLocationStatement  "p. 1456" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "འདིར་ནི་\"བོད་ལ་ཕན་པའི་གཙུག་ལག་སྡེ་དགུ་\"(bod la phan pa'i gtsug lag sde dgu)ཞེས་པའི་ཐ་སྙད་ཞིག་ཀྱང་ཡོད་པ་གཙུག་ལག་ཁང་དགུ་པོ་དེ་ལ་གོ་བ་ཞིག་ཡིན་པར་དྭོགས་མོད། འོན་ཀྱང་འདིར་\"ལོ་དང་ཟླ་བ་ཞག་དང་གསུམ། ཟ་མ་སྐར་མ་དུས་ཚོད་གསུམ། སྤར་ཁ་སྨེ་བ་ལོ་ཁྱིམ་གསུམ། སྡོང་པོ་དགུ་འདུལ་ཞེས་བྱའོ།\" ཞེས་བཤད་པ་ཡང་སྙིང་དོན་ཅི་ཞིག་ཡིན་དཔྱད་གཞིའོ།"@en .
+    
+    bdr:NT64D6552D2C9E0975
+        a                   :Note ;
+        :contentLocationStatement  "p. 230" ;
+        :noteSource         bdr:MW7499 ;
+        :noteText           "\"ཤར་དུ་སའི་ཁ་གནོན་ཉི་ཟླ་གཟའ་སྐར་གཏན་ལ་འབེབས་པའི་ཕྱིར་ཀ་ཆུ་ཀུམ་ཆུ་གླིང་ཆུ་གསུམ། ལྷོར་མེའི་ཁ་གནོན་སྣང་གྲོ་དང་གློང་ཐང་གཉིས། ནུབ་ཏུ་ཆུའི་ཁ་གནོན་གུ་ལང་དང་ཤིང་ཀུན་གཉིས། བྱང་དུ་རླུང་གི་ཁ་གནོན་དགེ་རི་དང་དཔལ་རི་གཉིས་ཏེ་འབྱུང་བའི་ཁ་གནོན་གྱི་གཙུག་ལག་ཁང་དགུའོ།\" ཞེས་གསལ།"@bo .
+}

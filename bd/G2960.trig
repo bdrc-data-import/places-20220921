@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2960 {
+    bda:G2960  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2960 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "bd/G2960.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2960 ;
+        adm:logEntry        bda:LG1E7BA2282D9E53ED , bda:LG393C750C3151FD12 , bda:LG59E4A74E05062237 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542301202:542312" ;
+        adm:place_id_lex    "542301202:542312" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1E7BA2282D9E53ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-05-24T10:58:25.295Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG393C750C3151FD12
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG59E4A74E05062237
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-25T11:01:48.918Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G4778 & G00AG01585 (dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVD2A4B0A466EA4840
+        a                   :PlaceFounded ;
+        :onYear             "1421"^^xsd:gYear .
+    
+    bdr:G2960  a            :Place ;
+        skos:altLabel       "gsang sngags chos gling /"@bo-x-ewts , "zur gsang sngags chos gling /"@bo-x-ewts , "su-er sang-a-lin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zur gsang sngags gling /"@bo-x-ewts , "苏尔桑阿林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID19F6BE7BDBBC892A ;
+        :isRoot             true ;
+        :note               bdr:NT178D6291FCFC2BC0 , bdr:NT6F2CD241866FA9E8 , bdr:NTF2200C2DA6B6DD54 ;
+        :placeEvent         bdr:EVD2A4B0A466EA4840 ;
+        :placeGonpaPerEcumen  "8.93" ;
+        :placeLat           "29.21667" ;
+        :placeLocatedIn     bdr:G2170 ;
+        :placeLong          "88.95000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID19F6BE7BDBBC892A
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2960" .
+    
+    bdr:NT178D6291FCFC2BC0
+        a                   :Note ;
+        :contentLocationStatement  "p. 349" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "small rnying ma establishment affiliated to the ancient zur lineage"@en .
+    
+    bdr:NT6F2CD241866FA9E8
+        a                   :Note ;
+        :contentLocationStatement  "p. 482" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "hermitage of the zur lineage to the east of gzhis ka rtse"@en .
+    
+    bdr:NTF2200C2DA6B6DD54
+        a                   :Note ;
+        :contentLocationStatement  "note moved from G00AG01585" ;
+        :noteText           "a seat of the Zur tradition to the east of gzhis ka rtse, it had fallen into decline by the nineteenth century"@en .
+}

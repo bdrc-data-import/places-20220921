@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1382 {
+    bda:G1382  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1382 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "77/G1382.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1382 ;
+        adm:logEntry        bda:LG5A8285403905F736 , bda:LG5C62E42DC3717C52 , bda:LG6E53C10DD35E6C54 , bda:LG7AA769CD6C088F02 , bda:LG9A555F01F5F313BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5A8285403905F736
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-17T10:13:24.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5C62E42DC3717C52
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6E53C10DD35E6C54
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-08T09:37:39.584Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7AA769CD6C088F02
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-15T09:37:06.617Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A555F01F5F313BB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1382  a            :Place ;
+        skos:altLabel       "dbus stod la mo/"@bo-x-ewts ;
+        skos:prefLabel      "la mo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeContains      bdr:G1302 , bdr:G3057 , bdr:G4562 ;
+        :placeLocatedIn     bdr:G968 ;
+        :placeType          bdr:PT0083 .
+}

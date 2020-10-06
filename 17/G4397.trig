@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4397 {
+    bda:G4397  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4397 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "17/G4397.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4397 ;
+        adm:logEntry        bda:LG0DD66F0CA9834344 , bda:LGB32812185187AD5D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0DD66F0CA9834344
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB32812185187AD5D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T15:23:55.072Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV9219A9E6E6C03263
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P3747 ;
+        :notAfter           "1399"^^xsd:gYear ;
+        :notBefore          "1300"^^xsd:gYear .
+    
+    bdr:G4397  a            :Place ;
+        skos:prefLabel      "ru dgon gsar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2969B9DCC30DD9CF , bdr:NTFD2C17E3CD4FECB7 ;
+        :placeEvent         bdr:EV9219A9E6E6C03263 ;
+        :placeLocatedIn     bdr:G2129 , bdr:G4398 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT2969B9DCC30DD9CF
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 146-148" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTFD2C17E3CD4FECB7
+        a                   :Note ;
+        :contentLocationStatement  "pp. 40-41" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "although the name is not noted in the gazetteer  it is obvious that this seat of the zhwa lu sku zhang of snye mo is meant\na monastery of the bu ston lugs of the kalacakra located in phu gsum shang\nfounded in the 11th century by zhwa lu sku zhang bkra shis rgyal mtshan\ncurrently under the control (dgon bdag) of the har gdong khams tshan of 'bras spungs; sanctioned complement of monks: 50"@en .
+}

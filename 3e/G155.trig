@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G155 {
+    bda:G155  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G155 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "3e/G155.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G155 ;
+        adm:logEntry        bda:LG14288C0A370F2ED6 , bda:LG7545A7FF5388CBCC , bda:LG9F73762BE4571391 , bda:LGD5BC4EC3284F71D6 , bda:LGDB50366DA994780B , bda:LGDCD0B39EA90E79DC , bda:LGEA95616478A14964 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG14288C0A370F2ED6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:36:11.943Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7545A7FF5388CBCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T15:27:27.37Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9F73762BE4571391
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-07T10:02:15.344Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as grwaTshang"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD5BC4EC3284F71D6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDB50366DA994780B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T17:49:41.482Z"^^xsd:dateTime ;
+        adm:logMessage      "english"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGDCD0B39EA90E79DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-05T15:17:34.622Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEA95616478A14964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV61C2C46312DCEC7E
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P4762 .
+    
+    bdr:G155  a             :Place ;
+        skos:altLabel       "byes grwa tshang /"@bo-x-ewts , "ser byes grwa tshang /"@bo-x-ewts ;
+        skos:prefLabel      "se ra byes grwa tshang /"@bo-x-ewts , "Seraje Dratsang"@en ;
+        :isRoot             true ;
+        :note               bdr:NT1EAFEEF3839B2396 ;
+        :placeContains      bdr:G156 , bdr:G2345 , bdr:G2348 , bdr:G2349 , bdr:G2351 , bdr:G2466 , bdr:G2467 , bdr:G2468 , bdr:G2469 , bdr:G2470 , bdr:G2471 , bdr:G2472 , bdr:G2474 , bdr:G2475 , bdr:G2476 , bdr:G2477 , bdr:G2478 , bdr:G2CN10851 , bdr:G2CN10855 , bdr:G402 , bdr:G957 ;
+        :placeEvent         bdr:EV61C2C46312DCEC7E ;
+        :placeLocatedIn     bdr:G154 ;
+        :placeType          bdr:PT0040 .
+    
+    bdr:NT1EAFEEF3839B2396
+        a                   :Note ;
+        :contentLocationStatement  "p. 117" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "college (grwa tshang) of se ra monastery\nthis college has 17 residential houses (khams tshan)\nin 1959 the monastery had 5629 monks, 69 incarnate lamas, 10 ri khrod, and 10 dgon lag (gzhis dgon)  to which teachers and administrators were sent"@en .
+}

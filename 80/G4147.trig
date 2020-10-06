@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4147 {
+    bda:G4147  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4147 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "80/G4147.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4147 ;
+        adm:logEntry        bda:LG0E28FABCCF604A24 , bda:LG2A7CD4D27AE124A3 , bda:LG6FDF42B2AE54A81D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0E28FABCCF604A24
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2A7CD4D27AE124A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T09:54:38.437Z"^^xsd:dateTime ;
+        adm:logMessage      "added location \"mus\" and note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6FDF42B2AE54A81D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-26T12:23:31.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5038BF0E372F77D4
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1034 ;
+        :onYear             "1437"^^xsd:gYear .
+    
+    bdr:EVE692F5421F51CE7E
+        a                   :PlaceFounded ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G4147  a            :Place ;
+        skos:altLabel       "mus gling dga' bde ba can/"@bo-x-ewts ;
+        skos:prefLabel      "gling dga' bde ba can/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0875882569989E11 , bdr:NTE26168B9D21EBC34 ;
+        :placeEvent         bdr:EV5038BF0E372F77D4 , bdr:EVE692F5421F51CE7E ;
+        :placeLocatedIn     bdr:G849 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0875882569989E11
+        a                   :Note ;
+        :noteText           "བཞད་མཐོང་སྨོན་རྫོང་ཁོངས་སུ་གནས་ཡོད་སྲིད་པ་ཕྱིས་ནས་རྩད་རྒྱུ།"@bo .
+    
+    bdr:NTE26168B9D21EBC34
+        a                   :Note ;
+        :contentLocationStatement  "p. 401" ;
+        :noteSource         bdr:MW27139 ;
+        :noteText           "rje sems dpa' chen po dgung lo lnga bcu bzhes pa me mo sbrul gyi glo gling dga' bde ba can gyi dgon gnas chen po 'di btab nas bzung mi lo brgya dang brgyad cu gya gcig 'das pa'i gya gnyis pa sa pho rta'i lo/ nag pa zla ba dmar cha rgyal ba dang po'i tshes la gling dga' bde ba can gyi sa'i cha.."@en .
+}

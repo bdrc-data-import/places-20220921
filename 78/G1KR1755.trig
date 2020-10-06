@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1755 {
+    bda:G1KR1755  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1755 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "78/G1KR1755.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1755 ;
+        adm:logEntry        bda:LG0450634E447A3F06 , bda:LG8D32E5968C37B1EC , bda:LGDBD25D5971735B71 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542429205:469" ;
+        adm:place_id_lex    "542429205:469" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0450634E447A3F06
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-18T11:15:59.203Z"^^xsd:dateTime ;
+        adm:logMessage      "update"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8D32E5968C37B1EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-18T10:46:45.407Z"^^xsd:dateTime ;
+        adm:logMessage      "update name list of contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDBD25D5971735B71
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-09T13:24:26.742Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in tibeatn & Gis Coords & notes, moved info from G4662(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVA64BB714AB5F1501
+        a                   :PlaceFounded ;
+        :onYear             "1626"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1755  a         :Place ;
+        skos:altLabel       "gshen bstan g.yung drung bde chen gling /"@bo-x-ewts , "klu phug dgon g.yung drung bde chen gling /"@bo-x-ewts , "鲁巴寺"@zh-hans , "鲁普寺"@zh-hans , "luba si"@zh-latn-pinyin-x-ndia , "luopo si"@zh-latn-pinyin-x-ndia , "lupu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "klu phug dgon pa/"@bo-x-ewts , "罗坡寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2471F8C397F4713E ;
+        :isRoot             true ;
+        :note               bdr:NT2EA0A327F59FAA1C , bdr:NT67E26910F28CBEBE , bdr:NTF4050CEB180FB5E8 ;
+        :placeEvent         bdr:EVA64BB714AB5F1501 ;
+        :placeGonpaPerEcumen  "2.42" ;
+        :placeLat           "32.156658" ;
+        :placeLocatedIn     bdr:G2150 ;
+        :placeLong          "93.489064" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID2471F8C397F4713E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1755" .
+    
+    bdr:NT2EA0A327F59FAA1C
+        a                   :Note ;
+        :noteText           "Originally a Bon and Drigung Kagyu site called Mkhar dmar bla brang. It became Klu phug in 1827 during a visit by the 23rd abbot of Sman ri, Nyi ma bstan ‘dzin.\n\n7 lamas -  130 monks -  12 tantrists"@en .
+    
+    bdr:NT67E26910F28CBEBE
+        a                   :Note ;
+        :contentLocationStatement  "pp. 26-29]" ;
+        :noteSource         bdr:MW29327 ;
+        :noteText           "bon monastery"@en .
+    
+    bdr:NTF4050CEB180FB5E8
+        a                   :Note ;
+        :contentLocationStatement  "p. 131-142" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "དགོན་འདི་ནི་ཧོར་སྤྱི་ཁྱབ་རྒྱལ་པོ་དང་འབྲེལ་བའི་བོན་དགོན་གལ་ཆེན་ཞིག་ཡིན་ཏེ། ཐོག་མར་སྦྲ་ཆེན་གྱི་བྲག་དཀར་ལྷ་ལུང་གི་ཕུ་རུ་གནས། དེ་ཡང་ཐོག་མར་ཧོར་ཚོ་པ་སོ་དགུའི་སྤྱི་ཁྱབ་སྐུ་ཐོག་བཅུ་གཉིས་པ་ཁྲི་རྒྱལ་རྗེ་ཆེན་བོན་དང་འབྲི་གུང་ཟུང་འཇུག་ཉམས་ལེན་མཁན་སྔགས་འཆང་དེས་མཁར་དམར་བླ་བྲང་བཞེངས་ཤིང་། དེར་ཁྱད་པར་གསུང་རྟེན་དུ་སྣག་བྲིས་ཁམས་ཆེན་པོ་བརྒྱད་ལ་པོད་བཅུ་དྲུག བོན་ཉིད་སྙིང་པོ་བདལ་འབུམ་ལ་པོད་བཅུ་གཉིས་སོགས་བཞུགས། བྲུ་ཞུ་གཉིས་ཀྱི་ལུགས་འཛིན། ཉེ་དུས་བོན་དགོན་ཆེ་གྲས་སུ་གྱུར་ཡོད་དེ། གྲགས་ཅན་མཁན་པོ་རག་ཤུ་རྟོགས་ལྡན་སོགས་བླ་གྲྭ་བརྒྱ་དང་བཞི་བཅུ་ཙམ་ཡོད་ཚུལ་སོགས་གསལ།"@bo .
+}

@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G186 {
+    bda:G186  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G186 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "d2/G186.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G186 ;
+        adm:logEntry        bda:LG08F229C787830A83 , bda:LG2509DFC0C8F0463E , bda:LGA6D9300E0D694282 , bda:LGBF7C705E7789DFBD , bda:LGDC885628D71E6937 , bda:LGE52DC46F018BF71B , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542324201:542324105" ;
+        adm:place_id_lex    "542324201:542324105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG08F229C787830A83
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T15:16:47.104Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG2509DFC0C8F0463E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-18T17:57:51.526Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA6D9300E0D694282
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-20T09:51:57.546Z"^^xsd:dateTime ;
+        adm:logMessage      "added location \"pha drug\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBF7C705E7789DFBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-06-30T22:37:07.282Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDC885628D71E6937
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-08T09:43:51.944Z"^^xsd:dateTime ;
+        adm:logMessage      "rdza rong phu dgon gyi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGE52DC46F018BF71B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV41D6ECC89C878B72
+        a                   :PlaceFounded ;
+        :onYear             "1800"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G186  a             :Place ;
+        skos:altLabel       "mdo sngags zung 'jug gling /"@bo-x-ewts , "rong phu dgon/"@bo-x-ewts , "rong phu dgon mdo sngags zung 'jug gling /"@bo-x-ewts , "rongbu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdza rong phu dgon/"@bo-x-ewts , "Rongpu Gon"@en , "绒布寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA7EBA7EF4C4FA61C ;
+        :isRoot             true ;
+        :note               bdr:NT92F740520BF81A47 ;
+        :placeContains      bdr:G3JT12514 ;
+        :placeEvent         bdr:EV41D6ECC89C878B72 ;
+        :placeGonpaPerEcumen  "0.71" ;
+        :placeLat           "28.18333" ;
+        :placeLocatedIn     bdr:G2165 , bdr:G903 ;
+        :placeLong          "86.83334" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA7EBA7EF4C4FA61C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G186" .
+    
+    bdr:NT92F740520BF81A47
+        a                   :Note ;
+        :noteText           "rnying ma pa monastery located in southwestern tibet just across the nepalese border, via the ngang pa la,  from steng po che monastery;  \nseat of the rdza rong phu lama"@en .
+}

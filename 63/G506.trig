@@ -1,0 +1,106 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G506 {
+    bda:G506  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G506 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "63/G506.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G506 ;
+        adm:logEntry        bda:LG8697BF4C116675FB , bda:LG922C4FC5CFBE4972 , bda:LGC4981D5B1521752A , bda:LGE4D52E689FE58360 , bda:LGF516DE24CDCA9486 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542328100:542328105" ;
+        adm:place_id_lex    "542328100:542328105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8697BF4C116675FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:21:10.355Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG922C4FC5CFBE4972
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC4981D5B1521752A
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-22T14:01:03.928Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGE4D52E689FE58360
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-22T14:05:07.639Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGF516DE24CDCA9486
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-22T14:03:48.48Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5F0B40DEEFA81B88
+        a                   :PlaceFounded ;
+        :onYear             "1473"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EVF1BEDC05B5EB9A22
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1042 ;
+        :onYear             "1474"^^xsd:gYear .
+    
+    bdr:G506  a             :Place ;
+        skos:altLabel       "thub bstan rnam rgyal (rta nag)"@bo-x-ewts , "Tubtan"@bo-x-phon-en , "吐丹朗杰寺"@zh-hans , "Tubtan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rta nag thub bstan rnam rgyal/"@bo-x-ewts , "达那土旦寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID59325CC189E93B4E ;
+        :isRoot             true ;
+        :note               bdr:NT4E89D0D319FEA69F , bdr:NT55E06045BB67AE07 , bdr:NT9F6EB987F404062C ;
+        :placeContains      bdr:G2CN10918 ;
+        :placeEvent         bdr:EV5F0B40DEEFA81B88 , bdr:EVF1BEDC05B5EB9A22 ;
+        :placeGonpaPerEcumen  "18.69" ;
+        :placeLat           "29.46667" ;
+        :placeLocatedIn     bdr:G1291 ;
+        :placeLong          "88.21667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID59325CC189E93B4E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G506" .
+    
+    bdr:NT4E89D0D319FEA69F
+        a                   :Note ;
+        :noteText           "important teaching college connected with the sa skya pa tradition and the teachings of go rams pa"@en .
+    
+    bdr:NT55E06045BB67AE07
+        a                   :Note ;
+        :noteText           "founded by go rams pa in 1474"@en .
+    
+    bdr:NT9F6EB987F404062C
+        a                   :Note ;
+        :noteText           "Xian Wenwuzhi states site founded in 1425 as Nyingma, then Dzongpon converted to Sakya in 1473, just map as Sakya for Pakmodrupa period and later."@en .
+}

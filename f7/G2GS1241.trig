@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1241 {
+    bda:G2GS1241  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1241 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f7/G2GS1241.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1241 ;
+        adm:logEntry        bda:LG148F3B09C77A618D , bda:LG300097BBF3722F18 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG148F3B09C77A618D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-08-09T16:32:18.374Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG300097BBF3722F18
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-15T15:08:40.098Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2GS1241  a         :Place ;
+        skos:prefLabel      "brda dbon dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2A17D497957AD1B0 ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT2A17D497957AD1B0
+        a                   :Note ;
+        :contentLocationStatement  "p. 158" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bon monastery in sde dge territory; no other information given"@en .
+}

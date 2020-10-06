@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD108606 {
+    bda:G1PD108606  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD108606 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ae/G1PD108606.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD108606 ;
+        adm:logEntry        bda:LG0F2CDFF671BB3620 , bda:LGB75E91288F7F9970 , bda:LGC1C536FAB9DC13AC , bda:LGF67BDC8641D2646D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0F2CDFF671BB3620
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-19T15:54:15.706Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB75E91288F7F9970
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-18T17:22:03.136Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC1C536FAB9DC13AC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-10-29T15:54:34.011Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF67BDC8641D2646D
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T16:03:10.7Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bdr:EVC95BC03E10956F67
+        a                   :PlaceFounded ;
+        :onYear             "1265"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G1PD108606  a       :Place ;
+        skos:altLabel       "sde dge khri tsho dgon pa/"@bo-x-ewts , "thub bstan bshad sgrub dar rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "khri tsho dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0368C020FD9EAF54 ;
+        :placeEvent         bdr:EVC95BC03E10956F67 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0368C020FD9EAF54
+        a                   :Note ;
+        :contentLocationStatement  "p. 45-58" ;
+        :noteSource         bdr:MW1KG5737 ;
+        :noteText           "ཁྲི་ཚོ་དགོན་པ་ཞེས་པའི་དོན་ནི་སྔར་དར་རྒྱས་བྱུང་བའི་སྐབས་ཉིན་དགོན་ལ་དགེ་སློང་ཁྲི་དང་། སྲིབ་དགོན་ལ་དགེ་སློང་སྟོང་ཕྲག་བྱུང་བས་ཉིན་དགོན་ལ་ཁྲི་ཚོ་དགོན་པ་དང་། སྲིབ་དགོན་ལ་སྟོང་ཚོ་དགོན་པ་ཞེས་གྲགས་སོ། །\n\nདགོན་པ་འདི་འགྲོ་མགོན་ཆོས་རྒྱལ་འཕགས་པ་རྒྱ་ནག་རྒྱལ་པོའི་དབུ་བླར་ཕེབས་པའི་ལམ་ཁར། རབ་བྱུང་བཞི་པའི་ཤིང་མོ་གླང་(1265)ལ་ཕྱག་བཏབ།\n\nདགོན་པ་ཆགས་བཏབ་པའི་དུས་དགོན་པའི་མཚན་ལ་ཐུབ་བསྟན་བཤད་སྒྲུབ་དར་རྒྱས་གླིང་ཞེས་གསོལ།\n\nཝ་པ་དགོན་པ་ནི་ཁྲི་ཚོ་དགོན་པའི་རི་ཁྲོད་དག་ཆགས་པ་སྟེ་དགེ་སློང་བརྒྱ་ཕྲག་ལས་མི་ཉུང་བ་པ་ཞིག་ཡིན་ནོ་ཞེས་འཁོད།"@bo .
+}

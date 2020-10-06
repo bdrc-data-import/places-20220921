@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4816 {
+    bda:G4816  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4816 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "82/G4816.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4816 ;
+        adm:logEntry        bda:LG0B0F00163D4C93B9 , bda:LG49C038FC15DBBEB5 , bda:LG4A91FC23BCE43148 , bda:LG9A4B764F600498F9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B0F00163D4C93B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-05T12:06:07.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG49C038FC15DBBEB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG4A91FC23BCE43148
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-27T11:05:58.621Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A4B764F600498F9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:EV38E5AB6C4D0D1B66
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G4816  a            :Place ;
+        skos:prefLabel      "brgya mkhas gsang sngags gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0F04B3B5592DB53E , bdr:NTB22556987D786796 ;
+        :placeEvent         bdr:EV38E5AB6C4D0D1B66 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0F04B3B5592DB53E
+        a                   :Note ;
+        :noteText           "ངམ་རིང་རྫོང་ཁོངས་ཡིན་མིན་རྩད་རྒྱུ།"@bo .
+    
+    bdr:NTB22556987D786796
+        a                   :Note ;
+        :contentLocationStatement  "f. 84r" ;
+        :noteSource         bdr:MW19708 ;
+        :noteText           "seat of the se lineage, a rnying ma sngags pa family stemming from the byang gter tradtiion. this seat was located some where in the la stod byang myriarchy"@en .
+}

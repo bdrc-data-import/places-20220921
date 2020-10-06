@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4173 {
+    bda:G4173  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4173 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "36/G4173.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4173 ;
+        adm:logEntry        bda:LG42BD25D91BA13071 , bda:LG4F4977BA066E47D8 , bda:LG9478EB97912F0B9C , bda:LGD7E190D4AB629DBD , bda:LGE27BC71679D002CC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG42BD25D91BA13071
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-18T16:12:17.126Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4F4977BA066E47D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-27T11:47:55.547Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9478EB97912F0B9C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-26T14:35:42.887Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD7E190D4AB629DBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE27BC71679D002CC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:EV716D0F62594DEB9D
+        a                   :PlaceFounded ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1300"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G4173  a            :Place ;
+        skos:prefLabel      "rgyas sman mig bzhi/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB513B5FF29510DF1 ;
+        :placeEvent         bdr:EV716D0F62594DEB9D ;
+        :placeLocatedIn     bdr:G1989 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTB513B5FF29510DF1
+        a                   :Note ;
+        :contentLocationStatement  "p. 280" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "seat of bla ma nam mkha' rdo rje, the teacher of rig 'dzin ku ma rA dza;\nrestored by rgyal sras 'od gsal klong yangs"@en .
+}

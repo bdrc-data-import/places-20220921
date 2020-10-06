@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00EGS1010211 {
+    bda:G00EGS1010211
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00EGS1010211 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "14/G00EGS1010211.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00EGS1010211 ;
+        adm:logEntry        bda:LGA944074897FD222F , bda:LGE4EE7EF6BF183E0D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA944074897FD222F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-30T12:45:49.481Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as bla brang"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE4EE7EF6BF183E0D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-09-24T03:30:47.671Z"^^xsd:dateTime ;
+        adm:logMessage      "first posting"@en .
+    
+    bdr:G00EGS1010211
+        a                   :Place ;
+        skos:altLabel       "mtshe kha bla brang /"@bo-x-ewts , "mtsho kha_[?]"@bo-x-ewts ;
+        skos:prefLabel      "mtshe kha/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT558A9ACC7090BFC2 ;
+        :placeType          bdr:PT0041 .
+    
+    bdr:NT558A9ACC7090BFC2
+        a                   :Note ;
+        :noteText           "name of the 'bri gung bla brang"@en .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2JM251 {
+    bda:G2JM251  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2JM251 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8f/G2JM251.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2JM251 ;
+        adm:logEntry        bda:LG0D798933624536D5 , bda:LG624FD4E56A160277 , bda:LGE0B8DFC0D3793039 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D798933624536D5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-14T16:53:25.733Z"^^xsd:dateTime ;
+        adm:logMessage      "added records"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LG624FD4E56A160277
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE0B8DFC0D3793039
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T16:59:49.705Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2JM251  a          :Place ;
+        skos:altLabel       "khri dar rgyas byams chen chos 'khor gling gi bshad grwa mkhas mang kun 'dus gling /"@bo-x-ewts ;
+        skos:prefLabel      "khri dar rgyas byams chen chos 'khor gling gi bshad grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD81157BC50507679 ;
+        :placeLocatedIn     bdr:G4160 ;
+        :placeType          bdr:PT0038 .
+    
+    bdr:NTD81157BC50507679
+        a                   :Note ;
+        :contentLocationStatement  "316" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "A Nyingma college founded by zil gnon dgyes pa rdo rje in 1942 \n----Alumni includes:\nmkhan chen tshe dbang rig 'dzin \nmkhan chen nor bu bstan 'dzin \nmkhan 'jigs med dbang phyug \nmkhan bsod nams mgon po\ngnubs dge bshes chos dar \nhor mo'i mkhan chen 'jam grub"@en .
+}

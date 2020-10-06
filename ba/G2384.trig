@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2384 {
+    bda:G2384  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2384 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ba/G2384.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2384 ;
+        adm:logEntry        bda:LG0509963924DD3BEC , bda:LG115229EA5FE8632D , bda:LG649B5F0D186052A5 , bda:LG64CFF957F23A58C3 , bda:LG9E91E58DBC332A4F , bda:LGDA69BCE39195AB62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0509963924DD3BEC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG115229EA5FE8632D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T16:00:55.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG649B5F0D186052A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-23T10:48:46.757Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG64CFF957F23A58C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T15:43:54.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2 types"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9E91E58DBC332A4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-08T15:14:41.198Z"^^xsd:dateTime ;
+        adm:logMessage      "testing"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDA69BCE39195AB62
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T16:22:44.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, location and note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2384  a            :Place ;
+        rdfs:comment        "རྒྱལ་རོང་གཟི་ཚ་སྡེ་དགུ་རྫོང་ནང་དུ་གནས་ཡོད་ཅིང་། དེ་ནི་ངོ་མཚར་གྱི་རི་ཆུ་དང་རྩ་ཆེའི་སྲོག་ཆགས་སྣ་ཚོགས་འཚོ་བཞིན་པའི་གྲགས་ཅན་སྤྲོ་འཆམ་ས་གནས་སམ་རྒྱལ་ཁབ་རིམ་པའི་ནགས་ཚལ་སྤྱི་གླིང་ཞིག་ཏེ། 1992ལོར་མཉམ་འབྲེལ་རྒྱལ་ཚོགས་ཀྱིས་འཛམ་གླིང་གི་རྩ་ཆེའི་ཤུལ་དངོས་སྲུང་སྐྱོབས་ས་གནས་གྲས་སུ་བདམས་ཡོད།" ;
+        skos:altLabel       "gzi tsha sde dgu nags tshal spyi gling /"@bo-x-ewts , "Jiuzhaigou National Park"@en , "九寨沟国家森林公园"@zh-hans , "jiuzhaigou"@zh-latn-pinyin-x-ndia , "jiuzhaigou guojia senlin gongyuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gzi tsha sde dgu/"@bo-x-ewts , "Zeetsa Degu"@en-x-mixed , "九寨沟"@zh-hans ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2394 ;
+        :placeType          bdr:PT0017 .
+}

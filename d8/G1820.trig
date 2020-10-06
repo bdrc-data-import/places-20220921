@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1820 {
+    bda:G1820  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1820 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "d8/G1820.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1820 ;
+        adm:logEntry        bda:LG2F53AECDD1337BAF , bda:LGA9B818276504D32E , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540122203:540122105" ;
+        adm:place_id_lex    "540122203:540122105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2F53AECDD1337BAF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA9B818276504D32E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-12T14:47:12.466Z"^^xsd:dateTime ;
+        adm:logMessage      "added pinyin"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV6D9412106A8258B8
+        a                   :PlaceFounded ;
+        :onYear             "1700"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1820  a            :Place ;
+        skos:altLabel       "当雄县康玛寺"@zh-hans , "kangma si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "khang dmar dgon/"@bo-x-ewts , "Kangmar Monastery"@en , "康玛寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDACCB30FE9A4C0B20 ;
+        :isRoot             true ;
+        :note               bdr:NT45E8BB3010EAC529 , bdr:NTE0CD4D5C91115F67 ;
+        :placeEvent         bdr:EV6D9412106A8258B8 ;
+        :placeGonpaPerEcumen  "1.77" ;
+        :placeLat           "30.59829" ;
+        :placeLocatedIn     bdr:G1818 ;
+        :placeLong          "91.24441" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDACCB30FE9A4C0B20
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1820" .
+    
+    bdr:NT45E8BB3010EAC529
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 159-160" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTE0CD4D5C91115F67
+        a                   :Note ;
+        :contentLocationStatement  "p. 12" ;
+        :noteSource         bdr:MW20146 ;
+        :noteText           "dge lugs pa monastery located in kong thang zhang of 'dam gzhung rdzong\nfounded to perform tantric rituals for lha bzang khang\nmonks lived winters in lha sa and summers in 'dam\nfell under the control of se ra sngags pa\nabout 50 monks"@en .
+}

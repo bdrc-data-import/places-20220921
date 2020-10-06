@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1AG47 {
+    bda:G1AG47  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1AG47 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0f/G1AG47.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1AG47 ;
+        adm:logEntry        bda:LG2DB183E80276E7FE , bda:LGF2A0510AA4BD3025 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2DB183E80276E7FE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-08-24T15:33:58.524Z"^^xsd:dateTime ;
+        adm:logMessage      "created g1ag47"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGF2A0510AA4BD3025
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-08T14:56:59.657Z"^^xsd:dateTime ;
+        adm:logMessage      "updated G1AG47"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:EV5BE5BB87EED4C5F1
+        a                   :PlaceFounded ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:G1AG47  a           :Place ;
+        skos:prefLabel      "g.yu thog dgon/"@bo-x-ewts , "yutok monastery"@en ;
+        :isRoot             true ;
+        :note               bdr:NTDF65DD37A74FDE2C ;
+        :placeEvent         bdr:EV5BE5BB87EED4C5F1 ;
+        :placeLocatedIn     bdr:G2302 , bdr:G2336 .
+    
+    bdr:NTDF65DD37A74FDE2C
+        a                   :Note ;
+        :noteText           "karma bka' brgyud monastery in 'dzam thang that was founded by si tu pan chen chos kyi 'byung gnas in the eighteenth century"@en .
+}

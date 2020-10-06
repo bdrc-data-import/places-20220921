@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2834 {
+    bda:G2834  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2834 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "65/G2834.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2834 ;
+        adm:logEntry        bda:LG2E16DB712660FC72 , bda:LG7286D24D6F6AB164 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2E16DB712660FC72
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:09:33.646Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from estate to gzhisKa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7286D24D6F6AB164
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2834  a            :Place ;
+        skos:altLabel       "sde pa pu shud pa gzhis ka"@bo-x-ewts ;
+        skos:prefLabel      "pu shud pa gzhis ka"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6AEB95C9A664E3CE , bdr:NTBCCE4BEDECDF0670 ;
+        :placeLocatedIn     bdr:G1145 ;
+        :placeType          bdr:PT0015 .
+    
+    bdr:NT6AEB95C9A664E3CE
+        a                   :Note ;
+        :contentLocationStatement  "p. 202" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "description"@en .
+    
+    bdr:NTBCCE4BEDECDF0670
+        a                   :Note ;
+        :contentLocationStatement  "pp. 253-254" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "estate of a noble house\ncontained at the time of kaH thog si tu many exquisite thangkas and original manuscripts written by 'jigs med gling pa;\napparently the pu shud family had been the patrons of 'jigs med gling pa; needs to be investigated"@en .
+}

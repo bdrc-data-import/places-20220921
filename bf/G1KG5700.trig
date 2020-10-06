@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KG5700 {
+    bda:G1KG5700  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KG5700 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "bf/G1KG5700.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KG5700 ;
+        adm:logEntry        bda:LG6B7057E525FB7E8E , bda:LGB7B5837BF8670D40 , bda:LGB99E8654FF743832 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6B7057E525FB7E8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-04-14T12:33:20.141Z"^^xsd:dateTime ;
+        adm:logMessage      "changed provisional to released"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB7B5837BF8670D40
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-08-04T12:40:14.117Z"^^xsd:dateTime ;
+        adm:logMessage      "created record of place"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB99E8654FF743832
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:14:21.653Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from mountain to ri"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1KG5700  a         :Place ;
+        rdfs:seeAlso        bdr:MW1KG3381_164F45 ;
+        skos:altLabel       "khra spam brag gi ri/"@bo-x-ewts , "khra spam brag ri/"@bo-x-ewts ;
+        skos:prefLabel      "khra spam brag"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT94A94C31C5733A2F ;
+        :placeType          bdr:PT0042 .
+    
+    bdr:NT94A94C31C5733A2F
+        a                   :Note ;
+        :contentLocationStatement  "pp. 145-149" ;
+        :noteSource         bdr:MW1KG3381 ;
+        :noteText           "a sacred mountain in derge area"@en .
+}

@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3778 {
+    bda:G3778  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3778 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "1b/G3778.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3778 ;
+        adm:logEntry        bda:LG183813D4874EBAD2 , bda:LG37C3422C41390AE5 , bda:LG5861275605EC43D2 , bda:LG83BD74C93AE70486 , bda:LG94701DEB9A4ADAF3 , bda:LGD31ABC9CD18D20F9 , bda:LGEA8B2D348332E153 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG183813D4874EBAD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-25T15:01:18.8Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG37C3422C41390AE5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-26T10:15:55.955Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5861275605EC43D2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG83BD74C93AE70486
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-11T11:03:39.551Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG94701DEB9A4ADAF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-03T14:26:07.365Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD31ABC9CD18D20F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-20T15:14:33.663Z"^^xsd:dateTime ;
+        adm:logMessage      "added location as inner mongolia"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEA8B2D348332E153
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3778  a            :Place ;
+        skos:altLabel       "nang sog kya rod/"@bo-x-ewts ;
+        skos:prefLabel      "kya rod/"@bo-x-ewts ;
+        :contentLocationStatement  "samd sog gi khongs su gtogs par snyam pa dpyad rgyu/" ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G603 ;
+        :placeType          bdr:PT0081 .
+}

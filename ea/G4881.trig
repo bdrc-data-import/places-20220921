@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4881 {
+    bda:G4881  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4881 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ea/G4881.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4881 ;
+        adm:logEntry        bda:LG06A57CD6EEF94D92 , bda:LG96CE5C9EE6E5E091 , bda:LGA75BC003585D4E9E , bda:LGFBAA27302F8E9DED , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG06A57CD6EEF94D92
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-19T12:29:09.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG96CE5C9EE6E5E091
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA75BC003585D4E9E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-09T14:48:47.003Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFBAA27302F8E9DED
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-09T16:49:33.038Z"^^xsd:dateTime ;
+        adm:logMessage      "linked with P#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4881  a            :Place ;
+        skos:prefLabel      "a la rong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD48B1AD8AAE742F1 ;
+        :placeLocatedIn     bdr:G4880 ;
+        :placeType          bdr:PT0005 .
+    
+    bdr:NTD48B1AD8AAE742F1
+        a                   :Note ;
+        :noteText           "this is noted in some sources as the birthplace of the 4th karma pa rol pa'i rdo rje; rngod seems to have been in the 14th century a part of kong po"@en .
+}

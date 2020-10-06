@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1967 {
+    bda:G1967  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1967 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "dd/G1967.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1967 ;
+        adm:logEntry        bda:LG165BD9818BEEAEE9 , bda:LG4C84D77BF9FC5277 , bda:LG8815561FC06041AE , bda:LGB272DB6B4D267D70 , bda:LGDBC1A6ABACACAE09 , bda:LGEC2B35FEF3FBDD90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG165BD9818BEEAEE9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4C84D77BF9FC5277
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T10:08:17.994Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8815561FC06041AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T16:06:52.444Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB272DB6B4D267D70
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-21T16:57:56.323Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDBC1A6ABACACAE09
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGEC2B35FEF3FBDD90
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T15:23:42.342Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:G1967  a            :Place ;
+        skos:prefLabel      "bla brang bkra shis 'khyil rgyud pa grwa tshang /"@bo-x-ewts , "Labrang Tashikyil Gyupa Dratsang"@en ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G162 ;
+        :placeType          bdr:PT0040 .
+}

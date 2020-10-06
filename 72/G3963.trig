@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3963 {
+    bda:G3963  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3963 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "72/G3963.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3963 ;
+        adm:logEntry        bda:LG6A145A8F6D527DF8 , bda:LG87608CFD4DD02E44 , bda:LGFF5A276D8A533E38 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6A145A8F6D527DF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-16T14:11:41.478Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG87608CFD4DD02E44
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-11T10:27:25.983Z"^^xsd:dateTime ;
+        adm:logMessage      "added note from khams sde dge rgyal p'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFF5A276D8A533E38
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3963  a            :Place ;
+        skos:prefLabel      "dran thang ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT76F65BE2B7CCD2C0 , bdr:NTF4629F1EAFFD99C7 ;
+        :placeLocatedIn     bdr:G3957 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT76F65BE2B7CCD2C0
+        a                   :Note ;
+        :contentLocationStatement  "p. 148" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bka' brgyud monastery founded as one of the 18 dgon sde of 'dan yul stod smad by bstan pa tshe ring.\n\nformerly the monastery had more than 90 lamas and monks; now has about 30."@en .
+    
+    bdr:NTF4629F1EAFFD99C7
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 269-272" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "kaM tshang bka' brgyud monastery in rdza chu kha rdzong."@en .
+}

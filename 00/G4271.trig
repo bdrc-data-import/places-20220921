@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4271 {
+    bda:G4271  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4271 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "00/G4271.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4271 ;
+        adm:logEntry        bda:LG03ADBFCBBAFBE5AF , bda:LG1B7F246A754F966B , bda:LG2CF8CBD03986B614 , bda:LGBDE95364D0201EFB , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG03ADBFCBBAFBE5AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-21T13:36:37.159Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG1B7F246A754F966B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-21T13:50:54.844Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2CF8CBD03986B614
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-26T14:13:24.86Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBDE95364D0201EFB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4271  a            :Place ;
+        skos:altLabel       "dpa' shod gnas thang dgon/"@bo-x-ewts ;
+        skos:prefLabel      "gnas thang dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT130A36C91F1A75CE , bdr:NT626B12122DD275DA ;
+        :placeLocatedIn     bdr:G2181 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT130A36C91F1A75CE
+        a                   :Note ;
+        :contentLocationStatement  "p. 204" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "dge lugs monastery founded by lho pa rgyal mtshan seng+ge in dpa' shod rdzong.\napparently the founder was a disciple of tsong kha pa and is recorded as one of his students.\nin 1698 (sa stag) it had a complement of 40 monks.\nthe monastery is located near dpa' shod dgon."@en .
+    
+    bdr:NT626B12122DD275DA
+        a                   :Note ;
+        :contentLocationStatement  "v. 18, p. 259" ;
+        :noteSource         bdr:MW19813 ;
+        :noteText           "dge lugs pa monastery regarded as an affiliate of chab mdo"@en .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4490 {
+    bda:G4490  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4490 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "66/G4490.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4490 ;
+        adm:logEntry        bda:LG1051201BDCF87586 , bda:LG522A88B13ABBD687 , bda:LGAD252C46427D126E , bda:LGC18087C5A52107F2 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1051201BDCF87586
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG522A88B13ABBD687
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T14:45:25.403Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAD252C46427D126E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-03T11:30:29.266Z"^^xsd:dateTime ;
+        adm:logMessage      "added nepal"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGC18087C5A52107F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-17T09:52:34.006Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & event & Gis Coords & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVC3DA650D39A0F83A
+        a                   :PlaceFounded ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G4490  a            :Place ;
+        skos:altLabel       "phun tshogs gling /"@bo-x-ewts ;
+        skos:prefLabel      "klu brag dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT140D612661182E09 , bdr:NT1A8183CAE25F8DBA ;
+        :placeEvent         bdr:EVC3DA650D39A0F83A ;
+        :placeLat           "28.802140" ;
+        :placeLocatedIn     bdr:G4450 ;
+        :placeLong          "83.791877" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT140D612661182E09
+        a                   :Note ;
+        :noteText           "ancient bon monastery located in mustang district, nepal"@en .
+    
+    bdr:NT1A8183CAE25F8DBA
+        a                   :Note ;
+        :noteText           "Founded by Ka ru sGrub dbang bstan ’dzin rin chen"@en .
+}

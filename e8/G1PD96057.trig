@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD96057 {
+    bda:G1PD96057  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD96057 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "e8/G1PD96057.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD96057 ;
+        adm:logEntry        bda:LG3A535C69CC089980 , bda:LG51CB47211E008C85 , bda:LG64FCCEF726F26CF8 , bda:LG88AA13BF846F18C6 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632123218:88" ;
+        adm:place_id_lex    "632123218:275" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3A535C69CC089980
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-12-02T14:04:58.144Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG51CB47211E008C85
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-02T15:38:47.973Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG64FCCEF726F26CF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T14:33:21.772Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG88AA13BF846F18C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T12:32:47.386Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5FA50BB3C2FA36B0
+        a                   :PlaceFounded ;
+        :onYear             "1777"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1PD96057  a        :Place ;
+        skos:altLabel       "上营尕寺"@zh-hans , "东尔寺"@zh-hans , "shangyingga si"@zh-latn-pinyin-x-ndia , "shang ying tai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tsong thar ri khrod/"@bo-x-ewts , "上营尕寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFBD83AF52C63E6C8 ;
+        :isRoot             true ;
+        :note               bdr:NT4672BE1D259C701C ;
+        :placeEvent         bdr:EV5FA50BB3C2FA36B0 ;
+        :placeGonpaPerEcumen  "6.34" ;
+        :placeLat           "36.36198" ;
+        :placeLocatedIn     bdr:G1PD5303 ;
+        :placeLong          "102.13000" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:IDFBD83AF52C63E6C8
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD96057" .
+    
+    bdr:NT4672BE1D259C701C
+        a                   :Note ;
+        :contentLocationStatement  "p. 54" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་1967ལོར་གཏོར་ནས་དེང་རྩ་མེད་དུ་གྱུར་ཅེས་འཁོད།"@bo .
+}

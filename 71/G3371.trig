@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3371 {
+    bda:G3371  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3371 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "71/G3371.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3371 ;
+        adm:logEntry        bda:LG2CFE47721A664D19 , bda:LGA18D8320326AE64F , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2CFE47721A664D19
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA18D8320326AE64F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-20T12:30:30.63Z"^^xsd:dateTime ;
+        adm:logMessage      "added events & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV00DBDB1E89EF319A
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1578 ;
+        :notAfter           "1099"^^xsd:gYear ;
+        :notBefore          "1000"^^xsd:gYear .
+    
+    bdr:EV1F9ED4B40BDCE09E
+        a                   :PlaceConverted ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV641CD9964DBFD522
+        a                   :PlaceFounded ;
+        :notAfter           "0999"^^xsd:gYear ;
+        :notBefore          "0900"^^xsd:gYear .
+    
+    bdr:G3371  a            :Place ;
+        skos:altLabel       "yer pa ba rang dgon/"@bo-x-ewts ;
+        skos:prefLabel      "yer pa ba rang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT35757A6455D50688 ;
+        :placeEvent         bdr:EV00DBDB1E89EF319A , bdr:EV1F9ED4B40BDCE09E , bdr:EV641CD9964DBFD522 ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3372 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT35757A6455D50688
+        a                   :Note ;
+        :contentLocationStatement  "p. 109" ;
+        :noteSource         bdr:MW23664 .
+}

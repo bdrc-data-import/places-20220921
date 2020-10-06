@@ -1,0 +1,159 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G36 {
+    bda:G36  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G36 ;
+        adm:facetIndex      22 ;
+        adm:gitPath         "79/G36.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G36 ;
+        adm:logEntry        bda:LG2B2B030028B1DF35 , bda:LG38E502BCBC96FF34 , bda:LG5F53073B30BCD2E8 , bda:LG6FEACF1A5B2C4632 , bda:LG8C4CC30A8A72F6AA , bda:LGA5AD874B0075BB87 , bda:LGB62D3C137A7E4870 , bda:LGC4C7799BB8B0BCCE , bda:LGC5CD9625A193FE85 , bda:LGFA6EE8DE8F10EE8C , bda:LGFD79752F1E2CCAA1 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330203:133" ;
+        adm:place_id_lex    "513330203:133" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2B2B030028B1DF35
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-05-17T16:38:44.221Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG38E502BCBC96FF34
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-01T14:10:04.875Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG5F53073B30BCD2E8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6FEACF1A5B2C4632
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-07-10T17:01:10.634Z"^^xsd:dateTime ;
+        adm:logMessage      "added records and notes"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LG8C4CC30A8A72F6AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-24T10:58:59.499Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA5AD874B0075BB87
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-09T09:30:42.822Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB62D3C137A7E4870
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T10:56:34.739Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC4C7799BB8B0BCCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:50:06.718Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00009 .
+    
+    bda:LGC5CD9625A193FE85
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-26T16:55:38.128Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGFA6EE8DE8F10EE8C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-10T09:30:28.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFD79752F1E2CCAA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-09T16:41:35.804Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid pa'i lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0AA9FD2B4F1871F7
+        a                   :PlaceFounded ;
+        :onYear             "1727"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:EVBCC87A0C7BE6A2B0
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P956 ;
+        :onYear             "1717"^^xsd:gYear .
+    
+    bdr:G36  a              :Place ;
+        skos:altLabel       "dpal spungs chos 'khor gling /"@bo-x-ewts , "dpal spungs thub bstan chos 'khor gling /"@bo-x-ewts , "sde dge dpal spungs dgon pa/"@bo-x-ewts , "thub bstan chos 'khor gling /"@bo-x-ewts , "八蚌寺"@zh-hans , "babang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpal spungs dgon pa/"@bo-x-ewts , "八帮寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF2E17B4637C8B594 ;
+        :isRoot             true ;
+        :note               bdr:NT20B81DAF88B81713 , bdr:NT7BC655A0277C95F6 , bdr:NT992A6B94E5180567 , bdr:NTCA94FC3B77A9900C , bdr:NTDEDD3FE261C1F9DE ;
+        :placeContains      bdr:G37 , bdr:G3JT12497 ;
+        :placeEvent         bdr:EV0AA9FD2B4F1871F7 , bdr:EVBCC87A0C7BE6A2B0 ;
+        :placeGonpaPerEcumen  "8.26" ;
+        :placeIsNear        bdr:G37 , bdr:G3JT12602 ;
+        :placeLat           "31.65000" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "98.78333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF2E17B4637C8B594
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G36" .
+    
+    bdr:NT20B81DAF88B81713
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 555-590" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "དགོན་གནས་འདིར་དུས་རབས་བཅུ་གསུམ་པར་དཔལ་ལྡན་བྱང་ཆུབ་གླིང་ངམ་སྤེའུ་བྱང་ཆུབ་གླིང་ཞེས་པའི་འབྲི་གུང་བཀའ་བརྒྱུད་ཀྱི་དགོན་པ་ཞིག་ཐོག་མར་ཆགས་ཤིང་། དེ་རྗེས་གྲུབ་མཐའ་ས་སྐྱར་བསྒྱུར་ཞིང་མཐར་མེས་འཇིགས་ནས་རྩ་མེད་དུ་སོང་། ཕྱིས་དུས་རབས་བཅོ་བརྒྱད་པར་གཞི་ནས་དཔལ་སྤུངས་དགོན་འདི་ཆགས་པ་སོགས། ཞིབ་ཆའི་ལོ་རྒྱུས་གནད་ཚང་ཞིག་འདིར་གསལ།"@bo .
+    
+    bdr:NT7BC655A0277C95F6
+        a                   :Note ;
+        :contentLocationStatement  "p. 145" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bka' brgyud monastery located in sde dge territories; according to tradition founded in the 13th century by dpal ldan byang chub gling pa, a disciple of 'bri gung 'jig rten mgon po; the monastery was first a 'bri gung establishment; formerly had over 500 monks; now hosts a mkhan po and a sprul sku and about 175 monks."@en .
+    
+    bdr:NT992A6B94E5180567
+        a                   :Note ;
+        :contentLocationStatement  "311" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "bshad grwa:   Established by tA'i si tu pad+ma dbang mchog rgyal po\n- First chair held by mkhan po gzhan dga' rin po che\n-Alumni includes: \nzur mang pad+ma rnam rgyal (who in turn founded zur mang rnam rgyal rtse'i bshad grwa)\n 'bo gangs dkar sprul sku\nlug ru mkhan chen\nra cab mkhan chen \nrdzi sgar kong sprul"@en .
+    
+    bdr:NTCA94FC3B77A9900C
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 555" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "karma bka' brgyud pa monastery; the seat of the ta'i si tu incarnations"@en .
+    
+    bdr:NTDEDD3FE261C1F9DE
+        a                   :Note ;
+        :noteText           "founded by ta'i si tu 8 chos kyi byung gnas in 1717"@en .
+}

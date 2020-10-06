@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1665 {
+    bda:G1665  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1665 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "c0/G1665.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1665 ;
+        adm:logEntry        bda:LG062E720448559753 , bda:LG74096497BF520152 , bda:LG92B20D7850F8CEE7 , bda:LG982FC7568CCCF3CC , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330220:154" ;
+        adm:place_id_lex    "513330220:154" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG062E720448559753
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-24T16:46:42.95Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG74096497BF520152
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-07T14:44:49.287Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG92B20D7850F8CEE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-19T15:15:57.985Z"^^xsd:dateTime ;
+        adm:logMessage      "added G3JT12527"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG982FC7568CCCF3CC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV955644E0136DED9A
+        a                   :PlaceFounded ;
+        :onYear             "0950"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1665  a            :Place ;
+        skos:altLabel       "bkra shis phun tshogs gling /"@bo-x-ewts , "khro tshang dar rgyas dgon pa/"@bo-x-ewts , "sde dge khro tshang dgon/"@bo-x-ewts , "cuotong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "khro tshang dgon/"@bo-x-ewts , "措通寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA27A856CB26F1431 ;
+        :isRoot             true ;
+        :note               bdr:NT248FE181F433FED2 , bdr:NT35254A0A31CF707B ;
+        :placeContains      bdr:G3JT12527 ;
+        :placeEvent         bdr:EV955644E0136DED9A ;
+        :placeGonpaPerEcumen  "5.49" ;
+        :placeLat           "32.30000" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "98.93333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA27A856CB26F1431
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1665" .
+    
+    bdr:NT248FE181F433FED2
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 616" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "bon po monastery\nདགོན་འདིའི་ལོ་རྒྱུས་མདོར་བསྡུས་གསལ།"@en .
+    
+    bdr:NT35254A0A31CF707B
+        a                   :Note ;
+        :contentLocationStatement  "p. 156" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bon monastery; this monastery is alleged to be very ancient founded by the teacher and student 'bangs ri ba nam mkha' thogs rdugs and grub chen bkra shis rgyal mtshan who established the sgrub khang bang rim can sometime about 100 ad; during the phyi dar, rje btsun khro tshang 'brug lha who was born in 961 established the khro tshang monastery"@en .
+}

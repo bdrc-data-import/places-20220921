@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G503 {
+    bda:G503  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G503 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6c/G503.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G503 ;
+        adm:logEntry        bda:LG4F33EE88976BF434 , bda:LG9270CA1E59E05ECB , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4F33EE88976BF434
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9270CA1E59E05ECB
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-16T16:31:11.077Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVDCE6B0A194BC7AEA
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P4688 .
+    
+    bdr:G503  a             :Place ;
+        skos:altLabel       "thang 'brog grwa tshang (kong po)"@bo-x-ewts ;
+        skos:prefLabel      "kong po thang 'brog grwa tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT14D1E5C5C1E618D5 , bdr:NTFB0FBA7D6683B274 ;
+        :placeEvent         bdr:EVDCE6B0A194BC7AEA ;
+        :placeLocatedIn     bdr:G640 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT14D1E5C5C1E618D5
+        a                   :Note ;
+        :contentLocationStatement  "p. 280" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "once an important rnying ma teaching establishment in kong po; place of study of lha btsun nam mkha' 'jigs med"@en .
+    
+    bdr:NTFB0FBA7D6683B274
+        a                   :Note ;
+        :noteText           "founded by mtshungs med bstan 'dzin rdo rje"@en .
+}

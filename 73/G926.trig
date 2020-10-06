@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G926 {
+    bda:G926  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G926 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "73/G926.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G926 ;
+        adm:logEntry        bda:LG58D3487565203C60 , bda:LGA09207D75AAF88BC , bda:LGB6EA9D6A015EE6CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:C2CN11024 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG58D3487565203C60
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA09207D75AAF88BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T09:32:57.673Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB6EA9D6A015EE6CE
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-01-28T11:58:54.633Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of C2CN11024"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G926  a             :Place ;
+        skos:prefLabel      "shud bu lineage"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0DB0134CA4DA8F48 .
+    
+    bdr:NT0DB0134CA4DA8F48
+        a                   :Note ;
+        :noteText           "withdrawn in favor of C2CN11024 \nsee C2CN11024"@en .
+}

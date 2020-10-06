@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4780 {
+    bda:G4780  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4780 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "4c/G4780.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4780 ;
+        adm:logEntry        bda:LG0A7D2129CE43322E , bda:LG3EFB56288192536C , bda:LG85AD8C98285DE8EB , bda:LGE8F8280A690DA8B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A7D2129CE43322E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3EFB56288192536C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-13T16:38:39.758Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, location & sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG85AD8C98285DE8EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-27T10:20:33.208Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE8F8280A690DA8B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVEAD08983297EB573
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G4780  a            :Place ;
+        skos:altLabel       "bsam 'grub chos ldeng /"@bo-x-ewts , "bsam 'grub chos sding /"@bo-x-ewts , "lding pa che'i dgon pa/"@bo-x-ewts , "sgrol ma ba'i gdan sa/"@bo-x-ewts ;
+        skos:prefLabel      "bsam 'grub chos lding /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4E534F8A251D651E ;
+        :placeEvent         bdr:EVEAD08983297EB573 ;
+        :placeLocatedIn     bdr:G2170 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT4E534F8A251D651E
+        a                   :Note ;
+        :contentLocationStatement  "p. 351" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "small rnying ma establishment located in the vicinity of gzhis ka rtse"@en .
+}

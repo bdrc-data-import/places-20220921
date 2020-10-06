@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN455 {
+    bda:G3CN455  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN455 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "08/G3CN455.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN455 ;
+        adm:logEntry        bda:LG31B7DB692901D474 , bda:LGD0F0778B8173CC3E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG31B7DB692901D474
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-07T14:24:28.002Z"^^xsd:dateTime ;
+        adm:logMessage      "edited location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD0F0778B8173CC3E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-03T16:23:06.063Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added locations & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN455  a          :Place ;
+        skos:prefLabel      "mkhar chen brag dkar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA6702FC15761FEDB ;
+        :placeLocatedIn     bdr:G3162 , bdr:G3CN465 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NTA6702FC15761FEDB
+        a                   :Note ;
+        :contentLocationStatement  "p. 58-61, P. 544-545" ;
+        :noteSource         bdr:MW25995 ;
+        :noteText           "བོན་གྱི་འདུ་གནས་སོ་བདུན་ལས། རུ་ལག་གི་འདུ་གནས་དགུ་ཡི་གསུམ་པ་ནི་མཁར་ཆེན་བྲག་དཀར་ཡིན་ཏེ། དེ་ཡང་འབྲིག་མཚམས་༼འབྲི་མཚམས་༽ཕྱོགས་ཏེ་དེང་སང་བྲག་དམར་ཟེར་བར་གནས་པ་གསལ།"@bo .
+}

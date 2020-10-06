@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1692 {
+    bda:G1KR1692  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1692 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "8a/G1KR1692.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1692 ;
+        adm:logEntry        bda:LGF252A5EAE3E5C4E3 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542423209:437" ;
+        adm:place_id_lex    "542423209:437" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGF252A5EAE3E5C4E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-08T11:31:07.038Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in tibetan & Gis Coords & events & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV0374D87F0AA4A633
+        a                   :PlaceFounded ;
+        :onYear             "1697"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1692  a         :Place ;
+        skos:altLabel       "sen tsha dga' ri dgon/"@bo-x-ewts , "嘎如寺"@zh-hans , "gari si"@zh-latn-pinyin-x-ndia , "garu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dga' ri dgon/"@bo-x-ewts , "嘎日寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF7226850F7A650F2 ;
+        :isRoot             true ;
+        :note               bdr:NT1BB868DBFF6A754D , bdr:NT442ABDC327ED996B , bdr:NT971953441B9B07C4 ;
+        :placeEvent         bdr:EV0374D87F0AA4A633 ;
+        :placeGonpaPerEcumen  "2.7" ;
+        :placeLat           "31.196862" ;
+        :placeLocatedIn     bdr:G2386 ;
+        :placeLong          "93.733782" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF7226850F7A650F2
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1692" .
+    
+    bdr:NT1BB868DBFF6A754D
+        a                   :Note ;
+        :contentLocationStatement  "p. 87-89" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "དགོན་འདི་གཡང་ཤོད་ཤང་ཁོངས་ཀྱི་རྒྱལ་ཆུའི་ཕ་རོལ་ཏུ་གནས། ༡༦༩༧ལོའི་ཡས་མས་སུ་མཁས་བཙུན་བསམ་གཏན་ཉི་མས་སྒྲུབ་གནས་སུ་ཕྱག་བཏབ། ༡༩༤༠ལོར་ཀོང་པོ་སྲིད་རྒྱལ་དགོན་ཆེན་གྱི་སྤྲུལ་སྐུ་བསྟན་པའི་ཉི་མ་དགའ་རི་དགོན་འདིར་དབེན་མཚམས་ལ་བཞུགས་པ་སོགས་གསལ།"@bo .
+    
+    bdr:NT442ABDC327ED996B
+        a                   :Note ;
+        :noteText           "One of the sacred sites of phur pa. Said that there are tracks of a tiger, snow lion, garuda, and a dragon at each direction of the monastery.\n\n1 lama -  15 monks"@en .
+    
+    bdr:NT971953441B9B07C4
+        a                   :Note ;
+        :contentLocationStatement  "p. 390, 416" ;
+        :noteSource         bdr:MW23671 ;
+        :noteText           "bon monastery restored in 1986.\ncomplement of 20 monks.\nrestored through the efforts of bkra shis lha rnam.\n\nsource also mentions a sen tsha dgon, a bon monastery of 45 monks, restored in 1989, by nyams dga' and thub dga', the head lama of which is thub dga'.\n\n{this note moved from G3423(dup.)}"@en .
+}

@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1649 {
+    bda:G1649  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1649 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "4d/G1649.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1649 ;
+        adm:logEntry        bda:LG2385E363D295915B , bda:LG36B034FCEB74260D , bda:LG408CC7CA46849C31 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330219:140" ;
+        adm:place_id_lex    "513330219:140" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2385E363D295915B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-12T05:00:33.229Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG36B034FCEB74260D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG408CC7CA46849C31
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-19T15:04:05.164Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & events"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0678611164F09FF9
+        a                   :PlaceFounded ;
+        :onYear             "1474"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EV386C8DBFE6F6216D
+        a                   :PlaceRebuilt ;
+        :onYear             "1874"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EVF7396F38AAC31D98
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P487 ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:G1649  a            :Place ;
+        skos:altLabel       "dpal 'jam dbyangs bkra shis chos gling /"@bo-x-ewts , "rdzong zla dgon/"@bo-x-ewts , "sde dge bzang zla dgon/"@bo-x-ewts , "rongda si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bzang zla dgon/"@bo-x-ewts , "绒达寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID995CD5F6DEAD99E1 ;
+        :isRoot             true ;
+        :note               bdr:NT52216E678AA9A609 , bdr:NTA1A2B4AD73463283 ;
+        :placeEvent         bdr:EV0678611164F09FF9 , bdr:EV386C8DBFE6F6216D , bdr:EVF7396F38AAC31D98 ;
+        :placeGonpaPerEcumen  "14" ;
+        :placeLat           "32.16667" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "99.35000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID995CD5F6DEAD99E1
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1649" .
+    
+    bdr:NT52216E678AA9A609
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 460" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "sa skya monastery"@en .
+    
+    bdr:NTA1A2B4AD73463283
+        a                   :Note ;
+        :contentLocationStatement  "p. 123" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "sa skya monastery in sde dge territory founded in 1467 (rab byung 8 me khyi) by bdag chen blo gros rgyal mtshan when he was 23 years of age. orthography given in this source in rdzong zla dgon.\n\nnow has about 60 monks and lamas."@en .
+}

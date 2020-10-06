@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3494 {
+    bda:G3494  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3494 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "a6/G3494.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3494 ;
+        adm:logEntry        bda:LG04CE786E23E2A9D5 , bda:LG2EF40C733547A6D6 , bda:LG6E144C1606EFE904 , bda:LGEB8D4D10E027F3DE , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513326101:480" ;
+        adm:place_id_lex    "513326101:480" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04CE786E23E2A9D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-28T11:44:54.438Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG2EF40C733547A6D6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6E144C1606EFE904
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-01T11:48:27.832Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEB8D4D10E027F3DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-03T11:39:35.785Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVB2D0A503AD1313BD
+        a                   :PlaceFounded ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3494  a            :Place ;
+        skos:altLabel       "'ga' thar chos sde/"@bo-x-ewts , "mgar thar byams pa gling /"@bo-x-ewts , "mgar thar dgon byams pa gling /"@bo-x-ewts , "嘎达向巴林"@zh-hans , "gada xiangbalin"@zh-latn-pinyin-x-ndia , "huiyuan si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mgar thar dgon/"@bo-x-ewts , "慧远寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID028B173E4F26AE71 ;
+        :isRoot             true ;
+        :note               bdr:NTB59F303294FA6391 , bdr:NTE06BEF6563CCCF14 ;
+        :placeEvent         bdr:EVB2D0A503AD1313BD ;
+        :placeGonpaPerEcumen  "13.1" ;
+        :placeLat           "30.48333" ;
+        :placeLocatedIn     bdr:G2298 ;
+        :placeLong          "101.48333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID028B173E4F26AE71
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3494" .
+    
+    bdr:NTB59F303294FA6391
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 626-631" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs monastery in rta'u rdzong"@en .
+    
+    bdr:NTE06BEF6563CCCF14
+        a                   :Note ;
+        :noteText           "dge lugs pa monastery in khams mi nyag built by the qianlong emperor for the seventh dalai lama, who spent seven years in exile there in the early eighteenth century"@en .
+}

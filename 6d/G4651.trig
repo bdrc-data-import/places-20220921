@@ -1,0 +1,122 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4651 {
+    bda:G4651  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4651 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "6d/G4651.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4651 ;
+        adm:logEntry        bda:LG03D1295AC96D9378 , bda:LG1B4E593DF102DF3A , bda:LG87519FF6E66F2C85 , bda:LGDC2DF93A85096DE5 , bda:LGDCEFEC3CCC326312 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632126203:129" ;
+        adm:place_id_lex    "632126203:7" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG03D1295AC96D9378
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG1B4E593DF102DF3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:32.005Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG87519FF6E66F2C85
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-07T16:32:30.852Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGDC2DF93A85096DE5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-06T08:57:03.66Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDCEFEC3CCC326312
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T09:07:04.459Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0183E3D3B52E0DD9
+        a                   :PlaceConverted ;
+        :onYear             "1584"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV28DCC942167A8183
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1523 ;
+        :notAfter           "0999"^^xsd:gYear ;
+        :notBefore          "0900"^^xsd:gYear .
+    
+    bdr:EV677FBD2430E2C1A2
+        a                   :PlaceFounded ;
+        :note               bdr:NTF739FE928EFB0BF6 ;
+        :onYear             "0950"^^xsd:gYear .
+    
+    bdr:G4651  a            :Place ;
+        skos:altLabel       "baima si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dmar gtsang brag dgon pa/"@bo-x-ewts , "Martsangdrag Gonpa"@en-x-mixed , "白马寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA77732AC443C0EF4 ;
+        :isRoot             true ;
+        :note               bdr:NT320D1F5873396A89 , bdr:NT99028BB997425705 , bdr:NTC0DA4E628B439B1D ;
+        :placeEvent         bdr:EV0183E3D3B52E0DD9 , bdr:EV28DCC942167A8183 , bdr:EV677FBD2430E2C1A2 ;
+        :placeGonpaPerEcumen  "17.27" ;
+        :placeLat           "36.59996" ;
+        :placeLocatedIn     bdr:G1PD96101 ;
+        :placeLong          "102.18059" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA77732AC443C0EF4
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4651" .
+    
+    bdr:NT320D1F5873396A89
+        a                   :Note ;
+        :contentLocationStatement  "p. 79" ;
+        :noteSource         bdr:MW1PD95675 .
+    
+    bdr:NT99028BB997425705
+        a                   :Note ;
+        :contentLocationStatement  "pp. 96-97" ;
+        :noteSource         bdr:MW29190 ;
+        :noteText           "description of this monastery located 36 km to the east of xining city, in hu'u kru'u rdzong on the brag dmar lung mdo'i brag across the tsong chu  from phin an rdzong mkhar\nthe monastery's name in chinese is pe mA zi"@en .
+    
+    bdr:NTC0DA4E628B439B1D
+        a                   :Note ;
+        :contentLocationStatement  "p. 54" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "monastery in a mdo; connected with the 10th century vinaya masters, dmar shAkya mu ni and gtsang rab gsal; said to have been founded by bla chen dgongs pa rab gsal\n\n'di ni dmar shAkya mu ni dang gtsang rab gsal gnyis kyi bzhugs gnas yin bas mtshan de ltar thogs shing/ gnas 'dir bla chen dgongs pa rab gsal gyis gtsug lag khang bzhengs/ dge 'dun gyi sde btsugs/ sku mya ngan las 'das pa'i sku gdung ril po la phyi nas sman 'dam gyis byugs te sku brnyan bzhengs pa yin mdzod spu'i rnam pa gsal ba dang/ sku la gsol ba'i na bza' la skyid dregs chags shing/ thugs ka'i thad du reg na drod yod pa lta bu'i nyams dang zhal ras kyi mdangs la mthong snang mi 'dra ba 'byung ba dang/ skabs 'gar rngul chu thon zhing/ sku mdangs smug po byung na yul khams 'khrugs pa sogs mi shis pa 'byung ba dang/ mdangs bzang zhing dri zhim po byung na yul phyogs su bkra shis pa/ g.yon gyi lha khang chung ngur phyag rdor gyi tshab la lha lung dpal rdor g.yas thugs kar rdo rje dang/ g.yon mnyam bzhag/ rdo rje skyil krung dang gos sngon gyi na bza' can gyis byas pa'i rigs gsum mgon po/ kha skong gi hwa shang gnyis kyi 'dra sku gcig smag chas zhwa 'bog bsnams pa thugs kar thal sbyar/ gcig phu dung gi steng du chos gos gyon ba phyag gnyis thugs kar bsnol thabs la mnyam pa'i stabs kyis bzhengs/ g.yas ngos su byams pa rang byon du grags pa'i brag ri ring po/ dmar gtsang grong sde gong 'og gnyis ka'i lha khang so sor dus gsum sangs rgyas kyi sku mi tshad tsam re re bzhugs/ (p. 54)"@en .
+    
+    bdr:NTF739FE928EFB0BF6
+        a                   :Note ;
+        :noteText           "no-sect"@en .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4888 {
+    bda:G4888  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4888 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9a/G4888.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4888 ;
+        adm:logEntry        bda:LG1D6101F273D98CBD , bda:LG50221CA2EE5F11FE , bda:LGDD18422A37CA007C , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1D6101F273D98CBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-14T16:27:29.377Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG50221CA2EE5F11FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-18T16:29:48.175Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDD18422A37CA007C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4888  a            :Place ;
+        skos:altLabel       "li khog ma/"@bo-x-ewts ;
+        skos:prefLabel      "li khog"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE3C359BA640C2CB7 ;
+        :placeLocatedIn     bdr:G1033 ;
+        :placeType          bdr:PT0079 .
+    
+    bdr:NTE3C359BA640C2CB7
+        a                   :Note ;
+        :noteText           "traditional area on the border of zal mo sgang in shar rgyal mo rong and mi nyag rab sgang"@en .
+}

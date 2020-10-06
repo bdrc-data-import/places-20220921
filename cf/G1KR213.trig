@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR213 {
+    bda:G1KR213  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR213 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "cf/G1KR213.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR213 ;
+        adm:logEntry        bda:LGB79679E1CBF42769 , bda:LGC44DD630DBEBC7D9 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513232201:177" ;
+        adm:place_id_lex    "513232201:177" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGB79679E1CBF42769
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-11T10:01:22.692Z"^^xsd:dateTime ;
+        adm:logMessage      "added se ra bshad sgrub gling gi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC44DD630DBEBC7D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-08T12:33:23.089Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV1517AC299E4F889B
+        a                   :PlaceFounded ;
+        :onYear             "1712"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1KR213  a          :Place ;
+        skos:altLabel       "bshad sgrub dar rgyas gling /"@bo-x-ewts , "se ra bshad sgrub dar rgyas gling /"@bo-x-ewts , "se ra dgon/"@bo-x-ewts , "若尔盖县色拉寺"@zh-hans , "ruoergai sela si"@zh-latn-pinyin-x-ndia , "sela si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mdzod dge se ra dgon/"@bo-x-ewts , "色拉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID65212AFE7088FDBD ;
+        :isRoot             true ;
+        :placeContains      bdr:G3JT12582 ;
+        :placeEvent         bdr:EV1517AC299E4F889B ;
+        :placeGonpaPerEcumen  "1.19" ;
+        :placeLat           "33.76470" ;
+        :placeLocatedIn     bdr:G299 ;
+        :placeLong          "103.02755" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID65212AFE7088FDBD
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR213" .
+}

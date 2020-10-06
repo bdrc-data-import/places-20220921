@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4532 {
+    bda:G4532  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4532 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "46/G4532.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4532 ;
+        adm:logEntry        bda:LG8B38BC403E63ABEF , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632322209:335" ;
+        adm:place_id_lex    "632322209:335" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8B38BC403E63ABEF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA67C31D68BEC4363
+        a                   :PlaceFounded ;
+        :onYear             "1836"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4532  a            :Place ;
+        skos:altLabel       "a yag dgon gsar/"@bo-x-ewts , "贡赛寺/官色寺"@zh-hans , "guansai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "a yag dgon gsar/"@bo-x-ewts , "官赛寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID79C3EA5929B3D1FD ;
+        :isRoot             true ;
+        :note               bdr:NT256AF1B92D57215A ;
+        :placeEvent         bdr:EVA67C31D68BEC4363 ;
+        :placeGonpaPerEcumen  "4.91" ;
+        :placeLat           "35.78097" ;
+        :placeLocatedIn     bdr:G1715 ;
+        :placeLong          "101.69257" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID79C3EA5929B3D1FD
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4532" .
+    
+    bdr:NT256AF1B92D57215A
+        a                   :Note ;
+        :contentLocationStatement  "p. 302" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "monastery in the khri ka arear of a mdo\n\n\"a yag dgon gsar \ndme kya'i hor mor 'khrungs pa hor mo'i sgom rgan gyis dgon lung phur mtshams khang brtsigs te tshe dang sgrub pa snyoms/ paN chen dpal ldan ye shes rgya nag tu phebs dus nyid kyi sku tshab bla ma zhig dgos zhus par khyed tsho'i yul na hor mo'i sgom rgan zer ba zhig yod dam gsungs/ yod zhus pas/ de las lhag pa'i bla ma mi dgos gsungs par brten thams cad kyis gus 'dud lhur blangs/ de'i sprul sku a yag sbyin pa rgya mtshos dme kya dang chos tsha'i grwa ba bsdus/ 'du khang grwa khang bcas phibs te gshong mo cher dgon pa btab/ de'i sprul sku blo bzang shes rab kyis gzims khang ma gtogs 'du khang grwa shag bcas o 'jung gi sar spos te dgon gsar bkra shis rab brtan gling btab/ de'i sprul sku blo bzang bstan dar 'jigs med kyis thar shul dpon slob kyi bka' bzhin gshong mo che dang nye bar dgon pa spos te rje de nyid la phul bar/ rin chen dge 'phel zhes pa'i mtshan bstsal\""@en .
+}

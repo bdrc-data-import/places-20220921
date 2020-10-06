@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1797 {
+    bda:G1797  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1797 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/G1797.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1797 ;
+        adm:logEntry        bda:LG1A04DF457D46BA2F , bda:LGAE39C87AB9A049C7 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1A04DF457D46BA2F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAE39C87AB9A049C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T14:37:15.422Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1797  a            :Place ;
+        skos:altLabel       "pong yu dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "rtsis mda' dgon/"@bo-x-ewts , "Tsida Gon"@en ;
+        :isRoot             true ;
+        :note               bdr:NTD4A60ED17E7FE0E7 ;
+        :placeLocatedIn     bdr:G1761 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTD4A60ED17E7FE0E7
+        a                   :Note ;
+        :contentLocationStatement  "p. 154" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "rnying ma pa monastery of the kaH thog tradition located in smar khog zhang\nfounded by a pang gter ston dpa' bo chos dbyings rdo rje"@en .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4578 {
+    bda:G4578  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4578 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fc/G4578.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4578 ;
+        adm:logEntry        bda:LGC6E60A676642DDBA , bda:LGD99ED016BBD32B75 , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540121205:540121109" ;
+        adm:place_id_lex    "540121205:540121109" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC6E60A676642DDBA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD99ED016BBD32B75
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-02T11:47:18.349Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV779DFAE529E6336C
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G4578  a            :Place ;
+        skos:altLabel       "Rakma Chamkang"@bo-x-phon-en , "rema qiangkang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rag ma byams khang /"@bo-x-ewts , "热玛强康寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDE26D00744435576 ;
+        :isRoot             true ;
+        :note               bdr:NT14545B87B9B22A4C ;
+        :placeEvent         bdr:EV779DFAE529E6336C ;
+        :placeGonpaPerEcumen  "14.65" ;
+        :placeLat           "29.93676" ;
+        :placeLocatedIn     bdr:G2127 ;
+        :placeLong          "91.02466" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:IDDE26D00744435576
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4578" .
+    
+    bdr:NT14545B87B9B22A4C
+        a                   :Note ;
+        :contentLocationStatement  "p. 2, pp. 175-177" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

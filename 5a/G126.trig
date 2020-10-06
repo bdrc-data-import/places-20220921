@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G126 {
+    bda:G126  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G126 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "5a/G126.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G126 ;
+        adm:logEntry        bda:LG2161E788A36568DB , bda:LG7B8E5EFC4D879C4C , bda:LG7DEE1EF6AD1AC595 , bda:LGABCEF534995A474D , bda:LGB8E3D2CAD8510C57 , bda:LGD89C00ACBDA5BD53 , bda:LGF6979A3B08F06819 , bda:LGFC243E0B93CC4DFD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2161E788A36568DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7B8E5EFC4D879C4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T09:29:44.193Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type to GrwaTshang"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7DEE1EF6AD1AC595
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T15:25:56.581Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGABCEF534995A474D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB8E3D2CAD8510C57
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-06-23T13:40:29.655Z"^^xsd:dateTime ;
+        adm:logMessage      "new khams tshan added and incarnation bla brang"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD89C00ACBDA5BD53
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-06-23T13:26:31.494Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF6979A3B08F06819
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-06-23T12:00:01.746Z"^^xsd:dateTime ;
+        adm:logMessage      "new khams tshan created; added incarnation house"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFC243E0B93CC4DFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:36:48.209Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G126  a             :Place ;
+        skos:altLabel       "blo gsal gling grwa tshang /"@bo-x-ewts ;
+        skos:prefLabel      "'bras spungs blo gsal gling grwa tshang /"@bo-x-ewts , "Drepung Loseling Dratsang"@en ;
+        :isRoot             true ;
+        :note               bdr:NTC5756D0D3DAF4B66 ;
+        :placeContains      bdr:G127 , bdr:G128 , bdr:G129 , bdr:G130 , bdr:G131 , bdr:G132 , bdr:G133 , bdr:G134 , bdr:G135 , bdr:G136 , bdr:G137 , bdr:G138 , bdr:G139 , bdr:G140 , bdr:G141 , bdr:G142 , bdr:G143 , bdr:G144 , bdr:G145 , bdr:G146 , bdr:G147 , bdr:G148 , bdr:G149 , bdr:G150 , bdr:G151 , bdr:G152 , bdr:G2CN10843 , bdr:G2GS1124 , bdr:G2GS1125 , bdr:G2GS1126 ;
+        :placeLocatedIn     bdr:G108 ;
+        :placeType          bdr:PT0040 .
+    
+    bdr:NTC5756D0D3DAF4B66
+        a                   :Note ;
+        :noteText           "one of the major colleges of 'bras spungs monastery"@en .
+}

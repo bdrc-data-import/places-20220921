@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN12 {
+    bda:G3CN12  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN12 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3b/G3CN12.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN12 ;
+        adm:logEntry        bda:LG1C57D3761256C690 , bda:LG468137E2EB617B9C , bda:LGB4D54CD412136F1A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1C57D3761256C690
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T11:12:55.459Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG468137E2EB617B9C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-02T10:34:05.684Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB4D54CD412136F1A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-12T16:58:49.803Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV8BD81C23F06C2D76
+        a                   :PlaceFounded ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear .
+    
+    bdr:G3CN12  a           :Place ;
+        skos:prefLabel      "chu mig khri skor/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFECC098E69E052AA ;
+        :placeContains      bdr:G3CN454 ;
+        :placeEvent         bdr:EV8BD81C23F06C2D76 ;
+        :placeLocatedIn     bdr:G3CN10 ;
+        :placeType          bdr:PT0046 .
+    
+    bdr:NTFECC098E69E052AA
+        a                   :Note ;
+        :contentLocationStatement  "p.346" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "ཁྲི་སྐོར་བཅུ་གསུམ་སྐོར་མདོ་ཙམ་གསལ།"@bo .
+}

@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00JR3351 {
+    bda:G00JR3351  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00JR3351 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "85/G00JR3351.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00JR3351 ;
+        adm:logEntry        bda:LG3DA27876BB0CA662 , bda:LGBF8D1EB30EE253C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG3DA27876BB0CA662
+        a                   adm:WithdrawData ;
+        adm:logDate         "2006-12-14T15:26:09.272Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGBF8D1EB30EE253C1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-14T15:20:58.897Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bdr:G00JR3351  a        :Place ;
+        skos:prefLabel      "mang yul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFBA6EA24BEE40CD5 .
+    
+    bdr:NTFBA6EA24BEE40CD5
+        a                   :Note ;
+        :noteText           "in southern Tibet"@en .
+}

@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1955 {
+    bda:G1955  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1955 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "bb/G1955.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1955 ;
+        adm:logEntry        bda:LG0B5330027B07A31F , bda:LGA02E12C8ADB2E027 , bda:LGA89947DE8BCC8462 , bda:LGD992EE232C1516F0 , bda:LGE324457D09A8BE53 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B5330027B07A31F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T15:18:59.915Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGA02E12C8ADB2E027
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-03-02T17:50:16.282Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGA89947DE8BCC8462
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-20T14:53:15.544Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & added note from G00AG02559 (dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD992EE232C1516F0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE324457D09A8BE53
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-10T14:51:24.802Z"^^xsd:dateTime ;
+        adm:logMessage      "changed languege settings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1955  a            :Place ;
+        skos:altLabel       "dga' ldan byin chags gling /"@bo-x-ewts , "g.yung hwa dgon dga' ldan byin chags gling chos sde/"@bo-x-ewts , "yung ha kun/"@bo-x-ewts , "yonghe gong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "g.yung hwa dgon/"@bo-x-ewts , "Yonghe Gong Ganden Jinchak Ling"@en , "雍和宫"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT9221983D29F3C86F , bdr:NTAF1DD83568DEC3B4 ;
+        :placeLocatedIn     bdr:G1949 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT9221983D29F3C86F
+        a                   :Note ;
+        :contentLocationStatement  "p. 484" ;
+        :noteSource         bdr:MW20115 ;
+        :noteText           "built in 1694 in the time of gong ma g.yung kreng rgyal sras as a residence\n1725. converted to a monastery\naccording to the tshig mdzod chen mo established in 1744 and according to the bstan rtsis kun btus established in 1745\n1747. rta tshag blo bzang dpal ldan rgyal mtshan came to its throne"@en .
+    
+    bdr:NTAF1DD83568DEC3B4
+        a                   :Note ;
+        :noteText           "dge lugs pa monastery in beijing first developed as a temple by the yongzheng emperor in his own residence, and then elevated to the status of imperial monastery by the qianlong emperor in 1737 with the assistance of lcang skya rol pa'i rdo rje.\n(mkhyen brtse gdan rabs. p. 484). mkhyen brtse names the emperor \"gong ma g.yung Ting. \nthe monastery maintained five colleges: sman rtsi, mdo, sngags, dus 'khor, and general ritual.\na statue of maitreya carved from a single sandalwood tree is said to be the largest such statue in the world\nsee lessing yung-ho-kung (stockholm 1943)"@en .
+}

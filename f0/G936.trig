@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G936 {
+    bda:G936  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G936 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "f0/G936.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G936 ;
+        adm:logEntry        bda:LG6894AF6900CCBF03 , bda:LGB88D68801B83B08A , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6894AF6900CCBF03
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T12:48:03.377Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB88D68801B83B08A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G936  a             :Place ;
+        skos:altLabel       "rma smad 'gu log"@bo-x-ewts ;
+        skos:prefLabel      "rma smad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9F5D6CFCD51CE7EE , bdr:NTBE14ACC5A16AF155 ;
+        :placeLocatedIn     bdr:G1490 ;
+        :placeType          bdr:PT0029 .
+    
+    bdr:NT9F5D6CFCD51CE7EE
+        a                   :Note ;
+        :contentLocationStatement  "p. 1500" ;
+        :noteSource         bdr:MW19801 ;
+        :noteText           "ཞྭ་དམར་བ་ཡེ་ཤེས་སྙིང་པོ་ནི་༡༦༣༡ལོར་\"རྨ་སྨད་འགུ་ལོག་\"ཏུ་འཁྲུངས་པ་གསལ།"@bo .
+    
+    bdr:NTBE14ACC5A16AF155
+        a                   :Note ;
+        :noteText           "traditional place name where the 7th zhwa dmar ye shes snying po was born"@en .
+}

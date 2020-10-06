@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX632500000 {
+    bda:G9GBX632500000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX632500000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "84/G9GBX632500000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX632500000 ;
+        adm:logEntry        bda:LGDF2D24286CCFE1DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGDF2D24286CCFE1DD
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX632500000
+        a                   :Place ;
+        skos:altLabel       "hai nan cang zu zi zhi zhou"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Hainan Tibetan Autonomous Prefecture"@en , "海南藏族自治州"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX632521000 , bdr:G9GBX632522000 , bdr:G9GBX632523000 , bdr:G9GBX632524000 , bdr:G9GBX632525000 ;
+        :placeGB2260-2013   "632500000" ;
+        :placeLat           "36.3243834" ;
+        :placeLocatedIn     bdr:G9GBX630000000 ;
+        :placeLong          "100.6377268" ;
+        :placeType          bdr:PT0057 .
+}

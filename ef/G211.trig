@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G211 {
+    bda:G211  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G211 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "ef/G211.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G211 ;
+        adm:logEntry        bda:LG20716660EE92AC8F , bda:LG215832935BFACDE3 , bda:LG36A0B840FB05D7F7 , bda:LGF03E2B7FF35DAC30 , bda:LGF4DB271F84FCD8D7 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542301203:542308" ;
+        adm:place_id_lex    "542301203:542308" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG20716660EE92AC8F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG215832935BFACDE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-18T12:52:56.151Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG36A0B840FB05D7F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-23T11:51:44.821Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF03E2B7FF35DAC30
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:19:32.206Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain: \"par khang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF4DB271F84FCD8D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:57:49.351Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV864BC2843EFCB1CB
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1132 ;
+        :onYear             "1429"^^xsd:gYear .
+    
+    bdr:EVAC33EDAD0B27B4FF
+        a                   :PlaceFounded ;
+        :onYear             "1429"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G211  a             :Place ;
+        skos:altLabel       "e waM chos ldan/"@bo-x-ewts , "ngor e waM chos ldan/"@bo-x-ewts , "Ngor Gonpa"@en-x-mixed , "艾旺却丹寺"@zh-hans , "aiwang quedan si"@zh-latn-pinyin-x-ndia , "e-er si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ngor dgon pa/"@bo-x-ewts , "Ngor Evam Choden"@en , "俄尔寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDB434DF22507A697 ;
+        :isRoot             true ;
+        :note               bdr:NTA2CE4E7CB310672C ;
+        :placeContains      bdr:G2CN10908 , bdr:G2CN10992 ;
+        :placeEvent         bdr:EV864BC2843EFCB1CB , bdr:EVAC33EDAD0B27B4FF ;
+        :placeGonpaPerEcumen  "7.3" ;
+        :placeLat           "29.11667" ;
+        :placeLocatedIn     bdr:G2170 ;
+        :placeLong          "88.81667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDDB434DF22507A697
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G211" .
+    
+    bdr:NTA2CE4E7CB310672C
+        a                   :Note ;
+        :noteText           "important sa skya monastery in the tibetan autonomous region\nthe monastery contains four bla brang:\nklu sdings\nthar rtse\nphan khang (phan bde khang gsar)\nkhang gsar\nthe abbacy alternates between these bla brang"@en .
+}

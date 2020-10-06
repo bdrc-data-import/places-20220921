@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS583 {
+    bda:G2LS583  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS583 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e5/G2LS583.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS583 ;
+        adm:logEntry        bda:LG000A68C55A21B5F0 , bda:LG466EBAECE085D498 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG000A68C55A21B5F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:46.002Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG466EBAECE085D498
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:55:42.141Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2LS583  a          :Place ;
+        skos:prefLabel      "zhi khro lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT26C639586CB9D688 ;
+        :placeContains      bdr:G2CN10940 ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NT26C639586CB9D688
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 83" ;
+        :noteText           "Many hermitage caves of Drukpa kagyud master"@en .
+}

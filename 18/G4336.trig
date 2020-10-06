@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4336 {
+    bda:G4336  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4336 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "18/G4336.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4336 ;
+        adm:logEntry        bda:LG2198B4BC025CB774 , bda:LG4887F03843847AD7 , bda:LGA412EBFCFB90F582 , bda:LGBEE7A5837C8B161F , bda:LGE5268B7204829E7A , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513231205:198" ;
+        adm:place_id_lex    "513231205:198" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2198B4BC025CB774
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-15T15:32:02.935Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and location"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG4887F03843847AD7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-09T16:28:41.088Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA412EBFCFB90F582
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBEE7A5837C8B161F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-29T09:52:45.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE5268B7204829E7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-15T17:02:59.275Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS and name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV070ABAAC6526DC4B
+        a                   :PlaceFounded ;
+        :onYear             "1429"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionJonang .
+    
+    bdr:EV98EBC648BD9B41AE
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P8964 ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:G4336  a            :Place ;
+        skos:altLabel       "rnga yul rtsi nang dgon dpal mi 'gyur nges don bde chen gling /"@bo-x-ewts , "rtsi nang chos sde dgon/"@bo-x-ewts , "孜郎寺"@zh-hans , "zilang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rtsi nang dgon pa/"@bo-x-ewts , "孜朗寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF790750C5CE4258D ;
+        :isRoot             true ;
+        :note               bdr:NT85EA5D9D31C4197E ;
+        :placeEvent         bdr:EV070ABAAC6526DC4B , bdr:EV98EBC648BD9B41AE ;
+        :placeGonpaPerEcumen  "1.99" ;
+        :placeLat           "33.03506" ;
+        :placeLocatedIn     bdr:G2331 ;
+        :placeLong          "101.56153" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF790750C5CE4258D
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4336" .
+    
+    bdr:NT85EA5D9D31C4197E
+        a                   :Note ;
+        :contentLocationStatement  "pp. 523-524" ;
+        :noteSource         bdr:MW19816 ;
+        :noteText           "jo nang monastery\n\nnotes that the monastery was founded by 'brog dge kun dga' lhun grub"@en .
+}

@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G466 {
+    bda:G466  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G466 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e9/G466.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G466 ;
+        adm:logEntry        bda:LG5B783B342A09B0DF , bda:LG61F042E5177C78FE , bda:LG7C119B6B98BCBDB2 , bda:LGDDDED2632B905C9A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5B783B342A09B0DF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG61F042E5177C78FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:18:29.127Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from palace to phoBrang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7C119B6B98BCBDB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-13T15:25:30.626Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDDDED2632B905C9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-03T08:37:25.711Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G466  a             :Place ;
+        skos:prefLabel      "dus mchod bla brang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB733893935ABC62C ;
+        :placeLocatedIn     bdr:G210 , bdr:G880 ;
+        :placeType          bdr:PT0041 .
+    
+    bdr:NTB733893935ABC62C
+        a                   :Note ;
+        :noteText           "one of the palaces of the sa skya hierarchs"@en .
+}

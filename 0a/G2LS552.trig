@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS552 {
+    bda:G2LS552  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS552 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "0a/G2LS552.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS552 ;
+        adm:logEntry        bda:LG341493FC45B800EA , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522201:23" ;
+        adm:place_id_lex    "542522201:23" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG341493FC45B800EA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:55:26.334Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV66AB1E970E729A0A
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionTodrukKagyu .
+    
+    bdr:EVFF5FD3607C062A8C
+        a                   :PlaceConverted ;
+        :onYear             "1550"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2LS552  a          :Place ;
+        skos:altLabel       "Mani Dala"@bo-x-phon-en , "Mani Dala"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "maN+Dal lha khang /"@bo-x-ewts , "曼达拉殿"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5D37D38B90483455 ;
+        :isRoot             true ;
+        :note               bdr:NT9A4ED7D56074271B ;
+        :placeEvent         bdr:EV66AB1E970E729A0A , bdr:EVFF5FD3607C062A8C ;
+        :placeGonpaPerEcumen  "2.88" ;
+        :placeLat           "32.25000" ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeLong          "78.95000" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID5D37D38B90483455
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2LS552" .
+    
+    bdr:NT9A4ED7D56074271B
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 75" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "previously administered by Drukpa kagyud and later by Gelugpa"@en .
+}

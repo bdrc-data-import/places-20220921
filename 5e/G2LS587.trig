@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS587 {
+    bda:G2LS587  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS587 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "5e/G2LS587.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS587 ;
+        adm:logEntry        bda:LG074FB95E93BD5AFD , bda:LGC931FA8A47610E7A , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522203:17" ;
+        adm:place_id_lex    "542522203:17" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG074FB95E93BD5AFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T11:10:28.111Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC931FA8A47610E7A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:55:46.497Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV95A526E7E6ABB1D6
+        a                   :PlaceConverted ;
+        :onYear             "1550"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVEBE3139BB0B71210
+        a                   :PlaceFounded ;
+        :note               bdr:NT354CB6A061935F4A ;
+        :onYear             "1350"^^xsd:gYear .
+    
+    bdr:G2LS587  a          :Place ;
+        skos:altLabel       "bye dkar rnam rgyal lha rtse dgon/"@bo-x-ewts , "rnam rgyal lha rtse dgon/"@bo-x-ewts , "qiga si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bye dkar dgon/"@bo-x-ewts , "Chekar"@en-x-mixed , "齐嘎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID29884237650C26E6 ;
+        :isRoot             true ;
+        :note               bdr:NT0C9C1F2F3F374A12 ;
+        :placeEvent         bdr:EV95A526E7E6ABB1D6 , bdr:EVEBE3139BB0B71210 ;
+        :placeGonpaPerEcumen  "2.93" ;
+        :placeLat           "31.60000" ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeLong          "78.95000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID29884237650C26E6
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2LS587" .
+    
+    bdr:NT0C9C1F2F3F374A12
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 86" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Locally known as bekar monastery. Founded by Lonpo Tsewang Gonpo, one of the four minister who founded four monastery in this locality. But in Baiser this monastery was founded by Dupchen Wangchuk Palden. For the time being, the monastery was administered by Drikungpas. In the end of 15th century, converted into Gelugpa by Lopon Dakpa zangpo,one of the disciple of Guge Ngawang Dakpa."@en .
+    
+    bdr:NT354CB6A061935F4A
+        a                   :Note ;
+        :noteText           "'bri gung bka' brgyud/"@bo-x-ewts .
+}

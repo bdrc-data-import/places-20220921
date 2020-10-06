@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4734 {
+    bda:G4734  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4734 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "32/G4734.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4734 ;
+        adm:logEntry        bda:LG28CD5B96577F2E0C , bda:LG4543F0CB1F920087 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG28CD5B96577F2E0C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4543F0CB1F920087
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-25T16:19:47.566Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4734  a            :Place ;
+        skos:prefLabel      "rong rgyab/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6ED41C286B74FA49 , bdr:NTB265AECB2E00180C ;
+        :placeLocatedIn     bdr:G3CN22 ;
+        :placeType          bdr:PT0022 .
+    
+    bdr:NT6ED41C286B74FA49
+        a                   :Note ;
+        :contentLocationStatement  "p. 100" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "འདི་ནི་ཀོང་སྤྲུལ་ཡོན་ཏན་རྒྱ་མཚོའི་འཁྲུངས་ཡུལ་ཏེ། དེ་ཡང་མདོ་སྟོད་འབྲི་ཟླ་ཟལ་མོ་སྒང་གི་པདྨ་ལྷ་རྩེའི་མདུན་རོལ་རོང་རྒྱབ་སྦས་པའི་ལྗོངས་ཡིན་པ་གསལ།"@bo .
+    
+    bdr:NTB265AECB2E00180C
+        a                   :Note ;
+        :noteText           "located near padma lha btse in mdo khams 'bri zla zal mo sgang"@en .
+}

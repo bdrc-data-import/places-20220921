@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2499 {
+    bda:G2499  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2499 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6d/G2499.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2499 ;
+        adm:logEntry        bda:LG37759C4CA73DE613 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG37759C4CA73DE613
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2499  a            :Place ;
+        skos:prefLabel      "sad dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1D14444DE83BF5AF ;
+        :placeLocatedIn     bdr:G237 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1D14444DE83BF5AF
+        a                   :Note ;
+        :contentLocationStatement  "p. 117" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "one of the 23 affiliates (gzhis gras) of se ra smad grwa tshang"@en .
+}

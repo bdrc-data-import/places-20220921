@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4886 {
+    bda:G4886  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4886 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3f/G4886.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4886 ;
+        adm:logEntry        bda:LG37C44817F4C92025 , bda:LGE0E1D8C3B3701D7C , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG37C44817F4C92025
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-10T14:30:59.617Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE0E1D8C3B3701D7C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4886  a            :Place ;
+        skos:altLabel       "rnam grol gling (mun dgod)"@bo-x-ewts ;
+        skos:prefLabel      "rnam grol gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA23F06427A029E29 ;
+        :placeLocatedIn     bdr:G3188 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTA23F06427A029E29
+        a                   :Note ;
+        :noteText           "important rnying ma teaching establishment headed by h.h. penor rinpoche; this monastery is located near bylakuppe in karnataka state, india"@en .
+}

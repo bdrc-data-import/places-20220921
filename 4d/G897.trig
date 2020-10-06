@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G897 {
+    bda:G897  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G897 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4d/G897.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G897 ;
+        adm:logEntry        bda:LG3A94A47AF6A03F11 , bda:LG70035E196495921D , bda:LGA0AD5AF1A299AEA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3A94A47AF6A03F11
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-26T09:38:40.549Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG70035E196495921D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA0AD5AF1A299AEA6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-20T15:50:03.25Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G897  a             :Place ;
+        skos:altLabel       "lcang skya/"@bo-x-ewts ;
+        skos:prefLabel      "lcang kya/"@bo-x-ewts ;
+        :contentLocationStatement  "dgon lung dang thag nye sar lcang skya dgon zhes pa yod pas dgon lung rgyud dang gro tshang phyogs su gtogs sam ste/ gzhan yang dpa' ris dang lang gru sde bzhi'i phyogs su yin min kyang mu mthud dpyad bya'o/" ;
+        :isRoot             true ;
+        :placeType          bdr:PT0020 .
+}

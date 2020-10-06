@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2529 {
+    bda:G2529  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2529 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "08/G2529.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2529 ;
+        adm:logEntry        bda:LG00797843001B624F , bda:LG165A175E227D0C42 , bda:LG9C8E215F2F126197 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623001001:623027104" ;
+        adm:place_id_lex    "623001001:623027104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00797843001B624F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG165A175E227D0C42
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-09T17:01:55.16Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9C8E215F2F126197
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T10:49:05.973Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA30E13416B6A04CB
+        a                   :PlaceFounded ;
+        :onYear             "1766"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G2529  a            :Place ;
+        skos:altLabel       "chos rdzong ri khrod theg chen gsang sngags dar rgyas gling /"@bo-x-ewts , "theg chen gsang sngags dar rgyas gling /"@bo-x-ewts , "合作尼姑寺"@zh-hans , "hezuo nigu si"@zh-latn-pinyin-x-ndia , "quzong jingxiu yuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "chos rdzong ri khrod/"@bo-x-ewts , "曲宗静修院"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID230FCC6E28ABE31D ;
+        :isRoot             true ;
+        :note               bdr:NT23D5FE231FA986FF ;
+        :placeEvent         bdr:EVA30E13416B6A04CB ;
+        :placeGonpaPerEcumen  "59.22" ;
+        :placeLat           "34.94225" ;
+        :placeLocatedIn     bdr:G2396 , bdr:G2528 ;
+        :placeLong          "102.84214" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID230FCC6E28ABE31D
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2529" .
+    
+    bdr:NT23D5FE231FA986FF
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, p. 23" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "rnying ma hermitage and tantric practitioner establishment located in sna bug zhang, bsang chu rdzong, kan lho khul"@en .
+}

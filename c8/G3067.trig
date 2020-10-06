@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3067 {
+    bda:G3067  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3067 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c8/G3067.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3067 ;
+        adm:logEntry        bda:LG4A742FA398517EEB , bda:LG780F3849A5AEDD1E , bda:LGE557662079BF42BD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4A742FA398517EEB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:25:06.7Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from stupa to mchodRten"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG780F3849A5AEDD1E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T12:09:28.563Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE557662079BF42BD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G3067  a            :Place ;
+        skos:prefLabel      "lho brag 'bum pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTADBE248179540D16 ;
+        :placeLocatedIn     bdr:G1516 ;
+        :placeType          bdr:PT0072 .
+    
+    bdr:NTADBE248179540D16
+        a                   :Note ;
+        :contentLocationStatement  "p. 62" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "stupa located near ra sha khug grong 'tsho surrounded by many smaller mchod rten\nsaid to contain the remains of lho brag grub chen nam mkha' rgyal mtshan, the guru of tsong kha pa\nthis stupa complex was said to possess the ability to cure serious disease such as epilepsy (gza'),  rgyal gzer, and mdze (leprosy).\ndestroyed during the cultural revolution\nrestorations began in 1991"@en .
+}

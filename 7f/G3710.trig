@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3710 {
+    bda:G3710  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3710 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "7f/G3710.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3710 ;
+        adm:logEntry        bda:LG24705667E1C5AABE , bda:LG66A4B703C1E555A9 , bda:LGF06EAE8D070593C9 , bda:LGF71CC4AFDD6BE1AA , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513328206:315" ;
+        adm:place_id_lex    "513328206:315" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG24705667E1C5AABE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-10T11:50:34.626Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG66A4B703C1E555A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-10T14:23:10.867Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF06EAE8D070593C9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF71CC4AFDD6BE1AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-18T11:46:40.332Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8D1D277E2AD8F321
+        a                   :PlaceFounded ;
+        :onYear             "1838"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3710  a            :Place ;
+        skos:altLabel       "a bse mdo lung dgon/"@bo-x-ewts , "阿色夺龙寺"@zh-hans , "ase duolong si"@zh-latn-pinyin-x-ndia , "ase si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "a bse dgon/"@bo-x-ewts , "阿色寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID74CD61F41C50E07E ;
+        :isRoot             true ;
+        :note               bdr:NTBC90642A6879A2A8 , bdr:NTD99162D100239EDF ;
+        :placeEvent         bdr:EV8D1D277E2AD8F321 ;
+        :placeGonpaPerEcumen  "56.41" ;
+        :placeLat           "31.66667" ;
+        :placeLocatedIn     bdr:G621 ;
+        :placeLong          "99.68333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID74CD61F41C50E07E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3710" .
+    
+    bdr:NTBC90642A6879A2A8
+        a                   :Note ;
+        :contentLocationStatement  "p. 167" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "a subsidiary monastery of kaH thog in 'the north\" according to the list of kaH thog si tu chos kyi rgya mtsho"@en .
+    
+    bdr:NTD99162D100239EDF
+        a                   :Note ;
+        :contentLocationStatement  "p. 143-149" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "འདི་ནི་རྙིང་མ་ཀཿཐོག་པའི་དགོན་ལག་ཞིག་ཏེ། དགོས་གནས་ཐེངས་མང་སྤོ་དགོས་བྱུང་ཡོད་པའང་། ཐོག་མར་ཆགས་ཡུལ་ཉག་རོང་རྫོང་གི་མངའ་ཁོངས་ཨ་བསེ་མདོ་ལུང་ཞེས་པ་དེ་ཡིན་ཅིང་། དེ་རྗེས་རྫ་མདོ་སྲོང་༼G1564 རྫ་སེར་ཤུལ་་རྫོང་ཁོངས་༽ལ་སྤོས། དེ་རྗེས་དཀར་མཛེས་རྫོང་ཁོངས་ཀྱི་འབྲོང་དེའུ་ལུང་ཞེས་པར་སྤོས་པ་སྟེ། དགོན་གནས་འགྱུར་ཡང་དགོན་མིང་ལ་ནི་འགྱུར་བ་བྱུང་བར་མ་སྣང་ངོ།"@bo .
+}

@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G320 {
+    bda:G320  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G320 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "d9/G320.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G320 ;
+        adm:logEntry        bda:LG003114840ECDC681 , bda:LG7EE4818985B2999B , bda:LG802B8B3423F497B5 , bda:LGBA202F5863253827 , bda:LGF2E4ED2390258ADD , bda:LGF6C74A0968DF58D8 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG003114840ECDC681
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-20T16:25:54.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7EE4818985B2999B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:47.69Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG802B8B3423F497B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-21T12:11:21.808Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGBA202F5863253827
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-25T15:32:08.456Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2E4ED2390258ADD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-02T10:08:45.288Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, sources & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF6C74A0968DF58D8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA0CFBB53C18F0B4A
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G320  a             :Place ;
+        skos:altLabel       "dga' ldan rab rgyas gling /"@bo-x-ewts , "thob rgyal dga' ldan rab rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "thob rgyal dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5B844265D3731B6D , bdr:NT73C9C9EF7B569BF3 ;
+        :placeContains      bdr:G2CN10920 ;
+        :placeEvent         bdr:EVA0CFBB53C18F0B4A ;
+        :placeLat           "29.394908" ;
+        :placeLocatedIn     bdr:G2171 , bdr:G563 ;
+        :placeLong          "89.468204" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT5B844265D3731B6D
+        a                   :Note ;
+        :contentLocationStatement  "p. 449" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "རྩིས་དོང་ཐོབ་རྒྱལ་(rtsis dong thob rgyal)ན་བཀྲ་ཤིས་ལྷུན་པོའི་(bkra shis lhun po)དགའ་ལྡན་རབ་རྒྱས་གླིང་ཞེས་གསལ།"@en .
+    
+    bdr:NT73C9C9EF7B569BF3
+        a                   :Note ;
+        :noteText           "dge lugs monastery in the tibetan autonomous region"@en .
+}

@@ -1,0 +1,132 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2832 {
+    bda:G2832  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2832 ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "af/G2832.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2832 ;
+        adm:logEntry        bda:LG00317B39641F6E02 , bda:LG08175F5319ACBBE7 , bda:LG8D02EF6DE26B6300 , bda:LGA75157D37B2741E1 , bda:LGAB3FEA9CE5923DA5 , bda:LGBA92E0DFE626CA0D , bda:LGC1939494330F1C2F , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221101:542221116" ;
+        adm:place_id_lex    "542221101:542221116" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00317B39641F6E02
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-23T09:50:19.985Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG08175F5319ACBBE7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8D02EF6DE26B6300
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T13:57:57.28Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGA75157D37B2741E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:01.912Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain: \"par khang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAB3FEA9CE5923DA5
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-11T09:52:29.6Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag gcig gi ngo sprod"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBA92E0DFE626CA0D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:12:26.019Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC1939494330F1C2F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-03-12T10:59:36.303Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5694DBA0BB480F80
+        a                   :PlaceFounded ;
+        :onYear             "1150"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G2832  a            :Place ;
+        skos:altLabel       "reqiong dong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ras chung phug"@bo-x-ewts , "Rachung Phuk"@en-x-mixed , "热琼洞"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDF49BE1E95742BA3 ;
+        :isRoot             true ;
+        :note               bdr:NT07C6D119C55426A2 , bdr:NT1C270DE0540689D2 , bdr:NT329324D204A949FF , bdr:NTD99E50C7E774E712 , bdr:NTF6F3C2C53E52A6B5 ;
+        :placeContains      bdr:G2CN10886 ;
+        :placeEvent         bdr:EV5694DBA0BB480F80 ;
+        :placeGonpaPerEcumen  "60.06" ;
+        :placeLat           "29.15336" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.76162" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDDF49BE1E95742BA3
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2832" .
+    
+    bdr:NT07C6D119C55426A2
+        a                   :Note ;
+        :contentLocationStatement  "p. 277" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "description"@en .
+    
+    bdr:NT1C270DE0540689D2
+        a                   :Note ;
+        :contentLocationStatement  "pp. 250-252" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "description\nvarious constructions here connected with gtsang smyon he ru ka, rgod tshang ras pa sna tshogs rang grol, and other masters of the upper transmission of the 'brug pa dka' brgyud;\ncontains an images of ras chung sprul sku 'chi med dbang po;\nmany images of the ras chen snyan brgyud"@en .
+    
+    bdr:NT329324D204A949FF
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, f. 171v" ;
+        :noteSource         bdr:MW23435 ;
+        :noteText           "khab bdag 'grub mchod dbang po was a great patron of the arts and was reponsible for erecting a thangka of zhwa dmar chos kyi dbang phyug at ras chung phug he gathered over 500 bronzes, indian, chinese and kashmiri at ras chung phug"@en .
+    
+    bdr:NTD99E50C7E774E712
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 55-56" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "བཀྲ་ཤིས་ཆོས་སྡེའི་ཉེ་འགྲམ་རས་ཆུང་ཕུག་པ་གྲོང་གི་ལྷོ་ངོས་སུ་རས་ཆུང་ཕུག་དགོན་གནས་ཡོད། དགོན་དེ་ཐོག་མར་རས་ཆུང་བའི་སྒྲུབ་ཕུག་ཙམ་ཡིན་པ་ལ། རྗེས་སུ་རས་ཆུང་བའི་རྣམ་སྤྲུལ་དུ་གྲགས་པ་གཙང་སྨྱོན་ཧེ་རུ་ཀ་བྱོན་ཏེ་མཛད་པ་རྒྱ་ཆེར་བསྐྱངས། སྔོན་དུས་འགྱུར་གོང་དགོན་དེར་དགེ་འདུན་ཞལ་གྲངས་ལྔ་བཅུ་ཙམ་དང་། འདུ་ཁང་ཨ་མ་ཞེས་པ་དང་། རྩེ་ཕོ་བྲང་། གཙུག་ལག་ཁང་། མ་ཎི་ལྷ་ཁང་སོགས་གཞི་ཁྱོན་ཧ་ཅང་ཆེན་པོ་ཡོད། ད་ལྟ་ཉམས་གསོ་ཞུས་པའི་ཕུག་པའི་ནང་གུ་རུ་དང་། རས་ཆུང་། མི་ལ། གཙང་སྨྱོན་སོགས་ཀྱི་འདྲ་སྐུ་དང་། ལྷག་པར་དུ་རས་ཆུང་བའི་ཞབས་རྗེས་དང་། མི་ལའི་ཕྱག་འཁར། གཞན་ཡང་རང་བྱོན་སྣ་ཚོགས་བཅས་མཇལ་རྒྱུ་ཡོད་སྐོར་འཁོད།"@bo .
+    
+    bdr:NTF6F3C2C53E52A6B5
+        a                   :Note ;
+        :contentLocationStatement  "p. 131" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "this was originall a medication cave located in sne gdong rdzong or the bka' brgyud master ras chung. it is located about 9 km. to the southwest of rtsed thang. \"sngon lo rgyus nang yar lung stod smad gnyis kyi bar mtshams sku 'khel lugs bshad pa zhig yod pa yin.\""@en .
+}

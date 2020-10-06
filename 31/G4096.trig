@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4096 {
+    bda:G4096  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4096 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "31/G4096.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4096 ;
+        adm:logEntry        bda:LG20AD0EC480A56307 , bda:LG599FB0E75062F19B , bda:LGC7E4BD01793DB97A , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513325205:485" ;
+        adm:place_id_lex    "513325205:485" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG20AD0EC480A56307
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG599FB0E75062F19B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-30T16:10:06.3Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & events"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC7E4BD01793DB97A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T09:21:16.321Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV303786B12D2DAF25
+        a                   :PlaceFounded ;
+        :onYear             "1240"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionDrukpaKagyu .
+    
+    bdr:EV5EF5D0D22791A811
+        a                   :PlaceConverted ;
+        :notAfter           "1999"^^xsd:gYear ;
+        :notBefore          "1900"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G4096  a            :Place ;
+        skos:altLabel       "phag mo dgon chos 'khor dar rgyas gling /"@bo-x-ewts , "phag mo ri dgon pa/"@bo-x-ewts , "phag ri dgon/"@bo-x-ewts , "bangmulin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "phag mo ri'i dgon pa/"@bo-x-ewts , "膀木林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3890C459DA266B04 ;
+        :isRoot             true ;
+        :note               bdr:NTC0B542218D48E114 ;
+        :placeEvent         bdr:EV303786B12D2DAF25 , bdr:EV5EF5D0D22791A811 ;
+        :placeGonpaPerEcumen  "11.02" ;
+        :placeLat           "29.58333" ;
+        :placeLocatedIn     bdr:G2303 ;
+        :placeLong          "101.13333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID3890C459DA266B04
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4096" .
+    
+    bdr:NTC0B542218D48E114
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 553-556" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "bka' brgyud monastery in nyag chu rdzong"@en .
+}

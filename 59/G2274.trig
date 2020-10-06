@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2274 {
+    bda:G2274  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2274 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "59/G2274.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2274 ;
+        adm:logEntry        bda:LG0A298F056C4DC967 , bda:LG219E485C72EB7261 , bda:LG36171CF4591AF833 , bda:LGBC6F0E74A12CF166 , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542525203:78" ;
+        adm:place_id_lex    "542525203:78" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A298F056C4DC967
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T13:00:05.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG219E485C72EB7261
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG36171CF4591AF833
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-21T16:54:23.226Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBC6F0E74A12CF166
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T12:02:39.186Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note from G3LS26(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV6CEA776D7021E8A0
+        a                   :PlaceFounded ;
+        :notAfter           "1899"^^xsd:gYear ;
+        :notBefore          "1800"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G2274  a            :Place ;
+        skos:altLabel       "gzhung pa'i skya bo lha khang /"@bo-x-ewts , "jiawu lakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "skya bo lha khang /"@bo-x-ewts , "加吾拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID145FD9815313EDB7 ;
+        :isRoot             true ;
+        :note               bdr:NT81D5638F881BF909 , bdr:NTA06F538F5C1A4520 ;
+        :placeEvent         bdr:EV6CEA776D7021E8A0 ;
+        :placeGonpaPerEcumen  "0.37" ;
+        :placeLat           "32.29000" ;
+        :placeLocatedIn     bdr:G2155 , bdr:G2290 ;
+        :placeLong          "81.83000" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID145FD9815313EDB7
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2274" .
+    
+    bdr:NT81D5638F881BF909
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 122-123" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Located more than 30 km from the zhungpa town. Kamtshang kagyud tradition"@en .
+    
+    bdr:NTA06F538F5C1A4520
+        a                   :Note ;
+        :contentLocationStatement  "p. 12" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "bka' brgyud pa monastery located in gzhong pa chus, dge rgyas rdzong, mnga' ris prefecture\n\"da yod grwa pa lnga/ slag grwa tshad bzhi'o\""@en .
+}

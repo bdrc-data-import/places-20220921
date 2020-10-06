@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G357 {
+    bda:G357  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G357 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "c1/G357.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G357 ;
+        adm:logEntry        bda:LG0B8A232C50075912 , bda:LGCA79F6819F245EFA , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542323207:542323109" ;
+        adm:place_id_lex    "542323207:542323109" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B8A232C50075912
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCA79F6819F245EFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T16:00:58.633Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4B525638CD83CC9B
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV9C1C2D910846BA1C
+        a                   :PlaceFounded ;
+        :onYear             "1366"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G357  a             :Place ;
+        skos:altLabel       "brtse chen chos sde thub bstan rab rgyas gling /"@bo-x-ewts , "brtse chen dgon pa/"@bo-x-ewts , "rtse chen chos sde/"@bo-x-ewts , "thub bstan rab rgyas gling /"@bo-x-ewts , "zijin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "brtse chen chos sde/"@bo-x-ewts , "Tsechen"@en-x-mixed , "紫金寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7C52881177B5D92C ;
+        :isRoot             true ;
+        :note               bdr:NTC995D71C07C64F39 ;
+        :placeEvent         bdr:EV4B525638CD83CC9B , bdr:EV9C1C2D910846BA1C ;
+        :placeGonpaPerEcumen  "21.68" ;
+        :placeLat           "28.93333" ;
+        :placeLocatedIn     bdr:G2175 ;
+        :placeLong          "89.53333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID7C52881177B5D92C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G357" .
+    
+    bdr:NTC995D71C07C64F39
+        a                   :Note ;
+        :contentLocationStatement  "p. 401" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "monastery with nine teaching colleges\ndestroyed by the english and restored by 1919 when kaH thog si tu had visited\nthe objects of veneration had been destroyed\nthere was a great sgrol ma lha khang here or nearby"@en .
+}

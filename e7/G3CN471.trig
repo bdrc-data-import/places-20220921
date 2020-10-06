@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN471 {
+    bda:G3CN471  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN471 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e7/G3CN471.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN471 ;
+        adm:logEntry        bda:LG9931044F53303584 , bda:LGAEFA438F64AC2E25 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9931044F53303584
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-09T16:41:22.011Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAEFA438F64AC2E25
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-10T10:17:15.813Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN471  a          :Place ;
+        rdfs:comment        "Main route through central Tibet"@en , "གནའ་སྔ་མོ་དབུས་གཙང་བརྒྱུད་པའི་གཞུང་ལམ་ལ་གོ་སྟེ། དབུས་ཀྱི་ལྷ་ས་དང་བསམ་ཡས་སོགས་ནས། གམ་པ་ལ་མོ་དང་། རིམ་བཞིན་གཙང་གི་མྱང་ཡུལ། ལྷ་་རྩེ། མང་ཡུལ་སོགས་བརྒྱུད་ཞུང་ཞུང་ངམ་མངའ་རིས་སྐོར་གསུམ་ལ་བགྲོད་པའི་ལམ་ལ་གོ་སྙམ་མོད། དཔྱད་གཞིའི་རྒྱུ་ཆ་རྙེད་རིམ་བཞིན་ཁ་སྣོན་དང་ལེགས་བཅོས་བྱ་རྒྱུ།" ;
+        skos:altLabel       "dbus gtsang gzhung lam/"@bo-x-ewts ;
+        skos:prefLabel      "dbus lam/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeType          bdr:PT0078 .
+}

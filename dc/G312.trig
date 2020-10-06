@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G312 {
+    bda:G312  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G312 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "dc/G312.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G312 ;
+        adm:logEntry        bda:LG49D977FD46AF97FE , bda:LG88543DFC94B939E6 , bda:LGA2EE05134228FF4C , bda:LGC82DD3B60B1E0CF8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG49D977FD46AF97FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T15:59:48.795Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG88543DFC94B939E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:18:29.127Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from palace to phoBrang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGA2EE05134228FF4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-13T15:56:09.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC82DD3B60B1E0CF8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G312  a             :Place ;
+        skos:altLabel       "sa skya rin chen sgang bla brang /"@bo-x-ewts ;
+        skos:prefLabel      "rin chen sgang bla brang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA72645FADB1C7BD9 ;
+        :placeLocatedIn     bdr:G210 , bdr:G880 ;
+        :placeType          bdr:PT0041 .
+    
+    bdr:NTA72645FADB1C7BD9
+        a                   :Note ;
+        :noteText           "one of the four great palaces into which sa skya was formerly divided"@en .
+}

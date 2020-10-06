@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3LS14 {
+    bda:G3LS14  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3LS14 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "55/G3LS14.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3LS14 ;
+        adm:logEntry        bda:LG913F876FD15096C2 , bda:LGA059EE019A9B27CA , bda:LGFD922D51525F875A , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG913F876FD15096C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T15:22:47.951Z"^^xsd:dateTime ;
+        adm:logMessage      "added note in tibetan"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA059EE019A9B27CA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-31T15:55:42.359Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFD922D51525F875A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T15:09:20.318Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type & added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3LS14  a           :Place ;
+        skos:altLabel       "ru thog dbod byang khul gyi gnas rnying khag"@bo-x-ewts ;
+        skos:prefLabel      "dbod byang khul gyi gnas rnying khag"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5B4AC8986668D973 , bdr:NTEF9E6E7FF591BB8B ;
+        :placeContains      bdr:G3LS12 ;
+        :placeLat           "33.82000" ;
+        :placeLocatedIn     bdr:G2156 ;
+        :placeLong          "79.86000" ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT5B4AC8986668D973
+        a                   :Note ;
+        :contentLocationStatement  "p. 351-353" ;
+        :noteSource         bdr:MW1GS56008 ;
+        :noteText           "གནས་དེ་ནི་མཁར་ནག་ཞེས་པའི་མཁར་ཆེན་སྟོང་གོག་ཏུ་གྱུར་པ་ཞིག་ནས་གཙོས་གནའ་ཤུལ་མང་པོ་ཡོད་ས་ཞིག་ཏེ། ཡུལ་དེར་མོན་གྲོ་ཞེས་པའི་དུར་ས་་མང་ལ་ལྷ་འདྲེའི་རི་མོ་ཞེས་པ་གང་སར་ཡོད་དེ། ཁྱད་པར་ཏིང་ཆུང་ལྷ་ཁང་ཞེས་པའི་ནང་དུ་དཀྱིལ་འཁོར་འདྲ་མིན་སྣ་ཚོགས་དང་། ཆོས་པ་དང་། སྐྱེས་ཕོ་མོ་བྱ་སྤྱོད་སྣ་ཚོགས་ཀྱི་འདྲ་རིས། དེ་བཞིན་བོད་ཡིག་དབུ་ཅན་གསལ་ལ་མ་གསལ་སོགས་ཡོད་ཚུལ་གསལ། དབོད་བྱང་ལུང་པའི་ཕུ་ལ་ཇོ་མོ་ཕུག་པ་ཞེས་ཕུག་པ་བདུན་བརྒྱད་ཙམ་ཡོད་པ་འཁོད།"@bo .
+    
+    bdr:NTEF9E6E7FF591BB8B
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 110" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "ruins of seven nuns hermitage"@en .
+}

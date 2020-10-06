@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2906 {
+    bda:G1KR2906  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2906 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1f/G1KR2906.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2906 ;
+        adm:logEntry        bda:LG64D97B0288BAED40 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632822101:455" ;
+        adm:place_id_lex    "632822101:627" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG64D97B0288BAED40
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-17T12:55:31.951Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo & added pinyin & changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV3C93D6BA90DB3CE0
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1KR2906  a         :Place ;
+        skos:altLabel       "xiangride shazhuyu cun manikang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zhang sde sa gru bzhi ma Ni khang /"@bo-x-ewts , "香日德沙珠玉村嘛呢康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID57140F15B0980E57 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV3C93D6BA90DB3CE0 ;
+        :placeGonpaPerEcumen  "5.33" ;
+        :placeLat           "35.92273" ;
+        :placeLocatedIn     bdr:G2378 ;
+        :placeLong          "97.62392" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID57140F15B0980E57
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2906" .
+}

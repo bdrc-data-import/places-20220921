@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00AG01618 {
+    bda:G00AG01618  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00AG01618 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "d6/G00AG01618.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00AG01618 ;
+        adm:logEntry        bda:LG77233599E3259AB4 , bda:LG823DFB662C7EFFFF , bda:LG9B16497F746C174F , bda:LGAA31B6331B965DDA , bda:LGB22039557451C458 , bda:LGDCB90BDF05FC6D2E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG77233599E3259AB4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-07T14:04:01.852Z"^^xsd:dateTime ;
+        adm:logMessage      "edited location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG823DFB662C7EFFFF
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-12T11:31:19.858Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG9B16497F746C174F
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-08T12:12:45.717Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGAA31B6331B965DDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-31T10:24:33.32Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB22039557451C458
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-02-07T13:25:15.616Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGDCB90BDF05FC6D2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-08T12:41:54.436Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:G00AG01618  a       :Place ;
+        skos:altLabel       "dpal ldan rgya mkhar gsang sngags chos gling /"@bo-x-ewts ;
+        skos:prefLabel      "rgya mkhar gsang sngags chos gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT645EEB32A8EA0D23 , bdr:NT80691D5B9D7EE18B ;
+        :placeLocatedIn     bdr:G4250 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT645EEB32A8EA0D23
+        a                   :Note ;
+        :noteText           "see gu ru bkra shis p. 664"@en .
+    
+    bdr:NT80691D5B9D7EE18B
+        a                   :Note ;
+        :noteText           "a monastery near mtsho skya bo in gtsang, a seat of the se ston line. this line began in the fourteenth century with se ston nyi ma bzang po, a disciple of rgod ldem chen."@en .
+}

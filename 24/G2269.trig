@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2269 {
+    bda:G2269  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2269 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "24/G2269.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2269 ;
+        adm:logEntry        bda:LG50E23702AE764181 , bda:LG701D1F0996241454 , bda:LG7C84A123BC274ECE , bda:LGE67F7A2472CD2A38 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542524202:74" ;
+        adm:place_id_lex    "542524202:74" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG50E23702AE764181
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T12:43:49.558Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG701D1F0996241454
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T14:19:23.693Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G3LS13(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7C84A123BC274ECE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE67F7A2472CD2A38
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-19T13:54:44.817Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA9BC325F0295C8B0
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:G2269  a            :Place ;
+        rdfs:comment        "热帮乡 Re Bang Xiang 5425 Ali Diqu Xizang gtsag phu lha khang gtsag phu lha khang 0.231 0.23" ;
+        skos:altLabel       "gtsag phu ma Ni lha khang /"@bo-x-ewts , "rtsa phu lha khang /"@bo-x-ewts , "扎普拉康"@zh-hans , "zhapu lakang"@zh-latn-pinyin-x-ndia , "zhapu mani lakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rtsa bu ma Ni lha khang /"@bo-x-ewts , "Tsapu Mani Lhakhang"@en , "扎普玛尼拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID173F7D2714A70C81 ;
+        :isRoot             true ;
+        :note               bdr:NT673514C9A80BE6B1 , bdr:NT6F21CF95E2245ECA , bdr:NTDFA8F6F0E8892022 ;
+        :placeEvent         bdr:EVA9BC325F0295C8B0 ;
+        :placeLat           "33.29000" ;
+        :placeLocatedIn     bdr:G2156 , bdr:G2293 ;
+        :placeLong          "80.81000" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID173F7D2714A70C81
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2269" .
+    
+    bdr:NT673514C9A80BE6B1
+        a                   :Note ;
+        :contentLocationStatement  "p. 11. 179" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "dge lugs pa temple in ra bang chus of ru thog rdzong, mnga' ris prefecture\none of the three lha khang of ru thog rdzong\n\"dkon gnyer gcig/ slad grwa tshad gcig go\"\nraised at the time of the cultural revolution\nrestoration began in 1989\nfounding connected with the name of bla ma skal bzang 'phel rgyas of lhun grub chos sdings"@en .
+    
+    bdr:NT6F21CF95E2245ECA
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 112" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Located 180 km from the Ruthok district. The place is connected to Gesar. \n\nDechen Samdup who belong to Gelugpa tradition built three stupas at this locality. Many ruins such mon khang, mon zhing, mon dur and mon tho etc."@en .
+    
+    bdr:NTDFA8F6F0E8892022
+        a                   :Note ;
+        :noteText           "moved info from G3LS13(dup.)"@en .
+}

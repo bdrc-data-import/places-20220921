@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3001 {
+    bda:G3001  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3001 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f1/G3001.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3001 ;
+        adm:logEntry        bda:LG6AD9B92B1512D3F2 , bda:LGE11FF1B7C734A00C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6AD9B92B1512D3F2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE11FF1B7C734A00C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T11:36:10.011Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3001  a            :Place ;
+        skos:prefLabel      "gnya' zhol ma'i tsho ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT78EFDAD2F75DF71D ;
+        :placeLocatedIn     bdr:G2977 ;
+        :placeType          bdr:PT0068 .
+    
+    bdr:NT78EFDAD2F75DF71D
+        a                   :Note ;
+        :contentLocationStatement  "p. 227" ;
+        :noteSource         bdr:MW20197 ;
+        :noteText           "one of seven tsho ba enumerated  in the source as under the control of dpal dge zhang, rkang tsha county, mtsho byang prefecture\nthis source indicates that there are 6 nomadic tsho ba in this zhang and one han settlement having the administrative status of tsho ba"@en .
+}

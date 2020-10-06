@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G890 {
+    bda:G890  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G890 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c9/G890.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G890 ;
+        adm:logEntry        bda:LG1CA694B51104784F , bda:LG7E0D7F93212DA7B7 , bda:LGC8D6C2DB32A63D8A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:C2CN11019 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG1CA694B51104784F
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-01-25T15:11:45.489Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of C2CN11019"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7E0D7F93212DA7B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-20T14:28:12.718Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC8D6C2DB32A63D8A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G890  a             :Place ;
+        skos:altLabel       "bzhis ka rtse bde legs rab brtan/"@bo-x-ewts ;
+        skos:prefLabel      "bde legs rab brtan/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC2EA6B1BFA970CB6 ;
+        :placeType          bdr:PT0024 .
+    
+    bdr:NTC2EA6B1BFA970CB6
+        a                   :Note ;
+        :noteText           "see C2CN11019"@en .
+}

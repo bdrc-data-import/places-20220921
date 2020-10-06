@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4439 {
+    bda:G4439  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4439 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c0/G4439.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4439 ;
+        adm:logEntry        bda:LG8CB348FEFF2F6AC7 , bda:LGBDB5556CD3CF508B , bda:LGD48F9FFE0DAFC79D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8CB348FEFF2F6AC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGBDB5556CD3CF508B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD48F9FFE0DAFC79D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T12:09:07.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G4439  a            :Place ;
+        skos:prefLabel      "rgyal mtshan gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT46DF6BB474B0A8B7 ;
+        :placeLocatedIn     bdr:G2129 , bdr:G4437 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NT46DF6BB474B0A8B7
+        a                   :Note ;
+        :contentLocationStatement  "p. 47" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "kagyu monastery located in brag sgo zhang of snye mo rdzong\nname of the founder and the date of the founding unknown\ndgon bdag: bon po lung\nnumber of nuns: 12"@en .
+}

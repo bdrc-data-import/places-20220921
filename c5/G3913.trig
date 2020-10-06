@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3913 {
+    bda:G3913  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3913 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c5/G3913.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3913 ;
+        adm:logEntry        bda:LG87758A54EA5FF219 , bda:LG9B064A101362DC7B , bda:LGB8FADE710F77D247 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG87758A54EA5FF219
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-15T10:48:52.332Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9B064A101362DC7B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB8FADE710F77D247
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-23T10:03:48.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVD4755C40BB86A67F
+        a                   :PlaceFounded ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G3913  a            :Place ;
+        skos:altLabel       "dga' tshal gling /"@bo-x-ewts ;
+        skos:prefLabel      "li thang dga' tshal gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAA0425D11D864393 ;
+        :placeEvent         bdr:EVD4755C40BB86A67F ;
+        :placeLocatedIn     bdr:G2304 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTAA0425D11D864393
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 100-102" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "sa skya monastery in li thang rdzong\nཁ་བུག་བླ་མ་ནམ་མཁའ་རྒྱལ་མཚན་གྱིས་བཞེངས། འགྲོ་མགོན་ཆོས་རྒྱལ་འཕགས་པ་བྱོན་པའི་བཞུགས་ཁྲི་ཡང་ཡོད་པར་གྲགས།"@en .
+}

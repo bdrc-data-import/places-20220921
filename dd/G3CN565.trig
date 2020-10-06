@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN565 {
+    bda:G3CN565  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN565 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "dd/G3CN565.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN565 ;
+        adm:logEntry        bda:LG3838982F53960F48 , bda:LGA0C61C720356DA53 , bda:LGC1095597865D1000 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3838982F53960F48
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-05T15:51:02.126Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA0C61C720356DA53
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-13T16:13:51.922Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC1095597865D1000
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-05T16:20:30.824Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV63F25D473D0826F3
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0704"^^xsd:gYear .
+    
+    bdr:G3CN565  a          :Place ;
+        skos:altLabel       "byar lings tsal/"@bo-x-ewts ;
+        skos:prefLabel      "byar lings tshal/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE110A15F0E960BAC ;
+        :placeEvent         bdr:EV63F25D473D0826F3 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NTE110A15F0E960BAC
+        a                   :Note ;
+        :contentLocationStatement  "p. 342" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"འབྲུག་གི་ལོ་ ༧༠༤ ལ་བབ་སྟེ། ་་་ དགུན་བཙན་པོ་ཆབ་སྲིད་ལ་མྱྭ་ལ་གཤེགས་པ་ལས། དགུང་དུ་གཤེགས། ཡུམ་ཁྲི་མ་ལོད་ལྷས་གང་ཙལ་(ཚལ་)ན་བཞུགས་ཏེ། འདུན་མ་བྱར་ལིངས་ཙལ་(ཚལ་)དུ་ཞང་ཁྲི་བཟང་སྟག་ཙབ་ཀྱིས་བསྡུས་པར་ལོ་གཅིག\" ཅེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་འདུས་སྲོང་མང་རྗེའི་སྐབས་ཀྱི་འདུན་ས་ཆེན་པོ་ཞིག་ཡིན་པ་ཤེས་ཏེ། དེ་ཡང་འཇང་ཡུལ་དང་ཐག་ཉེའི་ཁམས་ཕྱོགས་སུ་ཡིན་དྭོགས་ཆེ་བ་མུ་མཐུད་དཔྱད་རྒྱུ།"@bo .
+}

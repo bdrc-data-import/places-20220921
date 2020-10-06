@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1389 {
+    bda:G1389  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1389 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5c/G1389.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1389 ;
+        adm:logEntry        bda:LG59FE34A9F650A690 , bda:LGB753EB180AB47A5E , bda:LGD5F60FE342453331 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG59FE34A9F650A690
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-05T09:26:43.559Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB753EB180AB47A5E
+        a                   adm:WithdrawData ;
+        adm:logDate         "2012-10-01T14:34:35.983Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn. dup with G1389"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD5F60FE342453331
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1389  a            :Place ;
+        skos:prefLabel      "gung thang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE3A45BD8D46AA396 .
+    
+    bdr:NTE3A45BD8D46AA396
+        a                   :Note ;
+        :noteText           "withdrawn. dup with G1389"@en .
+}

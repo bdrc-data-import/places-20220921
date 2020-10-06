@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2JM254 {
+    bda:G2JM254  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2JM254 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a7/G2JM254.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2JM254 ;
+        adm:logEntry        bda:LG656D2A44A6FBC6CA , bda:LGF81C675C096C210D , bda:LGF9E80DFBC9141226 , bda:LGFBE784D6E0B6E8A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G8LS12773 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG656D2A44A6FBC6CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF81C675C096C210D
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-11T18:37:00.35Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGF9E80DFBC9141226
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-14T16:53:19.885Z"^^xsd:dateTime ;
+        adm:logMessage      "added records"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LGFBE784D6E0B6E8A2
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-03-19T09:27:28.901Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G8LS12773"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2JM254  a          :Place ;
+        skos:altLabel       "'brug yul nyi ma lung gi bshad grwa thub bstan bshad sgrub dar rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "'brug yul nyi ma lung gi bshad grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1A07D57FCDABB62C , bdr:NT881C7A1B3885CBED ;
+        :placeType          bdr:PT0038 .
+    
+    bdr:NT1A07D57FCDABB62C
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G8LS12773"@en .
+    
+    bdr:NT881C7A1B3885CBED
+        a                   :Note ;
+        :contentLocationStatement  "317" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "A Nyingma college founded by rdo ring mchog sprul 'jam dbyangs kun bzang lung rigs chos kyi nyi ma \n---Alumni  includes pad+ma tshe dbang"@en .
+}

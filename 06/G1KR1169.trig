@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1169 {
+    bda:G1KR1169  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1169 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "06/G1KR1169.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1169 ;
+        adm:logEntry        bda:LGA1D4C1FDC6126A27 , bda:LGDA9778D42C863A6C , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542125204:231" ;
+        adm:place_id_lex    "542125204:231" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA1D4C1FDC6126A27
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-26T16:30:41.267Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & coords & event & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDA9778D42C863A6C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-27T09:22:39.175Z"^^xsd:dateTime ;
+        adm:logMessage      "added Near G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV70A69231D7A2EFB0
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2CN11123 .
+    
+    bdr:EV70FD39AB5191623A
+        a                   :PlaceFounded ;
+        :onYear             "1061"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EVECC694DF531EF475
+        a                   :PlaceRebuilt ;
+        :notAfter           "1999"^^xsd:gYear ;
+        :notBefore          "1900"^^xsd:gYear .
+    
+    bdr:EVF0FFBA3B8A9616AE
+        a                   :PlaceDestroyed ;
+        :onYear             "1913"^^xsd:gYear .
+    
+    bdr:G1KR1169  a         :Place ;
+        skos:altLabel       "g.yung drung bstan rgyas gling /"@bo-x-ewts , "khyung dkar g.yung drung bstan rgyas gling /"@bo-x-ewts , "khyung po steng chen dgon/"@bo-x-ewts , "steng chen dgon g.yung drung bstan rgyas gling /"@bo-x-ewts , "邛波丁青寺"@zh-hans , "dingqing si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "steng chen dgon/"@bo-x-ewts , "丁青寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDEDC60966CED335EA ;
+        :isRoot             true ;
+        :note               bdr:NT81AB33EDC7AD8DC4 , bdr:NTB3F493B984D31B29 ;
+        :placeEvent         bdr:EV70A69231D7A2EFB0 , bdr:EV70FD39AB5191623A , bdr:EVECC694DF531EF475 , bdr:EVF0FFBA3B8A9616AE ;
+        :placeGonpaPerEcumen  "5.21" ;
+        :placeIsNear        bdr:G4520 ;
+        :placeLat           "31.428466" ;
+        :placeLocatedIn     bdr:G2188 ;
+        :placeLong          "95.578929" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDEDC60966CED335EA
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1169" .
+    
+    bdr:NT81AB33EDC7AD8DC4
+        a                   :Note ;
+        :contentLocationStatement  "p. 154-162" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "དགོན་འདི་སྟེང་ཆེན་གྲོང་རྡལ་ཁོངས་སུ་གནས།  ༡༠༦༡ལོར་ཁྱུང་པོ་ཤེས་རབ་རྒྱལ་མཚན་གྱིས་ཕྱག་བཏབ། གདན་རབས་དུ་མ་བརྒྱུད། སྟེང་ཆེན་སྟོད་དུ་ཁྱུང་དཀར་རྒྱུའི་བླ་རབས་རིམ་བྱོན་གྱི་གདན་ས་གཡུང་དྲུང་བསྟན་རྒྱས་གླིང་དང་། སྨད་དུ་ཁྱུང་བླ་རབས་བཅོ་བརྒྱད་བྱོན་པའི་གདན་ས་ཀུན་ཁྱབ་གླིང་ཞེས་པ་དེ་གཉིས་གཅིག་ཏུ་བསྒྲིལ་ཏེ་༡༨༦༢ལོར་དམ་པའི་ལུང་བཞིན་གཏེར་སྒྲོམ་ཁ་ཞེས་པར་གནས་སྤོས། གྲྭ་གྲངས་དང་སྡེ་གྲངས་མང་དུ་མངའ་བ་སོགས་གསལ།"@bo .
+    
+    bdr:NTB3F493B984D31B29
+        a                   :Note ;
+        :noteText           "Founded by Khyung dbus Shes rab rgyal mtshan.\n\n5 lamas -  61 monks"@en .
+}

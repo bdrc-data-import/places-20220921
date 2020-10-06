@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX330109000 {
+    bda:G9GBX330109000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX330109000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "98/G9GBX330109000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX330109000 ;
+        adm:logEntry        bda:LGBC4EF66700ACA66F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGBC4EF66700ACA66F
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX330109000
+        a                   :Place ;
+        skos:altLabel       "xiao shan qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Xiaoshan District"@en , "萧山区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX330109001 , bdr:G9GBX330109002 , bdr:G9GBX330109003 , bdr:G9GBX330109004 , bdr:G9GBX330109005 , bdr:G9GBX330109006 , bdr:G9GBX330109007 , bdr:G9GBX330109008 , bdr:G9GBX330109009 , bdr:G9GBX330109010 , bdr:G9GBX330109011 , bdr:G9GBX330109100 , bdr:G9GBX330109101 , bdr:G9GBX330109102 , bdr:G9GBX330109103 , bdr:G9GBX330109104 , bdr:G9GBX330109105 , bdr:G9GBX330109106 , bdr:G9GBX330109107 , bdr:G9GBX330109108 , bdr:G9GBX330109109 , bdr:G9GBX330109110 , bdr:G9GBX330109111 , bdr:G9GBX330109113 , bdr:G9GBX330109115 , bdr:G9GBX330109120 , bdr:G9GBX330109401 , bdr:G9GBX330109403 , bdr:G9GBX330109501 , bdr:G9GBX330109502 , bdr:G9GBX330109503 ;
+        :placeGB2260-2013   "330109000" ;
+        :placeLat           "30.1180508" ;
+        :placeLocatedIn     bdr:G9GBX330100000 ;
+        :placeLong          "120.2308345" ;
+        :placeType          bdr:PT0011 .
+}

@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2827 {
+    bda:G2827  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2827 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "cd/G2827.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2827 ;
+        adm:logEntry        bda:LG29F06B423DC02936 , bda:LG4BB07F3B67C1DB08 , bda:LG5017CE9AA521B6D7 , bda:LG8AF06BF560EE923F , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221100:542221119" ;
+        adm:place_id_lex    "542221100:542221119" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG29F06B423DC02936
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4BB07F3B67C1DB08
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:11:15.624Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5017CE9AA521B6D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-14T17:02:13.868Z"^^xsd:dateTime ;
+        adm:logMessage      "typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8AF06BF560EE923F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:25:06.7Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from stupa to mchodRten"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVABB82FA010C4F13D
+        a                   :PlaceFounded ;
+        :onYear             "0750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:G2827  a            :Place ;
+        skos:altLabel       "Tshechu Bumpa"@bo-x-phon-en , "Tshechu Bumpa"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tshe chu 'bum pa/"@bo-x-ewts , "次曲本巴寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0FB007D6BB4E5D4F ;
+        :isRoot             true ;
+        :note               bdr:NT4C101287E37A06AE , bdr:NT7372AB5811E58B2B , bdr:NT7808A8E31AD5CE90 , bdr:NTD8664D051DAAF59C ;
+        :placeEvent         bdr:EVABB82FA010C4F13D ;
+        :placeGonpaPerEcumen  "60.8" ;
+        :placeLat           "29.20902" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.75702" ;
+        :placeType          bdr:PT0072 .
+    
+    bdr:ID0FB007D6BB4E5D4F
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2827" .
+    
+    bdr:NT4C101287E37A06AE
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 57-58" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "རྒོད་ཐང་འབུམ་པ་དང་ཉེ་བའི་བཙན་ཐང་གྲོང་གི་ལམ་སྟེང་དུ་འབུམ་པ་དེ་བཏབ་ཡོད། དེ་ནི་སྔོན་དུས་སྐབས་ཤིག་ན་བོད་ཀྱི་མི་མང་པོ་ཤི་བ་བཙུན་མོ་ཅོག་རོ་བཟའ་སྒྲོན་གྱིས་གུ་རུ་རིན་པོ་ཆེར་དེའི་ཟློག་ཐབས་ཞུས་པར་གུ་རུས་གནས་དེར་དོང་མི་ཚད་དགུ་དྲུས་ཏེ་ཐོག་མར་བོད་མིར་བྱང་ཆུབ་ཀྱི་སེམས་སྐྱེས་ཆེད་སྤྱན་རས་གཟིགས་ཕྱག་བཞི་པ་དང་། དེའི་སྟེང་ནད་གདོན་ལས་སྒྲོལ་ཆེད་རྗེ་བཙུན་སྒྲོལ་མ། དེའི་སྟེང་གུ་རུ་སྣང་སྲིད་ཟིལ་གནོན་དང་། དེའི་སྟེང་འབུམ་པ་ཞིག་བཞེངས་དགོས་གསུངས་པ་ལྟར་བཞེངས་པ་ཡིན་གསུངས།"@bo .
+    
+    bdr:NT7372AB5811E58B2B
+        a                   :Note ;
+        :noteText           "chorten; 1 of 3 Tensum Chorten in Yarlung"@en .
+    
+    bdr:NT7808A8E31AD5CE90
+        a                   :Note ;
+        :contentLocationStatement  "p. 268" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "description"@en .
+    
+    bdr:NTD8664D051DAAF59C
+        a                   :Note ;
+        :contentLocationStatement  "p. 242" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "a stupa near or in yar lung"@en .
+}

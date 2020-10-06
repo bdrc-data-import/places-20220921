@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G309 {
+    bda:G309  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G309 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "06/G309.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G309 ;
+        adm:logEntry        bda:LG185B01E462BBA448 , bda:LG55BD11011BFA90C9 , bda:LGC50F18FF033BC1E6 , bda:LGD6F6D01068B68DC3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG185B01E462BBA448
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-21T11:57:38.472Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & place type & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG55BD11011BFA90C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-05T10:21:17.907Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC50F18FF033BC1E6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD6F6D01068B68DC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G309  a             :Place ;
+        skos:altLabel       "smyug rum dgon pa/"@bo-x-ewts , "snyug rum gtsug lag khang /"@bo-x-ewts ;
+        skos:prefLabel      "snyug rum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT753F8E2009FD2CCB , bdr:NT9A2175F3745B0744 , bdr:NTB738825903264A90 ;
+        :placeLocatedIn     bdr:G928 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT753F8E2009FD2CCB
+        a                   :Note ;
+        :contentLocationStatement  "p. 329" ;
+        :noteSource         bdr:MW26009 ;
+        :noteText           "ཀླུངས་ཤོད་མདར་སྨྱུག་རུམ་པ་ཆེན་པོས་བཏབ། སྤྱན་སྔ་པ་ཕེབས་ནས་རྡོར་གདན་དུ་བྱིན་གྱིས་བརླབས་པ་སོགས་ཟུར་ཙམ་གསལ།"@bo .
+    
+    bdr:NT9A2175F3745B0744
+        a                   :Note ;
+        :noteText           "Old TSD Seats table tree: \n\n-- Bka'-gdams-pa\n\n-- Dbus Gtsang\n\n-- Snyug-rum"@en .
+    
+    bdr:NTB738825903264A90
+        a                   :Note ;
+        :contentLocationStatement  "p. 189" ;
+        :noteSource         bdr:MW8224 ;
+        :noteText           "དབུས་སྟོད་ཁུལ་དུ་ཆགས་པའི་བཀའ་གདམས་པའི་དགོན་རྙིང་སྔར་དར་རྒྱས་ཆེ་ཞིང་ཕྱིས་མི་ནག་དུད་ཚང་གཉིས་ལས་མ་ལྷག་པ་ཞིག་ཏུ་གསལ།"@bo .
+}

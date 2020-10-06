@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN533 {
+    bda:G3CN533  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN533 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "dd/G3CN533.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN533 ;
+        adm:logEntry        bda:LG207F70D7D548AEA6 , bda:LG2E78ED3D6B854BA0 , bda:LG7B1078340C0A9C7C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG207F70D7D548AEA6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-29T15:03:38.138Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2E78ED3D6B854BA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-12T16:02:41.606Z"^^xsd:dateTime ;
+        adm:logMessage      "added 3 contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7B1078340C0A9C7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-31T17:00:51.103Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV68E4138D96F3BB75
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0673"^^xsd:gYear .
+    
+    bdr:G3CN533  a          :Place ;
+        skos:altLabel       "dungs gyi stag tsal/"@bo-x-ewts ;
+        skos:prefLabel      "dungs kyi stag tshal/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC5FD084B555BAA0F ;
+        :placeContains      bdr:G3CN514 , bdr:G3CN515 , bdr:G3CN599 ;
+        :placeEvent         bdr:EV68E4138D96F3BB75 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NTC5FD084B555BAA0F
+        a                   :Note ;
+        :contentLocationStatement  "p. 264" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"བྱ་གག་གི་ལོ་ ༦༧༣ ལའ་་་་ དགུན་ཕོ་བྲང་ཤངས་ཀྱི་རབ་ཁ་ཚལ་དུ་གཤེགས་ཤིང་། འདུན་མ་དུངས་གྱི་(ཀྱི་)སྟག་ཙལ་(ཚལ)་དུ་བསྡུས་ཏེ། མུན་དམག་གི་རྐང་ཏོན་བགྱིས། ཕ་ལོས་བཀུག་པར་ལོ་གཅིག\" ཅེས་གསལ་བ་ལས། འདི་ནི་འདུན་མ་ཆེན་པོ་བྱེད་ས་ཞིག་ཡིན་ནོ།"@bo .
+}

@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1855 {
+    bda:G1KR1855  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1855 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "9d/G1KR1855.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1855 ;
+        adm:logEntry        bda:LG09D9179466B53610 , bda:LG595BFE0E7F9212FF , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542621100:524" ;
+        adm:place_id_lex    "542621100:524" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG09D9179466B53610
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T09:40:23.036Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in tibetan & Gis Coords & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG595BFE0E7F9212FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T11:15:42.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added Near G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVB73B411AFCBA7B83
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1855  a         :Place ;
+        skos:altLabel       "kong po rgyal ri dgon/"@bo-x-ewts , "sgyel ri dgon/"@bo-x-ewts , "sgyil ri dgon/"@bo-x-ewts , "jiri si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dgyes ri dgon/"@bo-x-ewts , "吉日寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8F2EE2E2AE9F4D1B ;
+        :isRoot             true ;
+        :note               bdr:NT3CDC4B81261A8B75 , bdr:NT494E5BEE73374306 , bdr:NT534F4BADA23C8ABF ;
+        :placeEvent         bdr:EVB73B411AFCBA7B83 ;
+        :placeGonpaPerEcumen  "11.09" ;
+        :placeIsNear        bdr:G4498 ;
+        :placeLat           "29.563807" ;
+        :placeLocatedIn     bdr:G2123 ;
+        :placeLong          "94.490931" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID8F2EE2E2AE9F4D1B
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1855" .
+    
+    bdr:NT3CDC4B81261A8B75
+        a                   :Note ;
+        :contentLocationStatement  "p. 230" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "གནས་ཆེན་བོན་རིའི་ལྡེབས་སུ་སྲིད་རྒྱལ་དགོན་ཆེན་དང་། སྟག་རྩེ་དགོན། སྟག་བྲོ་དགོན། སྒྱིལ་རི་དགོན་སོགས་དགོན་གནས་དགུ་ཙམ་ཞིག་གནས་པ་འཁོད།"@bo .
+    
+    bdr:NT494E5BEE73374306
+        a                   :Note ;
+        :noteText           "Founded by mi ’gyur rgyal mtshan, the 16th abbot of Srid rgyal Monastery."@en .
+    
+    bdr:NT534F4BADA23C8ABF
+        a                   :Note ;
+        :contentLocationStatement  "'phar ma (2003), pp. 94-96" ;
+        :noteSource         bdr:MW28826 ;
+        :noteText           "bon monastery in the vicinity of bon ri in kong po\nfounded by blo ldan snying po\ncompletely destroyed during the cultural revolution; restored in 1998 through the efforts of rme ston gnam lha rin po che\nnow under the control of dge bshes ye shes thabs mkhas\n\n(this note moved from G4501)"@en .
+}

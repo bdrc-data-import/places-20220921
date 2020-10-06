@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS586 {
+    bda:G2LS586  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS586 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "bd/G2LS586.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS586 ;
+        adm:logEntry        bda:LG3955E519BC1E8BC1 , bda:LG71639009436DE90E , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522203:39" ;
+        adm:place_id_lex    "542522203:39" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3955E519BC1E8BC1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:55:45.366Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG71639009436DE90E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T11:08:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA751E643A0ECB024
+        a                   :PlaceConverted ;
+        :note               bdr:NTF0C586F839112A02 .
+    
+    bdr:EVDC9A47BB951522BA
+        a                   :PlaceFounded ;
+        :onYear             "1690"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2LS586  a          :Place ;
+        skos:altLabel       "bkra shis chos gling dgon/"@bo-x-ewts , "za rang bkra shis chos gling dgon/"@bo-x-ewts , "sarang zhaxi qulin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "za rang dgon/"@bo-x-ewts , "萨让扎西曲林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBF9DFAE58A76A8BB ;
+        :isRoot             true ;
+        :note               bdr:NTD85939E7EE682B4F ;
+        :placeEvent         bdr:EVA751E643A0ECB024 , bdr:EVDC9A47BB951522BA ;
+        :placeGonpaPerEcumen  "2.93" ;
+        :placeLat           "31.65000" ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeLong          "78.95000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDBF9DFAE58A76A8BB
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2LS586" .
+    
+    bdr:NTD85939E7EE682B4F
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 86" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Located under the jurisdiction of Zarang chief. Previously follower of Gelugpa but now Nyingma tradition"@en .
+    
+    bdr:NTF0C586F839112A02
+        a                   :Note ;
+        :noteText           "SAME"@en .
+}

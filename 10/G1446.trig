@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1446 {
+    bda:G1446  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1446 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "10/G1446.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1446 ;
+        adm:logEntry        bda:LG2D3C3DE07525CAD8 , bda:LG53C91CC5A7E861E3 , bda:LG8D11073B2236BCE3 , bda:LGB741E17D89FFC4BE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G928 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG2D3C3DE07525CAD8
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-05-31T11:15:12.356Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G928"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG53C91CC5A7E861E3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8D11073B2236BCE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-16T10:34:22.63Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language encoding & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB741E17D89FFC4BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1446  a            :Place ;
+        skos:prefLabel      "dbus stod klung shod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0822AF43BE79F95C ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT0822AF43BE79F95C
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G928"@en .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G654 {
+    bda:G654  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G654 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a2/G654.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G654 ;
+        adm:logEntry        bda:LG37A3BBF58A730046 , bda:LG49687D18D899C51E , bda:LG9497BE22E240194B , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG37A3BBF58A730046
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-14T15:21:38.322Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG49687D18D899C51E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9497BE22E240194B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-31T09:56:50.616Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G654  a             :Place ;
+        skos:altLabel       "gyar pa mar rkyang /"@bo-x-ewts ;
+        skos:prefLabel      "mar rkyang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2A1096A754A85568 , bdr:NT3C039B7914132247 ;
+        :placeLocatedIn     bdr:G3CN138 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT2A1096A754A85568
+        a                   :Note ;
+        :noteText           "dbus mar rkyang ('dam gzhung rdzong gyar pa mar rkyang)"@bo-x-ewts .
+    
+    bdr:NT3C039B7914132247
+        a                   :Note ;
+        :contentLocationStatement  "p. 236" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "the 1st stag brag was born in mar rkyang which is now in snye mo rdzong\nnote difference in orthography: mar rgyang and mar rkyang"@en .
+}

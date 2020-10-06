@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KG1681 {
+    bda:G2KG1681  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KG1681 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ef/G2KG1681.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KG1681 ;
+        adm:logEntry        bda:LG32C945EC96905859 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG32C945EC96905859
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-03T14:21:32.903Z"^^xsd:dateTime ;
+        adm:logMessage      "new place record"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:EV2D0E0A0C2BE627C2
+        a                   :PlaceFounded ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:G2KG1681  a         :Place ;
+        skos:altLabel       "phu brag dgon/"@bo-x-ewts , "phur brag dgon/"@bo-x-ewts , "spug brag dgon/"@bo-x-ewts ;
+        skos:prefLabel      "spu brag dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAABEAD26BB27DCB8 ;
+        :placeEvent         bdr:EV2D0E0A0C2BE627C2 ;
+        :placeLocatedIn     bdr:G2160 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTAABEAD26BB27DCB8
+        a                   :Note ;
+        :noteSource         bdr:MW2KG1670 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3407 {
+    bda:G3407  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3407 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "aa/G3407.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3407 ;
+        adm:logEntry        bda:LG36A972E2CB4E9875 , bda:LG5A880A809FED5BCB , bda:LG7CFB5ABF99BAB6FF , bda:LGD3D9DB4B0F81A430 , bda:LGIM035E0028DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG36A972E2CB4E9875
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T16:00:41.966Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5A880A809FED5BCB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7CFB5ABF99BAB6FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-15T15:51:36.291Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G10MS10288 to G2127"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD3D9DB4B0F81A430
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G10MS10288"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM035E0028DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from zhangxiang to shang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3407  a            :Place ;
+        skos:prefLabel      "sbyar kha shang ('phan po lhun grub rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G10MS10288 , bdr:G2127 ;
+        :placeType          bdr:PT0077 .
+}

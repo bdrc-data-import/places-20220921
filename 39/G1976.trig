@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1976 {
+    bda:G1976  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1976 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "39/G1976.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1976 ;
+        adm:logEntry        bda:LG0AF234B51911FD2C , bda:LG1791AC6755DBC896 , bda:LG19634088D8A19294 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0AF234B51911FD2C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG1791AC6755DBC896
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T10:08:18.294Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG19634088D8A19294
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV552CA6BE9F2267AA
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P37 ;
+        :onYear             "1649"^^xsd:gYear .
+    
+    bdr:G1976  a            :Place ;
+        skos:altLabel       "don gnyis gling (lho brag)"@bo-x-ewts ;
+        skos:prefLabel      "lho brag don gnyis gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5F0E93BF852A63D2 , bdr:NTCFF2C42BE3142228 ;
+        :placeEvent         bdr:EV552CA6BE9F2267AA ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT5F0E93BF852A63D2
+        a                   :Note ;
+        :contentLocationStatement  "p. 592" ;
+        :noteSource         bdr:MW20115 ;
+        :noteText           "dge lugs pa monastery founded in 1649 by the 5th dalai lama"@en .
+    
+    bdr:NTCFF2C42BE3142228
+        a                   :Note ;
+        :noteSource         bdr:MW20115 .
+}

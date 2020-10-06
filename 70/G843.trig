@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G843 {
+    bda:G843  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G843 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "70/G843.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G843 ;
+        adm:logEntry        bda:LG00D06763BC12D628 , bda:LG19A2A4F1CC7DBCC1 , bda:LG429C4DCC7EE41C74 , bda:LG450D00E9850ECF1B , bda:LG5A12B9BB0A0111E5 , bda:LG6099EE9F0CA06827 , bda:LG83052F9ADEBFE308 , bda:LGD8274F175B690E47 , bda:LGDC1A1F0DF292EAF3 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00D06763BC12D628
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-06T14:24:06.909Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG19A2A4F1CC7DBCC1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG429C4DCC7EE41C74
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-29T10:50:50.918Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains \"byar\" & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG450D00E9850ECF1B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-29T09:47:11.429Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1362"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5A12B9BB0A0111E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-30T16:21:50.521Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6099EE9F0CA06827
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-19T14:11:54.644Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG83052F9ADEBFE308
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-10T16:02:17.934Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD8274F175B690E47
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-25T09:28:23.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDC1A1F0DF292EAF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-04T16:27:00.108Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G843  a             :Place ;
+        skos:altLabel       "bya yul/"@bo-x-ewts ;
+        skos:prefLabel      "byar yul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0B375E2BE146D779 , bdr:NT26133395426FC0FE , bdr:NT265A702879D89EDA ;
+        :placeContains      bdr:G1362 , bdr:G2CN11060 , bdr:G3CN528 , bdr:G4221 , bdr:G4223 , bdr:G4224 , bdr:G46 , bdr:G4887 , bdr:G844 ;
+        :placeLocatedIn     bdr:G1990 , bdr:G3176 ;
+        :placeType          bdr:PT0070 .
+    
+    bdr:NT0B375E2BE146D779
+        a                   :Note ;
+        :contentLocationStatement  "p. 417, p. 419" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"(ས་ཕག་ ༧༥༩ )དབྱར་བཙན་པོ་ཁྲི་སྲོང་ལྡེ་བརྩན་(བཙན་)གྱི་ཕོ་བྲང་ཟུ་སྤུག་ན་བཞུགས་ཏེ་ ་་་ དགུན་བཙན་པོའི་ཕོ་བྲང་བྱར་གྱི་ལྕང་བུ་ན་བཞུགས་ཏེ་\"ཞེས་སོགས་ཀྱང་གསལ།\nགཞན་ཡང་འདིར་གསལ་བའི་བྱར་ནི། \"བོད་ཀྱི་ལྷོ་ཕྱོགས་བྱ་ཡུལ་དང་། གསང་སྔགས་ཆོས་གླིང་གི་ས་ཁུལ་དུའོ།\" ཞེས་མཆན་འགྲེལ་གནང་ཡོད།"@bo .
+    
+    bdr:NT26133395426FC0FE
+        a                   :Note ;
+        :noteText           "traditional place name in southern tibet"@en .
+    
+    bdr:NT265A702879D89EDA
+        a                   :Note ;
+        :contentLocationStatement  "p. 1485" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "བྱར་དྭགས་ཀོང་གསུམ་ཞེས་སུ་གྲགས་པའི་ཡ་གྱལ་ཏེ། ལྷོ་ཁ་བརྒལ་ནས། བྱར། དྭགས་པོ། ཀོང་པོ་གསུམ་ཞེས་རོང་ཁུལ་གྱི་ས་ཆ་གསུམ་གྱི་བསྡུས་མིང་ཡིན། དེ་ཡང་དྭགས་པོའི་ལྷོ་རྒྱུད་དུ་ཆགས་ཡོད་པ་དེང་ལྷུན་རྩེ་རྫོང་ཁོངས་སུ་གནས་ཡོད།"@bo .
+}

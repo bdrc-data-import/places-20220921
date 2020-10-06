@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN75 {
+    bda:G3CN75  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN75 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "3c/G3CN75.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN75 ;
+        adm:logEntry        bda:LG00E3767DCBCCD4D6 , bda:LG3544F9A4095BA512 , bda:LG57FD519CC677C750 , bda:LGB43426A184ED9157 , bda:LGE2BA6548051D089D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00E3767DCBCCD4D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T16:12:38.771Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3544F9A4095BA512
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-10T14:41:54.758Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG57FD519CC677C750
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-10T14:26:17.596Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB43426A184ED9157
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T12:08:32.313Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as \"stongSde\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE2BA6548051D089D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-10T15:04:42.979Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVEB39B34042739E9B
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN75  a           :Place ;
+        skos:altLabel       "myang yul/"@bo-x-ewts , "nyang ro/"@bo-x-ewts ;
+        skos:prefLabel      "myang ro/"@bo-x-ewts , "Nyangro"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NTA95BFC2520E2FD5A ;
+        :placeContains      bdr:G3584 , bdr:G4146 , bdr:G971 ;
+        :placeEvent         bdr:EVEB39B34042739E9B ;
+        :placeLocatedIn     bdr:G3175 ;
+        :placeType          bdr:PT0073 .
+    
+    bdr:NTA95BFC2520E2FD5A
+        a                   :Note ;
+        :contentLocationStatement  "p. 102" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "རུ་ལག་གི་སྟོང་སྡེ་བཅུ་ཡི་ནང་ཚན་ཞིག་ཡིན་པར་གསལ།"@bo .
+}

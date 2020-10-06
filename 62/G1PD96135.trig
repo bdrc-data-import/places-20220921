@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD96135 {
+    bda:G1PD96135  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD96135 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "62/G1PD96135.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD96135 ;
+        adm:logEntry        bda:LG856DB2306D67E573 , bda:LGB5884B9BF5F93CD7 , bda:LGCB719F053B0006DE , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632127206:179" ;
+        adm:place_id_lex    "632127206:309" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG856DB2306D67E573
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-12-11T14:08:23.362Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB5884B9BF5F93CD7
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-11T15:54:50.708Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCB719F053B0006DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:26.162Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV46D81516D636062B
+        a                   :PlaceFounded ;
+        :onYear             "1800"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1PD96135  a        :Place ;
+        skos:altLabel       "却扎岗日小寺"@zh-hans , "郭卜列寺"@zh-hans , "guobulie si"@zh-latn-pinyin-x-ndia , "guopulie si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sgom ris ri khrod/"@bo-x-ewts , "郭卜列寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA82F9F03D776028C ;
+        :isRoot             true ;
+        :note               bdr:NT7E170CAE296EF711 ;
+        :placeEvent         bdr:EV46D81516D636062B ;
+        :placeGonpaPerEcumen  "37.97" ;
+        :placeLat           "36.12012" ;
+        :placeLocatedIn     bdr:G1PD96109 ;
+        :placeLong          "102.11000" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:IDA82F9F03D776028C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD96135" .
+    
+    bdr:NT7E170CAE296EF711
+        a                   :Note ;
+        :contentLocationStatement  "p. 102" ;
+        :noteSource         bdr:MW1PD95675 .
+}

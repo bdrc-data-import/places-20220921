@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3707 {
+    bda:G3707  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3707 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e0/G3707.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3707 ;
+        adm:logEntry        bda:LG509970AC910003DD , bda:LG9D6D8B858F2467C6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG509970AC910003DD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9D6D8B858F2467C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-10T14:17:34.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3707  a            :Place ;
+        skos:altLabel       "kaH thog dgon (mon yul)"@bo-x-ewts ;
+        skos:prefLabel      "mon yul kaH thog dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB2F5795DF7AC76A3 ;
+        :placeLocatedIn     bdr:G1PD108904 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTB2F5795DF7AC76A3
+        a                   :Note ;
+        :contentLocationStatement  "p. 167" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "a subsidiary monastery of kaH thog in 'the west\" according to the list of kaH thog si tu chos kyi rgya mtsho"@en .
+}

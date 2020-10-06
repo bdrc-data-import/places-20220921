@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1907 {
+    bda:G1907  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1907 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "13/G1907.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1907 ;
+        adm:logEntry        bda:LG0EFB65224612A698 , bda:LGA899824BCFCB6F33 , bda:LGC9FA07F8683FA4E1 , bda:LGFA5188E2B7530E06 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632323203:652" ;
+        adm:place_id_lex    "632323203:648" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0EFB65224612A698
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA899824BCFCB6F33
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T16:03:50.417Z"^^xsd:dateTime ;
+        adm:logMessage      "added reb gong rdzong"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGC9FA07F8683FA4E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T13:58:29.374Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGFA5188E2B7530E06
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-09T15:36:53.806Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1491610C8B16FDCB
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1907  a            :Place ;
+        skos:altLabel       "bon brgya khyung sman dgon mdo sngags bshad sgrub smin grol lhun grub gling /"@bo-x-ewts , "mdo sngags bshad sgrub smin grol lhun grub gling /"@bo-x-ewts , "wangjia benjiao huodong dian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bon brgya khyung sman dgon/"@bo-x-ewts , "Do-ngak Shedrub Mingrol Lhundrubing"@en , "王加本教活动点"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCD4FE8498A16FAF8 ;
+        :isRoot             true ;
+        :note               bdr:NT86ABBF36D9461582 ;
+        :placeEvent         bdr:EV1491610C8B16FDCB ;
+        :placeGonpaPerEcumen  "12.73" ;
+        :placeLat           "35.31000" ;
+        :placeLocatedIn     bdr:G1812 , bdr:G984 ;
+        :placeLong          "100.90000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDCD4FE8498A16FAF8
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1907" .
+    
+    bdr:NT86ABBF36D9461582
+        a                   :Note ;
+        :contentLocationStatement  "p. 598" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "monastery in kos nan rdzong, mtsho lho bod rigs rang skyong khul"@en .
+}

@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G523 {
+    bda:G523  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G523 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "52/G523.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G523 ;
+        adm:logEntry        bda:LG168498219E058295 , bda:LG46A48299F5A866C5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632625204:524" ;
+        adm:place_id_lex    "632625204:351" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG168498219E058295
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-27T12:53:33.964Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG46A48299F5A866C5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVFA0E84F080494EA1
+        a                   :PlaceFounded ;
+        :onYear             "1857"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G523  a             :Place ;
+        skos:altLabel       "dar thang dgon/"@bo-x-ewts , "dpal yul dar thang dgon/"@bo-x-ewts , "dpal yul dar thang mdo sngags bshad sgrub gling /"@bo-x-ewts , "白玉达唐寺"@zh-hans , "baiyu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dar thang dgon/"@bo-x-ewts , "白玉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID98EDDC172D9513AB ;
+        :isRoot             true ;
+        :note               bdr:NT45FC4CD5BEA479B9 , bdr:NTDBFF358375BCAC16 ;
+        :placeEvent         bdr:EVFA0E84F080494EA1 ;
+        :placeGonpaPerEcumen  "2.52" ;
+        :placeLat           "33.26000" ;
+        :placeLocatedIn     bdr:G1700 , bdr:G1772 ;
+        :placeLong          "100.65000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID98EDDC172D9513AB
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G523" .
+    
+    bdr:NT45FC4CD5BEA479B9
+        a                   :Note ;
+        :noteText           "rnying ma monastery affiliated to dpal yul monastery located in gcig sgril rdzong in mgo log"@en .
+    
+    bdr:NTDBFF358375BCAC16
+        a                   :Note ;
+        :contentLocationStatement  "p. 164" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "branch monastery of the great rnying ma pa monastery dpal yul located in gcig sgril rdzong in mgo log\nfounded in 1882 by lha sprul padma gar dbang bstan 'dzin, the rebirth of karma 'gyur med"@en .
+}

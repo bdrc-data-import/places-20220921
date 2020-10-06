@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN596 {
+    bda:G3CN596  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN596 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "af/G3CN596.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN596 ;
+        adm:logEntry        bda:LG1AE50A13EC2A0D46 , bda:LG6D0B9A52E609CB2D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1AE50A13EC2A0D46
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-12T15:11:09.007Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & contains, note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6D0B9A52E609CB2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-12T15:35:58.77Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV6B1858360B60DC35
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0719"^^xsd:gYear .
+    
+    bdr:EVD2C181BD1EEF0A9B
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0718"^^xsd:gYear .
+    
+    bdr:G3CN596  a          :Place ;
+        skos:prefLabel      "yol/"@bo-x-ewts , "Yol"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT090E4985EADEDA21 , bdr:NT52F19D48A15B4010 ;
+        :placeContains      bdr:G3CN563 , bdr:G3CN568 ;
+        :placeEvent         bdr:EV6B1858360B60DC35 , bdr:EVD2C181BD1EEF0A9B ;
+        :placeLocatedIn     bdr:G1202 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT090E4985EADEDA21
+        a                   :Note ;
+        :contentLocationStatement  "p. 376" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"རྟའི་ལོ་ ༧༡༨་ལ་བབ་སྟེ། ་་་ དགུན་བཙན་པོ་ཕོ་བྲང་བྲག་དམར་ན་བཞུགས། རུ་གསུམ་གྱི་རྗེ་་་ མདོ་སྨད་ཀྱི་དགུན་འདུན། བློན་ཁྲི་གཟིགས་ཀྱིས། ཡོལ་དུ་བསྡུས་པར་ལོ་གཅིག\" ཞེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་ཁྲི་ལྡེ་གཙུག་བཙན་གྱིས་མདོ་སྨད་ཀྱི་འདུན་མ་ཆེན་པོ་བྱེད་ས་ཞིག་ཡིན་པ་ཤེས།"@bo .
+    
+    bdr:NT52F19D48A15B4010
+        a                   :Note ;
+        :contentLocationStatement  "p. 376" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"ལུག་གི་ལོ་ ༧༡༩ ལ་་་་ དགུན་བཙན་པོ་བྲག་དམར་ན་བཞུགས། དགུན་འདུན་ཚང་བང་སྣར་ཞང་བཙན་ཏོ་རེ་དང་། བློན་ཁྲི་སུམ་རྗེས་བསྡུས་ཏེ། ཞང་ཞུང་དང་མརད་ཀྱི་ཕ་ལོས་བཀུག རྔེགས་མང་ཞམ་སྟག་ཙབ་ཀྱིས་གཙང་ཆེན་གྱི་རྗེ་ཞིང་གྱི་ཕྱིང་རིལ་བཏབ། མདོ་སྨད་ཀྱི་དགུན་འདུན་བློན་ཆེན་པོ་ཁྲི་གཟིགས་ཀྱིས་ཡོལ་དུ་བསྡུས་པར་ལོ་གཅིག\" ཞེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་ཁྲི་ལྡེ་གཙུག་བཙན་གྱི་སྐབས་མདོ་སྨད་ཀྱི་འདུན་མ་ཆེན་པོ་བྱེད་ས་ཞིག་ཡིན་པ་ཤེས།"@bo .
+}

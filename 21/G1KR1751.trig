@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1751 {
+    bda:G1KR1751  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1751 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "21/G1KR1751.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1751 ;
+        adm:logEntry        bda:LG33BAC89111112839 , bda:LG366DEE352C12BC95 , bda:LGE97D7339DBD29480 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542429200:471" ;
+        adm:place_id_lex    "542429200:471" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG33BAC89111112839
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-09T15:59:13.551Z"^^xsd:dateTime ;
+        adm:logMessage      "added name in tibetan from pinyin"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG366DEE352C12BC95
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-09T11:12:52.225Z"^^xsd:dateTime ;
+        adm:logMessage      "added Gis Coords & info from G4505(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE97D7339DBD29480
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-23T14:48:36.051Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & event & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVA81B11BFF89E3081
+        a                   :PlaceFounded ;
+        :onYear             "1847"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EVE2CFD69E2DF4A9C0
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P9286 ;
+        :onYear             "1847"^^xsd:gYear .
+    
+    bdr:G1KR1751  a         :Place ;
+        skos:altLabel       "hor ye tha spa tshang dgon/"@bo-x-ewts , "spa dgon g.yung drung rab brtan/"@bo-x-ewts , "spa tshang dgon g.yung drung rab brtan gling /"@bo-x-ewts , "bacang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "spa tshang dgon/"@bo-x-ewts , "巴仓寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID44ECE1E6A21E5A42 ;
+        :isRoot             true ;
+        :note               bdr:NT2F45AB0B2DD7A04A , bdr:NT998C1723843456B1 , bdr:NTCC5028CFCAD9D301 ;
+        :placeEvent         bdr:EVA81B11BFF89E3081 , bdr:EVE2CFD69E2DF4A9C0 ;
+        :placeGonpaPerEcumen  "4.21" ;
+        :placeLat           "31.927906" ;
+        :placeLocatedIn     bdr:G2150 ;
+        :placeLong          "94.038873" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID44ECE1E6A21E5A42
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1751" .
+    
+    bdr:NT2F45AB0B2DD7A04A
+        a                   :Note ;
+        :contentLocationStatement  "p. 112" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "དགོན་དེ་ནི་ཡེ་ཐང་ཤང་གི་ཁོངས་སུ་གནས། ༡༨༤༧ལོར་སྤ་སྟོན་གཡུང་དྲུང་ནམ་བཟང་གིས་ཕྱག་བཏབ། གྲུབ་ཐོབ་སྤ་ཡི་གདན་ས་ལྟེ་བ་དེ་༼G3535༽སྟོད་ནས་སྨད་དུ་འཕོས་པར་བོན་གྱི་ཆོས་འབྱུང་ཞལ་མཐུན་པ་སོགས་ལོ་རྒྱུས་ཞིབ་ཙམ་འཁོད།"@bo .
+    
+    bdr:NT998C1723843456B1
+        a                   :Note ;
+        :contentLocationStatement  "p. 298" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "bonpo monastery founded by spa ston nam bzang in 1847 [this note moved from G4505(dup.)]"@en .
+    
+    bdr:NTCC5028CFCAD9D301
+        a                   :Note ;
+        :noteText           "Founded by Spa ston G.yung drung nam bzang of the Spa lineage.\n3 lamas -  100+ monks"@en .
+}

@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN57 {
+    bda:G3CN57  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN57 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "57/G3CN57.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN57 ;
+        adm:logEntry        bda:LG5AC2A89492DCB39B , bda:LG930CA6E4275376B4 , bda:LGE8B47B6C1980F894 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5AC2A89492DCB39B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-06T16:54:09.019Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG930CA6E4275376B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T11:49:30.448Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as \"stongSde\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE8B47B6C1980F894
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T16:11:54.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV40EC8EBFECC145A8
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN57  a           :Place ;
+        skos:prefLabel      "dmyal/"@bo-x-ewts , "Nyal"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT1D39CA1B10B11A72 ;
+        :placeEvent         bdr:EV40EC8EBFECC145A8 ;
+        :placeLocatedIn     bdr:G3176 ;
+        :placeType          bdr:PT0073 .
+    
+    bdr:NT1D39CA1B10B11A72
+        a                   :Note ;
+        :contentLocationStatement  "p. 101-102" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "གཡོ་རུའི་སྟོང་སྡེ་བཅུ་ཡི་ནངཚན་ཞིག་ཡིན་པར་གསལ།"@bo .
+}

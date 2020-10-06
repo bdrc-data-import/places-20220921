@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2193 {
+    bda:G2193  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2193 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "20/G2193.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2193 ;
+        adm:logEntry        bda:LG30909DF3F1FD386C , bda:LG33B42DDC8B8ACDF0 , bda:LG8B23EFC34DC9C77E , bda:LGA7D92B15DC3AE9A7 , bda:LGE08AC0DDB472A8F1 , bda:LGE7CA11BDECF7E789 , bda:LGEB298222814923A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG30909DF3F1FD386C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-14T11:18:14.791Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG33B42DDC8B8ACDF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-08T15:13:02.215Z"^^xsd:dateTime ;
+        adm:logMessage      "testing"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8B23EFC34DC9C77E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-12T16:57:11.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA7D92B15DC3AE9A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T15:45:29.265Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2 types (testing)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE08AC0DDB472A8F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-05T20:30:25.76Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G2192 to G2191"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE7CA11BDECF7E789
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T12:07:57.226Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEB298222814923A2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2193  a            :Place ;
+        skos:altLabel       "khams ra'i rgyal khab nags tshal spyi gling /"@bo-x-ewts , "坎布拉国家森林公园"@zh-hans , "kanbula guojia senlin gongyuan"@zh-latn-pinyin-x-ndia , "kanbula senlin"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "khams ra'i nags tshal gling kha/"@bo-x-ewts , "坎布拉森林"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT12AC43E29A0D0117 ;
+        :placeContains      bdr:G1KG514 ;
+        :placeLocatedIn     bdr:G1695 , bdr:G2191 ;
+        :placeType          bdr:PT0052 .
+    
+    bdr:NT12AC43E29A0D0117
+        a                   :Note ;
+        :noteSource         bdr:MW20196 ;
+        :noteText           "this booklet describes the national forest and its sites of tourist attraction in tibetan, chinese, and english\nlocated at 36ï¿½4'-36ï¿½10' E and 101ï¿½38'-101ï¿½49' N"@en .
+}

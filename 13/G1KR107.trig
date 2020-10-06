@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR107 {
+    bda:G1KR107  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR107 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "13/G1KR107.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR107 ;
+        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513229205:62" ;
+        adm:place_id_lex    "513229205:62" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV82F09A3B6E40A6BE
+        a                   :PlaceFounded ;
+        :onYear             "1926"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR107  a          :Place ;
+        skos:altLabel       "板凳龙寺 (州志2574）"@zh-hans , "板灯龙寺庙"@zh-hans , "Ban deng si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ban de lung dgon/"@bo-x-ewts , "板灯寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6DDA68EB54237534 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV82F09A3B6E40A6BE ;
+        :placeGonpaPerEcumen  "11.15" ;
+        :placeLat           "31.86152" ;
+        :placeLocatedIn     bdr:G2330 ;
+        :placeLong          "101.72145" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID6DDA68EB54237534
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR107" .
+}

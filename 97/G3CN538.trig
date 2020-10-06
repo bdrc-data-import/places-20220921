@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN538 {
+    bda:G3CN538  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN538 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "97/G3CN538.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN538 ;
+        adm:logEntry        bda:LG0661262609D82C64 , bda:LG4810217192535D35 , bda:LGD0A9A7DCA3655C23 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0661262609D82C64
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-31T09:40:49.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added Near G# & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4810217192535D35
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-31T12:04:54.387Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD0A9A7DCA3655C23
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-31T09:27:00.734Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV33151F2EE6EA1845
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0680"^^xsd:gYear .
+    
+    bdr:EVD6A816136FC9F5B3
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0683"^^xsd:gYear .
+    
+    bdr:G3CN538  a          :Place ;
+        skos:altLabel       "sprags gyi mur gas/"@bo-x-ewts ;
+        skos:prefLabel      "sprags kyi mur gas/"@bo-x-ewts , "Drak"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT51BA69C311F662A6 , bdr:NT621AB8ECE2DFB890 ;
+        :placeEvent         bdr:EV33151F2EE6EA1845 , bdr:EVD6A816136FC9F5B3 ;
+        :placeIsNear        bdr:G3CN476 ;
+        :placeLocatedIn     bdr:G2011 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT51BA69C311F662A6
+        a                   :Note ;
+        :contentLocationStatement  "p. 338" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"འབྲུག་གི་ལོ་ ༦༨༠ ལ་བཙན་པོ་ཉེན་ཀར་ན་བཞུགས་ཤིང་། བློན་ཁྲི་འབྲིང་གིས་ ་་་ ནོར་བརྩིས། བློན་ཆེན་པོ་བཙན་སྙས། སྤྲགས་གྱི་མུར་གས་སུ་བསྡུས་ཏེ།\"་ཞེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོའི་སྐབས་ཀྱི་འདུན་ས་ཆེན་པོ་ཞིག་ཡིན་པ་རྟོགས་ནུས།"@bo .
+    
+    bdr:NT621AB8ECE2DFB890
+        a                   :Note ;
+        :contentLocationStatement  "p. 339" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"ལུག་གི་ལོ་ ༦༨༣ ལ་བབ་སྟེ། བཙན་པོ་ཉེན་ཀར་ན་བཞུགས་ཤིང་། བློན་ཆེན་པོ་བཙན་སྙས། སྤྲགས་གྱི་(ཀྱི་)མུར་གས་སུ་བསྡུས། དགུན་བཙན་མོ་མུན་ཅང་ཀོང་ཅོའི་འདད་བཏང་བར་ལོ་གཅིག\" ཅེས་ཀྱང་གསལ།"@bo .
+}

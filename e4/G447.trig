@@ -1,0 +1,119 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G447 {
+    bda:G447  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G447 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "e4/G447.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G447 ;
+        adm:logEntry        bda:LG5D9C5A443900604D , bda:LG611C441231DA8358 , bda:LG62E0FD2D50CF924C , bda:LG9F89C4DF4A336A69 , bda:LGE402FF67E2A806A8 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221100:542221126" ;
+        adm:place_id_lex    "542221100:542221126" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5D9C5A443900604D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:05:13.156Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG611C441231DA8358
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:37:22.029Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG62E0FD2D50CF924C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2087"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG9F89C4DF4A336A69
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE402FF67E2A806A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T09:30:57.173Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVAF74B177AA35D094
+        a                   :PlaceFounded ;
+        :onYear             "1541"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVBFBC5DF1B03392E9
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P84 ;
+        :onYear             "1541"^^xsd:gYear .
+    
+    bdr:G447  a             :Place ;
+        skos:altLabel       "'on mda' mnga' ris grwa tshang /"@bo-x-ewts , "ali zhacang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mnga' ris grwa tshang /"@bo-x-ewts , "Ngari Dratsang"@en-x-mixed , "阿里扎仓寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7ACAD69938421FB9 ;
+        :isRoot             true ;
+        :note               bdr:NT14615E646A60BE7F , bdr:NT5E91E9AE338A107B , bdr:NT69248639E9DEF227 , bdr:NT82A8DD02B294F948 ;
+        :placeContains      bdr:G2CN10879 ;
+        :placeEvent         bdr:EVAF74B177AA35D094 , bdr:EVBFBC5DF1B03392E9 ;
+        :placeGonpaPerEcumen  "60.8" ;
+        :placeLat           "29.28667" ;
+        :placeLocatedIn     bdr:G1513 , bdr:G2087 ;
+        :placeLong          "91.83596" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID7ACAD69938421FB9
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G447" .
+    
+    bdr:NT14615E646A60BE7F
+        a                   :Note ;
+        :noteText           "established for Ngari monks"@en .
+    
+    bdr:NT5E91E9AE338A107B
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 62-63" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "བྲག་ཁ་ཞོལ་གྲོང་དབུས་ནས་བྲག་ཁ་རྫོང་ཤུལ་དང་། འོན་མངའ་རིས་གྲྭ་ཚང་གི་རྗེས་ཤུལ་མཇལ་རྒྱུ་ཡོད། མངའ་རིས་གྲྭ་ཚང་ཞེས་འབོད་དོན་ནི་ཐོག་མའི་དགེ་འདུན་གྱི་སྡེ་སྟོད་མངའ་རིས་ནས་ཆོས་རྒྱལ་འཇིག་རྟེན་དབང་ཕྱུག་གིས་གཏོང་གནང་མཛད་སྟབས་མཚན་དེ་ལྟར་ཐོགས་ལ། ཐོག་མར་ཆོས་འཁོར་རྒྱལ་མངའ་རིས་གྲྭ་ཚང་དུ་བཞུགས། དེ་རྗེས་ད་ལྟའི་ཆགས་ཡུལ་དུ་རྒྱལ་བ་ལྔ་པའི་དུས་སུ་སྤོས། དགོན་དེ་གནས་དེར་མ་སྤོས་གོང་འོན་གསེར་ཁང་རྩེ་ཞེས་བོན་པོའི་དགོན་པ་ཡིན། མངའ་རིས་གྲྭ་ཚང་སྤོས་རྗེས་འོན་མངའ་རིས་གྲྭ་ཚང་ཞེས་འབོད། འདུ་ཁང་ཀ་བ་ཉི་ཤུ་དང་། ཁང་ཚན་དྲུག་དང་བཅས་པར་རྟེན་སྐུ་དེ་འཚམ་ཡོད་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NT69248639E9DEF227
+        a                   :Note ;
+        :contentLocationStatement  "p. 2322" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1541. tA la'i bla ma dge 'dun rgya mtshos 'on mda' mnga' ris grwa tshang phyag btab"@en .
+    
+    bdr:NT82A8DD02B294F948
+        a                   :Note ;
+        :contentLocationStatement  "p. 245" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "important dge lugs pa teaching college across the river from dga' ldan bshad sgrub gling"@en .
+}

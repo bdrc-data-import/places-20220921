@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3247 {
+    bda:G3247  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3247 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ea/G3247.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3247 ;
+        adm:logEntry        bda:LG19C62C6A4DA2EC89 , bda:LG6A44C165152D597B , bda:LG79939658BE47F477 , bda:LGBF831D0E4FE52E77 , bda:LGC60F130F523F041B , bda:LGD1C2FD2524731FB9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG19C62C6A4DA2EC89
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:14:21.653Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from mountain to ri"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6A44C165152D597B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-08T10:31:11.834Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG79939658BE47F477
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBF831D0E4FE52E77
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T15:57:52.04Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC60F130F523F041B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T12:14:19.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added near G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD1C2FD2524731FB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T15:18:42.979Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G2LS522 & aranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3247  a            :Place ;
+        skos:altLabel       "gangs dkar ti se/"@bo-x-ewts , "gangs rin po che/"@bo-x-ewts , "gangs ti se/"@bo-x-ewts , "Gang Rinpoche"@en , "Mount Kailas"@en , "Kailāśā Parvata"@sa-x-ndia , "冈仁波齐峰"@zh-hans ;
+        skos:prefLabel      "ti se/"@bo-x-ewts , "Mount Kailash"@en , "kailasa"@sa-alalc97 , "吉罗娑山"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT5411EDD1BA057299 ;
+        :placeIsNear        bdr:G2272 ;
+        :placeLocatedIn     bdr:G2154 , bdr:G3CN1 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT5411EDD1BA057299
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 21" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Known also gang tise and gangkar tise, also Mount Kailash in western world. One of the most important power place and venerated by buddhist, hindu and jain follower."@en .
+}

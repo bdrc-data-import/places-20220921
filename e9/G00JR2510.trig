@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00JR2510 {
+    bda:G00JR2510  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00JR2510 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e9/G00JR2510.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00JR2510 ;
+        adm:logEntry        bda:LG31084C417B44F0CD , bda:LG3FCBB4B10E42FD5B , bda:LGC13E765C66ED3D89 , bda:LGF0E9C3BDFCF27B11 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG31084C417B44F0CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-11-29T11:31:27.503Z"^^xsd:dateTime ;
+        adm:logMessage      "released; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LG3FCBB4B10E42FD5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T11:55:46.89Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC13E765C66ED3D89
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-11-16T18:10:49.908Z"^^xsd:dateTime ;
+        adm:logMessage      "alternate name added; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGF0E9C3BDFCF27B11
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-11-16T18:03:49.423Z"^^xsd:dateTime ;
+        adm:logMessage      "new; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bdr:G00JR2510  a        :Place ;
+        skos:altLabel       "khams kyi seng+ge gnam rdzong /"@bo-x-ewts , "sna brag dkar rdo rje'i yangs rdzong /"@bo-x-ewts ;
+        skos:prefLabel      "sna brag dkar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9B22C83A1E86EE7C ;
+        :placeLocatedIn     bdr:G2304 ;
+        :placeType          bdr:PT0080 .
+    
+    bdr:NT9B22C83A1E86EE7C
+        a                   :Note ;
+        :contentLocationStatement  "v. 9" ;
+        :noteText           "treasure site of klong gsal snying po's (1625-1692) tshe sgrub yang gsang bla med skor"@en .
+}

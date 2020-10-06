@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3062 {
+    bda:G3062  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3062 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "59/G3062.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3062 ;
+        adm:logEntry        bda:LGB31366077BEB2DE5 , bda:LGC805C1449E753A07 , bda:LGCC10A5FDC9076A1C , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGB31366077BEB2DE5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC805C1449E753A07
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T10:45:36.045Z"^^xsd:dateTime ;
+        adm:logMessage      "edited names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCC10A5FDC9076A1C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T11:16:21.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV6FE6BA73C3A57C8A
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EVF1FB60283B8BE388
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2614 ;
+        :onYear             "1100"^^xsd:gYear .
+    
+    bdr:G3062  a            :Place ;
+        skos:altLabel       "'brom thod gnyan dgon phug"@bo-x-ewts ;
+        skos:prefLabel      "gnyan dgon phug"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1C97429D26F50803 , bdr:NT20682AD47677F664 ;
+        :placeEvent         bdr:EV6FE6BA73C3A57C8A , bdr:EVF1FB60283B8BE388 ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3049 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1C97429D26F50803
+        a                   :Note ;
+        :contentLocationStatement  "p. 112" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "sakya monastery founded in about 1100 by gnyan lo tsA ba\nin 1959 had a population of 5 monks administered by the rtse rnam rgyal grwa tshang\nname comes from a mchod rten enshrining the skullcup of 'brom ston\ndestroyed during the cultural revolution\nrestored in 1986"@en .
+    
+    bdr:NT20682AD47677F664
+        a                   :Note ;
+        :contentLocationStatement  "p. 51" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "sa skya pa monastery in grong tsho lnga pa, 'brom thod shang, stag rtse county, lha sa prefecture\nfounded by gnyan lo tsa ba in the 1100s\nsupported and administered by the rtse rnam rgyal grwa tshang\nformerly had 5 monks\nrestored"@en .
+}

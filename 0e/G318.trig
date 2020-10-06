@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G318 {
+    bda:G318  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G318 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "0e/G318.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G318 ;
+        adm:logEntry        bda:LGC149FF306A6331FF , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC149FF306A6331FF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G318  a             :Place ;
+        skos:prefLabel      "lha mdun/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEC312FE83FBB3255 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NTEC312FE83FBB3255
+        a                   :Note ;
+        :noteText           "small hermitage in the western part of the tibetan autonomous region; it has previously been both rnying ma and dge lugs"@en .
+}

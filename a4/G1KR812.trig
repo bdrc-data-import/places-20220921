@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR812 {
+    bda:G1KR812  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR812 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "a4/G1KR812.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR812 ;
+        adm:logEntry        bda:LG78B0DFBA0942135E , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "533423203:18" ;
+        adm:place_id_lex    "533423203:18" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG78B0DFBA0942135E
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-09-14T14:37:43.347Z"^^xsd:dateTime ;
+        adm:logMessage      "added events & note in chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV3D471BD7E6675A7B
+        a                   :PlaceFounded ;
+        :onYear             "1729"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:EV5263B9C6C4306798
+        a                   :PlaceRebuilt ;
+        :onYear             "1770"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:EVCFF0A3EDF8D442C7
+        a                   :PlaceRebuilt ;
+        :onYear             "1867"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1KR812  a          :Place ;
+        skos:altLabel       "康普寿国寺"@zh-hans , "Shouguo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bkra shis dar rgyas gling /"@bo-x-ewts , "寿国寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB8B53EDE61E9DDD8 ;
+        :isRoot             true ;
+        :note               bdr:NTB9808BD25B3D67D5 ;
+        :placeEvent         bdr:EV3D471BD7E6675A7B , bdr:EV5263B9C6C4306798 , bdr:EVCFF0A3EDF8D442C7 ;
+        :placeGonpaPerEcumen  "1.7" ;
+        :placeLat           "27.60000" ;
+        :placeLocatedIn     bdr:G1523 ;
+        :placeLong          "99.01667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDB8B53EDE61E9DDD8
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR812" .
+    
+    bdr:NTB9808BD25B3D67D5
+        a                   :Note ;
+        :noteText           "江地噶玛噶举十三大寺是：\n　　　指云寺，藏名噶玛南杰林，意为“事业胜利苑”，位于离丽江古城十八公里的拉巿坝，清雍正五年（1727年），饶森发起，由第八世大司徒活佛亲自择址，并有知府元展成捐助。后毁于兵火，光绪五年（1879年）重建。\n　　原有僧房二十四大院，常住僧人300名。\n\n文峰寺\n\n    文峰寺， 藏名桑昂嘎策林，意为“密乘欢喜苑”。位于丽江坝西南的文笔山腰，离古城约八公里。原为灵寿寺旧址，雍正十一年（1733年）噶玛巴于此结庐闭关并讲经说法。乾隆四年（1739年）大司徒仁波切来丽江传法，建议知府管学宣倡议捐资建寺，次年建成，道光八年（1828年）扩建，改称“文峰寺”。寺后有金刚亥母灵洞，是南瞻部洲二十四灵洞之一，是噶玛噶举派主要本尊金刚亥母加持的圣地。洞前曾建有闭关中心，称“文灵阁”，藏名“安乐吉祥林”，是江地藏传佛教噶举派的最高学府。\n    原有僧房二十五院，常住僧人300名。\n\n福国寺\n\n    福国寺，藏名奥敏南卓林，意为“密严解脱苑”。位于丽江市玉龙县白沙乡，始建于明朝万历三十九年（1601年）,为丽江五大寺的母寺，噶玛巴、大司徒仁波切、嘉察仁波切等曾在此主持大法会。\n  　原有僧房二十三院，常住僧人180名。\n\n寿国寺 \n \n    寿国寺，藏名扎西达杰林，意为“吉祥兴盛苑”。 该寺于清雍正七年(1729)始建，历时5年建成，为噶举派寺院，位于维西县康普乡，清乾隆十年(1745)因失火被焚毁，后于乾隆三十五年(1770)迁至现址重建，同治六年（1867年）重修。\n    原有僧房二十一院，常住僧人250名。\n\n达摩寺\n\n    达摩寺，藏名丹培林，意为“教义弘扬苑”。建于康熙元年（1662年），位于维西县塔城乡。1958年被毁，1985年部分修复，现在仲巴活佛的主持下，正在重建，并逐渐发展。 \n    原有僧房十三院，常住僧人200名。\n\n普化寺 \n\n    普化寺，藏名德钦饶登林，意为“极乐永固苑”。建于清道光年间（1821-1850），位于怒江州贡山县丙中洛。 \n    原有僧房十二院，常住僧人108名。\n   （普化寺，藏名桑珠达杰林，意为“如意成就兴盛地”。建于清道光年间（1821-1850）。位于怒江州贡山县（明朝属维西县）。\n \n普化寺的开山祖师叫丹估，他从德格来，先到寿国寺，然后翻过碧洛雪山来到了怒江峡谷一个怒族人居住的地方，他打算在那里建寺传法，但怒族人不相信佛法，不喜欢这个不速之客，将他赶走。他到第二个地方时，建了一间小茅屋修法，打算传播佛法。还是被当地土著人赶走了。后来他继续前行，来到贡山，又建了一座小茅屋，还是遭到土著人的排斥。丹估只好用法力镇服了土著人，才在这里长期住了下来。此后，逐渐有人来皈依，他就开始了他在贡山的传法。丹估大师的功德和智慧，让附近的村民走向开化和文明。居民们出于对大师的感激，将寺庙附近的很多田地供养给寺庙。弟子们为他修了一个很好的法堂，皈依弟子越来越多，丹估大师就号召弟子和村民们建了一座寺庙，这就是贡山的普化寺。）\n普济寺\n\n    普济寺， 藏名塔贝兰增林，意为“解脱修行苑”。位于丽江古城偏西北普济山上，离城约五公里,始建于清乾隆三十六年（1771年），嘉庆十一年（1806年）增修。抗日战争时期，圣露活佛回寺后将大殿覆以铜瓦，声名大振，为云南省独有的铜瓦佛殿。\n    原有僧房十四院，常住僧人180名。\n\n玉峰寺\n\n　　玉峰寺，藏名扎西曲培林，意为“吉祥弘法苑”。位于离丽江古城十三公里的玉龙山南麓，建于康熙三十九年（1700年）。\n    原有僧房九院，常住僧人五十名。\n\n兰经寺\n\n    兰经寺，藏名扎西绕丹林，意为“吉祥永固苑”。建于雍正十二年（1734年），位于维西县永春乡，距县城保和镇3公里。现正在重建中。\n    原有僧房十三院，常住僧人280名。\n\n菩提寺\n\n  　菩提寺，藏名桑昂强秋林，意为“密乘菩提苑”。位于怒江州兰坪县，被毁多年，现正在筹备重建。\n　　原有僧房八院，常住僧人120名。\n\n兴化寺\n\n兴化寺，藏名忒钦达杰林，意为“大乘兴盛苑”。位于丽江市玉龙县巨甸镇偏西北部的金河村，离丽江古城140公里。建于清康熙年间（约1707年），原有大殿一座，公房三大院，僧房三十九院（现存四小院）。 \n    原有僧房四十二院，常住僧人350名。\n\n\n灵照寺 \n\n    灵照寺,藏名扎西噶期林，意为“吉祥喜聚苑”，位于丽江市玉龙县鲁甸坝子西北角。\n    原有僧房12院，常住僧人80名。\n\n达来寺  \n    达来寺,藏名协珠达杰林，意为“讲修兴盛苑”，位于丽江市玉龙县塔城乡洛固村境内。\n    原有僧房9院，常住僧人75名。\n\n\n上一篇信息： 兰经寺\n\n下一篇信息： 实修道场涌金寺"@en .
+}

@@ -1,0 +1,119 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3526 {
+    bda:G3526  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3526 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "64/G3526.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3526 ;
+        adm:logEntry        bda:LG01B0C190D966788C , bda:LG15479834637CC414 , bda:LG5FE113F5E7061622 , bda:LG6D4BF2271ED75B7F , bda:LG9FD193437BB5670A , bda:LGEF807C9E3D4530A5 , bda:LGFC994F1CBD23695C , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542222201:542222114" ;
+        adm:place_id_lex    "542222201:542222114" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG01B0C190D966788C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG15479834637CC414
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-17T18:17:44.756Z"^^xsd:dateTime ;
+        adm:logMessage      "note aded from bod kyi dgon sde khag gcig gi ngo sprod"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5FE113F5E7061622
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T16:18:53.58Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6D4BF2271ED75B7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-17T18:20:03.636Z"^^xsd:dateTime ;
+        adm:logMessage      "typo corrected"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9FD193437BB5670A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-03T16:18:22.851Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEF807C9E3D4530A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-03T16:22:04.188Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFC994F1CBD23695C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-03T11:14:44.334Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVF90F47D3747DD79A
+        a                   :PlaceFounded ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3526  a            :Place ;
+        skos:altLabel       "snying rdo dgon/"@bo-x-ewts , "snying sde dgon/"@bo-x-ewts , "ningduo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "snye mdo dgon/"@bo-x-ewts , "Nyedo Monastery"@en , "宁多寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1B2C83F6A23C2828 ;
+        :isRoot             true ;
+        :note               bdr:NT586203E83430C0CE , bdr:NTBB9623BA6CD8F73D , bdr:NTFA3869B0AC8CC435 ;
+        :placeEvent         bdr:EVF90F47D3747DD79A ;
+        :placeGonpaPerEcumen  "12.25" ;
+        :placeLat           "29.16123" ;
+        :placeLocatedIn     bdr:G1241 , bdr:G799 ;
+        :placeLong          "91.27114" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID1B2C83F6A23C2828
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3526" .
+    
+    bdr:NT586203E83430C0CE
+        a                   :Note ;
+        :noteText           "religous establishment which was the seat of a branch of the lce lineage; the teachings followed here were both zhi byed pa and the bu ston system of the kalacakra\n---from G423 (dup.)"@en .
+    
+    bdr:NTBB9623BA6CD8F73D
+        a                   :Note ;
+        :contentLocationStatement  "p. 123" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "rnying ma monastery founded by snye mdo ba kun dga' bzang po (1258-1316}. located in gra nang rdzong, rgyal gling shang, snye mdo grong tsho, located about 12 km. to the southwest of the seat of gra nang rdzong. according to the bod ljongs sa ming deb khongs the monastery of snye mdo is called snying sde dgon."@en .
+    
+    bdr:NTFA3869B0AC8CC435
+        a                   :Note ;
+        :contentLocationStatement  "p. 32" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "ཆོས་རྒྱལ་གཏེར་བདག་གླིང་པས་ཕྱག་བཏབ་པ་སྟེ་སྨིན་གྲོལ་གླིང་གི་དགོན་ལག་ཡིན། སྔོན་དགོན་དེར་རྡོ་སྙིང་དང་འདྲ་བ་ཞིག་ཡོད་པས་སྙིང་རྡོ་དགོན་ཞེས་ཀྱང་བྱུང་བ་གསལ།"@bo .
+}

@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1GS88600 {
+    bda:G1GS88600  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1GS88600 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c6/G1GS88600.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1GS88600 ;
+        adm:logEntry        bda:LG180169C8028499E4 , bda:LG8BAB8A92B16EC246 , bda:LGA22FB6450443A466 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG180169C8028499E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-13T14:52:21.45Z"^^xsd:dateTime ;
+        adm:logMessage      "checkedout"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8BAB8A92B16EC246
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-01-10T12:48:11.266Z"^^xsd:dateTime ;
+        adm:logMessage      "newly created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA22FB6450443A466
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-19T15:45:05.27Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1GS88600  a        :Place ;
+        skos:altLabel       "bde chen chos kyi 'khor lo/"@bo-x-ewts , "sha 'ug stag sgo bde chen chos kyi 'khor lo/"@bo-x-ewts ;
+        skos:prefLabel      "sha 'ug stag sgo"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB24FED818B1FC0D6 ;
+        :placeType          bdr:PT0080 .
+    
+    bdr:NTB24FED818B1FC0D6
+        a                   :Note ;
+        :noteText           "location from which gter bdag gling pa recovered the thugs rje chen po bde gshegs kun 'dus revelations"@en .
+}

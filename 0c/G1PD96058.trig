@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD96058 {
+    bda:G1PD96058  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD96058 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "0c/G1PD96058.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD96058 ;
+        adm:logEntry        bda:LG43781A4E73730E11 , bda:LG976709CC4AA5F5EC , bda:LGBE597311460BE018 , bda:LGDA5C6985F0B3FC21 , bda:LGEA2286A7504A4E77 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632123215:89" ;
+        adm:place_id_lex    "632123215:558" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG43781A4E73730E11
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-02T15:21:46.546Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG976709CC4AA5F5EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T14:33:21.94Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGBE597311460BE018
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-12-02T14:14:45.056Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGDA5C6985F0B3FC21
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T12:32:47.55Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGEA2286A7504A4E77
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-02T15:38:47.777Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVEC1D757B25364A01
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1PD96058  a        :Place ;
+        skos:altLabel       "西沟寺"@zh-hans , "西沟洞寺"@zh-hans , "xi gou dong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zhi dgu tung zi/"@bo-x-ewts , "西沟洞寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3E7B455C7B988168 ;
+        :isRoot             true ;
+        :note               bdr:NTFE7D489821D5145B ;
+        :placeEvent         bdr:EVEC1D757B25364A01 ;
+        :placeGonpaPerEcumen  "5.55" ;
+        :placeLat           "36.28769" ;
+        :placeLocatedIn     bdr:G1PD5303 ;
+        :placeLong          "102.38245" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID3E7B455C7B988168
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD96058" .
+    
+    bdr:NTFE7D489821D5145B
+        a                   :Note ;
+        :contentLocationStatement  "p. 54" ;
+        :noteSource         bdr:MW1PD95675 .
+}

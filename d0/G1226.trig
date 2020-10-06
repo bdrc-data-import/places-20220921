@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1226 {
+    bda:G1226  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1226 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d0/G1226.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1226 ;
+        adm:logEntry        bda:LG66C24B8AAD8FF969 , bda:LG8280A67C74F630FB , bda:LGAE15AE451FAC5B06 , bda:LGD49F91B2BE81953E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG66C24B8AAD8FF969
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-07T16:49:57.347Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added names place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8280A67C74F630FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T14:45:07.97Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAE15AE451FAC5B06
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD49F91B2BE81953E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1226  a            :Place ;
+        skos:altLabel       "lho kha yar stod ra mo sman chu kha/"@bo-x-ewts , "yar stod ra mo sman chu kha/"@bo-x-ewts ;
+        skos:prefLabel      "ra mo sman chu kha/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G4802 ;
+        :placeType          bdr:PT0071 .
+}

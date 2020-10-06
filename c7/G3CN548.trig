@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN548 {
+    bda:G3CN548  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN548 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "c7/G3CN548.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN548 ;
+        adm:logEntry        bda:LG8AC24C3506AC77F4 , bda:LGAEF685B8B0266186 , bda:LGC8AA88913EB8BA1E , bda:LGE9F09CD296791F4B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8AC24C3506AC77F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-04T10:38:19.789Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAEF685B8B0266186
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-31T16:46:31.311Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC8AA88913EB8BA1E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-31T16:44:37.857Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE9F09CD296791F4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-12T16:15:27.697Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV5D5CAA114C670C8D
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0693"^^xsd:gYear .
+    
+    bdr:EV74ACBE50B1D10756
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0720"^^xsd:gYear .
+    
+    bdr:EVA850320938079AA7
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0687"^^xsd:gYear .
+    
+    bdr:G3CN548  a          :Place ;
+        skos:altLabel       "bzang sum tsal/"@bo-x-ewts ;
+        skos:prefLabel      "bzang sum tshal/"@bo-x-ewts , "Sangsumtsal (Sang ?)"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT089925A11AC60D86 , bdr:NT45C12FFDFC6F0AB6 , bdr:NT7D97ADD2119FB5F2 ;
+        :placeEvent         bdr:EV5D5CAA114C670C8D , bdr:EV74ACBE50B1D10756 , bdr:EVA850320938079AA7 ;
+        :placeLocatedIn     bdr:G3CN127 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT089925A11AC60D86
+        a                   :Note ;
+        :contentLocationStatement  "p. 377" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "སྤྱི་ལོ་ ༧༢༠ ལ། དགུན་འདུན་བཟང་སུམ་ཚལ་དུ་བྱས་པ་གསལ།"@bo .
+    
+    bdr:NT45C12FFDFC6F0AB6
+        a                   :Note ;
+        :contentLocationStatement  "p. 340" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"སྦྲུལ་གྱི་ལོ་ ༦༩༣ ལ། བཙན་པོ་ཉེན་ཀར་ན་བཞུགས་ཤིང་། དབྱར་དུང་འདུན་སྐྱི་སྟག་ཙལ་(ཚལ་)དུ་འདུས་ཏེ། ལྔ་བརྒྱ་ཆེན་པོ་བསྐོས། དགུན་བཟང་སུམ་ཙལ་(ཚལ་)དུ་འདུས་ཏེ། ཙང་ཅེན་(གཙང་ཆེན)་པོའི་འབྲོག་བསྐོས་ནས།\"ཞེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་འདུས་སྲོང་མང་རྗེའི་སྐབས་ཀྱི་འདུན་ས་ཆེན་པོ་ཐེངས་གཉིས་པ་བྱས་པ་རྟོགས་སོ།"@bo .
+    
+    bdr:NT7D97ADD2119FB5F2
+        a                   :Note ;
+        :contentLocationStatement  "p. 339" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"ཕག་གི་ལོ་ ༦༨༧ ལ་བབ་སྟེ། བཙན་པོ་ཉེན་ཀར་ན་བཞུགས་ཤིང་། བློན་ཁྲི་འབྲིང་གིས། དྲུ་གུ་གུ་ཟན་ཡུལ་དུ་དྲངས། དགུན་གཙང་ཆེན་གྱི་ཕྱིང་རིལ་བཏབ། དབོན་ད་རྒྱལ་ཁྲི་ཟུང་དང་། གནུབས་མང་ཉེན་བཞི་བརྩན་དང་། མགར་སྟ་གུ་རི་ཟུང་གསུམ་གྱིས། བཟང་སུམ་ཙལ་(ཚལ་)དུ་བསྡུས་ཏེ། གཙང་ཆེན་གྱི་ལོག་པོ་དང་པོ་བཙུད་པར་ལོ་གཅིག་\"ཅེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་འདུས་སྲོང་མང་རྗེའི་སྐབས་ཀྱི་འདུན་ས་ཆེན་པོ་ཞིག་ཡིན་ཏེ། གཙང་ཆེན་ཞེས་གཙང་གི་\"བཟང་བཟང་\"ཕྱོགས་སུ་ཡིན་ཚོད་མུ་མཐུད་དཔྱད་རྒྱུ།"@bo .
+}

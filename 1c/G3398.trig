@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3398 {
+    bda:G3398  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3398 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1c/G3398.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3398 ;
+        adm:logEntry        bda:LG374C371605F4AADB , bda:LG7C59CD19DB743ABA , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG374C371605F4AADB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-27T11:50:56.411Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7C59CD19DB743ABA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3398  a            :Place ;
+        skos:altLabel       "bya sna dgon dge ldan bkra shis dar rgyas gling /"@bo-x-ewts , "dge ldan bkra shis dar rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "bya sna dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT088A8738BB4C6CD4 ;
+        :placeLocatedIn     bdr:G2386 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT088A8738BB4C6CD4
+        a                   :Note ;
+        :contentLocationStatement  "p. 363, 416" ;
+        :noteSource         bdr:MW23671 ;
+        :noteText           "gelug monastery restored in 1986.\ncomplement of 8 monks.\nrestored through the efforts of nyi 'bum and rgyal ldan 'od zer."@en .
+}

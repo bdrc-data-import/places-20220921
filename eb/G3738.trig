@@ -1,0 +1,122 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3738 {
+    bda:G3738  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3738 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "eb/G3738.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3738 ;
+        adm:logEntry        bda:LG2D621664044E5EC8 , bda:LG32A64FC1C5A0EE01 , bda:LG5F4669E898044372 , bda:LG92AAC4D4A6F7E9FB , bda:LGCD1FA9069535F4FA , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513321217:109" ;
+        adm:place_id_lex    "513321217:109" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2D621664044E5EC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-02T10:29:56.902Z"^^xsd:dateTime ;
+        adm:logMessage      "added events"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG32A64FC1C5A0EE01
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-11T12:19:31.097Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5F4669E898044372
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-31T12:16:16.734Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G520"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG92AAC4D4A6F7E9FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-02T09:42:58.723Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCD1FA9069535F4FA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1882E73D9DD3785F
+        a                   :PlaceConverted ;
+        :onYear             "1852"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EV61FA3298A0F96B97
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1487 ;
+        :onYear             "1254"^^xsd:gYear .
+    
+    bdr:EVD64A8BF8B99C3E9E
+        a                   :PlaceFounded ;
+        :onYear             "0970"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVF0C6A9966DA6A5F8
+        a                   :PlaceConverted ;
+        :onYear             "1254"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G3738  a            :Place ;
+        skos:altLabel       "dar mdo seng+ge dgon/"@bo-x-ewts , "seng+ge dgon/"@bo-x-ewts , "shenggen si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mi nyag seng+ge dgon/"@bo-x-ewts , "生根寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE4941DBA72828839 ;
+        :isRoot             true ;
+        :note               bdr:NT1A79C4C5F4E4A984 , bdr:NT44BD102DC4DD137F , bdr:NTFE9B98DA144ED7FC ;
+        :placeEvent         bdr:EV1882E73D9DD3785F , bdr:EV61FA3298A0F96B97 , bdr:EVD64A8BF8B99C3E9E , bdr:EVF0C6A9966DA6A5F8 ;
+        :placeGonpaPerEcumen  "7.19" ;
+        :placeLat           "30.31667" ;
+        :placeLocatedIn     bdr:G1033 , bdr:G2308 ;
+        :placeLong          "101.48333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE4941DBA72828839
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3738" .
+    
+    bdr:NT1A79C4C5F4E4A984
+        a                   :Note ;
+        :contentLocationStatement  "p. 167" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "a rnying ma pa religious establishment  belonging to the kaH thog tradition listed among the thor bu in the list of si tu chos kyi rgya mtsho"@en .
+    
+    bdr:NT44BD102DC4DD137F
+        a                   :Note ;
+        :noteText           "དགོན་འདི་དང་འདི་ G4107གཉིས་བསྐྱར་ཟློས་ཡིན་མིན་དཔྱད་རྒྱུ་སྟེ། གཉིས་ཀ་ས་མཚམས་ཉེ་བའམ་འདྲ་ཡུལ་༼འགྲ་ཡུལ་༽དུ་ཆགས་འདུག་པ་ཕལ་ཆེར་གཅིག་ཡིན་ནམ་སྙམ།"@bo .
+    
+    bdr:NTFE9B98DA144ED7FC
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, pp. 4-9" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery in dar mdzo rdzong; connected with kaH thog; restored with a complement of 80-90 monks"@en .
+}

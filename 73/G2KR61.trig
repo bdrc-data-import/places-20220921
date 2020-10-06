@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KR61 {
+    bda:G2KR61  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KR61 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "73/G2KR61.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KR61 ;
+        adm:logEntry        bda:LGIM335E72436E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM335E72436E
+        a                   adm:UpdateData ;
+        adm:logAgent        "mongol import" ;
+        adm:logDate         "2013-12-03T23:23:40.962Z"^^xsd:dateTime ;
+        adm:logMessage      "created by mongol import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVD16EAAE5C2CF0F67
+        a                   :PlaceFounded ;
+        :onYear             "1623"^^xsd:gYear .
+    
+    bdr:G2KR61  a           :Place ;
+        skos:altLabel       "junggar job-a"@mn-x-trans , "Jungghar juu"@mn-x-trans , "准格尔召"@zh-hans , "宝藏寺"@zh-hans , "Baotang si"@zh-latn-pinyin-x-ndia , "Baozang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Jungar juu"@mn-x-trans , "Zhungeer zhao"@zh-latn-pinyin-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NTC19133C0B48E1A2D ;
+        :placeEvent         bdr:EVD16EAAE5C2CF0F67 ;
+        :placeLocatedIn     bdr:G603 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTC19133C0B48E1A2D
+        a                   :Note ;
+        :noteText           "located at Ordos City of Inner"@en .
+}

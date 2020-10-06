@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G12 {
+    bda:G12  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G12 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "ec/G12.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G12 ;
+        adm:logEntry        bda:LG1F7E48FDA7C87CFC , bda:LG29EDE6F674D8F925 , bda:LG33D2A7B799FF6FE4 , bda:LGA7096DFA0FA6DE4D , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542222201:542222112" ;
+        adm:place_id_lex    "542222201:542222112" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1F7E48FDA7C87CFC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG29EDE6F674D8F925
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T15:24:02.837Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG33D2A7B799FF6FE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T11:21:41.287Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & GIS ID & notes, added info from G532(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA7096DFA0FA6DE4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-18T16:24:22.345Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4067034661D4E36F
+        a                   :PlaceFounded ;
+        :onYear             "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G12  a              :Place ;
+        skos:altLabel       "dar rgyas chos lding /"@bo-x-ewts , "dar rgyas chos sdings/"@bo-x-ewts , "dar sdings/"@bo-x-ewts , "gra nang dar rgyas chos sdings/"@bo-x-phon-en , "dajie qulin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dar rgyas chos gling /"@bo-x-ewts , "Dargye Choling"@en , "达杰曲林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA660E6E2CAB560CC ;
+        :isRoot             true ;
+        :note               bdr:NT0D493268119E3F02 , bdr:NT8B5630B326EFADC8 ;
+        :placeEvent         bdr:EV4067034661D4E36F ;
+        :placeGonpaPerEcumen  "12.25" ;
+        :placeLat           "29.11667" ;
+        :placeLocatedIn     bdr:G799 ;
+        :placeLong          "91.23589" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA660E6E2CAB560CC
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G12" .
+    
+    bdr:NT0D493268119E3F02
+        a                   :Note ;
+        :noteText           "ancient rnying ma pa monastery, the ancestral seat of the gnyos ancestors of gter bdag gling pa"@en .
+    
+    bdr:NT8B5630B326EFADC8
+        a                   :Note ;
+        :contentLocationStatement  "p. 30-31" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "དགོན་འདི་ཐོགམར་སྣ་ཚོགས་རང་གྲོལ་གྱིས་ཕྱག་བཏབ་ཅིང་བླ་ཁག་བཞི་ཙམ་བྱུང་བར་བཤད་ལ། ཕྱིས་འདིར་སྨྱོས་སྟོན་འཕྲིན་ལས་ལྷུན་གྲུབ་ལ་ཆོས་རྒྱལ་གཏེར་བདག་གླིང་པ་འཁྲུངས་ཤིང་། གཏེར་བདག་གླིང་པར་གོང་ས་ལྔ་པ་ཆེན་པོའི་གཟེངས་བསྟོད་ཐོབ་ནས་སྨིན་གྲོལ་གླིང་དགོན་ཕྱག་བཏབ་པ་ནས་བཟུང་མ་དགོན་འདི་བུ་དགོན་དུ་གྱུར། ད་ལྟ་ནང་རྟེན་གཏེར་བདག་གླིང་པའི་སྐུ་བརྙན་སོགས་ཡོད།"@bo .
+}

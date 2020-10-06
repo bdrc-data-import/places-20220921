@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4616 {
+    bda:G4616  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4616 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "df/G4616.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4616 ;
+        adm:logEntry        bda:LG4596465DCCB69EFA , bda:LG81FFE8E62B43247E , bda:LGCB95F9059B08687C , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540125202:540125115" ;
+        adm:place_id_lex    "540125202:540125115" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4596465DCCB69EFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-06-29T14:00:16.874Z"^^xsd:dateTime ;
+        adm:logMessage      "checked data"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG81FFE8E62B43247E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-02T15:07:11.66Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCB95F9059B08687C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV08727D741168511E
+        a                   :PlaceFounded ;
+        :onYear             "0650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:EV0AF3E9C54BE2832E
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EVDA4CB7ECB6DB7A3B
+        a                   :PlaceConverted ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G4616  a            :Place ;
+        skos:altLabel       "cuomai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mtsho smad dgon pa/"@bo-x-ewts , "Tsome"@en-x-mixed , "措麦寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7B22247863E372B6 ;
+        :isRoot             true ;
+        :note               bdr:NTBCFB1C1AE170AA24 ;
+        :placeEvent         bdr:EV08727D741168511E , bdr:EV0AF3E9C54BE2832E , bdr:EVDA4CB7ECB6DB7A3B ;
+        :placeGonpaPerEcumen  "8.04" ;
+        :placeLat           "29.82057" ;
+        :placeLocatedIn     bdr:G1325 ;
+        :placeLong          "90.73303" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID7B22247863E372B6
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4616" .
+    
+    bdr:NTBCFB1C1AE170AA24
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 109-110" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

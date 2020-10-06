@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G515 {
+    bda:G515  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G515 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "cd/G515.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G515 ;
+        adm:logEntry        bda:LG6741FD425331A30A , bda:LGCDBB9B087C1E2EBA , bda:LGD1EBB9765A04FBC3 , bda:LGF3BB1A154C9A3B1E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6741FD425331A30A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-18T16:08:07.491Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCDBB9B087C1E2EBA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD1EBB9765A04FBC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T11:52:01.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added contained in"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF3BB1A154C9A3B1E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-07T12:17:45.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added ku se gser ljongs kyi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G515  a             :Place ;
+        skos:altLabel       "gser ljongs (ku se)"@bo-x-ewts , "ku se gser mo ljongs dgon/"@bo-x-ewts ;
+        skos:prefLabel      "ku se gser ljongs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5615D407087A0053 , bdr:NT655CBA88A022E18B ;
+        :placeContains      bdr:G3JT12574 ;
+        :placeLocatedIn     bdr:G1366 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT5615D407087A0053
+        a                   :Note ;
+        :noteText           "sa skya establishment in khams; famed for woodblock carving"@en .
+    
+    bdr:NT655CBA88A022E18B
+        a                   :Note ;
+        :contentLocationStatement  "p. 593" ;
+        :noteSource         bdr:MW29659 ;
+        :noteText           "sa skya monastery in sde dge district"@en .
+}

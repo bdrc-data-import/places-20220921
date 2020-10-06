@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN477 {
+    bda:G3CN477  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN477 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e4/G3CN477.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN477 ;
+        adm:logEntry        bda:LG15F2FC613F1F646B , bda:LG5F6DA62FC6B3A544 , bda:LG6EF4ACB2EF927778 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG15F2FC613F1F646B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-27T14:31:50.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5F6DA62FC6B3A544
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-17T13:05:29.453Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6EF4ACB2EF927778
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-16T16:55:07.403Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVE0EA6A2FC699B710
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN477  a          :Place ;
+        skos:altLabel       "mal dro'i ske bye/"@bo-x-ewts ;
+        skos:prefLabel      "mal tro'i ske bye/"@bo-x-ewts , "Maltro Keche"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT1B7A0E899DFDCDE9 ;
+        :placeEvent         bdr:EVE0EA6A2FC699B710 ;
+        :placeLocatedIn     bdr:G2011 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NT1B7A0E899DFDCDE9
+        a                   :Note ;
+        :contentLocationStatement  "p. 263-265" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"སྤྲེའུ་ལོ་༦༦༠ལ། བཙན་པོ་མལ་ཏྲོའི་སྐེ་བྱེ་ན་བཞུགས་ཤིང་\"ཞེས་གསལ།"@bo .
+}

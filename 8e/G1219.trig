@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1219 {
+    bda:G1219  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1219 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "8e/G1219.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1219 ;
+        adm:logEntry        bda:LG038B5EEE0505FCC1 , bda:LG09B14445E85EB95E , bda:LG54D876D0D67305F4 , bda:LGA408C56CC0CE5680 , bda:LGD5D7116F1CE0BB0C , bda:LGIM454E022964 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542326208:542326112" ;
+        adm:place_id_lex    "542326208:542326112" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG038B5EEE0505FCC1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-07T15:45:58.198Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG09B14445E85EB95E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:21:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:residentialHouse to gzimsKhang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG54D876D0D67305F4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA408C56CC0CE5680
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-21T11:17:37.595Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD5D7116F1CE0BB0C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T12:34:48.639Z"^^xsd:dateTime ;
+        adm:logMessage      "changed place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM454E022964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T17:05:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:gzimsKhang to khamsTshan"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVE8465C2C8F2DFCCF
+        a                   :PlaceFounded ;
+        :onYear             "1294"^^xsd:gYear .
+    
+    bdr:EVFE0106C084C33585
+        a                   :PlaceConverted ;
+        :onYear             "1658"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1219  a            :Place ;
+        skos:altLabel       "gtsang Phun tshogs gling Bkra shis 'dzoms pa/"@bo-x-ewts , "gtsang phun tshogs gling gi bkra shis 'dzoms pa/"@bo-x-ewts , "Puntsokling"@bo-x-phon-en , "Puntsokling"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bkra shis 'dzoms pa/"@bo-x-ewts , "平措林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID723E7EF27AD7F606 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVE8465C2C8F2DFCCF , bdr:EVFE0106C084C33585 ;
+        :placeGonpaPerEcumen  "3.53" ;
+        :placeLat           "29.36667" ;
+        :placeLocatedIn     bdr:G2167 ;
+        :placeLong          "88.00000" ;
+        :placeType          bdr:PT0024 .
+    
+    bdr:ID723E7EF27AD7F606
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1219" .
+}

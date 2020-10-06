@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3618 {
+    bda:G3618  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3618 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "bd/G3618.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3618 ;
+        adm:logEntry        bda:LG7381E344E6B553A6 , bda:LG7F998A77C7B50CED , bda:LGB12DD1D4DA0CCF0E , bda:LGB92B79E4C6ADABB1 , bda:LGDF0D038FDDF8B553 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542228201:542228106" ;
+        adm:place_id_lex    "542228201:542228106" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7381E344E6B553A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:27:18.063Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7F998A77C7B50CED
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-09T10:18:46.234Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB12DD1D4DA0CCF0E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB92B79E4C6ADABB1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-25T12:50:50.862Z"^^xsd:dateTime ;
+        adm:logMessage      "added gro bo lung dgon gyi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGDF0D038FDDF8B553
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-08T09:32:58.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVAEC92CF7574B94D8
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G3618  a            :Place ;
+        skos:altLabel       "lho gro bo lung dgon/"@bo-x-ewts , "zhuowalong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gro bo lung dgon/"@bo-x-ewts , "Drowolung"@en-x-mixed , "卓瓦龙寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3F0960E60D0EA58B ;
+        :isRoot             true ;
+        :note               bdr:NT59850C312547D906 , bdr:NT5F8DC0CE11C57C5E ;
+        :placeContains      bdr:G3JT12612 ;
+        :placeEvent         bdr:EVAEC92CF7574B94D8 ;
+        :placeGonpaPerEcumen  "6.43" ;
+        :placeLat           "28.16322" ;
+        :placeLocatedIn     bdr:G2134 ;
+        :placeLong          "90.78914" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID3F0960E60D0EA58B
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3618" .
+    
+    bdr:NT59850C312547D906
+        a                   :Note ;
+        :contentLocationStatement  "p. 230" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "description; hermitage connected with the great mar pa the translator"@en .
+    
+    bdr:NT5F8DC0CE11C57C5E
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 133-134" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

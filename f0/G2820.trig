@@ -1,0 +1,143 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2820 {
+    bda:G2820  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2820 ;
+        adm:facetIndex      19 ;
+        adm:gitPath         "f0/G2820.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2820 ;
+        adm:logEntry        bda:LG20CF4CFFE383A50E , bda:LG389874FD039F2143 , bda:LGA54EB80B47B516CD , bda:LGA5F0457BEF91F9BB , bda:LGC4D3664D2BAC5E38 , bda:LGC898041B144DA2AB , bda:LGCFD8D7131501C210 , bda:LGE15B724AA3303ECD , bda:LGE3C2DAE2F81670E7 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221100:542221108" ;
+        adm:place_id_lex    "542221100:542221108" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG20CF4CFFE383A50E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-20T15:27:36.251Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG389874FD039F2143
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-04T09:55:56.307Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA54EB80B47B516CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-14T17:22:49.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA5F0457BEF91F9BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from templeComplex to lhaKhang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC4D3664D2BAC5E38
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-01T15:42:04.331Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC898041B144DA2AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-20T17:04:03.48Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCFD8D7131501C210
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE15B724AA3303ECD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-11T10:11:04.807Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE3C2DAE2F81670E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-26T15:30:48.975Z"^^xsd:dateTime ;
+        adm:logMessage      "added near"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV31DE955AE35A4B11
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVB5914BD1409430ED
+        a                   :PlaceFounded ;
+        :onYear             "0650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:G2820  a            :Place ;
+        skos:altLabel       "chos 'khor khra 'brug"@bo-x-ewts , "g.yo ru khra 'brug"@bo-x-ewts , "g.yo ru khra 'brug bkra shis byams snyoms lha khang /"@bo-x-ewts , "khra 'brug gtsug lag khang /"@bo-x-ewts , "changzhu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "g.yon ru khra 'brug gtsug lag khang /"@bo-x-ewts , "Tradruk Monastery"@en , "昌珠寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID375C292126CC7532 ;
+        :contentLocationStatement  "Coordinates: latitude 29°11,619 longitude 91°46,318 Altitude: 3587(m) (sheehy_tibet_coordinates_2014)" ;
+        :isRoot             true ;
+        :note               bdr:NT06182FF37AC0E524 , bdr:NTEA646716C2D6D6F2 , bdr:NTEA9E62CB5FD8B5A3 , bdr:NTF112F09BE5BFCCC4 , bdr:NTF941AA9D3222E17E ;
+        :placeEvent         bdr:EV31DE955AE35A4B11 , bdr:EVB5914BD1409430ED ;
+        :placeGonpaPerEcumen  "60.8" ;
+        :placeIsNear        bdr:G3CN411 ;
+        :placeLat           "29.19537" ;
+        :placeLocatedIn     bdr:G1513 , bdr:G3176 , bdr:G3CN365 ;
+        :placeLong          "91.77959" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID375C292126CC7532
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2820" .
+    
+    bdr:NT06182FF37AC0E524
+        a                   :Note ;
+        :noteText           "together with Jokhang and Samye, one of 3 Royal Temples of Trisong Detsen"@en .
+    
+    bdr:NTEA646716C2D6D6F2
+        a                   :Note ;
+        :contentLocationStatement  "p. 1063" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོས་བཞེངས་པའི་རུ་གནོན་གྱི་གཙུག་ལག་ཁང་ངམ་མཐའ་འདུལ་བཞི་ལས་གཅིག་ཏེ། དེང་སང་ལྷོ་ཁ་སྣེ་གདོང་རྫོང་ཁོངས་ཀྱི་ཁྲ་འབྲུག་གྲོང་ཚོར་ཡོད་པ་གསལ།"@bo .
+    
+    bdr:NTEA9E62CB5FD8B5A3
+        a                   :Note ;
+        :contentLocationStatement  "pp. 231-234" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "description the mgon khang contained jataka murals from the time of the fifth dalai lama"@en .
+    
+    bdr:NTF112F09BE5BFCCC4
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 46-48" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTF941AA9D3222E17E
+        a                   :Note ;
+        :contentLocationStatement  "p. 256" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "an ancient place founded during the time of the royal dynasty and called a chos 'khor or major place of pilgrimage"@en .
+}

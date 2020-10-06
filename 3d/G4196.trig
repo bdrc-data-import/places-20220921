@@ -1,0 +1,120 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4196 {
+    bda:G4196  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4196 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "3d/G4196.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4196 ;
+        adm:logEntry        bda:LG00BF8A9BF44A8DB8 , bda:LG29E8C387C212ECED , bda:LG994D49E7EA9BF9A6 , bda:LGB2F08CAB21A853F1 , bda:LGE9D98B6B47925885 , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542228101:542228104" ;
+        adm:place_id_lex    "542228101:542228104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00BF8A9BF44A8DB8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-18T16:51:15.118Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG29E8C387C212ECED
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-08T16:19:39.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & 2 notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG994D49E7EA9BF9A6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB2F08CAB21A853F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:31:33.984Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE9D98B6B47925885
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-27T12:34:56.887Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G4625(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0B3FDFBAD0810FAA
+        a                   :PlaceConverted ;
+        :onYear             "0750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EV25A827108C9C72AD
+        a                   :PlaceFounded ;
+        :onYear             "0650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:G4196  a            :Place ;
+        skos:altLabel       "kho thing lha khang /"@bo-x-ewts , "lho brag kho mthing lha khang /"@bo-x-ewts , "mkho mthing rnam snang lha khang /"@bo-x-ewts , "kuoting lakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mkho mthing lha khang /"@bo-x-ewts , "Khoting Lhakhang"@en-x-mixed , "阔庭拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD5DEC52B29F6F15F ;
+        :isRoot             true ;
+        :note               bdr:NT21F8FECADA471C4F , bdr:NTD273EE77623BA34A , bdr:NTD76A93A10608688F , bdr:NTFC047F8C55E169FF ;
+        :placeEvent         bdr:EV0B3FDFBAD0810FAA , bdr:EV25A827108C9C72AD ;
+        :placeGonpaPerEcumen  "2.26" ;
+        :placeLat           "28.11670" ;
+        :placeLocatedIn     bdr:G2134 , bdr:G3CN120 , bdr:G3CN366 ;
+        :placeLong          "91.13106" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:IDD5DEC52B29F6F15F
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4196" .
+    
+    bdr:NT21F8FECADA471C4F
+        a                   :Note ;
+        :contentLocationStatement  "p. 123" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "ཡང་འདུལ་བཞི་ལས། གྲུ་མོ་གཡོན་པ་ལ་ལྷོ་འབྲུག་གི་ཟེ་སྟེང་དུ་ལྷོ་བྲག་ཁོ་ཐིང་བཞེངས་ཞེས་གསལ།"@bo .
+    
+    bdr:NTD273EE77623BA34A
+        a                   :Note ;
+        :contentLocationStatement  "p. 225" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "description\nancient temple in the lha brag area"@en .
+    
+    bdr:NTD76A93A10608688F
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 129-130" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTFC047F8C55E169FF
+        a                   :Note ;
+        :contentLocationStatement  "p. 286" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "རུ་མཚམས་བཞི་༼ཡང་འདུལ་?༽ལས། ལྷོ་ནུབ་ཏུ་ཁོ་མཐིང་བཞེངས་ཡོད་པ་གསལ།"@bo .
+}

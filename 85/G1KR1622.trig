@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1622 {
+    bda:G1KR1622  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1622 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "85/G1KR1622.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1622 ;
+        adm:logEntry        bda:LGD30AA718150EEC30 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542331204:542331105" ;
+        adm:place_id_lex    "542331204:542331105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD30AA718150EEC30
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-08T10:03:30.618Z"^^xsd:dateTime ;
+        adm:logMessage      "corected the name & added note in tibetan"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV1403B50732301153
+        a                   :PlaceFounded ;
+        :onYear             "1025"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:EV2018DE90BFCA16CC
+        a                   :PlaceConverted ;
+        :onYear             "1500"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1KR1622  a         :Place ;
+        skos:altLabel       "aiwang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "g.ye dmar dgon/"@bo-x-ewts , "Yemar (Iwang)"@en-x-mixed , "艾旺寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB83D8F5323A51CDF ;
+        :isRoot             true ;
+        :note               bdr:NT1A6C93AEA640657C , bdr:NTE1191C8BEE10ED7D ;
+        :placeEvent         bdr:EV1403B50732301153 , bdr:EV2018DE90BFCA16CC ;
+        :placeGonpaPerEcumen  "2.56" ;
+        :placeLat           "28.46667" ;
+        :placeLocatedIn     bdr:G2173 ;
+        :placeLong          "89.61667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDB83D8F5323A51CDF
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1622" .
+    
+    bdr:NT1A6C93AEA640657C
+        a                   :Note ;
+        :noteText           "འདི་བསྟན་པ་སྔ་དར་བོད་བཙན་པོའི་དུས་ཀྱི་དགོན་རྙིང་ཞིག་ཡིན་ལ། ཁ་ཆེ་པཎ་ཆེན་ཡང་དགོངས་པ་མ་རྫོགས་པར་འདིར་བཞུགས་ཞིང་སྐུ་གདུང་ཡང་འདིར་བཞུགས། དུས་ཕྱིས་སོག་པོ་ཇུན་གར་བའི་དམག་བྱུང་རྗེས་དགེ་ལུགས་སུ་འགྱུར་བར་གསལ།"@bo .
+    
+    bdr:NTE1191C8BEE10ED7D
+        a                   :Note ;
+        :noteText           "1500 Geluk conv. date speculative"@en .
+}

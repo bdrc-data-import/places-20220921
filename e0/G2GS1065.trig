@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1065 {
+    bda:G2GS1065  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1065 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e0/G2GS1065.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1065 ;
+        adm:logEntry        bda:LG2A744C4284E914B0 , bda:LG2B74DA23FA51C33C , bda:LG35E0C776178D84BA , bda:LG7E6CE3396CA72EE3 , bda:LGEBAD612DB030BF25 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2A744C4284E914B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T09:21:05.947Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2B74DA23FA51C33C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-20T16:16:50.646Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG35E0C776178D84BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T12:20:48.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7E6CE3396CA72EE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:19:35.197Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeOfPilgrimage to gnas"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGEBAD612DB030BF25
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-06-02T14:14:55.46Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2GS1065  a         :Place ;
+        skos:altLabel       "yar lha sham po/"@bo-x-ewts ;
+        skos:prefLabel      "yar lha sham bu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8B586CFC922B5A6F , bdr:NT9658AE0F03A9A0AA ;
+        :placeLocatedIn     bdr:G1145 , bdr:G1513 , bdr:G4802 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT8B586CFC922B5A6F
+        a                   :Note ;
+        :noteText           "name of a place of pilgrimage in the yar lung valley of central tibet"@en .
+    
+    bdr:NT9658AE0F03A9A0AA
+        a                   :Note ;
+        :noteText           "ཡར་སྟོད་དམ། ཡར་ཀླུངས་ཕུར་ཡོད་པའི་གངས་རི་མཐོན་པོ་ཞིག"@bo .
+}

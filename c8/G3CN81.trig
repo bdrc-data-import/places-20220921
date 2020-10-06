@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN81 {
+    bda:G3CN81  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN81 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c8/G3CN81.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN81 ;
+        adm:logEntry        bda:LG08C0F2BC02E3088A , bda:LG609B841306582F28 , bda:LGA729A06C8AAC9610 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG08C0F2BC02E3088A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T16:12:38.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG609B841306582F28
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T11:02:29.765Z"^^xsd:dateTime ;
+        adm:logMessage      "updated location anme as \"khri sde stod\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA729A06C8AAC9610
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-10T16:50:53.445Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV38432E01E92E46D6
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN81  a           :Place ;
+        skos:altLabel       "'o co bag"@bo-x-ewts ;
+        skos:prefLabel      "'o co/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT362249006CE0E39B , bdr:NTBEDA8F25762DCE55 ;
+        :placeEvent         bdr:EV38432E01E92E46D6 ;
+        :placeLocatedIn     bdr:G3171 ;
+        :placeType          bdr:PT0073 .
+    
+    bdr:NT362249006CE0E39B
+        a                   :Note ;
+        :contentLocationStatement  "p. 259" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "\"འོ་ཅོ་བག་\"ནི་ཞང་ཞུང་ཁྲི་སྡེ་སྟོད་སྨད་ཀྱི་སྟོང་སྡེ་བཅུ་ལས་གཅིག་ཡིན་པར་གསལ།"@bo .
+    
+    bdr:NTBEDA8F25762DCE55
+        a                   :Note ;
+        :contentLocationStatement  "p. 102" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "ཞང་ཞུང་སྟོད་ཀྱི་སྟོང་སྡེ་ཞིག"@bo .
+}

@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G270 {
+    bda:G270  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G270 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "b1/G270.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G270 ;
+        adm:logEntry        bda:LG2FE3DBA095C22AA0 , bda:LG36693E29840F21CB , bda:LG8A1A9D15C09FD2AF , bda:LGA282EAEA2300F585 , bda:LGBF29FFEA13102617 , bda:LGE6A66F2158592F43 , bda:LGF0115F192542BF8C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2FE3DBA095C22AA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG36693E29840F21CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-16T10:18:03.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added g222, delete g2800"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG8A1A9D15C09FD2AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2800"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGA282EAEA2300F585
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBF29FFEA13102617
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-12T15:38:19.857Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE6A66F2158592F43
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-02T15:17:34.948Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed to sman khang"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF0115F192542BF8C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-27T13:05:26.397Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:G270  a             :Place ;
+        skos:altLabel       "lha sa sman rtsis khang /"@bo-x-ewts ;
+        skos:prefLabel      "sman rtsis khang /"@bo-x-ewts , "Mentsikang"@en ;
+        :isRoot             true ;
+        :note               bdr:NTDE5C2D0FA1D63EAC ;
+        :placeContains      bdr:G1KG12791 ;
+        :placeIsNear        bdr:G222 ;
+        :placeLocatedIn     bdr:G2800 ;
+        :placeType          bdr:PT0023 .
+    
+    bdr:NTDE5C2D0FA1D63EAC
+        a                   :Note ;
+        :contentLocationStatement  "p. 429" ;
+        :noteSource         bdr:MW21015 ;
+        :noteText           "medical and astrological college of lhasa\n1916. founded by the 13th dalai lama"@en .
+}

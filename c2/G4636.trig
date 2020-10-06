@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4636 {
+    bda:G4636  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4636 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "c2/G4636.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4636 ;
+        adm:logEntry        bda:LG593EDB69FF845340 , bda:LG8F5C9CD3C084B0F1 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542229100:542229104" ;
+        adm:place_id_lex    "542229100:542229104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG593EDB69FF845340
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8F5C9CD3C084B0F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:38:51.482Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVFE7042BA1954F956
+        a                   :PlaceFounded ;
+        :onYear             "1925"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4636  a            :Place ;
+        skos:altLabel       "Reting Trungkhang"@bo-x-phon-en , "热振诞生寺"@zh-hans , "Reting Trungkhang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rwa sgreng 'khrungs khang /"@bo-x-ewts , "热振冲康寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2065F15AB463F5BF ;
+        :isRoot             true ;
+        :note               bdr:NTF7C9528F52A0E32F ;
+        :placeEvent         bdr:EVFE7042BA1954F956 ;
+        :placeGonpaPerEcumen  "3.01" ;
+        :placeLat           "29.08182" ;
+        :placeLocatedIn     bdr:G2138 ;
+        :placeLong          "92.72124" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID2065F15AB463F5BF
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4636" .
+    
+    bdr:NTF7C9528F52A0E32F
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 93-94" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description\nthe birthplace of the rwa sgreng regent presumably"@en .
+}

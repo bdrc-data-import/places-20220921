@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1358 {
+    bda:G1358  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1358 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "82/G1358.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1358 ;
+        adm:logEntry        bda:LG91D8EEADF3C7E1F5 , bda:LGE2A859C9AB012954 , bda:LGF6334740E9B4053B , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG91D8EEADF3C7E1F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-15T16:43:51.681Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE2A859C9AB012954
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-09T14:54:05.98Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF6334740E9B4053B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1358  a            :Place ;
+        skos:prefLabel      "gi la gar mang khan/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF1195CBEC7921D2C ;
+        :placeLocatedIn     bdr:G1395 ;
+        :placeType          bdr:PT0081 .
+    
+    bdr:NTF1195CBEC7921D2C
+        a                   :Note ;
+        :noteText           "traditional place name in the se chen wang kho shi gun of the left wing of the khal kha"@en .
+}

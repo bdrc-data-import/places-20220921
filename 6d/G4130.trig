@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4130 {
+    bda:G4130  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4130 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "6d/G4130.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4130 ;
+        adm:logEntry        bda:LG00EB8F6FA4031FEB , bda:LGA31932F4843D93DF , bda:LGC5AF032EEFEC806A , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513326101:462" ;
+        adm:place_id_lex    "513326101:462" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00EB8F6FA4031FEB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA31932F4843D93DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T10:47:18.058Z"^^xsd:dateTime ;
+        adm:logMessage      "arrange dnames"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC5AF032EEFEC806A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-01T15:02:19.86Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & events"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV22DDA8904F51479B
+        a                   :PlaceConverted ;
+        :notAfter           "1599"^^xsd:gYear ;
+        :notBefore          "1500"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV76762A2D69A1B237
+        a                   :PlaceFounded ;
+        :onYear             "1862"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV9A2F785C0762E79C
+        a                   :PlaceFounded ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G4130  a            :Place ;
+        skos:altLabel       "brtan lo dgon sar byang chub phun tshogs gling (kar dgon)"@bo-x-ewts , "gao-erqia si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ka bzhi dgon/"@bo-x-ewts , "高尔卡寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDF14CA28E5C6CA11 ;
+        :isRoot             true ;
+        :note               bdr:NT1AFE1B323E243587 ;
+        :placeEvent         bdr:EV22DDA8904F51479B , bdr:EV76762A2D69A1B237 , bdr:EV9A2F785C0762E79C ;
+        :placeGonpaPerEcumen  "13.1" ;
+        :placeLat           "30.48333" ;
+        :placeLocatedIn     bdr:G2309 ;
+        :placeLong          "101.48333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDDF14CA28E5C6CA11
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4130" .
+    
+    bdr:NT1AFE1B323E243587
+        a                   :Note ;
+        :contentLocationStatement  "v. 2. pp. 671-679" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "important dge lugs monastery in lcags zam rdzong"@en .
+}

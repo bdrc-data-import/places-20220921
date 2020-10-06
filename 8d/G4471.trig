@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4471 {
+    bda:G4471  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4471 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "8d/G4471.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4471 ;
+        adm:logEntry        bda:LG2EE3F574E382BBD1 , bda:LG53C2A4EC4C493277 , bda:LGE47857D4681A6092 , bda:LGF71884E32C56DC40 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "630121207:12" ;
+        adm:place_id_lex    "630121207:250" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2EE3F574E382BBD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T12:59:45.856Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG53C2A4EC4C493277
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-24T10:36:22.034Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE47857D4681A6092
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF71884E32C56DC40
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T12:28:30.864Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVC5EE550FFAC8DF6E
+        a                   :PlaceFounded ;
+        :onYear             "1765"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4471  a            :Place ;
+        skos:altLabel       "tha yan chi chung ba dga' ldan rin chen gling /"@bo-x-ewts , "他阳池寺"@zh-hans , "tayangchi si"@zh-latn-pinyin-x-ndia , "zhangjia si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tha yan chi dgon pa/"@bo-x-ewts , "张家寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID70019CA1C5F9BA04 ;
+        :isRoot             true ;
+        :note               bdr:NT4BA063706FA6B1D3 , bdr:NTC546B9C740F1081B ;
+        :placeEvent         bdr:EVC5EE550FFAC8DF6E ;
+        :placeGonpaPerEcumen  "14.89" ;
+        :placeLat           "37.14274" ;
+        :placeLocatedIn     bdr:G1PD95966 ;
+        :placeLong          "101.56408" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID70019CA1C5F9BA04
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4471" .
+    
+    bdr:NT4BA063706FA6B1D3
+        a                   :Note ;
+        :contentLocationStatement  "p. 107" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "monastery in mdo smad\ntha yan chi chung ba dga' ldan rin chen gling/ 'di ni dgon lung ba bzang skor dka' bcu kun dga' bzang pos btab/ de'i sprul sku blo bzang kun dga'/ de'i sprul sku dpal ldan 'od zer/ de'i sprul sku dkon mchog bstan 'dzin 'byung gnas gung thang 'jam dbyangs bla ma las bsnyen rdzogs bsgrubs"@en .
+    
+    bdr:NTC546B9C740F1081B
+        a                   :Note ;
+        :contentLocationStatement  "p. 14" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་1958ལོར་གཏོར་ནས་ད་ལྟ་བསྐྱར་གསོ་བྱས་མེད་ཅེས་འཁོད།"@bo .
+}

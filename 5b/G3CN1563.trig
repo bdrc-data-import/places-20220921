@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN1563 {
+    bda:G3CN1563  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN1563 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "5b/G3CN1563.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN1563 ;
+        adm:logEntry        bda:LG4B87DA0218A3E04D , bda:LG7EBA95679C4E3491 , bda:LGB5542B5EA351252F , bda:LGBECD20563423C2D5 , bda:LGF2C7B038A44ED95F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4B87DA0218A3E04D
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-04-01T12:34:11.669Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7EBA95679C4E3491
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-30T15:35:00.401Z"^^xsd:dateTime ;
+        adm:logMessage      "added new place \"Solan\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB5542B5EA351252F
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-12-01T12:46:34.647Z"^^xsd:dateTime ;
+        adm:logMessage      "orgnized dup. record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBECD20563423C2D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-23T11:20:33.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added 7 contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2C7B038A44ED95F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-23T10:46:38.986Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN1563  a         :Place ;
+        skos:prefLabel      "hi ma cal mnga' sde/"@bo-x-ewts , "Himachal Pardesh"@en ;
+        :isRoot             true ;
+        :placeContains      bdr:G2CN220 , bdr:G3CN1562 , bdr:G3CN1568 , bdr:G3JT12558 , bdr:G3JT12630 , bdr:G4168 , bdr:G4338 , bdr:G587 ;
+        :placeLocatedIn     bdr:G3188 ;
+        :placeType          bdr:PT0060 .
+}

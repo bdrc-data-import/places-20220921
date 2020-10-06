@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4414 {
+    bda:G4414  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4414 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e9/G4414.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4414 ;
+        adm:logEntry        bda:LG98688A4621816147 , bda:LGBACCB7AAF25DA2D8 , bda:LGBB2A665CD762F743 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG98688A4621816147
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBACCB7AAF25DA2D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGBB2A665CD762F743
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T10:28:06.977Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G4414  a            :Place ;
+        skos:prefLabel      "sa dkar dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT30FCF766311C41EB ;
+        :placeLocatedIn     bdr:G2129 , bdr:G3290 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NT30FCF766311C41EB
+        a                   :Note ;
+        :contentLocationStatement  "p. 44" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "kagyu monastery in gzhu smad shang, snye mo rdzong\nfounded y on of the gtsang stag sna rtsi pu sprul sku, but uncertain which of the line; uncertain of date of founding\nunder the control of the gtsang stag sna dgon\ncomponent of 22 nuns"@en .
+}

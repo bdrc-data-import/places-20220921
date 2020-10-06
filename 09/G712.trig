@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G712 {
+    bda:G712  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G712 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "09/G712.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G712 ;
+        adm:logEntry        bda:LG030545A8D6784542 , bda:LG23E70AF0CA0FFDB0 , bda:LGB6EDA68C3B9ECD89 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG030545A8D6784542
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-21T13:18:54.266Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG23E70AF0CA0FFDB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-26T12:56:14.815Z"^^xsd:dateTime ;
+        adm:logMessage      "added rtsib ri par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGB6EDA68C3B9ECD89
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G712  a             :Place ;
+        skos:altLabel       "la stod rtsib ri dgon/"@bo-x-ewts , "rgyal gyi shrI dgon/"@bo-x-ewts ;
+        skos:prefLabel      "rtsib ri dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT92DF37390DC4638C ;
+        :placeContains      bdr:G3JT12552 ;
+        :placeLat           "28.600552" ;
+        :placeLocatedIn     bdr:G2165 ;
+        :placeLong          "86.735879" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT92DF37390DC4638C
+        a                   :Note ;
+        :noteText           "important 'brug pa dkar brgyud pa hermitage in the vicinity of ding ri in the la stod area of western tibet"@en .
+}

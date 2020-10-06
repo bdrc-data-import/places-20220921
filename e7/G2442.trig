@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2442 {
+    bda:G2442  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2442 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e7/G2442.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2442 ;
+        adm:logEntry        bda:LG28305E4C043F42B4 , bda:LG80EFC2E1409AC59E , bda:LG98211BA4F061269D , bda:LGEB35936515287CAE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG28305E4C043F42B4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG80EFC2E1409AC59E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG98211BA4F061269D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-04T11:50:48.013Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEB35936515287CAE
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T15:06:17.448Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2442  a            :Place ;
+        skos:altLabel       "ya cha dgon phan bde gling /"@bo-x-ewts ;
+        skos:prefLabel      "ya cha dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE3A2C1537BD05948 ;
+        :placeLocatedIn     bdr:G2128 , bdr:G2450 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTE3A2C1537BD05948
+        a                   :Note ;
+        :contentLocationStatement  "p. 41" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "dge lugs pa monastery located in mnyes thang shang\nfounded in 1909 by se ra sngags pa mkhan zur byams pa chos 'phel\ndgon bdag: ser sngags grwa tshang\nnumber of monks: 11"@en .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2210 {
+    bda:G2210  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2210 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d6/G2210.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2210 ;
+        adm:logEntry        bda:LG2953C5065BE92453 , bda:LG360EF24E80F509B7 , bda:LG81E853B002F06095 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2953C5065BE92453
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-27T10:07:01.106Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type from \"chus\" to \"chu bo\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG360EF24E80F509B7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG81E853B002F06095
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-05T14:59:13.695Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2210  a            :Place ;
+        skos:prefLabel      "bsang chu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT438C11F082B70D18 ;
+        :placeLocatedIn     bdr:G1294 ;
+        :placeType          bdr:PT0065 .
+    
+    bdr:NT438C11F082B70D18
+        a                   :Note ;
+        :noteText           "river flowing through the kan lho autonomous tibetan prefecture in gansu province\npinyin: daxia"@en .
+}

@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3651 {
+    bda:G3651  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3651 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "5d/G3651.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3651 ;
+        adm:logEntry        bda:LG9DDFCF4ACFE87153 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513329214:231" ;
+        adm:place_id_lex    "513329214:231" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9DDFCF4ACFE87153
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVAB9E72C76A995DE2
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3651  a            :Place ;
+        skos:altLabel       "sku lung dgon/"@bo-x-ewts , "gu luo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sku lung dgon/"@bo-x-ewts , "古洛寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID78D82EA418395674 ;
+        :isRoot             true ;
+        :note               bdr:NT0A89F1D8905B1EB3 ;
+        :placeEvent         bdr:EVAB9E72C76A995DE2 ;
+        :placeGonpaPerEcumen  "8.3" ;
+        :placeLat           "30.88333" ;
+        :placeLocatedIn     bdr:G1246 ;
+        :placeLong          "100.06667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID78D82EA418395674
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3651" .
+    
+    bdr:NT0A89F1D8905B1EB3
+        a                   :Note ;
+        :contentLocationStatement  "p. 166" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "a subsidiary monastery of kaH thog in 'the east\" according to the list of kaH thog si tu chos kyi rgya mtsho"@en .
+}

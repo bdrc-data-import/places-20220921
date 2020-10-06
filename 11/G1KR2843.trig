@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2843 {
+    bda:G1KR2843  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2843 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "11/G1KR2843.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2843 ;
+        adm:logEntry        bda:LGF262F5A726002790 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632725206:141" ;
+        adm:place_id_lex    "632725206:141" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGF262F5A726002790
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-20T15:24:30.641Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV09275F007419420C
+        a                   :PlaceFounded ;
+        :onYear             "1190"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionYelpaKagyu .
+    
+    bdr:EV138E7B43F3EEF234
+        a                   :PlaceConverted ;
+        :onYear             "1900"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G1KR2843  a         :Place ;
+        skos:altLabel       "gze rdzogs khyam dgon bkra shis rdzogs chen gling /"@bo-x-ewts , "saizuoqiang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gze rdzogs khyam dgon/"@bo-x-ewts , "赛佐强寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC00B5B3A6C3CF9B8 ;
+        :isRoot             true ;
+        :note               bdr:NT4310F5DD1F5482B6 ;
+        :placeEvent         bdr:EV09275F007419420C , bdr:EV138E7B43F3EEF234 ;
+        :placeGonpaPerEcumen  "17.36" ;
+        :placeLat           "31.86793" ;
+        :placeLocatedIn     bdr:G1467 ;
+        :placeLong          "96.16168" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC00B5B3A6C3CF9B8
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2843" .
+    
+    bdr:NT4310F5DD1F5482B6
+        a                   :Note ;
+        :noteText           "used to be Yelpa Kagyupa, early 1900s changed to Karma and given to 15th Karmapa"@en .
+}

@@ -1,0 +1,105 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4474 {
+    bda:G4474  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4474 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "9b/G4474.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4474 ;
+        adm:logEntry        bda:LG3894F4C27A1A6682 , bda:LG43C1FFF459A1BA89 , bda:LG4EE152980AD0E2D6 , bda:LG8B7569CF25E91DBD , bda:LGB42F8423BF63988C , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "630122217:101" ;
+        adm:place_id_lex    "630122217:358" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3894F4C27A1A6682
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-03T09:51:16.167Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG43C1FFF459A1BA89
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T14:33:24.667Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG4EE152980AD0E2D6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8B7569CF25E91DBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-09T11:51:22.879Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB42F8423BF63988C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T14:12:51.544Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5AC2C45EE785F361
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P9230 .
+    
+    bdr:EV759254D972A09775
+        a                   :PlaceFounded ;
+        :onYear             "1865"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4474  a            :Place ;
+        skos:altLabel       "pra sti khra tshong ri khrod bsam gtan gling /"@bo-x-ewts , "ri khrod bsam gtan gling /"@bo-x-ewts , "zhazi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "pra sti khra tshong ri khrod/"@bo-x-ewts , "扎子寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID53E24B1720CECFF7 ;
+        :isRoot             true ;
+        :note               bdr:NT00CF7555712ABBB0 , bdr:NT66A06AE236774A3E ;
+        :placeEvent         bdr:EV5AC2C45EE785F361 , bdr:EV759254D972A09775 ;
+        :placeGonpaPerEcumen  "35.83" ;
+        :placeLat           "36.66660" ;
+        :placeLocatedIn     bdr:G1PD5303 ;
+        :placeLong          "101.36575" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID53E24B1720CECFF7
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4474" .
+    
+    bdr:NT00CF7555712ABBB0
+        a                   :Note ;
+        :contentLocationStatement  "p. 61" ;
+        :noteSource         bdr:MW1PD95675 .
+    
+    bdr:NT66A06AE236774A3E
+        a                   :Note ;
+        :contentLocationStatement  "p. 79" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "འདི་ནི་པྲ་སྟི་ཆོས་རྗེ་ངག་དབང་དགེ་འདུན་གྱིས་བཏབ། ཐུའུ་བཀྭན་རིན་པོ་་ཆེས་འདུ་ཁང་གསར་བསྐྲུན་གནང་། པྲ་སྟི་སྐུ་སྐྱེས་གཙོས་གྲྭ་མང་དང་མཆོད་གཞིས་རྣམས་ཀྱིས་རི་ཁྲོད་མགོ་འབུལ་བྱས། པྲ་སྟི་སྒར་བའི་ནང་རྟེན་ཐོ་བཅས་ཉིད་ལ་རྩིས་སྤྲོད་ཞུས། འཕགས་པ་ཤཱ་རིའི་བུའི་སྣམ་སྦྱར་སོགས་ནང་རྟེན་མང་།"@bo .
+}

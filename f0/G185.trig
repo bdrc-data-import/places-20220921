@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G185 {
+    bda:G185  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G185 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f0/G185.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G185 ;
+        adm:logEntry        bda:LG18A63089EC6C8373 , bda:LG2EE956F3148A01EE , bda:LG7E9D8ED7834EA4F4 , bda:LGAC6556EE03F9296E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18A63089EC6C8373
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-10T15:23:28.475Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2EE956F3148A01EE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7E9D8ED7834EA4F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T15:03:20.029Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGAC6556EE03F9296E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2184"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G185  a             :Place ;
+        skos:prefLabel      "'dzi sgar chos sgar/"@bo-x-ewts , "Dzigar Chogar"@en ;
+        :isRoot             true ;
+        :note               bdr:NTAA852C53BD2018F0 ;
+        :placeLocatedIn     bdr:G2184 , bdr:G2376 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTAA852C53BD2018F0
+        a                   :Note ;
+        :noteText           "important monastery of the 'brug pa dkar brgyud pa tradition in eastern tibet\nthe seat of the 'dzi sgar mchog sprul series of incarnations"@en .
+}

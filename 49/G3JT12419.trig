@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3JT12419 {
+    bda:G3JT12419  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3JT12419 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "49/G3JT12419.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3JT12419 ;
+        adm:logEntry        bda:LG313EA1AB5B6AF2C2 , bda:LG3D40A64914C87A91 , bda:LG91B1FBBB1F7F5CEA , bda:LGABF03A2862323C7F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G2315 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG313EA1AB5B6AF2C2
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-04-17T10:26:15.511Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G2315"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3D40A64914C87A91
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR2401"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG91B1FBBB1F7F5CEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR2400"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGABF03A2862323C7F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-03-28T11:51:29.672Z"^^xsd:dateTime ;
+        adm:logMessage      "new place"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:G3JT12419  a        :Place ;
+        skos:prefLabel      "rkang tsha rdzong (mtsho byang khul)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDFBE61C0519930A0 ;
+        :placeContains      bdr:G1KR2400 , bdr:G1KR2401 .
+    
+    bdr:NTDFBE61C0519930A0
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G2315"@en .
+}

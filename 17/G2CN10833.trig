@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10833 {
+    bda:G2CN10833  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10833 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "17/G2CN10833.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10833 ;
+        adm:logEntry        bda:LGB3E754C8DB48DD42 , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542224200:542224108" ;
+        adm:place_id_lex    "542224200:542224108" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGB3E754C8DB48DD42
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-06-15T10:05:50.175Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV554576FA57F0CCA2
+        a                   :PlaceFounded ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2CN10833  a        :Place ;
+        skos:prefLabel      "wa nag chos khang /"@bo-x-ewts , "瓦那曲康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID247F3510F1665078 ;
+        :isRoot             true ;
+        :note               bdr:NT08F1A6262583BD2B ;
+        :placeEvent         bdr:EV554576FA57F0CCA2 ;
+        :placeGonpaPerEcumen  "6.68" ;
+        :placeLat           "29.21916" ;
+        :placeLocatedIn     bdr:G2130 ;
+        :placeLong          "92.01525" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID247F3510F1665078
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2CN10833" .
+    
+    bdr:NT08F1A6262583BD2B
+        a                   :Note ;
+        :contentLocationStatement  "v. 81" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "འཆད་དཀར་ཆོས་སྡེའི་ནུབ་ངོས་གྲོང་དབུས་སུ་ཆོས་ཁང་དེ་ཡོད་ཅིང་། དེ་ནི་སྔོན་འབའ་ཡེ་ཤེས་སེང་གེ་ས་དེར་ཕེབས་ནས་ལྷ་ཁང་དེ་བཞེངས་པ་རེད་ཟེར། སྔོན་ཆོས་ཁང་དེའི་ནང་རྟེན་གཙོ་ཐུབ་དབང་ལི་སྐུ་དང་། འཇིམ་སྐུའི་གནས་བརྟན་བཅུ་དྲུག་སོགས་ཡོད། ད་ལྟ་ཉམས་གསོ་ཞུས་པའི་ཆོས་ཁང་ནང་སྔོན་གྱི་ཙན་དན་ཀྱི་ཀ་རིང་གཉིས་དང་། གསར་བཞེངས་ཇོ་བོའི་སྐུ་ལ་སྔོན་གྱི་སྟོན་པའི་སྐུའི་ཕྱག་གཡོན་མ་བཞུགས་པ། གཞན་ཡང་ལྡེབས་རིས་ཉམས་གསོ་ཞུས་པ་སོགས་འཁོད།"@bo .
+}

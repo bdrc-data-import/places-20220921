@@ -1,0 +1,113 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G154 {
+    bda:G154  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G154 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "10/G154.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G154 ;
+        adm:logEntry        bda:LG23345F8FB377DA49 , bda:LG29CAB14EE711BCE7 , bda:LG482FD64461BF0778 , bda:LG7093EB22DF44FD66 , bda:LG8744A1CD07515163 , bda:LGF59732D49452E1D0 , bda:LGF5C2554D59245654 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540102002:540101136" ;
+        adm:place_id_lex    "540102002:540101136" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG23345F8FB377DA49
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG29CAB14EE711BCE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-04-12T18:10:34.131Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bda:LG482FD64461BF0778
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:36:11.161Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7093EB22DF44FD66
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T10:56:29.297Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG8744A1CD07515163
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T17:48:45.928Z"^^xsd:dateTime ;
+        adm:logMessage      "english"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGF59732D49452E1D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-17T10:40:02.361Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & linked with source"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF5C2554D59245654
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2CN10838"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV59FF106EB13BAE55
+        a                   :PlaceFounded ;
+        :onYear             "1419"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVDEBEE2AA4216F1AB
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P3450 ;
+        :onYear             "1419"^^xsd:gYear .
+    
+    bdr:G154  a             :Place ;
+        skos:altLabel       "se ra theg chen gling /"@bo-x-ewts , "Sera"@bo-x-phon-en , "色拉大乘州"@zh-hans , "sela dasheng zhou"@zh-latn-pinyin-x-ndia , "sela si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "se ra dgon pa/"@bo-x-ewts , "Sera Monastery"@en , "色拉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID68E74FCD2F3E3748 ;
+        :isRoot             true ;
+        :note               bdr:NTB234F948CFF9AF55 ;
+        :placeContains      bdr:G155 , bdr:G237 , bdr:G248 , bdr:G2CN10838 , bdr:G2CN10851 , bdr:G2CN10852 , bdr:G2CN10853 , bdr:G2CN10854 , bdr:G2CN10856 ;
+        :placeEvent         bdr:EV59FF106EB13BAE55 , bdr:EVDEBEE2AA4216F1AB ;
+        :placeGonpaPerEcumen  "127.8" ;
+        :placeIsNear        bdr:G1TD38 ;
+        :placeLat           "29.69781" ;
+        :placeLocatedIn     bdr:G2800 ;
+        :placeLong          "91.13272" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID68E74FCD2F3E3748
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G154" .
+    
+    bdr:NTB234F948CFF9AF55
+        a                   :Note ;
+        :noteText           "major dge lugs pa monastery in the tibetan autonomous region"@en .
+}

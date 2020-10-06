@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2813 {
+    bda:G2813  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2813 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "1e/G2813.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2813 ;
+        adm:logEntry        bda:LG35DD5F656C515BF0 , bda:LG5102BB5CBAC53027 , bda:LG6E820F3BBC505C84 , bda:LGB25A29D8831A6863 , bda:LGB62204F8A2CB0449 , bda:LGC70CB9E65C8B70F4 , bda:LGFD06B2E8DB8A09D7 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG35DD5F656C515BF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T13:55:55.902Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG5102BB5CBAC53027
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-20T14:27:41.112Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6E820F3BBC505C84
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-20T14:46:22.143Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name & info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB25A29D8831A6863
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-25T09:03:24.034Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB62204F8A2CB0449
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-20T14:57:22.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC70CB9E65C8B70F4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFD06B2E8DB8A09D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-20T15:04:52.07Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV7D8535D2EE397053
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G2813  a            :Place ;
+        skos:prefLabel      "rnam sras gling zhwa dmar dgon gsar/"@bo-x-ewts , "Namseling Shamar Gonsar"@en ;
+        :isRoot             true ;
+        :note               bdr:NT36F7E13C324F7F58 ;
+        :placeEvent         bdr:EV7D8535D2EE397053 ;
+        :placeLocatedIn     bdr:G1437 , bdr:G799 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT36F7E13C324F7F58
+        a                   :Note ;
+        :contentLocationStatement  "p. 242" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "private monastery owned by the rnam sras gling family\nfamous library and manuscript bka' 'gyur\nseat of the rnam sras gling zhwa dmar incarnation lineage\nrecords the names of the 2nd, 3rd, and 4th who had 'dra sku there:\nbstan 'dzin 'phrin las rnam rgyal\n'jam dpal ngag dbang\ngar dbang karma mkhas grub\nthe seat of the famous sdig bshags ma Ni 'khor lo of bstan rgyas gling"@en .
+}

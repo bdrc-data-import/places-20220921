@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G110 {
+    bda:G110  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G110 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "71/G110.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G110 ;
+        adm:logEntry        bda:LG28199AD7CA08FF07 , bda:LG4354317B02DB282A , bda:LGEF0AB9C373CAE7B7 , bda:LGF3D9E4BC530EE6F5 , bda:LGIM454E022964 , bda:LGIMAF5F209484 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG28199AD7CA08FF07
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:36:44.786Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4354317B02DB282A
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T15:14:30.146Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGEF0AB9C373CAE7B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-18T15:25:58.808Z"^^xsd:dateTime ;
+        adm:logMessage      "checked out"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF3D9E4BC530EE6F5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM454E022964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T17:05:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:gzimsKhang to khamsTshan"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMAF5F209484
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:21:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from residentialHouse to gzimsKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G110  a             :Place ;
+        skos:prefLabel      "har gdong khams tshan ('bras spungs sgo mang)"@bo-x-ewts , "Hardong Khamtshen"@en ;
+        :isRoot             true ;
+        :note               bdr:NT5AE44454936D2AB0 ;
+        :placeLocatedIn     bdr:G109 ;
+        :placeType          bdr:PT0039 .
+    
+    bdr:NT5AE44454936D2AB0
+        a                   :Note ;
+        :noteText           "residential house of sgo mang college of 'bras spungs monastery"@en .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1TD16 {
+    bda:G1TD16  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1TD16 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "42/G1TD16.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1TD16 ;
+        adm:logEntry        bda:LG068EC5FC7E86E83E , bda:LGF533D289BF03C601 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG068EC5FC7E86E83E
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-03-18T13:07:59.445Z"^^xsd:dateTime ;
+        adm:logMessage      "edited names"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bda:LGF533D289BF03C601
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-18T13:05:40.773Z"^^xsd:dateTime ;
+        adm:logMessage      "edited record"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bdr:EV4217A71D992F68AE
+        a                   :PlaceFounded ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear .
+    
+    bdr:G1TD16  a           :Place ;
+        skos:altLabel       "rgya ri mkhar/"@bo-x-ewts ;
+        skos:prefLabel      "rgya ri/"@bo-x-ewts , "Gyari castle"@en ;
+        :isRoot             true ;
+        :note               bdr:NTFFC32F09F7866056 ;
+        :placeEvent         bdr:EV4217A71D992F68AE ;
+        :placeLocatedIn     bdr:G1814 .
+    
+    bdr:NTFFC32F09F7866056
+        a                   :Note ;
+        :contentLocationStatement  "pp.16-21" ;
+        :noteSource         bdr:MW00KG09731 ;
+        :noteText           "mda' smad pa of lha rgya ri family built the Gyari castle in the thirteenth century"@en .
+}

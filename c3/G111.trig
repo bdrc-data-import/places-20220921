@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G111 {
+    bda:G111  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G111 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c3/G111.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G111 ;
+        adm:logEntry        bda:LG13159F551039D4E5 , bda:LGIM454E022964 , bda:LGIMAF5F209484 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG13159F551039D4E5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM454E022964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T17:05:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:gzimsKhang to khamsTshan"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMAF5F209484
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:21:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from residentialHouse to gzimsKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G111  a             :Place ;
+        skos:altLabel       "bsam blo khams tshan ('bras spungs sgo mang)"@bo-x-ewts ;
+        skos:prefLabel      "bsam lho khams tshan ('bras spungs sgo mang)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6CE587BE2C520F1C ;
+        :placeLocatedIn     bdr:G109 ;
+        :placeType          bdr:PT0039 .
+    
+    bdr:NT6CE587BE2C520F1C
+        a                   :Note ;
+        :noteText           "residential house of sgo mang college of 'bras spungs monastery"@en .
+}

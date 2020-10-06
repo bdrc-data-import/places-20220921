@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G250 {
+    bda:G250  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G250 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "97/G250.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G250 ;
+        adm:logEntry        bda:LG07E31B29D46D2775 , bda:LG0C3A675CF6A1569A , bda:LGE5F4724AADD76E3E , bda:LGF88D6CBC2C35BC25 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07E31B29D46D2775
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG0C3A675CF6A1569A
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-08-20T11:46:34.846Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE5F4724AADD76E3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-04T15:25:25.046Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF88D6CBC2C35BC25
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T12:07:46.715Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVCC60CE360017BADB
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P986 ;
+        :onYear             "1491"^^xsd:gYear .
+    
+    bdr:G250  a             :Place ;
+        skos:prefLabel      "chos 'khor lhun po/"@bo-x-ewts , "Chokor Lhunpo"@en ;
+        :isRoot             true ;
+        :note               bdr:NT0A43FA599851C727 , bdr:NT955AD591329C5261 ;
+        :placeEvent         bdr:EVCC60CE360017BADB ;
+        :placeLocatedIn     bdr:G2169 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0A43FA599851C727
+        a                   :Note ;
+        :contentLocationStatement  "pref." ;
+        :noteSource         bdr:MW24771 ;
+        :noteText           "sa skya establishment located near the main monastery of sa skya"@en .
+    
+    bdr:NT955AD591329C5261
+        a                   :Note ;
+        :noteSource         bdr:MW1KG3365 ;
+        :noteText           "brief history of chos 'khor lhun po monastery exist in"@en .
+}

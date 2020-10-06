@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN20 {
+    bda:G3CN20  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN20 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "33/G3CN20.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN20 ;
+        adm:logEntry        bda:LG3E22302B524C7FAB , bda:LG46815B992E98D5B7 , bda:LG468DD01920015AE7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3E22302B524C7FAB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-12-12T16:58:57.061Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG46815B992E98D5B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T11:17:46.885Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG468DD01920015AE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-19T14:43:26.529Z"^^xsd:dateTime ;
+        adm:logMessage      "added location as \"yar 'brog\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV51E9B74E00FE1775
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear .
+    
+    bdr:G3CN20  a           :Place ;
+        skos:altLabel       "yar 'brog stag lung khri skor/"@bo-x-ewts ;
+        skos:prefLabel      "yar 'brog khri skor/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD4367A5E79BF41F9 ;
+        :placeEvent         bdr:EV51E9B74E00FE1775 ;
+        :placeLocatedIn     bdr:G3CN10 , bdr:G4683 ;
+        :placeType          bdr:PT0046 .
+    
+    bdr:NTD4367A5E79BF41F9
+        a                   :Note ;
+        :contentLocationStatement  "p. 346" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "ཁྲི་སྐོར་བཅུ་གསུམ་སྐོར་མདོ་ཙམ་གསལ།"@bo .
+}

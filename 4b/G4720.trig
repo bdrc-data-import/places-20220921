@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4720 {
+    bda:G4720  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4720 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "4b/G4720.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4720 ;
+        adm:logEntry        bda:LG862DADAAB1A2A9A5 , bda:LGB0A131F22D22D691 , bda:LGB260F37216E14530 , bda:LGC31B6B99583F6CE1 , bda:LGE1103611CAFA846D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG862DADAAB1A2A9A5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB0A131F22D22D691
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:20:47.523Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from province to zhingChen"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGB260F37216E14530
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-01-20T15:51:17.558Z"^^xsd:dateTime ;
+        adm:logMessage      "link to monastery"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC31B6B99583F6CE1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-03T14:57:12.724Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE1103611CAFA846D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-20T09:10:25.578Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed to district & added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G4720  a            :Place ;
+        skos:prefLabel      "bkra shis sgang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8B31201DD0761FB3 ;
+        :placeContains      bdr:G1KG21060 , bdr:G4489 ;
+        :placeLocatedIn     bdr:G3205 ;
+        :placeType          bdr:PT0011 .
+    
+    bdr:NT8B31201DD0761FB3
+        a                   :Note ;
+        :noteText           "district in eastern bhutan"@en .
+}

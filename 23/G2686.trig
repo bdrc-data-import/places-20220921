@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2686 {
+    bda:G2686  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2686 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "23/G2686.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2686 ;
+        adm:logEntry        bda:LG7996CF7BB6AB3EF2 , bda:LGA4FD199F7145F7CE , bda:LGB1611BE8A1561F61 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7996CF7BB6AB3EF2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA4FD199F7145F7CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-30T16:13:06.064Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB1611BE8A1561F61
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-12T12:19:50.57Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2686  a            :Place ;
+        skos:prefLabel      "gad bkyag dge ma dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT52FD903714E4791D , bdr:NT9FF1C347AABA0025 ;
+        :placeLocatedIn     bdr:G2326 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NT52FD903714E4791D
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 46" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "rnying ma pa monastery in yus hru'u prefecture, qinghai province"@en .
+    
+    bdr:NT9FF1C347AABA0025
+        a                   :Note ;
+        :noteText           "གནས་སྐབས་ཡུལ་ཤུལ་རྫོང་ཁོངས་སུ་བཞག་མོད། ཡང་སྙིང་རྫོང་ཁོངས་གང་ན་གནས་མིན་མུ་མཐུད་རྩད་རྒྱུ།"@bo .
+}

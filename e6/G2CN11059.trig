@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11059 {
+    bda:G2CN11059  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11059 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e6/G2CN11059.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11059 ;
+        adm:logEntry        bda:LG9B8BAD240BC4AFF5 , bda:LGC6A6EA4764D53923 , bda:LGDE1811712FC3F329 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9B8BAD240BC4AFF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-09T11:14:02.944Z"^^xsd:dateTime ;
+        adm:logMessage      "added sources & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC6A6EA4764D53923
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T15:27:33.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDE1811712FC3F329
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-05-30T11:47:55.528Z"^^xsd:dateTime ;
+        adm:logMessage      "created record (from Dr. Maho Iuchi's list)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVF500EC51A1984B7E
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear .
+    
+    bdr:G2CN11059  a        :Place ;
+        skos:prefLabel      "kha mo dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3610CB2342678DD3 , bdr:NT73966DF63EDF5BCB , bdr:NTF4DEA84750763E1A ;
+        :placeEvent         bdr:EVF500EC51A1984B7E ;
+        :placeLocatedIn     bdr:G2175 , bdr:G852 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT3610CB2342678DD3
+        a                   :Note ;
+        :contentLocationStatement  "ff. 114-116" ;
+        :noteSource         bdr:MW23748 ;
+        :noteText           "'di ni bka' gdams pa'i dgon rnying zhig te/_dge bshes po to ba dang ka ma ba gnyis ka'i slob ma dge bshes gangs pa'am lum pa pa ye shes byang chub kyi slob ma'i mchog khu le'i kha mo ze'u ston gyis bzhengs par gsal/\nའདི་ནི་བཀའ་གདམས་པའི་དགོན་རྙིང་ཞིག་ཏེ། དགེ་བཤེས་པོ་ཏོ་བ་དང་ཀ་མ་བ་གཉིས་ཀའི་སློབ་མ་དགེ་བཤེས་གངས་པའམ་ལུམ་པ་པ་ཡེ་ཤེས་བྱང་ཆུབ་ཀྱི་སློབ་མའི་མཆོག་ཁུ་ལེའི་ཁ་མོ་ཟེའུ་སྟོན་གྱིས་བཞེངས་པར་གསལ།"@en .
+    
+    bdr:NT73966DF63EDF5BCB
+        a                   :Note ;
+        :contentLocationStatement  "p. 222" ;
+        :noteSource         bdr:MW26009 ;
+        :noteText           "khu le'i kha mo ze'u ston gyis bzhengs par gsal/\nཁུ་ལེའི་ཁ་མོ་ཟེའུ་སྟོན་གྱིས་བཞེངས་པར་གསལ།"@en .
+    
+    bdr:NTF4DEA84750763E1A
+        a                   :Note ;
+        :contentLocationStatement  "p. 351" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "gu ru chos dbang gi gdan sa \"gtsang kha mo ba\" zhes pa zhig kyang 'di nye 'dbas su yod nges su snang /\nགུ་རུ་ཆོས་དབང་གི་གདན་ས་\"གཙང་ཁ་མོ་བ\"་ཞེས་པ་ཞིག་ཀྱང་འདི་ཉེ་འདབས་སུ་ཡོད་ངེས་སུ་སྣང་།"@en .
+}

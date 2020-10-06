@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1175 {
+    bda:G1KR1175  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1175 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "41/G1KR1175.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1175 ;
+        adm:logEntry        bda:LG573FE6DDB55302EA , bda:LG86FDD3EC4B79361E , bda:LG8C93A88ABB87F179 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542125205:274" ;
+        adm:place_id_lex    "542125205:274" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG573FE6DDB55302EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-16T12:27:03.592Z"^^xsd:dateTime ;
+        adm:logMessage      "update list of names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG86FDD3EC4B79361E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-16T12:14:43.332Z"^^xsd:dateTime ;
+        adm:logMessage      "added tibetan name & event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8C93A88ABB87F179
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-25T13:53:08.833Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS coord & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV3A5A2D855705AD5E
+        a                   :PlaceFounded ;
+        :onYear             "1413"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1175  a         :Place ;
+        skos:altLabel       "khyung ser gdan sa bya ze yang rdzong dgon/"@bo-x-ewts , "yang rdzong dgon/"@bo-x-ewts , "下色拥中寺"@zh-hans , "xiase yongzhong si"@zh-latn-pinyin-x-ndia , "xiase yongzong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bya ze yang rdzong dgon/"@bo-x-ewts , "夏色拥宗寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD7F261DEB3150308 ;
+        :isRoot             true ;
+        :note               bdr:NT7B77013E562F15E9 , bdr:NTCE874A51A16EB695 ;
+        :placeEvent         bdr:EV3A5A2D855705AD5E ;
+        :placeGonpaPerEcumen  "5.08" ;
+        :placeLat           "31.533233" ;
+        :placeLocatedIn     bdr:G2188 ;
+        :placeLong          "95.271109" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD7F261DEB3150308
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1175" .
+    
+    bdr:NT7B77013E562F15E9
+        a                   :Note ;
+        :contentLocationStatement  "p. 179-180" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "ཁྱུང་སེར་གདན་ས་འདི་བཞིན་སེར་ཚ་ཤང་ཁ་ཐང་གྲོང་ཚོར་གནས། ༡༤༡༣ལོར་ཁྱུང་པོ་འབུམ་རྒྱས་གྲགས་པས་ཕྱག་བཏབ། བར་དུ་སྤྲུལ་སྐུ་བློ་ལྡན་སྙིང་པོ་ཕེབས་པ་སོགས་ལོ་རྒྱུས་མདོ་ཙམའཁོད།"@bo .
+    
+    bdr:NTCE874A51A16EB695
+        a                   :Note ;
+        :noteText           "Founded by Khyung po ’Bum rgyal grags pa. Largest Bon monastery in Sertsa township.\n\n3 lamas -  70 monks"@en .
+}

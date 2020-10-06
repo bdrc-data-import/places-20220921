@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00AG02559 {
+    bda:G00AG02559  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00AG02559 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9f/G00AG02559.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00AG02559 ;
+        adm:logEntry        bda:LG4EE29428D92E20E4 , bda:LG6583C07EACF215A7 , bda:LG98E3802BE0F3B5FA , bda:LGC4CBEA9C86DB0BF1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1955 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG4EE29428D92E20E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-03-02T17:49:14.352Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG6583C07EACF215A7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-02-28T16:49:44.351Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG98E3802BE0F3B5FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-03-02T17:30:39.56Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGC4CBEA9C86DB0BF1
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-03-20T14:47:10.124Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1955"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G00AG02559  a       :Place ;
+        skos:altLabel       "dga' ldan byin chags gling chos sde/"@bo-x-ewts ;
+        skos:prefLabel      "dga' ldan byin chags gling /"@bo-x-ewts , "yonghe gong"@zh-latn-pinyin-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT69D59A9705E546D8 , bdr:NTB35D0D34ECBA34EA ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT69D59A9705E546D8
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1955"@en .
+    
+    bdr:NTB35D0D34ECBA34EA
+        a                   :Note ;
+        :noteText           "dge lugs pa monastery in beijing first developed as a temple by the yongzheng emperor in his own residence, and then elevated to the status of imperial monastery by the qianlong emperor in 1737 with the assistance of lcang skya rol pa'i rdo rje.\n(mkhyen brtse gdan rabs. p. 484). mkhyen brtse names the emperor \"gong ma g.yung Ting. \nthe monastery maintained five colleges: sman rtsi, mdo, sngags, dus 'khor, and general ritual.\na statue of maitreya carved from a single sandalwood tree is said to be the largest such statue in the world\nsee lessing yung-ho-kung (stockholm 1943)"@en .
+}

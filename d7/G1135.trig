@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1135 {
+    bda:G1135  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1135 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d7/G1135.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1135 ;
+        adm:logEntry        bda:LG0E256B51B1AB7AA5 , bda:LG5C1C08EAF63C08D8 , bda:LGA9572216A6260275 , bda:LGB2BCD5EC5EACBF38 , bda:LGBF0A4DDB226F5AAC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0E256B51B1AB7AA5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-06T09:30:56.263Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5C1C08EAF63C08D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGA9572216A6260275
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-24T10:12:56.115Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB2BCD5EC5EACBF38
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBF0A4DDB226F5AAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T10:18:39.996Z"^^xsd:dateTime ;
+        adm:logMessage      "chekeout"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1135  a            :Place ;
+        skos:altLabel       "dar mdo/"@bo-x-ewts ;
+        skos:prefLabel      "dar rtse mdo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeContains      bdr:G1100 ;
+        :placeLocatedIn     bdr:G1033 ;
+        :placeType          bdr:PT0083 .
+}

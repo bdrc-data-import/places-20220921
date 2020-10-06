@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1107 {
+    bda:G1107  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1107 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "b1/G1107.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1107 ;
+        adm:logEntry        bda:LG287CD17C79A8E749 , bda:LG2C9AF544980D399D , bda:LG4E4C6F7CE1C31151 , bda:LG6FF0D94A70EDD1C3 , bda:LGA65574FACF4F8586 , bda:LGAB21888E41ED06EE , bda:LGB74DA9B3EB6508B5 , bda:LGB847198FB9406FB7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG287CD17C79A8E749
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-27T15:27:32.148Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains and note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2C9AF544980D399D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-18T14:33:27.861Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4E4C6F7CE1C31151
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-18T14:12:48.893Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6FF0D94A70EDD1C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-25T12:18:32.123Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA65574FACF4F8586
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAB21888E41ED06EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-27T11:18:55.704Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type & location, added time, contains & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB74DA9B3EB6508B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-07T12:32:04.115Z"^^xsd:dateTime ;
+        adm:logMessage      "edited location (tamp.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB847198FB9406FB7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-05T14:43:13.124Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language encoding"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVFE825E7B743C96B4
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0799"^^xsd:gYear ;
+        :notBefore          "0700"^^xsd:gYear .
+    
+    bdr:G1107  a            :Place ;
+        skos:altLabel       "gtsang mnga' ris smad/"@bo-x-ewts , "mnga' ris (smad)"@bo-x-ewts ;
+        skos:prefLabel      "gtsang stod mnga' ris/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT37D1E2A17600B398 , bdr:NT7E1B34A69134E9B8 , bdr:NTFAE329AF5FD38674 ;
+        :placeContains      bdr:G00EGS1017242 , bdr:G2084 , bdr:G3166 ;
+        :placeEvent         bdr:EVFE825E7B743C96B4 ;
+        :placeLocatedIn     bdr:G3175 ;
+        :placeType          bdr:PT0001 .
+    
+    bdr:NT37D1E2A17600B398
+        a                   :Note ;
+        :contentLocationStatement  "p. 207" ;
+        :noteSource         bdr:MW1KG16696 ;
+        :noteText           "འདིར་\"མངའ་རིས་\"ནི་\"མངའ་རིས་སྨད་\"དམ་\"གཙང་སྟོད་མངའ་རིས་\"ཡིན་ཏེ། མང་ཡུལ་གུང་ཐང་རྒྱུད་ལ་གོ་བར་བཤད་དོ།"@bo .
+    
+    bdr:NT7E1B34A69134E9B8
+        a                   :Note ;
+        :noteText           "see C2CN10960"@en .
+    
+    bdr:NTFAE329AF5FD38674
+        a                   :Note ;
+        :contentLocationStatement  "p.185" ;
+        :noteSource         bdr:MW17319 ;
+        :noteText           "རྒྱལ་པོ་བཀའ་ཐང་ནང་གསལ་བའི་ཆོས་རྒྱལ་ཁྲི་སྲོང་ལྡེའུ་བཙན་སྐབས་ཀྱི་རུ་ལག་གི་ཡུལ་སྡེ་བཅུ་དྲུག་གི་ནང་ཚན་ཡུལ་སྡེ་ལྔ་པ་དེ་\"མངའ་རིས་(སྨད་)\"འདི་ཡིན་ཏེ། མཁས་པ་ལྡེའུའི་ཆོས་འབྱུང་ནང་འཁོད་པའི་རུ་ལག་གི་ཡུལ་དཔོན་ཚན་བཅུ་དྲུག་གི་ཡུལ་སྡེ་དང་པོ་\"མང་ཡུལ་(G3166)\"དང་ཁྱབ་རྒྱ་ཆེ་ཆུང་ལས་ཧ་ལམ་ས་གནས་གཅིག་ཏུ་སྣང་།"@bo .
+}

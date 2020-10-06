@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3588 {
+    bda:G3588  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3588 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e5/G3588.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3588 ;
+        adm:logEntry        bda:LG080272AD717F772E , bda:LG6A7DC956C1645B0F , bda:LG7BE1A98E6ED668AE , bda:LG91CD9CDE77E15B0F , bda:LGIMA37A954E21 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG080272AD717F772E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-10T14:32:08.871Z"^^xsd:dateTime ;
+        adm:logMessage      "changed name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6A7DC956C1645B0F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T17:03:26.261Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7BE1A98E6ED668AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-18T12:18:59.277Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG91CD9CDE77E15B0F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMA37A954E21
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-20T22:30:59.465Z"^^xsd:dateTime ;
+        adm:logMessage      "populating gis from G9GBX..."@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G3588  a            :Place ;
+        skos:prefLabel      "phag ri grong rdal/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9FE812A957994F40 ;
+        :placeGB2260-2013   "542334101" ;
+        :placeLocatedIn     bdr:G2172 ;
+        :placeType          bdr:PT0045 .
+    
+    bdr:NT9FE812A957994F40
+        a                   :Note ;
+        :contentLocationStatement  "p. 52" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "name of a township seat in gro mo rdzong"@en .
+}

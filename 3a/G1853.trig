@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1853 {
+    bda:G1853  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1853 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "3a/G1853.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1853 ;
+        adm:logEntry        bda:LG2D868A44DBEAB78F , bda:LG5FC351B83E27355A , bda:LGA0595C4E9F4F6B0B , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632523202:330" ;
+        adm:place_id_lex    "632523202:208" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2D868A44DBEAB78F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T15:10:52.61Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG5FC351B83E27355A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-12T15:36:23.198Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA0595C4E9F4F6B0B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVB4DD57697F916799
+        a                   :PlaceFounded ;
+        :onYear             "1700"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1853  a            :Place ;
+        skos:altLabel       "bstan rgyas bsam 'phel gling /"@bo-x-ewts , "khre tse dgon bstan rgyas bsam 'phel gling /"@bo-x-ewts , "zhoutun si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "khre tse dgon/"@bo-x-ewts , "Tretse Gon Tengye Sampeling"@en , "周屯寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFAE5A176B7A55611 ;
+        :isRoot             true ;
+        :note               bdr:NT3C81A162E61F875A , bdr:NTFA1E4F5B307C370C ;
+        :placeEvent         bdr:EVB4DD57697F916799 ;
+        :placeGonpaPerEcumen  "39.16" ;
+        :placeLat           "35.90000" ;
+        :placeLocatedIn     bdr:G1715 ;
+        :placeLong          "101.50000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDFAE5A176B7A55611
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1853" .
+    
+    bdr:NT3C81A162E61F875A
+        a                   :Note ;
+        :contentLocationStatement  "p. 300" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "khre tse gong ma'i dgon bstan rgyas bsam 'phel gling \n'dir thog mar chos pa rin po che phebs/ span kya klu skyabs zer ba'i rngon pa zhig dang mchod yon du 'brel/ 'di mgon po rdo rje'i sprul bar grags/ 'ga' res zhal gyi rnam 'phrul yin yang zer/ dgon rong gi gnas 'tshol skabs 'dis khrid nas byon/ kho rang ri dwags gshor dus kyi sdod gnas brag khung legs pa khrag sogs rdzab kyis sbags pas ston ma phod par de dang nye pa'i brag skyibs shig bstan/ phyag dpe khal drel bor ba btsal bas klu skyabs sdod gnas brag phug tu nyal ba gzigs pas der sgrub gnas bzhengs pa'i ngag rgyun snang/ khre tse dgon gnas 'dir rgyun ring bzhugs/ phyag dpe 'bum khang bzhengs pa da lta yod/ de'i dngos slob rgya dge bsod nams rgyal mtshan gyis gzhi bzung bas dgon pa chags/ phyis su de dang nye bar sgar gong gis dpon slob gser khang pa'i gzims khang bzhengs par nyid nas zhabs kyis bcags/ blon chos ri khrod pa rgyun bzhugs/ thar shul dpon slob kyis gzims khang rgya bskyed de ston dpyid res mos kyi tshul du re zhig bzhugs/ da lta rje de nyid kyi bka' ltar rkang tsha sprul pa'i sku blo bzang bstan pa rgya mtsho pa bzhugs sa'i mthil mdzad de thugs dam mnyam bzhes gong 'phel du yod/"@bo-x-ewts .
+    
+    bdr:NTFA1E4F5B307C370C
+        a                   :Note ;
+        :contentLocationStatement  "p. 117" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "dge lugs pa monastery in khri ka rdzong, mtsho lho bod rigs rang skyong khul\nlocated 15 km. to the southeast of the administrative center of khri ka rdzong in the khre tse gong ma sde ba\noriginally regarded as a dgon lag of lA mo bde chen"@en .
+}

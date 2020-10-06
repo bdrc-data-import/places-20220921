@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1642 {
+    bda:G1642  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1642 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "96/G1642.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1642 ;
+        adm:logEntry        bda:LG2D508D89AA5FF516 , bda:LG65B443C2EEDA1FF0 , bda:LG6B5CE3AF1890087B , bda:LG82A57432371C4118 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2D508D89AA5FF516
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-20T12:37:34.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG65B443C2EEDA1FF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-27T13:15:17.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6B5CE3AF1890087B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG82A57432371C4118
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-12T04:43:32.918Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV3233FFBCAC954E3C
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EV5638D2BA1A688757
+        a                   :PlaceConverted ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G1642  a            :Place ;
+        skos:altLabel       "'bri rgyud rab brtan dgon/"@bo-x-ewts , "'bri rgyud rab brtan dgon thub bstan 'phel rgyas bkra shis grags pa'i dga' tshal bshad sgrub chos 'khor gling /"@bo-x-ewts , "mgon gzigs rab brtan rtse'i chos 'khor/"@bo-x-ewts , "sde dge rab brtan dgon/"@bo-x-ewts ;
+        skos:prefLabel      "mgon gzigs rab brtan rtse dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4444004012C9C412 , bdr:NTC97B9AAD56C83CDE ;
+        :placeEvent         bdr:EV3233FFBCAC954E3C , bdr:EV5638D2BA1A688757 ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT4444004012C9C412
+        a                   :Note ;
+        :contentLocationStatement  "p. 123" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "sa skya monastery in sde dge territory; called in this source simply rab gtan dgon; first a bon monastery; converted at the time of chos rgyal 'phags pa into a sa skya establishment."@en .
+    
+    bdr:NTC97B9AAD56C83CDE
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 485" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "sa skya monastery"@en .
+}

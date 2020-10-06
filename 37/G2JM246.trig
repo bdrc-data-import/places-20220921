@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2JM246 {
+    bda:G2JM246  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2JM246 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "37/G2JM246.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2JM246 ;
+        adm:logEntry        bda:LG1717CB299E8E7DE2 , bda:LG29E6F2424F3AB29B , bda:LGAC3BC75FB353E588 , bda:LGCF9657EB2C3E7DC9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1717CB299E8E7DE2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T12:58:28.35Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG29E6F2424F3AB29B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-20T12:03:59.059Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAC3BC75FB353E588
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-14T16:53:40.699Z"^^xsd:dateTime ;
+        adm:logMessage      "added records"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LGCF9657EB2C3E7DC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2JM246  a          :Place ;
+        skos:prefLabel      "rdza rgyud dge gong bshad grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE075B838D2C65D3F ;
+        :placeLocatedIn     bdr:G2301 , bdr:G632 ;
+        :placeType          bdr:PT0038 .
+    
+    bdr:NTE075B838D2C65D3F
+        a                   :Note ;
+        :contentLocationStatement  "315" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "First founded by mkhan chen kun bzang dpal ldan and later maintained by  bod pa sprul sku, who served as director for over 8 years. \n\n---Alumni includes: \nmkhan chen chos dbyings khyab rdal\nmkhan chen zla ba'i 'od zer\nmkhas mchog pad+ma tshe dbang\nrme mkhan po thub bstan"@en .
+}

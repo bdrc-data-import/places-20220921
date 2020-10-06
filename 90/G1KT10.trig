@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KT10 {
+    bda:G1KT10  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KT10 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "90/G1KT10.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KT10 ;
+        adm:logEntry        bda:LG522C844C55FC468A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG522C844C55FC468A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-31T13:58:58.652Z"^^xsd:dateTime ;
+        adm:logMessage      "Created record for Dakpa Shelri"@en ;
+        adm:logWho          bdu:U00004 .
+    
+    bdr:G1KT10  a           :Place ;
+        skos:altLabel       "Pure Crystal Mountain/"@bo-x-ewts ;
+        skos:prefLabel      "dag pa shel ri/"@bo-x-ewts , "Dakpa Shelri"@en ;
+        :isRoot             true ;
+        :note               bdr:NT03F216CB6D27AD2E , bdr:NT89A3AAA9F2E21E4D , bdr:NTF1DE388973FB4B6A ;
+        :placeLat           "28.587825" ;
+        :placeLocatedIn     bdr:G1814 , bdr:G4631 ;
+        :placeLong          "93.262851" ;
+        :placeType          bdr:PT0042 .
+    
+    bdr:NT03F216CB6D27AD2E
+        a                   :Note ;
+        :noteText           "Dakpa Shelri is a sacred moutain located in southern Tibet. The surrounding areas comprise the routes of the Tsari pilgrimage."@en .
+    
+    bdr:NT89A3AAA9F2E21E4D
+        a                   :Note ;
+        :noteText           "Huber, T. (1999). The Cult of Pure Crystal Mountain: Popular pilgrimage and visionary landscape in southeast Tibet. New York: Oxford University Press."@en .
+    
+    bdr:NTF1DE388973FB4B6A
+        a                   :Note ;
+        :contentLocationStatement  "p. 207-274" ;
+        :noteSource         bdr:MW10736 ;
+        :noteText           "gnas chen tsa ri tra'i ngo mtshar snang ba pad dkar legs bshad (guidebook to the holy place of Tsari)"@en .
+}

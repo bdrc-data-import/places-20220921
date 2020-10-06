@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10916 {
+    bda:G2CN10916  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10916 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ff/G2CN10916.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10916 ;
+        adm:logEntry        bda:LG23B383A82F0CBB52 , bda:LG629197642A441037 , bda:LG64FCBFCC88B59995 , bda:LG6E0A1646BDCC409F , bda:LG9C6854ED33E16A7C , bda:LGC69CD5A5FAF6DDA4 , bda:LGE21BAC4238FA2F77 , bda:LGF304838305F399FF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG23B383A82F0CBB52
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-22T17:04:32.539Z"^^xsd:dateTime ;
+        adm:logMessage      "added regions"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG629197642A441037
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-23T12:01:59.353Z"^^xsd:dateTime ;
+        adm:logMessage      "added location with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG64FCBFCC88B59995
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T12:33:56.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added as par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG6E0A1646BDCC409F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T14:29:45.92Z"^^xsd:dateTime ;
+        adm:logMessage      "edited place contained info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9C6854ED33E16A7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-27T12:08:21.686Z"^^xsd:dateTime ;
+        adm:logMessage      "revised note & changed locations"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC69CD5A5FAF6DDA4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-19T14:49:21.448Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE21BAC4238FA2F77
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-09T12:00:00.72Z"^^xsd:dateTime ;
+        adm:logMessage      "chacked again"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF304838305F399FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T15:32:51.714Z"^^xsd:dateTime ;
+        adm:logMessage      "par khang gi mhan bu med pa bzo yod"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:G2CN10916  a        :Place ;
+        skos:altLabel       "rong pa pha drug mkhar rta'i sman khang gi par khang /"@bo-x-ewts ;
+        skos:prefLabel      "rong pa kha drug kha ta'i sman khang gi par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT33CF0C3B289CD3EC ;
+        :placeLocatedIn     bdr:G2113 , bdr:G2165 ;
+        :placeType          bdr:PT0059 .
+    
+    bdr:NT33CF0C3B289CD3EC
+        a                   :Note ;
+        :contentLocationStatement  "p. 222" ;
+        :noteSource         bdr:MW19836 ;
+        :noteText           "དཀར་ཆག་འདིར་\"རོང་པ་ཁ་དྲུག་ཁ་ཏའི་སྨན་ཁང་པར། རྗེ་སྨན་ཁང་པའི་༼P1989༽རྣམ་མགུར་གསུང་འབུམ་པོད་གཅིག་ལ་ཤོག་གྲངས་༣༤༡ཡོད་པར་འཁོད་མོད། དེ་ཡང་\"ཁ་དྲུག་ཁ་ཏ་\"ཞེས་པའི་ས་མིང་གཞན་དུ་མ་རྙེད་ལ། ཕལ་ཆེར་\"ཕ་དྲུག་མཁར་རྟ་\"ཡིན་སྲིད་དེ། དེ་ནི་དིང་རི་རྫོང་ཁོངས་སུ་གནས་སོ།"@bo .
+}

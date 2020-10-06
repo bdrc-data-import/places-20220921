@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3JT12622 {
+    bda:G3JT12622  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3JT12622 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9e/G3JT12622.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3JT12622 ;
+        adm:logEntry        bda:LG007A411C0C8295FA , bda:LG3C36DF8F48453093 , bda:LG821A0267AC63CC54 , bda:LGC8A394FE515C2628 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG007A411C0C8295FA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-18T15:18:27.229Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG3C36DF8F48453093
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T14:19:19.528Z"^^xsd:dateTime ;
+        adm:logMessage      "par khang gi mchan bu med pa bzo yod"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG821A0267AC63CC54
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-31T16:06:55.234Z"^^xsd:dateTime ;
+        adm:logMessage      "added date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC8A394FE515C2628
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T16:14:50.338Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:EV84D53A5C6C57379D
+        a                   :PlaceFounded ;
+        :notAfter           "1899"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:G3JT12622  a        :Place ;
+        skos:altLabel       "ze chen dgon pa'i par khang /"@bo-x-ewts , "zhe chen bstan gnyis dar rgyas gling gyi par khang /"@bo-x-ewts ;
+        skos:prefLabel      "zhe chen dgon pa'i par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV84D53A5C6C57379D ;
+        :placeLocatedIn     bdr:G20 ;
+        :placeType          bdr:PT0059 .
+}

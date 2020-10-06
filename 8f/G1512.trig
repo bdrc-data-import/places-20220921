@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1512 {
+    bda:G1512  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1512 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "8f/G1512.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1512 ;
+        adm:logEntry        bda:LG056D86A141919EAA , bda:LG14DC4194AA277895 , bda:LG5223EF21ECD3A1E4 , bda:LG5B77B29E98AC83AD , bda:LGA65C212518294548 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG056D86A141919EAA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-21T16:56:59.836Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG14DC4194AA277895
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5223EF21ECD3A1E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-31T10:22:29.214Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains \"bor sbug\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5B77B29E98AC83AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-17T16:11:08.446Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA65C212518294548
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T17:47:13.203Z"^^xsd:dateTime ;
+        adm:logMessage      "english"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:G1512  a            :Place ;
+        skos:prefLabel      "gong dkar khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT318A562D9D783E12 ;
+        :placeContains      bdr:G10MS16377 , bdr:G1457 , bdr:G1507 ;
+        :placeType          bdr:PT0057 .
+    
+    bdr:NT318A562D9D783E12
+        a                   :Note ;
+        :contentLocationStatement  "p. 41" ;
+        :noteSource         bdr:MW20170 ;
+        :noteText           "administrative taxation region equivent to a rdzong in the 1830 settlement document"@en .
+}

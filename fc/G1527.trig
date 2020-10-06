@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1527 {
+    bda:G1527  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1527 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fc/G1527.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1527 ;
+        adm:logEntry        bda:LG687AB93D4E93C88F , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "533422205:8" ;
+        adm:place_id_lex    "533422205:8" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG687AB93D4E93C88F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV259E9EED3F215B92
+        a                   :PlaceConverted ;
+        :onYear             "1667"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV3211286A4A4300DD
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1527  a            :Place ;
+        skos:altLabel       "khrung khrung mtsho sgang /"@bo-x-ewts , "sbom rag dga' ldan don grub gling /"@bo-x-ewts , "Tongtaling"@bo-x-phon-en , "冲冲错岗衮"@zh-hans , "Gadandongzhulin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sbom rag dga' ldan don grub gling /"@bo-x-ewts , "噶丹东竹林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID66490EEC41ECF1E7 ;
+        :isRoot             true ;
+        :note               bdr:NT354EC68EC209038F ;
+        :placeEvent         bdr:EV259E9EED3F215B92 , bdr:EV3211286A4A4300DD ;
+        :placeGonpaPerEcumen  "3.31" ;
+        :placeLat           "28.26667" ;
+        :placeLocatedIn     bdr:G1522 ;
+        :placeLong          "99.20000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID66490EEC41ECF1E7
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1527" .
+    
+    bdr:NT354EC68EC209038F
+        a                   :Note ;
+        :contentLocationStatement  "21" ;
+        :noteSource         bdr:MW20006 ;
+        :noteText           "Found as a bka' brgyud pa institution under the patronage of the 'jang ruler bsod nams rab brtan about 1574 with the name chos sde khrung khrung mtsho sgang.\n1677. converted to a dge lugs pa institution and given the name dga' ldan don grub gling.\nwas the largest dge lugs pa monastery in bde chen rdzong which at his heyday had about 700 monks.\nAfter 1959 the monastery was restored and the number of monks is not more than 300 with 4 sprul sku."@en .
+}

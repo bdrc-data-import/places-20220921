@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN509 {
+    bda:G3CN509  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN509 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f3/G3CN509.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN509 ;
+        adm:logEntry        bda:LG4AF097B20DAC4944 , bda:LG908CD60C3DFC4D6B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4AF097B20DAC4944
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-24T15:06:05.643Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG908CD60C3DFC4D6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-28T11:39:19.337Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN509  a          :Place ;
+        skos:altLabel       "rma grom gyi yo ti cu bzang /"@bo-x-ewts , "rma khrom gyi yo ti chu bzang /"@bo-x-ewts , "sku mkhar rma tshe/"@bo-x-ewts , "skun kar rma tshe/"@bo-x-ewts ;
+        skos:prefLabel      "yo ti cu bzang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0450AFB8A41B46E4 , bdr:NT505272FF068C00A2 , bdr:NT8700B41998E2795F , bdr:NTE6EA98FE6F0220B6 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NT0450AFB8A41B46E4
+        a                   :Note ;
+        :contentLocationStatement  "p. 381" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"སྟག་གི་ལོ་ ༧༣༨ ལ། ་་་ སྐུན་ཀར་(སྐུ་མཁར་)རྨ་ཚེ་སླར་ཐོབ་པར་ལོ་ཆིག་\"ཅེས་ཀྱང་གསལ།"@bo .
+    
+    bdr:NT505272FF068C00A2
+        a                   :Note ;
+        :contentLocationStatement  "p. 385" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"སྐུ་མཁར་རྨ་ཚེ། སྐུ་མཁར་རྨ་ཚེ་དང་རྨ་ཁྲོམ་གཉིས་ཀ་གཅིག་མཚུངས་ལྟར་བྲིས་པར་སྣང་ཡང་། རྨ་ཚེ་ནི་ཀན་སུའུ་ཞིང་ཆེན་ལིན་ཐན་རྫོང་ཁུལ་དུ་གནས་པའི་མཁར་ཏེའུ་ཅུའམ། དེང་དུས་རྒྱ་སྐད་ཀྱི་སྒྲ་གདངས་ལ་ཐོའུ་ཀྲའུ་（洮州）ཞེས་པའི་ས་གནས་དེ་དང་མི་འགྱངས་པའི་སར་གནས་པའི་བོད་དམག་གི་དམག་སྒར་ལྟེ་གནས་ཤིག་ཡིན་པར་སྣང་ལ། བཙན་པོའི་སྐུ་མཁར་རམ་ཕོ་བྲང་ཞིག་ཀྱང་ཡོད་པར་སྣང་།\" ཞེས་གསུངས་པ་དོན་དང་མཐུན་ཤས་ཆེ་སྟེ།  རིག་པས་དཔགས་ན་མདོ་སྨད་ཀྱི་རྨ་འགྲམ་ཆུ་བཟང་རྒྱུད་ལ་གོ་བ་ཨེ་ཡིན་མུ་མཐུད་རྩད་རྒྱུ།"@bo .
+    
+    bdr:NT8700B41998E2795F
+        a                   :Note ;
+        :contentLocationStatement  "p. 342" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"འབྲུག་གི་ལོ་ ༧༠༤ ལ་བབ་སྟེ། ་་་ དབྱརད་བཙན་པོ་ཡབ་རྨ་གྲོམ་(ཁྲོམ་)གྱི་ཡོ་ཏི་ཅུ་བཟང་ན་བཞུགས་ཤིང་།\" ཞེས་གསལ།"@bo .
+    
+    bdr:NTE6EA98FE6F0220B6
+        a                   :Note ;
+        :contentLocationStatement  "p. 344" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"རྨ་ཁྲོམ། རྨ་ནི་སྐུ་མཁར་རྨ་ཚེ་ཞེས། འཕན་པོའི་ཤར་ཕྱོགས་ཀླུམ་རོའི་ཁུལ། ་་་་ ཁྲོམ་ཞེས་དམག་སྒར་གྱི་དོན་ཏེ། དེའི་ཉེ་འཁོར་དུ་བོད་དམག་གི་དམག་སྒར་ལྟེ་གནས་ཡོད་འདུག་པ་\"སོགས་གསུངས་པ་ལས། \"རྨ་ཁྲོམ་\"དང་\"རྨ་ཚེ་\"གཅིག་ཏུ་འདོད་པ་དཔྱད་གཞི་ཆེ་མོད། གནས་ཡུལ་ནི་མི་འཐད་དེ་གཤམ་གྱི་མཆན་དང་ནང་འགལ་དུ་གྱུར་པས་སོ།།"@bo .
+}

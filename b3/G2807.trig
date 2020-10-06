@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2807 {
+    bda:G2807  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2807 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "b3/G2807.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2807 ;
+        adm:logEntry        bda:LG16B6D1170788C9C8 , bda:LG43851CDC024191BE , bda:LG6962B83A31B36BDF , bda:LG8A7CA8B14ED3F8EE , bda:LGF41D827C873C650A , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542222101:542222118" ;
+        adm:place_id_lex    "542222101:542222118" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG16B6D1170788C9C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-14T15:53:50.149Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tibetan"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG43851CDC024191BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-19T12:41:54.875Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6962B83A31B36BDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-13T10:36:24.495Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8A7CA8B14ED3F8EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-19T11:40:14.19Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF41D827C873C650A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVEA3EA03DA9EE180C
+        a                   :PlaceFounded ;
+        :onYear             "0750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G2807  a            :Place ;
+        skos:altLabel       "g.ya' ma lung gu ru'i gzim phug"@bo-x-ewts , "yamalong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "g.ya' ma lung /"@bo-x-ewts , "Yamalung"@en-x-mixed , "崖玛隆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8C2C8DBDB2431AD0 ;
+        :isRoot             true ;
+        :note               bdr:NT3168DBA1DF5A85D3 , bdr:NTCF4FA221518D20F9 ;
+        :placeEvent         bdr:EVEA3EA03DA9EE180C ;
+        :placeGonpaPerEcumen  "8.35" ;
+        :placeLat           "29.47016" ;
+        :placeLocatedIn     bdr:G2088 , bdr:G799 ;
+        :placeLong          "91.50906" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID8C2C8DBDB2431AD0
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2807" .
+    
+    bdr:NT3168DBA1DF5A85D3
+        a                   :Note ;
+        :contentLocationStatement  "p. 216" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "hermitage near bsam yas from which gter bdag gling pa took some of his concealed treasures"@en .
+    
+    bdr:NTCF4FA221518D20F9
+        a                   :Note ;
+        :contentLocationStatement  "p. 37-38" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "རི་ཁྲོད་དེར་གུ་རུས་བསམ་ཡས་བཞེངས་གྲུབ་རྗེས་ཆོས་རྒྱལ་ཁྲི་སྲོང་གི་སྐུ་ཚེ་ཚེ་སྒྲུབ་མཛད་སྐབས་ཚེ་དཔག་མེད་ཞལ་གཟིགས། སྨིན་གླིང་གཏེར་ཆེན་གྱིས་ཚེ་སྒྲུབ་ཡང་སྙིང་ཀུན་འདུས་གཏེར་བཞེས་པའི་གཏེར་གནས་ཡིན་ཏེ། དེར་གཏེར་བདག་གླིང་པས་ཀྱང་ཚེ་སྒྲུབ་ལོ་གཉིས་གནང་། རྒྱལ་བ་ལྔ་པས་ཀྱང་ཚེ་སྒྲུབ་གནང་སྟེ་ལོ་གཅིག་བཞུགས་པ་སོགས་བོད་ཀྱི་ཚེ་སྒྲུབ་གནང་སའི་སྒྲུབ་ཕུག་གཙོ་བོ་དེ་ཡིན་པར་གྲགས་ཤིང་། ཚེ་དབང་ཚེ་སྒྲུབ་ཀྱི་ལུགས་ཀྱང་འདི་ནས་དར་བ་ཡིན་གསུངས་ཚུལ་ཡོད། སྔོན་དེར་ཚེ་སྒྲུབ་གནང་མཁན་སྨིན་གྲོལ་གླིང་ནས་གྲྭ་པ་བརྒྱད། བསམ་ཡས་ནས་གཅིག་བཅས་རྒྱུན་བཞུགས་དང་། རྒྱུད་གྲྭ་སྟོད་སྨད་ནས་ལོ་ལྟར་རེས་མོས་ཀྱིས་ཚེ་སྒྲུབ་གནང་སྲོལ་ཡོད་པ་བཅས་དང་། ད་དུང་དེའི་གཡས་སུ་བེེ་རོར་ཡེ་ཤེས་ཀྱི་སྤྱན་འཁྲུངས་པའི་སྒྲུབ་ཕུག་དང་། རྗེ་འབངས་ཉེར་ལྔའི་སྒྲུབ་ཕུག་སོགས་ཡོད། དེ་ནས་བསམ་ཡས་སུ་མར་ཡོང་བའི་ལམ་བར་དུ་བྲག་དམར་མགྲིན་བཟང་༼G2808༽ཞེས་པར་ཆོས་རྒྱལ་ཁྲི་སྲོང་ལྡེའུ་བཙན་གྱི་འཁྲུངས་ཁང་ཡོད།"@bo .
+}

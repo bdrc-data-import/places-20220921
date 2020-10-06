@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G414 {
+    bda:G414  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G414 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "5e/G414.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G414 ;
+        adm:logEntry        bda:LG361AF933C2B1943F , bda:LG370082A09B7BE648 , bda:LG6AE1CE7649842908 , bda:LG8A1E8E192BD7E41F , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G2066 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG361AF933C2B1943F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-22T16:42:50.347Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG370082A09B7BE648
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-22T20:40:08.236Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G1195 to G2089"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6AE1CE7649842908
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8A1E8E192BD7E41F
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-11-26T09:27:23.275Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G2066"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G414  a             :Place ;
+        skos:altLabel       "'chad kha rnying ma (mal gro)"@bo-x-ewts ;
+        skos:prefLabel      "mal gro 'chad kha rnying ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0514C82E6C9229CE , bdr:NT274AED53A36A77CD ;
+        :placeLocatedIn     bdr:G2089 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0514C82E6C9229CE
+        a                   :Note ;
+        :noteText           "bka' gdams monastery located in the mal gro area of the tibetan autonomous region"@en .
+    
+    bdr:NT274AED53A36A77CD
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G2066"@en .
+}

@@ -1,0 +1,105 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4676 {
+    bda:G4676  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4676 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "ec/G4676.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4676 ;
+        adm:logEntry        bda:LG2CF83134048A6089 , bda:LG4CD6D70600DE4823 , bda:LGAC9AFB7700EC6039 , bda:LGC551190A191C4B61 , bda:LGCF2FA7CD3D50DEDF , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542301203:542305" ;
+        adm:place_id_lex    "542301203:542305" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2CF83134048A6089
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-18T13:03:00.094Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & sources, normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4CD6D70600DE4823
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-11-21T12:00:11.718Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGAC9AFB7700EC6039
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:52.247Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC551190A191C4B61
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-12-01T14:47:44.323Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGCF2FA7CD3D50DEDF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV747CAC6E238A1A3C
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:EVF3AD395E92CE4549
+        a                   :PlaceConverted ;
+        :note               bdr:NT1693EB348AC667D4 ;
+        :onYear             "1350"^^xsd:gYear .
+    
+    bdr:G4676  a            :Place ;
+        skos:altLabel       "ri phug chos kyi dga' tshal/"@bo-x-ewts , "zhwa lu ri sbug"@bo-x-ewts , "日浦寺"@zh-hans , "ribu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ri sbug ri khrod/"@bo-x-ewts , "Ribuk Ritro"@en-x-mixed , "日布寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2356FBC3052F5B70 ;
+        :isRoot             true ;
+        :note               bdr:NT235C5E8E4EE07656 ;
+        :placeContains      bdr:G2CN10910 ;
+        :placeEvent         bdr:EV747CAC6E238A1A3C , bdr:EVF3AD395E92CE4549 ;
+        :placeGonpaPerEcumen  "7.3" ;
+        :placeLat           "29.10000" ;
+        :placeLocatedIn     bdr:G2170 ;
+        :placeLong          "88.96667" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID2356FBC3052F5B70
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4676" .
+    
+    bdr:NT1693EB348AC667D4
+        a                   :Note ;
+        :noteText           "Buton"@en .
+    
+    bdr:NT235C5E8E4EE07656
+        a                   :Note ;
+        :noteText           "important hermitage of the zhwa lu tradition of the kalacakra\nlocated in gtsang"@en .
+}

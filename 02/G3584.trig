@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3584 {
+    bda:G3584  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3584 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "02/G3584.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3584 ;
+        adm:logEntry        bda:LG2BDAC6E2C543E6DB , bda:LGA64E00A3A53F3B02 , bda:LGA6FBBF3E825B7141 , bda:LGDD00A1C3577CFFC8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2BDAC6E2C543E6DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T16:45:44.421Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA64E00A3A53F3B02
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA6FBBF3E825B7141
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-10T14:37:07.8Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDD00A1C3577CFFC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-07T09:20:14.475Z"^^xsd:dateTime ;
+        adm:logMessage      "added location \"myang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3584  a            :Place ;
+        skos:altLabel       "myang chu gtsang po/"@bo-x-ewts , "nyang chab/"@bo-x-ewts , "nyang chu/"@bo-x-ewts , "nianchu he"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "myang chu/"@bo-x-ewts , "年楚河"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTD522BEDA8E8515EE ;
+        :placeLocatedIn     bdr:G2170 , bdr:G2174 , bdr:G2175 , bdr:G3CN75 ;
+        :placeType          bdr:PT0065 .
+    
+    bdr:NTD522BEDA8E8515EE
+        a                   :Note ;
+        :contentLocationStatement  "p. 49" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "main river of rgyal rtse rdzong, flowing from gzhis ka rtse to khang dmar rdzong"@en .
+}

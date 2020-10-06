@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX211204000 {
+    bda:G9GBX211204000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX211204000 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "50/G9GBX211204000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX211204000 ;
+        adm:logEntry        bda:LG610FF8224D7277EA , bda:LGIME5430EC046 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG610FF8224D7277EA
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME5430EC046
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-27T19:58:07.021Z"^^xsd:dateTime ;
+        adm:logMessage      "updating geometry for modern county"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX211204000
+        a                   :Place ;
+        skos:altLabel       "qing he qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Qinghe District"@en , "清河区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX211204001 , bdr:G9GBX211204002 , bdr:G9GBX211204101 , bdr:G9GBX211204102 , bdr:G9GBX211204203 ;
+        :placeGB2260-2013   "211204000" ;
+        :placeLat           "42.5484961" ;
+        :placeLocatedIn     bdr:G9GBX211200000 ;
+        :placeLong          "124.1579103" ;
+        :placeRegionPoly    "{\"type\":\"Feature\",\"geometry\": { \"type\": \"Polygon\", \"coordinates\": [ [ [ 124.144958496438633, 42.61110305819836 ], [ 124.157623291025814, 42.621749877698903 ], [ 124.170272827256795, 42.622722625705833 ], [ 124.209190369090507, 42.627586364713167 ], [ 124.254913330343513, 42.627586365172519 ], [ 124.297729491795351, 42.626613616684232 ], [ 124.309448242361526, 42.632934569829409 ], [ 124.313743590592097, 42.627716064089235 ], [ 124.31800079321782, 42.62203979522419 ], [ 124.320663452603952, 42.620101928897206 ], [ 124.322242736808889, 42.616138457765075 ], [ 124.326522827394925, 42.610691070838634 ], [ 124.332656860240391, 42.605171203657143 ], [ 124.340782166210687, 42.597053527848921 ], [ 124.348167418790354, 42.591712951930617 ], [ 124.352340698196798, 42.584892273013267 ], [ 124.354362487564416, 42.578384398826735 ], [ 124.358009337933737, 42.57295990002055 ], [ 124.36119842523604, 42.565490722782613 ], [ 124.36419677735212, 42.563995360762441 ], [ 124.370681762459228, 42.563282012766507 ], [ 124.377738953381225, 42.562088012843354 ], [ 124.384597778109367, 42.562278748260276 ], [ 124.392776489668691, 42.563564301282284 ], [ 124.404167175204478, 42.570690154777957 ], [ 124.411926269749259, 42.570384978942712 ], [ 124.393066405879082, 42.554618835311359 ], [ 124.38626098568686, 42.540023804075311 ], [ 124.399940490357395, 42.519290923847883 ], [ 124.436653137327994, 42.487426758055285 ], [ 124.459739684851712, 42.467372894215785 ], [ 124.402038574407598, 42.400917052722427 ], [ 124.326972960342331, 42.414264678737922 ], [ 124.156250000453483, 42.444610595960263 ], [ 124.103141784893282, 42.490135192868415 ], [ 124.084182738603957, 42.550830841477513 ], [ 124.090476990278859, 42.591590880967537 ], [ 124.122596740681672, 42.594509124910026 ], [ 124.144958496438633, 42.61110305819836 ] ] ] } }" ;
+        :placeType          bdr:PT0011 ;
+        :placeWB2000        "37976" ;
+        :placeWB2010        "38849" ;
+        :placeWBArea        "526.274909" .
+}

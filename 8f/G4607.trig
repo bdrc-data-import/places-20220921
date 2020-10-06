@@ -1,0 +1,113 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4607 {
+    bda:G4607  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4607 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "8f/G4607.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4607 ;
+        adm:logEntry        bda:LG0CA49E65DB1CFDC7 , bda:LG3787645E655D74F1 , bda:LG8FE11673A08B72E5 , bda:LGA3937C48B859BA6E , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540124200:540124103" ;
+        adm:place_id_lex    "540124200:540124103" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0CA49E65DB1CFDC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-16T12:52:12.455Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & moved notes from G1717(withdrawn)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3787645E655D74F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-16T12:59:09.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8FE11673A08B72E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-02T14:55:24.425Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA3937C48B859BA6E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV3B6D9CB904A47447
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk , bdr:TraditionSakya .
+    
+    bdr:EV5FA7C91E02FDA5BA
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:EVBDA06FEF59E496EF
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P6472 ;
+        :onYear             "1205"^^xsd:gYear .
+    
+    bdr:G4607  a            :Place ;
+        skos:altLabel       "bde ba can dgon/"@bo-x-ewts , "mnyes thang bde ba can/"@bo-x-ewts , "mnyes thang rwa ba stod/"@bo-x-ewts , "ra ba stod pa bde ba can/"@bo-x-ewts , "rwa stod bde ba can/"@bo-x-ewts , "rwa stod dgon/"@bo-x-ewts , "snye thang stag tshang ra ba stod/"@bo-x-ewts , "redui si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ra stod dgon/"@bo-x-ewts , "Rato Monastery"@en , "热堆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC242CC08C5602D9D ;
+        :isRoot             true ;
+        :note               bdr:NT03F6FCA075D294B2 , bdr:NT663576F8CB08F5FD , bdr:NTD7E451B1E5F88051 ;
+        :placeEvent         bdr:EV3B6D9CB904A47447 , bdr:EV5FA7C91E02FDA5BA , bdr:EVBDA06FEF59E496EF ;
+        :placeGonpaPerEcumen  "19.83" ;
+        :placeLat           "29.53252" ;
+        :placeLocatedIn     bdr:G1477 , bdr:G2128 , bdr:G2450 ;
+        :placeLong          "90.91482" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC242CC08C5602D9D
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4607" .
+    
+    bdr:NT03F6FCA075D294B2
+        a                   :Note ;
+        :contentLocationStatement  "p. 301" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "founded in 1205 by rgya 'ching zhu ba, a student of gnyal zhig po\nthe orginal six great teaching colleges (gdan sa chen po drug) including rwa ba stod were:\ngsang phu, rwa stod, tshal gung thang, dga' gdong, skyo lung, zul phu\ndestroyed completely during the cultural revolution in 1966\nrestored in 1988\nhad a monk population of 69 when this book was compiled"@en .
+    
+    bdr:NT663576F8CB08F5FD
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 125-128" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTD7E451B1E5F88051
+        a                   :Note ;
+        :contentLocationStatement  "p. 39, 44" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "the largest monastery in chu shur rdzong, located in mnyes thang shang of chu shur rdzong\nlocated about 40 km. to the east of the center of chu shur rdzong\nmajor teaching monastery founded in 1205 gsang phu gling stod zhabs drung rgya mching ru ba\noriginally called bde ba can\nhad six grwa sa chen po: bde, gsang, gung, dga', skyo, zul\ndon grub rin chen (tsong kha pa's teacher) invited to teach here\ntsong kha pa studied phar phyin here\ntsong kha pa's disciples, such as smar khams pa grags pa bzang po, worked here and the number of monks grew\nin 15th century kun mkhyen yon tan rgya mtsho came to teach and strongly advocated only the views of tsong kha pa\nthis led to the nominal split of ra ba stod (dge lugs pa) and ra ba smad (sa skya)\nin 1959 there were 450 monks under the leadership of mkhan po blo bzang dpal ldan\nmany scholars associated with this establishment:\ndga' ldan khri 21 'ol dga' dge legs dpal bzang\ndga' ldan khri 35 'jam dbyangs dkon mchog chos 'phel\nfrom the 17th century the yig cha followed was that of paN chen mchog lha 'od zer\ndgon bdag: rtse yig tshang\nnumber of monks fixed at 60 after restoration"@en .
+}

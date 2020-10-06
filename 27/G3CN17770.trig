@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN17770 {
+    bda:G3CN17770  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN17770 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "27/G3CN17770.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN17770 ;
+        adm:logEntry        bda:LG0CBED49CBB2E75D9 , bda:LGFD7DD9E34FEB54E2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0CBED49CBB2E75D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-08-09T11:37:32.869Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFD7DD9E34FEB54E2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-09T10:43:05.563Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN17770  a        :Place ;
+        skos:altLabel       "rme'u rgyal khab/"@bo-x-ewts , "rnga yul rme'u/"@bo-x-ewts ;
+        skos:prefLabel      "rme'u rgyal phran/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT659340773AC32AD1 ;
+        :placeLocatedIn     bdr:G1196 ;
+        :placeType          bdr:PT0027 .
+    
+    bdr:NT659340773AC32AD1
+        a                   :Note ;
+        :noteSource         bdr:MW3CN17769 ;
+        :noteText           "ལོ་རྒྱུས་ཞིབ་ཙམ་དཔེ་ཆ་འདིར་གསལ།"@bo .
+}

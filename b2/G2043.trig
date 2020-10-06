@@ -1,0 +1,153 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2043 {
+    bda:G2043  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2043 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "b2/G2043.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2043 ;
+        adm:logEntry        bda:LG0AAC1A0D509C3D9A , bda:LG17765B3C36078B2C , bda:LG2D08321BB948A1F3 , bda:LG6C66CAC029423F51 , bda:LG9A8B39E1E3652A97 , bda:LGC083A6D36A184F35 , bda:LGFB5B586FAEDE53A4 , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540127203:540127110" ;
+        adm:place_id_lex    "540127203:540127110" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0AAC1A0D509C3D9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-08T10:06:16.75Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG17765B3C36078B2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T09:33:48.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added events, note & normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2D08321BB948A1F3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6C66CAC029423F51
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-28T15:12:13.706Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A8B39E1E3652A97
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-16T15:54:20.516Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC083A6D36A184F35
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-24T11:19:13.275Z"^^xsd:dateTime ;
+        adm:logMessage      "added founder"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFB5B586FAEDE53A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-09-08T15:35:06.09Z"^^xsd:dateTime ;
+        adm:logMessage      "added names and note in tibetan"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV30B2B2BF6587C144
+        a                   :PlaceConverted ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV3A9463063C1DB305
+        a                   :PlaceFounded ;
+        :onYear             "0798"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EV5A11B0C6BDAA74D8
+        a                   :PlaceConverted ;
+        :placeEventAffiliation  bdr:TraditionDrigungKagyu .
+    
+    bdr:EV8920FCC8942A3A2E
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2MS13215 ;
+        :onYear             "0798"^^xsd:gYear .
+    
+    bdr:G2043  a            :Place ;
+        skos:altLabel       "dbu ru zhwa'i gtsug lag khang /"@bo-x-ewts , "dbu ru zhwa yi lha khang /"@bo-x-ewts , "zhwa lha khang /"@bo-x-ewts , "zhwa pad+ma dbang chen gyi gtsug lag khang /"@bo-x-ewts , "香拉康寺"@zh-hans , "xia lakang"@zh-latn-pinyin-x-ndia , "xiang lakang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zhwa lha khang /"@bo-x-ewts , "Zhai Lhakhang"@en-x-mixed , "霞拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA49730831BDE9633 ;
+        :isRoot             true ;
+        :note               bdr:NT0836A794C61A11CB , bdr:NT31F04746B9090167 , bdr:NT861CF2A92E5D7946 , bdr:NT87A89F7FCADEFBC8 , bdr:NT9C014579121CCEC0 , bdr:NTCB7F6FAF369EAC40 ;
+        :placeContains      bdr:G3CN217 ;
+        :placeEvent         bdr:EV30B2B2BF6587C144 , bdr:EV3A9463063C1DB305 , bdr:EV5A11B0C6BDAA74D8 , bdr:EV8920FCC8942A3A2E ;
+        :placeGonpaPerEcumen  "9.17" ;
+        :placeLat           "29.97151" ;
+        :placeLocatedIn     bdr:G2014 , bdr:G2021 ;
+        :placeLong          "91.94550" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:IDA49730831BDE9633
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2043" .
+    
+    bdr:NT0836A794C61A11CB
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 216-217" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT31F04746B9090167
+        a                   :Note ;
+        :contentLocationStatement  "v.5, p. 161" ;
+        :noteSource         bdr:MW00EGS1016299 ;
+        :noteText           "ཀུན་མཁྱེན་ཀློང་ཆེན་རབ་འབྱམས་ཀྱིས་གཙུག་ལག་ཁང་འདིར་ཞིག་གསོ་མཛད་པ་དང་འབྲེལ་འདི་སྐོར་དཀར་ཆག་ཞིབ་རྒྱས་མཛད་འདུག་པ་གསུང་འབུམ་པོད་ལྔ་པ་འདིར་གསལ་ལ། ཁྱད་པར་དུ་གཙུག་ལག་ཁང་འདི་ནི་བོད་ཆེན་པོའི་ཡུལ་འདིར་མཐའ་དམག་དང་འབྱུང་པོ་འདུལ་བའི་མཆོག་ཕུར་དུ་ཉང་བན་ཏིང་འཛིན་བཟང་པོས་བཏབ་ཅིང་། འདི་ཞིག་གསོ་མཛད་རྒྱུ་ནི་གཙུག་ལག་ཁང་གཞན་ཐམས་ཅད་ལས་གལ་གནད་ཆེ་བར་གསུངས་པ་སོགས་ཞིབ་གསལ་ཡོད།"@bo .
+    
+    bdr:NT861CF2A92E5D7946
+        a                   :Note ;
+        :contentLocationStatement  "p. 45-48" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "༡༩༡༨ལོར་ཀ་ཐོག་སི་ཏུ་ཕེབས་དུས་སེ་ར་དགོན་པས་བདག་རྐྱེན་མཛད་བཞིན་ཡོད་པ་གསལ།"@bo .
+    
+    bdr:NT87A89F7FCADEFBC8
+        a                   :Note ;
+        :contentLocationStatement  "p. 37" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa temple in nyi ma lcang ra shang, mal gro gung dkar rdzong affiliated to se ra byes\nfounded in about 700 by myang ting 'dzin bzang po\nhad 1 caretaker monk in 1959\nfully restored"@en .
+    
+    bdr:NT9C014579121CCEC0
+        a                   :Note ;
+        :contentLocationStatement  "p. 63" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "noted as the place from which ldang ma lhun rgyal recovered the rgyud bcu bdun and their commentaries\nlater held as a seat by jo gdan pa and the 'bri gung pa\nfinally taken over nine monks from se ra byes\nassigned for restoration to the rdo rje brag chu bzang sprul sku by the 13th dalai lama while he was in india (date of 15 sa byi is impossible)"@en .
+    
+    bdr:NTCB7F6FAF369EAC40
+        a                   :Note ;
+        :contentLocationStatement  "p. 135" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "སྤྱི་ལོ་༧༩༨ལོར་མུ་ནེ་བཙན་པོས་བཏབ་ཅེས་འཁོད་ཀྱང་དོན་དུ་ཕལ་ཆེར་གྱིས་མྱང་ཏིང་འཛིན་བཟང་པོས་བཏབ་པར་ངོས་འཛིན། དགོན་གནས་དེར་བཙན་པོས་མྱང་ཏིང་འཛིན་བཟང་པོར་གནང་བའི་བཀའ་གཙིགས་རྡོ་རིང་གཉིས་ཡོད། ཕྱིས་གྲུབ་མཐའ་འབྲི་གུང་ལ་བསྒྱུར་ཚུལ་སོགས་མདོ་ཙམ་གསལ།"@bo .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3375 {
+    bda:G3375  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3375 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6e/G3375.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3375 ;
+        adm:logEntry        bda:LG920E4DAB69FE6AEA , bda:LG9335A536243C3C57 , bda:LGC6E2D3A03752E7F4 , bda:LGC9C4F03A37E4AE0F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG920E4DAB69FE6AEA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9335A536243C3C57
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-21T12:55:27.548Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC6E2D3A03752E7F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:zhangxiang to shang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC9C4F03A37E4AE0F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T16:41:15.627Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3375  a            :Place ;
+        skos:prefLabel      "zhog phu shang (stag rtse rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3D9ADA8648559632 ;
+        :placeContains      bdr:G3038 , bdr:G3045 , bdr:G3046 , bdr:G3047 ;
+        :placeLocatedIn     bdr:G1516 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT3D9ADA8648559632
+        a                   :Note ;
+        :contentLocationStatement  "p. 111" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "name of a shang in stag rtse rdzong"@en .
+}

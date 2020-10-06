@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11131 {
+    bda:G2CN11131  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11131 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "24/G2CN11131.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11131 ;
+        adm:logEntry        bda:LG5A95274C40903A23 , bda:LGF2B0CF82DD0AC18E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5A95274C40903A23
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-07T14:41:19.154Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2B0CF82DD0AC18E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-23T11:44:13.438Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location, linked sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2CN11131  a        :Place ;
+        skos:altLabel       "gnas mchog gangs ri rta sgo"@bo-x-ewts , "srid pa'i gangs can rta sgo"@bo-x-ewts ;
+        skos:prefLabel      "rta sgo"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT91C4F6F61F1E4FD8 ;
+        :placeIsNear        bdr:G1KR1765 ;
+        :placeLocatedIn     bdr:G2377 , bdr:G3189 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT91C4F6F61F1E4FD8
+        a                   :Note ;
+        :contentLocationStatement  "p. 78" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "གནས་མཆོག་གངས་རི་རྟ་སྒོ་འདི་ནི་སྟོད་གངས་རིན་པོ་ཆེ་དང་། རྨ་ཆེན་སྤོམ་ར། ཡར་ལྷ་ཤམ་བུ། གཉན་ཆེན་ཐང་ལ། སྤུ་རྒྱལ་སོགས་དང་འདྲ་བར་བན་བོན་གཉིས་ཀའི་གནས་ཁྱད་པར་ཅན་ཞིག་དང་། དེ་ཡང་དྭངས་ར་གཡུ་མཚོ་(G2400)དང་ཉེ་སར་ཡོད་པ་སོགས་གསལ།"@bo .
+}

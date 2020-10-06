@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10847 {
+    bda:G2CN10847  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10847 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "f9/G2CN10847.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10847 ;
+        adm:logEntry        bda:LG35583A6C00EE5F3C , bda:LG3A05F522DD66BA2F , bda:LG47D07CD8A68C9759 , bda:LG6BB206940BA6ACFC , bda:LG7F0521F32BD0E9C3 , bda:LG95080AECAD1579C1 , bda:LGA331A319099EA87E , bda:LGBC95F30B2123DB5F , bda:LGBEE6F3DFACFDDD4F , bda:LGE9C9330409B5E648 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG35583A6C00EE5F3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-18T12:28:11.963Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3A05F522DD66BA2F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-30T11:40:34.591Z"^^xsd:dateTime ;
+        adm:logMessage      "added date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG47D07CD8A68C9759
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-05T16:38:45.092Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6BB206940BA6ACFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-23T12:46:16.615Z"^^xsd:dateTime ;
+        adm:logMessage      "delete g2800"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG7F0521F32BD0E9C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T10:08:16.302Z"^^xsd:dateTime ;
+        adm:logMessage      "added place contained"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG95080AECAD1579C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-22T15:49:22.484Z"^^xsd:dateTime ;
+        adm:logMessage      "added regions"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGA331A319099EA87E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-04T15:59:28.568Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGBC95F30B2123DB5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T15:05:05.317Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains in info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGBEE6F3DFACFDDD4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-19T16:50:28.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added as par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGE9C9330409B5E648
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T15:31:57.656Z"^^xsd:dateTime ;
+        adm:logMessage      "par khang gi mhan bu med pa bzo yod"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:EV417A0D391F6AE7A6
+        a                   :PlaceFounded ;
+        :notAfter           "1599"^^xsd:gYear ;
+        :notBefore          "1500"^^xsd:gYear .
+    
+    bdr:G2CN10847  a        :Place ;
+        skos:prefLabel      "nyag re khams tshan gyi par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV417A0D391F6AE7A6 ;
+        :placeLocatedIn     bdr:G108 , bdr:G140 ;
+        :placeType          bdr:PT0059 .
+}

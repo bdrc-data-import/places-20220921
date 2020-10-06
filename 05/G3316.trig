@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3316 {
+    bda:G3316  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3316 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "05/G3316.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3316 ;
+        adm:logEntry        bda:LG7A1AF35E627ED1DB , bda:LGBE4FC335AE0D72AA , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7A1AF35E627ED1DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-20T09:08:43.261Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanedup name & added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBE4FC335AE0D72AA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3316  a            :Place ;
+        skos:prefLabel      "snye phu khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2128 ;
+        :placeType          bdr:PT0057 .
+}

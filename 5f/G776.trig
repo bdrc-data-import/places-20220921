@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G776 {
+    bda:G776  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G776 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "5f/G776.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G776 ;
+        adm:logEntry        bda:LG52EEC68357535A14 , bda:LG559749D56B9C0DFB , bda:LGA107FB848AE960CE , bda:LGC6DEA6B56444A3F4 , bda:LGD2EF91ED9530303F , bda:LGF5816EB054FFB5E4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG52EEC68357535A14
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-18T12:05:52.506Z"^^xsd:dateTime ;
+        adm:logMessage      "added type and changed name"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG559749D56B9C0DFB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA107FB848AE960CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-11T08:54:29.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC6DEA6B56444A3F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-02T09:18:31.993Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD2EF91ED9530303F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-05T11:00:54.526Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF5816EB054FFB5E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-31T09:25:10.852Z"^^xsd:dateTime ;
+        adm:logMessage      "zhau dag"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:G776  a             :Place ;
+        skos:altLabel       "btsan stong chu 'gyed/"@bo-x-ewts , "spa gro btsan stong chu 'gyed/"@bo-x-ewts ;
+        skos:prefLabel      "chu 'gyed/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G836 ;
+        :placeType          bdr:PT0085 .
+}

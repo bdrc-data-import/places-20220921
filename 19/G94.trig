@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G94 {
+    bda:G94  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G94 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "19/G94.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G94 ;
+        adm:logEntry        bda:LG9F8D7EF6A9032C5C , bda:LGDB18E077AE35E7EF , bda:LGDE5AE92537E4BE1D , bda:LGIM454E022964 , bda:LGIMAF5F209484 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9F8D7EF6A9032C5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:37:35.639Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDB18E077AE35E7EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-18T12:21:09.631Z"^^xsd:dateTime ;
+        adm:logMessage      "checked out"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDE5AE92537E4BE1D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM454E022964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T17:05:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:gzimsKhang to khamsTshan"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMAF5F209484
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:21:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from residentialHouse to gzimsKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G94  a              :Place ;
+        skos:prefLabel      "nyag re khams tshan (dga' ldan shar rtse)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9BC247531D037FCE ;
+        :placeLocatedIn     bdr:G304 ;
+        :placeType          bdr:PT0039 .
+    
+    bdr:NT9BC247531D037FCE
+        a                   :Note ;
+        :contentLocationStatement  "p. 29, 39" ;
+        :noteSource         bdr:MW20212 ;
+        :noteText           "residential house of dga' ldan shar rtse\nresidents of this khams tshan came from brag g.yab, go 'jo, mal gro, etc."@en .
+}

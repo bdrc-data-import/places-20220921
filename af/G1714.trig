@@ -1,0 +1,114 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1714 {
+    bda:G1714  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1714 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "af/G1714.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1714 ;
+        adm:logEntry        bda:LG0BFCF2C79026D2B8 , bda:LG765266655F2CC4DB , bda:LGCE429EBFDFABEC99 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540124204:540124111" ;
+        adm:place_id_lex    "540124204:540124111" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0BFCF2C79026D2B8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG765266655F2CC4DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-12T12:14:42.054Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCE429EBFDFABEC99
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:19:31.131Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain: \"par khang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV00CF0FCBDCE37C94
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV60E3F88A9F94BA67
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P37 ;
+        :onYear             "1648"^^xsd:gYear .
+    
+    bdr:EVC0A3C79E9EEB7505
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G1714  a            :Place ;
+        skos:altLabel       "dga' ldan chos 'khor yang rtse/"@bo-x-ewts , "qiongguo yangzi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "chos 'khor yang rtse/"@bo-x-ewts , "Chokhor Yangtse"@en-x-mixed , "琼果扬孜寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID89D61C11812C0A60 ;
+        :isRoot             true ;
+        :note               bdr:NT024ECC71E8FED033 , bdr:NT9A86AF90D7023BA4 , bdr:NTB8AC36BA8C31CAE1 , bdr:NTE2A0843C8DE2118E ;
+        :placeContains      bdr:G2CN10894 ;
+        :placeEvent         bdr:EV00CF0FCBDCE37C94 , bdr:EV60E3F88A9F94BA67 , bdr:EVC0A3C79E9EEB7505 ;
+        :placeGonpaPerEcumen  "8.93" ;
+        :placeLat           "29.31901" ;
+        :placeLocatedIn     bdr:G2128 , bdr:G2418 , bdr:G3314 ;
+        :placeLong          "90.65192" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID89D61C11812C0A60
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1714" .
+    
+    bdr:NT024ECC71E8FED033
+        a                   :Note ;
+        :contentLocationStatement  "p. 304" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "according to this source located in bye lung shang of chu shur rdzong\nfounded in 1648 by the 5th dalai lama\nfunded as one of the 13 monasteries in expiation of the loss of life as a result of gu shri bstan 'dzin chos rgyal's conquest of tibet\nyig cha connected to the teachings of stag tshang rwa ba stod\nduring the time of the 5th dalai lama had a monk population of 263\ndestroyed during the cultural revolution\nrestored in 1988 with a monk complement of 16"@en .
+    
+    bdr:NT9A86AF90D7023BA4
+        a                   :Note ;
+        :contentLocationStatement  "p. 33" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "dge lugs pa monastery located in ne'u grong tsho, rta dkar shang, chu shur rdzong, lha sa prefecture\nfounded by the 5th dalai lama in 1648\nthis was a state monastery supported by the rtse yig tshang\n\"de gar ri ldebs su bu ti rtsi sdong po zhig yod pa rig gnas gsar brje'i skabs bcad shul du sdong gsar zhig skyes pa de yang rtsa bkog btang/ sngon ma'i shing sdong skyes yul du rtsi skyor shul da lta yod\"\nin 1959 there were 150 monks\nafter restoration the number of monks has been fixed at 9"@en .
+    
+    bdr:NTB8AC36BA8C31CAE1
+        a                   :Note ;
+        :contentLocationStatement  "p. 100, 166" ;
+        :noteSource         bdr:MW20115 ;
+        :noteText           "monastery in chu shur khul, founded 1648 by the 5th dalai lama"@en .
+    
+    bdr:NTE2A0843C8DE2118E
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 137-138" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

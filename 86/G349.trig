@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G349 {
+    bda:G349  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G349 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "86/G349.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G349 ;
+        adm:logEntry        bda:LG040330E7343009B1 , bda:LG43BB960DDDF1B3C2 , bda:LG8B0F968965430846 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG040330E7343009B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-19T09:28:35.628Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG43BB960DDDF1B3C2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8B0F968965430846
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-03T10:34:28.156Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV587B91F9E5CC3F9B
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G349  a             :Place ;
+        skos:altLabel       "thig phyi (lho brag)"@bo-x-ewts ;
+        skos:prefLabel      "lho brag thig phyi/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB6756F4759F556A6 ;
+        :placeEvent         bdr:EV587B91F9E5CC3F9B ;
+        :placeLocatedIn     bdr:G2134 , bdr:G3CN58 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTB6756F4759F556A6
+        a                   :Note ;
+        :noteText           "ancient bka' gdams monastery in the lho brag area; this monastery was the ancestral seat of the shud phu lineage of teachers\nthis lineage emphasized the practice of vajrapani"@en .
+}

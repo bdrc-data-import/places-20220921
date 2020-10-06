@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3013 {
+    bda:G3013  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3013 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "80/G3013.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3013 ;
+        adm:logEntry        bda:LG024956B1345921DD , bda:LGFE10F44A5E4BFBCF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG024956B1345921DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T16:11:39.567Z"^^xsd:dateTime ;
+        adm:logMessage      "added type again"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFE10F44A5E4BFBCF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G3013  a            :Place ;
+        skos:prefLabel      "thang dkar chus (stag rtse rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7E9868D12F7EBEB9 ;
+        :placeContains      bdr:G3021 , bdr:G3022 , bdr:G3023 , bdr:G3024 , bdr:G3025 ;
+        :placeLocatedIn     bdr:G1516 ;
+        :placeType          bdr:PT0012 .
+    
+    bdr:NT7E9868D12F7EBEB9
+        a                   :Note ;
+        :contentLocationStatement  "p. 25" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "one of the four chus into which stag rtse county, lha sa prefecture is divided\nthis chus had five kung hre:\nzhogs phu kung hre\nzhogs mda' kung hre\nlo kung hre\nthang dkar kung hre\nmchum mda' kung hre"@en .
+}

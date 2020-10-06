@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G297 {
+    bda:G297  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G297 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "7a/G297.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G297 ;
+        adm:logEntry        bda:LG75D18AC14B53D1A7 , bda:LG8770C532D15C190A , bda:LG895BBFA759701E51 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG75D18AC14B53D1A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T14:20:44.876Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG8770C532D15C190A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG895BBFA759701E51
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-14T15:36:59.082Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G297  a             :Place ;
+        skos:altLabel       "dge 'phel bsam gtan gling (kha gro)"@bo-x-ewts , "kha gro ri khrod dge 'phel bsam gtan gling /"@bo-x-ewts ;
+        skos:prefLabel      "kha gro ri khrod/"@bo-x-ewts , "Kadro Ritro Gepel Samtenling"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT277229C1F4AB763F ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT277229C1F4AB763F
+        a                   :Note ;
+        :noteText           "dge lugs hermitage located in a mdo"@en .
+}

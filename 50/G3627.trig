@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3627 {
+    bda:G3627  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3627 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "50/G3627.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3627 ;
+        adm:logEntry        bda:LG8FECA842C1B27C2E , bda:LGA523E2925A2F5BB6 , bda:LGAD25FCAECE25948B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8FECA842C1B27C2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-09T10:59:49.059Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA523E2925A2F5BB6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAD25FCAECE25948B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-09T10:10:26.266Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & type & location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3627  a            :Place ;
+        skos:altLabel       "bu le'i mchod rten dgu brtsegs/"@bo-x-ewts , "g.yung drung rnam par bkod pa'i gnas mchog"@bo-x-ewts ;
+        skos:prefLabel      "g.yung drung rnam bkod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0485C8D826B76F5A , bdr:NT6DE4AE9C25036EE1 ;
+        :placeContains      bdr:G3832 ;
+        :placeLocatedIn     bdr:G2300 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT0485C8D826B76F5A
+        a                   :Note ;
+        :noteText           "bonpo place of pilgrimage in khams"@en .
+    
+    bdr:NT6DE4AE9C25036EE1
+        a                   :Note ;
+        :contentLocationStatement  "p. 229-237" ;
+        :noteSource         bdr:MW29295 ;
+        :noteText           "མདོཁམས་ཀྱི་གནས་ཆེན་ཉེར་ལྔའི་གྲས་ཤིག་ཡིན།"@bo .
+}

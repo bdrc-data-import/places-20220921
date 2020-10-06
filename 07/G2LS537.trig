@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS537 {
+    bda:G2LS537  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS537 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "07/G2LS537.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS537 ;
+        adm:logEntry        bda:LG4479CED3DEC731A7 , bda:LG576E6F561E5BDE9F , bda:LG5CCCA9EA78EFB8C4 , bda:LG70AD0C19402F8CD9 , bda:LG7910D5D4067696E3 , bda:LGE1F554044FA17283 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522100:3" ;
+        adm:place_id_lex    "542522100:3" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4479CED3DEC731A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:18:29.127Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from palace to phoBrang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG576E6F561E5BDE9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T13:24:19.651Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5CCCA9EA78EFB8C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:55:09.941Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG70AD0C19402F8CD9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-29T16:38:23.087Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, event & normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7910D5D4067696E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-01T09:55:09.11Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE1F554044FA17283
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T10:39:21.898Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV017C64E38890E41D
+        a                   :PlaceDestroyed ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:EVF47A75F2FED42B8B
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear .
+    
+    bdr:G2LS537  a          :Place ;
+        skos:altLabel       "gu ge'i mkhar shul/"@bo-x-ewts , "gu ge rgyal rabs kyi mkhar shul/"@bo-x-ewts , "mnga' ris gu ge rgyal rabs kyi mkhar shul/"@bo-x-ewts , "ra la mkhar dmar/"@bo-x-ewts , "guge wangguo yizhi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gu ge rgyal mkhar/"@bo-x-ewts , "Tsaparang"@en-x-mixed , "古格王国遗址"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFA3D6B3F7A4CC565 ;
+        :isRoot             true ;
+        :note               bdr:NT796B80E841C9F6BF ;
+        :placeEvent         bdr:EV017C64E38890E41D , bdr:EVF47A75F2FED42B8B ;
+        :placeGonpaPerEcumen  "3.98" ;
+        :placeLat           "31.50000" ;
+        :placeLocatedIn     bdr:G2152 , bdr:G731 ;
+        :placeLong          "79.60000" ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:IDFA3D6B3F7A4CC565
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2LS537" .
+    
+    bdr:NT796B80E841C9F6BF
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 52-62" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "The ruins of palace of guge kingdom. Kyide nyimagon founded this kingdom in West Tibet."@en .
+}

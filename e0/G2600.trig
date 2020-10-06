@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2600 {
+    bda:G2600  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2600 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e0/G2600.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2600 ;
+        adm:logEntry        bda:LG6F48BF2C7A02EC48 , bda:LG7AAC4FEE71B43DC8 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6F48BF2C7A02EC48
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-06T14:01:02.16Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7AAC4FEE71B43DC8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0C8D1142323210B7
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P11MS248 ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear .
+    
+    bdr:G2600  a            :Place ;
+        skos:altLabel       "bkra shis dgon/"@bo-x-ewts , "zhaxi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bkra shis sgang dgon/"@bo-x-ewts , "扎西寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT7E4B27C7A536C958 ;
+        :placeEvent         bdr:EV0C8D1142323210B7 ;
+        :placeLocatedIn     bdr:G2325 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT7E4B27C7A536C958
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 46" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "'bri gung bka' brgyud pa monastery in yus hru'u prefecture, qinghai province"@en .
+}

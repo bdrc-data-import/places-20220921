@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3270 {
+    bda:G3270  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3270 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e0/G3270.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3270 ;
+        adm:logEntry        bda:LG5F1B901F015108C6 , bda:LG9E46230258521D38 , bda:LGD6A7294FB767C720 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5F1B901F015108C6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9E46230258521D38
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD6A7294FB767C720
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-21T12:49:10.918Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3270  a            :Place ;
+        skos:prefLabel      "khram mdo khog dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD317DA06234DB80F ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTD317DA06234DB80F
+        a                   :Note ;
+        :noteText           "sa skya pa monastery in khams."@en .
+}

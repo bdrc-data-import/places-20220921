@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1854 {
+    bda:G1KR1854  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1854 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "fb/G1KR1854.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1854 ;
+        adm:logEntry        bda:LGA6C663C48B9B9DE2 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542621100:523" ;
+        adm:place_id_lex    "542621100:523" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA6C663C48B9B9DE2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-01T16:02:54.562Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in tibetan & Gis Coords & event & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV34EFD2A8AF7EC8BF
+        a                   :PlaceFounded ;
+        :onYear             "1330"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EVEED2B3AE2CC0F989
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P9269 ;
+        :onYear             "1330"^^xsd:gYear .
+    
+    bdr:G1KR1854  a         :Place ;
+        skos:altLabel       "bon ri srid rgyal dgon chen/"@bo-x-ewts , "rkong tshul se mo bon thang /"@bo-x-ewts , "se mo bon thang /"@bo-x-ewts , "色加更青寺"@zh-hans , "色迦寺"@zh-hans , "色迦棍钦寺"@zh-hans , "sejia gengqing si"@zh-latn-pinyin-x-ndia , "sejia gunqin si"@zh-latn-pinyin-x-ndia , "sejia si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "srid rgyal dgon chen/"@bo-x-ewts , "Sigyal Monastery"@en , "色迦更青寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2914CFF110BC783C ;
+        :isRoot             true ;
+        :note               bdr:NT35455CE6E15DCEEF , bdr:NT6B14D26047DADCC2 , bdr:NTBD07CFEBBECEEF83 ;
+        :placeEvent         bdr:EV34EFD2A8AF7EC8BF , bdr:EVEED2B3AE2CC0F989 ;
+        :placeGonpaPerEcumen  "11.09" ;
+        :placeLat           "29.540948" ;
+        :placeLocatedIn     bdr:G2123 ;
+        :placeLong          "94.491967" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID2914CFF110BC783C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1854" .
+    
+    bdr:NT35455CE6E15DCEEF
+        a                   :Note ;
+        :contentLocationStatement  "'phar ma (2003), pp. 92-94" ;
+        :noteSource         bdr:MW28826 ;
+        :noteText           "bon monastery in the vicinity of bon ri in kong po\nfoundation conntected with rtogs ldan ri ba 'brug gsas\nthis source lists the successive abbots including some of the most important names in bon history\nresored in 1983 after the cultural revolution by nor skyab rin po che and  mkhas grub nyi ma"@en .
+    
+    bdr:NT6B14D26047DADCC2
+        a                   :Note ;
+        :noteText           "Founded by Ri pa ’Brug gsas.\n19 monks"@en .
+    
+    bdr:NTBD07CFEBBECEEF83
+        a                   :Note ;
+        :contentLocationStatement  "p. 232-236" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "༡༣༣༠རྗེས་ཙམ་ལ་རི་པ་འབྲུག་གསས་ཀྱིས་ཕྱག་བཏབ་པར་གྲགས་མོད། མུ་ཁྲི་བཙན་པོའི་སྐབས་ཀྱི་བོན་གྱི་འདུ་གནས་སུམ་ཅུ་རྩ་བདུན་གྱི་གྲས་གཅིག་ཏེ། ཉིང་ཁྲི་རྫོང་གི་ཉེ་འགྲམ་གནས་ཆེན་བོན་རིའི་ལྡེབས་སུ་གནས། ནང་རྟེན་གཙོ་བོར་བོན་གྱི་བཀའ་འགྱུར་པར་མ་ཆ་ཚང་གཅིག་དང་། བསྟན་འགྱུར་བྲིས་མ་ཆ་ཚང་གཅིག དེ་མིན་ཞལ་འདོན་ཆོ་ག་སོགས། དཔེ་ཆ་བྲིས་མ་པོ་ཏི་ཉིས་བརྒྱ་ལྷག་ཙམ་བཞུགས་སྐོར་འཁོད།"@bo .
+}

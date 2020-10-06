@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD95785 {
+    bda:G1PD95785  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD95785 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "9e/G1PD95785.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD95785 ;
+        adm:logEntry        bda:LG1890013CF2572435 , bda:LG54A6FDA5DD0E22BB , bda:LGA1B911DBA3FED432 , bda:LGA21AC65D7A78DD5C , bda:LGB3654B42668457CF , bda:LGBC94242194F10E17 , bda:LGD7359A200D0342D2 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "630103002:2" ;
+        adm:place_id_lex    "630103002:85" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1890013CF2572435
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-20T11:23:25.475Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG54A6FDA5DD0E22BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-20T11:28:20.35Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA1B911DBA3FED432
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T10:56:28.37Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGA21AC65D7A78DD5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T10:59:25.254Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGB3654B42668457CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-20T11:29:26.523Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBC94242194F10E17
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-20T11:04:21.086Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD7359A200D0342D2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-11-09T15:46:21.456Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8A83D3F01D4B0959
+        a                   :PlaceFounded ;
+        :onYear             "1500"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1PD95785  a        :Place ;
+        skos:altLabel       "金塔寺"@zh-hans , "jinta si"@zh-latn-pinyin-x-ndia , "jin ta si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "cing tha zi/"@bo-x-ewts , "金塔寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5901093CC8F50D97 ;
+        :isRoot             true ;
+        :note               bdr:NT69CA43714F18D0AA ;
+        :placeEvent         bdr:EV8A83D3F01D4B0959 ;
+        :placeGonpaPerEcumen  "1574.8" ;
+        :placeLat           "36.61000" ;
+        :placeLocatedIn     bdr:G598 ;
+        :placeLong          "101.78000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID5901093CC8F50D97
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD95785" .
+    
+    bdr:NT69CA43714F18D0AA
+        a                   :Note ;
+        :contentLocationStatement  "p. 7" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "founded in ming dynasty; geluk, branch of kubum monastery"@en .
+}

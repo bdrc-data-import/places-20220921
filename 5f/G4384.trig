@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4384 {
+    bda:G4384  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4384 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5f/G4384.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4384 ;
+        adm:logEntry        bda:LG29E2388E0485752A , bda:LG7CF913BB337591AA , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG29E2388E0485752A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-30T13:47:32.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7CF913BB337591AA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4384  a            :Place ;
+        skos:altLabel       "rang don dgon pa (stod)"@bo-x-ewts ;
+        skos:prefLabel      "rang don dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3F1F4F4EA12AFEC0 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT3F1F4F4EA12AFEC0
+        a                   :Note ;
+        :contentLocationStatement  "p. 552" ;
+        :noteSource         bdr:MW20850 ;
+        :noteText           "dgon lag of mtshur phu:\nstod rang don dgon pa"@en .
+}

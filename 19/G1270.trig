@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1270 {
+    bda:G1270  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1270 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "19/G1270.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1270 ;
+        adm:logEntry        bda:LG242D37258283FE3C , bda:LG2DABAC2318C5C818 , bda:LG39C7BF4D46E84B9C , bda:LG98090366925EAEDB , bda:LGAC27445BAFB2AA38 , bda:LGE740783510437EE9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG242D37258283FE3C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2DABAC2318C5C818
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-26T16:49:35.65Z"^^xsd:dateTime ;
+        adm:logMessage      "G4950 tshab brjes byas"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG39C7BF4D46E84B9C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-08T14:56:00.751Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG98090366925EAEDB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGAC27445BAFB2AA38
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-26T14:50:11.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location (?)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE740783510437EE9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-07T15:51:00.595Z"^^xsd:dateTime ;
+        adm:logMessage      "renam & added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1270  a            :Place ;
+        skos:altLabel       "mdo smad gtsos/"@bo-x-ewts ;
+        skos:prefLabel      "gtsos/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeContains      bdr:G1336 , bdr:G1964 , bdr:G293 , bdr:G4650 , bdr:G634 , bdr:G914 , bdr:G916 ;
+        :placeLocatedIn     bdr:G1132 ;
+        :placeType          bdr:PT0083 .
+}

@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G153 {
+    bda:G153  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G153 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "54/G153.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G153 ;
+        adm:logEntry        bda:LG1745D673FF2CD546 , bda:LG5E31793E673F40B0 , bda:LGBBF593981C99493F , bda:LGCBEED728BD68EB27 , bda:LGCEF0DDC872B02020 , bda:LGFB779E460A1F3696 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1745D673FF2CD546
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-24T16:49:17.042Z"^^xsd:dateTime ;
+        adm:logMessage      "revised on basis of the survey of 'bras spungs"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5E31793E673F40B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-07T09:59:28.838Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type to grwaTshang"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBBF593981C99493F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-06-28T12:48:59.888Z"^^xsd:dateTime ;
+        adm:logMessage      "application note added"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCBEED728BD68EB27
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T09:31:04.561Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCEF0DDC872B02020
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGFB779E460A1F3696
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G153  a             :Place ;
+        skos:altLabel       "bde yangs grwa tshang /"@bo-x-ewts ;
+        skos:prefLabel      "'bras spungs bde yangs grwa tshang /"@bo-x-ewts , "Drepung Deyang Dratshang"@en ;
+        :isRoot             true ;
+        :note               bdr:NT04EF5EAD7C53D28C , bdr:NT94F912D6DC9627B7 , bdr:NTA8A31C87D2F5E198 ;
+        :placeLocatedIn     bdr:G108 ;
+        :placeType          bdr:PT0040 .
+    
+    bdr:NT04EF5EAD7C53D28C
+        a                   :Note ;
+        :contentLocationStatement  "p. 342" ;
+        :noteSource         bdr:MW2GS1123 ;
+        :noteText           "according to this source the yig cha followed by bde yangs college was:\nslob gnyer tahd grwa tshang gzhan dang mi 'dra bar mdo sngags zung 'brel gyi phyag len mdzad bzhin/ sngon la rnam 'grel/ de nas phar phyin/ dbu ma/ mdzod/ 'dul ba bcas rim pa bzhin slob dgos/ sngags chog ni gtso bo sman bla dang kun rig cho ga de bzhin bstan srung rdo rje grags ldan gtso gyur gyi rgyal po sku lnga'i bskangs gso gtong srol yod pa red/\n1) rnam 'grel la 'grel pa le'u bzhi ste:\n1) rang don le'u de'i 'grel pa paN chen bsod grags kyis mdzad pa'i (bka' 'grel dgongs pa rab gsal) yin/;  \n2) mngon sum le'ur rgyas pa dge 'dun grub pa'i TIk chen le'u gnyis pa khrid rgyu;  \n3) tshad ma grub pa'i le'ur rgyal tshan kyi TIk+ka;  \n4) gzhan don le'ur paN chen bsod grags dang rgyal tshan kyi TIk+ka cha tshang gzigs dgos/ mdor na rnam 'grel la lo drug;  \n2) phar phyin la skabs brgyad:  \n1) rnam mkhyen; 2) lam shes; 3) gzhi gshegs (gzhi shes); 4) rnam tshogs sbyor ba; 5) rtse mo'i sbyor ba; 6) mthar 'gyed pa; 7) skad cig ma'i sbyor ba; 8) 'bras bu chos sku bcas kyi 'grel pa ni paN chen bsod grags kyi phar phyin spyi mthun sogs lo drug nas bdun par gzigs dgos;  \n3) dbu ma/ snga pa chen pos mdzad pa'i <<dbu ma theg chen rgya mtshor 'jug pa'i gru gzings>> la lo bdun brgyad tsam gzigs dgos;  \n4) mdzod/ gnas brgyad kyi 'grel pa lnga pa chen po'i <<chos dngos rin chen 'dren pa'i shing rta>> gtso bor gzigs dgos shing// mchims 'jam dpal dbyangs kyi 'grel pa dang/ mchims mdzod bcas gzigs dgos par yun tshad med;  \n5) 'dul ba/  gzhi stod smad/ gzhi stod dge slong pha yi rnam 'byed/ gshi smad dge slong ma'i rnam 'byed kyi 'gel pa phal cher kun mkhyen 'jam bzhad kyi chos khrid gzigs rgyur yun tshad med pa bcas so/  \n\nlo gcig la chos grwa brgyad 'tshogs rgyu yod pa ste/ nyi shu chos grwa gnyis/ bco lnga chos grwa gnyis/ zla chos bzhi bcas yin/ nyin rer 'tshogs thengs gsum gsumyin/ rnam kun chos rar mkhan po mi phebs/ dgun chos dang bca' chen po mkhan po phebs dgos/ nyin rer mtshan nyid thengs re rtsod dgos/ zla re'i tshes lnga la du(dus) gtor tshogs dgos shing/ tshogs gzhung badzra gu ru gsung srol yod/;  \nlnga pa chen pos mdzad pa'i <<du kU la'i gos bzang>> ka par bkod par 'bras spungs bde yangs grwa tshang la tshad ma'i 'chad nyan ra ba stod pa'i lugs ltar btsugs pa'i slob dpon du rmi ru dka' bcu pa phun tshogs chos ldan bskos zhes pa 'di lcags stag (1650) lor yin 'dug;  \n6) 'chad nyan dang 'brel ba'i mkhas grub kyi skyes bu byung tshul/  grwa tshang 'di phyag 'debs pa po lcogs pa byang chub dpal ldan ni bka' gdams gong ma'i gdan sa chags smra seng zhes par sku 'khrungs/ \n\nspyan snga ba rin chen snying po'i drung du dge bsnyen gyi bslab pa rdzogs/ yer pa/ rwa sgreng\n\nspyan snga pa rin chen drung du sprel lo nyi shu rtsa lnga'i rta zla ba'i yar ngo bco lnga'i nyin bsnyen par rdzogs pa'i mtshan du rig pa'i rgyal po byang chub ces gsol/ dgung lo so bdun la bde yangs grwa tshang gi mkhan thog dang po mdzad/ bka' gdams chos 'byung gsal sgron las chos rje grwa chung yon rgyab pas bde yangs kyi grwa tshang bzang po ti mang du bshad/ phyis 'phan yul gsal khang du bzhugs/ chos mang du gsungs/ byang chub lam gyi rim pas rang dang gzhan la phan par mdzad de/ 'di ni sems dpa' chen por grangs so zhes gsal/"@en .
+    
+    bdr:NT94F912D6DC9627B7
+        a                   :Note ;
+        :noteText           "college (grwa tshang) of 'bras spungs monastery"@en .
+    
+    bdr:NTA8A31C87D2F5E198
+        a                   :Note ;
+        :contentLocationStatement  "p. 340" ;
+        :noteSource         bdr:MW2GS1123 ;
+        :noteText           "the bde yangs college of 'bras spungs monastery is no longer functioning; according to paN chen bsod nams grags pa's chos 'byung yid kyi mdzes rgyan the first master to teach at the college was lcog pa byang dpal; he was folloed by drung chos dpal ba; the third teacher was ston grags (or snyan grags) whose fame spread throughout dbus and gtsang; the successive teachers of the college were: 1) lcog pa byang chub dpal ldan; 2) rin chen bzang po; 3) chos dpal; 4) yon tan rgya mtsho; 5) mtshe ma dbang rgyal; 6) brtson 'grus; 7) bla ma blo seng; 8) nam mkha'; 9) bkra shis rgya mtsho; 10) rin dar; 11) rgyal mtshan; 12) rin chen rnam rgyal; 13) grags pa; 14) dpal bzang don grub; 15) bkra shis dpal 'byor; 16) chos dpal; 17) mchog lha 'od zer; 18) legs pa bzang; 19) lha dbang dpal 'byor; 20) chos kyi grags pa; 21) bsam gtan mchog; 22) dpal 'byor rgya mtsho; 23) blo bzang bstan 'phel; 24) sangs rgyas rgya mtsho; 25) blo gros rgya mtsho; 26) dkon mchog chos 'phel; 27) blo bzang bstan 'dzin; 28) blo gros rgyal mtshan; 29) dam chos rnam rgyal; 30) 'od srung; 31) yon tan rgya mtsho; 32) phun tshogs rgya mtsho; 33) lho sgo rab 'byams; 34) dbus bsam rab 'byams; 35) gser khang bka' bcu; 36) lho sgo rab 'byams gnyis pa; 37) shar rtse rab 'byams; 38) shes rab rgya mtsho; 39) byams bzang blo gros; 40) rin chen bkra shis; 41) blo bzang bstan 'dzin; 42) bsod nams tshe ring; 43) phun tshogs chos ldan; 44) dngos grub rgya mtsho; 45) lung rig rgya mtsho; 46) ngag dbang bstan 'dzin; 47) blo bzang yon tan; 48) ngag dbang stobs ldan; 49) blo bzang zla ba; 50) shAkya yar 'phel; 51) dge 'dun bstan pa; 52) bstan 'dzin chos 'phel; 53) skal bzang blo gros; 54) dge 'dun bstan pa; 55) 'byung gnas grags pa; 56) 'jam dbyangs don grub; 57) don grub chos 'phel; 58) bskal bzang blo gros; 59) shAkya yar 'phel; 60) shAkya rgyal mtshan; 61) ngag dbang rab brtan; 62) ngag dbang 'phrin las; 63) bstan pa rgya mtsho; 64) 'byung gnas grags pa; 46=65) dge 'dun bstan pa; 66) grags pa blo bzang; 67) skal bzang blo gros rgyal mtshan; 68) skal bzang chos 'phel; 69) dar rgyas chos 'phel; 70) dge 'dun chos 'phel; 71) blo gros legs tshogs; 72) ngag dbang bshes gnyen; 73) chos 'phel legs tshogs; 74) dar rgyas rin chen; 75) dge 'dun mthar phyin; 76) bshes gnyen rgya mtsho; 77) rgyal mtshan rgya mtsho; 78) chos 'phel rgya mtsho; 79) rin chen mtha' yas; 80) rnam rgyal zla ba; 81) byams pa dar rgyas; 82) bshes gnyen brtson 'grus; rin chen rgyal mtshan bcas bar yongs 'dzin thub bstan lung rtogs rnam rgyal 'phrin las kyis mdzad pa'i mkhan rgyud gsol 'debs mu tig phreng mdzes su gsal/; grwa tshang 'dir chos phyogs nas mkhan po dang srid phyogs nas phyag sbug bzhis 'gan 'dzin gnang gi yod/ mkhan po ni gzhung bskos dang las thog lo drug gi yun tshad yin/ dbu chos mkhan po 'ang dus yun lo drug yin/ phyag sbug bzhi'ang lo drug re dang/ las sne gnyis yod pa'ang de ltar yin/ dge bskos ki dus yun zla drug yin/ dge bskos tshang ma dbus pa sha rtags kyis gnang srol yod/ grwa tshang 'dir khang tshan mi tshan gang yang med/ 'on kyang grwa tshang gzhan gyi khang tshan nang du sgrig zhugs gnang chog/ spyi lo 1959 lo'i gong grwa grangs drug brgya lhag tsam yod cing/ grwa tshang 'dir sprul che khang bzhi yod pa ste/ tshogs chen sprul sku bstan pa'i sgron me dang/ grwa tshang sprul sku dge 'dun bzang po/ byams pa/ bar nag sprul sku sogs yod/ grwa tshang 'di'i khung kyi dgon khang ni stod la steng skyes bkra shis chos 'phel/ 'phan po sha rwa dgon (btsun ma) klung shod 'ba' tshags dgon bcas gsum mo/ lo re'i lha sa'i smon lam chen mo dang/ tshogs mchod skabs tshogs gzhung du gsol ja dang bzhes thug zhu mkhan/ o lo zhes khyim pa mi grangs sum brgya skor zhig yod pa/ de dag gi rgyab rdzi ja 'ded pa zhes pa bde yangs grwa tshang khongs nas grwa pa mi grangs bcu dang 'go 'dzin spyi mi zhes pa gcig yod pa na/ lha sa'i gtsug lag khang gi lho ngos gsung chos ra ba'i shar du yod pa'i zangs rgyan khang zhes par gzhis babs te de snga'i bod sa gnas srid gzhung gi bla brang phyag mdzod las khungs nas ja thug zhu snod dngul rkyan nyis brgya skor dang/ zangs rkyan sum brgya skor yod pa rtsis len gyis o lo so so rtsis sprod thog tshogs su ja thug zhu skabs sa bgos rgyab pa ltar lta rtogs byed dgos so/"@en .
+}

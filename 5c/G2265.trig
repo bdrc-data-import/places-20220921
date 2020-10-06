@@ -1,0 +1,105 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2265 {
+    bda:G2265  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2265 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "5c/G2265.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2265 ;
+        adm:logEntry        bda:LG0E9CBEE3399A76C9 , bda:LG6C3D261A13A8DBFF , bda:LG9A11E9FD73C6D187 , bda:LGE831416BFD13C1B6 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522204:67" ;
+        adm:place_id_lex    "542522204:67" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0E9CBEE3399A76C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-29T10:25:10.381Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G2LS594(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6C3D261A13A8DBFF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T12:36:56.293Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A11E9FD73C6D187
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-22T10:05:35.701Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE831416BFD13C1B6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV15EE0EB86E139B3C
+        a                   :PlaceFounded ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV856E0EC401C5BB37
+        a                   :PlaceConverted ;
+        :note               bdr:NT9541ABBB719B26B7 .
+    
+    bdr:G2265  a            :Place ;
+        skos:altLabel       "mdun chu dgon/"@bo-x-ewts , "dunju si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdo chu dgon/"@bo-x-ewts , "顿久寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID64C8EF9402E6A569 ;
+        :isRoot             true ;
+        :note               bdr:NT9A88DD924757E223 , bdr:NTBCFB9B94FDEC2067 ;
+        :placeEvent         bdr:EV15EE0EB86E139B3C , bdr:EV856E0EC401C5BB37 ;
+        :placeGonpaPerEcumen  "0.71" ;
+        :placeLat           "30.98000" ;
+        :placeLocatedIn     bdr:G2153 ;
+        :placeLong          "80.94000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID64C8EF9402E6A569
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2265" .
+    
+    bdr:NT9541ABBB719B26B7
+        a                   :Note ;
+        :noteText           "SAME"@en .
+    
+    bdr:NT9A88DD924757E223
+        a                   :Note ;
+        :contentLocationStatement  "p. 10" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "dge lugs pa monastery in sgar rdzong, mnga' ris prefecture\nno exact loction given\n\"da yod grwa pa drug dang dkon gnyer gcig/ slad grwa tshad drug yin\""@en .
+    
+    bdr:NTBCFB9B94FDEC2067
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 105" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Located 30 km from the east of montser. Originally Drukpa kagyud tradition. In 13th century, ogenpa rinchen pal, disciple of Gotsangpa practised meditation for long period after returning back from Odiyana and Jalandhara. In 17th century, gomchen chonyid zangpo of jangter tradition practised meditation for many years at this site and for sometime practised Nyingma at this monastery. Lastly, became the branch of Tholing monastery, a gelugpa tradition.\n\n---note moved from G2LS594(dup.)"@en .
+}

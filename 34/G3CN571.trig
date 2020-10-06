@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN571 {
+    bda:G3CN571  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN571 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "34/G3CN571.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN571 ;
+        adm:logEntry        bda:LG347D8A5A8A83A629 , bda:LG3C35A002ECC8485F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG347D8A5A8A83A629
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-07T09:54:30.401Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3C35A002ECC8485F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-07T15:41:45.465Z"^^xsd:dateTime ;
+        adm:logMessage      "added events & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV650C6892D52392F0
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0710"^^xsd:gYear .
+    
+    bdr:EVF81157F6563A33D6
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0708"^^xsd:gYear .
+    
+    bdr:G3CN571  a          :Place ;
+        skos:altLabel       "mkhris pha tang /"@bo-x-ewts ;
+        skos:prefLabel      "mkhris pa thang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA8024C21025972B2 , bdr:NTE32032C1F505703D ;
+        :placeEvent         bdr:EV650C6892D52392F0 , bdr:EVF81157F6563A33D6 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NTA8024C21025972B2
+        a                   :Note ;
+        :contentLocationStatement  "p. 374" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"ཁྱི་ལོ་ ༧༡༠ ལ་བབ་སྟེ། བཙན་པོ་བལ་པོ་ན་བཞུགས། ཕྱི་དྲོན་ན་བཞུགས། མཁྲིས་ཕ་ཏང་(པ་ཐང་)དུ་འདུན་མ་འདུས་ཏེ། བཙན་མོ་ཁོང་ཅོ་གཤེགས་པའི་ཡོ་བྱད་བཀྲལ།\"ཞེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་ཁྲི་ལྡེ་གཙུག་བཙན་སྐུ་ན་ཕྲ་བའི་སྐབས་ཕྱི་ཁྲི་མ་ལོད་ཀྱིས་རྒྱབ་སྐྱོར་བྱས་པའི་འདུན་མ་ཆེན་པོ་བྱེད་ས་ཞིག་ཡིན་པ་ཤེས།"@bo .
+    
+    bdr:NTE32032C1F505703D
+        a                   :Note ;
+        :contentLocationStatement  "p. 374" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"སྤྲེའུ་ལོ ༧༠༨ ལ་བབ་སྟེ། བཙན་པོ་དབྱརད་བལ་པོ་ཤ་རུ་མཁར་ན་བཞུགས། ཕྱི་ཕོ་བྲང་དྲོན་ན་བཞུགས་ཤིང་། དབྱར་འདུན་མཁྲིས་ཕ་ཏང་(པ་ཐང་)དུ་བློན་ཆེན་པོ་ཁྲི་གཟིགས་ཀྱིས་བསྡུས་ཏེ། སྐུ་སྲུང་གི་ཁྲམ་དམར་པོ་བརྩིས།\"ཞེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་ཁྲི་ལྡེ་གཙུག་བཙན་སྐུ་ན་ཕྲ་བའི་སྐབས་ཕྱི་ཁྲི་མ་ལོད་ཀྱིས་རྒྱབ་སྐྱོར་བྱས་པའི་འདུན་མ་ཆེན་པོ་བྱེད་ས་ཞིག་ཡིན་པ་ཤེས།"@bo .
+}

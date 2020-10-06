@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G906 {
+    bda:G906  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G906 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "2d/G906.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G906 ;
+        adm:logEntry        bda:LG077F23F0172A8751 , bda:LG1E485BAB7D875E05 , bda:LG21F79409366373B9 , bda:LG3D167722D2BBFB34 , bda:LG4AD220365D2E5A9F , bda:LG6C3338CFCF158CB8 , bda:LG72992C3482B59F41 , bda:LG7E6435843B933A45 , bda:LGFA1C7CA68A47F594 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG077F23F0172A8751
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:40:27.8Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from village to grongTsho"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG1E485BAB7D875E05
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-05T15:12:25.726Z"^^xsd:dateTime ;
+        adm:logMessage      "G2358 tshab brje sbyas"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG21F79409366373B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-07T17:00:21.773Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed & added type, contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3D167722D2BBFB34
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-28T15:30:53.876Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4AD220365D2E5A9F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6C3338CFCF158CB8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-04T12:25:03.108Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG72992C3482B59F41
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-06T10:00:58.995Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7E6435843B933A45
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-06T09:58:41.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFA1C7CA68A47F594
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-18T12:44:44.429Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G906  a             :Place ;
+        skos:altLabel       "khams stod/"@bo-x-ewts ;
+        skos:prefLabel      "stod khams/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeContains      bdr:G1207 , bdr:G1GS44716 , bdr:G4144 , bdr:G4156 , bdr:G869 ;
+        :placeLocatedIn     bdr:G1325 , bdr:G1326 ;
+        :placeType          bdr:PT0079 .
+}

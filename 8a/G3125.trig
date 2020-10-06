@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3125 {
+    bda:G3125  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3125 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "8a/G3125.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3125 ;
+        adm:logEntry        bda:LG28DEA06CC95E9C93 , bda:LG3FA0F88CF163DB70 , bda:LGD18C010CFE8A81F7 , bda:LGD41FAB801D0B0D6F , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542324101:542324106" ;
+        adm:place_id_lex    "542324101:542324106" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG28DEA06CC95E9C93
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3FA0F88CF163DB70
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-18T10:16:33.357Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD18C010CFE8A81F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-21T15:00:12.123Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location and note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD41FAB801D0B0D6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-09T11:15:25.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8AA37FFE8E2EDEAB
+        a                   :PlaceFounded ;
+        :onYear             "1097"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionZhije .
+    
+    bdr:G3125  a            :Place ;
+        skos:altLabel       "ding ri glang skor/"@bo-x-ewts , "glang 'khor dgon/"@bo-x-ewts , "定日朗果寺"@zh-hans , "dingri langguo si"@zh-latn-pinyin-x-ndia , "langguo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ding ri glang 'khor dgon/"@bo-x-ewts , "Dingri Langkhor"@en-x-mixed , "朗果寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1ED3A9EE6C29000E ;
+        :isRoot             true ;
+        :note               bdr:NT0C6B984C0CE01CA9 , bdr:NT37C1753486E335F5 , bdr:NTCD18D8DC699B0830 ;
+        :placeEvent         bdr:EV8AA37FFE8E2EDEAB ;
+        :placeGonpaPerEcumen  "0.65" ;
+        :placeLat           "28.51667" ;
+        :placeLocatedIn     bdr:G2165 , bdr:G954 ;
+        :placeLong          "86.48333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID1ED3A9EE6C29000E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3125" .
+    
+    bdr:NT0C6B984C0CE01CA9
+        a                   :Note ;
+        :noteText           "settled place in the ding ri area of southwestern tibet"@en .
+    
+    bdr:NT37C1753486E335F5
+        a                   :Note ;
+        :contentLocationStatement  "v. 18, pp. 515-518" ;
+        :noteSource         bdr:MW21807 ;
+        :noteText           "ཕ་དམ་པ་སངས་རྒྱས་ཀྱི་བརྒྱུད་པ་ཕྱི་མ་ཐུགས་སྲས་ཀུན་དགའི་གདན་སའོ།"@bo .
+    
+    bdr:NTCD18D8DC699B0830
+        a                   :Note ;
+        :noteText           "date from Dorje"@en .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2582 {
+    bda:G2582  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2582 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "68/G2582.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2582 ;
+        adm:logEntry        bda:LG4BACBE9BA77E580C , bda:LGBDBC391E71512143 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632721202:30" ;
+        adm:place_id_lex    "632721202:30" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4BACBE9BA77E580C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBDBC391E71512143
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-06T11:06:06.693Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV57F435AE357DD984
+        a                   :PlaceFounded ;
+        :onYear             "1424"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionZurmangKagyu .
+    
+    bdr:G2582  a            :Place ;
+        skos:altLabel       "phun tshogs dar rgyas nges don gzhan ston chos 'khor gling /"@bo-x-ewts , "rdo dgon phun tshogs dar rgyas nges don gzhan ston chos 'khor gling /"@bo-x-ewts , "duogong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdo dgon/"@bo-x-ewts , "多贡寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA1F9AEE230E85F3A ;
+        :isRoot             true ;
+        :note               bdr:NT4661485E0806D008 ;
+        :placeEvent         bdr:EV57F435AE357DD984 ;
+        :placeGonpaPerEcumen  "3.18" ;
+        :placeLat           "32.38239" ;
+        :placeLocatedIn     bdr:G2326 ;
+        :placeLong          "97.03628" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA1F9AEE230E85F3A
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2582" .
+    
+    bdr:NT4661485E0806D008
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 46" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "zur mang bka' brgyud pa monastery in yus hru'u prefecture, qinghai province"@en .
+}

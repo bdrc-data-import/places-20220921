@@ -1,0 +1,122 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2051 {
+    bda:G2051  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2051 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "ef/G2051.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2051 ;
+        adm:logEntry        bda:LG414423D7CC56E624 , bda:LG4F3F4758CABA5E5D , bda:LG5BCE5A1360B6A6B7 , bda:LG696E09624B29C5E6 , bda:LGB19CDD2117A6C26C , bda:LGEC46BD8A4591CE21 , bda:LGF9BD80D1E2A7706A , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540127100:540127113" ;
+        adm:place_id_lex    "540127100:540127113" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG414423D7CC56E624
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-25T16:15:56.104Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4F3F4758CABA5E5D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-01T15:56:57.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5BCE5A1360B6A6B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T16:46:13.259Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & linked with p#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG696E09624B29C5E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-18T10:09:51.762Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB19CDD2117A6C26C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEC46BD8A4591CE21
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T16:59:15.196Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF9BD80D1E2A7706A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-26T15:46:26.524Z"^^xsd:dateTime ;
+        adm:logMessage      "added near"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV54C0770999471330
+        a                   :PlaceFounded ;
+        :onYear             "0650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:EVDD317F4F97C1F734
+        a                   :PlaceConverted ;
+        :notAfter           "1599"^^xsd:gYear ;
+        :notBefore          "1500"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionDrigungKagyu .
+    
+    bdr:G2051  a            :Place ;
+        skos:altLabel       "dbu ru ka tshal dgon/"@bo-x-ewts , "dbu ru ka tshal mi 'gyur lha khang /"@bo-x-ewts , "ka tshal mi 'gyur lha khang /"@bo-x-ewts , "gacai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dbu ru ka tshal lha khang /"@bo-x-ewts , "Katsel Gonpa"@en-x-mixed , "噶才寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID43C707100D2BA481 ;
+        :isRoot             true ;
+        :note               bdr:NT19838D101F9DC165 , bdr:NTE255F6A0FB3C838F ;
+        :placeEvent         bdr:EV54C0770999471330 , bdr:EVDD317F4F97C1F734 ;
+        :placeGonpaPerEcumen  "13.47" ;
+        :placeIsNear        bdr:G3CN412 ;
+        :placeLat           "29.86472" ;
+        :placeLocatedIn     bdr:G2011 , bdr:G2014 , bdr:G2031 , bdr:G3430 , bdr:G3CN365 ;
+        :placeLong          "91.75600" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID43C707100D2BA481
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2051" .
+    
+    bdr:NT19838D101F9DC165
+        a                   :Note ;
+        :contentLocationStatement  "p. 40, 54" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "bka' brgyud pa monastery in bya ra mdo shang in mal gro gung dkar rdzong\nfounded by srong btsan sgam po\n\np. 54\nsays that this monastery was founded in the 7th century by srong btsan sgam po\nturned into a 'bri gung bka' brgyud pa monastery in the 14th (?16th) cent. by 'bri gung ba ma rin po che phun tshogs"@en .
+    
+    bdr:NTE255F6A0FB3C838F
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 219-220" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོས་བཞེངས་པའི་རུ་གནོན་གྱི་གཙུག་ལག་ཁང་ངམ་མཐའ་འདུལ་གྱི་གཙུག་ལག་ཁང་བཞི་ཡི་གྲས་ཡིན་ལ། དུས་ཕྱིས་ཕྱི་ལོ་༡༥༥༣ལོར་འབྲི་གུང་ཆོས་རྗེ་རིན་ཆེན་ཕུན་ཚོགས་ཀྱི་བཀའ་གདམ་ཀྱི་དགོན་ཤུལ་དང་ཀ་ཚལ་ལྷ་ཁང་སྦྲེལ་ཏེ་ཀ་ཚལ་སྒྲུབ་སྡེ་བཏབ་ཅིང་། དེ་རྗེས་འབྲི་གུང་བཀའ་བརྒྱུད་པས་བདག་རྐྱེན་གནང་བའི་དགོན་གནས་སུ་གྱུར་ཡོད།"@bo .
+}

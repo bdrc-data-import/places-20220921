@@ -1,0 +1,114 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G157 {
+    bda:G157  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G157 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "7d/G157.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G157 ;
+        adm:logEntry        bda:LG2C2AF2123BC4BB1A , bda:LG4A2DD56036252B13 , bda:LG9ED051982BE27337 , bda:LGC5004B0821D1E2FB , bda:LGD3FC0AEA1A92FFB8 , bda:LGFC32A77B07033993 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540102004:540101146" ;
+        adm:place_id_lex    "540102004:540101146" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C2AF2123BC4BB1A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:36:13.53Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4A2DD56036252B13
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-14T14:08:08.789Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized nams"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9ED051982BE27337
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-27T12:40:48.573Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGC5004B0821D1E2FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-27T12:38:57.115Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGD3FC0AEA1A92FFB8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFC32A77B07033993
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-06T16:26:42.482Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVAE4CD78E7D965BDB
+        a                   :PlaceFounded ;
+        :onYear             "1750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVB287714FEABEBF93
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P105 .
+    
+    bdr:G157  a             :Place ;
+        skos:altLabel       "grib tshe mchog bsam gtan gling /"@bo-x-ewts , "tshe mchog gling (grong khyer lha sa)"@bo-x-ewts , "tshe mchog gling dgon pa/"@bo-x-ewts , "Tsemchokling"@bo-x-phon-en , "治策却林"@zh-hans , "蔡却林"@zh-hans , "caiquelin"@zh-latn-pinyin-x-ndia , "cejuelin si"@zh-latn-pinyin-x-ndia , "zhi cequelin"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "grib tshe mchog gling dgon pa/"@bo-x-ewts , "Drib Tsechokling Gonpa"@en , "策觉林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7B39B99E87663A1E ;
+        :isRoot             true ;
+        :note               bdr:NT67CEB76F11FA4939 , bdr:NT9C91A7C8FF9E12C1 , bdr:NTDEFF3B52F5FBF2E0 ;
+        :placeContains      bdr:G2CN10867 ;
+        :placeEvent         bdr:EVAE4CD78E7D965BDB , bdr:EVB287714FEABEBF93 ;
+        :placeGonpaPerEcumen  "448.77" ;
+        :placeLat           "29.61480" ;
+        :placeLocatedIn     bdr:G1325 ;
+        :placeLong          "91.14006" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID7B39B99E87663A1E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G157" .
+    
+    bdr:NT67CEB76F11FA4939
+        a                   :Note ;
+        :noteText           "gelug monastery in the vicinity of lhasa, the seat of the tshe mchog gling incarnations"@en .
+    
+    bdr:NT9C91A7C8FF9E12C1
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 80-81" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTDEFF3B52F5FBF2E0
+        a                   :Note ;
+        :noteText           "founded by tshe mchog yongs 'dzin  pye shes rgyal mtshan"@en .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3JT12545 {
+    bda:G3JT12545  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3JT12545 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "88/G3JT12545.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3JT12545 ;
+        adm:logEntry        bda:LG1900FE52722A07A1 , bda:LG32962F979F84F87F , bda:LG7830326DB3297405 , bda:LG8FF78F8FEE520A01 , bda:LGAAE2CDF762FF37B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1900FE52722A07A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-23T12:49:19.544Z"^^xsd:dateTime ;
+        adm:logMessage      "changed name & location & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG32962F979F84F87F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-02-22T14:45:08.225Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG7830326DB3297405
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T11:34:26.683Z"^^xsd:dateTime ;
+        adm:logMessage      "added place contained"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG8FF78F8FEE520A01
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-02T15:06:00.738Z"^^xsd:dateTime ;
+        adm:logMessage      "added par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGAAE2CDF762FF37B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T12:15:20.135Z"^^xsd:dateTime ;
+        adm:logMessage      "par khang gi mchan bu med pa bzo yod"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:G3JT12545  a        :Place ;
+        skos:prefLabel      "a go dgon gyi par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2FDDFCA6C82F5DD9 ;
+        :placeLocatedIn     bdr:G2CN11046 , bdr:G584 ;
+        :placeType          bdr:PT0059 .
+    
+    bdr:NT2FDDFCA6C82F5DD9
+        a                   :Note ;
+        :contentLocationStatement  "p. 1 & 589" ;
+        :noteSource         bdr:MW2CZ7915 ;
+        :noteText           "པར་ཁང་འདི་ནི་ཧོར་ཡུལ་གྱི་ཨ་གོ་དགོན་ན་ཡོད་པར་གསལ་ཏེ། པོ་ཏི་འདིའི་ཁ་ཤོག་ནང་མའི་དབྱིན་ཡིག་གི་གསལ་བཤད་ནང་། \"reproduced from prints from the Mongolian A-go Dgon blocks\"ཞེས་གསལ་བ་དང་། ཡང་པོ་ཏི་འདིའི་མཇུག་བྱང་ནང་\"ཨ་གོའི་དགོན་པར་དཔར་དུ་བསྒྲུབས་པ་དགེ\"ཞེས་པ་ལས་ཀྱང་ཤེས་སོ།"@en .
+}

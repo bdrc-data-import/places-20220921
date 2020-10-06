@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2275 {
+    bda:G2275  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2275 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "fe/G2275.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2275 ;
+        adm:logEntry        bda:LG650B3FE1A922BC48 , bda:LG77BF44CB79933D53 , bda:LG99711393802D847F , bda:LGF255F5F843A42DDC , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542526200:80" ;
+        adm:place_id_lex    "542526200:80" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG650B3FE1A922BC48
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T13:01:21.98Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG77BF44CB79933D53
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG99711393802D847F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-21T16:32:26.751Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF255F5F843A42DDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T11:01:35.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV6966F5268F59A7BD
+        a                   :PlaceFounded ;
+        :note               bdr:NT4C8059528E97DE0D ;
+        :onYear             "1350"^^xsd:gYear .
+    
+    bdr:EV7D435A48DC6081C6
+        a                   :PlaceConverted ;
+        :note               bdr:NT9755E508121A5EA4 .
+    
+    bdr:G2275  a            :Place ;
+        skos:altLabel       "byang mar smig rgod phug sgrub sde/"@bo-x-ewts , "byang rgod phug gsang sngags nges gling sgrub sde/"@bo-x-ewts , "gsang sngags nges gsang gling /"@bo-x-ewts , "mar mig dgon/"@bo-x-ewts , "mar smig rgod phug mthong ba rang grol dgon/"@bo-x-ewts , "rgod phug gsang sngags nges gling /"@bo-x-ewts , "ru bse ma mig dgon/"@bo-x-ewts , "mami si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ma mig dgon/"@bo-x-ewts , "麻米寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD8374DDA2C551514 ;
+        :isRoot             true ;
+        :note               bdr:NT47985A113E5C2CB1 , bdr:NTF9BFF0AFBEB83270 ;
+        :placeEvent         bdr:EV6966F5268F59A7BD , bdr:EV7D435A48DC6081C6 ;
+        :placeGonpaPerEcumen  "0.19" ;
+        :placeLat           "32.04000" ;
+        :placeLocatedIn     bdr:G2157 , bdr:G2285 ;
+        :placeLong          "83.72000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD8374DDA2C551514
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2275" .
+    
+    bdr:NT47985A113E5C2CB1
+        a                   :Note ;
+        :contentLocationStatement  "p. 12" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "rnying ma pa monastery located in ma mig chus of sger rtse rdzong, mnga' ris prefecture\nfounded by skyabs mgon gang shar rang grol\n\"da yod bla grwa bcu drug/ slad grwa tshad nyi shu'o\""@en .
+    
+    bdr:NT4C8059528E97DE0D
+        a                   :Note ;
+        :noteText           "rnynig ma"@en .
+    
+    bdr:NT9755E508121A5EA4
+        a                   :Note ;
+        :noteText           "SAME"@en .
+    
+    bdr:NTF9BFF0AFBEB83270
+        a                   :Note ;
+        :contentLocationStatement  "p. 414" ;
+        :noteSource         bdr:MW1GS56008 ;
+        :noteText           "དགོན་པ་འདིར་མིང་སྣ་ཚོགས་ཡོད་པ་སོགས་ལོ་རྒྱུས་གསལ།"@bo .
+}

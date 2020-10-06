@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G189 {
+    bda:G189  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G189 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5a/G189.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G189 ;
+        adm:logEntry        bda:LG066A25F304950BEF , bda:LGDE5E2657AAEAF57D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG066A25F304950BEF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDE5E2657AAEAF57D
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T16:08:32.035Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G189  a             :Place ;
+        skos:prefLabel      "rta log gsang sngags chos gling /"@bo-x-ewts , "Talok Sang-ngak Choling"@en ;
+        :isRoot             true ;
+        :note               bdr:NT102C01CA450DF416 ;
+        :placeLocatedIn     bdr:G3205 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT102C01CA450DF416
+        a                   :Note ;
+        :noteText           "important seat of the 'brug pa dkar brgyud pa tradition located in bhutan\nthis was the major seat of the zhabs drung thugs sprul"@en .
+}

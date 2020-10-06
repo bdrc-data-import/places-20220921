@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3290 {
+    bda:G3290  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3290 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d4/G3290.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3290 ;
+        adm:logEntry        bda:LG248C1E544258CD68 , bda:LGE12503E786E7EEE4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG248C1E544258CD68
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE12503E786E7EEE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-26T09:28:34.118Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3290  a            :Place ;
+        skos:prefLabel      "gzhu smad shang (snye mo rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1C645E8C3AE97BD4 , bdr:NTA99D8C57C5D755AD ;
+        :placeContains      bdr:G3295 , bdr:G4414 , bdr:G4415 , bdr:G4416 , bdr:G4417 , bdr:G4418 , bdr:G4419 , bdr:G4420 , bdr:G4421 , bdr:G4422 , bdr:G4424 , bdr:G4425 ;
+        :placeGB2260-2013   "540123204" ;
+        :placeLocatedIn     bdr:G2129 , bdr:G4423 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT1C645E8C3AE97BD4
+        a                   :Note ;
+        :contentLocationStatement  "p. 44" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "shang located in snye mo rdzong"@en .
+    
+    bdr:NTA99D8C57C5D755AD
+        a                   :Note ;
+        :contentLocationStatement  "p. 51" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "township seat in snye mo rdzong"@en .
+}

@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4929 {
+    bda:G4929  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4929 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f4/G4929.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4929 ;
+        adm:logEntry        bda:LG20718B957D87A331 , bda:LG3DF4B89976F47AE0 , bda:LG4BEE4CBCF9217188 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG20718B957D87A331
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG3DF4B89976F47AE0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4BEE4CBCF9217188
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-27T11:13:10.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G4929  a            :Place ;
+        skos:prefLabel      "chos sgar gong ma dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT89D66A8ED9C84595 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT89D66A8ED9C84595
+        a                   :Note ;
+        :noteText           "jo nang monastery"@en .
+}

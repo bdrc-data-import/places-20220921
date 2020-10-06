@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4796 {
+    bda:G4796  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4796 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "25/G4796.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4796 ;
+        adm:logEntry        bda:LG06A841A858EF469C , bda:LG5CA811A055AEA953 , bda:LGB509A05A247D9034 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG06A841A858EF469C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-06T12:10:30.633Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5CA811A055AEA953
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T14:35:04.603Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB509A05A247D9034
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4796  a            :Place ;
+        skos:altLabel       "spa gro kun bzang gling /"@bo-x-ewts ;
+        skos:prefLabel      "kun bzang gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE114380B362B04CE ;
+        :placeLocatedIn     bdr:G836 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTE114380B362B04CE
+        a                   :Note ;
+        :contentLocationStatement  "f. 150v" ;
+        :noteSource         bdr:MW19708 ;
+        :noteText           "name of a temple in the spa gro valley in bhutan"@en .
+}

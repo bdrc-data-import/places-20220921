@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1GS140238 {
+    bda:G1GS140238  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1GS140238 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2e/G1GS140238.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1GS140238 ;
+        adm:logEntry        bda:LG90F745CEE4EC1BF3 , bda:LGFFFAC78E6FF3E530 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG90F745CEE4EC1BF3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-02-07T17:05:19.963Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFFFAC78E6FF3E530
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-16T14:31:32.433Z"^^xsd:dateTime ;
+        adm:logMessage      "added type again"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1GS140238  a       :Place ;
+        skos:prefLabel      "sbas yul chen po bdun/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT717A6438647DE57B ;
+        :placeType          bdr:PT0022 .
+    
+    bdr:NT717A6438647DE57B
+        a                   :Note ;
+        :noteText           "the seven hidden lands according to the byang gter tradition"@en .
+}

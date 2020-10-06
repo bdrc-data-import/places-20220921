@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN481 {
+    bda:G3CN481  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN481 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "44/G3CN481.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN481 ;
+        adm:logEntry        bda:LG594C466B62F23760 , bda:LGB1DB770E9D3C8E4F , bda:LGD3D29C79620468D9 , bda:LGE092C164CB768CEF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG594C466B62F23760
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-31T10:38:11.279Z"^^xsd:dateTime ;
+        adm:logMessage      "edited name, added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB1DB770E9D3C8E4F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-17T15:40:32.154Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD3D29C79620468D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T12:01:44.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE092C164CB768CEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-31T10:39:44.846Z"^^xsd:dateTime ;
+        adm:logMessage      "edited location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV85FF0118DACE0467
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0665"^^xsd:gYear .
+    
+    bdr:G3CN481  a          :Place ;
+        skos:altLabel       "zrid kyi ldu nag"@bo-x-ewts ;
+        skos:prefLabel      "zid kyi ldu nag"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3046EDB4428A2335 ;
+        :placeEvent         bdr:EV85FF0118DACE0467 ;
+        :placeLocatedIn     bdr:G3CN540 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NT3046EDB4428A2335
+        a                   :Note ;
+        :contentLocationStatement  "p. 263" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"གླང་གི་ལོ་༦༦༥ལ། བཙན་པོ་ཟིད་ཀྱི་ལྡུ་ནག་སླད་མ་ན་བཞུགས་ཤིང་།\" ཞེས་གསལ།"@bo .
+}

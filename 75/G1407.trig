@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1407 {
+    bda:G1407  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1407 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "75/G1407.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1407 ;
+        adm:logEntry        bda:LG5F125F6D0906E50D , bda:LG8D0299EC76158176 , bda:LG9A8375663E9CC842 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5F125F6D0906E50D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8D0299EC76158176
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T16:19:59.802Z"^^xsd:dateTime ;
+        adm:logMessage      "new place type assigned"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9A8375663E9CC842
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-23T14:30:00.905Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1407  a            :Place ;
+        skos:prefLabel      "bla ri mgul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT994887182EB124A4 , bdr:NTDB47FFC738A51B89 ;
+        :placeLocatedIn     bdr:G986 ;
+        :placeType          bdr:PT0068 .
+    
+    bdr:NT994887182EB124A4
+        a                   :Note ;
+        :contentLocationStatement  "p. 494" ;
+        :noteSource         bdr:MW19255 ;
+        :noteText           "shis tshang chos 'khor tsho bcu gnyis kyi ya gyal bla ri mgul yin tshul gsal/"@bo-x-ewts .
+    
+    bdr:NTDB47FFC738A51B89
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, p. 471" ;
+        :noteSource         bdr:MW2CZ7959 ;
+        :noteText           "gna' snga mo 'a zha a tshe rgyal pos mkhar brtsigs yod tshul dang / bod kyi bla ri yod tshul sogs gsal/"@bo-x-ewts .
+}

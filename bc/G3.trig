@@ -1,0 +1,137 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3 {
+    bda:G3  a               adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3 ;
+        adm:facetIndex      18 ;
+        adm:gitPath         "bc/G3.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3 ;
+        adm:logEntry        bda:LG4642009359A756C6 , bda:LG61DFE05F43E3A987 , bda:LGAA870B7808078E2A , bda:LGD0F79F1DC5628CF9 , bda:LGD7912D0E0FCFFEEE , bda:LGFF622DC1F50CF5A4 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542322206:542322109" ;
+        adm:place_id_lex    "542322206:542322109" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4642009359A756C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-19T16:21:28.128Z"^^xsd:dateTime ;
+        adm:logMessage      "added pinyin & note,  arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG61DFE05F43E3A987
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-03T09:24:25.772Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAA870B7808078E2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T11:25:41.354Z"^^xsd:dateTime ;
+        adm:logMessage      "added dbus gtsang"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGD0F79F1DC5628CF9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD7912D0E0FCFFEEE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-02T10:31:58.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFF622DC1F50CF5A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T17:22:47.23Z"^^xsd:dateTime ;
+        adm:logMessage      "added Gis Coords & event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV61B5CD0FE12A095E
+        a                   :PlaceRebuilt ;
+        :onYear             "1834"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EV9DB246178E349582
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EVEEB3173738D1404E
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P278 ;
+        :notAfter           "1835"^^xsd:gYear ;
+        :notBefore          "1834"^^xsd:gYear .
+    
+    bdr:G3  a               :Place ;
+        skos:altLabel       "rab legs g.yung drung gling /"@bo-x-ewts , "ra lag g.yung drung gling /"@bo-x-ewts , "ru lag g.yung drung gling dgon/"@bo-x-ewts , "yun po ru lag g.yung drung gling dgon/"@bo-x-ewts , "热拉拥仲林寺"@zh-hans , "rela yongzhonglin si"@zh-latn-pinyin-x-ndia , "yongzhonglin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "g.yung drung gling dgon/"@bo-x-ewts , "Yungdrungling"@en-x-mixed , "雍仲林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0B40031570391990 ;
+        :isRoot             true ;
+        :note               bdr:NT56ADBC8A7C8E2A3F , bdr:NT678DB7F0550142B4 , bdr:NTC2F18C6A66088FA4 , bdr:NTD608F4AF3349D109 , bdr:NTE7CA0B4088B9A91A ;
+        :placeEvent         bdr:EV61B5CD0FE12A095E , bdr:EV9DB246178E349582 , bdr:EVEEB3173738D1404E ;
+        :placeGonpaPerEcumen  "10.69" ;
+        :placeLat           "29.360014" ;
+        :placeLocatedIn     bdr:G2171 , bdr:G3CN137 ;
+        :placeLong          "89.647113" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID0B40031570391990
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3" .
+    
+    bdr:NT56ADBC8A7C8E2A3F
+        a                   :Note ;
+        :contentLocationStatement  "p. 449" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "yun po ru lag g.yung drung gling ni 'u yug mda' na yod pa gsal/"@bo-x-ewts .
+    
+    bdr:NT678DB7F0550142B4
+        a                   :Note ;
+        :contentLocationStatement  "p. 298" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "p. 298:1835. gshen bstan sman ri'i srol 'dzin du/ g.yung drung gling gi dgon pa btab"@en .
+    
+    bdr:NTC2F18C6A66088FA4
+        a                   :Note ;
+        :contentLocationStatement  "p. 886" ;
+        :noteSource         bdr:MW19803 ;
+        :noteText           "monastery founded in 1835 by snang ston zla ba rgyal mtshan"@en .
+    
+    bdr:NTD608F4AF3349D109
+        a                   :Note ;
+        :contentLocationStatement  "p. 244-246" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "དུས་ཚོད་ཅུང་སྔ་བའི་བོན་དགོན་རྙིང་མ་ཞིག་ཡིན་པ་ལ། བར་དུ་ཉམས་གུད་སོང་བ་སྣང་སྟོན་ཟླ་བ་རྒྱལ་མཚན་(P278)གྱིས་༡༨༣༤ལོར་བསྐྱར་དུ་ཕྱག་བཏབ། གྲྭ་ཚང་བཞི་ཡོད་པ་ནི་གཡུང་དྲུང་གླིང་དང་། ཀུན་གསལ་གླིང་། ཀུན་ཁྱབ་གླིང་། ཀུན་གྲགས་གླིང་བཅས་དང་། ཁང་ཚན་བརྒྱད་ཡོད། གྲྭ་རྒྱུན་གཙང་དང་ནག་ཆུ་ཆབ་མདོ་རྒྱལ་རོང་སོགས་ནས་ཡིན། དགོན་འདིའི་བླ་མ་དང་སློབ་དཔོན་གྲོ་མོ་པད་མ་སྒང་དགོན་(G3539)སོགས་ལ་གདན་འདྲེན་ཞུ་སྲོལ་ཡོད། སྔར་གྲྭ་བཙུན་བཞི་བརྒྱ་ལྷག་ལས་ད་ལྟ་བཞི་བཅུ་ཙམ་ཡོད་པ་སོགས་གསལ། དེ་བཞིན་དགོན་དེར་བོན་གྱི་གསུང་རབ་མང་པོ་ཡོད་པའི་ནང་ཞང་ཞུང་དང་རྒྱ་ནག་ནས་བསྒྱུར་བའི་དཔེ་ཆ་ཤིན་ཏུ་མང་བར་ཡོད་སྐོར་གསལ།\nགནས་ཡུལ་གཡས་རུ་གཙང་གི་ཁོངས། རྣམ་གླིང་རྫོང་ཐོབ་རྒྱལ་ཤང་སྟག་གྲུ་ཁའི་བྱང་ངོས་རི་བོ་འོལ་ལ་རྒྱལ་བཟང་གི་མདུན་དུ་ཡོད།"@bo .
+    
+    bdr:NTE7CA0B4088B9A91A
+        a                   :Note ;
+        :contentLocationStatement  "p. 33" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "bonpo monastery in rnam gling county, tar; at the time of the survey had about 40 monk students.\nfounded in 1834 by snang ston zla ba rgyal mtshan on the banks of the yar lung gtsang po river\nrestored about 1982"@en .
+}

@@ -1,0 +1,147 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G165 {
+    bda:G165  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G165 ;
+        adm:facetIndex      20 ;
+        adm:gitPath         "49/G165.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G165 ;
+        adm:logEntry        bda:LG121D1D68F819D381 , bda:LG129D9E3F7D5EC754 , bda:LG30E6D17426815D6D , bda:LG3862D8D99419230E , bda:LG7DA3327BEDE64C9D , bda:LGA4EC43CE0A3FF853 , bda:LGC3E2A1DD5EB138E0 , bda:LGEE68FD2CECB99E77 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632126206:127" ;
+        adm:place_id_lex    "632126206:103" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG121D1D68F819D381
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T09:07:53.992Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG129D9E3F7D5EC754
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-16T10:04:39.618Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG30E6D17426815D6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-12T11:55:23.406Z"^^xsd:dateTime ;
+        adm:logMessage      "added dgon lung byams pa gling gi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG3862D8D99419230E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-07T10:05:13.787Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7DA3327BEDE64C9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-06T16:40:48.166Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGA4EC43CE0A3FF853
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:12.366Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGC3E2A1DD5EB138E0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEE68FD2CECB99E77
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-07T16:06:31.529Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2DA31B884F712237
+        a                   :PlaceFounded ;
+        :onYear             "1584"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV62D152EF55E9E6E1
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P5588 ;
+        :onYear             "1604"^^xsd:gYear .
+    
+    bdr:EVBF2640CD18A6E6BC
+        a                   :PlaceConverted ;
+        :onYear             "1604"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G165  a             :Place ;
+        skos:altLabel       "dgon lung byams pa gling /"@bo-x-ewts , "Gonlung Jampaling"@en-x-mixed , "youning si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dgon lung dgon pa/"@bo-x-ewts , "Gonlung Gonpa"@en-x-mixed , "佑宁寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4C7BB4D528C4B830 ;
+        :isRoot             true ;
+        :note               bdr:NT37E4CC4847038F92 , bdr:NT7697841319A31100 , bdr:NTD6D05CD19085EA0E , bdr:NTDA7A1A2432EBE597 , bdr:NTF5E6F48DE1DA390F ;
+        :placeContains      bdr:G3JT12592 ;
+        :placeEvent         bdr:EV2DA31B884F712237 , bdr:EV62D152EF55E9E6E1 , bdr:EVBF2640CD18A6E6BC ;
+        :placeGonpaPerEcumen  "47.28" ;
+        :placeLat           "36.73822" ;
+        :placeLocatedIn     bdr:G1PD96101 ;
+        :placeLong          "102.17750" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID4C7BB4D528C4B830
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G165" .
+    
+    bdr:NT37E4CC4847038F92
+        a                   :Note ;
+        :contentLocationStatement  "v. 1" ;
+        :noteSource         bdr:MW21509 ;
+        :noteText           "dge lugs pa monastery in a mdo\nregarded as one of the four great monasteries of the north: sku 'bum dgon pa, dgon lung byams pa gling, gser khog dgon, bya khyung dgon"@en .
+    
+    bdr:NT7697841319A31100
+        a                   :Note ;
+        :contentLocationStatement  "pp. 54-75" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "historical account of dgon lung"@en .
+    
+    bdr:NTD6D05CD19085EA0E
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 639" ;
+        :noteSource         bdr:MW22378 ;
+        :noteText           "founded in 1604 by rgyal sras don yod chos kyi rgya mtsho at the order of the 4th dalai lama \nconnection with dwags po grwa tshang bshad sgrub gling\nthe seat of the successive lcang skya, thu'u bkwan, and sum pa incarnations\nthis monastery has a number of separate bla brang:\nlcang skya bla brang\nthu'u bkwan bla brang bkra shis 'od 'bar\nsum pa bla brang\nbde rgu bla brang\nrdo ba bla brang\nkhyung tsha bla brang\nli kyA bla brang \nthere are several religious sites in the vicinity:\ndben gnas gsang sngags bde chen in the right valley\nsgrub sde byang chub gling (in the phu)\nlha khang thu'u bkwan thugs rje chen po (in the mda' of the valley)\nba 'od 'jig rten mgon po\nshwa bar nang so na rim gyi mchod gnas sha bar 'od dpag med\nchos bzang ri khrod\npra sti khran tshong ri khrod bsam gtan gling\nbra ma lung ri khrod\nrdzong zhi ri khrod\n'brug lung dga' ldan bshad sgrub gling\nri khrod bsam gtan rtse\ntshang skya sku 'bum"@en .
+    
+    bdr:NTDA7A1A2432EBE597
+        a                   :Note ;
+        :contentLocationStatement  "p. 2328" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1604. rgyal sras don yod chos kyi rgya mtsho dgon lung dgon pa btab"@en .
+    
+    bdr:NTF5E6F48DE1DA390F
+        a                   :Note ;
+        :contentLocationStatement  "p. 75" ;
+        :noteSource         bdr:MW1PD95675 .
+}

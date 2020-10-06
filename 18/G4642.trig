@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4642 {
+    bda:G4642  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4642 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "18/G4642.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4642 ;
+        adm:logEntry        bda:LG112C8EE4A562B24D , bda:LG397ACC714558066C , bda:LG4B4761D573888310 , bda:LG5E56808B53F8390E , bda:LG75F2A2A864A6E797 , bda:LG880113F354E430FE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG112C8EE4A562B24D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T15:16:29.472Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG397ACC714558066C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-24T10:40:26.006Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4B4761D573888310
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-19T11:15:10.769Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5E56808B53F8390E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-25T09:52:10.217Z"^^xsd:dateTime ;
+        adm:logMessage      "G1659 tshab brjes byas zin"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG75F2A2A864A6E797
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-24T10:43:51.578Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG880113F354E430FE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G4642  a            :Place ;
+        skos:altLabel       "tanggula shanmai"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gdang la ri rgyud/"@bo-x-ewts , "唐古拉山脉"@zh-hans ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G3189 , bdr:G3196 ;
+        :placeType          bdr:PT0044 .
+}

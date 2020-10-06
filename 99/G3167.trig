@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3167 {
+    bda:G3167  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3167 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "99/G3167.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3167 ;
+        adm:logEntry        bda:LG1E8359114BDC6DE1 , bda:LG3B8E8B9D7A22992C , bda:LG7CEACBFE667CB2C5 , bda:LG9878F678678F046C , bda:LGD57281C8BDF94A06 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1E8359114BDC6DE1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-10T14:09:52.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3B8E8B9D7A22992C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-19T13:00:46.197Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7CEACBFE667CB2C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-07T10:01:40.581Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9878F678678F046C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD57281C8BDF94A06
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-19T11:55:21.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, note & contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVBC92C2181F172624
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0799"^^xsd:gYear ;
+        :notBefore          "0700"^^xsd:gYear .
+    
+    bdr:G3167  a            :Place ;
+        skos:altLabel       "kho tAn/"@bo-x-ewts , "li/"@bo-x-ewts , "地乳"@zh-hans , "黎域"@zh-hans , "diru"@zh-latn-pinyin-x-ndia , "liyu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "li yul/"@bo-x-ewts , "李域"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT427979ED7493AFDD , bdr:NTCC58027A820726E5 ;
+        :placeContains      bdr:G3CN30 ;
+        :placeEvent         bdr:EVBC92C2181F172624 ;
+        :placeLocatedIn     bdr:G3CN27 ;
+        :placeType          bdr:PT0027 .
+    
+    bdr:NT427979ED7493AFDD
+        a                   :Note ;
+        :contentLocationStatement  "f. 2r" ;
+        :noteSource         bdr:MW6004 ;
+        :noteText           "one of the second three of the three part groupings of mnga' ris skor gsum, i. e. li bru sha sbal ti"@en .
+    
+    bdr:NTCC58027A820726E5
+        a                   :Note ;
+        :contentLocationStatement  "p. 35" ;
+        :noteSource         bdr:MW00EGS1017172 ;
+        :noteText           "འདིར་ལི་ཡུལ་ནི་སིང་ཀང་༼ཤིན་ཅང་༽དང་། ལི་ཡུལ་ལྕང་ར་སྨུག་པོ་ནི་ཁོ་ཏཱན་གྲོང་ཁྱེར་ཡིན་པར་བཤད་པ་དཔྱད་གཞི་སྟེ། ཕལ་ཆེར་གྱིས་ནི་དེ་གཉིས་ཐ་དད་དུ་མི་བྱེད་དེ་མུ་མཐུད་རྒྱུ་ཆ་རྙེད་རིམ་བཞིན་ཁ་སྣོན་ནམ་བཟོ་བཅོས་བྱ་རྒྱུ།"@bo .
+}

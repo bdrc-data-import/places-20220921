@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G445 {
+    bda:G445  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G445 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "19/G445.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G445 ;
+        adm:logEntry        bda:LG59D0F95B2F98C5D1 , bda:LG918D5C2BD710FB60 , bda:LGB97D748E6D89EA06 , bda:LGC61E5F2B14FD93C6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG59D0F95B2F98C5D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-22T16:42:51.171Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG918D5C2BD710FB60
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-22T20:40:08.236Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G1195 to G2089"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB97D748E6D89EA06
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-26T09:34:30.725Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC61E5F2B14FD93C6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV34AFCEC44219D09E
+        a                   :PlaceFounded ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G445  a             :Place ;
+        skos:altLabel       "'chad kha gsar ma (mal gro)"@bo-x-ewts ;
+        skos:prefLabel      "mal gro 'chad kha gsar ma/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT42EB8BDFB439C728 ;
+        :placeEvent         bdr:EV34AFCEC44219D09E ;
+        :placeLocatedIn     bdr:G2014 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT42EB8BDFB439C728
+        a                   :Note ;
+        :noteText           "small bka' gdams establishment in the mal gro area of the tibetan autonomous region"@en .
+}

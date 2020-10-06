@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1978 {
+    bda:G1978  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1978 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3d/G1978.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1978 ;
+        adm:logEntry        bda:LG1C2188CC9E02C841 , bda:LGC939841AEDEB25EB , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG1C2188CC9E02C841
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-07-18T08:45:22.488Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn both G166 & G1978 in favor of G294"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC939841AEDEB25EB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1978  a            :Place ;
+        skos:altLabel       "dga' ldan dam chos gling /"@bo-x-ewts ;
+        skos:prefLabel      "gser khog dga' ldan dam chos gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6A0437258EF75A27 , bdr:NT7342D2B035D4D6B4 , bdr:NTA98ACC52BA456F1A ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT6A0437258EF75A27
+        a                   :Note ;
+        :noteText           "withdrawn both G166 & G1978 in favor of G294"@en .
+    
+    bdr:NT7342D2B035D4D6B4
+        a                   :Note ;
+        :noteSource         bdr:MW20115 .
+    
+    bdr:NTA98ACC52BA456F1A
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p." ;
+        :noteSource         bdr:MW21509 ;
+        :noteText           "dge lugs pa monastery in a mdo\nregarded as one of the byang gi dgon chen bzhi: sku 'bum dgon pa, dgon lung byams pa gling, gser khog dgon, bya khyung dgon"@en .
+}

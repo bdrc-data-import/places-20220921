@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4499 {
+    bda:G4499  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4499 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "80/G4499.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4499 ;
+        adm:logEntry        bda:LG55D63A4738C4CDEF , bda:LG678E39DB8EBD7C2D , bda:LGEEBB9CF5E5049E3A , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542621100:526" ;
+        adm:place_id_lex    "542621100:526" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG55D63A4738C4CDEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-22T10:44:52.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & Ass persons"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG678E39DB8EBD7C2D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEEBB9CF5E5049E3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-02T11:11:45.091Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVAFBCD832477FD213
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G4499  a            :Place ;
+        skos:altLabel       "lha ri gyang do dgon/"@bo-x-ewts , "lha ri gyen rdo/"@bo-x-ewts , "lari jiangduo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lha ri gyang tho dgon/"@bo-x-ewts , "拉日江多寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD7EC8B6FFDED5EEB ;
+        :isRoot             true ;
+        :note               bdr:NT2F1AEBD28424C8C0 , bdr:NT5D642922C86143B9 ;
+        :placeEvent         bdr:EVAFBCD832477FD213 ;
+        :placeGonpaPerEcumen  "11.09" ;
+        :placeIsNear        bdr:G4498 ;
+        :placeLat           "29.55000" ;
+        :placeLocatedIn     bdr:G2123 , bdr:G841 ;
+        :placeLong          "94.46667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD7EC8B6FFDED5EEB
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4499" .
+    
+    bdr:NT2F1AEBD28424C8C0
+        a                   :Note ;
+        :contentLocationStatement  "'phar ma (2002), pp. 91-92" ;
+        :noteSource         bdr:MW28826 ;
+        :noteText           "bon monastery near the sacred mountan bon ri in kong po\nconnected with the first king of the tibetan dynasty, this place served a place for practice until its destruction during the cultural revolution\nrestore in 1991 by dge slong skal bzang bstan 'dzin and stag zhig bstan pa dar rgyas\ncurrently has a component of five residents"@en .
+    
+    bdr:NT5D642922C86143B9
+        a                   :Note ;
+        :contentLocationStatement  "p. 230" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "གནས་ཆེན་བོན་རིའི་རྒྱབ་རིར་ལྷ་རི་གྱང་དོ་དགོན་དང་། གསང་གླིང་དགོན་སོགས་དགོན་གནས་བརྒྱད་དགུ་ཞིག་གནས་པ་འཁོད།"@bo .
+}

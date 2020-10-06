@@ -1,0 +1,114 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G508 {
+    bda:G508  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G508 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "d3/G508.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G508 ;
+        adm:logEntry        bda:LG4F4F0D9A1B0C3935 , bda:LG800BB7341981BB9A , bda:LG9960FE9662736836 , bda:LGD57722D6F641E475 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221101:542221115" ;
+        adm:place_id_lex    "542221101:542221115" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4F4F0D9A1B0C3935
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:09:38.424Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG800BB7341981BB9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-23T09:38:15.876Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9960FE9662736836
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-11T09:43:44.412Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag gcig gi ngo sprod"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD57722D6F641E475
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8E9B6B744B2FDD57
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EV8F5DAB5D8052EB48
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P788 ;
+        :onYear             "1591"^^xsd:gYear .
+    
+    bdr:G508  a             :Place ;
+        skos:altLabel       "bkra shis chos sde/"@bo-x-ewts , "bkra shis rtse chos sde/"@bo-x-ewts , "sne gdong bkra shis chos sde/"@bo-x-ewts , "yar klungs bkra shis chos sde/"@bo-x-ewts , "yar lung bkra shis chos sde/"@bo-x-ewts , "zhaxi qude si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "yar klungs bkra shis chos sde/"@bo-x-ewts , "Tashi Chode"@en-x-mixed , "扎西曲德寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC734AC7E993DDD0B ;
+        :isRoot             true ;
+        :note               bdr:NT4E914B13ECD4F09F , bdr:NT6B46CAADCB4E8604 , bdr:NTB2930ECC4B49735A , bdr:NTEC67FC4D23E8B557 ;
+        :placeEvent         bdr:EV8E9B6B744B2FDD57 , bdr:EV8F5DAB5D8052EB48 ;
+        :placeGonpaPerEcumen  "60.06" ;
+        :placeLat           "29.16073" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.77412" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC734AC7E993DDD0B
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G508" .
+    
+    bdr:NT4E914B13ECD4F09F
+        a                   :Note ;
+        :contentLocationStatement  "pp. 248-250" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "sa skya monastery in the yar lung valley.\ndescription\nconnected with the 5th dalai lama, gnas gsar kun dga' legs pa, gnas gsar mkhyen brtse'i dbang phug, so mthu stobs kyi dbang phyug mkhan chen gzhon nu blo gros, gnas gsar ba mgon po bsod nams mchog ldan, and dbang phyug rab brtan, all of whose statues are here; contains sacred dance costumes and masks given by the 5th dalai lama and the lords of sde dge"@en .
+    
+    bdr:NT6B46CAADCB4E8604
+        a                   :Note ;
+        :contentLocationStatement  "p. 131" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "sa skya monastery originally founded by the minister (blon po) of sne gdong, sde pa bkra shis rtse pa and his lama the sa skya bla ma mkhan chen gzhon nu blo gros in 1591 (rab byung 11 lcags yos); seat of the a lce lha mo called the yar klungs bkra shis zhol pa'i lha mo tshogs pa near the bkra shis chos sde; located in the sne gdong grong tshor, mkhar thog shang of sne gdong rdzong"@en .
+    
+    bdr:NTB2930ECC4B49735A
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 54-55" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "ཁྲ་འབྲུག་ནས་ཅུང་ཟད་ཉེ་བའི་ས་བཀྲ་ཤིས་ཞོལ་པ་གྲོང་གི་རི་འགྲམ་དུ་དགོན་དེ་གནས་ཡོད། ཐོག་མར་རྗེ་རེད་མདའ་བས་ཕྱག་བཏབ། དེ་རྗེས་ཚར་ཆེན་བློ་གསལ་རྒྱ་མཚོས་བསྐྱངས། ད་ལྟ་འཚོ་བཞུགས་བྱམས་པ་བློ་གསལ་བར་སྐུ་ཕྲེང་དགུ་ཙམ་བྱུང་། ས་སྐྱ་ཚར་ལུགས་ཡིན། དགེ་འདུན་ཞལ་གྲངས་བརྒྱད་ཅུ་ཙམ་ཟིན། སྔོན་དགོན་དེར་རྟེན་གཙོ་གསེར་ཟངས་ཀྱི་ཐུབ་དབང་དང་རྗེ་རེད་མདའ་བའི་སྐུ་བརྙན་སོགས་ཡོད་པ་ལ། ད་ལྟ་གསར་བཞེངས་འདུ་ཁང་ནང་ཐུབ་དབང་གི་འཇིམ་སྐུ་དང་། སྔོན་གྱི་རྗེ་རེད་མདའ་བའི་སྐུ་འདྲའི་སྐུ་སྟོད་དེ་རང་ལ་སྐུ་སྨད་གསར་བཞེངས་གནང་བ་ཡོད། གཞན་ཡང་ཡར་ཀླུངས་བཀྲ་ཤིས་ཞོལ་པ་ཞེས་པའི་ལྷ་མོ་འབག་དཀར་པོའི་འཁྲབ་སྲོལ་འབྱུང་གནས་ཀྱང་ཡུལ་དེར་ཡིན་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NTEC67FC4D23E8B557
+        a                   :Note ;
+        :contentLocationStatement  "p. 2326" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1591. sa skya'i mkhan chen gzhon nu blo gros kyis yar lung bkra shis rtse'i chos sde phyag btab"@en .
+}

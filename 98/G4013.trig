@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4013 {
+    bda:G4013  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4013 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "98/G4013.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4013 ;
+        adm:logEntry        bda:LG2C55F4314BC84E90 , bda:LG945A741B19A9AC1E , bda:LGBE81C9419F07EB4D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C55F4314BC84E90
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-17T14:34:42.676Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG945A741B19A9AC1E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-26T12:31:48.111Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBE81C9419F07EB4D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4013  a            :Place ;
+        skos:altLabel       "'ba' gling gshis TaM mtsho phu dgon/"@bo-x-ewts ;
+        skos:prefLabel      "mtsho phu dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT80E574640A9020C7 ;
+        :placeLocatedIn     bdr:G2305 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT80E574640A9020C7
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 403-404" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery in 'ba' thang rdzong\nka thog pa'i dgon lag"@en .
+}

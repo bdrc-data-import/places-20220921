@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4457 {
+    bda:G4457  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4457 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "88/G4457.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4457 ;
+        adm:logEntry        bda:LG33C782A8AC7675E1 , bda:LG7ABC8B91A7AE0879 , bda:LGA92DE33D1708EADF , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221100:542221105" ;
+        adm:place_id_lex    "542221100:542221105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG33C782A8AC7675E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:16:05.544Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7ABC8B91A7AE0879
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGA92DE33D1708EADF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV4678D8203F375F42
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G4457  a            :Place ;
+        skos:altLabel       "gsang sngags gzim sbug"@bo-x-ewts , "Sangngag Zimchi"@bo-x-phon-en , "Sangngag Zimchi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gsang sngags gzim spyil/"@bo-x-ewts , "桑安森吉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE50D5DEC5DDB59A9 ;
+        :isRoot             true ;
+        :note               bdr:NT1D02E81A91A4261E , bdr:NTAB00703FAA6FEC59 ;
+        :placeEvent         bdr:EV4678D8203F375F42 ;
+        :placeGonpaPerEcumen  "60.8" ;
+        :placeLat           "29.24122" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.79995" ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:IDE50D5DEC5DDB59A9
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4457" .
+    
+    bdr:NT1D02E81A91A4261E
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 43-44" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "རྩེད་ཐང་གྲོང་རྙིང་གི་ཤར་གླིང་ཁ་པའི་སྟེང་དུ་བཙུན་དགོན་དེ་ཆགས་ཡོད། ཐོག་མར་གནས་དེར་ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོ་སྐུ་མཚམས་སུ་བཞུགས་པར་གྲགས། དེ་རྗེས་ས་སྐྱའི་བླ་མ་བསོད་ནམས་རྒྱལ་མཚན་བཞུགས་ནས་ས་ལུགས་མཛད། དེ་རྗེས་ཁམས་ནང་ཆེན་ནས་རྗེ་ཙོང་ཁ་པའི་དངོས་སློབ་བླ་མ་མཁྱེན་རབ་ངག་དབང་གྲགས་པ་ཕེབས་ནས་དགེ་ལུགས་གནང་བས་ཆུ་ལྷོ་རྒྱུད་དུ་ཆགས་པའི་དགེ་ལུགས་པའི་བཙུན་དགོན་ཨང་དང་པོ་དེ་ཡིན་ཞེས་གསུངས། བཙུན་མ་ཞལ་གྲངས་ཉི་ཤུ་ལྷག་ཙམ་ཡོད། ད་ལྟ་ངག་དབང་བསྟན་འཛིན་ཚུལ་ཁྲིམས་བར་སྐུ་ཐོག་བརྒྱད་བྱུང་། མ་དགོན་དགའ་ལྡན་ཆོས་འཁོར་གླིང་ཡིན་ཀྱང་བླ་མ་ཇོ་དགོན་དེར་བཞུགས་དགོས། སྔོན་དགོན་དེའི་ཆོས་རྒྱལ་སྒྲུབ་ཕུག་ནང་སྐུ་གསུང་ཐུགས་བཅས་ཀྱི་རྟེན་ཡོད་པ་ལས་སྐུའི་རྟེན་དང་ཐུགས་ཀྱི་རྟེན་ནི་ད་ལྟའང་མཇལ་རྒྱུ་ཡོད་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NTAB00703FAA6FEC59
+        a                   :Note ;
+        :noteText           "nunnery"@en .
+}

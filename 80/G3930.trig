@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3930 {
+    bda:G3930  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3930 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "80/G3930.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3930 ;
+        adm:logEntry        bda:LG1341C6856F170FAF , bda:LG8AF09DAF43100B9C , bda:LGAF3AD46C6D7C82FF , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513332209:393" ;
+        adm:place_id_lex    "513332209:393" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1341C6856F170FAF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8AF09DAF43100B9C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-07T12:27:01.152Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAF3AD46C6D7C82FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-15T15:04:17.696Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVE10EA986E44A57F0
+        a                   :PlaceFounded ;
+        :onYear             "1675"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3930  a            :Place ;
+        skos:altLabel       "mengge si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mang dge dgon/"@bo-x-ewts , "蒙格寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDEF711697876B1130 ;
+        :isRoot             true ;
+        :note               bdr:NT726B91EB984B4805 , bdr:NTDF739570310E9924 ;
+        :placeEvent         bdr:EVE10EA986E44A57F0 ;
+        :placeGonpaPerEcumen  "17.4" ;
+        :placeLat           "33.01667" ;
+        :placeLocatedIn     bdr:G2301 ;
+        :placeLong          "98.15000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDEF711697876B1130
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3930" .
+    
+    bdr:NT726B91EB984B4805
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 168-169" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs pa monastery in ser shul rdzong"@en .
+    
+    bdr:NTDF739570310E9924
+        a                   :Note ;
+        :contentLocationStatement  "p. 154" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "dge lugs monastery founded in the 10th rab byung (1567-1626) by the second rebirth of a lama from central tibet, sha ra ba, bla ma dam chos; formerly the monastery had more than 120 monks; now it has about the same number."@en .
+}

@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G327 {
+    bda:G327  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G327 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "e8/G327.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G327 ;
+        adm:logEntry        bda:LG6C6F69165DED4222 , bda:LGA3F390528266EC10 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6C6F69165DED4222
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-12T12:31:37.919Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA3F390528266EC10
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA1E3574CF9A265D2
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionShangpaKagyu .
+    
+    bdr:EVF7121AC02C45BECF
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1984 ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear .
+    
+    bdr:G327  a             :Place ;
+        skos:altLabel       "lkugs lung dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "sku lugs dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT38C5ED43818A1BA7 , bdr:NTBCC5840384615A03 ;
+        :placeEvent         bdr:EVA1E3574CF9A265D2 , bdr:EVF7121AC02C45BECF ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT38C5ED43818A1BA7
+        a                   :Note ;
+        :contentLocationStatement  "p. 108" ;
+        :noteSource         bdr:MW20441 ;
+        :noteText           "རྨོག་ཅོག་ཏུ་ཚོགས་པ་མ་ཤོང་བས་ཕན་སེམས་ཀྱིས་སྐུ་ལུགས་སུ་དགོན་པ་བཏབ་ཞེས་གསལ།"@bo .
+    
+    bdr:NTBCC5840384615A03
+        a                   :Note ;
+        :noteText           "an ancient monastery of the shangs pa bka' brgyud located in the tibetan autonomous region"@en .
+}

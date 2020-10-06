@@ -1,0 +1,117 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G226 {
+    bda:G226  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G226 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "22/G226.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G226 ;
+        adm:logEntry        bda:LG3CF64A758B3F1D24 , bda:LG3E58724D19926867 , bda:LG62C6FCBFD970B7EC , bda:LG8BEA6B7C251E9D36 , bda:LGD34CFC340A6DAB0D , bda:LGF75BD3A7B9F3EDE4 , bda:LGF8C859060879AF53 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540125101:540125103" ;
+        adm:place_id_lex    "540125101:540125103" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3CF64A758B3F1D24
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T12:28:55.194Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3E58724D19926867
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-19T13:52:48.449Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG62C6FCBFD970B7EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-21T11:12:33.965Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG8BEA6B7C251E9D36
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-28T12:55:59.602Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD34CFC340A6DAB0D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF75BD3A7B9F3EDE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-24T10:55:28.104Z"^^xsd:dateTime ;
+        adm:logMessage      "added alternative spelling name"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF8C859060879AF53
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-15T12:21:10.663Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1343F126759BE697
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:EVA7EEAC398850A8F0
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P3389 ;
+        :onYear             "1072"^^xsd:gYear .
+    
+    bdr:G226  a             :Place ;
+        skos:altLabel       "gsang phu ne'u thog dgon pa/"@bo-x-ewts , "gsang phu sne'u thogs/"@bo-x-ewts , "ne'u thog dgon pa/"@bo-x-ewts , "sangpu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gsang phu ne'u thog dgon pa/"@bo-x-ewts , "Sangpu"@en , "桑普寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBDADC83638E185C5 ;
+        :isRoot             true ;
+        :note               bdr:NT8E962CEDB14B8A98 , bdr:NTD14BBB5FC9A28C99 ;
+        :placeEvent         bdr:EV1343F126759BE697 , bdr:EVA7EEAC398850A8F0 ;
+        :placeGonpaPerEcumen  "16.84" ;
+        :placeLat           "29.54832" ;
+        :placeLocatedIn     bdr:G1325 , bdr:G3CN166 ;
+        :placeLong          "91.08624" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDBDADC83638E185C5
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G226" .
+    
+    bdr:NT8E962CEDB14B8A98
+        a                   :Note ;
+        :noteText           "ancient bka' gdams pa school near lha sa\nfounded in 1072 by 'jam dbyangs rnam 'phrul rngog legs pa'i shes rab"@en .
+    
+    bdr:NTD14BBB5FC9A28C99
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 87-90" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

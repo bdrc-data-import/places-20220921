@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4210 {
+    bda:G4210  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4210 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "33/G4210.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4210 ;
+        adm:logEntry        bda:LG43249CBDFBB19DE7 , bda:LG9C9C4958FB6F32EA , bda:LGFAD6C28C1F16237D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG43249CBDFBB19DE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-02T14:05:04.8Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9C9C4958FB6F32EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:14:21.653Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from mountainpass to ri"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGFAD6C28C1F16237D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G4210  a            :Place ;
+        skos:prefLabel      "zhi phu la/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD89CFA1DA6B3D67F ;
+        :placeLocatedIn     bdr:G4683 ;
+        :placeType          bdr:PT0043 .
+    
+    bdr:NTD89CFA1DA6B3D67F
+        a                   :Note ;
+        :contentLocationStatement  "p. 323" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "name of a pass between la yag and yar 'brog gdong skya"@en .
+}

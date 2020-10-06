@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4943 {
+    bda:G4943  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4943 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "27/G4943.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4943 ;
+        adm:logEntry        bda:LGCBEAA733347CF50D , bda:LGF22C3343F2727DA8 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGCBEAA733347CF50D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF22C3343F2727DA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-04T12:06:36.21Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4943  a            :Place ;
+        skos:altLabel       "gong ser bkra shis kha mdo/"@bo-x-ewts ;
+        skos:prefLabel      "gong gser kha mdo/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC4831B30E6BAE856 , bdr:NTD3ACBD26B1E7EB4D ;
+        :placeLocatedIn     bdr:G2202 , bdr:G813 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NTC4831B30E6BAE856
+        a                   :Note ;
+        :contentLocationStatement  "p. 18" ;
+        :noteSource         bdr:MW1KG987 ;
+        :noteText           "di ni mdo mkhyen brste ye shes rdo rje sku 'khrungs sa ste/ deng kan su'u zhing chen rma chu rdzong wa ban shang gi mnga' 'og na gnas pa gsal/"@en .
+    
+    bdr:NTD3ACBD26B1E7EB4D
+        a                   :Note ;
+        :noteSource         bdr:MW30425 ;
+        :noteText           "on the toponyms of the ethnonym and toponyms in a mdo"@en .
+}

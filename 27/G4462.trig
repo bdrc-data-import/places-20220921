@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4462 {
+    bda:G4462  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4462 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "27/G4462.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4462 ;
+        adm:logEntry        bda:LG62F53B432E0B056A , bda:LGB6BF4919EAC16CB9 , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221204:542221114" ;
+        adm:place_id_lex    "542221204:542221114" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG62F53B432E0B056A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:17:57.57Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB6BF4919EAC16CB9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV6D7877C1B9BCFD24
+        a                   :PlaceFounded ;
+        :onYear             "0750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:G4462  a            :Place ;
+        skos:altLabel       "brgya bza' lha khang /"@bo-x-ewts , "rgya bza' khang /"@bo-x-ewts , "Gyazakhang"@bo-x-phon-en , "金城公主庙"@zh-hans , "Gyazakhang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgya bza' khang /"@bo-x-ewts , "甲萨拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDABCDAE2E0064978F ;
+        :isRoot             true ;
+        :note               bdr:NTCBACB47227C30045 ;
+        :placeEvent         bdr:EV6D7877C1B9BCFD24 ;
+        :placeGonpaPerEcumen  "11.4" ;
+        :placeLat           "29.10854" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.81752" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:IDABCDAE2E0064978F
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4462" .
+    
+    bdr:NTCBACB47227C30045
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 53-54" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "ལྷ་ཁང་དེ་ནི་ཡར་ལྷ་ཤམ་བུའི་ཆུ་ཐོན་ནས་སོང་ན་ཟེ་སྟོད་གྲོང་གི་སྟོད་དུ་ཆགས་ཡོད། གྱིམ་ཤིང་ཀོང་ཇོའི་བཞུགས་ས་ཡིན་པར་གྲགས། སྔོན་དེར་ཆོས་རྒྱལ་མེས་ཨག་ཚོམ་གྱི་ཕྱག་བཟོ་སྤྱན་རས་གཟིགས་ཕྱག་སྟོང་སྤྱན་སྟོང་གི་སྐུ་ཞིག་ཡོད་པ་དེ་ཉམས་ཆགས་བྱུང་བར། དུས་ཕྱིས་ས་དེ་རང་གིས་བཞེངས་པའི་སྤྱན་རས་གཟིགས་ཕྱག་སྟོང་སྤྱན་སྟོང་གི་སྐུ་བརྙན་ཞིག་ལྷ་ཁང་རྙིང་པའི་ནང་དུ་མཇལ་རྒྱུ་ཡོད་པ་སོགས་འཁོད།"@bo .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4188 {
+    bda:G4188  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4188 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d0/G4188.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4188 ;
+        adm:logEntry        bda:LG70A1A9BB4075BFBE , bda:LGF3963B06F3D29044 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG70A1A9BB4075BFBE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-24T11:01:48.711Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF3963B06F3D29044
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4188  a            :Place ;
+        skos:altLabel       "lho brag sgro ba dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "sgro ba dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9A4BAEC9C87F81BD ;
+        :placeLocatedIn     bdr:G2134 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT9A4BAEC9C87F81BD
+        a                   :Note ;
+        :contentLocationStatement  "p. 219" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "description\none of the early seats of the shud phu lineage and of lho brag grub chen"@en .
+}

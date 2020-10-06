@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN44 {
+    bda:G3CN44  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN44 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ea/G3CN44.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN44 ;
+        adm:logEntry        bda:LG5546F12EC5D2CEF5 , bda:LG83F52D2A42670A97 , bda:LG9AB30448F843498E , bda:LGA7A6A239ABABB84C , bda:LGAA85945F4DC99D2B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5546F12EC5D2CEF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T11:21:38.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added type as \"stongSde\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG83F52D2A42670A97
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-02T15:21:13.53Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2 notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9AB30448F843498E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T15:29:38.376Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA7A6A239ABABB84C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-07T14:51:30.422Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAA85945F4DC99D2B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-06T15:39:35.662Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV679E8880E18BC7A1
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN44  a           :Place ;
+        skos:prefLabel      "'brang mtshams/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7B00E17C62084932 , bdr:NT864C529917830492 , bdr:NTE1BC72C0AEFD8ED3 ;
+        :placeEvent         bdr:EV679E8880E18BC7A1 ;
+        :placeLocatedIn     bdr:G2011 ;
+        :placeType          bdr:PT0073 .
+    
+    bdr:NT7B00E17C62084932
+        a                   :Note ;
+        :contentLocationStatement  "p. 2" ;
+        :noteSource         bdr:MW1KG5341 ;
+        :noteText           "ཁ་རག་འབྲང་བྱ་བའི་ཕུ་སྔོན་རྭ་ལོའི་བརྒྱུད་པ་རིམ་ཕེབས་ཀྱི་བཞུགས་གནས་ཕྱིས་ཆོས་འཁོར་སྡིངས་སུ་གྲགས། དེང་དུས་གོང་དཀར་རྫོང་དང་རིན་སྤུངས་རྫོང་གི་ས་ཆ་འབྲེལ་མཚམས་སུ་གནས་ཞེས་འཁོད་པ་ལས། འདི་ནི་དབུས་གཙང་གཉིས་ཀྱི་ས་མཚམས་ན་གནས་ཅིང་། འབྲང་མཚམས་ཞེས་པའི་སྟོང་སྡེ་འདིའི་མིང་ཡང་དབུས་གཙང་གཉིས་ཀར་ཡོད་འདུག་པས། འདི་ནི་\"ཁ་རག་འབྲང་\"དང་འབྲང་མཚམས་གཉིས་(G3CN44དང་G3CN66)དོན་གནད་ས་ཆ་གཅིག་ལ་གོ་བ་ཨེ་ཡིན་མུ་མཐུད་དཔྱད་རྒྱུ།"@bo .
+    
+    bdr:NT864C529917830492
+        a                   :Note ;
+        :contentLocationStatement  "p. 101" ;
+        :noteSource         bdr:MW1PD96069 ;
+        :noteText           "དབུ་རུའི་སྟོང་སྡེ་བཅུའི་ནང་ཚན་གཅིག་ཡིན་པར་གསལ་ཏེ། གཙང་གཡས་རུ་ལ་ཡང་\"འབྲང་མཚམས་\"ཞེས་པའི་སྟོང་སྡེ་ཞིག་་ཡོད་དོ།"@bo .
+    
+    bdr:NTE1BC72C0AEFD8ED3
+        a                   :Note ;
+        :contentLocationStatement  "p. 702" ;
+        :noteSource         bdr:MW19801 ;
+        :noteText           "འདི་ཏཱ་ར་ནཱ་ཐའི་འཁྲུངས་ཡུལ་མིན་ནམ་སྙམ་ཏེ། གང་ཉིད་དབུས་ཀྱི་ཇོ་མོ་ཁ་རག་དང་ཉེ་བར། ལུའི་ཧི་ཏའི་ཆུ་བོའི་ཉེ་འགྲམ་\"འབྲང་\"ཞེས་པའི་ཡུལ་དུ་སྐུ་འཁྲུངས་ཞེས་གསལ།"@bo .
+}

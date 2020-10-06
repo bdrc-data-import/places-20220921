@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4234 {
+    bda:G4234  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4234 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6d/G4234.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4234 ;
+        adm:logEntry        bda:LG41B0F62B1B2E78EC , bda:LGE38E325F8D4114D8 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG41B0F62B1B2E78EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-03T11:55:44.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added founder"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE38E325F8D4114D8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV96B21291EF077891
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P460 ;
+        :onYear             "1561"^^xsd:gYear .
+    
+    bdr:G4234  a            :Place ;
+        skos:prefLabel      "bsam yas rab byung grwa tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2EB575E2FB1F6786 ;
+        :placeEvent         bdr:EV96B21291EF077891 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT2EB575E2FB1F6786
+        a                   :Note ;
+        :contentLocationStatement  "p. 2324" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1561. sa skya bdag chen kun dga' rin chen gyis bsam yas rab byung grwa tshang bzhugs"@en .
+}

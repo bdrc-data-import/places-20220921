@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3263 {
+    bda:G3263  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3263 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "bc/G3263.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3263 ;
+        adm:logEntry        bda:LG817C60AA1E49D5C1 , bda:LGD256EEB4C50B0E12 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG817C60AA1E49D5C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-11T14:19:04.982Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD256EEB4C50B0E12
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV6B4EFD098A446CCA
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G3263  a            :Place ;
+        skos:altLabel       "mog par lha rtse/"@bo-x-ewts ;
+        skos:prefLabel      "mog pa lha rtse/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8495802525AB99BE , bdr:NTD4423C0C83C3E10C ;
+        :placeEvent         bdr:EV6B4EFD098A446CCA ;
+        :placeLocatedIn     bdr:G4631 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8495802525AB99BE
+        a                   :Note ;
+        :noteText           "connected with kun mkhyen padma dkar po, some of whose works were written here."@en .
+    
+    bdr:NTD4423C0C83C3E10C
+        a                   :Note ;
+        :contentLocationStatement  "p. 34" ;
+        :noteSource         bdr:MW1KG4232 ;
+        :noteText           "རས་ཆུང་པའི་གདན་སའི་གཙོ་བོ་ཡིན་པར་གསལ་ཞིང་། དེ་ཡང་\"རྡོ་བོད་མཚམས་\"ན་ཡོད་དེ་ཙཱ་རིའི་ཕྱོགས་སུ་ཡིན་པར་སྣང་།"@bo .
+}

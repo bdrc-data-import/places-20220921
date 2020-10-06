@@ -1,0 +1,824 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2182 {
+    bda:G2182  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2182 ;
+        adm:facetIndex      132 ;
+        adm:gitPath         "a1/G2182.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2182 ;
+        adm:logEntry        bda:LG00920B890E18AC0A , bda:LG03BBE3C21BE344A9 , bda:LG043FBAB79246E54C , bda:LG063BF5117522B175 , bda:LG07255935F4D7382A , bda:LG072C42B0E69CEB99 , bda:LG0944C32E8BE7C6BC , bda:LG0AE5F50A3C570092 , bda:LG0EC90FC81148604A , bda:LG0FF9FEDF55BBFD3A , bda:LG10D2B06B98351768 , bda:LG120A2948FA27725B , bda:LG1246FE18916126E6 , bda:LG16F1E04AC4853CEE , bda:LG172A08E45849CAAB , bda:LG195F984714928BE1 , bda:LG1ADC69EFFD73F501 , bda:LG1DEE18098E118B3F , bda:LG1F9AEFE4B981C05D , bda:LG22C34C3D6C7ADB17 , bda:LG245CD4F0556C1923 , bda:LG2532AE829858947C , bda:LG27C65BA516D76D66 , bda:LG2B2AA020F0ACA46F , bda:LG2E960465A8E359C9 , bda:LG310B2E598E2CA9CD , bda:LG341386BBB77F494C , bda:LG3515B2CE0586EF28 , bda:LG3CD466DE5A22D1D9 , bda:LG3CEF71BA5DE47E0A , bda:LG3D36B2E2C7D43735 , bda:LG3E7121AAA6282EF6 , bda:LG3FAE631EE3C4D242 , bda:LG4044660989200FF7 , bda:LG4142D49BE63856B8 , bda:LG434E3FF614F794D9 , bda:LG49AF16711F5159A1 , bda:LG4D95EF8B86910EFD , bda:LG5123B88E1EA18C98 , bda:LG51458BC8DAA99439 , bda:LG565416EA04FE1C09 , bda:LG569BD5BC950B97E7 , bda:LG5734E1E4E3F5DDD1 , bda:LG57A45E38C1CF9E31 , bda:LG5CA938112B75130A , bda:LG5CE130DADE517DE4 , bda:LG5DF97AC2E4556174 , bda:LG5E5754724F10D72C , bda:LG5E890A23E2441E88 , bda:LG5E97E43CAE3AFA38 , bda:LG5EFF43A905EFB780 , bda:LG617BB3933FCA42F2 , bda:LG63A0FB5366231265 , bda:LG6493DEA348E11D8B , bda:LG6529A7D620B4CB30 , bda:LG67710CD1C6AE2058 , bda:LG6C2E28548CD97C8E , bda:LG70EFEB350B713370 , bda:LG733B31BCDA3C6CB2 , bda:LG74559554E3350BC9 , bda:LG7521B017F2AD07EC , bda:LG76F1889BE1DF36CF , bda:LG77F0863DA1C3AA4D , bda:LG7BA0F2571A3C9D37 , bda:LG7BD930F1BB5FE92D , bda:LG7BE0AA637E175BA5 , bda:LG7C4B91A3F272EAC6 , bda:LG7CAB96F6D5BF1A0E , bda:LG8119AE101BF8AACB , bda:LG818F693AC1E6D424 , bda:LG8B351F16D16CEBA9 , bda:LG8C5E78694CF5D596 , bda:LG8E0FE7D5F1E0853E , bda:LG8F098510F85B1712 , bda:LG921D26CE871D8801 , bda:LG93F225F2D3C64238 , bda:LG96145F18637F91E7 , bda:LG970A81A10A3E3F55 , bda:LG9737AC504622FBB3 , bda:LG9871F2B15CC86642 , bda:LG9E0FB8D92F9DBD3D , bda:LG9F3EF738EC6DED30 , bda:LG9FBB45567D106A86 , bda:LG9FD21334F6B4E9F1 , bda:LGA2E1F0D0EF703F0A , bda:LGA34BF9ACE555578A , bda:LGA81A5922DBB6630D , bda:LGA879C556B48F4A91 , bda:LGA950680448F3AC7A , bda:LGAB5EED0F11763929 , bda:LGAB6D2B1B4DC7E497 , bda:LGACFE8FB0A5B6AE5B , bda:LGAF259F6AC8707A86 , bda:LGB6F0A726372E7A8E , bda:LGB851842B80D57672 , bda:LGB9A22D2E9DD6D3A4 , bda:LGB9D079C7693A685E , bda:LGBA38B85A90FFBB3B , bda:LGBBEBB458488F2CE3 , bda:LGBDA714DD89340795 , bda:LGBEE65E5B3DA172A1 , bda:LGBF2A3DECD5DB7E78 , bda:LGC0AD30704C56B987 , bda:LGC36CF392273E6611 , bda:LGC48A52E55C9AB10A , bda:LGC5886095105EFAD1 , bda:LGC87C1ECCD6E41A13 , bda:LGCAF42F44813872AB , bda:LGCD862AC340F5703F , bda:LGCF4A0B2A878CA1E0 , bda:LGD32605BA0A779343 , bda:LGD48D183247E0B799 , bda:LGD50C692FFA064A21 , bda:LGD5CD5E69693FBF5A , bda:LGD911A661AC0C7F9F , bda:LGD9692D9B24AB0481 , bda:LGDAE9A5D1FE93F138 , bda:LGDC1ADC6CA81F6448 , bda:LGDD27B16C337D2A04 , bda:LGDF810604E8E5DEE6 , bda:LGE0EB2D91B98467E0 , bda:LGE4007128F4B58C4F , bda:LGE660D3BB77545CE6 , bda:LGE7D1BCBF4E1FCDEA , bda:LGF8454F52D4E5B4F3 , bda:LGF9D1825E3C6F9471 , bda:LGFC78345E2DA7009B , bda:LGFCF3FD9F63E2BC17 , bda:LGIM0A2D5DA707 , bda:LGIMA37A954E21 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00920B890E18AC0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1129"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG03BBE3C21BE344A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1097"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG043FBAB79246E54C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1111"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG063BF5117522B175
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1084"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG07255935F4D7382A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1083"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG072C42B0E69CEB99
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1129"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG0944C32E8BE7C6BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1125"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG0AE5F50A3C570092
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-14T10:10:06.316Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0EC90FC81148604A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1075"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG0FF9FEDF55BBFD3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-14T16:58:15.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG10D2B06B98351768
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1113"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG120A2948FA27725B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1116"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG1246FE18916126E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1125"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG16F1E04AC4853CEE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1126"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG172A08E45849CAAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1078"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG195F984714928BE1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1094"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG1ADC69EFFD73F501
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1128"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG1DEE18098E118B3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1075"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG1F9AEFE4B981C05D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1123"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG22C34C3D6C7ADB17
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1118"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG245CD4F0556C1923
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1109"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG2532AE829858947C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1095"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG27C65BA516D76D66
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1107"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG2B2AA020F0ACA46F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1082"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG2E960465A8E359C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1116"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG310B2E598E2CA9CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1117"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG341386BBB77F494C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1081"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG3515B2CE0586EF28
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1104"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG3CD466DE5A22D1D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T12:11:12.943Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:sngarGyiRdzong to rdzong"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3CEF71BA5DE47E0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-20T12:21:12.798Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG3D36B2E2C7D43735
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1098"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG3E7121AAA6282EF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1081"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG3FAE631EE3C4D242
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1084"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG4044660989200FF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1088"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG4142D49BE63856B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-11T13:32:35.566Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG434E3FF614F794D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1087"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG49AF16711F5159A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T11:17:16.041Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4D95EF8B86910EFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1096"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG5123B88E1EA18C98
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1124"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG51458BC8DAA99439
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1108"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG565416EA04FE1C09
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1121"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG569BD5BC950B97E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1104"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG5734E1E4E3F5DDD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1130"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG57A45E38C1CF9E31
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1098"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG5CA938112B75130A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1100"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG5CE130DADE517DE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1108"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG5DF97AC2E4556174
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1086"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG5E5754724F10D72C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1093"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG5E890A23E2441E88
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1097"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG5E97E43CAE3AFA38
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1091"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG5EFF43A905EFB780
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG617BB3933FCA42F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1086"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG63A0FB5366231265
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-21T14:22:14.386Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6493DEA348E11D8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1111"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG6529A7D620B4CB30
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1114"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG67710CD1C6AE2058
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1124"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG6C2E28548CD97C8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1076"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG70EFEB350B713370
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1120"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG733B31BCDA3C6CB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1110"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG74559554E3350BC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1092"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG7521B017F2AD07EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1094"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG76F1889BE1DF36CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1102"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG77F0863DA1C3AA4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1121"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG7BA0F2571A3C9D37
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1076"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG7BD930F1BB5FE92D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1077"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG7BE0AA637E175BA5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1119"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG7C4B91A3F272EAC6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1077"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG7CAB96F6D5BF1A0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1115"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG8119AE101BF8AACB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1112"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG818F693AC1E6D424
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1118"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG8B351F16D16CEBA9
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-12-11T22:22:34.656Z"^^xsd:dateTime ;
+        adm:logMessage      "published"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8C5E78694CF5D596
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1079"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG8E0FE7D5F1E0853E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1122"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG8F098510F85B1712
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1119"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG921D26CE871D8801
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1126"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG93F225F2D3C64238
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1101"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG96145F18637F91E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1087"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG970A81A10A3E3F55
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1123"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG9737AC504622FBB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1102"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG9871F2B15CC86642
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1100"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG9E0FB8D92F9DBD3D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-06T11:39:19.737Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"mgo jo rdzong\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9F3EF738EC6DED30
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1117"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LG9FBB45567D106A86
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1115"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG9FD21334F6B4E9F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1107"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGA2E1F0D0EF703F0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1128"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGA34BF9ACE555578A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1105"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGA81A5922DBB6630D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1103"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGA879C556B48F4A91
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1089"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGA950680448F3AC7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1078"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGAB5EED0F11763929
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-28T12:37:53.517Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAB6D2B1B4DC7E497
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1080"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGACFE8FB0A5B6AE5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1120"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGAF259F6AC8707A86
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1074"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGB6F0A726372E7A8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1130"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGB851842B80D57672
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1122"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGB9A22D2E9DD6D3A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1099"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGB9D079C7693A685E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1106"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGBA38B85A90FFBB3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1105"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGBBEBB458488F2CE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1127"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGBDA714DD89340795
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1079"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGBEE65E5B3DA172A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1112"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGBF2A3DECD5DB7E78
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1089"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGC0AD30704C56B987
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1127"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGC36CF392273E6611
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1114"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGC48A52E55C9AB10A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G804"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGC5886095105EFAD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1113"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGC87C1ECCD6E41A13
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1093"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGCAF42F44813872AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1074"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGCD862AC340F5703F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1090"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGCF4A0B2A878CA1E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1096"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGD32605BA0A779343
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1082"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGD48D183247E0B799
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1083"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGD50C692FFA064A21
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1106"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGD5CD5E69693FBF5A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1101"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGD911A661AC0C7F9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-21T10:12:44.089Z"^^xsd:dateTime ;
+        adm:logMessage      "edited names for contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD9692D9B24AB0481
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1091"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGDAE9A5D1FE93F138
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1095"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGDC1ADC6CA81F6448
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1088"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGDD27B16C337D2A04
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from county to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGDF810604E8E5DEE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1092"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGE0EB2D91B98467E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1085"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGE4007128F4B58C4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1090"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGE660D3BB77545CE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1103"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGE7D1BCBF4E1FCDEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1080"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGF8454F52D4E5B4F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR1110"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGF9D1825E3C6F9471
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1109"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGFC78345E2DA7009B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1085"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGFCF3FD9F63E2BC17
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T19:32:02.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added name to contains G1KR1099"@en ;
+        adm:logWhoStr       "places-ensure-contains-has-name" .
+    
+    bda:LGIM0A2D5DA707
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rdzong to sngarGyiRdzong"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMA37A954E21
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-20T22:30:59.465Z"^^xsd:dateTime ;
+        adm:logMessage      "populating gis from G9GBX..."@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G2182  a            :Place ;
+        skos:altLabel       "mgo jo rdzong /"@bo-x-ewts , "gongjue xian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "go 'jo rdzong /"@bo-x-ewts , "Gongjo County"@en , "贡觉县"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT876E8DF14917731D ;
+        :placeContains      bdr:G00AG01813 , bdr:G00EGS1016838 , bdr:G1KR1074 , bdr:G1KR1075 , bdr:G1KR1076 , bdr:G1KR1077 , bdr:G1KR1078 , bdr:G1KR1079 , bdr:G1KR1080 , bdr:G1KR1081 , bdr:G1KR1082 , bdr:G1KR1083 , bdr:G1KR1084 , bdr:G1KR1085 , bdr:G1KR1086 , bdr:G1KR1087 , bdr:G1KR1088 , bdr:G1KR1089 , bdr:G1KR1090 , bdr:G1KR1091 , bdr:G1KR1092 , bdr:G1KR1093 , bdr:G1KR1094 , bdr:G1KR1095 , bdr:G1KR1096 , bdr:G1KR1097 , bdr:G1KR1098 , bdr:G1KR1099 , bdr:G1KR1100 , bdr:G1KR1101 , bdr:G1KR1102 , bdr:G1KR1103 , bdr:G1KR1104 , bdr:G1KR1105 , bdr:G1KR1106 , bdr:G1KR1107 , bdr:G1KR1108 , bdr:G1KR1109 , bdr:G1KR1110 , bdr:G1KR1111 , bdr:G1KR1112 , bdr:G1KR1113 , bdr:G1KR1114 , bdr:G1KR1115 , bdr:G1KR1116 , bdr:G1KR1117 , bdr:G1KR1118 , bdr:G1KR1119 , bdr:G1KR1120 , bdr:G1KR1121 , bdr:G1KR1122 , bdr:G1KR1123 , bdr:G1KR1124 , bdr:G1KR1125 , bdr:G1KR1126 , bdr:G1KR1127 , bdr:G1KR1128 , bdr:G1KR1129 , bdr:G1KR1130 , bdr:G305 , bdr:G3465 , bdr:G596 , bdr:G804 ;
+        :placeGB2260-2013   "542123000" ;
+        :placeLat           "30.8600988" ;
+        :placeLocatedIn     bdr:G2177 ;
+        :placeLong          "98.270967" ;
+        :placeRegionPoly    "{\"type\":\"Feature\",\"geometry\": { \"type\": \"Polygon\", \"coordinates\": [ [ [ 98.164802551284055, 31.207778930960565 ], [ 98.174354552441841, 31.205522536944422 ], [ 98.182723999454879, 31.209014893329719 ], [ 98.192192078480375, 31.213853836246447 ], [ 98.204200745380405, 31.213375092159946 ], [ 98.210739136484733, 31.208431243974399 ], [ 98.217247009536806, 31.20211410499877 ], [ 98.22554779132598, 31.193012237612027 ], [ 98.23487091074135, 31.18228530908042 ], [ 98.239471435607285, 31.174633026368209 ], [ 98.242286681599438, 31.170225142722039 ], [ 98.244140624637041, 31.1596546166518 ], [ 98.249771118301481, 31.150836945000204 ], [ 98.255790710496868, 31.146587371822005 ], [ 98.260749817134098, 31.142362595135566 ], [ 98.265678405781131, 31.137218475081202 ], [ 98.271453856607451, 31.133663177129169 ], [ 98.276298522449764, 31.135389327688063 ], [ 98.284797668307817, 31.13383483890906 ], [ 98.294692992442776, 31.124921799143003 ], [ 98.297698975429583, 31.117761611622946 ], [ 98.301490784397757, 31.110353469651244 ], [ 98.307800292974434, 31.097166061108297 ], [ 98.314041137674621, 31.091310500657059 ], [ 98.32742309642839, 31.083690642672455 ], [ 98.33893585165653, 31.075654983830034 ], [ 98.345718383539449, 31.070241928159795 ], [ 98.352767944073847, 31.065050125352098 ], [ 98.362052917241158, 31.063243865640576 ], [ 98.37032318138354, 31.063518524106556 ], [ 98.377212524530009, 31.061992644719993 ], [ 98.387672424100046, 31.054662704121863 ], [ 98.393783569060417, 31.044681549394856 ], [ 98.397506714089033, 31.034982680975951 ], [ 98.402496338256285, 31.029752730701112 ], [ 98.411010742362947, 31.026733398327789 ], [ 98.413940429670518, 31.026252747036978 ], [ 98.416313171025848, 31.023946761789482 ], [ 98.425895690965092, 31.022727965880659 ], [ 98.431495667460581, 31.024057388197726 ], [ 98.439262389512621, 31.028116225924496 ], [ 98.451400757214302, 31.042663573689165 ], [ 98.455421448022122, 31.045150756841462 ], [ 98.46343994069737, 31.047832488936663 ], [ 98.477043152331902, 31.049322127690541 ], [ 98.481071471469093, 31.052494048878994 ], [ 98.483238219983917, 31.055908203173576 ], [ 98.48518371550955, 31.063215255707419 ], [ 98.48760223377738, 31.065254210965644 ], [ 98.502693176042555, 31.055517196976467 ], [ 98.505615233558132, 31.055263519102493 ], [ 98.516311645722951, 31.058607100767436 ], [ 98.541419982483376, 31.064111710367342 ], [ 98.552886963431945, 31.064699172629286 ], [ 98.56350708007777, 31.061401367350097 ], [ 98.572784424166684, 31.056741714412652 ], [ 98.589775084513931, 31.051097869724256 ], [ 98.600349425456898, 31.043907165959808 ], [ 98.605926514464301, 31.042255401871309 ], [ 98.619232178397894, 31.040758132990426 ], [ 98.636299133426064, 31.041975021025763 ], [ 98.645370482967394, 31.04348945594165 ], [ 98.656295775535781, 31.043615341119658 ], [ 98.664848328240907, 31.045595169041814 ], [ 98.689369201706455, 31.046270369947493 ], [ 98.702362061476592, 31.041337967091188 ], [ 98.714775084467334, 31.032749175724909 ], [ 98.717399597452911, 31.029745102226869 ], [ 98.741775513417636, 31.019430161097098 ], [ 98.749755859445614, 31.018432616835966 ], [ 98.753234863071071, 31.019542694361522 ], [ 98.759689331265264, 31.024509430369239 ], [ 98.764060974248977, 31.032476425134004 ], [ 98.76438140911138, 31.034563065253948 ], [ 98.764390611445521, 31.034561176983832 ], [ 98.772132875107033, 31.032972335612591 ], [ 98.77990722815548, 31.026866913223653 ], [ 98.784347534811175, 31.02205657978444 ], [ 98.787307739120209, 31.017986297801304 ], [ 98.790634156269718, 31.016876221111325 ], [ 98.795448303207891, 31.014286041236289 ], [ 98.799148560502871, 31.010215758739456 ], [ 98.802848816053299, 31.0057754523373 ], [ 98.804328919369439, 31.000965117693521 ], [ 98.803833007930706, 30.996894835673192 ], [ 98.804328919467125, 30.990604401350168 ], [ 98.802848815637788, 30.985424041667738 ], [ 98.799888611407013, 30.978023529066856 ], [ 98.798774719119947, 30.972843169702237 ], [ 98.79951477159139, 30.968032836820093 ], [ 98.800628662683934, 30.962852478318823 ], [ 98.799148559478354, 30.956562042019396 ], [ 98.796180724825433, 30.950370788673474 ], [ 98.793968200860945, 30.944721221793987 ], [ 98.791007996764051, 30.94065093990109 ], [ 98.785827638040132, 30.935100554723885 ], [ 98.78138732875189, 30.929180145307054 ], [ 98.777450563254064, 30.923130035045673 ], [ 98.774353027865843, 30.916969298838517 ], [ 98.773612975713789, 30.911788940155411 ], [ 98.774353027459412, 30.907718657904226 ], [ 98.77657318234246, 30.903648376069906 ], [ 98.778053284972941, 30.899578094401249 ], [ 98.780830383916808, 30.896253586177771 ], [ 98.783233643566149, 30.892177582306886 ], [ 98.785453796849808, 30.888847350762244 ], [ 98.788047790494659, 30.886257172344465 ], [ 98.791748047492575, 30.885517120049521 ], [ 98.798034668761545, 30.882926940959262 ], [ 98.80543518147563, 30.878486633200211 ], [ 98.812835694489294, 30.874416351375352 ], [ 98.820236207162026, 30.869976043770805 ], [ 98.827636718637635, 30.865165710386613 ], [ 98.832817078871855, 30.862575530719806 ], [ 98.839111329394143, 30.859985351737762 ], [ 98.843917847062059, 30.85702514584392 ], [ 98.849098207513237, 30.853694916105368 ], [ 98.852516174863027, 30.850236893094777 ], [ 98.8550186161266, 30.845554351702127 ], [ 98.856872560514219, 30.840373992876572 ], [ 98.860572815877731, 30.834083557224879 ], [ 98.863533020521075, 30.832603455397884 ], [ 98.869819640933017, 30.829643249824858 ], [ 98.874259950494476, 30.827793121104399 ], [ 98.876480103453403, 30.824832915825315 ], [ 98.878700256893325, 30.819652556856227 ], [ 98.880180360004346, 30.814102172996307 ], [ 98.88425445710152, 30.808921813974145 ], [ 98.887954713122056, 30.80115127592854 ], [ 98.891281128953722, 30.797821045375066 ], [ 98.897628785342576, 30.791128158668542 ], [ 98.908302307483595, 30.786720276165031 ], [ 98.917922975039559, 30.783020020058519 ], [ 98.927177428874174, 30.781909942593604 ], [ 98.936058044239331, 30.781169890933736 ], [ 98.94530487142876, 30.779689788624438 ], [ 98.952705383844204, 30.776359558273931 ], [ 98.955665588221166, 30.773769378649913 ], [ 98.958999634626579, 30.768589019715431 ], [ 98.961959839221663, 30.76266860967219 ], [ 98.961219787602033, 30.753047943067237 ], [ 98.961219787926765, 30.746757507351404 ], [ 98.961219788556974, 30.742317200042777 ], [ 98.962699891349018, 30.738616943051625 ], [ 98.962326050848631, 30.73491668724072 ], [ 98.960479737521837, 30.731216431144905 ], [ 98.95677948121255, 30.727886200256762 ], [ 98.951965331474113, 30.725296021313472 ], [ 98.946784972731294, 30.724185944036311 ], [ 98.94160461438419, 30.723075867057201 ], [ 98.937904359310238, 30.719375610342393 ], [ 98.935317993772159, 30.71530532805528 ], [ 98.934204102778878, 30.711975097697259 ], [ 98.931243896974166, 30.709384918323142 ], [ 98.92791748131782, 30.707904815747103 ], [ 98.923477173039572, 30.706054686655325 ], [ 98.918296814436232, 30.704944610799885 ], [ 98.913856506575982, 30.704204558919024 ], [ 98.909042358643916, 30.701984405878125 ], [ 98.905342102900107, 30.699024200385505 ], [ 98.904602051484432, 30.696434020766606 ], [ 98.903907776375348, 30.693628311390775 ], [ 98.903862001067552, 30.689403533805759 ], [ 98.905342103305387, 30.684223175077669 ], [ 98.907562256923555, 30.680152893406376 ], [ 98.910156249785388, 30.676082610982572 ], [ 98.911636354564905, 30.670162201275378 ], [ 98.913116456195269, 30.664241791400457 ], [ 98.915336609882729, 30.658691405964372 ], [ 98.917922975518081, 30.653141022215287 ], [ 98.919937134939545, 30.649232864134682 ], [ 98.921623231427247, 30.644630431715804 ], [ 98.922363282530853, 30.639450073198063 ], [ 98.922363281518741, 30.635379791122556 ], [ 98.921623231245917, 30.630199432260039 ], [ 98.921257019183727, 30.624279021619696 ], [ 98.920516968974184, 30.62020874003241 ], [ 98.920883179345822, 30.614658356107803 ], [ 98.923103333065626, 30.610218047658893 ], [ 98.925323486838693, 30.607257842709142 ], [ 98.928283691359923, 30.604667664306469 ], [ 98.931617738393186, 30.602447510207213 ], [ 98.936058043494228, 30.600967407268008 ], [ 98.938644409805974, 30.596897125416184 ], [ 98.938644409729505, 30.592826842934777 ], [ 98.937538146558552, 30.589866638001812 ], [ 98.933837891544371, 30.585056305402709 ], [ 98.929763793575688, 30.58024597215141 ], [ 98.925872803789304, 30.573722839407587 ], [ 98.924583435094647, 30.571365355988622 ], [ 98.924957275247266, 30.566184997702738 ], [ 98.92754364104222, 30.562854766691078 ], [ 98.92976379422025, 30.559154510129403 ], [ 98.933143615500626, 30.553373336703682 ], [ 98.933097839208841, 30.5462036130426 ], [ 98.931983947807296, 30.538803101188382 ], [ 98.930503844831577, 30.530292511348627 ], [ 98.929763793551786, 30.521596908651894 ], [ 98.931983948479143, 30.516786575182206 ], [ 98.935317994357845, 30.511976241835139 ], [ 98.938644410131445, 30.504945755051057 ], [ 98.94049835258572, 30.500135422296289 ], [ 98.941604614267519, 30.496065139953018 ], [ 98.942718506779642, 30.491254806663811 ], [ 98.944564818936215, 30.482004165635836 ], [ 98.946784973529077, 30.477563857699895 ], [ 98.948265076232488, 30.472753525201536 ], [ 98.951965331626226, 30.46979332034601 ], [ 98.955299378291116, 30.466463089251711 ], [ 98.959465027893216, 30.461975097813841 ], [ 98.962699890848342, 30.453512191682069 ], [ 98.964179994099496, 30.447591781957897 ], [ 98.963439941364598, 30.442411422603538 ], [ 98.961959838764869, 30.436861037801641 ], [ 98.960479736702226, 30.429460526045936 ], [ 98.958999634862423, 30.42354011459118 ], [ 98.960845947429334, 30.417989731355359 ], [ 98.963439941462056, 30.412439346072826 ], [ 98.966766356815597, 30.408739090341815 ], [ 98.970100404445162, 30.405778885034319 ], [ 98.972686769037836, 30.402078629319238 ], [ 98.973800660513433, 30.396528244025262 ], [ 98.974906922492977, 30.390607833939015 ], [ 98.971580506556563, 30.385057449198808 ], [ 98.970932006438929, 30.383804320628691 ], [ 98.966026306019316, 30.374326706296902 ], [ 98.96788024846596, 30.368036270332606 ], [ 98.968986511455853, 30.363595963164158 ], [ 98.968986510934528, 30.355825423614228 ], [ 98.968246460347345, 30.348794936585044 ], [ 98.969360352449641, 30.343984604124515 ], [ 98.970100403460805, 30.338434219279073 ], [ 98.974540709467647, 30.331403731900309 ], [ 98.977867125751573, 30.325113296684155 ], [ 98.978607178024689, 30.317342757933069 ], [ 98.978607177616851, 30.311422348119528 ], [ 98.979743957488054, 30.30406761177651 ], [ 98.970932006695264, 30.305746078121153 ], [ 98.9626312259484, 30.304325104413461 ], [ 98.951751708867789, 30.299844741992491 ], [ 98.941703796097102, 30.294128418213575 ], [ 98.930091857853796, 30.287107467740491 ], [ 98.926345825297005, 30.286060333030253 ], [ 98.915176391785963, 30.284294127754599 ], [ 98.902488708317748, 30.284629821600738 ], [ 98.892105102903358, 30.290628433312218 ], [ 98.881965637265807, 30.295932770085678 ], [ 98.869354248018041, 30.29855346721985 ], [ 98.858703613113619, 30.296768188094756 ], [ 98.844993590555788, 30.290023804336485 ], [ 98.826042174954139, 30.285015106154805 ], [ 98.812767029462279, 30.283525467342166 ], [ 98.797439574806191, 30.284145355272923 ], [ 98.788749695335127, 30.285282135289524 ], [ 98.775154113741948, 30.290435790642988 ], [ 98.760276793590819, 30.296770096098914 ], [ 98.75193786556423, 30.300872802801628 ], [ 98.747276305761162, 30.303966522247496 ], [ 98.740982056171148, 30.313972473342769 ], [ 98.738121032566639, 30.324121474918886 ], [ 98.732566832650747, 30.332506179775898 ], [ 98.722366333091031, 30.336425780785703 ], [ 98.708023070754834, 30.334722518632717 ], [ 98.703720093528304, 30.332536696675742 ], [ 98.696121215849075, 30.318067550790232 ], [ 98.695419312441743, 30.312589645238077 ], [ 98.696701049813157, 30.302938460608956 ], [ 98.703544617131882, 30.293148041259975 ], [ 98.705963135240225, 30.285989760666098 ], [ 98.704978942444285, 30.280057906678358 ], [ 98.692657470523969, 30.275094986262317 ], [ 98.681182860803602, 30.271944045927039 ], [ 98.671752929882018, 30.266220092708839 ], [ 98.659568787173043, 30.265832900614885 ], [ 98.648612975477945, 30.270910262690016 ], [ 98.639488220024234, 30.27502441367427 ], [ 98.631103516168906, 30.27775001503101 ], [ 98.61727905340129, 30.284265517778206 ], [ 98.609848022117788, 30.292003632364075 ], [ 98.599761963250629, 30.299804687188793 ], [ 98.587379456228177, 30.301475524815437 ], [ 98.576354979853519, 30.3044891361012 ], [ 98.565971374842647, 30.302215575931307 ], [ 98.559143066482633, 30.295276641802189 ], [ 98.547309874750027, 30.288686751985814 ], [ 98.536872864347217, 30.284809112933729 ], [ 98.529876708746571, 30.280622481760751 ], [ 98.525680541929006, 30.264001846010746 ], [ 98.526222229349159, 30.246583939067566 ], [ 98.523994445504172, 30.233810424607494 ], [ 98.520103454580564, 30.227487563666546 ], [ 98.516159057651308, 30.219106673910769 ], [ 98.51387786901536, 30.204504013137917 ], [ 98.508460998726349, 30.200050354376121 ], [ 98.486152648534571, 30.205608367781412 ], [ 98.482772827139001, 30.207515717014857 ], [ 98.476394653205006, 30.215450287295599 ], [ 98.466781616171602, 30.230329514272206 ], [ 98.458335875628251, 30.249303818253299 ], [ 98.450317383287, 30.264604567801253 ], [ 98.443107604519568, 30.280799866198091 ], [ 98.439552306638276, 30.295082091816496 ], [ 98.43459320047775, 30.306642531860266 ], [ 98.427520751756603, 30.318485260106421 ], [ 98.420387267468797, 30.328037262086038 ], [ 98.409599303601766, 30.339729309077732 ], [ 98.397277832200075, 30.353292464788574 ], [ 98.386589049726553, 30.368415832800277 ], [ 98.379898070713296, 30.384826659689516 ], [ 98.371490479441505, 30.396463393883778 ], [ 98.357383728266313, 30.413038253616939 ], [ 98.34079742412689, 30.426227569671052 ], [ 98.334846497510725, 30.431167603163829 ], [ 98.329780578966833, 30.439752579266557 ], [ 98.3290481572418, 30.45144844075746 ], [ 98.339309692055707, 30.458549500210637 ], [ 98.348747252489133, 30.464296340995038 ], [ 98.347679138369855, 30.473480225015319 ], [ 98.346984862541731, 30.486778259117557 ], [ 98.348716736116103, 30.491777419883466 ], [ 98.351272582645635, 30.497903823848226 ], [ 98.360649108558505, 30.510978698781503 ], [ 98.368408202931676, 30.513326645023213 ], [ 98.374603270587187, 30.516851424885662 ], [ 98.360313415841546, 30.527244567774222 ], [ 98.351593017710158, 30.528581618926097 ], [ 98.347976684622651, 30.531867981066377 ], [ 98.341735839545805, 30.536355971965595 ], [ 98.335006714095272, 30.542457581062152 ], [ 98.328674315879269, 30.553131104109717 ], [ 98.307304381987223, 30.576726913313685 ], [ 98.300048828440197, 30.583065033022216 ], [ 98.297729492217726, 30.595252991247481 ], [ 98.304069519460484, 30.60381698597887 ], [ 98.310684204402307, 30.612834929665471 ], [ 98.305671692172609, 30.623477935989744 ], [ 98.299911499479322, 30.6361961363625 ], [ 98.291641234706589, 30.644390105598259 ], [ 98.281539917485375, 30.643918990848299 ], [ 98.271423339880542, 30.64299202010384 ], [ 98.26100158752493, 30.650083542091632 ], [ 98.248237610064677, 30.659286498600604 ], [ 98.235534668103668, 30.671007155856568 ], [ 98.226196288555073, 30.67921829242195 ], [ 98.213188170745852, 30.689567565966904 ], [ 98.200843810570461, 30.694635391136266 ], [ 98.191925049363661, 30.698942183887208 ], [ 98.181274413850289, 30.708093642936511 ], [ 98.174995421655112, 30.72196197490317 ], [ 98.172889709033925, 30.732997894390831 ], [ 98.168777465921906, 30.748424529850446 ], [ 98.157112122294365, 30.75965499871112 ], [ 98.143936156789991, 30.764272690269884 ], [ 98.132682800165739, 30.771144866999787 ], [ 98.122688292646629, 30.785543441772923 ], [ 98.11515045191868, 30.79233551032047 ], [ 98.101745604681412, 30.798332213811246 ], [ 98.081329345774435, 30.800800323162814 ], [ 98.070785522306039, 30.804445267107145 ], [ 98.064338684189551, 30.812356948872306 ], [ 98.053260802928918, 30.826772690265408 ], [ 98.038955688014923, 30.839649200183132 ], [ 98.031562805029168, 30.842082977238416 ], [ 98.034851073631017, 30.845911026244075 ], [ 98.038650512962178, 30.849042891931997 ], [ 98.046775818053305, 30.854833602706005 ], [ 98.051300048787397, 30.8655071260978 ], [ 98.04740142779437, 30.879779815730476 ], [ 98.039146422549067, 30.890474318697066 ], [ 98.02544403095834, 30.895778655593521 ], [ 98.013252258300525, 30.898077011318879 ], [ 98.002677916915729, 30.90080070532095 ], [ 97.999420166285418, 30.909334182653094 ], [ 98.004226684850877, 30.920690536077068 ], [ 98.012222289461278, 30.931753159303508 ], [ 98.021278381324151, 30.942794800092607 ], [ 98.027046204297662, 30.950008392315524 ], [ 98.024368285749432, 30.960134506389643 ], [ 98.013969421131193, 30.970411301003072 ], [ 98.005889893306843, 30.977893828953661 ], [ 98.002708435223724, 30.989173889088381 ], [ 98.00687408382052, 30.996189117096431 ], [ 98.013832091624053, 31.008190155240442 ], [ 98.00904083263012, 31.019271850696924 ], [ 97.996383666667157, 31.035770415930468 ], [ 97.98677062944823, 31.046028136739096 ], [ 97.972351073772302, 31.055921555293651 ], [ 97.96257019054967, 31.059310913172613 ], [ 97.947814941300109, 31.066459656347462 ], [ 97.930351257227287, 31.072055817342012 ], [ 97.912223815468082, 31.072393417279883 ], [ 97.891151428065143, 31.072097778255849 ], [ 97.874038696470322, 31.069896698015704 ], [ 97.862251282518173, 31.067363739181143 ], [ 97.856155395733268, 31.069076537997411 ], [ 97.852989196977134, 31.077171325599512 ], [ 97.853569030562639, 31.084005355869085 ], [ 97.860282897801426, 31.09761810270621 ], [ 97.870048523052176, 31.116439818657675 ], [ 97.874595642457194, 31.139936446700602 ], [ 97.876914978111515, 31.147905349828502 ], [ 97.881309508648286, 31.153089522608727 ], [ 97.894607544042117, 31.162687301795767 ], [ 97.916595459245514, 31.167087555177169 ], [ 97.933341979964581, 31.175472260364138 ], [ 97.936073303515158, 31.178167342672438 ], [ 97.943115233576066, 31.182384490596906 ], [ 97.957641601818565, 31.187147141348387 ], [ 97.971488952717053, 31.19649696423437 ], [ 97.984405518450572, 31.200828551884655 ], [ 97.998298644978163, 31.212236404321821 ], [ 98.005104065548252, 31.217599868621519 ], [ 98.018920897635851, 31.225572586003658 ], [ 98.027648925937285, 31.221969603860192 ], [ 98.037117004497986, 31.216289519983647 ], [ 98.044067382468199, 31.20585250909695 ], [ 98.050262450746857, 31.197488785097494 ], [ 98.057403563679088, 31.19460296559545 ], [ 98.065452576273273, 31.196273803836643 ], [ 98.071678161609043, 31.199584961156795 ], [ 98.078262328679685, 31.206550598373052 ], [ 98.082221984936496, 31.21540069562225 ], [ 98.082351685076574, 31.220434189030918 ], [ 98.084152221992483, 31.228181838890507 ], [ 98.093322754165413, 31.231889724753611 ], [ 98.119865416857778, 31.235935210645735 ], [ 98.129837035888485, 31.23939704887658 ], [ 98.142463684170096, 31.242116928209818 ], [ 98.151458740261759, 31.238727570059975 ], [ 98.158584595198789, 31.225305556624352 ], [ 98.160781859459746, 31.217477797807565 ], [ 98.164802551284055, 31.207778930960565 ] ] ] } }" ;
+        :placeType          bdr:PT0011 ;
+        :placeWB2000        "3143" ;
+        :placeWB2010        "2945" ;
+        :placeWBArea        "6246.058091" .
+    
+    bdr:NT876E8DF14917731D
+        a                   :Note ;
+        :noteText           "one of the 13  new counties (rdzong) of chab mdo prefecture (sa khul)\npinyin: goangjue?"@en .
+}

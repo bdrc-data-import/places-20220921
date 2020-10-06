@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4367 {
+    bda:G4367  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4367 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "95/G4367.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4367 ;
+        adm:logEntry        bda:LG22C14414FC080BB2 , bda:LGD59B53E0FA59DDA9 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG22C14414FC080BB2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD59B53E0FA59DDA9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-29T14:36:45.303Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVD00C18C51FE15A10
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P9063 ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
+    bdr:G4367  a            :Place ;
+        skos:altLabel       "khyi snyi ri khrod yid dga' chos 'dzin gling /"@bo-x-ewts , "yid dga' chos 'dzin gling /"@bo-x-ewts ;
+        skos:prefLabel      "khyi snyi ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDCBAD2124C6EF304 ;
+        :placeEvent         bdr:EVD00C18C51FE15A10 ;
+        :placeLocatedIn     bdr:G2396 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NTDCBAD2124C6EF304
+        a                   :Note ;
+        :contentLocationStatement  "p. 549" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "hermitage founded by sgyis tshang sngags rams pa"@en .
+}

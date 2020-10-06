@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1GS140235 {
+    bda:G1GS140235  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1GS140235 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0c/G1GS140235.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1GS140235 ;
+        adm:logEntry        bda:LG64F5F1AD885212A2 , bda:LG71B5F5F2AC2E7B8E , bda:LGF2E3D1D0C7AC3E92 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG64F5F1AD885212A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T15:29:56.945Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG71B5F5F2AC2E7B8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-18T09:34:51.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2E3D1D0C7AC3E92
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-02-07T07:50:17.531Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1GS140235  a       :Place ;
+        skos:prefLabel      "gro sa/"@bo-x-ewts , "Drosa"@en ;
+        :isRoot             true ;
+        :note               bdr:NT16FA8AB544DCE39D ;
+        :placeType          bdr:PT0067 .
+    
+    bdr:NT16FA8AB544DCE39D
+        a                   :Note ;
+        :contentLocationStatement  "p. 385" ;
+        :noteSource         bdr:MW1GS140233 ;
+        :noteText           "small education institution in the 15th century where abhidharma was taught"@en .
+}

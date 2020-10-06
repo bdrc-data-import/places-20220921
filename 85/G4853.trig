@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4853 {
+    bda:G4853  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4853 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "85/G4853.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4853 ;
+        adm:logEntry        bda:LG2EE125D88EEBF3D0 , bda:LG4C03DBC1D0251196 , bda:LG7ED9D7DD25933DEC , bda:LG9DC1105745F3999D , bda:LGCC918EE98714FCA1 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623022205:623022117" ;
+        adm:place_id_lex    "623022205:623022117" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2EE125D88EEBF3D0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4C03DBC1D0251196
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-08T09:12:44.158Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7ED9D7DD25933DEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-08T09:28:18.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9DC1105745F3999D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-05T16:06:37.169Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCC918EE98714FCA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-10T13:45:07.142Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVC8152D3DA82D47E1
+        a                   :PlaceConverted ;
+        :notAfter           "1699"^^xsd:gYear ;
+        :notBefore          "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVF4F2299B89E23F3E
+        a                   :PlaceFounded ;
+        :onYear             "1424"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G4853  a            :Place ;
+        skos:altLabel       "bde thang dgon dga' ldan chos 'khor gling /"@bo-x-ewts , "dga' ldan bsam 'grub gling /"@bo-x-ewts , "dga' ldan chos 'khor gling /"@bo-x-ewts , "detang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bde thang dgon/"@bo-x-ewts , "Detang Gon"@en-x-mixed , "德唐寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8391775BADBC65A8 ;
+        :isRoot             true ;
+        :note               bdr:NT7BF4A954941FE165 ;
+        :placeEvent         bdr:EVC8152D3DA82D47E1 , bdr:EVF4F2299B89E23F3E ;
+        :placeGonpaPerEcumen  "4.91" ;
+        :placeLat           "34.60288" ;
+        :placeLocatedIn     bdr:G2203 ;
+        :placeLong          "103.05635" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID8391775BADBC65A8
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4853" .
+    
+    bdr:NT7BF4A954941FE165
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 71" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "major dge lugs monastery in amdo, the seat of the bde thang incarnation lineage. \n\nmonastery in co ne rdzong at kan lho autonomous tibetan prefecture, relationship to bde mo thang (a mchog)"@en .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11088 {
+    bda:G2CN11088  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11088 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "05/G2CN11088.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11088 ;
+        adm:logEntry        bda:LGBBAEDEBC263564CC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBBAEDEBC263564CC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-06-24T12:14:10.738Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV45C91ABDA4421796
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P559 ;
+        :notAfter           "1899"^^xsd:gYear ;
+        :notBefore          "1800"^^xsd:gYear .
+    
+    bdr:EV546CC436150E3497
+        a                   :PlaceFounded ;
+        :notAfter           "1899"^^xsd:gYear ;
+        :notBefore          "1800"^^xsd:gYear .
+    
+    bdr:G2CN11088  a        :Place ;
+        skos:altLabel       "sgrub sde chen po gser ri sman chen/"@bo-x-ewts ;
+        skos:prefLabel      "gser ri sman chen/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT71BBCF332334BC5D ;
+        :placeEvent         bdr:EV45C91ABDA4421796 , bdr:EV546CC436150E3497 ;
+        :placeLocatedIn     bdr:G1686 ;
+        :placeType          bdr:PT0064 .
+    
+    bdr:NT71BBCF332334BC5D
+        a                   :Note ;
+        :contentLocationStatement  "v.1, p. 594-595" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "སྒྲུབ་སྡེ་འདིའི་ལོ་རྒྱུས་ཅུང་ཟད་གསལ།"@bo .
+}

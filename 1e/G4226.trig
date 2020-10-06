@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4226 {
+    bda:G4226  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4226 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1e/G4226.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4226 ;
+        adm:logEntry        bda:LG2C783E3F359DE34A , bda:LG669621AD52B894D6 , bda:LGBABCF23184B5D3C4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C783E3F359DE34A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-20T16:21:40.495Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG669621AD52B894D6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBABCF23184B5D3C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-03T11:02:28.138Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV40EFD4ECC26AD8E0
+        a                   :PlaceFounded ;
+        :notAfter           "0799"^^xsd:gYear ;
+        :notBefore          "0700"^^xsd:gYear .
+    
+    bdr:G4226  a            :Place ;
+        skos:prefLabel      "btsan g.yu yi lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEB684E5E83AC1005 ;
+        :placeEvent         bdr:EV40EFD4ECC26AD8E0 ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NTEB684E5E83AC1005
+        a                   :Note ;
+        :contentLocationStatement  "pp. 241-242" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "description\nsaid to have been built by the queen ngang tshul byang chub rgyal mo, the wife of prince mu tig btsad po"@en .
+}

@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4548 {
+    bda:G4548  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4548 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "14/G4548.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4548 ;
+        adm:logEntry        bda:LG467B211B57D59E49 , bda:LGB3BF4199A95AACEF , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623024201:623024105" ;
+        adm:place_id_lex    "623024201:623024105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG467B211B57D59E49
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB3BF4199A95AACEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-02T09:00:10.954Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVCD8EB63695955A38
+        a                   :PlaceFounded ;
+        :onYear             "0982"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G4548  a            :Place ;
+        skos:altLabel       "sarang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bya brang dgon/"@bo-x-ewts , "Chadrang"@en-x-mixed , "萨让寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE2362AD2CE72CC79 ;
+        :isRoot             true ;
+        :note               bdr:NTA22CBA0FF9BD14D5 ;
+        :placeEvent         bdr:EVCD8EB63695955A38 ;
+        :placeGonpaPerEcumen  "11.4" ;
+        :placeLat           "34.02682" ;
+        :placeLocatedIn     bdr:G2205 ;
+        :placeLong          "103.25842" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE2362AD2CE72CC79
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4548" .
+    
+    bdr:NTA22CBA0FF9BD14D5
+        a                   :Note ;
+        :contentLocationStatement  "p. 252" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "older bon monastery included in the recently restored bon gtso tshang monastery"@en .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS522 {
+    bda:G2LS522  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS522 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "35/G2LS522.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS522 ;
+        adm:logEntry        bda:LG44584EDBA8AAC4C7 , bda:LG9C23F65E4D7A5A8D , bda:LGEA1C460AA5BCEED6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G3247 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG44584EDBA8AAC4C7
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-03-21T15:17:33.597Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G3247"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9C23F65E4D7A5A8D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:50:27.077Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEA1C460AA5BCEED6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:14:21.653Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from mountain to ri"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2LS522  a          :Place ;
+        skos:prefLabel      "gangs rin po che/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT895C88A59AEA5ACB , bdr:NTE69AAF7B09000817 ;
+        :placeType          bdr:PT0042 .
+    
+    bdr:NT895C88A59AEA5ACB
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 21" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Known also gang tise and gangkar tise, also Mount Kailash in western world. One of the most important power place and venerated by buddhist, hindu and jain follower."@en .
+    
+    bdr:NTE69AAF7B09000817
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G3247"@en .
+}

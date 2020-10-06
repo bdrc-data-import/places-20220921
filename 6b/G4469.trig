@@ -1,0 +1,113 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4469 {
+    bda:G4469  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4469 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "6b/G4469.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4469 ;
+        adm:logEntry        bda:LG60B321AC580EC87D , bda:LG740A8CCC81B842DF , bda:LG7ABB9151DF91BDB1 , bda:LG8CF394B5C75879BF , bda:LGB1F23802F92B18C9 , bda:LGFC1340A434D6567C , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "630121203:9" ;
+        adm:place_id_lex    "630121203:235" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG60B321AC580EC87D
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T11:30:05.036Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG740A8CCC81B842DF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7ABB9151DF91BDB1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T12:55:08.805Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8CF394B5C75879BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-20T15:10:47.641Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB1F23802F92B18C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-24T10:40:45.425Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGFC1340A434D6567C
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-20T15:05:43.028Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1751DEE8F73BE22A
+        a                   :PlaceFounded ;
+        :onYear             "1733"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV51A78AF133DE6F26
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P9217 ;
+        :onYear             "1733"^^xsd:gYear .
+    
+    bdr:G4469  a            :Place ;
+        skos:altLabel       "pingan si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dgon gsar bshad sgrub gling /"@bo-x-ewts , "平安寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA7E879045476B9B4 ;
+        :isRoot             true ;
+        :note               bdr:NTA146F48336A43208 , bdr:NTA770F7664669F340 ;
+        :placeEvent         bdr:EV1751DEE8F73BE22A , bdr:EV51A78AF133DE6F26 ;
+        :placeGonpaPerEcumen  "19" ;
+        :placeLat           "37.02176" ;
+        :placeLocatedIn     bdr:G1PD95966 ;
+        :placeLong          "101.43232" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA7E879045476B9B4
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4469" .
+    
+    bdr:NTA146F48336A43208
+        a                   :Note ;
+        :contentLocationStatement  "p. 107" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "name of a monastery in a mdo, founded by one sum pa dpon slob in 1733 at the order of rgyal sras ye shes grags pa\ndgon gsar bshad sgrub gling/ 'di ni rgyal sras ye shes grags pa'i lung bstan bzhin sum pa dpon slob kyis rab byung bcu gnyis pa'i chu glang (1733) la btab cing rgyal sras na bza' nang rten du bzhugs/ 'di'i lung mdor mo'i pe shang gi mkhar yod"@en .
+    
+    bdr:NTA770F7664669F340
+        a                   :Note ;
+        :contentLocationStatement  "p. 13" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་1958ལོར་གཏོར་ནས་ད་ལྟ་བསྐྱར་གསོ་བྱས་མེད་ཅེས་འཁོད།"@bo .
+}

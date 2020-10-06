@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4087 {
+    bda:G4087  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4087 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f7/G4087.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4087 ;
+        adm:logEntry        bda:LG0537AB7147B9BE22 , bda:LGA385A81C00EC0B6E , bda:LGC557E94BA8ACB2F9 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0537AB7147B9BE22
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-30T15:04:58.741Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA385A81C00EC0B6E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC557E94BA8ACB2F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-18T17:01:32.41Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA4A98AE5C87B2E8C
+        a                   :PlaceFounded ;
+        :onYear             "1795"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4087  a            :Place ;
+        skos:altLabel       "sog log dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "ri rgya dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT320BC5751A2FEC25 ;
+        :placeEvent         bdr:EVA4A98AE5C87B2E8C ;
+        :placeLocatedIn     bdr:G2303 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT320BC5751A2FEC25
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 538-540" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs monastery in nyag chu rdzong"@en .
+}

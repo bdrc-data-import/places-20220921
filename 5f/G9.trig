@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9 {
+    bda:G9  a               adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "5f/G9.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9 ;
+        adm:logEntry        bda:LG0BCE971E70AE14C3 , bda:LGF53FBD844BC30255 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540102202:540101130" ;
+        adm:place_id_lex    "540102202:540101130" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0BCE971E70AE14C3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF53FBD844BC30255
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-03T15:07:15.699Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVEBF048A53CAA0162
+        a                   :PlaceFounded ;
+        :onYear             "0850"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:G9  a               :Place ;
+        skos:altLabel       "lalong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lha lung ri khrod/"@bo-x-ewts , "Lhalung"@en-x-mixed , "拉隆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDEB637D3F01C704BF ;
+        :isRoot             true ;
+        :note               bdr:NT2E9672931A514A44 , bdr:NTF4BE129861922325 ;
+        :placeEvent         bdr:EVEBF048A53CAA0162 ;
+        :placeGonpaPerEcumen  "26.85" ;
+        :placeLat           "29.69414" ;
+        :placeLocatedIn     bdr:G2800 ;
+        :placeLong          "91.05216" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:IDEB637D3F01C704BF
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G9" .
+    
+    bdr:NT2E9672931A514A44
+        a                   :Note ;
+        :noteText           "too minor to fit on U-Tsang Imperial plate, and outside of Lhasa old city inset map."@en .
+    
+    bdr:NTF4BE129861922325
+        a                   :Note ;
+        :noteText           "rnying ma pa hermitage connected with the pad gling series of incarnate lamas"@en .
+}

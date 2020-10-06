@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN208 {
+    bda:G3CN208  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN208 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "34/G3CN208.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN208 ;
+        adm:logEntry        bda:LG03514E90775A283F , bda:LGFE4DF91931440879 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG03514E90775A283F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T14:54:36.872Z"^^xsd:dateTime ;
+        adm:logMessage      "addded type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFE4DF91931440879
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-04-24T14:56:02.754Z"^^xsd:dateTime ;
+        adm:logMessage      "creaated record & linked sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV7E1B29B4820F0986
+        a                   :PlaceFounded ;
+        :notAfter           "0899"^^xsd:gYear ;
+        :notBefore          "0800"^^xsd:gYear .
+    
+    bdr:G3CN208  a          :Place ;
+        skos:prefLabel      "zhol rdo ring /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV7E1B29B4820F0986 ;
+        :placeLocatedIn     bdr:G222 ;
+        :placeType          bdr:PT0054 .
+}

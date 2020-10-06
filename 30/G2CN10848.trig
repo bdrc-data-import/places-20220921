@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10848 {
+    bda:G2CN10848  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10848 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "30/G2CN10848.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10848 ;
+        adm:logEntry        bda:LG007E5CE7A28EC7B8 , bda:LG199657FE87984E51 , bda:LG314C4120C071E7BE , bda:LG48CDEC0D0252D0D0 , bda:LG6D5F406253BE6976 , bda:LG849B2C92E7C5953D , bda:LG97DC1B59CDB65438 , bda:LGC5BEF5BAD7FCBDE9 , bda:LGC6E317F596AD4920 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG007E5CE7A28EC7B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T14:14:46.612Z"^^xsd:dateTime ;
+        adm:logMessage      "edited place contained in"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG199657FE87984E51
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T14:55:11.226Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains in info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG314C4120C071E7BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T15:16:33.368Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG48CDEC0D0252D0D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-31T09:57:36.041Z"^^xsd:dateTime ;
+        adm:logMessage      "added date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG6D5F406253BE6976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T12:33:19.642Z"^^xsd:dateTime ;
+        adm:logMessage      "added as par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG849B2C92E7C5953D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-24T11:00:54.757Z"^^xsd:dateTime ;
+        adm:logMessage      "delete g2800"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG97DC1B59CDB65438
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T15:20:50.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added english name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC5BEF5BAD7FCBDE9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-22T17:45:20.28Z"^^xsd:dateTime ;
+        adm:logMessage      "added regions"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC6E317F596AD4920
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-01T17:07:16.236Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVB8CD4B82D91B5BEB
+        a                   :PlaceFounded ;
+        :notAfter           "1599"^^xsd:gYear ;
+        :notBefore          "1500"^^xsd:gYear .
+    
+    bdr:G2CN10848  a        :Place ;
+        skos:prefLabel      "'bras spungs sngags pa grwa tshang gi par khang /"@bo-x-ewts , "Drepung Ngakpa Dratsang"@en ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVB8CD4B82D91B5BEB ;
+        :placeLocatedIn     bdr:G108 , bdr:G2CN11048 ;
+        :placeType          bdr:PT0059 .
+}

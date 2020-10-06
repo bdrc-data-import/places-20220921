@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KR104 {
+    bda:G2KR104  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KR104 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "02/G2KR104.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KR104 ;
+        adm:logEntry        bda:LG8AA0AEBF2776D423 , bda:LGIM335E72436E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8AA0AEBF2776D423
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-01T14:04:30.743Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM335E72436E
+        a                   adm:UpdateData ;
+        adm:logAgent        "mongol import" ;
+        adm:logDate         "2013-12-03T23:23:40.962Z"^^xsd:dateTime ;
+        adm:logMessage      "created by mongol import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV48398E0A6EF2526C
+        a                   :PlaceFounded ;
+        :onYear             "1587"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2KR104  a          :Place ;
+        skos:altLabel       "rasi coiling sum-e"@mn-x-trans , "Rasi coiling süme/Qotala-yi nomughadqaghci süme"@mn-x-trans ;
+        skos:prefLabel      "bkra shis chos gling /"@bo-x-ewts , "Rashi choiling süm"@mn-x-trans ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV48398E0A6EF2526C ;
+        :placeLocatedIn     bdr:G603 ;
+        :placeType          bdr:PT0037 .
+}

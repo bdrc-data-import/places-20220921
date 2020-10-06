@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2573 {
+    bda:G2573  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2573 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "25/G2573.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2573 ;
+        adm:logEntry        bda:LG6C9A028D85438537 , bda:LGD374AAEDE81D6434 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6C9A028D85438537
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-13T09:33:32.155Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD374AAEDE81D6434
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2573  a            :Place ;
+        skos:altLabel       "岗察寺"@zh-hans , "gongsa si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dgon gsar dgon/"@bo-x-ewts , "gangcha si"@en-x-mixed , "贡洒寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT01B3790C9500AF64 , bdr:NT1DB9041273424CDA ;
+        :placeLocatedIn     bdr:G2329 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT01B3790C9500AF64
+        a                   :Note ;
+        :contentLocationStatement  "p. 370" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "'dir lo rgyus mdo tsam zhig rgya yig thog 'khod 'dug"@bo-x-ewts .
+    
+    bdr:NT1DB9041273424CDA
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 48" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "dge lugs pa monastery in yus hru'u prefecture, qinghai province"@en .
+}

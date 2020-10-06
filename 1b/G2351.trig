@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2351 {
+    bda:G2351  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2351 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1b/G2351.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2351 ;
+        adm:logEntry        bda:LG0C96C05F1142180B , bda:LG17B9A6F16F50CEB3 , bda:LGIM454E022964 , bda:LGIMAF5F209484 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0C96C05F1142180B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T11:42:24.39Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG17B9A6F16F50CEB3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM454E022964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T17:05:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:gzimsKhang to khamsTshan"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMAF5F209484
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:21:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from residentialHouse to gzimsKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2351  a            :Place ;
+        skos:prefLabel      "lA ba khams tshan (se ra byes)"@bo-x-ewts , "Seraje Lawa Khamtsen"@en ;
+        :isRoot             true ;
+        :note               bdr:NT965C59BCB5F0E711 , bdr:NTDF8ED585E6EED71B ;
+        :placeLocatedIn     bdr:G155 ;
+        :placeType          bdr:PT0039 .
+    
+    bdr:NT965C59BCB5F0E711
+        a                   :Note ;
+        :contentLocationStatement  "p. 80" ;
+        :noteSource         bdr:MW20212 ;
+        :noteText           "a residential house of se ra byes"@en .
+    
+    bdr:NTDF8ED585E6EED71B
+        a                   :Note ;
+        :contentLocationStatement  "p. 117" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "one of the 17 residential houses of se ra byes college of se ra monastery"@en .
+}

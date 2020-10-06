@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3562 {
+    bda:G3562  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3562 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f4/G3562.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3562 ;
+        adm:logEntry        bda:LG3129FB1857F06D21 , bda:LG6C59F9020D52795F , bda:LG7DA24B3108B58164 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3129FB1857F06D21
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6C59F9020D52795F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T15:33:56.954Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7DA24B3108B58164
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-15T12:02:25.706Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3562  a            :Place ;
+        skos:prefLabel      "rta nag phu shang (bzhad mthong smon)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT72C6C7F43A99BAE5 ;
+        :placeContains      bdr:G3CN378 ;
+        :placeLocatedIn     bdr:G2164 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT72C6C7F43A99BAE5
+        a                   :Note ;
+        :contentLocationStatement  "p. 48" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "name of a township seat in bzhad mthong smon rdzong"@en .
+}

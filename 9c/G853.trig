@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G853 {
+    bda:G853  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G853 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9c/G853.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G853 ;
+        adm:logEntry        bda:LG0581606D374720A2 , bda:LG2A70780C2ECFF72C , bda:LG8152DC8F0491B5E6 , bda:LG8BB9D042066BA2AF , bda:LG966E9A341E089288 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0581606D374720A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-21T14:29:02.211Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2A70780C2ECFF72C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-07T16:41:34.386Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, place type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8152DC8F0491B5E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG8BB9D042066BA2AF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG966E9A341E089288
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-15T16:24:56.332Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G853  a             :Place ;
+        skos:altLabel       "gtsang myang stod kyi gling smad/"@bo-x-ewts , "myang stod bzhengs kyi glang po sna yi gling smad/"@bo-x-ewts , "rgyal rtse gling smad/"@bo-x-ewts ;
+        skos:prefLabel      "myang stod gling smad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA44A4D69650CEE2E ;
+        :placeLocatedIn     bdr:G1988 ;
+        :placeType          bdr:PT0085 .
+    
+    bdr:NTA44A4D69650CEE2E
+        a                   :Note ;
+        :contentLocationStatement  "V.2, p. 77" ;
+        :noteSource         bdr:MW25268 ;
+        :noteText           "ས་མིང་འདི་ནི་གྲུབ་ཆེན་གླིང་རས་པའི་འཁྲུངས་ས་སྟེ། མྱང་སྟོད་བཞེངས་ཀྱི་གླང་པོ་སྣ་ན་༼དེང་སང་གི་རྒྱལ་རྩེ་༽གླིང་སྟོད་སྨད་གཉིས་ལས་སྨད་པ་ཡིན་པར་གསལ།"@bo .
+}

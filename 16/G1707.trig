@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1707 {
+    bda:G1707  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1707 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "16/G1707.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1707 ;
+        adm:logEntry        bda:LG131FEF58963A0A8F , bda:LG161CCB59A92FCEE4 , bda:LG4A3D923DF401A5E9 , bda:LG5446FBAC3763A546 , bda:LG55768BBBE4D0CB7F , bda:LG7700DA8927F1E68E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG131FEF58963A0A8F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-20T15:11:13.021Z"^^xsd:dateTime ;
+        adm:logMessage      "added location as inner mongolia"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG161CCB59A92FCEE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T09:17:48.158Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4A3D923DF401A5E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-19T15:42:49.954Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5446FBAC3763A546
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-09T12:14:15.47Z"^^xsd:dateTime ;
+        adm:logMessage      "added names (see zh.wikipedia.org)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG55768BBBE4D0CB7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7700DA8927F1E68E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1707  a            :Place ;
+        skos:altLabel       "a lags sha"@bo-x-ewts , "Alaša"@mn , "Алшаа"@mn , "ala shan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "a lag sha"@bo-x-ewts , "ᠠᠯᠠᠱᠠ"@mn , "阿拉善"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G1GS54751 ;
+        :placeLocatedIn     bdr:G584 , bdr:G603 ;
+        :placeType          bdr:PT0014 .
+}

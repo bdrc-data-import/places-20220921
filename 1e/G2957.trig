@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2957 {
+    bda:G2957  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2957 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "1e/G2957.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2957 ;
+        adm:logEntry        bda:LG73218F3284B062D0 , bda:LGA3167A1D07F49F67 , bda:LGC24AF79377EE7F92 , bda:LGE436E5FB20D0EFD3 , bda:LGEA87BF0007DEE157 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG73218F3284B062D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-14T14:35:03.446Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA3167A1D07F49F67
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-15T09:27:43.24Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC24AF79377EE7F92
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE436E5FB20D0EFD3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T12:31:40.301Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEA87BF0007DEE157
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-19T10:17:31.547Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2957  a            :Place ;
+        skos:altLabel       "spo stod gdugs bskor/"@bo-x-ewts ;
+        skos:prefLabel      "gdugs bskor/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTBAB6A264007896E0 ;
+        :placeLocatedIn     bdr:G655 ;
+        :placeType          bdr:PT0085 .
+    
+    bdr:NTBAB6A264007896E0
+        a                   :Note ;
+        :contentLocationStatement  "p. 106" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "mentioned as the birthplace of the 10th rba kha sprul sku"@en .
+}

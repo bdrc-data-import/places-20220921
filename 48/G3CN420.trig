@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN420 {
+    bda:G3CN420  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN420 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "48/G3CN420.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN420 ;
+        adm:logEntry        bda:LG2D519A5199658835 , bda:LG6E85FD5304EE4211 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2D519A5199658835
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-30T11:33:50.397Z"^^xsd:dateTime ;
+        adm:logMessage      "added note & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6E85FD5304EE4211
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-09-30T10:53:26.197Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV13DEC4DE44FBA1D0
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN420  a          :Place ;
+        skos:altLabel       "gu lang /"@bo-x-ewts ;
+        skos:prefLabel      "gu lang lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8F95BFF3553A3ECA , bdr:NT97D5375FCD308621 ;
+        :placeEvent         bdr:EV13DEC4DE44FBA1D0 ;
+        :placeLocatedIn     bdr:G3CN424 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NT8F95BFF3553A3ECA
+        a                   :Note ;
+        :contentLocationStatement  "p. 230" ;
+        :noteSource         bdr:MW7499 ;
+        :noteText           "\"ཤར་དུ་སའི་ཁ་གནོན་ཉི་ཟླ་གཟའ་སྐར་གཏན་ལ་འབེབས་པའི་ཕྱིར་ཀ་ཆུ་ཀུམ་ཆུ་གླིང་ཆུ་གསུམ། ལྷོར་མེའི་ཁ་གནོན་སྣང་གྲོ་དང་གློང་ཐང་གཉིས། ནུབ་ཏུ་ཆུའི་ཁ་གནོན་གུ་ལང་དང་ཤིང་ཀུན་གཉིས།བྱང་དུ་རླུང་གི་ཁ་གནོན་དགེ་རི་དང་དཔལ་རི་གཉིས་ཏེ་འབྱུང་བའི་ཁ་གནོན་གྱི་གཙུག་ལག་ཁང་དགུའོ།\" ཞེས་གསལ།"@bo .
+    
+    bdr:NT97D5375FCD308621
+        a                   :Note ;
+        :contentLocationStatement  "P. 167" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "ka thog pa'i chos brgyud 'dzin pa'i gu lang dgon (G3744)dang gcig pa yin min rtsad rgyu/"@en .
+}

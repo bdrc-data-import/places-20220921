@@ -1,0 +1,43 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3JT13480 {
+    bda:G3JT13480  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3JT13480 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "30/G3JT13480.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3JT13480 ;
+        adm:logEntry        bda:LG56C40D76882BCA51 , bda:LG70D9C96CD9D56C5C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG56C40D76882BCA51
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-16T16:20:28.333Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG70D9C96CD9D56C5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-10T11:51:53.057Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3JT13480  a        :Place ;
+        skos:altLabel       "'brang rgyas dgon pa/"@bo-x-ewts , "spa gro 'brang rgyas kha/"@bo-x-ewts ;
+        skos:prefLabel      "'brang rgyas kha/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G836 ;
+        :placeType          bdr:PT0037 .
+}

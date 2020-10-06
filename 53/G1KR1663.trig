@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1663 {
+    bda:G1KR1663  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1663 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "53/G1KR1663.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1663 ;
+        adm:logEntry        bda:LGD5F8869A78D45194 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542421215:409" ;
+        adm:place_id_lex    "542421215:409" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD5F8869A78D45194
+        a                   adm:UpdateData ;
+        adm:logDate         "2016-03-17T18:41:26.993Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, added note from G485 (dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV317C998731F801D7
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:EV4BCAA2BE244D25C2
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1856 ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear .
+    
+    bdr:G1KR1663  a         :Place ;
+        skos:altLabel       "'ba' rom bka' brgyud bshad sgrub chos 'khor gling /"@bo-x-ewts , "barong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'ba' rom dgon/"@bo-x-ewts , "Barom Monastery"@en , "巴荣寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCC66DC268673007A ;
+        :isRoot             true ;
+        :note               bdr:NT0BF08027217E4FAD ;
+        :placeEvent         bdr:EV317C998731F801D7 , bdr:EV4BCAA2BE244D25C2 ;
+        :placeGonpaPerEcumen  "0.85" ;
+        :placeLat           "30.81667" ;
+        :placeLocatedIn     bdr:G2147 ;
+        :placeLong          "91.63333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDCC66DC268673007A
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1663" .
+    
+    bdr:NT0BF08027217E4FAD
+        a                   :Note ;
+        :noteText           "ancient monastery of the 'ba' rom bka' brgyud tradition located in khams (nag chu rdzong /?)\nfounded by 'ba' rom ras pa dar ma dbang phyug\n\n---moved from G485 (dup.)"@en .
+}

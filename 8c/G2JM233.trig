@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2JM233 {
+    bda:G2JM233  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2JM233 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8c/G2JM233.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2JM233 ;
+        adm:logEntry        bda:LG7072DD6FAA58CC9A , bda:LG90E2F23A162D51F0 , bda:LGFCE922059A3C00B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7072DD6FAA58CC9A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-10T17:01:11.829Z"^^xsd:dateTime ;
+        adm:logMessage      "added records and notes"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LG90E2F23A162D51F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T14:43:06.751Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFCE922059A3C00B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T14:06:23.632Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2JM233  a          :Place ;
+        skos:prefLabel      "rga skye dgu mdo'i bshad grwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT88C397136297E1FA ;
+        :placeType          bdr:PT0038 .
+    
+    bdr:NT88C397136297E1FA
+        a                   :Note ;
+        :contentLocationStatement  "311" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "Founded in the early 20th C. by mkhan chen gzhan dga' rin po che who served as its first director. Focused on the Sakya teachings."@en .
+}

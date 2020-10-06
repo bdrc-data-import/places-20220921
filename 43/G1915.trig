@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1915 {
+    bda:G1915  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1915 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "43/G1915.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1915 ;
+        adm:logEntry        bda:LG1B0FB88E3ACD2060 , bda:LG743D0141D3F52FAE , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632525204:367" ;
+        adm:place_id_lex    "632525204:526" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1B0FB88E3ACD2060
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T15:07:37.385Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG743D0141D3F52FAE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV55D51ECC02153E03
+        a                   :PlaceFounded ;
+        :onYear             "1978"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1915  a            :Place ;
+        skos:altLabel       "ban shul dgon bshad sgrub rin chen gling /"@bo-x-ewts , "ban shul sgar gsar phun tshogs bkra shis chos rdzong /"@bo-x-ewts , "phun tshogs bkra shis chos rdzong /"@bo-x-ewts , "万秀尕寺"@zh-hans , "wanxiu gaka"@zh-latn-pinyin-x-ndia , "wanxiuga si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ban shul sgar gsar/"@bo-x-ewts , "万秀尕卡"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDAC027B98641CB90 ;
+        :isRoot             true ;
+        :note               bdr:NT15FF6209572B28AF ;
+        :placeEvent         bdr:EV55D51ECC02153E03 ;
+        :placeGonpaPerEcumen  "3.97" ;
+        :placeLat           "35.62100" ;
+        :placeLocatedIn     bdr:G1812 ;
+        :placeLong          "101.15830" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDDAC027B98641CB90
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1915" .
+    
+    bdr:NT15FF6209572B28AF
+        a                   :Note ;
+        :contentLocationStatement  "p. 587" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "monastery located in kos nan rdzong, mtsho lho bod rigs rang skyong khul"@en .
+}

@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2878 {
+    bda:G2878  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2878 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "30/G2878.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2878 ;
+        adm:logEntry        bda:LG05FF6A8F3BC4D8EE , bda:LG50372D9C87D0DC63 , bda:LG756A18E936575942 , bda:LGB489AC60B6D28983 , bda:LGBCF7BC2E1BE49597 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG05FF6A8F3BC4D8EE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG50372D9C87D0DC63
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-14T11:40:37.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG756A18E936575942
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T15:08:17.812Z"^^xsd:dateTime ;
+        adm:logMessage      "added location with note?"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB489AC60B6D28983
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-31T08:53:36.232Z"^^xsd:dateTime ;
+        adm:logMessage      "location ?"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBCF7BC2E1BE49597
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-22T15:34:14.061Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2878  a            :Place ;
+        skos:altLabel       "dga' ldan 'phel rgyal gling /"@bo-x-ewts ;
+        skos:prefLabel      "khyung rdzong dkar po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT826DF574D4566CB2 , bdr:NTF7921D609BCBFCE6 ;
+        :placeLocatedIn     bdr:G2152 , bdr:G2156 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT826DF574D4566CB2
+        a                   :Note ;
+        :noteText           "located in rtsa mda' rdzong or ru thog rdzong ?"@en .
+    
+    bdr:NTF7921D609BCBFCE6
+        a                   :Note ;
+        :noteText           "dge lugs pa monastery/ founded by the 5th dalai lama in the 17th century"@en .
+}

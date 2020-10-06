@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2715 {
+    bda:G2715  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2715 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "ac/G2715.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2715 ;
+        adm:logEntry        bda:LG770BB5146D41464D , bda:LG7963E8555C0DCA9A , bda:LG930E5AC7A04AFD18 , bda:LGB20490D4E6ADFE28 , bda:LGB4B15E3EB83A2E05 , bda:LGE19B10F8E9A42F7D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG770BB5146D41464D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-13T08:58:15.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added locatiob & arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7963E8555C0DCA9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-11-30T06:22:30.328Z"^^xsd:dateTime ;
+        adm:logMessage      "attempted to add a second note and to publish; unsuccessful"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG930E5AC7A04AFD18
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-27T13:08:10.023Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGB20490D4E6ADFE28
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-11-30T18:48:46.937Z"^^xsd:dateTime ;
+        adm:logMessage      "test publication"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB4B15E3EB83A2E05
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE19B10F8E9A42F7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-19T14:13:28.428Z"^^xsd:dateTime ;
+        adm:logMessage      "chinese added"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV55A8AAB3E0292FA4
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2612 ;
+        :notAfter           "1299"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear .
+    
+    bdr:G2715  a            :Place ;
+        skos:altLabel       "skal bzang dpal 'byor gling /"@bo-x-ewts , "gazang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "khri 'du skal bzang dgon/"@bo-x-ewts , "Tridu Kelzang Gon"@en , "尕藏寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT0301CE43E3F9C18F ;
+        :placeEvent         bdr:EV55A8AAB3E0292FA4 ;
+        :placeLocatedIn     bdr:G2325 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0301CE43E3F9C18F
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 45" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "sa skya pa monastery in yus hru'u prefecture, qinghai province; located in cheng we; indirectly subordinate to the nang chen rgyal po under the grong dkyil seat in khri 'du rdzong"@en .
+}

@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1534 {
+    bda:G1534  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1534 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "31/G1534.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1534 ;
+        adm:logEntry        bda:LGB6154751074F71A6 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "533421207:35" ;
+        adm:place_id_lex    "533421207:36" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGB6154751074F71A6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV34939B821E8C809A
+        a                   :PlaceFounded ;
+        :onYear             "1948"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1534  a            :Place ;
+        skos:altLabel       "yon tan dgon/"@bo-x-ewts , "滚思寺"@zh-hans , "Gunsi si"@zh-latn-pinyin-x-ndia , "Yundeng si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "yon tan dgon/"@bo-x-ewts , "云登寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID01F17251F5D5FEF5 ;
+        :isRoot             true ;
+        :note               bdr:NT070B5456D59087FF ;
+        :placeEvent         bdr:EV34939B821E8C809A ;
+        :placeGonpaPerEcumen  "2.27" ;
+        :placeLat           "28.56667" ;
+        :placeLocatedIn     bdr:G1520 ;
+        :placeLong          "99.60000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID01F17251F5D5FEF5
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1534" .
+    
+    bdr:NT070B5456D59087FF
+        a                   :Note ;
+        :contentLocationStatement  "22" ;
+        :noteSource         bdr:MW20006 ;
+        :noteText           "dgon lag of a rnying ma monastery in 'ba'thang in zi khron.\n1937 founded,\nin 1959 there were 182 monks and one sprul sku.\ndestroyed during the cultural revolution.\nsince restoration there are now 41 monks and one sprul sku.\nthe sprul sku, byang chub tshul khrims rgya mtsho, is a doctor and is the yon krang of the the local tibetan medical hospital."@en .
+}

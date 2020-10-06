@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN400 {
+    bda:G3CN400  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN400 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "75/G3CN400.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN400 ;
+        adm:logEntry        bda:LG82511A56E7081C7B , bda:LGA78B70322736447F , bda:LGCD5917CE2856C3B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG82511A56E7081C7B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-19T09:43:46.114Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA78B70322736447F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-19T11:13:36.868Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCD5917CE2856C3B8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-09-18T16:30:54.781Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN400  a          :Place ;
+        skos:altLabel       "mdo la ring mo/"@bo-x-ewts , "qilian shanmai"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mdo la/"@bo-x-ewts , "Dola Mountains"@en , "祁连山脉"@zh-hans ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G1202 , bdr:G2314 , bdr:G3196 , bdr:G3CN401 ;
+        :placeType          bdr:PT0044 .
+}

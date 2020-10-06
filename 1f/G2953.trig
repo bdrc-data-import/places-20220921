@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2953 {
+    bda:G2953  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2953 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1f/G2953.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2953 ;
+        adm:logEntry        bda:LG081CE493B0224F90 , bda:LG54B54F79D7960408 , bda:LGA419176CB9EFBAA8 , bda:LGFEA90594614747B9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG081CE493B0224F90
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-07T14:56:54.777Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G383 to G1KR1893"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG54B54F79D7960408
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T21:25:08.349Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G2914 to G1KR1886"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA419176CB9EFBAA8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFEA90594614747B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T16:29:11.859Z"^^xsd:dateTime ;
+        adm:logMessage      "re added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2953  a            :Place ;
+        skos:altLabel       "khrab rmog chus (spo bo rdzong)"@bo-x-ewts ;
+        skos:prefLabel      "spra rmog chus (spo bo rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6382F03712FC89D5 ;
+        :placeContains      bdr:G1KR1886 , bdr:G1KR1893 , bdr:G2912 , bdr:G2913 , bdr:G2915 , bdr:G2916 , bdr:G2917 ;
+        :placeLocatedIn     bdr:G2944 ;
+        :placeType          bdr:PT0012 .
+    
+    bdr:NT6382F03712FC89D5
+        a                   :Note ;
+        :contentLocationStatement  "p. 125" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "one of the 9 administrative units (communes) of spo bo county"@en .
+}

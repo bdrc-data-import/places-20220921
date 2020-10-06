@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G883 {
+    bda:G883  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G883 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3c/G883.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G883 ;
+        adm:logEntry        bda:LGD777F287C72BBEA3 , bda:LGE3EDFEC623B5F7B1 , bda:LGEAC74531B9DDFCED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD777F287C72BBEA3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-17T10:28:41.157Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE3EDFEC623B5F7B1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEAC74531B9DDFCED
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-21T14:26:41.322Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G883  a             :Place ;
+        skos:altLabel       "dbus stod spun drug rdzong /"@bo-x-ewts ;
+        skos:prefLabel      "spun drug rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G968 ;
+        :placeType          bdr:PT0056 .
+}

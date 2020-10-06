@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G809 {
+    bda:G809  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G809 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "17/G809.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G809 ;
+        adm:logEntry        bda:LG2BCFD33294D5A5FF , bda:LG6A812F41B989B9FE , bda:LG95ECC5A2D23EBC47 , bda:LGBE3E49B8F20D5F17 , bda:LGDB0B1B9E43C19D67 , bda:LGE7E745B17140D959 , bda:LGED3B4C7B471F3E29 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2BCFD33294D5A5FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-16T12:04:00.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6A812F41B989B9FE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG95ECC5A2D23EBC47
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-25T10:33:37.982Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBE3E49B8F20D5F17
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-17T09:01:29.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDB0B1B9E43C19D67
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-04T10:04:07.184Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE7E745B17140D959
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-16T11:55:55.787Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGED3B4C7B471F3E29
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-02T11:53:16.379Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G809  a             :Place ;
+        skos:altLabel       "gtsang rong gi mtshams lhan gyi nang drug brgya pa'i spe'u yul/"@bo-x-ewts , "lhan drug brgya pa'i spe'u yul/"@bo-x-ewts ;
+        skos:prefLabel      "spe'u yul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT601DA94135C9C50D , bdr:NT6AEA030183476097 ;
+        :placeLocatedIn     bdr:G559 ;
+        :placeType          bdr:PT0070 .
+    
+    bdr:NT601DA94135C9C50D
+        a                   :Note ;
+        :contentLocationStatement  "969" ;
+        :noteSource         bdr:MW19801 ;
+        :noteText           "པཎ་ཆེན་བློ་བཟང་ཆོས་རྒྱན་གྱི་འཁྲུངས་ཡུལ་ཡིན་པར་གསལ།"@bo .
+    
+    bdr:NT6AEA030183476097
+        a                   :Note ;
+        :noteText           "see corporation \"gtsang rong mtshams lhan drug sba lineage\": C2CN10982"@en .
+}

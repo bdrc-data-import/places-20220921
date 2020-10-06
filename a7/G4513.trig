@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4513 {
+    bda:G4513  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4513 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "a7/G4513.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4513 ;
+        adm:logEntry        bda:LG10160250B4F679F7 , bda:LG4BABFB896BA54411 , bda:LGA0CFAB4E320A7D7A , bda:LGB1C9EF2B204D0B21 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG10160250B4F679F7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4BABFB896BA54411
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-03T18:04:56.35Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA0CFAB4E320A7D7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T14:54:32.71Z"^^xsd:dateTime ;
+        adm:logMessage      "added steng chen rdzong"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGB1C9EF2B204D0B21
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-03T14:21:49.27Z"^^xsd:dateTime ;
+        adm:logMessage      "added withdrawn note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4513  a            :Place ;
+        skos:altLabel       "chab mdo dgon dpal gshen bstan g.yung drung bde chen gling /"@bo-x-ewts , "dpal gshen bstan g.yung drung bde chen gling /"@bo-x-ewts , "gshen bstan g.yung drung bde chen gling /"@bo-x-ewts ;
+        skos:prefLabel      "g.yung drung bde chen gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0B8F61E1C045EDA1 , bdr:NTB97923BFE1B84530 , bdr:NTEF56D4DD56038F43 ;
+        :placeLocatedIn     bdr:G2146 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0B8F61E1C045EDA1
+        a                   :Note ;
+        :contentLocationStatement  "pp. 64-76" ;
+        :noteSource         bdr:MW30453 ;
+        :noteText           "bon monastery in snyan rong rdzong of nag chu prefecture"@en .
+    
+    bdr:NTB97923BFE1B84530
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR1703"@en .
+    
+    bdr:NTEF56D4DD56038F43
+        a                   :Note ;
+        :contentLocationStatement  "p. 301" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "bonpo monastery\n1917. chab mdo dgon dpal gshen bstan g.yung drung bde chen gling bskyar du bzhengs. bon dgon 'di ni lo rgyus yun ring yod pa'i dgon pa zhig yin rung/ rab byung bcu gcig pa chu rta (spyi lo 1642) lor go shri bstan 'dzin chos rgyal gyi sog dmag bod du yong skabs gtor brlag btang"@en .
+}

@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3227 {
+    bda:G3227  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3227 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "95/G3227.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3227 ;
+        adm:logEntry        bda:LG25DD694679BA6FC9 , bda:LGCE74A6393A39F618 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG25DD694679BA6FC9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCE74A6393A39F618
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-16T10:43:34.601Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3227  a            :Place ;
+        skos:prefLabel      "dngul rwa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3D723E25B344E72D ;
+        :placeLocatedIn     bdr:G2202 ;
+        :placeType          bdr:PT0048 .
+    
+    bdr:NT3D723E25B344E72D
+        a                   :Note ;
+        :contentLocationStatement  "1991-4 (38), p. 60" ;
+        :noteSource         bdr:MW22362 ;
+        :noteText           "one of the nomadic groups ('brog sde) in rma chu rdzong, kan lho prefecture"@en .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11140 {
+    bda:G2CN11140  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11140 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b7/G2CN11140.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11140 ;
+        adm:logEntry        bda:LGF74C009B7B072AED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGF74C009B7B072AED
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-17T12:03:44.61Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV9D2E193C05FE29A8
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G2CN11140  a        :Place ;
+        skos:altLabel       "rgyal gshen ya ngal gdan sa bsam gtan gling dgon/"@bo-x-ewts ;
+        skos:prefLabel      "yang ston dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTAAD75E5703418CE6 ;
+        :placeEvent         bdr:EV9D2E193C05FE29A8 ;
+        :placeLat           "29.430810" ;
+        :placeLocatedIn     bdr:G4450 ;
+        :placeLong          "82.907577" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTAAD75E5703418CE6
+        a                   :Note ;
+        :noteText           "Founded by Yang ston rgyal mtshan rin chen.\n\nLocated in Phijor (bi cher, bi cer, byi tsher), Nepal"@en .
+}

@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1GS44714 {
+    bda:G1GS44714  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1GS44714 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "61/G1GS44714.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1GS44714 ;
+        adm:logEntry        bda:LG7C6B7948450D5F14 , bda:LG953EB79F700FA342 , bda:LGB720B0ADD05F1E73 , bda:LGDF6DB251C29393EC , bda:LGE50798471CA24770 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7C6B7948450D5F14
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-08T10:17:25.601Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG953EB79F700FA342
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-04T09:03:14.646Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB720B0ADD05F1E73
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-04T09:05:03.434Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDF6DB251C29393EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T16:45:29.405Z"^^xsd:dateTime ;
+        adm:logMessage      "new place type assigned"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE50798471CA24770
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-05-19T14:23:41.312Z"^^xsd:dateTime ;
+        adm:logMessage      "location created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1GS44714  a        :Place ;
+        skos:prefLabel      "dkar cog spang spur/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT73134643BBD7A225 ;
+        :placeLocatedIn     bdr:G555 ;
+        :placeType          bdr:PT0085 .
+    
+    bdr:NT73134643BBD7A225
+        a                   :Note ;
+        :contentLocationStatement  "p. 329" ;
+        :noteSource         bdr:MW00KG01063 ;
+        :noteText           "a location between rong and g.yag sde in gtsang; this was the birthplace of the 94th dga' ldan khri pa. “'khrungs yul rong dang g.yag sde'i mtshams kyi dkar cog spangs spur yin/”"@en .
+}

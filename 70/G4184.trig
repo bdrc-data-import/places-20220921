@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4184 {
+    bda:G4184  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4184 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "70/G4184.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4184 ;
+        adm:logEntry        bda:LG098C7064173BBC53 , bda:LG84491BAC7DE1E11E , bda:LGA2655441A509B555 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542228203:542228101" ;
+        adm:place_id_lex    "542228203:542228101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG098C7064173BBC53
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:29:34.851Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG84491BAC7DE1E11E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA2655441A509B555
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-02T09:07:24.728Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4DD9FBE5C1245E92
+        a                   :PlaceFounded ;
+        :onYear             "1225"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:EV852A906B3D67FC29
+        a                   :PlaceConverted ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4184  a            :Place ;
+        skos:altLabel       "ban pa thig phyi/"@bo-x-ewts , "lho brag thig phyi/"@bo-x-ewts , "phyag rdor lha khang /"@bo-x-ewts , "diqi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "thig phyi dgon/"@bo-x-ewts , "Tikchi Gonpa"@en-x-mixed , "帝齐寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID087639637DBD8848 ;
+        :isRoot             true ;
+        :note               bdr:NT1D9BE96F0AE25AA4 , bdr:NT718ABA86CC13E5AE , bdr:NTC9620C50472DA3CC ;
+        :placeEvent         bdr:EV4DD9FBE5C1245E92 , bdr:EV852A906B3D67FC29 ;
+        :placeGonpaPerEcumen  "6.4" ;
+        :placeLat           "28.18543" ;
+        :placeLocatedIn     bdr:G2134 , bdr:G4185 ;
+        :placeLong          "91.24723" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID087639637DBD8848
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4184" .
+    
+    bdr:NT1D9BE96F0AE25AA4
+        a                   :Note ;
+        :noteText           "this and spro ba dgon (below) were the seats of Lhodrag Drubchen, a teacher of Tsongkhapa.  He had nothing to do with the Drugpa Kagyu, rather his Shuphu tradition followed a tradition of Kadamspa and special practices of Vajrapani."@en .
+    
+    bdr:NT718ABA86CC13E5AE
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp 122-124" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTC9620C50472DA3CC
+        a                   :Note ;
+        :contentLocationStatement  "p. 217" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "description\nmonastery of the shud phu lineage of lho brag grub chen; this teaching was absorbed by the dge lugs close to the time of tsong kha pa\n\nbecause of the great vajrapani temple here the establishment of thig phyi is often known as ban pa phyag rdor lha khang"@en .
+}

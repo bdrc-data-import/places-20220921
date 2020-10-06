@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3308 {
+    bda:G3308  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3308 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "90/G3308.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3308 ;
+        adm:logEntry        bda:LG248361B8D6053C38 , bda:LG3FC61EFCE6CF1344 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG248361B8D6053C38
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3FC61EFCE6CF1344
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-25T09:57:02.921Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3308  a            :Place ;
+        skos:prefLabel      "sgang phu dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDD36127812D9117E ;
+        :placeLocatedIn     bdr:G2129 , bdr:G3287 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTDD36127812D9117E
+        a                   :Note ;
+        :contentLocationStatement  "p. 323" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "restored karma kargyu monastery with 8monks after restoration"@en .
+}

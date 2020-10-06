@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2293 {
+    bda:G2293  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2293 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2e/G2293.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2293 ;
+        adm:logEntry        bda:LG800DE78927A4E286 , bda:LGBAE81E6CC1EB3935 , bda:LGF868C9D4BF09F685 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG800DE78927A4E286
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T16:23:53.02Z"^^xsd:dateTime ;
+        adm:logMessage      "re added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBAE81E6CC1EB3935
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF868C9D4BF09F685
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T12:28:31.758Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2293  a            :Place ;
+        skos:prefLabel      "ra bang chus (ru thog rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2C925150496D436B ;
+        :placeContains      bdr:G2269 ;
+        :placeLocatedIn     bdr:G2156 ;
+        :placeType          bdr:PT0012 .
+    
+    bdr:NT2C925150496D436B
+        a                   :Note ;
+        :contentLocationStatement  "p. 10" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "chus in ru thog rdzong of mnga' ris prefecture"@en .
+}

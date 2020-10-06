@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1896 {
+    bda:G1896  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1896 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3b/G1896.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1896 ;
+        adm:logEntry        bda:LG3278E2C5C7F5F35C , bda:LGAA3D1EAB8D718A7D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3278E2C5C7F5F35C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T10:29:47.903Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAA3D1EAB8D718A7D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1896  a            :Place ;
+        skos:altLabel       "lha mo drel dgon tshul khrims dar rgyas gling /"@bo-x-ewts , "tshul khrims dar rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "lha mo drel dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT15B614F5A9DB0D4D ;
+        :placeLocatedIn     bdr:G1698 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT15B614F5A9DB0D4D
+        a                   :Note ;
+        :contentLocationStatement  "p. 414" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "monastery in gung ho rdzong, mtsho lho bod rigs rang skyong khul"@en .
+}

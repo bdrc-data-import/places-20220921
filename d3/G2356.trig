@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2356 {
+    bda:G2356  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2356 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "d3/G2356.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2356 ;
+        adm:logEntry        bda:LG0D429A203592A15F , bda:LG3916F0BC90F1ED77 , bda:LGE2A6182CE04AA158 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D429A203592A15F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3916F0BC90F1ED77
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T14:53:13.18Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE2A6182CE04AA158
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T16:24:50.271Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2356  a            :Place ;
+        skos:altLabel       "'jad/"@bo-x-ewts ;
+        skos:prefLabel      "mthong smon rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3D5F7A4D1B89EC35 ;
+        :placeContains      bdr:G556 ;
+        :placeType          bdr:PT0056 .
+    
+    bdr:NT3D5F7A4D1B89EC35
+        a                   :Note ;
+        :noteText           "traditional rdzong located in gtsang near rta nag dgon"@en .
+}

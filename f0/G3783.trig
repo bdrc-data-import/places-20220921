@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3783 {
+    bda:G3783  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3783 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f0/G3783.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3783 ;
+        adm:logEntry        bda:LG30C089F9DB0821F5 , bda:LG53EF897BB5EC0BC2 , bda:LGF91EE031C631CCDA , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG30C089F9DB0821F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-11T12:19:31.926Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG53EF897BB5EC0BC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-02T09:33:38.264Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF91EE031C631CCDA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0BEC27055CC8EB24
+        a                   :PlaceFounded ;
+        :onYear             "1796"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3783  a            :Place ;
+        skos:altLabel       "nyi 'od dgon/"@bo-x-ewts ;
+        skos:prefLabel      "lcam pa nyi 'od dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT97B3B04E8F0A979B ;
+        :placeEvent         bdr:EV0BEC27055CC8EB24 ;
+        :placeLocatedIn     bdr:G2308 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT97B3B04E8F0A979B
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, p. 4" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma pa monastery in dar mdo rdzong; founded in 1796 by bla ma klong gsal tshang; now restored and having a complement of over 30 monks"@en .
+}

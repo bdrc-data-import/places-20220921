@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G935 {
+    bda:G935  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G935 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "20/G935.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G935 ;
+        adm:logEntry        bda:LG3D9E9258A492103F , bda:LG4C0F9A6E6420FAEC , bda:LG6D116446B88C0BA8 , bda:LGB3AD54692A8CCA27 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3D9E9258A492103F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4C0F9A6E6420FAEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T10:53:57.409Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6D116446B88C0BA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-08T13:01:12.435Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB3AD54692A8CCA27
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-09T16:28:14.051Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G935  a             :Place ;
+        skos:altLabel       "smar stod ki zi thang /"@bo-x-ewts ;
+        skos:prefLabel      "ki zi thang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD142987F3B8552C2 ;
+        :placeLocatedIn     bdr:G1490 ;
+        :placeType          bdr:PT0055 .
+    
+    bdr:NTD142987F3B8552C2
+        a                   :Note ;
+        :noteText           "place name in khams where tht 10th karma pa was born; this must certainly be located in the present day mgo log"@en .
+}

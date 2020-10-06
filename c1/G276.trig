@@ -1,0 +1,83 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G276 {
+    bda:G276  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G276 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c1/G276.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G276 ;
+        adm:logEntry        bda:LG27E10B509532BD67 , bda:LG29701CBC67304FEF , bda:LG5AB6F8B67FBE808D , bda:LG6E0DAC689E18F593 , bda:LG71F9223D342A580C , bda:LG9BE19F741E6A8EF0 , bda:LGBCA9D2D0BAC0C54E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G3278 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG27E10B509532BD67
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2201"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG29701CBC67304FEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T13:44:50.669Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG5AB6F8B67FBE808D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2199"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG6E0DAC689E18F593
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-03-22T15:11:39.874Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G3278"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG71F9223D342A580C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9BE19F741E6A8EF0
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-20T14:20:00.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese"@en ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGBCA9D2D0BAC0C54E
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-16T15:45:11.814Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G276  a             :Place ;
+        skos:altLabel       "dga' ldan bshad sgrub pad dkar grol ba'i gling /"@bo-x-ewts , "stag tshang lha mo gser khri dgon dga' ldan bshad sgrub pad dkar grol ba'i gling /"@bo-x-ewts , "lang nu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "stag tshang lha mo gser khri dgon/"@bo-x-ewts , "Ganden Shedrub Pekar Drolwailing"@en , "郎木寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT1B29DC586AA79E3B ;
+        :placeLocatedIn     bdr:G2199 , bdr:G2201 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1B29DC586AA79E3B
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G3278"@en .
+}

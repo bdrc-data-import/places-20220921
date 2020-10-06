@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3313 {
+    bda:G3313  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3313 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bf/G3313.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3313 ;
+        adm:logEntry        bda:LG03F0726F9A7F34F2 , bda:LG9081AAD91142EBEB , bda:LGE0616A4FE4BD39E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG03F0726F9A7F34F2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9081AAD91142EBEB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-21T12:55:45.21Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE0616A4FE4BD39E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:zhangxiang to shang"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3313  a            :Place ;
+        skos:prefLabel      "sne'u shang (chu shur rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeContains      bdr:G3322 , bdr:G3323 ;
+        :placeLocatedIn     bdr:G2128 ;
+        :placeType          bdr:PT0077 .
+}

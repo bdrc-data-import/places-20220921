@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX320800000 {
+    bda:G9GBX320800000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX320800000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "a3/G9GBX320800000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX320800000 ;
+        adm:logEntry        bda:LGEA44B9B78915913E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGEA44B9B78915913E
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX320800000
+        a                   :Place ;
+        skos:altLabel       "huai an shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Huai'an"@en , "淮安市"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX320801000 , bdr:G9GBX320802000 , bdr:G9GBX320803000 , bdr:G9GBX320804000 , bdr:G9GBX320811000 , bdr:G9GBX320826000 , bdr:G9GBX320829000 , bdr:G9GBX320830000 , bdr:G9GBX320831000 ;
+        :placeGB2260-2013   "320800000" ;
+        :placeLat           "33.603325" ;
+        :placeLocatedIn     bdr:G9GBX320000000 ;
+        :placeLong          "119.0566492" ;
+        :placeType          bdr:PT0057 .
+}

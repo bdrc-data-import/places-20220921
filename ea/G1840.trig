@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1840 {
+    bda:G1840  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1840 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "ea/G1840.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1840 ;
+        adm:logEntry        bda:LG036B6473D1CBDA41 , bda:LG3798FE50D4D42961 , bda:LG737D0F4A343E90D6 , bda:LG76066B08FD8971C7 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG036B6473D1CBDA41
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-01T17:54:16.489Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3798FE50D4D42961
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T14:58:54.261Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG737D0F4A343E90D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-12T15:23:29.412Z"^^xsd:dateTime ;
+        adm:logMessage      "added note: duplicated with G1KR2563"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG76066B08FD8971C7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1840  a            :Place ;
+        skos:altLabel       "bsam gtan chos gling /"@bo-x-ewts , "rwa za grwa tshang bsam gtan chos gling /"@bo-x-ewts ;
+        skos:prefLabel      "rwa za dgon/"@bo-x-ewts , "Raza Gon Samten Choling"@en ;
+        :isRoot             true ;
+        :note               bdr:NT1AA489723FB0E947 , bdr:NT336206E101607F56 , bdr:NT4369E910825E8CEF ;
+        :placeLocatedIn     bdr:G1715 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1AA489723FB0E947
+        a                   :Note ;
+        :contentLocationStatement  "p. 79" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "monastery in khri ka rdzong, mtsho lho bod rigs rang skyong khul"@en .
+    
+    bdr:NT336206E101607F56
+        a                   :Note ;
+        :contentLocationStatement  "p. 299" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "rwa za grwa tshang bsam gtan chos gling \n'di ni rwa za gong ma ngag dbang dge legs rgya mtshos btab/ de'i sprul sku blo bzang yon tan rgya mtshos rwa za dgon grong dang 'dabs 'brel du yod pas lha khang sogs rang babs su bzhag/ grwa gtsang bdun tsam zhabs phyir khrid/ dpon slob gser khang ba'i drung du phebs/ grong dang thag ring pa'i dgon pa btab/ ha cang thugs tsha bas 'grig khrims shin tu dam/ deng sang grwa gtsang bzhi bcu tsam 'tshogs pa grong du gtan nas song mi chog cing/ pha ma lta bu na shi gal chen la dgongs pa zhus te song yang zhag sdod byas mi chog/ gzhi gsum gyi phyag len ngos gtsang/ rkun ma nyes can 'ga'i rkyen gyis rgya dmag gis lo rdo rje brag la me mchod dang/ bde chen dang mgur gnyis gtor thag chod dus su la mo sprul pa'i sku dang/ khri rgya nag pa'i mchog sprul gnyis rang dgon du bzhugs ma nus par byol skabs/ bla ma 'dis thugs stobs bskyed de rgya dpon la zhu mkhas dang dngos po'i 'gro sgo byas pas dgon pa gnyis gnas thub pa byung bas bka' drin che/ dgon 'di bde chen gyi dgon lag r"@en .
+    
+    bdr:NT4369E910825E8CEF
+        a                   :Note ;
+        :noteText           "duplicated with G1KR2563"@en .
+}

@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1011 {
+    bda:G1011  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1011 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "33/G1011.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1011 ;
+        adm:logEntry        bda:LG5CD9A62C30768BBC , bda:LG7417A94A444F8E20 , bda:LG7A2DDD6E3CEAF6DC , bda:LGBAFE62DFE6CCE371 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5CD9A62C30768BBC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7417A94A444F8E20
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7A2DDD6E3CEAF6DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T13:13:22.362Z"^^xsd:dateTime ;
+        adm:logMessage      "new place type assigned"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGBAFE62DFE6CCE371
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-14T15:05:37.024Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1011  a            :Place ;
+        skos:prefLabel      "tsa ri g.yag zhol/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeType          bdr:PT0020 .
+}

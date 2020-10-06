@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX530600000 {
+    bda:G9GBX530600000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX530600000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "48/G9GBX530600000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX530600000 ;
+        adm:logEntry        bda:LG91C5EFF82C50217E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG91C5EFF82C50217E
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX530600000
+        a                   :Place ;
+        skos:altLabel       "zhao tong shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Zhaotong City"@en , "昭通市"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX530601000 , bdr:G9GBX530602000 , bdr:G9GBX530621000 , bdr:G9GBX530622000 , bdr:G9GBX530623000 , bdr:G9GBX530624000 , bdr:G9GBX530625000 , bdr:G9GBX530626000 , bdr:G9GBX530627000 , bdr:G9GBX530628000 , bdr:G9GBX530629000 , bdr:G9GBX530630000 , bdr:G9GBX530630001 ;
+        :placeGB2260-2013   "530600000" ;
+        :placeLat           "27.3392446" ;
+        :placeLocatedIn     bdr:G9GBX530000000 ;
+        :placeLong          "103.7140167" ;
+        :placeType          bdr:PT0057 .
+}

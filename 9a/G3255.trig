@@ -1,0 +1,102 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3255 {
+    bda:G3255  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3255 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "9a/G3255.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3255 ;
+        adm:logEntry        bda:LG5CE8CF6AA18631D4 , bda:LG85383EEB96DFCE4A , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540123100:540123101" ;
+        adm:place_id_lex    "540123100:540123101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5CE8CF6AA18631D4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG85383EEB96DFCE4A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T16:32:25.1Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2038AE80D168CEFE
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P426 ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:EV52A40A9D9A740817
+        a                   :PlaceConverted ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVEBC4B58B10BFE575
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G3255  a            :Place ;
+        skos:altLabel       "rgyal byed tshal dgon/"@bo-x-ewts , "rgyas byed dgon/"@bo-x-ewts , "snye mo rgyal byed tshal dgon/"@bo-x-ewts , "jieji si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyal byed dgon/"@bo-x-ewts , "Gyeze"@en-x-mixed , "杰吉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB4016EFC22BDC64A ;
+        :isRoot             true ;
+        :note               bdr:NT48726D2F92CD70F5 , bdr:NT82E36386CC1DD3A9 , bdr:NT847E477B478F06D2 ;
+        :placeEvent         bdr:EV2038AE80D168CEFE , bdr:EV52A40A9D9A740817 , bdr:EVEBC4B58B10BFE575 ;
+        :placeGonpaPerEcumen  "28.11" ;
+        :placeLat           "29.39859" ;
+        :placeLocatedIn     bdr:G2129 , bdr:G3597 ;
+        :placeLong          "90.18752" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDB4016EFC22BDC64A
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3255" .
+    
+    bdr:NT48726D2F92CD70F5
+        a                   :Note ;
+        :contentLocationStatement  "pp. 41, 49-52" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "gelukpa monastery located in dar grong grong rdal of snye mo rdzong.\nfounded in the beginning of the 16th century by thon pa mkhas btsun yon tan rgya mtsho.\nmonastery of the thu mi or thon mi family\nclassed as a state monastery (gzhung dgon) and owned by the rtse yig tshang las khungs.\nsanctioned component of monks: 195.\nthe second of the occupants of the throne was 'jam dbyangs dge legs rnam rgyal\nat the time of writing of the bai DUr ser po the mkhan po was bya sgo chos mdzad blo bzang dbang phyug; at that time it was a first rank monastery with 139 monks;\nits dgon lag were lha ri dgon and byams tshal\norganization of this paramount monastery in  the gtsang snye mo region  is:\nmkhan po; 2 slob dpon; 1 dbu mdzad; 2 dge bskos; 2 spyi bso; 2 phyag mdzod; 1 dkon gnyer; 1 ja dpon\nat one time the monastery had over 500 monks;\nthere was a performance of a gar 'cham; connected with an important a lce lha mo group"@en .
+    
+    bdr:NT82E36386CC1DD3A9
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 141-143" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT847E477B478F06D2
+        a                   :Note ;
+        :contentLocationStatement  "p. 316" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "located in lhun grub khang gsar shang\naccording to this source founded in 1054 by 'brom ston rgyal ba'i 'byung gnas\nlargest monastery in snye mo rdzong\nin 1959 had a monk population of about 180 monks"@en .
+}

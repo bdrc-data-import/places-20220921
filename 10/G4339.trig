@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4339 {
+    bda:G4339  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4339 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "10/G4339.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4339 ;
+        adm:logEntry        bda:LG219C2610341341E4 , bda:LG6348C78A1EF49E0A , bda:LGCCB2701A93E366CF , bda:LGF3B2AFD76EA10F04 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG219C2610341341E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-26T16:42:17.603Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6348C78A1EF49E0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-04T15:34:16.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCCB2701A93E366CF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF3B2AFD76EA10F04
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVCA4E6860C65CD6AB
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionDrukpaKagyu .
+    
+    bdr:G4339  a            :Place ;
+        skos:altLabel       "gar sha rta yul dgon/"@bo-x-ewts ;
+        skos:prefLabel      "rta yul dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT14398D6709AF63E4 ;
+        :placeEvent         bdr:EVCA4E6860C65CD6AB ;
+        :placeLocatedIn     bdr:G4338 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT14398D6709AF63E4
+        a                   :Note ;
+        :noteText           "'brug pa dkar brgyud religious establishment in gar sha having 30-40 monks and nuns"@en .
+}

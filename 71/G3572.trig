@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3572 {
+    bda:G3572  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3572 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "71/G3572.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3572 ;
+        adm:logEntry        bda:LG3B109AEE6329D51E , bda:LG87A3E3385F5F8A51 , bda:LGB5276A45455C2560 , bda:LGIMA37A954E21 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3B109AEE6329D51E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T16:22:16.041Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG87A3E3385F5F8A51
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-23T15:20:26.782Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB5276A45455C2560
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMA37A954E21
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-20T22:30:59.465Z"^^xsd:dateTime ;
+        adm:logMessage      "populating gis from G9GBX..."@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G3572  a            :Place ;
+        skos:prefLabel      "stag rtse shang (rgyal rtse rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDBFB11071ADF6B3C ;
+        :placeContains      bdr:G2CN11038 ;
+        :placeGB2260-2013   "542323205" ;
+        :placeLocatedIn     bdr:G2175 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NTDBFB11071ADF6B3C
+        a                   :Note ;
+        :contentLocationStatement  "p. 49" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "name of a township seat in rgyal rtse rdzong"@en .
+}

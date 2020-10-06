@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1706 {
+    bda:G1706  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1706 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "98/G1706.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1706 ;
+        adm:logEntry        bda:LG64336BBB9D511091 , bda:LG9CF101DCFE325836 , bda:LGC0B841E930F35495 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG64336BBB9D511091
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:40:27.8Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:village to grongTsho"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9CF101DCFE325836
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T09:15:22.345Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC0B841E930F35495
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1706  a            :Place ;
+        skos:prefLabel      "rgyan mkhar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9E3C2CFE9AB1671B ;
+        :placeType          bdr:PT0084 .
+    
+    bdr:NT9E3C2CFE9AB1671B
+        a                   :Note ;
+        :noteText           "village in the vicinity of ri bo dan tig in the a mdo area"@en .
+}

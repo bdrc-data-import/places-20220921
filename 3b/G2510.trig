@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2510 {
+    bda:G2510  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2510 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "3b/G2510.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2510 ;
+        adm:logEntry        bda:LG27EA153A29299E64 , bda:LG2CE0AAB1FD2B7D2B , bda:LGBECC1538E36673C3 , bda:LGC292CC35B5FAE6F6 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540102203:540101139" ;
+        adm:place_id_lex    "540102203:540101139" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG27EA153A29299E64
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-05T14:20:26.173Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2CE0AAB1FD2B7D2B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-05T15:15:21.45Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBECC1538E36673C3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC292CC35B5FAE6F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-24T13:59:57.731Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2A14C96B070AAE9F
+        a                   :PlaceFounded ;
+        :onYear             "1400"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2510  a            :Place ;
+        skos:altLabel       "se ra byes kyi rag kha brag ri khrod/"@bo-x-ewts , "rekazha si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rag kha brag ri khrod/"@bo-x-ewts , "Rakadrak Ritro"@en-x-mixed , "热喀扎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID30A6B818D9EEE467 ;
+        :isRoot             true ;
+        :note               bdr:NT024F690AC1633B9D ;
+        :placeEvent         bdr:EV2A14C96B070AAE9F ;
+        :placeGonpaPerEcumen  "133.91" ;
+        :placeLat           "29.70283" ;
+        :placeLocatedIn     bdr:G2800 , bdr:G957 ;
+        :placeLong          "91.14822" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID30A6B818D9EEE467
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2510" .
+    
+    bdr:NT024F690AC1633B9D
+        a                   :Note ;
+        :contentLocationStatement  "p. 118" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "one of the ten ri khrod belonging to se ra byes college"@en .
+}

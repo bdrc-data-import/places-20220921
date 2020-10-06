@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2521 {
+    bda:G2521  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2521 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "4d/G2521.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2521 ;
+        adm:logEntry        bda:LG2A3EF17F7CB39A51 , bda:LGC09C291D8068BDDA , bda:LGC8635D4E0A9B10BF , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623027208:623027101" ;
+        adm:place_id_lex    "623027208:623027101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2A3EF17F7CB39A51
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T12:10:22.754Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGC09C291D8068BDDA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC8635D4E0A9B10BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T10:16:50.317Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4D0BBBFCCE806CBF
+        a                   :PlaceFounded ;
+        :onYear             "1683"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2521  a            :Place ;
+        skos:altLabel       "dga' ldan chos 'phel gling /"@bo-x-ewts , "tsa yus dgon bkra shis chos 'phel gling /"@bo-x-ewts , "tsa yus dgon dga' ldan chos 'phel gling /"@bo-x-ewts , "zhayou si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tsa yus dgon/"@bo-x-ewts , "Tsayu Gon Ganden Chopeling"@en , "扎油寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2EBCD4BEC5B0D3E1 ;
+        :isRoot             true ;
+        :note               bdr:NT7C0955CFBBFBE114 , bdr:NTAADE9F1D1A2CEFCF ;
+        :placeEvent         bdr:EV4D0BBBFCCE806CBF ;
+        :placeGonpaPerEcumen  "5.65" ;
+        :placeLat           "34.95564" ;
+        :placeLocatedIn     bdr:G2396 , bdr:G2522 ;
+        :placeLong          "102.79059" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID2EBCD4BEC5B0D3E1
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2521" .
+    
+    bdr:NT7C0955CFBBFBE114
+        a                   :Note ;
+        :contentLocationStatement  "p. 549" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "founded by tsa yus phun tshogs mchog ldan"@en .
+    
+    bdr:NTAADE9F1D1A2CEFCF
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, p. 6" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "dge lugs pa monastery in the upper part of tsa yus zhang, bsang chu rdzong, kan lho khul\nfounded in 1683 by thog ga tshang or thog ga zhabs drung tsa yus phun tshogs mchog ldan"@en .
+}

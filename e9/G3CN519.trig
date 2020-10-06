@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN519 {
+    bda:G3CN519  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN519 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e9/G3CN519.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN519 ;
+        adm:logEntry        bda:LG3E9ABFBDED97D7FE , bda:LG9574DCA0610EABAB , bda:LGBD1BFB12AE535660 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3E9ABFBDED97D7FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-03T09:14:13.016Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9574DCA0610EABAB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-27T15:14:14.405Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBD1BFB12AE535660
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-27T15:33:33.45Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVD9CDF41AAC1A47A9
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0728"^^xsd:gYear .
+    
+    bdr:G3CN519  a          :Place ;
+        skos:prefLabel      "mtsho bgo'i bol gangs/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT477E222F7B857131 , bdr:NTC660A7F32956AC77 ;
+        :placeEvent         bdr:EVD9CDF41AAC1A47A9 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NT477E222F7B857131
+        a                   :Note ;
+        :contentLocationStatement  "p. 384" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"མཚོ་བགོ། དེང་མདོ་སྨད་ཨ་མདོའི་རྫོང་ཁུལ་སྐྲ་རིང་གྲོང་ཁུལ་དུ་མཚོ་སྐྱ་མཚོ་བོ་ཞེས་པ་དེ་ཡིན་པ་འདྲ།\" ཞེས་གསལ་བ་དཔྱད་གཞིའོ།"@bo .
+    
+    bdr:NTC660A7F32956AC77
+        a                   :Note ;
+        :contentLocationStatement  "p. 379" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"འབྲུག་གི་ལོ་ ༧༢༨ ལ། བཙན་པོ་དབྱར་མཚོ་བགོའི་བོལ་གངས་ན་བཞུགས་པ་ལས། སླར་བོད་ཡུལ་དུ་གཤེགས་ཏེ།\" ཞེས་གསལ།"@bo .
+}

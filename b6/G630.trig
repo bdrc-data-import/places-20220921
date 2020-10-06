@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G630 {
+    bda:G630  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G630 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "b6/G630.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G630 ;
+        adm:logEntry        bda:LG14F954D574812296 , bda:LG4A48A35953E610BE , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542328200:542328101" ;
+        adm:place_id_lex    "542328200:542328101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG14F954D574812296
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4A48A35953E610BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-29T16:57:10.428Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVD036CA6884539E5E
+        a                   :PlaceFounded ;
+        :onYear             "1400"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G630  a             :Place ;
+        skos:altLabel       "bzhad bkra shis dge 'phel/"@bo-x-ewts , "gtsang g.yas ru 'jad bkra shis dge 'phel/"@bo-x-ewts , "Tashi Gepel"@bo-x-phon-en , "Tashi Gepel"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bzhad bkra shis dge 'phel/"@bo-x-ewts , "扎西吉培寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAE826E08666A1B06 ;
+        :isRoot             true ;
+        :note               bdr:NT4C43DF6AEEB1FB76 ;
+        :placeEvent         bdr:EVD036CA6884539E5E ;
+        :placeGonpaPerEcumen  "3.55" ;
+        :placeLat           "29.43333" ;
+        :placeLocatedIn     bdr:G2164 ;
+        :placeLong          "88.20000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDAE826E08666A1B06
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G630" .
+    
+    bdr:NT4C43DF6AEEB1FB76
+        a                   :Note ;
+        :noteText           "1300s a minor Kagyu nunnery, so just map as Geluk during Pakmodrupa period and later."@en .
+}

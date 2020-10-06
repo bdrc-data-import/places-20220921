@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G300 {
+    bda:G300  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G300 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a4/G300.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G300 ;
+        adm:logEntry        bda:LG9C353B167702263C , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623022201:623022105" ;
+        adm:place_id_lex    "623022201:623022105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9C353B167702263C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1EE7EA18C2810F54
+        a                   :PlaceFounded ;
+        :onYear             "1684"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G300  a             :Place ;
+        skos:altLabel       "gur yag ri khrod/"@bo-x-ewts ;
+        skos:prefLabel      "gur yag ri khrod/"@bo-x-ewts , "古雅川静修院"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7FA6A9E43E7DFE2F ;
+        :isRoot             true ;
+        :note               bdr:NT4A27ACE7B46CB80B ;
+        :placeEvent         bdr:EV1EE7EA18C2810F54 ;
+        :placeGonpaPerEcumen  "19.93" ;
+        :placeLat           "34.44724" ;
+        :placeLocatedIn     bdr:G2203 ;
+        :placeLong          "103.55154" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID7FA6A9E43E7DFE2F
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G300" .
+    
+    bdr:NT4A27ACE7B46CB80B
+        a                   :Note ;
+        :noteText           "dge lugs pa hermitage in a mdo"@en .
+}

@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD96088 {
+    bda:G1PD96088  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD96088 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "cd/G1PD96088.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD96088 ;
+        adm:logEntry        bda:LG2BD157A26AE4DE85 , bda:LG7A4227BEB442002A , bda:LGD31C277C23C5A825 , bda:LGE69CF14924FC887D , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632123204:105" ;
+        adm:place_id_lex    "632123204:276" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2BD157A26AE4DE85
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-07T10:04:12.829Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7A4227BEB442002A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-12-04T09:50:23.88Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD31C277C23C5A825
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T14:33:24.496Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGE69CF14924FC887D
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T15:22:51.754Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV43B9D1CE904CA898
+        a                   :PlaceFounded ;
+        :onYear             "1777"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1PD96088  a        :Place ;
+        skos:altLabel       "山城沟寺"@zh-hans , "shanchenggou si"@zh-latn-pinyin-x-ndia , "zhang jia si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "hran khrin dgu zi/"@bo-x-ewts , "山城沟寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB5178FB9D65B804F ;
+        :isRoot             true ;
+        :note               bdr:NTBA3B5C1BB68F1D8D ;
+        :placeEvent         bdr:EV43B9D1CE904CA898 ;
+        :placeGonpaPerEcumen  "25.62" ;
+        :placeLat           "36.55494" ;
+        :placeLocatedIn     bdr:G1PD5303 ;
+        :placeLong          "102.26000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDB5178FB9D65B804F
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD96088" .
+    
+    bdr:NTBA3B5C1BB68F1D8D
+        a                   :Note ;
+        :contentLocationStatement  "p. 63" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་1958ལོར་གཏོར་ནས་མེད།"@en .
+}

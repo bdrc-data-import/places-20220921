@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G77 {
+    bda:G77  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G77 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "8e/G77.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G77 ;
+        adm:logEntry        bda:LG29B1A71090259485 , bda:LG2C6FC10A673300D0 , bda:LG41B9F16AE5928CCB , bda:LG4CC2A2337F666B7E , bda:LG57B4979ABC4BE212 , bda:LGED97011DA8336A6F , bda:LGFEA0848D9101D0C9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG29B1A71090259485
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-22T10:59:39.65Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG2C6FC10A673300D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:37:30.628Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG41B9F16AE5928CCB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4CC2A2337F666B7E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG57B4979ABC4BE212
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T09:08:54.129Z"^^xsd:dateTime ;
+        adm:logMessage      "edited names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGED97011DA8336A6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-02T14:10:29.636Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type as grwa tshang"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFEA0848D9101D0C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T14:29:43.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G77  a              :Place ;
+        skos:altLabel       "byang rtse grwa tshang /"@bo-x-ewts ;
+        skos:prefLabel      "dga' ldan byang rtse grwa tshang /"@bo-x-ewts , "Ganden Jangtse Dratsang"@en ;
+        :isRoot             true ;
+        :note               bdr:NT9255D284B2C229DB ;
+        :placeContains      bdr:G2CN10861 , bdr:G78 , bdr:G79 , bdr:G80 , bdr:G81 , bdr:G82 , bdr:G83 , bdr:G84 , bdr:G85 , bdr:G86 , bdr:G87 , bdr:G88 , bdr:G89 ;
+        :placeLocatedIn     bdr:G337 ;
+        :placeType          bdr:PT0040 .
+    
+    bdr:NT9255D284B2C229DB
+        a                   :Note ;
+        :contentLocationStatement  "p. 28" ;
+        :noteSource         bdr:MW20212 ;
+        :noteText           "one of two teaching colleges (grwa tshang) of dga' ldan monastery\ndga' ldan byang rtse college has 12 khams tshan (residential houses)\nthe residential houses are divided into mi tshan"@en .
+}

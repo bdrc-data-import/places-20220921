@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3489 {
+    bda:G3489  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3489 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "97/G3489.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3489 ;
+        adm:logEntry        bda:LG73752CB187394204 , bda:LGB4B0A10F129D5DC2 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG73752CB187394204
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-03T10:26:47.028Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB4B0A10F129D5DC2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3489  a            :Place ;
+        skos:altLabel       "nyang po dpung dkar dgon/"@bo-x-ewts ;
+        skos:prefLabel      "dpung dkar dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE1D2D5462E9EF277 ;
+        :placeLocatedIn     bdr:G1042 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTE1D2D5462E9EF277
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 551" ;
+        :noteSource         bdr:MW22378 ;
+        :noteText           "dge lugs pa monastery in the nyang po area\nfounded by one rgya nang pa drung rgyal mchog pa\nfollows the rgyud stod tradition of the tantra\nmonks go to se ra, 'bras spungs, mnga' ris or dwags po grwa tshang\nat the time of the sde srid there were 66 monks"@en .
+}

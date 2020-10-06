@@ -1,0 +1,125 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G275 {
+    bda:G275  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G275 ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "a5/G275.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G275 ;
+        adm:logEntry        bda:LG00A1C5E6C5E57FC3 , bda:LG02F56F8D7B92E081 , bda:LG0ED0857620D618DD , bda:LG2E6BD096BBD03258 , bda:LG987B146AC24ADE55 , bda:LGE2B5E4B9F77493FF , bda:LGE83192707B1C7D99 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542301202:542304" ;
+        adm:place_id_lex    "542301202:542304" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00A1C5E6C5E57FC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-26T11:04:48.783Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG02F56F8D7B92E081
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:19:59.146Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain: \"par khang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0ED0857620D618DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T13:43:05.295Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG2E6BD096BBD03258
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-11T15:21:45.182Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG987B146AC24ADE55
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-17T15:30:25.424Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGE2B5E4B9F77493FF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE83192707B1C7D99
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-25T15:21:08.234Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV676F7693B0C73061
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1AG32 ;
+        :onYear             "1127"^^xsd:gYear .
+    
+    bdr:EV93863C03E25FFD9F
+        a                   :PlaceFounded ;
+        :onYear             "1027"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:EVBF040ACBBE98FB90
+        a                   :PlaceConverted ;
+        :note               bdr:NTC69A656D72326DDF ;
+        :onYear             "1350"^^xsd:gYear .
+    
+    bdr:G275  a             :Place ;
+        skos:altLabel       "zha lu dgon/"@bo-x-ewts , "Zhalu Gon"@en-x-mixed , "xialu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zhwa lu dgon/"@bo-x-ewts , "zhalu Manostery"@en , "夏鲁寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB03A169531D04979 ;
+        :contentLocationStatement  "Coordinates: latitude 29°07,644 longitude 88°59,561 Altitude: 3898(m) (sheehy_tibet_coordinates_2014)" ;
+        :isRoot             true ;
+        :note               bdr:NT51C484FA78299AC7 , bdr:NT99FA236F7B41D095 ;
+        :placeContains      bdr:G2CN10909 ;
+        :placeEvent         bdr:EV676F7693B0C73061 , bdr:EV93863C03E25FFD9F , bdr:EVBF040ACBBE98FB90 ;
+        :placeGonpaPerEcumen  "8.93" ;
+        :placeLat           "29.11667" ;
+        :placeLocatedIn     bdr:G1180 , bdr:G2170 ;
+        :placeLong          "88.98333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDB03A169531D04979
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G275" .
+    
+    bdr:NT51C484FA78299AC7
+        a                   :Note ;
+        :noteText           "founding date from Tsering's translation of Situ's Guide"@en .
+    
+    bdr:NT99FA236F7B41D095
+        a                   :Note ;
+        :noteText           "monastery of the zhwa lu tradition of the kalacakra located in gtsang province of the tibetan autonomous region. this monastery belonged to the lce lineage originally"@en .
+    
+    bdr:NTC69A656D72326DDF
+        a                   :Note ;
+        :noteText           "Buton"@en .
+}

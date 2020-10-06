@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1310 {
+    bda:G2GS1310  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1310 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f3/G2GS1310.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1310 ;
+        adm:logEntry        bda:LG7D258184486AA064 , bda:LG87A4A4090AC837EE , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7D258184486AA064
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T09:30:54.72Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG87A4A4090AC837EE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-09-22T16:15:24.926Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2GS1310  a         :Place ;
+        skos:prefLabel      "khrab lcog ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1DBB83F423D41AEF ;
+        :placeLocatedIn     bdr:G2187 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT1DBB83F423D41AEF
+        a                   :Note ;
+        :contentLocationStatement  "p. 222" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "small dge lugs religious establishment located in rngu shod shang of lho rong rdzong. it was founded by the 12th gdan rabs of chab mdo byams pa gling lha dbang chos kyi rgyal mtshan.\n\n\"shing rta 1594 lor chab mdo dgon pa'i khri khur bshol rjes lho rong rdzong gi rta tshag lhun grub bde chen du shas cher bzhugs te khrag lcog du gser zangs gyi byams sku thog so phyed gnyis tsam yod pa'i khrag lcog yang dgon du rten pa bzhengs rgya che ba gnang lugs bya phud dgon pa'i gdan rabs khongs su 'khod pa zhig yod pa yin.\"\n\n\"khrab lcog yang dgon ni de sngon sho pa mdo rdzong gi rngl chu'i 'gram rgyud kyi g.yam zhes pa'i grong tsho dang nye bar yod cing dus phyis sho mdo dga' ldan bshad sgrub gling gi dgon lag gras su brtsi ba yin zhing da lta lho rong rdzong rngu shod shang khongs su yod pa yin\""@en .
+}

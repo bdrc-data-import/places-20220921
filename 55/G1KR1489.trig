@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1489 {
+    bda:G1KR1489  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1489 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "55/G1KR1489.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1489 ;
+        adm:logEntry        bda:LG4F66423A60DCE251 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542231101:542231111" ;
+        adm:place_id_lex    "542231101:542231111" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4F66423A60DCE251
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-06T14:50:00.891Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV27B587F3CE401C7B
+        a                   :PlaceFounded ;
+        :onYear             "0800"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:EV5A3B60E21F9054D7
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVB4B497CB5667D4E0
+        a                   :PlaceConverted ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G1KR1489  a         :Place ;
+        skos:altLabel       "juere qude si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sbyor ra chos sde/"@bo-x-ewts , "Chora Chode"@en-x-mixed , "觉热曲德"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1AB248974F02DCD6 ;
+        :isRoot             true ;
+        :note               bdr:NT1CA039F3B865BF9B , bdr:NT1F811E910929AE8C ;
+        :placeEvent         bdr:EV27B587F3CE401C7B , bdr:EV5A3B60E21F9054D7 , bdr:EVB4B497CB5667D4E0 ;
+        :placeGonpaPerEcumen  "7.25" ;
+        :placeLat           "28.51575" ;
+        :placeLocatedIn     bdr:G1990 ;
+        :placeLong          "92.35099" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID1AB248974F02DCD6
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1489" .
+    
+    bdr:NT1CA039F3B865BF9B
+        a                   :Note ;
+        :noteText           "སྦྱོར་ར་ནི་དེང་མཚོ་སྣ་རྫོང་དང་ལྷུན་རྩེ་རྫོང་གཉིས་འབྲེལ་མཚམས་ཀྱི་ས་མིང་ཞིག་ཡིན་པར་མངོན་ཏེ། དེང་སང་མཚོ་སྣ་རྫོང་ཁོངས་སུ་ཡོད་པ་ཤས་ཆེ་མོད། སྦྱོར་ར་ཆོས་སྡེ་འདི་ནི་དེང་ལྷུན་རྩེ་རྫོང་ཁོངས་ཀྱི་རི་ཐང་གྲོང་རྡལ་གྱི་འོག་ཏུ་གནས་པར་སྣང་།"@bo .
+    
+    bdr:NT1F811E910929AE8C
+        a                   :Note ;
+        :noteText           "listed as Bonpo with 128 monks in 1950s gonpa list,  Xian Wenwuzhi plan shows a 30 pillar assembly hall (my sects/dates from Xian Wenwuzhi)."@en .
+}

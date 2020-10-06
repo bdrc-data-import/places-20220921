@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4456 {
+    bda:G4456  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4456 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "81/G4456.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4456 ;
+        adm:logEntry        bda:LG37BB683EE2E9741A , bda:LG38FF94CF1A237575 , bda:LG8AEB3C84E17FC60E , bda:LG8B55AFDF7CE08BA4 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221100:542221104" ;
+        adm:place_id_lex    "542221100:542221104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG37BB683EE2E9741A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG38FF94CF1A237575
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-21T11:26:51.651Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG8AEB3C84E17FC60E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-27T10:16:34.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8B55AFDF7CE08BA4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:15:39.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVF95908A050AC9544
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G4456  a            :Place ;
+        skos:altLabel       "rtsed thang 'bras bu gling /"@bo-x-ewts , "Trabuling"@bo-x-phon-en , "Trabuling"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'bras bu gling /"@bo-x-ewts , "哲布林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC256FBFF9AF398FA ;
+        :isRoot             true ;
+        :note               bdr:NT05B846ADCC37C4A9 , bdr:NTDBD14BAB46E97FDC ;
+        :placeEvent         bdr:EVF95908A050AC9544 ;
+        :placeGonpaPerEcumen  "60.8" ;
+        :placeLat           "29.24486" ;
+        :placeLocatedIn     bdr:G1513 , bdr:G560 ;
+        :placeLong          "91.78910" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC256FBFF9AF398FA
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4456" .
+    
+    bdr:NT05B846ADCC37C4A9
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 42-43" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "འདི་ནི་རྩེད་ཐང་གྲོང་རྙིང་དབུས་སུ་ཡོད་དེ། ཐོག་མར་རྗེ་བཙུན་རེད་མདའ་བས་ཕྱག་བཏབ། དགེ་འདུན་པ་བརྒྱ་སྐོར་ཟིན། སྔོན་ནང་རྟེན་རྒྱལ་བ་བྱམས་པ་ཐོག་སོ་ཅན་དབུ་ལ་སངས་རྒྱས་འོད་སྲུང་གི་ཚེམས་ཞུགས་པ་ཞིག་དང་། ས་སྐྱ་ཀུན་དགའ་སྙིང་པོའི་ཐུགས་དམ་གྱི་རྟེན་སྒྲོལ་ལྗང་གི་སྐུ་ཁྲུ་གང་པ་གསུང་བྱོན། ཤར་ལི་ལས་གྲུབ་པའི་ཐུབ་པ་ཨ་ཙ་མ་གསུང་བྱོན་ཁྲུ་གང་མ་ཟིན་ཙམ། ལྷག་པར་དུ་ཇོ་བོ་ལོ་ཀེ་ཤྭ་ར་ཁྲུ་གཉིས་ཙམ་ཞིག་ཡོད་པ་དེའི་ཕྱག་ཏུ་མཎྜལ་ཞིག་ཡོད་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NTDBD14BAB46E97FDC
+        a                   :Note ;
+        :noteText           "founded by ta'i si tu byang chub rgyal mtsan. see mkhyen brtse gdan rabs p. 361"@en .
+}

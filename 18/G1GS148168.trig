@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1GS148168 {
+    bda:G1GS148168  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1GS148168 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "18/G1GS148168.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1GS148168 ;
+        adm:logEntry        bda:LG58F231FEE6F10210 , bda:LG66BEA72CBABE134C , bda:LG965F056C5C73AF09 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG58F231FEE6F10210
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-06-09T09:14:33.078Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG66BEA72CBABE134C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-04T12:29:37.234Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG965F056C5C73AF09
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-12T14:29:17.826Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1GS148168  a       :Place ;
+        skos:altLabel       "rgyal ba'i lha khang /"@bo-x-ewts ;
+        skos:prefLabel      "nyung rgyal ba'i lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF191F88484A68C5C ;
+        :placeLocatedIn     bdr:G1GS148169 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NTF191F88484A68C5C
+        a                   :Note ;
+        :noteText           "this temple was located in the gtsang area of the tibetan autonomous region; it was here in 1471 that gser mdog paN chen shAkya mchog ldan wrote his traditional presentation of tibetan grammar"@en .
+}

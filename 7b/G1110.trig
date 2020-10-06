@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1110 {
+    bda:G1110  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1110 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "7b/G1110.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1110 ;
+        adm:logEntry        bda:LG4D6966796A8B083E , bda:LG53D0E7BA364AB347 , bda:LG59F8B4C4425028B0 , bda:LG7D9D7AF41A68F638 , bda:LG91FF15D583C8AA17 , bda:LG94585C0BADE3DDC9 , bda:LGD6F8462C462C7D2F , bda:LGEC27F2C4A67198FF , bda:LGF4A89DF7DEAF0E2A , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4D6966796A8B083E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG53D0E7BA364AB347
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-07T16:09:47.287Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG59F8B4C4425028B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-22T15:52:23.183Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7D9D7AF41A68F638
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G2CN10944"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG91FF15D583C8AA17
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-15T13:34:57.172Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG94585C0BADE3DDC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T16:21:36.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD6F8462C462C7D2F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-22T15:50:25.404Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEC27F2C4A67198FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-14T10:09:40.583Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF4A89DF7DEAF0E2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-09T15:05:07.106Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1110  a            :Place ;
+        skos:prefLabel      "a rig"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDC49F5CE73559816 ;
+        :placeContains      bdr:G1191 , bdr:G1248 , bdr:G1KR2385 , bdr:G666 ;
+        :placeLocatedIn     bdr:G1202 ;
+        :placeType          bdr:PT0081 .
+    
+    bdr:NTDC49F5CE73559816
+        a                   :Note ;
+        :noteText           "name of a place and tribe in a mdo"@en .
+}

@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3486 {
+    bda:G3486  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3486 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a6/G3486.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3486 ;
+        adm:logEntry        bda:LG9B2F5C4F2A764354 , bda:LGF638B7DB7DDE0A58 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9B2F5C4F2A764354
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-03T10:27:19.113Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF638B7DB7DDE0A58
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5D17B0CB6B0ED972
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P427 ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:G3486  a            :Place ;
+        skos:altLabel       "nyang po bkra shis chos lung /"@bo-x-ewts ;
+        skos:prefLabel      "bkra shis chos lung /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8268BF58C8E55E16 ;
+        :placeEvent         bdr:EV5D17B0CB6B0ED972 ;
+        :placeLocatedIn     bdr:G1042 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8268BF58C8E55E16
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 551" ;
+        :noteSource         bdr:MW22378 ;
+        :noteText           "religious establishment in the nyang po area founded by the first 'phags pa lha\nfamed as a place where the gsang 'dus was taught but this tradition later fell into decline\naccording to the bai ser, the monks follow the esoteric tradition of rgyud smad and go to blo gsal gling and dwags po grwa tshang for higher studies\nat the time of the sde srid this monastery had about 120 monks"@en .
+}

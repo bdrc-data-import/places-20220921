@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G852 {
+    bda:G852  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G852 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b9/G852.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G852 ;
+        adm:logEntry        bda:LG1ED7970C9B2C3827 , bda:LG4FD944B5AA75D1CD , bda:LGB39786A97F1A2CA1 , bda:LGCC2E98203D766C4B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1ED7970C9B2C3827
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4FD944B5AA75D1CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-30T12:22:04.267Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB39786A97F1A2CA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-25T11:18:53.026Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged name & added type, location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCC2E98203D766C4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-28T11:06:46.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G852  a             :Place ;
+        skos:altLabel       "'brog khu le/"@bo-x-ewts , "myang stod khu le/"@bo-x-ewts ;
+        skos:prefLabel      "khu le/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1D39F1C0622845EF , bdr:NT926D22A1E140E24F ;
+        :placeContains      bdr:G2CN11059 ;
+        :placeLocatedIn     bdr:G971 ;
+        :placeType          bdr:PT0048 .
+    
+    bdr:NT1D39F1C0622845EF
+        a                   :Note ;
+        :contentLocationStatement  "p. 382" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"ཕག་གི་མེ་ཕག་ ༧༤༧ ལ། བཙན་པོའི་ཕོ་བྲང་ན་མར་ན་བཞུགས་ཏེ། འབྲོག་སོག་གཅོད་པའི་རིང་ལུགས་སོ་སོར་བཀྱེ། ཁུ་ལེར་ཆིབས་\"སོགས་གསལ་བ་\"འབྲོག་ཁུ་ལེ་\"འདི་ལ་གོ་ཚོད་ལ་མུ་མཐུད་དཔྱད་བྱའོ།"@bo .
+    
+    bdr:NT926D22A1E140E24F
+        a                   :Note ;
+        :noteText           "see C2CN11015"@en .
+}

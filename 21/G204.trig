@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G204 {
+    bda:G204  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G204 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "21/G204.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G204 ;
+        adm:logEntry        bda:LG21E928CDB334B719 , bda:LG3900E6700E99ECE0 , bda:LG403374F61369F766 , bda:LG7D4FFBCEF390A793 , bda:LGA799EAE97FCC5DA0 , bda:LGAAA06031C914483C , bda:LGCA2500EB3F6ECF15 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG21E928CDB334B719
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-08T10:30:29.918Z"^^xsd:dateTime ;
+        adm:logMessage      "added location with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3900E6700E99ECE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-18T14:44:14.356Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG403374F61369F766
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-06T10:07:01.086Z"^^xsd:dateTime ;
+        adm:logMessage      "added Place Contained G2171, with GIS"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7D4FFBCEF390A793
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-06T10:08:21.322Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to near G2171"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGA799EAE97FCC5DA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-04T09:58:23.404Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGAAA06031C914483C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCA2500EB3F6ECF15
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T16:14:00.125Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV592000FA82804485
+        a                   :PlaceFounded ;
+        :notAfter           "1399"^^xsd:gYear ;
+        :notBefore          "1300"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionShangpaKagyu .
+    
+    bdr:G204  a             :Place ;
+        skos:altLabel       "'jag chung dpal dgon/"@bo-x-ewts ;
+        skos:prefLabel      "'jag pa/"@bo-x-ewts , "Jakpa"@en ;
+        :isRoot             true ;
+        :note               bdr:NT1D35F702167F9A46 , bdr:NTAC22CA0EE7BB892C , bdr:NTEC9F04B784629DC5 ;
+        :placeEvent         bdr:EV592000FA82804485 ;
+        :placeIsNear        bdr:G2171 ;
+        :placeLocatedIn     bdr:G4684 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1D35F702167F9A46
+        a                   :Note ;
+        :noteText           "འདི་ནི་ཤངས་སམ་ཤངས་དང་ཉེ་བའི་ས་ཆ་ཞིག་ཡིན་ངེས་ལ་ཞིབ་ཆ་མུ་མཐུད་རྩད་རྒྱུ།"@bo .
+    
+    bdr:NTAC22CA0EE7BB892C
+        a                   :Note ;
+        :noteText           "founded by mkhas grub shangs ston; seat of the 'jag pa bka' brgyud pa"@en .
+    
+    bdr:NTEC9F04B784629DC5
+        a                   :Note ;
+        :noteText           "religious seat of the shangs pa bka' brgyud tradition in gtsang."@en .
+}

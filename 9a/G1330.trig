@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1330 {
+    bda:G1330  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1330 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9a/G1330.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1330 ;
+        adm:logEntry        bda:LG557F50EA58066808 , bda:LG6CC84DCEAC075321 , bda:LGA19AE3F140C77E46 , bda:LGF9D8A80387B34684 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1947 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG557F50EA58066808
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-13T12:14:34.959Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added name and placetype"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6CC84DCEAC075321
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA19AE3F140C77E46
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-05-03T12:00:45.529Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1947"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF9D8A80387B34684
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1330  a            :Place ;
+        skos:altLabel       "mdo smad tsa yus/"@bo-x-ewts ;
+        skos:prefLabel      "mdo smad tsa yu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT98B44F2A58F78BE5 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT98B44F2A58F78BE5
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1947"@en .
+}

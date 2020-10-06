@@ -1,0 +1,117 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G240 {
+    bda:G240  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G240 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "42/G240.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G240 ;
+        adm:logEntry        bda:LG181D5A6682AAE347 , bda:LG38C1EC4BCF89020E , bda:LG3B6BED85D77C381E , bda:LG5C0A1455ADD5957D , bda:LG6268679ECBCABDB6 , bda:LG8197C373346FAECB , bda:LG8A54435969EB4D28 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632126218:132" ;
+        adm:place_id_lex    "632126218:166" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG181D5A6682AAE347
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T16:26:30.484Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG38C1EC4BCF89020E
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T11:52:04.134Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG3B6BED85D77C381E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5C0A1455ADD5957D
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T16:50:33.315Z"^^xsd:dateTime ;
+        adm:logMessage      "བཅོས"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG6268679ECBCABDB6
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:30.343Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG8197C373346FAECB
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-09T11:50:37.122Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8A54435969EB4D28
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T16:46:19.797Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5E4DDC661A59EB67
+        a                   :PlaceFounded ;
+        :onYear             "1654"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G240  a             :Place ;
+        skos:altLabel       "萨隆静房"@zh-hans , "salong jingpang"@zh-latn-pinyin-x-ndia , "zhalong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zab lung ri khrod/"@bo-x-ewts , "Zablung Ritro"@en , "扎隆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID75A120E7965F9E53 ;
+        :isRoot             true ;
+        :note               bdr:NT40FC09AD54CCFE5A , bdr:NT48E66817E9172496 , bdr:NT792D2E0D3600ECBC ;
+        :placeEvent         bdr:EV5E4DDC661A59EB67 ;
+        :placeGonpaPerEcumen  "1.56" ;
+        :placeLat           "36.85988" ;
+        :placeLocatedIn     bdr:G1PD96101 ;
+        :placeLong          "102.51722" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID75A120E7965F9E53
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G240" .
+    
+    bdr:NT40FC09AD54CCFE5A
+        a                   :Note ;
+        :contentLocationStatement  "p. 80" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "རི་ཁྲོད་འདི་1771ལོར་ཕྱག་བཏབ།"@en .
+    
+    bdr:NT48E66817E9172496
+        a                   :Note ;
+        :contentLocationStatement  "p. 111" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "zab lung ri khrod/ 'di ni rgya tig dpon slob dkon mchog yar 'phel gyis btab/ skye rgyud rim byon gyis bskyangs/ gzhi gsum gyi phyag len yar ldan la khyi ra skor gsum gyi 'cham yang yod/"@bo-x-ewts .
+    
+    bdr:NT792D2E0D3600ECBC
+        a                   :Note ;
+        :noteText           "a hermitage in a mdo; famed for its khyi ra skor gsum sacred dances"@en .
+}

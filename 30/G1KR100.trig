@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR100 {
+    bda:G1KR100  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR100 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "30/G1KR100.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR100 ;
+        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513229203:44" ;
+        adm:place_id_lex    "513229203:44" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV182272D83CDF2B59
+        a                   :PlaceFounded ;
+        :onYear             "0780"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1KR100  a          :Place ;
+        skos:altLabel       "加大寺"@zh-hans , "Jia da si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "kyo dga' dgon/"@bo-x-ewts , "加达寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC15BAD045AEDD804 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV182272D83CDF2B59 ;
+        :placeGonpaPerEcumen  "15.67" ;
+        :placeLat           "31.85892" ;
+        :placeLocatedIn     bdr:G2330 ;
+        :placeLong          "101.97659" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC15BAD045AEDD804
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR100" .
+}

@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3058 {
+    bda:G3058  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3058 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8a/G3058.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3058 ;
+        adm:logEntry        bda:LG07CA8C626A8E454F , bda:LG20470DA59A40223D , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07CA8C626A8E454F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T10:52:38.682Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG20470DA59A40223D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3058  a            :Place ;
+        skos:prefLabel      "sne zur ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8DA877EDDF086DE7 ;
+        :placeLocatedIn     bdr:G1516 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8DA877EDDF086DE7
+        a                   :Note ;
+        :contentLocationStatement  "p. 52" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "dge lugs pa monastery located in cha grong tsho, gtsang rtogs shang, stag rtse county, lha sa prefecture\nfounded by dge bshes sne zur pa in the 12th century\nformerly had 9 monks and was administered by dga' ldan byang rtse grwa tshang"@en .
+}

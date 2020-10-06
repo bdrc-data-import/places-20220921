@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3463 {
+    bda:G3463  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3463 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9d/G3463.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3463 ;
+        adm:logEntry        bda:LG0EAA7076CBF4D998 , bda:LG7839194D48DA9186 , bda:LGB171CE0DE00AC928 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0EAA7076CBF4D998
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-28T10:12:30.136Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7839194D48DA9186
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB171CE0DE00AC928
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3463  a            :Place ;
+        skos:altLabel       "glang lung dgon/"@bo-x-ewts ;
+        skos:prefLabel      "lhas glang lung dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1144F8825CFC1EE9 ;
+        :placeLocatedIn     bdr:G1516 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NT1144F8825CFC1EE9
+        a                   :Note ;
+        :contentLocationStatement  "p. 119" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "gelug nunnery owned by the successive dga' ldan khri pa.\nfounded in the 12th century by bshes gnyen glang lung pa.\nsite was vacant for many years.\nlater revitalized by three nuns. \nbecame under the control of the dga' ldan khri pa.\npractices the cho ga of the bcu gcig zhal, the sman bla and and bla ma mchod pa.\nabout twenty nuns."@en .
+}

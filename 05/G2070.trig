@@ -1,0 +1,82 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2070 {
+    bda:G2070  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2070 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "05/G2070.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2070 ;
+        adm:logEntry        bda:LG7AFDB6CB6A70631F , bda:LGB7CB70DB668CE316 , bda:LGE2F90C75E8CE5A4D , bda:LGF2254AE3E50E0388 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G405 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG7AFDB6CB6A70631F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T10:21:44.056Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB7CB70DB668CE316
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE2F90C75E8CE5A4D
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-11-26T10:06:20.648Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G405"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2254AE3E50E0388
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-26T14:51:55.409Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV64BA39EFF5C49F2B
+        a                   :PlaceConverted ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVD1D58BCD017A7D59
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G2070  a            :Place ;
+        skos:altLabel       "rin chen sding dgon (stag phu)"@bo-x-ewts ;
+        skos:prefLabel      "stag phu rin chen sding dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5BD529A7C6B75A84 , bdr:NTAACC787A01D46E66 ;
+        :placeEvent         bdr:EV64BA39EFF5C49F2B , bdr:EVD1D58BCD017A7D59 ;
+        :placeLocatedIn     bdr:G2028 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT5BD529A7C6B75A84
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G405"@en .
+    
+    bdr:NTAACC787A01D46E66
+        a                   :Note ;
+        :contentLocationStatement  "p. 38" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa monastery located in sbrang mda' shang of mal gro gung dkar rdzong\nsaid to have be founded by a student of a ti sha, rin chen snying po, in 1381\nunder the control of kun bde gling\nhad 27 monka and 12 nuns in 1959\nrestored"@en .
+}

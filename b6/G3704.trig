@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3704 {
+    bda:G3704  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3704 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b6/G3704.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3704 ;
+        adm:logEntry        bda:LG422C4ED00FCC547A , bda:LGA16299CD51C29A8B , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG422C4ED00FCC547A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA16299CD51C29A8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-10T14:06:06.288Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3704  a            :Place ;
+        skos:altLabel       "reb kong pad+ma rnam grol gling /"@bo-x-ewts ;
+        skos:prefLabel      "pad+ma rnam grol gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTC8AF92754795237B ;
+        :placeLocatedIn     bdr:G2369 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTC8AF92754795237B
+        a                   :Note ;
+        :contentLocationStatement  "p. 72" ;
+        :noteSource         bdr:MW24572 ;
+        :noteText           "information established on monastery and its teachers; hermitage of the sngags pa tradition in reb kong"@en .
+}

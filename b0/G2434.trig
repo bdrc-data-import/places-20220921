@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2434 {
+    bda:G2434  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2434 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b0/G2434.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2434 ;
+        adm:logEntry        bda:LG195462C48B0006C2 , bda:LGCEDD90D53309B7E0 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG195462C48B0006C2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCEDD90D53309B7E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-04T11:14:00.883Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2434  a            :Place ;
+        skos:prefLabel      "nyams snang dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1905B30D585FA947 ;
+        :placeLocatedIn     bdr:G2128 , bdr:G2449 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT1905B30D585FA947
+        a                   :Note ;
+        :contentLocationStatement  "p. 39" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "dge lugs pa nunnery located in gnam shang of chu shur rdzong, tar\nname and date of the founding unknown; dgon bdag unknown\nin 1959 there were 15 nuns"@en .
+}

@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G674 {
+    bda:G674  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G674 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1c/G674.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G674 ;
+        adm:logEntry        bda:LG80C4C05AA472D192 , bda:LG8D00CB90D7A24CDF , bda:LGAAF832CB109CF93E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG80C4C05AA472D192
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-24T12:58:41.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8D00CB90D7A24CDF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAAF832CB109CF93E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-21T14:47:25.99Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G674  a             :Place ;
+        skos:altLabel       "kong stod nyang po rgya nang /"@bo-x-ewts ;
+        skos:prefLabel      "nyang po rgya nang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD015D24391F6D350 ;
+        :placeLocatedIn     bdr:G1042 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NTD015D24391F6D350
+        a                   :Note ;
+        :noteText           "see C2CN11009"@en .
+}

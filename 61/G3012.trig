@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3012 {
+    bda:G3012  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3012 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "61/G3012.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3012 ;
+        adm:logEntry        bda:LG9FFFDCF1F2F3C0B8 , bda:LGB5F35EB2E3693A34 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9FFFDCF1F2F3C0B8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB5F35EB2E3693A34
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T11:49:40.121Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4270F3187E71820A
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P5166 ;
+        :onYear             "1157"^^xsd:gYear .
+    
+    bdr:G3012  a            :Place ;
+        skos:prefLabel      "brag dbar dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT32F292B8E1D9A1EC , bdr:NTD0257A9F05331020 ;
+        :placeEvent         bdr:EV4270F3187E71820A ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3040 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT32F292B8E1D9A1EC
+        a                   :Note ;
+        :contentLocationStatement  "p. 113" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "first a kargyu monastery, later turned into a gelug establishment\nfounded by khrom gzher 'od zer sengge\nrestored \nnow has about 27 monks"@en .
+    
+    bdr:NTD0257A9F05331020
+        a                   :Note ;
+        :contentLocationStatement  "p. 50, 73" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "dge lugs pa monastery located in grong tsho drug pa, mchums mda' shang, stag rtse county, lhasa prefecture\nfounded by mkhas grub bstan dar in the 16th century\nformerly had 60 monks and supported by the rtse yig tshang\nrestored\ndge 'dun bstan pa dar rgyas moved here from mal gro cha dkar dgon because of the pressure of the 'bri gung pa army\nhe instituted the practice of gcod gzhung skal ldan 'jug ngogs here"@en .
+}

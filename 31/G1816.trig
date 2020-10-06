@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1816 {
+    bda:G1816  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1816 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "31/G1816.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1816 ;
+        adm:logEntry        bda:LG97C092438766B2C9 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG97C092438766B2C9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV729CBBB9FB01FB39
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P10225 ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:G1816  a            :Place ;
+        skos:altLabel       "thub bstan nges don chos 'khor gling (lcam mda' dgon)"@bo-x-ewts ;
+        skos:prefLabel      "lcam mda' dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6D41CB6EDF24CC06 , bdr:NTA51D543790F41F0C ;
+        :placeEvent         bdr:EV729CBBB9FB01FB39 ;
+        :placeLocatedIn     bdr:G1773 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT6D41CB6EDF24CC06
+        a                   :Note ;
+        :contentLocationStatement  "p. 170" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "jo nang pa monastery in gcig sgril rdzong in mgo log\nfounded in 1849 by the 'dzam thang monk dge slong ngag dbang chos 'phel rgya mtsho"@en .
+    
+    bdr:NTA51D543790F41F0C
+        a                   :Note ;
+        :contentLocationStatement  "p. 147" ;
+        :noteSource         bdr:MW30408 ;
+        :noteText           "jo nang monastery in mgo log gcig bsgril rdzong in sog ru yul tsho about 87 km. from  rdzong mkhar\naccording to this source it was founded in 1849 by mkhan chen ngag dbang chos 'phel rgya mtsho, a student of the 3rd gtsang chen dkon mchog 'jigs med rnam rgyal\nthe succession of the gdan rabs:\n1) ngag dbang chos 'phel rgya mtsho\n2) gtsang pa bla ma tshul khrims rgya mtsho\n3) bai tsha tshe mtshams pa ngag dbang mthar phyin\n4) dbon po rig rtsal\n5) grub pa'i dbang phyug dme bla ma ngag dbang don grub\n6) chos sgar bakun dga' blo 'phel (the reembodiment of rdo ring ba kun dga' rgyal mtshan)"@en .
+}

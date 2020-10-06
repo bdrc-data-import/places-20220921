@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G8LS12318 {
+    bda:G8LS12318  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G8LS12318 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "cb/G8LS12318.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G8LS12318 ;
+        adm:logEntry        bda:LG59052133E2D55635 , bda:LG6C206BA083D37429 , bda:LGDF3FED05F703DB90 , bda:LGEACF4B1B8D700B73 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG59052133E2D55635
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T14:41:44.275Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6C206BA083D37429
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-28T12:49:04.63Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDF3FED05F703DB90
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T09:36:11.725Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEACF4B1B8D700B73
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-09-07T15:17:37.675Z"^^xsd:dateTime ;
+        adm:logMessage      "created new place record"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:G8LS12318  a        :Place ;
+        skos:altLabel       "dus 'khor grwa tshang gsang sngags dar rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "rong po dus 'khor grwa tshang /"@bo-x-ewts , "rongpo dukhor datsang"@en ;
+        :isRoot             true ;
+        :note               bdr:NTC5214005D84CF1E8 ;
+        :placeLocatedIn     bdr:G163 ;
+        :placeType          bdr:PT0040 .
+    
+    bdr:NTC5214005D84CF1E8
+        a                   :Note ;
+        :contentLocationStatement  "p. 382" ;
+        :noteSource         bdr:MW27315 ;
+        :noteText           "the full name is dus 'khor grwa tshang gsang sngags dar rgyas gling"@en .
+}

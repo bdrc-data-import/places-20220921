@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1655 {
+    bda:G1655  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1655 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "c4/G1655.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1655 ;
+        adm:logEntry        bda:LG1254DA80686A2AFD , bda:LG54AE6BCB2C2E7EBE , bda:LGA75F189426D04F40 , bda:LGC023539D03D40C9A , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330208:136" ;
+        adm:place_id_lex    "513330208:136" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1254DA80686A2AFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-07-02T05:22:23.864Z"^^xsd:dateTime ;
+        adm:logMessage      "note added"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG54AE6BCB2C2E7EBE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA75F189426D04F40
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-03T09:46:59.448Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC023539D03D40C9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-19T12:21:53.723Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV70CC60147B18A18F
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G1655  a            :Place ;
+        skos:altLabel       "sde dge mkhar mdo dgon/"@bo-x-ewts , "kangduo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mkhar mdo dgon/"@bo-x-ewts , "康多寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1013994D1BD8BBD4 ;
+        :isRoot             true ;
+        :note               bdr:NT8A1F7F39F7A63B70 , bdr:NTB232BFC9FE1EDE79 ;
+        :placeEvent         bdr:EV70CC60147B18A18F ;
+        :placeGonpaPerEcumen  "3.39" ;
+        :placeLat           "32.08333" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "98.40000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID1013994D1BD8BBD4
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1655" .
+    
+    bdr:NT8A1F7F39F7A63B70
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 449" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "sa skya monastery"@en .
+    
+    bdr:NTB232BFC9FE1EDE79
+        a                   :Note ;
+        :contentLocationStatement  "p.122" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "sngon gyi dus su gling grogs mar zhes pas bzhengs pa'i mkhar dmar po rnying ma'i dgon pa de phyis su rab byung bdun pa'i nang sde dge bla chen sangs rgyas phun tshogs kyis mkhar mdo dbang du bsgyur/ de nas sa skya par gyur/ sngon bla grwa lnga brgya'i nang dge slong nyis brga brgyad cu kha lha dang da lta brgya dang bdun cu tsam yod/\noriginally founded as mkhar dmar po a rnying ma monastery; according to this source converted in the 7th rab byung (1387-1446) by bla chen sangs rgyas phun tshogs who converted it to a sa skya establishment and gave it the name mkhar mdo dgon; the dates for mnga' ris pa sangs rgyas phun tshogs are 1649-1705l requires further investigation"@en .
+}

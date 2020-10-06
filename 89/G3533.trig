@@ -1,0 +1,116 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3533 {
+    bda:G3533  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3533 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "89/G3533.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3533 ;
+        adm:logEntry        bda:LG2A013F28017F19C3 , bda:LG2CB7260AF66BC329 , bda:LG31946F2C31B32778 , bda:LG3A455478F61403B6 , bda:LG72EFC0E0DEFD0301 , bda:LG90A42DD1236FA12C , bda:LG9A96E9C7D61D195E , bda:LGA300872224C353CE , bda:LGAAFB245BB8700D18 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2A013F28017F19C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-09-25T14:55:04.291Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2CB7260AF66BC329
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T11:31:39.176Z"^^xsd:dateTime ;
+        adm:logMessage      "added location: dbus gtsang"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LG31946F2C31B32778
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-10T12:23:47.657Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3A455478F61403B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-30T16:46:37.144Z"^^xsd:dateTime ;
+        adm:logMessage      "added near G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG72EFC0E0DEFD0301
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-03T10:20:08.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG90A42DD1236FA12C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-19T17:00:09.99Z"^^xsd:dateTime ;
+        adm:logMessage      "added name in chinese & pinyin, added Gis coord# & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A96E9C7D61D195E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-20T13:11:36.017Z"^^xsd:dateTime ;
+        adm:logMessage      "added location with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA300872224C353CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-30T17:11:46.742Z"^^xsd:dateTime ;
+        adm:logMessage      "added near G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAAFB245BB8700D18
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:EVCE1EBC5A8D17890B
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P7823 ;
+        :notAfter           "1099"^^xsd:gYear ;
+        :notBefore          "1000"^^xsd:gYear .
+    
+    bdr:EVD90ABDDF1D504325
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G3533  a            :Place ;
+        skos:altLabel       "dkyil mkhar ri zhing dgon/"@bo-x-ewts , "ri zhing rtsa phu bla brang /"@bo-x-ewts , "skyid mkhar ri zhing dgon/"@bo-x-ewts , "zhu ri zhing dgon/"@bo-x-ewts , "rixing si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ri zhing dgon/"@bo-x-ewts , "Rishing Gon"@en-x-mixed , "日星寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT454989121821CD4F , bdr:NT4D5203925B3330E0 , bdr:NTADB2A314761A79B2 ;
+        :placeEvent         bdr:EVCE1EBC5A8D17890B , bdr:EVD90ABDDF1D504325 ;
+        :placeIsNear        bdr:G1KR1540 , bdr:G2CN11125 ;
+        :placeLat           "28.869589" ;
+        :placeLocatedIn     bdr:G2175 , bdr:G3186 , bdr:G3534 , bdr:G3577 ;
+        :placeLong          "89.263721" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT454989121821CD4F
+        a                   :Note ;
+        :contentLocationStatement  "p. 38" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "bonpo monastery of the zhu lineage, founded in the 11th century by zhu yas legs po\nrestored in a new location in 1984; currently has a complement of 10"@en .
+    
+    bdr:NT4D5203925B3330E0
+        a                   :Note ;
+        :noteText           "GIS: long/lat for the ruins. rebuilt nearby; coordinates for new site are: long 89.276649 lat  28.881329"@en .
+    
+    bdr:NTADB2A314761A79B2
+        a                   :Note ;
+        :contentLocationStatement  "p. 261-262" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "ཞུ་སྐྱེ་སེ་ཆེན་པོ་དང་། སྲས་སྒྲོལ་བ་གཤེན་རྒྱལ་ཡབ་སྲས་གཉིས་ཀྱིས་ཕྱག་བཏབ། རྒྱལ་དབང་ལྔ་པ་ཆེན་པོའི་སྐབས་ཞུ་བསྟན་འཛིན་ཉི་རྒྱལ་བྱ་བ་བླ་མ་གྲགས་ཅན་ཞིག་བྱོན་ནས་དར་རྒྱས་བྱུང་ཡང་ཕྱིས་སུ་ཉམས། རྒྱུ་ཆ་འདིར་གནས་ཡུལ་པ་སྣམ་རྫོང་ཁོངས་ཡིན་པར་གསལ་ཡང་དོན་དུ་རྒྱལ་རྩེ་རྫོང་དཀྱིལ་མཁར་ཤང་ངམ་རི་ཞིང་ཤང་ཁོངས་ཡིན་པ་གཏན་འཁེལ་ལ། ཞུ་ཡི་གདན་ས་དབང་ལྡན་(G2CN11125)ནི་པ་སྣམ་རྫོང་ཁོངས་ཡིན་ལ་རི་ཞིང་དགོན་དང་ལ་ཕར་རྒྱབ་ཚུར་རྒྱབ་ཏུ་ཐག་ཉེ་ཡིན་པས་གོ་འཛོལ་སྲིད་པར་དྭོགས།\nགཞན་ཡང་དགོན་འདི་བཞེངས་མཁན་ཞུ་ཡས་ལེགས་པོ་ཡིན་ཚུལ་མཁར་རྨེའུ་བསམ་གཏན་གྱིས་མཛད་པའི་{w23886[p. 38]}ནང་བཤད་མོད། རྒྱུ་ཆ་(w25095)འདིར་ནི་ཞུ་ཡས་ལེགས་པོས་དཀྱིལ་མཁར་བྲག་སྒྲུབ་ཏུ་བཞུགས་ནས་བསྟན་པ་སྤེལ་ཚུལ་ལས་མི་གསལ་ལ། དགོན་འདི་བཞེངས་པོ་ཞུ་སྐྱེ་སེ་ཆེན་པོ་དང་ཞུ་ཡས་ལེགས་པོ་མི་གཅིག་ཡིན་མིན་སོགས་མུ་མཐུད་དཔྱད་དགོས་རྒྱུའི་བརྗེད་ཐོར་ཆུང་མིང་པས་སོ།"@bo .
+}

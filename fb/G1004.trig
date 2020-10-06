@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1004 {
+    bda:G1004  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1004 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "fb/G1004.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1004 ;
+        adm:logEntry        bda:LG2C483B710C403AD8 , bda:LG305BF9FDEFDFBCD8 , bda:LG9E9C106AE9BD1723 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C483B710C403AD8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T13:09:52.21Z"^^xsd:dateTime ;
+        adm:logMessage      "new place type assigned"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG305BF9FDEFDFBCD8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-20T15:18:42.211Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9E9C106AE9BD1723
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1004  a            :Place ;
+        skos:altLabel       "bong ra steng ka gdong sna/"@bo-x-ewts ;
+        skos:prefLabel      "bong ra stengs gdong sna/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G1258 ;
+        :placeType          bdr:PT0020 .
+}

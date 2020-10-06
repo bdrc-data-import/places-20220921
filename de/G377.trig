@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G377 {
+    bda:G377  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G377 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "de/G377.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G377 ;
+        adm:logEntry        bda:LG1ECA669C84EFF17E , bda:LGA348C2A64B5DF1B5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542334101:542334103" ;
+        adm:place_id_lex    "542334101:542334103" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1ECA669C84EFF17E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-25T09:01:57.784Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA348C2A64B5DF1B5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVCEBFBB375A6183DE
+        a                   :PlaceFounded ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G377  a             :Place ;
+        skos:altLabel       "dung dkar dgon/"@bo-x-ewts , "dongga si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gro mo dung dkar dgon pa/"@bo-x-ewts , "Dungkar Gonpa"@en-x-mixed , "东嘎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3A2E045697D3D0DF ;
+        :isRoot             true ;
+        :note               bdr:NT81CF6085EC392F15 , bdr:NT82A9A6C131D05BE3 ;
+        :placeEvent         bdr:EVCEBFBB375A6183DE ;
+        :placeGonpaPerEcumen  "8.14" ;
+        :placeLat           "27.50000" ;
+        :placeLocatedIn     bdr:G2172 ;
+        :placeLong          "88.91666" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID3A2E045697D3D0DF
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G377" .
+    
+    bdr:NT81CF6085EC392F15
+        a                   :Note ;
+        :noteText           "small dge lugs pa monastery in the chumbi valley; the seat of the gro mo dge bshes who was revered among the citizens of darjeeling and sikkim"@en .
+    
+    bdr:NT82A9A6C131D05BE3
+        a                   :Note ;
+        :noteText           "possibly indicated by 'Choten Karpo' on SI map"@en .
+}

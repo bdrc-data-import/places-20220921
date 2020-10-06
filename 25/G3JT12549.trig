@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3JT12549 {
+    bda:G3JT12549  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3JT12549 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "25/G3JT12549.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3JT12549 ;
+        adm:logEntry        bda:LG15AEFE176FD540A1 , bda:LG1E23836AF15A3DEC , bda:LG6846D0685D5D276D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG15AEFE176FD540A1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-04-25T09:31:15.672Z"^^xsd:dateTime ;
+        adm:logMessage      "added par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG1E23836AF15A3DEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-21T12:15:24.87Z"^^xsd:dateTime ;
+        adm:logMessage      "par khang gi mchan bu med pa bzo yod"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG6846D0685D5D276D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-22T11:16:55.307Z"^^xsd:dateTime ;
+        adm:logMessage      "added regions"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:G3JT12549  a        :Place ;
+        skos:altLabel       "yu ra dgon u rgyan bsam gtan chos gling gi par khang /"@bo-x-ewts ;
+        skos:prefLabel      "yu ra dgon o rgyan chos 'khor gling gi par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G3182 , bdr:G3188 ;
+        :placeType          bdr:PT0059 .
+}

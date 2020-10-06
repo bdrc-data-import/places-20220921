@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G288 {
+    bda:G288  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G288 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "e6/G288.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G288 ;
+        adm:logEntry        bda:LG3967B320A466A189 , bda:LG751414747A57CD82 , bda:LG96F08301B8EE72C0 , bda:LG987793A14A8F56D6 , bda:LGDEA59AAD18D3CCC6 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632122103:56" ;
+        adm:place_id_lex    "632122103:133" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3967B320A466A189
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-30T14:07:30.911Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG751414747A57CD82
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T14:15:16.798Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG96F08301B8EE72C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T12:28:30.62Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG987793A14A8F56D6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDEA59AAD18D3CCC6
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-01T09:30:19.758Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA3DFFE05F8921F3F
+        a                   :PlaceFounded ;
+        :onYear             "1623"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G288  a             :Place ;
+        skos:altLabel       "she tan dgon/"@bo-x-ewts , "tshe tan dgon dga' ldan bshad sgrub gling /"@bo-x-ewts , "才旦寺"@zh-hans , "杏儿寺"@zh-hans , "杏儿沟寺"@zh-hans , "杏儿沟寺/杏儿寺"@zh-hans , "caidan si"@zh-latn-pinyin-x-ndia , "cai dan si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tshe tan dgon/"@bo-x-ewts , "Tseten Gon Ganden Shedrubling"@en , "才旦寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3E144C47458DE908 ;
+        :isRoot             true ;
+        :note               bdr:NT535C047DC93660C2 , bdr:NTCC00B85B89615D74 ;
+        :placeEvent         bdr:EVA3DFFE05F8921F3F ;
+        :placeGonpaPerEcumen  "101.22" ;
+        :placeLat           "35.91823" ;
+        :placeLocatedIn     bdr:G1PD95976 ;
+        :placeLong          "102.77701" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID3E144C47458DE908
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G288" .
+    
+    bdr:NT535C047DC93660C2
+        a                   :Note ;
+        :noteText           "dge lugs monastery in a mdo; the seat of the tshe tan zhabs drung incarnation lineage"@en .
+    
+    bdr:NTCC00B85B89615D74
+        a                   :Note ;
+        :contentLocationStatement  "p. 37" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་1623ལོར་ཕྱག་བཏབ།"@en .
+}

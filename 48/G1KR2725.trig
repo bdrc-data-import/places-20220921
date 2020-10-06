@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2725 {
+    bda:G1KR2725  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2725 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "48/G1KR2725.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2725 ;
+        adm:logEntry        bda:LGD024371BF660BB90 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632721207:38" ;
+        adm:place_id_lex    "632721207:38" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD024371BF660BB90
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-12T09:47:16.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2 notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV87758E5BF8102321
+        a                   :PlaceFounded ;
+        :onYear             "0761"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G1KR2725  a         :Place ;
+        skos:altLabel       "pu rong lha khang /"@bo-x-ewts , "burang lakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "spu rong lha khang dgon/"@bo-x-ewts , "布让拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6B2A517BA90A23B0 ;
+        :isRoot             true ;
+        :note               bdr:NT9273141193DA67F4 , bdr:NTED6B8D51CFE360A3 ;
+        :placeEvent         bdr:EV87758E5BF8102321 ;
+        :placeGonpaPerEcumen  "21.46" ;
+        :placeLat           "33.37120" ;
+        :placeLocatedIn     bdr:G2326 ;
+        :placeLong          "96.76746" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID6B2A517BA90A23B0
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2725" .
+    
+    bdr:NT9273141193DA67F4
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 46" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "'brug pa bka' brgyud pa monastery in yus hru'u prefecture, qinghai province"@en .
+    
+    bdr:NTED6B8D51CFE360A3
+        a                   :Note ;
+        :contentLocationStatement  "p. 326" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "ཀརྨ་བཀའ་བརྒྱུད་པའི་དགོན་སྡེ་ཞིག་ཏེ། དེང་དུས་ཡུས་ཧྲུའུ་རྫོང་པུ་རང་གྲོང་ཚོའི་བྱང་ངོས་སུ་ཆགས་ཞིང་། སྤྲུལ་སྐུ་གཅིག་ཡོད་པར་གསལ།"@bo .
+}

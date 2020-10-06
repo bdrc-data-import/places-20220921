@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4606 {
+    bda:G4606  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4606 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "76/G4606.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4606 ;
+        adm:logEntry        bda:LG1C3C83D979ECE3AA , bda:LGEAA31BA340A13964 , bda:LGFE3EF88A8CBE901D , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540124200:540124102" ;
+        adm:place_id_lex    "540124200:540124102" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1C3C83D979ECE3AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-02T14:55:23.525Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEAA31BA340A13964
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-01-13T11:00:15.913Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G2441"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFE3EF88A8CBE901D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5439AEEC02E082D8
+        a                   :PlaceFounded ;
+        :onYear             "1250"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G4606  a            :Place ;
+        skos:altLabel       "bkra shis sgang dgon/"@bo-x-ewts , "扎西岗寺"@zh-hans ;
+        skos:prefLabel      "snye thang bkra shis sgang /"@bo-x-ewts , "Netang Tashigang"@en-x-mixed , "聂塘扎西岗"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6ADCB8580E81790F ;
+        :isRoot             true ;
+        :note               bdr:NT00D1CF698E63216E , bdr:NT45844173D37D4A8E , bdr:NTB35422EB74015DA4 ;
+        :placeEvent         bdr:EV5439AEEC02E082D8 ;
+        :placeGonpaPerEcumen  "19.83" ;
+        :placeLat           "29.55112" ;
+        :placeLocatedIn     bdr:G2128 , bdr:G2450 ;
+        :placeLong          "90.96797" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID6ADCB8580E81790F
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4606" .
+    
+    bdr:NT00D1CF698E63216E
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 124-125" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT45844173D37D4A8E
+        a                   :Note ;
+        :contentLocationStatement  "[p. 314]" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "sakya monastery located in mnyes thang shang of chu shur rdzong\nin 1987 permitted to be restored\nhad 24 monks"@en .
+    
+    bdr:NTB35422EB74015DA4
+        a                   :Note ;
+        :contentLocationStatement  "[p. 41]" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "sa skya monastery in mnyes thang shang\nfounded by chos rgyal 'phags pa in the 12th [i.e. 13th cent.]\ndgon bdag: sa skya dgon pa\n30 monks\npermission received for restoration"@en .
+}

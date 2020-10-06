@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1798 {
+    bda:G1KR1798  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1798 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "59/G1KR1798.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1798 ;
+        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522200:26" ;
+        adm:place_id_lex    "542522200:26" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV92C5674398B11161
+        a                   :PlaceConverted ;
+        :note               bdr:NTFB61B449D26A9435 .
+    
+    bdr:EVAC4417B6E951B889
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionTodrukKagyu .
+    
+    bdr:G1KR1798  a         :Place ;
+        skos:altLabel       "Sumo"@bo-x-phon-en , "Sumo"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "su mo ru bsam gtan chos gling /"@bo-x-ewts , "苏摩如桑丹曲林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB9DD709B78682298 ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV92C5674398B11161 , bdr:EVAC4417B6E951B889 ;
+        :placeGonpaPerEcumen  "2.02" ;
+        :placeLat           "31.90000" ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeLong          "79.40000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDB9DD709B78682298
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1798" .
+    
+    bdr:NTFB61B449D26A9435
+        a                   :Note ;
+        :noteText           "SAME"@en .
+}

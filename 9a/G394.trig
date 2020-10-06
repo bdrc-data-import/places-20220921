@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G394 {
+    bda:G394  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G394 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "9a/G394.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G394 ;
+        adm:logEntry        bda:LG3BC9042DBA0FA8E3 , bda:LG6630237832945B7A , bda:LGAD99047FF71B059C , bda:LGAEAB1C8CE96ACEF4 , bda:LGDAAF36FA29C8B22C , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540102005:540101106" ;
+        adm:place_id_lex    "540102005:540101106" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3BC9042DBA0FA8E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T12:25:33.243Z"^^xsd:dateTime ;
+        adm:logMessage      "edited names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6630237832945B7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:37:19.257Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAD99047FF71B059C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T14:36:52.943Z"^^xsd:dateTime ;
+        adm:logMessage      "added 5 khangTshan as contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAEAB1C8CE96ACEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-01-04T17:13:16.813Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGDAAF36FA29C8B22C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV3377C1CBE7E5AFD1
+        a                   :PlaceFounded ;
+        :onYear             "1721"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G394  a             :Place ;
+        skos:altLabel       "dpal ldan rgyud smad grwa tshang /"@bo-x-ewts , "rgyud smad grwa tshang /"@bo-x-ewts , "Gyume College"@en , "xia miyuan"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyud smad/"@bo-x-ewts , "Gyume Dratsang"@en-x-mixed , "下密院"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC19E08B80CBBB12D ;
+        :isRoot             true ;
+        :note               bdr:NTEE5C42EBD807983D ;
+        :placeContains      bdr:G2CN10865 , bdr:G2CN11054 , bdr:G2CN11055 , bdr:G2CN11056 , bdr:G2CN11057 , bdr:G2CN11058 ;
+        :placeEvent         bdr:EV3377C1CBE7E5AFD1 ;
+        :placeGonpaPerEcumen  "6666.67" ;
+        :placeLat           "29.65613" ;
+        :placeLocatedIn     bdr:G2800 ;
+        :placeLong          "91.13347" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC19E08B80CBBB12D
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G394" .
+    
+    bdr:NTEE5C42EBD807983D
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 20-22" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description\n\none of the two main dge lugs tantric colleges in the tibetan autonomous region"@en .
+}

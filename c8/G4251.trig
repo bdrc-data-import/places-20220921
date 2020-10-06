@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4251 {
+    bda:G4251  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4251 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c8/G4251.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4251 ;
+        adm:logEntry        bda:LG25385EA96BF2F8A5 , bda:LGD6EA953F42DE4596 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G210 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG25385EA96BF2F8A5
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-04-26T12:26:16.061Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G210"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD6EA953F42DE4596
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G4251  a            :Place ;
+        skos:prefLabel      "sa skya (khri skor)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTBDD99D0CFCC7829D , bdr:NTBF79EE7A11A64855 .
+    
+    bdr:NTBDD99D0CFCC7829D
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G210"@en .
+    
+    bdr:NTBF79EE7A11A64855
+        a                   :Note ;
+        :contentLocationStatement  "p. 2324" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1563. sa skya dang byang pa bdag po ma mthun pa'i dbang gis sa skya'i rgyab langs rin spungs pas byas te g.yas ru byang pa'i thog tu dmag drangs"@en .
+}

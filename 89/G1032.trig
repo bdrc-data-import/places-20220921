@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1032 {
+    bda:G1032  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1032 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "89/G1032.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1032 ;
+        adm:logEntry        bda:LG4F9B1035E9208AA9 , bda:LGED3C9AAFAB1E8281 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4F9B1035E9208AA9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-05T16:13:14.449Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGED3C9AAFAB1E8281
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1032  a            :Place ;
+        skos:altLabel       "sku 'bum lha sde dred khog 'brog sde/"@bo-x-ewts , "sku 'bum mchod gzhis dred khog 'brog sde/"@bo-x-ewts ;
+        skos:prefLabel      "dred khog 'brog sde/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT70B58C71717EF08F ;
+        :placeLocatedIn     bdr:G1202 ;
+        :placeType          bdr:PT0048 .
+    
+    bdr:NT70B58C71717EF08F
+        a                   :Note ;
+        :noteText           "this nomadic community is one of the communities assigned to the control of the sku 'bum monastery in qinghai"@en .
+}

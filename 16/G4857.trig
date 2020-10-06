@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4857 {
+    bda:G4857  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4857 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "16/G4857.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4857 ;
+        adm:logEntry        bda:LG6886181547959636 , bda:LG811F6F8498CEADB5 , bda:LGA560312240F6B2D3 , bda:LGD4E5C22C73D513A7 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623022212:623022124" ;
+        adm:place_id_lex    "623022212:623022124" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6886181547959636
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-08T15:51:18.852Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG811F6F8498CEADB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-16T15:45:17.644Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGA560312240F6B2D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-20T16:23:16.492Z"^^xsd:dateTime ;
+        adm:logMessage      "added cjinese and"@en ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGD4E5C22C73D513A7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2D3154C169E027AF
+        a                   :PlaceFounded ;
+        :onYear             "1685"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4857  a            :Place ;
+        skos:altLabel       "mkhas grub gling /"@bo-x-ewts , "sho ba dgon mkhas grub gling /"@bo-x-ewts , "sho ba mkhas grub gling /"@bo-x-ewts , "杓哇克珠林"@zh-hans , "杓哇寺"@zh-hans , "shaowa kezhulin"@zh-latn-pinyin-x-ndia , "shaowa si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sho ba dgon/"@bo-x-ewts , "勺哇寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC579B2153FC6E7A2 ;
+        :isRoot             true ;
+        :note               bdr:NT25D87D916E27F496 , bdr:NT68DD72D406B8F260 ;
+        :placeEvent         bdr:EV2D3154C169E027AF ;
+        :placeGonpaPerEcumen  "7.24" ;
+        :placeLat           "34.99335" ;
+        :placeLocatedIn     bdr:G2203 ;
+        :placeLong          "103.57478" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDC579B2153FC6E7A2
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4857" .
+    
+    bdr:NT25D87D916E27F496
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 122" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "monastery in the kan lho autonomous tibetan prefecture"@en .
+    
+    bdr:NT68DD72D406B8F260
+        a                   :Note ;
+        :contentLocationStatement  "536" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "founded in 1685; geluk,"@en .
+}

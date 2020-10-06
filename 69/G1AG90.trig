@@ -1,0 +1,43 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1AG90 {
+    bda:G1AG90  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1AG90 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "69/G1AG90.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1AG90 ;
+        adm:logEntry        bda:LGFB978C43D084889B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGFB978C43D084889B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-12T16:39:14.518Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:EVCD2538D2CE8809FA
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2202 ;
+        :notAfter           "1193"^^xsd:gYear ;
+        :notBefore          "1181"^^xsd:gYear .
+    
+    bdr:G1AG90  a           :Place ;
+        rdfs:comment        "hermitage founded in 1181 or 1193 by ka rag pa 'dul ba 'od." ;
+        skos:prefLabel      "kha rag"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVCD2538D2CE8809FA ;
+        :placeType          bdr:PT0021 .
+}

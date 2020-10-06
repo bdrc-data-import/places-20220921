@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11151 {
+    bda:G2CN11151  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11151 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8a/G2CN11151.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11151 ;
+        adm:logEntry        bda:LG2CFF2AC0A65D9C5C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2CFF2AC0A65D9C5C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-18T16:28:48.3Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVD907C45FFE0B8747
+        a                   :PlaceFounded ;
+        :notAfter           "1989"^^xsd:gYear ;
+        :notBefore          "1980"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G2CN11151  a        :Place ;
+        skos:altLabel       "zhu ri zhing g.yung drung kun grags gling /"@bo-x-ewts ;
+        skos:prefLabel      "zhu g.yung drung kun grags gling /"@bo-x-ewts , "Shurishing Yungdrung Kundrak Ling"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NTAA37F691B59CFF68 ;
+        :placeEvent         bdr:EVD907C45FFE0B8747 ;
+        :placeLat           "27.278635" ;
+        :placeLocatedIn     bdr:G1398 ;
+        :placeLong          "88.334254" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTAA37F691B59CFF68
+        a                   :Note ;
+        :noteText           "Founded by g.yung drung tshul khrims.\n\n3 lamas, many boys\n\nlocated in Kewzing (Kuising, Kuisang), Sikkim"@en .
+}

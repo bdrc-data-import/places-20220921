@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2GS1300 {
+    bda:G2GS1300  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2GS1300 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "1c/G2GS1300.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2GS1300 ;
+        adm:logEntry        bda:LG2B07ED3185196B2C , bda:LGD46AE28F40C6B668 , bda:LGF22A2F5D30EABA27 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2B07ED3185196B2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-21T10:28:18.034Z"^^xsd:dateTime ;
+        adm:logMessage      "restored"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD46AE28F40C6B668
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T08:57:32.902Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF22A2F5D30EABA27
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-09-20T16:57:11.615Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2GS1300  a         :Place ;
+        skos:prefLabel      "yul steng dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0C0306559356DA4E ;
+        :placeLocatedIn     bdr:G2187 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0C0306559356DA4E
+        a                   :Note ;
+        :contentLocationStatement  "p. 224" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "small dge lugs monastery located in lho rong rdzong, nag lcig shang, lha khang thang grong tsho. in 1698 (sa stag) had a complement of 30 monks. according to the biography of rta tshag bstan pa'i mgon po this monastery was founded by one of the predecessors of bstan pa'i mgon po. this is a bca' yig written for the monastery by rta tshang ngag dbang dpal ldan chos kyi rgyal mtshan in his one volume gsung 'bum."@en .
+}

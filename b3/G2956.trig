@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2956 {
+    bda:G2956  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2956 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b3/G2956.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2956 ;
+        adm:logEntry        bda:LG4191E5C32E3417F3 , bda:LG4BA4046D2CF45AFC , bda:LGF354E061DC6BA005 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4191E5C32E3417F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-02T12:53:33.667Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4BA4046D2CF45AFC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF354E061DC6BA005
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-07T16:36:38.064Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2956  a            :Place ;
+        skos:prefLabel      "chos rdzong mda' rta/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFA3A9E77A03A175A ;
+        :placeLocatedIn     bdr:G655 ;
+        :placeType          bdr:PT0085 .
+    
+    bdr:NTFA3A9E77A03A175A
+        a                   :Note ;
+        :contentLocationStatement  "p. 105" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "given as the place of birth of the fifth rba kha sprul sku"@en .
+}

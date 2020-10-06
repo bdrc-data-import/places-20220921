@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G961 {
+    bda:G961  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G961 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "96/G961.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G961 ;
+        adm:logEntry        bda:LG4C13001CFF16F76D , bda:LG5BD7BDA0F2DF2043 , bda:LG70E8CE69508FA35C , bda:LG715E860341FFD8EF , bda:LG7DC87A84893A9B00 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4C13001CFF16F76D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5BD7BDA0F2DF2043
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-12T10:59:22.519Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings & added place name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG70E8CE69508FA35C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-12T11:10:03.629Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG715E860341FFD8EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T09:14:40.786Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7DC87A84893A9B00
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-09T14:57:14.769Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G961  a             :Place ;
+        skos:altLabel       "mdo smad klu shod/"@bo-x-ewts ;
+        skos:prefLabel      "klu shod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT319C82666542CDE1 ;
+        :placeContains      bdr:G889 , bdr:G962 ;
+        :placeLocatedIn     bdr:G1294 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT319C82666542CDE1
+        a                   :Note ;
+        :contentLocationStatement  "p. 434-436" ;
+        :noteSource         bdr:MW2CZ7959 ;
+        :noteText           "ཀླུ་ཤོད་ལ་ཚོ་བ་བརྒྱད་ཡོད་ཚུལ་དང་འབྲེལ། དེ་རྣམས་ལ་སྡེ་བ་མང་པོ་ཡོད་ཚུལ་འཁོད་པ་ནི། སྐྱིའི་ནང་།(skyi'i nang) ཐེམ་པ།(them pa) ཨ་མཆོག་ཤུག་ལུང་ཉིན།(a mchog shug lung nyin) མུ་ཏོ།(mu to) ཁྱུང་རི་ཐང་།(khyung ri than) ཤྭ་ཐང་དཀར།(shwa thang dkar) མུ་ཏོ་སྣ།mu to sna སྐད།(skad) ཉང་བན་སྨད།(nyang ban smad) རྔ་རྒོད།(rnga rgod) རེབ་ཚ་མདོ།(reb tsha mdo) བོག་པའི་རྩིབས།(bog pa'i rtsibs) གདུས་གཞུས་མདོ།(gdus gzhus mdo) ཤོ་རྡེའུ།(sho rde'u) ཉང་བན་སྒོ་འོག་ཉང་བན་མདོ།(nyang ban sgo 'og nyang ban mdo) མཁར་དམར་གཤིས།(mkhar dmar gshis) སྨད་ཀྱི་གྱི་ལིང་།(smad kyi gyi ling) གྱ་འབུར།(gya 'bur) རུ་གོང་མ།(ru gong ma) རུ་འགབ་མ།(ru 'gab ma) ཐང་ཁ།(thang kha) གཤིན་དྲུག་(gshin drug)སོགས་སོ།"@en .
+}

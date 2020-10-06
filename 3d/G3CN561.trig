@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN561 {
+    bda:G3CN561  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN561 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3d/G3CN561.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN561 ;
+        adm:logEntry        bda:LGCF435F38D8619521 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGCF435F38D8619521
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-04T16:52:45.722Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVB1BFFA7BE3258FD1
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0702"^^xsd:gYear .
+    
+    bdr:G3CN561  a          :Place ;
+        skos:altLabel       "nam ldong prom/"@bo-x-ewts ;
+        skos:prefLabel      "nam ldong phrom/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0F2377848DD07836 , bdr:NTC2B7FA8999580B57 ;
+        :placeEvent         bdr:EVB1BFFA7BE3258FD1 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT0F2377848DD07836
+        a                   :Note ;
+        :contentLocationStatement  "p. 342" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"སྟག་གི་ལོ་ ༧༠༢ ལ་བབ་སྟེ། བཙན་པོ་ ་་་ དགུན་ཕོ་བྲང་ཁྲི་ཙེ་ན་བཞུགས། མདོ་སྨད་གྱི་དགུན་འདུན་ནམ་ལྡོང་ཕྲོམ་དུ་ཁུ་མང་པོ་རྗེ་ལྷ་ཟུང་དང་། བློན་མང་རྩན་སྡོང་ཞིས་བསྡུས་ཏེ། སུམ་རུའི་མཁོས་ཆེན་པོ་བགྱིས། ཡུམ་འོན་ཅང་དོ་ན་བཞུགས་ཤིང་། འདུན་མའང་འོན་ཅང་དོར་བསྡུས་ཏེ། ཤིང་གི་བཀའ་ཐང་ཆེན་པོ་བོར་བར་ལོ་གཅིག\"ཅེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་འདུས་སྲོང་མང་རྗེའི་སྐབས་ཀྱི་འདུན་ས་ཆེན་པོ་ཞིག་ཡིན་པ་རྟོགས་སོ།"@bo .
+    
+    bdr:NTC2B7FA8999580B57
+        a                   :Note ;
+        :contentLocationStatement  "p. 344" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "ནམ་ལྡོང་ཕྲོམ། སྡེ་དགེ་དཔལ་ཡུལ་ཁུལ་གྱི་འབྲི་ཆུའི་གཞུང་རྒྱུད་དུ་ཡིན་པ་བཤད།"@bo .
+}

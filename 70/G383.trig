@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G383 {
+    bda:G383  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G383 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "70/G383.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G383 ;
+        adm:logEntry        bda:LG36142103543C1050 , bda:LG958BE8CD11C92305 , bda:LGAF3B43015133A7AF , bda:LGC85F836AF7A2C1D7 , bda:LGC98871B62931B7B7 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1KR1893 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG36142103543C1050
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-07T14:56:54.777Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG958BE8CD11C92305
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-11-07T10:01:32.507Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1KR1893(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAF3B43015133A7AF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC85F836AF7A2C1D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-16T16:49:57.317Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGC98871B62931B7B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T09:45:04.094Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G383  a             :Place ;
+        skos:altLabel       "gsang sngags chos gling /"@bo-x-ewts , "spo bo rba kha gsang sngags chos gling dgon/"@bo-x-ewts ;
+        skos:prefLabel      "rba kha gsang sngags chos gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDAF5DAD27F26C974 , bdr:NTFEFE25946C1691C3 ;
+        :placeLocatedIn     bdr:G2953 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTDAF5DAD27F26C974
+        a                   :Note ;
+        :contentLocationStatement  "p. 103, 125" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "rnying ma pa monastery in spra rmog (khrab rmog) chus, spo bo rdzong; the seat of an important lineage of the padma gling pa tradition"@en .
+    
+    bdr:NTFEFE25946C1691C3
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR1893(dup.)"@en .
+}

@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4658 {
+    bda:G4658  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4658 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "02/G4658.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4658 ;
+        adm:logEntry        bda:LG7C56698701E0DDEB , bda:LGE9EC00D2A2C6114A , bda:LGF352E898CB99CA94 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7C56698701E0DDEB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-02T16:59:50.674Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE9EC00D2A2C6114A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF352E898CB99CA94
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-14T11:46:15.774Z"^^xsd:dateTime ;
+        adm:logMessage      "changed name (\"sa dkyil sde pa\" to \"sa dkyil\"), changed type (\"triballineage\" to \"sdeTsho\")"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G4658  a            :Place ;
+        skos:altLabel       "reb gong sa dkyil sde pa'i mnga' khongs/"@bo-x-ewts , "sa dkyil sde pa'i sa cha/"@bo-x-ewts ;
+        skos:prefLabel      "sa dkyil/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G2369 ;
+        :placeType          bdr:PT0020 .
+}

@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD110102 {
+    bda:G1PD110102  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD110102 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "8c/G1PD110102.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD110102 ;
+        adm:logEntry        bda:LG00A7947987C9845D , bda:LG0C36BE2A144192DF , bda:LG3DDCA7614CA64A31 , bda:LG633C531DC4BA617D , bda:LGC878B9EBA75B9BAC , bda:LGE8B155238D850EB8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00A7947987C9845D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-06T15:06:29.976Z"^^xsd:dateTime ;
+        adm:logMessage      "added near"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0C36BE2A144192DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T14:13:04.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3DDCA7614CA64A31
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-27T18:13:30.24Z"^^xsd:dateTime ;
+        adm:logMessage      "added place"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG633C531DC4BA617D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-03-17T12:06:18.813Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC878B9EBA75B9BAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2011-03-17T12:15:36.455Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE8B155238D850EB8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-08-27T18:34:16.323Z"^^xsd:dateTime ;
+        adm:logMessage      "added place"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:G1PD110102  a       :Place ;
+        skos:altLabel       "drong srong lhung ba ri dwags kyi nags tshal/"@bo-x-ewts , "सारनाथ"@sa-Deva ;
+        skos:prefLabel      "sA ra nA tha/"@bo-x-ewts , "sarnath"@sa-x-ndia ;
+        :isRoot             true ;
+        :note               bdr:NT3F636306124E7508 ;
+        :placeContains      bdr:G2KG211569 , bdr:G2KG5024 ;
+        :placeIsNear        bdr:G2CN10953 ;
+        :placeLocatedIn     bdr:G3188 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT3F636306124E7508
+        a                   :Note ;
+        :noteSource         bdr:MW1KG4528 ;
+        :noteText           "pp. 55 སྟོན་པས་ཐོག་མར་ཆོས་ཀྱི་འཁོར་ལོ་བསྐོར་བའི་གནས་ཡིན།"@bo .
+}

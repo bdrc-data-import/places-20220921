@@ -1,0 +1,120 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G265 {
+    bda:G265  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G265 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "f6/G265.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G265 ;
+        adm:logEntry        bda:LG0F23C03FA2AAA020 , bda:LG4B596F87C7409190 , bda:LG6517822D7E9A2CE0 , bda:LGBD79A7D192E2AEFE , bda:LGC10F4FE7BB286487 , bda:LGCA4C2FB9E229D326 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542325100:542326110" ;
+        adm:place_id_lex    "542325100:542326110" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0F23C03FA2AAA020
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-22T14:25:52.537Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG4B596F87C7409190
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-19T14:26:42.858Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6517822D7E9A2CE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-10T14:21:48.282Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBD79A7D192E2AEFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-22T14:23:46.594Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGC10F4FE7BB286487
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCA4C2FB9E229D326
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-27T12:58:11.276Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVA1BD6768B1F65847
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P489 .
+    
+    bdr:EVD9C8C3C6AF354CF2
+        a                   :PlaceFounded ;
+        :onYear             "0650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:EVDEFB3C68530F0D90
+        a                   :PlaceConverted ;
+        :onYear             "1489"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:G265  a             :Place ;
+        skos:altLabel       "bya rgod gshongs dgon pa/"@bo-x-ewts , "gnyan yod bya rgod gshongs/"@bo-x-ewts , "nianyu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mnyan yod bya rgod gshongs/"@bo-x-ewts , "Nyanyo Chagoshong"@en-x-mixed , "年玉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0EBD2A9AE5E6087E ;
+        :isRoot             true ;
+        :note               bdr:NT1DA74560E7499879 , bdr:NT5942AD1F0CE4BA06 , bdr:NTA9E35F42C0B5CC5E ;
+        :placeEvent         bdr:EVA1BD6768B1F65847 , bdr:EVD9C8C3C6AF354CF2 , bdr:EVDEFB3C68530F0D90 ;
+        :placeGonpaPerEcumen  "17.58" ;
+        :placeLat           "29.26667" ;
+        :placeLocatedIn     bdr:G2167 ;
+        :placeLong          "88.33334" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID0EBD2A9AE5E6087E
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G265" .
+    
+    bdr:NT1DA74560E7499879
+        a                   :Note ;
+        :noteText           "founded by paN chen 'bum phrag gsum pa in 1490 according to the mkhyen brtse gdan rabs p. 388"@en .
+    
+    bdr:NT5942AD1F0CE4BA06
+        a                   :Note ;
+        :contentLocationStatement  "p. 345" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "once an important sa skya teaching establishment in the tibetan autonomous region"@en .
+    
+    bdr:NTA9E35F42C0B5CC5E
+        a                   :Note ;
+        :contentLocationStatement  "p. 105" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "sa skya teaching establishment in lha rtse rdzong in gtsang; this monastery was founded in 1489 by the master paN chen 'bum phrag gsum pa byams pa chos grags. this teaching establishment was located in bkra shis sgang shang, bya gshongs grong tsho; it is mentioned in the grub mtha' shel gyi me long of thu'u bkwan."@en .
+}

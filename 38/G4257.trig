@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4257 {
+    bda:G4257  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4257 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "38/G4257.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4257 ;
+        adm:logEntry        bda:LG96CFCD923B2D0E71 , bda:LGC29EE6D8CE342312 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG96CFCD923B2D0E71
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-26T12:36:56.11Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC29EE6D8CE342312
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4257  a            :Place ;
+        skos:altLabel       "bzhag shod mtsho bdun lha khang /"@bo-x-ewts , "tsag dge ba dgon/"@bo-x-ewts ;
+        skos:prefLabel      "mtsho bdun lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT681E35DF6800A9A2 ;
+        :placeLocatedIn     bdr:G1272 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT681E35DF6800A9A2
+        a                   :Note ;
+        :contentLocationStatement  "p. 116" ;
+        :noteSource         bdr:MW19816 ;
+        :noteText           "monastery in the rgyal rong area;\none of the five bzhag shod dgon founded by rgyal ba bzang po"@en .
+}

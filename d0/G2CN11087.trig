@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11087 {
+    bda:G2CN11087  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11087 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "d0/G2CN11087.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11087 ;
+        adm:logEntry        bda:LG0CE72FE0C95AC0DF , bda:LG2EFFE3C38DF7531E , bda:LGB1EDAD18452F1E3E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0CE72FE0C95AC0DF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-06-14T12:13:42.704Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2EFFE3C38DF7531E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T12:59:58.809Z"^^xsd:dateTime ;
+        adm:logMessage      "added event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB1EDAD18452F1E3E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T12:16:01.211Z"^^xsd:dateTime ;
+        adm:logMessage      "added 3 notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVACCA1643A500ED08
+        a                   :PlaceFounded ;
+        :notAfter           "1599"^^xsd:gYear ;
+        :notBefore          "1300"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G2CN11087  a        :Place ;
+        skos:altLabel       "lcags mo mdo steng dgon/"@bo-x-ewts ;
+        skos:prefLabel      "mdo steng lcags mo dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT768765366DBB7545 , bdr:NTC0B7DB0A8BB6D73D , bdr:NTED6CA19BF8B9F713 ;
+        :placeContains      bdr:G1576 ;
+        :placeEvent         bdr:EVACCA1643A500ED08 ;
+        :placeLocatedIn     bdr:G621 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT768765366DBB7545
+        a                   :Note ;
+        :contentLocationStatement  "v.1, p. 609" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "ཀརྨ་བཀའ་བརྒྱུད་པའི་དགོན་རྙིང་ཆེན་པོ་ཞིག་ཏེ། ད་ལྟའི་དཀར་མཛེས་རྫོང་གསེར་མཁར་ཆུས་ན་གནས་ཡོད་པ། ཕྱིས་སོག་དམག་དང་སེར་དམག་གིས་བཅོམ་པ་ལས་དགོན་པ་གསུམ་ཙམ་ཞིག་ལ་ཁ་འཐོར་བ་སྟེ། རྫ་ཚར་ཚར་དགོན་(G1690)དང་། ཧོར་བན་རྒན་དགོན།(G1574) འདན་ཇ་ཆུ་དགོན་(G1683)བཅས་ཡིན་པར་གསལ།"@bo .
+    
+    bdr:NTC0B7DB0A8BB6D73D
+        a                   :Note ;
+        :contentLocationStatement  "v.1, p. 183" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "བན་རྒན་དགོན་པ་སོགས་དགོན་ལག་གཞན་དང་འབྲེལ་བ་ཡོད་སྐོར་གསལ།"@bo .
+    
+    bdr:NTED6CA19BF8B9F713
+        a                   :Note ;
+        :contentLocationStatement  "v.1, p. 194" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "དགོན་རྙིང་འདིའི་རི་ཁྲོད་ནི་ད་ལྟའི་རིག་གྲྭ་དགོན་(G1576)ཡིན་ཅིང་། དཀར་མཛེས་ཧོར་ཁོག་ལུང་པའི་ནང་དུ་རྫ་ཆུ་ནུབ་ནས་ཤར་ཕྱོགས་སུ་འབབ་ལ། དེའི་ཕ་རོལ་ན་མདོ་སྟེང་ལྕགས་མོ་དགོན་གྱི་ཤུལ་ཡོད་པ་སོགས་གསལ།"@bo .
+}

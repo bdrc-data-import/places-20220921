@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2575 {
+    bda:G2575  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2575 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "79/G2575.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2575 ;
+        adm:logEntry        bda:LG507122E47B93C4C6 , bda:LGC38EEC600C2C2546 , bda:LGE5183311140244C2 , bda:LGEE333436A0EB5761 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632726200:75" ;
+        adm:place_id_lex    "632726200:75" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG507122E47B93C4C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-25T13:51:30.6Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"sgyogs gdong dgon\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC38EEC600C2C2546
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE5183311140244C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T15:39:03.528Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEE333436A0EB5761
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-28T16:29:25.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVF2DBEB8EC3ED6133
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2575  a            :Place ;
+        skos:altLabel       "sgyogs gdong dgon/"@bo-x-ewts , "江荣寺/旧当寺/江龙寺/江让寺"@zh-hans , "jiangrong si/jiudang si/jianglong si/jiangrang si"@zh-latn-pinyin-x-ndia , "juedong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sgyogs dung dgon/"@bo-x-ewts , "觉东寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6CE86E0082279896 ;
+        :isRoot             true ;
+        :note               bdr:NTCC0725152A9BE846 ;
+        :placeEvent         bdr:EVF2DBEB8EC3ED6133 ;
+        :placeGonpaPerEcumen  "3.06" ;
+        :placeLat           "33.78962" ;
+        :placeLocatedIn     bdr:G2327 ;
+        :placeLong          "96.15534" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID6CE86E0082279896
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2575" .
+    
+    bdr:NTCC0725152A9BE846
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 49" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "dge lugs pa monastery in yus hru'u prefecture, qinghai province"@en .
+}

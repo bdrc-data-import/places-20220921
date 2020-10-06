@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2305 {
+    bda:G2305  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2305 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "b9/G2305.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2305 ;
+        adm:logEntry        bda:LG2D0C80E6CD996FCB , bda:LG3317404D9C190925 , bda:LG623A83F766E41CA8 , bda:LG68030E84C6E315B8 , bda:LG8B6B1FC2954D66AB , bda:LGD31A5C2950B1685A , bda:LGE53ED572AA9EFCD0 , bda:LGEABCC825FCEA72A8 , bda:LGIM0A2D5DA707 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2D0C80E6CD996FCB
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR706"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG3317404D9C190925
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-05-19T23:44:34.43Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG623A83F766E41CA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T16:49:45.328Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:sngarGyiRdzong to rdzong"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG68030E84C6E315B8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8B6B1FC2954D66AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-27T12:20:34.978Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD31A5C2950B1685A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-26T12:06:28.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE53ED572AA9EFCD0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-17T16:51:22.694Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEABCC825FCEA72A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from county to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM0A2D5DA707
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rdzong to sngarGyiRdzong"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2305  a            :Place ;
+        skos:altLabel       "batang xian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'ba' thang rdzong /"@bo-x-ewts , "Batang county"@en , "巴塘县"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT582BB47E6EC862EF ;
+        :placeContains      bdr:G1KR706 , bdr:G4008 , bdr:G4009 , bdr:G4010 , bdr:G4011 , bdr:G4012 , bdr:G4013 , bdr:G4014 , bdr:G4015 , bdr:G4016 , bdr:G4017 , bdr:G4018 , bdr:G4019 , bdr:G4020 , bdr:G4021 , bdr:G4022 , bdr:G4023 , bdr:G4024 , bdr:G4025 , bdr:G522 ;
+        :placeIsNear        bdr:G4027 ;
+        :placeLocatedIn     bdr:G1538 ;
+        :placeType          bdr:PT0011 .
+    
+    bdr:NT582BB47E6EC862EF
+        a                   :Note ;
+        :noteText           "one of the 18 counties (new rdzong) of dkar mdzes bod rigs rang skyong khul"@en .
+}

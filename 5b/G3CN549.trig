@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN549 {
+    bda:G3CN549  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN549 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "5b/G3CN549.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN549 ;
+        adm:logEntry        bda:LG249572FF4B909C70 , bda:LG3BBF459CC253BC6E , bda:LG5230510AB62CCC74 , bda:LGBC31CAF3D98E1966 , bda:LGF08BC05CCAD62311 , bda:LGF7E60B4CF7D4C936 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG249572FF4B909C70
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-03T10:04:01.796Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3BBF459CC253BC6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-03T10:12:21.182Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains \"pho brang zu spug\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5230510AB62CCC74
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-04T10:07:43.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBC31CAF3D98E1966
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-12T12:42:06.156Z"^^xsd:dateTime ;
+        adm:logMessage      "checkout"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF08BC05CCAD62311
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-10T16:24:25.518Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF7E60B4CF7D4C936
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-03T10:10:11.166Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV0FB0B2BE0F6E1A5C
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0688"^^xsd:gYear .
+    
+    bdr:G3CN549  a          :Place ;
+        skos:altLabel       "Zupuk"@bo-x-ewts ;
+        skos:prefLabel      "zu spug"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT43B92E58E3086649 , bdr:NT56D64C08CAF41647 ;
+        :placeContains      bdr:G3CN527 , bdr:G3CN558 , bdr:G3CN579 ;
+        :placeEvent         bdr:EV0FB0B2BE0F6E1A5C ;
+        :placeLocatedIn     bdr:G2089 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NT43B92E58E3086649
+        a                   :Note ;
+        :contentLocationStatement  "p. 339-340" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"བྱི་བའི་ལོ་ ༦༨༨ ལ་བབ་སྟེ། བཙན་པོ་ཉེན་ཀར་ན་བཞུགས་ཤིང་། དབྱར་འདུན་ཟུ་སྤུག་དུ་འདུས།\"ཅེས་སོགས་གསལ་བ་ལས། འདི་ཡང་བོད་བཙན་པོ་འདུས་སྲོང་མང་རྗེའི་སྐབས་ཀྱི་འདུན་ས་ཆེན་པོ་ཞིག་ཡིན་ཏེ། ལུང་པ་འདིའི་ནང་གི་\"ཞོན་པ\"་ཞེས་པར་ཡང་འདུན་ས་ཐེངས་གཉིས་པ་ཞིག་བྱས། དེ་རྗེས་ཆོས་རྒྱལ་ཁྲི་སྲོང་ལྡེ་བཙན་སྐབས་སུ་ས་གནས་འདིར་ཕོ་བྲང་(G3CN527)ཡང་བཞེངས་ཡོད་པ་གསལ།"@bo .
+    
+    bdr:NT56D64C08CAF41647
+        a                   :Note ;
+        :contentLocationStatement  "p. 343" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"ཟུ་སྤུག མལ་གྲོ་གུང་དཀར་རྫོང་གི་བཀྲ་ཤིས་ཤང་ཞེས་པ། བཀྲ་ཤིས་སྒང་གི་ལུང་པའི་ཕུ་ལ་ཡོད་\"ཅེས་སོགས་གསལ།"@bo .
+}

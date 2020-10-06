@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2588 {
+    bda:G2588  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2588 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ed/G2588.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2588 ;
+        adm:logEntry        bda:LG11B9DBBF8E43F332 , bda:LG9DB8149B507DCA3F , bda:LGD9BA5FCAC7E95D00 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1KR2725 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG11B9DBBF8E43F332
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9DB8149B507DCA3F
+        a                   adm:WithdrawData ;
+        adm:logDate         "2014-08-12T09:48:51.342Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1KR2725"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD9BA5FCAC7E95D00
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-06T11:37:05.26Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2588  a            :Place ;
+        skos:altLabel       "pu rong lha khang /"@bo-x-ewts , "burang lakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "spu rong lha khang dgon/"@bo-x-ewts , "布让拉康"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT5F4261B47A916629 , bdr:NTCCEA0129DE58498D ;
+        :placeLocatedIn     bdr:G2326 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT5F4261B47A916629
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 46" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "'brug pa bka' brgyud pa monastery in yus hru'u prefecture, qinghai province"@en .
+    
+    bdr:NTCCEA0129DE58498D
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR2725"@en .
+}

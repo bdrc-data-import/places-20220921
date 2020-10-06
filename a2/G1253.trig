@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1253 {
+    bda:G1253  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1253 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a2/G1253.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1253 ;
+        adm:logEntry        bda:LG10C41831B1F294A3 , bda:LG6A06B1305E09AD03 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG10C41831B1F294A3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6A06B1305E09AD03
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-15T09:59:49.725Z"^^xsd:dateTime ;
+        adm:logMessage      "related with C2CN10974 & changed type and names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1253  a            :Place ;
+        skos:altLabel       "zi na kha yog gzhung lnga'i nang tshan li bshu sde ba/"@bo-x-ewts ;
+        skos:prefLabel      "li bshu sde ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2E899DAFDABC32F8 ;
+        :placeLocatedIn     bdr:G1202 ;
+        :placeType          bdr:PT0084 .
+    
+    bdr:NT2E899DAFDABC32F8
+        a                   :Note ;
+        :contentLocationStatement  "1898" ;
+        :noteSource         bdr:MW19801 ;
+        :noteText           "a kyA sku phreng dang po shes rab bzang po'i 'khrungs sa ste/ sku 'bum mchod gzhis zi na kha yog gzhung lnga'i nang tshan li bshu sde ba'i a tshang du 'khrungs par gsal/"@en .
+}

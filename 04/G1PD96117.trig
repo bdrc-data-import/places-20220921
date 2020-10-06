@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD96117 {
+    bda:G1PD96117  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD96117 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "04/G1PD96117.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD96117 ;
+        adm:logEntry        bda:LG24AD635560BA081B , bda:LG463305BD59A0A79C , bda:LG6C8B2DD6792FA5AA , bda:LGAE67917B09CFCCB5 , bda:LGCE545E2C21362F84 , bda:LGD92006872C848244 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632127201:160" ;
+        adm:place_id_lex    "632127201:403" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG24AD635560BA081B
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-09T16:54:30.964Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG463305BD59A0A79C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:21.71Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG6C8B2DD6792FA5AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-03-20T10:56:19.808Z"^^xsd:dateTime ;
+        adm:logMessage      "revewed, KG CN,LS and KL"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGAE67917B09CFCCB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-21T16:10:36.404Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCE545E2C21362F84
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-09T14:59:22.423Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD92006872C848244
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-12-09T14:38:29.783Z"^^xsd:dateTime ;
+        adm:logMessage      "གསར་དུ་བཅུག"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV879E6AE8988DCB93
+        a                   :PlaceFounded ;
+        :onYear             "1903"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1PD96117  a        :Place ;
+        skos:altLabel       "d+hi tsha bkra shis chos sdings/"@bo-x-ewts , "dge ldan bkra shis chos sdings/"@bo-x-ewts , "ldi tsha bkra shis chos sdings/"@bo-x-ewts , "ri khrod bkra shis chos sdings/"@bo-x-ewts , "支扎上寺"@zh-hans , "新支扎寺"@zh-hans , "dezha si"@zh-latn-pinyin-x-ndia , "xin zhizha si"@zh-latn-pinyin-x-ndia , "zhizha shangsi"@zh-latn-pinyin-x-ndia , "zhizha shang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "d+hi tsha dgon pa/"@bo-x-ewts , "德扎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDFA6C790F9D27671 ;
+        :isRoot             true ;
+        :note               bdr:NT4819361C3C856C5F , bdr:NTFD506674D04A8273 ;
+        :placeEvent         bdr:EV879E6AE8988DCB93 ;
+        :placeGonpaPerEcumen  "46.03" ;
+        :placeLat           "36.22274" ;
+        :placeLocatedIn     bdr:G1PD96109 ;
+        :placeLong          "101.68427" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDDFA6C790F9D27671
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1PD96117" .
+    
+    bdr:NT4819361C3C856C5F
+        a                   :Note ;
+        :contentLocationStatement  "p. 57" ;
+        :noteSource         bdr:MW19830 .
+    
+    bdr:NTFD506674D04A8273
+        a                   :Note ;
+        :contentLocationStatement  "p. 92" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་ཞྭ་དམར་སྐུ་ཕྲེང་བཞི་པ་དགེ་འདུན་བསྟན་འཛིན་རྒྱ་མཚོས་1903ལོར་ཕྱག་བཏབ། གྲུབ་མཐའ་དགེ་ལུགས་ཡིན།"@bo .
+}

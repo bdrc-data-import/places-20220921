@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3114 {
+    bda:G3114  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3114 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c2/G3114.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3114 ;
+        adm:logEntry        bda:LG3DDA17DDFC773F8D , bda:LG529706037F05A846 , bda:LGF1D23111D3EBA2BB , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1KR1648 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG3DDA17DDFC773F8D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG529706037F05A846
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-19T15:41:47.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF1D23111D3EBA2BB
+        a                   adm:WithdrawData ;
+        adm:logDate         "2014-03-06T15:50:11.291Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1KR1648"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3114  a            :Place ;
+        skos:altLabel       "spo rong pad+ma chos gling dgon/"@bo-x-ewts ;
+        skos:prefLabel      "pad+ma chos gling dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCFAA5DAE67BD9633 , bdr:NTDBC0022BCD733198 ;
+        :placeLocatedIn     bdr:G3106 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTCFAA5DAE67BD9633
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR1648"@en .
+    
+    bdr:NTDBC0022BCD733198
+        a                   :Note ;
+        :noteText           "monastery in the spo rong area of southwestern tibet"@en .
+}

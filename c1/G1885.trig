@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1885 {
+    bda:G1885  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1885 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c1/G1885.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1885 ;
+        adm:logEntry        bda:LG744E51C38CFF266D , bda:LGE7B5C9A90C9DD382 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1KR2484 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG744E51C38CFF266D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE7B5C9A90C9DD382
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-09-11T09:43:24.151Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1KR2484"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1885  a            :Place ;
+        skos:prefLabel      "ska gsang bon dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD89A64F268D90BDA , bdr:NTF8CD76417663ED82 ;
+        :placeLocatedIn     bdr:G1698 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTD89A64F268D90BDA
+        a                   :Note ;
+        :contentLocationStatement  "p. 444" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "monastery in gung ho rdzong, mtsho lho bod rigs rang skyong khul"@en .
+    
+    bdr:NTF8CD76417663ED82
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G1KR2484"@en .
+}

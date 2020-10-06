@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3969 {
+    bda:G3969  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3969 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "bb/G3969.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3969 ;
+        adm:logEntry        bda:LG142D1A76FB8A166C , bda:LG255B9F047C58AD92 , bda:LG6A6E565AAC1FFA85 , bda:LGB3DDEAF1610737E6 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513333209:446" ;
+        adm:place_id_lex    "513333209:446" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG142D1A76FB8A166C
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T15:42:22.15Z"^^xsd:dateTime ;
+        adm:logMessage      "name added"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG255B9F047C58AD92
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T15:50:44.674Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG6A6E565AAC1FFA85
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB3DDEAF1610737E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-16T14:26:53.932Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV376F504127097C94
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3969  a            :Place ;
+        skos:altLabel       "rgyal phyug gser shar dgon/"@bo-x-ewts , "rgyal phyug gser shar dgon theg chen bsam 'grub chos sde gling /"@bo-x-ewts , "theg chen bsam 'grub chos gling /"@bo-x-ewts , "theg chen bsam 'grub chos sde gling /"@bo-x-ewts , "jiaxiu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgya phyug dgon/"@bo-x-ewts , "甲修寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID092E7D76E6223A2D ;
+        :isRoot             true ;
+        :note               bdr:NT386768E515FF1D16 ;
+        :placeEvent         bdr:EV376F504127097C94 ;
+        :placeGonpaPerEcumen  "8.81" ;
+        :placeLat           "32.11666" ;
+        :placeLocatedIn     bdr:G2302 ;
+        :placeLong          "100.46667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID092E7D76E6223A2D
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3969" .
+    
+    bdr:NT386768E515FF1D16
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 293-296" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery in gser rta rdzong"@en .
+}

@@ -1,0 +1,51 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2359 {
+    bda:G2359  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2359 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ea/G2359.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2359 ;
+        adm:logEntry        bda:LG1ABB29B963E22334 , bda:LG25311E1DC0D42134 , bda:LGBB0F4D4E3EAFFFB5 , bda:LGCB482BB3644831E2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1ABB29B963E22334
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-20T11:44:30.668Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG25311E1DC0D42134
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T12:39:53.853Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBB0F4D4E3EAFFFB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGCB482BB3644831E2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2359  a            :Place ;
+        skos:prefLabel      "bla 'bring chos sde/"@bo-x-ewts , "Lading Chode"@en ;
+        :isRoot             true ;
+        :placeType          bdr:PT0037 .
+}

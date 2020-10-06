@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX430500000 {
+    bda:G9GBX430500000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX430500000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "f9/G9GBX430500000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX430500000 ;
+        adm:logEntry        bda:LG873C74CCDA29F2A1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LG873C74CCDA29F2A1
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX430500000
+        a                   :Place ;
+        skos:altLabel       "shao yang shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Shaoyang"@en , "邵阳市"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX430501000 , bdr:G9GBX430502000 , bdr:G9GBX430503000 , bdr:G9GBX430511000 , bdr:G9GBX430521000 , bdr:G9GBX430522000 , bdr:G9GBX430523000 , bdr:G9GBX430524000 , bdr:G9GBX430525000 , bdr:G9GBX430527000 , bdr:G9GBX430528000 , bdr:G9GBX430529000 , bdr:G9GBX430581000 ;
+        :placeGB2260-2013   "430500000" ;
+        :placeLat           "27.2397879" ;
+        :placeLocatedIn     bdr:G9GBX430000000 ;
+        :placeLong          "111.4818656" ;
+        :placeType          bdr:PT0057 .
+}

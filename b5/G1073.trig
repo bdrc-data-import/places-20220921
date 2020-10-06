@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1073 {
+    bda:G1073  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1073 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "b5/G1073.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1073 ;
+        adm:logEntry        bda:LG0EA4BED756E126EC , bda:LG22EC16A2AA26D78C , bda:LG282B5ED8AE653314 , bda:LG6CDE4B73B6F7E5B1 , bda:LG94F547452A4E8729 , bda:LGC59E0BE1CD4A66F2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0EA4BED756E126EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-18T13:01:54.019Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG22EC16A2AA26D78C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG282B5ED8AE653314
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T15:12:05.188Z"^^xsd:dateTime ;
+        adm:logMessage      "new place type assigned"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6CDE4B73B6F7E5B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-05T12:13:20.848Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains \"'bo ra\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG94F547452A4E8729
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-23T10:58:03.988Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, location, contains & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC59E0BE1CD4A66F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-07T16:08:10.523Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G4696(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1073  a            :Place ;
+        skos:altLabel       "kha gya tsho drug"@bo-x-ewts , "kha rgya/"@bo-x-ewts , "mdo smad kha gya/"@bo-x-ewts ;
+        skos:prefLabel      "kha gya/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0F9E9833949EADC5 , bdr:NT892BE363C96B220F , bdr:NTFBE9759E3494F1FA ;
+        :placeContains      bdr:G1057 , bdr:G1947 , bdr:G566 ;
+        :placeLocatedIn     bdr:G1202 ;
+        :placeType          bdr:PT0020 .
+    
+    bdr:NT0F9E9833949EADC5
+        a                   :Note ;
+        :contentLocationStatement  "V. 3, pp. 2-12" ;
+        :noteSource         bdr:MW2CZ7959 ;
+        :noteText           "ཁ་གྱ་ཚོ་དྲུག་བགྲང་ཚུལ་རིགས་གཉིས་ཡོད་པ་གསལ།"@bo .
+    
+    bdr:NT892BE363C96B220F
+        a                   :Note ;
+        :contentLocationStatement  "p. 547" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "a grouping of tribes of g.yi tsha belonging to the ldong lineage, \nthese tribes are:\nrgan rgya\nkha rgya\ngtsos\ntsa yu\ngnam lha\nrkang tsha"@en .
+    
+    bdr:NTFBE9759E3494F1FA
+        a                   :Note ;
+        :noteText           "see C2CN10957"@en .
+}

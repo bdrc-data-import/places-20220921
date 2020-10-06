@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G925 {
+    bda:G925  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G925 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "95/G925.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G925 ;
+        adm:logEntry        bda:LG07FD2B5ACACF3B33 , bda:LG17F7D08F493283AB , bda:LG1FDC87051A3AE99B , bda:LG49A62C1E5A5B4DA5 , bda:LG4B5CA5B955EF4D02 , bda:LGB4183AF7573A698D , bda:LGB4838C76CE315E09 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07FD2B5ACACF3B33
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-03T11:54:27.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains \"'ba' yul\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG17F7D08F493283AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG1FDC87051A3AE99B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG49A62C1E5A5B4DA5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-13T16:10:55.068Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4B5CA5B955EF4D02
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-10T14:35:07.725Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB4183AF7573A698D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-13T16:52:47.427Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB4838C76CE315E09
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-12T10:09:39.607Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G925  a             :Place ;
+        skos:altLabel       "bu 'bor sgang /"@bo-x-ewts , "bu 'bor stag sgang ring mo/"@bo-x-ewts , "pu 'bol sgang /"@bo-x-ewts , "pun po sgang /"@bo-x-ewts , "spom 'bor sgang /"@bo-x-ewts , "spom 'bor spo lung gser sgang /"@bo-x-ewts ;
+        skos:prefLabel      "spo 'bor sgang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3E91B5D69361FA0E , bdr:NT4AD273FC1A54AC89 , bdr:NT74D94862A652936A ;
+        :placeContains      bdr:G1483 , bdr:G1484 , bdr:G446 ;
+        :placeLocatedIn     bdr:G2GS1325 ;
+        :placeType          bdr:PT0062 .
+    
+    bdr:NT3E91B5D69361FA0E
+        a                   :Note ;
+        :noteText           "ད་དུང་ས་མིང་སྤོམ་པོ་ཞེས་པ་༼G552༽དང་འདི་གཉིས་གཅིག་པ་ཡིན་མིན་རྩད་རྒྱུ།"@bo .
+    
+    bdr:NT4AD273FC1A54AC89
+        a                   :Note ;
+        :contentLocationStatement  "p. 289" ;
+        :noteSource         bdr:MW00EGS1016725 ;
+        :noteText           "མིང་གི་རྣམ་གྲངས་སྣ་ཚོགས་པ་རྣམས་གསལ།"@bo .
+    
+    bdr:NT74D94862A652936A
+        a                   :Note ;
+        :contentLocationStatement  "p. 824" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "ཆུ་བཞི་སྒང་དྲུག་གི་རྣམ་གྲངས་འདྲེན་ཚུལ་རིགས་གཅིག་གསལ།"@bo .
+}

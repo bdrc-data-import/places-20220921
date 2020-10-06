@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4468 {
+    bda:G4468  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4468 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0b/G4468.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4468 ;
+        adm:logEntry        bda:LG21E403DEF427E01F , bda:LGD87412853F4D66E8 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG21E403DEF427E01F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T12:53:39.086Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD87412853F4D66E8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4468  a            :Place ;
+        skos:altLabel       "'dul ba dgon bshad sgrub dar rgyas gling /"@bo-x-ewts , "bshad sgrub dar rgyas gling /"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6844D76B51BAC1AE ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT6844D76B51BAC1AE
+        a                   :Note ;
+        :contentLocationStatement  "pp. 106-107" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "'dul ba dgon bshad sgrub dar rgyas gling/ 'di ni se chen chos rje shes rab rgyal mtshan gyis btab/ 'dul ba chos rje blo bzang dge 'dun gyis dar rgyas mdzad/ rwa stod lugs kyi bsdus grwa/ sgo mang pa'i phar phyin bcas 'chad nyan yod tshul bshad de da lta med/ dge 'dun brgya phrag gsum tsam long zhing thu'u bkwan rin po che khrir bzhugs te sngar yod 'grig lam ma nyams par mdzad/ bla brang tshoms chen du thub pa gtso 'khor gsum/ rigs gsum mgon po/ slob dpon padma/ a ti sha/ rje rin po che bcas lha dgu'i snang brnyan byis pa lo brgyad kyi bongs tshod tsam gsar bzhengs/ rgyu mthud mdzad de 'du khang gsar bzhengs sogs phyag rjes rlabs che"@en .
+}

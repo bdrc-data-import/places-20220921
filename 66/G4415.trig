@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4415 {
+    bda:G4415  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4415 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "66/G4415.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4415 ;
+        adm:logEntry        bda:LG0D53EDCC932A2EA1 , bda:LG7531182F31598AF3 , bda:LGA6882AC36456F45D , bda:LGAB5D0B070ECA1716 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D53EDCC932A2EA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T10:28:08.735Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7531182F31598AF3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA6882AC36456F45D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-11T14:57:36.654Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAB5D0B070ECA1716
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-11T14:54:31.018Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4415  a            :Place ;
+        skos:altLabel       "gzhu nang kun ra dgon/"@bo-x-ewts ;
+        skos:prefLabel      "kun ra dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEEBDEF1E491BCBCE ;
+        :placeLocatedIn     bdr:G2129 , bdr:G3290 , bdr:G3294 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTEEBDEF1E491BCBCE
+        a                   :Note ;
+        :contentLocationStatement  "p. 44" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "gelug religious establishment located in gzhu smad shang of snye mo rdzong; founder and date of foundation unknown"@en .
+}

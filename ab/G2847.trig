@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2847 {
+    bda:G2847  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2847 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "ab/G2847.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2847 ;
+        adm:logEntry        bda:LG23E2CB3B6109AFF8 , bda:LG41DF767482019375 , bda:LG62EC5237C4F61C97 , bda:LG98298CFA02F906A9 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG23E2CB3B6109AFF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T14:07:10.606Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG41DF767482019375
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-16T10:58:43.353Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG62EC5237C4F61C97
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG98298CFA02F906A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-13T15:51:52.78Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0C90796206662955
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G2847  a            :Place ;
+        skos:altLabel       "rgyal chen ri khrod u rgyan rnam grol gling /"@bo-x-ewts , "Gyalchen Ritro Urgyen Namdroling"@en ;
+        skos:prefLabel      "rgyal chen ri khrod/"@bo-x-ewts , "Gyalchen Ritro"@en ;
+        :isRoot             true ;
+        :note               bdr:NT42CBE4CC8D90D881 ;
+        :placeEvent         bdr:EV0C90796206662955 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT42CBE4CC8D90D881
+        a                   :Note ;
+        :contentLocationStatement  "p. 41" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "rnying ma pa establishment in the rdo shul area connected with the stag sham gter ma tradition\nthe seat of stag sham 'phril las sprul pa rig 'dzin 'phrin las\nhad 50 monks when kaH thog si tu visited"@en .
+}

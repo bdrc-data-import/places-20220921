@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G835 {
+    bda:G835  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G835 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8e/G835.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G835 ;
+        adm:logEntry        bda:LG0D0580838C717230 , bda:LG2A9BA3747ADDF885 , bda:LG47BD4E110CDDFE51 , bda:LGED15FCE34A68D665 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D0580838C717230
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2A9BA3747ADDF885
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-06-03T10:03:43.512Z"^^xsd:dateTime ;
+        adm:logMessage      "revised entry"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG47BD4E110CDDFE51
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:40:27.8Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from village to grongTsho"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGED15FCE34A68D665
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-17T10:39:31.417Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G835  a             :Place ;
+        skos:altLabel       "gnyal lcam pa grong /"@bo-x-ewts , "lca ba grong (snyan)"@bo-x-ewts , "snyan lca ba grong /"@bo-x-ewts ;
+        skos:prefLabel      "lcam pa grong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0C79975934BCC4ED ;
+        :placeLocatedIn     bdr:G724 ;
+        :placeType          bdr:PT0084 .
+    
+    bdr:NT0C79975934BCC4ED
+        a                   :Note ;
+        :noteText           "name of a village in gnyal in the southeastern tar where the 13th karma pa was born; the spelling in some sources is snyan lca ba grong"@en .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2905 {
+    bda:G2905  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2905 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "cd/G2905.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2905 ;
+        adm:logEntry        bda:LG18EF145378753751 , bda:LGA11113EB7DFF2B44 , bda:LGAE5A5D465F268ECA , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18EF145378753751
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA11113EB7DFF2B44
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-07T17:49:09.193Z"^^xsd:dateTime ;
+        adm:logMessage      "corected lineage & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAE5A5D465F268ECA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T11:28:01.303Z"^^xsd:dateTime ;
+        adm:logMessage      "cleaned up & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8FCDBE0ACE63CEA7
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2905  a            :Place ;
+        skos:prefLabel      "kha ru kha dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE510A931A6E753EF ;
+        :placeEvent         bdr:EV8FCDBE0ACE63CEA7 ;
+        :placeLocatedIn     bdr:G2518 , bdr:G2944 , bdr:G2947 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTE510A931A6E753EF
+        a                   :Note ;
+        :contentLocationStatement  "p. 125" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "dge lugs pa monastery in chu mdo chus, spo bo rdzong"@en .
+}

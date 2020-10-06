@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4458 {
+    bda:G4458  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4458 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "71/G4458.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4458 ;
+        adm:logEntry        bda:LG7B041C449F5CDF4F , bda:LG8B17E9E05F41AC0B , bda:LG9E60D4A766080F4D , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221101:542221109" ;
+        adm:place_id_lex    "542221101:542221109" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7B041C449F5CDF4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:16:25.987Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8B17E9E05F41AC0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-09-11T14:29:53.029Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from bod kyi dgon sde khag gi ngo sprod"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9E60D4A766080F4D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5CCF01208CB8F753
+        a                   :PlaceFounded ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4458  a            :Place ;
+        skos:altLabel       "Riwo Choling"@bo-x-phon-en , "Riwo Choling"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ri bo chos gling /"@bo-x-ewts , "日乌曲林"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID681946CD4582CCAC ;
+        :isRoot             true ;
+        :note               bdr:NT438EE11595237112 , bdr:NT613B5676AC1104E7 ;
+        :placeEvent         bdr:EV5CCF01208CB8F753 ;
+        :placeGonpaPerEcumen  "60.06" ;
+        :placeLat           "29.16264" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.79367" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID681946CD4582CCAC
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4458" .
+    
+    bdr:NT438EE11595237112
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 48" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "དགོན་དེ་ཁྲ་འབྲུག་གི་བྱང་ཤར་ངོས་དབུས་གསར་རམ་ཡུལ་གསར་ཞེས་པའི་རྒྱབ་རིར་གནས་ཡོད། སྤྱི་ལོའི་དུས་རབས་བཅོ་ལྔ་པརརྗེ་ཙོང་ཁ་པའི་དངོས་སློབ་མཁས་གྲུབ་དོན་གྲུབ་དཔལ་བཟང་གིས་ཕྱག་བཏབ། དགེ་འདུན་བརྒྱ་ཕྲག་བར་རིམ་བཞིན་འཕེལ་རྒྱས་བྱུང་། དེ་རྗེས་སྡེ་སྲིད་སངས་རྒྱས་རྒྱ་མཚོའི་ཆོས་ཞུགས་ཀྱི་དགོན་པར་གྲགས་པས་སྡེ་སྲིད་ཀྱི་ཕོ་བྲང་ཐོག་བརྩེགས་གསུམ་ལྡན་ཞིག་ཀྱང་ཟུར་དུ་ཡོད། སྡེ་སྲིད་ཀྱིས་གཟིགས་བསྐྱངས་ཆེན་པོ་གནང་བས་དགོན་དེ་གཞུང་དགོན་དུ་གྱུར། རྒྱལ་བ་ལྔ་པ་ཆེན་པོས་དགོན་དེའི་རྟེན་དུ་མར་པའི་སྲས་དར་མ་མདོ་སྡེའི་དབུ་ཐོད་བཞུགས་པའི་དངུལ་གདུང་ཐོག་སོ་གཅིག་ལྡན་ཞིག་ཀྱང་བཞེངས་ཡོད། གཞན་ཡང་རྟེན་གཙོར་རྒྱལ་བ་བྱམས་པ་ཐོག་སོ་གསུམ་ལྡན་འཇིམ་སྐུ་དང་། འདུ་ཁང་ཀ་བ་སུམ་ཅུ་ཡོད་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NT613B5676AC1104E7
+        a                   :Note ;
+        :contentLocationStatement  "p. 132" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "small dge lugs monastery located in kha 'brug shang of sne gdong rdzong; the monastery was founded by a direct disciple of tsong kha pa, chos rje don grub dpal ba; in 1698 (sa stag) the monastery boasted about 150 monks"@en .
+}

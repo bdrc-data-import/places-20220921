@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN319 {
+    bda:G3CN319  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN319 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "05/G3CN319.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN319 ;
+        adm:logEntry        bda:LG6A2764C5369CB9B9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6A2764C5369CB9B9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-16T16:48:15.633Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN319  a          :Place ;
+        skos:altLabel       "pa snam cog ro/"@bo-x-ewts ;
+        skos:prefLabel      "cog ro/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4CA2E27DCB13222E ;
+        :placeLocatedIn     bdr:G643 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT4CA2E27DCB13222E
+        a                   :Note ;
+        :contentLocationStatement  "p. 373" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "ལུང་པ་འདིར་ཅོག་རོ་ཀླུའི་རྒྱལ་མཚན་གྱི་གདུང་རྒྱུད་དབོན་རྒྱུད་ཡོད་ཅིང་། ལུང་པའི་ཕུ་ན་རྗེ་ཙོང་ཁ་པའི་སྒྲུབ་གནས་ཕུག་པ་དང་། ཁྱིམ་ཞིག་ན་རྗེ་ཙོང་ཁ་པའི་རབ་གནས་ཐབ་ཀ་བཅས་ཡོད་ཚུལ་གསལ།"@bo .
+}

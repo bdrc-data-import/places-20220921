@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2703 {
+    bda:G2703  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2703 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "48/G2703.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2703 ;
+        adm:logEntry        bda:LG763D8E0C22ECF0D8 , bda:LGF19FA7843E4562A5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632726204:84" ;
+        adm:place_id_lex    "632726204:84" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG763D8E0C22ECF0D8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF19FA7843E4562A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-12T15:56:05.589Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVE95F489F962CE3EE
+        a                   :PlaceFounded ;
+        :onYear             "1957"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G2703  a            :Place ;
+        skos:altLabel       "ecangxiao si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sngo tshang shog dgon pa/"@bo-x-ewts , "俄仓肖寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBFFB331770D1A3F2 ;
+        :isRoot             true ;
+        :note               bdr:NT524A867C44723BCC , bdr:NTCD3F24277CEB5C8A , bdr:NTD4446273E92A2542 ;
+        :placeEvent         bdr:EVE95F489F962CE3EE ;
+        :placeGonpaPerEcumen  "0.77" ;
+        :placeLat           "35.00624" ;
+        :placeLocatedIn     bdr:G2327 ;
+        :placeLong          "96.37032" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDBFFB331770D1A3F2
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2703" .
+    
+    bdr:NT524A867C44723BCC
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 45" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "rnying ma pa monastery in yus hru'u prefecture, qinghai province"@en .
+    
+    bdr:NTCD3F24277CEB5C8A
+        a                   :Note ;
+        :noteText           "yus hru'u/"@bo-x-ewts .
+    
+    bdr:NTD4446273E92A2542
+        a                   :Note ;
+        :noteText           "tent temple"@en .
+}

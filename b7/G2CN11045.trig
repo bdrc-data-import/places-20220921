@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11045 {
+    bda:G2CN11045  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11045 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b7/G2CN11045.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11045 ;
+        adm:logEntry        bda:LG7718B44708DA6F28 , bda:LGE4CF7BDC14A4EC81 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7718B44708DA6F28
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-05-23T12:53:12.163Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE4CF7BDC14A4EC81
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-23T12:56:35.619Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV239737975FED92C1
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P530 ;
+        :onYear             "1749"^^xsd:gYear .
+    
+    bdr:EVD4C1A5FDA16C3380
+        a                   :PlaceFounded ;
+        :onYear             "1749"^^xsd:gYear .
+    
+    bdr:G2CN11045  a        :Place ;
+        skos:prefLabel      "thub bstan bya rgod phung po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4318176B3B1F3FB8 , bdr:NTC5F1FBCF1333877F ;
+        :placeContains      bdr:G3JT12520 ;
+        :placeEvent         bdr:EV239737975FED92C1 , bdr:EVD4C1A5FDA16C3380 ;
+        :placeLocatedIn     bdr:G3205 ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT4318176B3B1F3FB8
+        a                   :Note ;
+        :contentLocationStatement  "p. 1" ;
+        :noteSource         bdr:MW1KG9605 ;
+        :noteText           "In 1749 Shakya Rinchen founded the hermitage of Thub-bstan Bya-rgod-phung-po."@en .
+    
+    bdr:NTC5F1FBCF1333877F
+        a                   :Note ;
+        :contentLocationStatement  "p. 292" ;
+        :noteSource         bdr:MW19809 ;
+        :noteText           "འབྲུག་རྗེ་མཁན་པོ་དགུ་པ་ཤཱཀྱ་རིན་ཆེན་གྱིས། དགུང་གྲངས་བཞི་བཅུའི་ས་སྤྲུལ་ལ་ཐུབ་བསྟན་བྱ་རྒོད་ཕུལ་པོར་འོག་མིན་རྣམ་པར་རྒྱལ་བའི་ཁང་བཟང་བཏབ། ཞེ་ལྔ་བཞེས་པའི་ཤིང་ཁྱི་ལ་དཔལ་ན་ལེནྡའི་མཆོད་སྡོང་ཆེན་པོ་བཏབ། ཞེ་དྲུག་པ་ཤིང་ཕག་ལ་ཆོས་ཀྱི་ཁྲི་ལས་བཞེངས་ཏེ་དགའ་ལྡན་གཉིས་པའི་གདན་སར་གཞོལ། ཞེ་བདུན་པ་མེ་བྱི་ལ་དཔལ་རི་རྡོ་རྗེ་གདན་གྱི་གཙུག་ལག་ཁང་བཏབ་པར་མཛད་པ་སོགས་གསལ།"@bo .
+}

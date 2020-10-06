@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3243 {
+    bda:G3243  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3243 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "cb/G3243.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3243 ;
+        adm:logEntry        bda:LG235EA21EA3899BB4 , bda:LG9F0176C62FA4EBF0 , bda:LGCF62DD1914407B9E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG235EA21EA3899BB4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-21T12:55:36.32Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9F0176C62FA4EBF0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCF62DD1914407B9E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-15T16:36:17.613Z"^^xsd:dateTime ;
+        adm:logMessage      "added note & sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3243  a            :Place ;
+        skos:altLabel       "chos 'khor gling /"@bo-x-ewts ;
+        skos:prefLabel      "nyug chos 'khor gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT57877FB93D16A76D , bdr:NTE69B19582AAD1AF9 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT57877FB93D16A76D
+        a                   :Note ;
+        :contentLocationStatement  "p. 351" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "seems to be an ancient rnying ma establishment; relationship with nyug dga' ldan chos gling dgon?"@en .
+    
+    bdr:NTE69B19582AAD1AF9
+        a                   :Note ;
+        :contentLocationStatement  "p. 449" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "འདི་ནི་གཞིས་རྩེ་དང་རྣམ་གླིང་རྫོང་བར་ན་གནས་ཚོད་དེ། ངམ་རིང་རྫོང་ཁོངས་སུ་གནས་པའི་ཉུག་དགའ་ལྡན་ཆོས་གླིང་དང་ཁྱད་པར་ཡོད་སྙམ་པ་མུ་མཐུད་དཔྱད་རྒྱུ།"@bo .
+}

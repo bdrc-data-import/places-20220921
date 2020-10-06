@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11152 {
+    bda:G2CN11152  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11152 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1e/G2CN11152.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11152 ;
+        adm:logEntry        bda:LGA276F09862DBD9B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA276F09862DBD9B3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-31T12:57:52.148Z"^^xsd:dateTime ;
+        adm:logMessage      "created record & added all info with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV165B254F705CA1AA
+        a                   :PlaceFounded ;
+        :onYear             "1979"^^xsd:gYear .
+    
+    bdr:EV82AF982F13B3D56D
+        a                   :PlaceConverted ;
+        :onYear             "2013"^^xsd:gYear .
+    
+    bdr:G2CN11152  a        :Place ;
+        skos:altLabel       "mtsho shar khul/"@bo-x-ewts , "East Kokonor Prefecture"@en , "海东地区"@zh-hans , "haidong diqu"@zh-latn-pinyin-x-ndia , "haidong shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mtsho shar grong khyer/"@bo-x-ewts , "East Kokonor City"@en , "海东市"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT789088A062B082E4 ;
+        :placeContains      bdr:G1PD5303 , bdr:G1PD95976 , bdr:G1PD96096 , bdr:G1PD96101 , bdr:G1PD96109 , bdr:G1PD96275 ;
+        :placeEvent         bdr:EV165B254F705CA1AA , bdr:EV82AF982F13B3D56D ;
+        :placeLocatedIn     bdr:G977 ;
+        :placeType          bdr:PT0008 .
+    
+    bdr:NT789088A062B082E4
+        a                   :Note ;
+        :noteText           "མཚོ་ཤར་གྲོང་ཁྱེར་ནི་༢༠༡༣ལོའི་ཟླ་གཉིས་པར་བཙུགས་པའི་ཁུལ་རིམ་པའི་གྲོང་ཁྱེར་ཞིག་ཡིན་ཏེ། དེ་ཡང་༡༩༧༩ལོར་བཙུགས་པའི་་མཚོ་ཤར་ས་ཁུལ་དེ་མིང་བསྒྱུར་བྱས་པ་ལས་བྱུང་། ད་ལྟ་གྲོང་ཁྱེར་དེ་ཁོངས་སུ་གྲོ་ཚང་ཁུལ་(རྫོང་)དང་། བདེ་ཁམས་རྫོང་། བཀའ་མ་ལོག་རྫོང་། དགོན་ལུང་རྫོང་། བ་ཡན་རྫོང་། ཡ་རྫི་རྫོང་བཅས་ནང་གསེས་རྫོང་ཁག་དྲུག་ཏུ་ཕྱེ་ཡོད།"@bo .
+}

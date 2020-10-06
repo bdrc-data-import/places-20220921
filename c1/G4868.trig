@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4868 {
+    bda:G4868  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4868 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c1/G4868.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4868 ;
+        adm:logEntry        bda:LGB1535478FF137C93 , bda:LGC86BDE8E7376F41B , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGB1535478FF137C93
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC86BDE8E7376F41B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-09T15:36:14.699Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese name & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4868  a            :Place ;
+        skos:altLabel       "dga' ldan chos gling /"@bo-x-ewts , "sgyis tshang sgar dga' ldan chos gling /"@bo-x-ewts , "吉仓格尔噶丹曲朗"@zh-hans , "jicang ge'er gadan qulang"@zh-latn-pinyin-x-ndia , "jicang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sgyis tshang sgar/"@bo-x-ewts , "吉仓寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT0FC7D7924450579F ;
+        :placeLocatedIn     bdr:G2396 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0FC7D7924450579F
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 68" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "dge lugs monastery in the kan lho autonomous tibetan prefecture"@en .
+}

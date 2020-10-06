@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2833 {
+    bda:G2833  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2833 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "f5/G2833.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2833 ;
+        adm:logEntry        bda:LG3BB95B1DFD70E2B3 , bda:LG4528DFDCF41947EE , bda:LGCAB40BF2B8BF24AE , bda:LGF8DC1287844E4C35 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221101:542221118" ;
+        adm:place_id_lex    "542221101:542221118" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3BB95B1DFD70E2B3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4528DFDCF41947EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-23T09:54:13.483Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCAB40BF2B8BF24AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-14T15:56:48.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib."@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF8DC1287844E4C35
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:25:06.7Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from stupa to mchodRten"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV0890AF961823A1E8
+        a                   :PlaceFounded ;
+        :onYear             "1250"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:G2833  a            :Place ;
+        skos:altLabel       "dgon thang 'bum pa/"@bo-x-ewts , "sri gcod 'bum pa/"@bo-x-ewts , "guitang benba"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgod thang 'bum pa/"@bo-x-ewts , "Gontang Bumpa"@en-x-mixed , "贵唐本巴"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA5130F7DFC07400D ;
+        :isRoot             true ;
+        :note               bdr:NT600016411A9E00D2 , bdr:NTB2FE1F3D90161E8E , bdr:NTBC5C724E3CB2447B , bdr:NTF635857BF63A682F ;
+        :placeEvent         bdr:EV0890AF961823A1E8 ;
+        :placeGonpaPerEcumen  "60.06" ;
+        :placeLat           "29.16005" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.74668" ;
+        :placeType          bdr:PT0072 .
+    
+    bdr:IDA5130F7DFC07400D
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2833" .
+    
+    bdr:NT600016411A9E00D2
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 57" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "བེེ་རོ་ཕུག་གི་ལྷོ་ནུབ་མཚམས་ཀྱི་རྒོད་ཐང་གྲོང་ཞེས་པར་འབུམ་པ་དེ་གནས་ཡོད། དེ་ནི་སྔོན་ཚོང་དཔོན་ནོར་བུ་བཟང་པོས་རྒོད་ལ་མདའ་འཕངས་པའི་སྡིག་བཤགས་ཀྱི་ཆེད་དུ་འབུམ་པ་དེ་བཞེངས་པའི་ཤོད་སྲོལ་ཡོད་ལ། ཡང་མངའ་བདག་ལྷ་སྡེའི་དུས་སུ་རྒོད་ཐང་གྲ་མིག་བྱ་བ་དེར་མཆོད་རྟེན་ཆུང་ངུ་ཞིག་བཞེངས་ཡོད་པ་སྨྲི་ཏིས་རབ་གནས་མཛད། དེ་ལྟར་དུ་འབུམ་པ་ཆེན་པོ་དེ་བྱུང་ཞེས་ཀྱང་གསུང་སྲོལ་ཡོད་པ་སོགས་འཁོད།"@bo .
+    
+    bdr:NTB2FE1F3D90161E8E
+        a                   :Note ;
+        :noteText           "chorten; 1 of 3 Tensum Chorten in Yarlung"@en .
+    
+    bdr:NTBC5C724E3CB2447B
+        a                   :Note ;
+        :contentLocationStatement  "p. 252" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "description\na 5 storied white stupa and other blessing bestowing objects which were consecrated by smrtijnana;\ncalled the sri gcod 'bum pa because it was built to reconciled the \"yar lung g.yu gser lung\" conflict;\nnear this is a meditation cave associated with vairocana"@en .
+    
+    bdr:NTF635857BF63A682F
+        a                   :Note ;
+        :contentLocationStatement  "p. 279" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "description"@en .
+}

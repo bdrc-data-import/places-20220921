@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX130100000 {
+    bda:G9GBX130100000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX130100000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "1b/G9GBX130100000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX130100000 ;
+        adm:logEntry        bda:LGC3C58A29B292A06A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGC3C58A29B292A06A
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX130100000
+        a                   :Place ;
+        skos:altLabel       "shi jia zhuang shi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Shijiazhuang City"@en , "石家庄市"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX130101000 , bdr:G9GBX130102000 , bdr:G9GBX130103000 , bdr:G9GBX130104000 , bdr:G9GBX130105000 , bdr:G9GBX130107000 , bdr:G9GBX130108000 , bdr:G9GBX130121000 , bdr:G9GBX130123000 , bdr:G9GBX130124000 , bdr:G9GBX130125000 , bdr:G9GBX130126000 , bdr:G9GBX130127000 , bdr:G9GBX130128000 , bdr:G9GBX130129000 , bdr:G9GBX130130000 , bdr:G9GBX130131000 , bdr:G9GBX130132000 , bdr:G9GBX130133000 , bdr:G9GBX130181000 , bdr:G9GBX130182000 , bdr:G9GBX130183000 , bdr:G9GBX130184000 , bdr:G9GBX130185000 ;
+        :placeGB2260-2013   "130100000" ;
+        :placeLat           "38.0741259" ;
+        :placeLocatedIn     bdr:G9GBX130000000 ;
+        :placeLong          "114.4892442" ;
+        :placeType          bdr:PT0057 .
+}

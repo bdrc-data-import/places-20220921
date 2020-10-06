@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN115 {
+    bda:G3CN115  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN115 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b7/G3CN115.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN115 ;
+        adm:logEntry        bda:LG998821998C5E4194 , bda:LGC786CA48E4C6BE2E , bda:LGD2EA8C68830E7061 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG998821998C5E4194
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-18T12:48:29.93Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added location & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC786CA48E4C6BE2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-05T15:08:34.291Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD2EA8C68830E7061
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-27T16:27:29.176Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVA9A0F4F9311A3FEE
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN115  a          :Place ;
+        skos:prefLabel      "gang bar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5294CA470AA42BF2 , bdr:NT6BF06F7E7E0B9659 ;
+        :placeEvent         bdr:EVA9A0F4F9311A3FEE ;
+        :placeLocatedIn     bdr:G2358 , bdr:G3176 ;
+        :placeType          bdr:PT0001 .
+    
+    bdr:NT5294CA470AA42BF2
+        a                   :Note ;
+        :contentLocationStatement  "p. 205" ;
+        :noteSource         bdr:MW1KG16696 ;
+        :noteText           "གཡེའི་གང་འབར་༼པར་༽ཏེ། གཡེ་ཡུལ་གྱི་ལྷོ་རྒྱུད་ཀློག་ཏུ་གནས་པ་གཡེ་ཆེ་ཞེས་ཀྱང་གྲགས་པ་གསལ།"@bo .
+    
+    bdr:NT6BF06F7E7E0B9659
+        a                   :Note ;
+        :contentLocationStatement  "p. 257" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "ཆོས་རྒྱལ་སྲོང་བཙན་སྒམ་པོའི་སྐབས་ནས་བཟུང་བོད་བཙན་པོའི་རྒྱལ་རབས་སྐབས་སུ། བོད་རུ་རེ་རེ་ན་ཡུལ་དཔོན་བཅུ་དྲུག་རེ་ཡོད་པ་ལས། འདི་ནི་གཡོ་རུའི་ཡུལ་དཔོན་ཚན་བཅུ་དྲུག་གི་ཡུལ་སྡེ་གསུམ་པ་དེ་ཡིན་པར་གསལ།"@bo .
+}

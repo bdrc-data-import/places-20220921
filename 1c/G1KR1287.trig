@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1287 {
+    bda:G1KR1287  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1287 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "1c/G1KR1287.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1287 ;
+        adm:logEntry        bda:LG0B4838F142EF5A60 , bda:LG615744C697404CA6 , bda:LGB7D6A72AADD7A809 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542128211:133" ;
+        adm:place_id_lex    "542128211:133" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B4838F142EF5A60
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-16T16:51:02.911Z"^^xsd:dateTime ;
+        adm:logMessage      "added name in tibetan & event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG615744C697404CA6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-16T17:00:43.651Z"^^xsd:dateTime ;
+        adm:logMessage      "update name list"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB7D6A72AADD7A809
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-01T12:29:59.342Z"^^xsd:dateTime ;
+        adm:logMessage      "added Gis Coords & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVA63C56B2F54F4D24
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1287  a         :Place ;
+        skos:altLabel       "日尼寺"@zh-hans , "rinai si"@zh-latn-pinyin-x-ndia , "rini si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ri sna dgon/"@bo-x-ewts , "日乃寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE8E04E77E74F3E29 ;
+        :isRoot             true ;
+        :note               bdr:NT52EB0D1958691E48 , bdr:NT594D2760B5A6AB29 , bdr:NT9AB679DEE32E5EC7 ;
+        :placeEvent         bdr:EVA63C56B2F54F4D24 ;
+        :placeGonpaPerEcumen  "5.95" ;
+        :placeLat           "29.637822" ;
+        :placeLocatedIn     bdr:G2180 ;
+        :placeLong          "97.532997" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE8E04E77E74F3E29
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1287" .
+    
+    bdr:NT52EB0D1958691E48
+        a                   :Note ;
+        :contentLocationStatement  "p. 218" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "krung gling kha shang khongs gnas/"@bo-x-ewts .
+    
+    bdr:NT594D2760B5A6AB29
+        a                   :Note ;
+        :noteText           "Located in Krung gling kha, on the eastern bank of the Rgyal mo rngul chu.\n\n10monks"@en .
+    
+    bdr:NT9AB679DEE32E5EC7
+        a                   :Note ;
+        :contentLocationStatement  "p. 218" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "རྒྱལ་མོ་རྔུལ་ཆུའི་ཕ་རོལ་ཏུ་གནས་པའི་ཀྲུང་གླིང་ཁ་ཤང་དུ་གནས། བཏབ་མཁན་དང་བཏབ་དུས་ཞིབ་གསལ་མེད་ཀྱང་ཅུང་སྔ་བའི་བོན་དགོན་ཞིག་ཡིན་པར་གསལ།"@bo .
+}

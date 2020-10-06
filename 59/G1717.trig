@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1717 {
+    bda:G1717  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1717 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "59/G1717.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1717 ;
+        adm:logEntry        bda:LG210861CC9D2638AD , bda:LG75F42B4561FA056D , bda:LGCD4C7FB02C652C77 , bda:LGCE6154A1C7B6ABCC , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG210861CC9D2638AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-16T13:00:20.916Z"^^xsd:dateTime ;
+        adm:logMessage      "deledted contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG75F42B4561FA056D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCD4C7FB02C652C77
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-27T12:00:27.94Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGCE6154A1C7B6ABCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-16T16:37:40.227Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1717  a            :Place ;
+        skos:altLabel       "bde ba can dgon (chu shur rdzong)"@bo-x-ewts , "mnyes thang bde ba can/"@bo-x-ewts , "ra ba stod pa bde ba can/"@bo-x-ewts , "snye thang stag tshang ra ba stod/"@bo-x-ewts ;
+        skos:prefLabel      "mnyes thang rwa ba stod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0774662A4917ADCE , bdr:NT5B6EDE1C89D4B47A ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT0774662A4917ADCE
+        a                   :Note ;
+        :contentLocationStatement  "p. 301" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "founded in 1205 by rgya 'ching zhu ba, a student of gnyal zhig po\nthe orginal six great teaching colleges (gdan sa chen po drug) including rwa ba stod were:\ngsang phu, rwa stod, tshal gung thang, dga' gdong, skyo lung, zul phu\ndestroyed completely during the cultural revolution in 1966\nrestored in 1988\nhad a monk population of 69 when this book was compiled"@en .
+    
+    bdr:NT5B6EDE1C89D4B47A
+        a                   :Note ;
+        :contentLocationStatement  "p. 39, 44" ;
+        :noteSource         bdr:MW20234 ;
+        :noteText           "the largest monastery in chu shur rdzong, located in mnyes thang shang of chu shur rdzong\nlocated about 40 km. to the east of the center of chu shur rdzong\nmajor teaching monastery founded in 1205 gsang phu gling stod zhabs drung rgya mching ru ba\noriginally called bde ba can\nhad six grwa sa chen po: bde, gsang, gung, dga', skyo, zul\ndon grub rin chen (tsong kha pa's teacher) invited to teach here\ntsong kha pa studied phar phyin here\ntsong kha pa's disciples, such as smar khams pa grags pa bzang po, worked here and the number of monks grew\nin 15th century kun mkhyen yon tan rgya mtsho came to teach and strongly advocated only the views of tsong kha pa\nthis led to the nominal split of ra ba stod (dge lugs pa) and ra ba smad (sa skya)\nin 1959 there were 450 monks under the leadership of mkhan po blo bzang dpal ldan\nmany scholars associated with this establishment:\ndga' ldan khri 21 'ol dga' dge legs dpal bzang\ndga' ldan khri 35 'jam dbyangs dkon mchog chos 'phel\nfrom the 17th century the yig cha followed was that of paN chen mchog lha 'od zer\ndgon bdag: rtse yig tshang\nnumber of monks fixed at 60 after restoration"@en .
+}

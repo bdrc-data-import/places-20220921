@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2111 {
+    bda:G2111  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2111 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "4e/G2111.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2111 ;
+        adm:logEntry        bda:LG050E3468E78C7F85 , bda:LG399337AE3A389B7B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G562 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG050E3468E78C7F85
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG399337AE3A389B7B
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-05-14T09:42:07.162Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G562"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2111  a            :Place ;
+        skos:prefLabel      "skyid grong khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3F6C6581EC1ECC97 , bdr:NT8633EAFFD0E4D1CC ;
+        :placeType          bdr:PT0057 .
+    
+    bdr:NT3F6C6581EC1ECC97
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G562"@en .
+    
+    bdr:NT8633EAFFD0E4D1CC
+        a                   :Note ;
+        :contentLocationStatement  "p. 336" ;
+        :noteSource         bdr:MW20170 ;
+        :noteText           "administrative taxation region equivent to a rdzong in the 1830 settlement document"@en .
+}

@@ -1,0 +1,89 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS581 {
+    bda:G2LS581  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS581 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "3f/G2LS581.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS581 ;
+        adm:logEntry        bda:LG6B2BE93778D54A12 , bda:LGC0C740DD1C3C0633 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522203:45" ;
+        adm:place_id_lex    "542522203:45" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6B2BE93778D54A12
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-24T12:58:31.986Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC0C740DD1C3C0633
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:55:39.891Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVB3E8D42C1201129A
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVC6DA8342543E46F7
+        a                   :PlaceFounded ;
+        :note               bdr:NTE5311EC86E57DB6A ;
+        :onYear             "1050"^^xsd:gYear .
+    
+    bdr:G2LS581  a          :Place ;
+        skos:altLabel       "ri ba bkra shis chos gling /"@bo-x-ewts , "(One Ripa no. 38 enough for all sites on map)"@bo-x-phon-en , "(One Ripa no. 38 enough for all sites on map)"@zh-latn-pinyin ;
+        skos:prefLabel      "ri ba bkra shis chos gling /"@bo-x-ewts , "日娃扎西曲林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAC95B8834D0A7D67 ;
+        :isRoot             true ;
+        :note               bdr:NT225B39862F42ADEB ;
+        :placeContains      bdr:G2CN10940 ;
+        :placeEvent         bdr:EVB3E8D42C1201129A , bdr:EVC6DA8342543E46F7 ;
+        :placeGonpaPerEcumen  "2.93" ;
+        :placeLat           "31.60000" ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeLong          "79.15000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDAC95B8834D0A7D67
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2LS581" .
+    
+    bdr:NT225B39862F42ADEB
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 82" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "This monastery is said to be founded by Gangkar Lama but no clear evidence is found. In the begining practised Nyingma tradition, later on became a branch monastery of Tholing monastery"@en .
+    
+    bdr:NTE5311EC86E57DB6A
+        a                   :Note ;
+        :noteText           "gsang sngags gsar ma/"@bo-x-ewts .
+}

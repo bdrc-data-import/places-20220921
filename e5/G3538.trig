@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3538 {
+    bda:G3538  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3538 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "e5/G3538.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3538 ;
+        adm:logEntry        bda:LG33BAF513B6EC7E03 , bda:LG3E6C220092A449D0 , bda:LG4E8410F0951F767B , bda:LG9802D95B12818196 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542322206:542322114" ;
+        adm:place_id_lex    "542322206:542322114" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG33BAF513B6EC7E03
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3E6C220092A449D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T11:38:00.339Z"^^xsd:dateTime ;
+        adm:logMessage      "added dbus gtsang"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LG4E8410F0951F767B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-03T10:12:31.457Z"^^xsd:dateTime ;
+        adm:logMessage      "added Gis Coords"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9802D95B12818196
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-20T16:22:45.636Z"^^xsd:dateTime ;
+        adm:logMessage      "added pinyin name & event, note of GIS coord"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV7A43849F291B7AEE
+        a                   :PlaceFounded ;
+        :onYear             "1700"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EV856004AA32D89354
+        a                   :PlaceFounded ;
+        :onYear             "1000"^^xsd:gYear .
+    
+    bdr:G3538  a            :Place ;
+        skos:altLabel       "mkhar sna bsam gtan gling /"@bo-x-ewts , "kana si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mkhar sna dgon/"@bo-x-ewts , "喀纳寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF32AFE2D55791A97 ;
+        :isRoot             true ;
+        :note               bdr:NTA4BECE90B3DD2DE0 ;
+        :placeEvent         bdr:EV7A43849F291B7AEE , bdr:EV856004AA32D89354 ;
+        :placeGonpaPerEcumen  "10.69" ;
+        :placeLat           "29.444580" ;
+        :placeLocatedIn     bdr:G2171 , bdr:G3186 ;
+        :placeLong          "89.499630" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF32AFE2D55791A97
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3538" .
+    
+    bdr:NTA4BECE90B3DD2DE0
+        a                   :Note ;
+        :contentLocationStatement  "p. 44" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "ancient bonpo hermitage at the foot of mount sman ri in rnam gling county\nthe hermitage was used as the meditation pratice site of g.yas ru dben sa ka\nturned in to a monastery by the 25th abbot of sman ri shes rab g.yung drung\nto date not restored\n\nregarded as one of the bon gyi gdan sa gtso bo gsum"@en .
+}

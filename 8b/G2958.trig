@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2958 {
+    bda:G2958  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2958 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "8b/G2958.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2958 ;
+        adm:logEntry        bda:LG0164DCE27A07092C , bda:LG086DCDCBC41B480F , bda:LG99C1EDB1198B7A08 , bda:LGEDDB96F9212E6AC1 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0164DCE27A07092C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG086DCDCBC41B480F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-02T12:08:05.568Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG99C1EDB1198B7A08
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-03T12:32:12.536Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEDDB96F9212E6AC1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-06T09:12:23.352Z"^^xsd:dateTime ;
+        adm:logMessage      "added location (gnas skabs)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2958  a            :Place ;
+        skos:altLabel       "gser kha rdzong (gzhung yig tu'o)"@bo-x-ewts , "khyung po ser tsha (sngar ming)"@bo-x-ewts ;
+        skos:prefLabel      "gser tsha rdzong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8B9A937D762A67F0 , bdr:NTCF4B5AC56E958B34 , bdr:NTD770662529E6F9F7 ;
+        :placeContains      bdr:G4767 ;
+        :placeLocatedIn     bdr:G970 ;
+        :placeType          bdr:PT0056 .
+    
+    bdr:NT8B9A937D762A67F0
+        a                   :Note ;
+        :contentLocationStatement  "p. 106" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "mentioned as the birthplace of the 9th rba kha sprul sku kun bzang klong grol"@en .
+    
+    bdr:NTCF4B5AC56E958B34
+        a                   :Note ;
+        :contentLocationStatement  "p. 336" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "an area in khyung po"@en .
+    
+    bdr:NTD770662529E6F9F7
+        a                   :Note ;
+        :contentLocationStatement  "p. 616, 619" ;
+        :noteSource         bdr:MW1PD96945 ;
+        :noteText           "1942lor bod sde pa gzhung gis sngar gyi hor tsho so dgu'i sa khul du steng chen dang / ser tsha/ khri rdo/ sbra chen/ 'bri ru/ snyan rong / sog bcas rdzong khag drug gsar 'dzugs byas/"@bo-x-ewts .
+}

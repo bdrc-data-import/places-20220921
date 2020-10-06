@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G944 {
+    bda:G944  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G944 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d0/G944.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G944 ;
+        adm:logEntry        bda:LG8EC8B0607E8D36B7 , bda:LGD11D1E935FD4D9E7 , bda:LGE735D462421F39C0 , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG8EC8B0607E8D36B7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD11D1E935FD4D9E7
+        a                   adm:WithdrawData ;
+        adm:logDate         "2014-07-18T10:51:28.204Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn, Name of a Corporation"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE735D462421F39C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-09T09:13:52.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G944  a             :Place ;
+        skos:prefLabel      "glan/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT457D57A4958819BC , bdr:NTA22BEEEBE8D53D43 .
+    
+    bdr:NT457D57A4958819BC
+        a                   :Note ;
+        :noteText           "withdrawn, Name of a Corporation"@en .
+    
+    bdr:NTA22BEEEBE8D53D43
+        a                   :Note ;
+        :noteText           "'di gdung rgyud shig yin te/ gdung 'di la g.yung ston rdo rje dpal sogs sngags rnying ma'i phyogs kyi mkhas grub byon pa mang bar snang /"@bo-x-ewts .
+}

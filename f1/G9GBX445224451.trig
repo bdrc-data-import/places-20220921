@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX445224451 {
+    bda:G9GBX445224451
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX445224451 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "f1/G9GBX445224451.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX445224451 ;
+        adm:logEntry        bda:LGD9AC79A242AFB187 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGD9AC79A242AFB187
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX445224451
+        a                   :Place ;
+        skos:altLabel       "jie yang da nan hai shi hua gong ye qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Jieyang big Nanhai Petrochemical Industrial Zone"@en , "揭阳大南海石化工业区"@zh-hans ;
+        :isRoot             true ;
+        :placeGB2260-2013   "445224451" ;
+        :placeLocatedIn     bdr:G9GBX445224000 ;
+        :placeType          bdr:PT0077 .
+}

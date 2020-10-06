@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3323 {
+    bda:G3323  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3323 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "fe/G3323.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3323 ;
+        adm:logEntry        bda:LG27D04C915D2859D9 , bda:LG4383503A6F9AF3C1 , bda:LG932629BC4BD3E6E3 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540125101:540125105" ;
+        adm:place_id_lex    "540125101:540125105" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG27D04C915D2859D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-26T12:18:48.152Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4383503A6F9AF3C1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG932629BC4BD3E6E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G1325"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV17520EAFB053B962
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1589 ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
+    bdr:EV34832432E41DF586
+        a                   :PlaceFounded ;
+        :onYear             "1150"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G3323  a            :Place ;
+        skos:altLabel       "pisa-er si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sbe ser dgon/"@bo-x-ewts , "Beser"@en-x-mixed , "毗萨尔寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID83715C9192D681B3 ;
+        :isRoot             true ;
+        :note               bdr:NT0A9E80AC3C0C048D , bdr:NT55B0B0584D9F78C3 , bdr:NT966124FCE4BE9EF3 ;
+        :placeEvent         bdr:EV17520EAFB053B962 , bdr:EV34832432E41DF586 ;
+        :placeGonpaPerEcumen  "16.84" ;
+        :placeLat           "29.49836" ;
+        :placeLocatedIn     bdr:G1325 , bdr:G2128 , bdr:G3313 ;
+        :placeLong          "91.02969" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID83715C9192D681B3
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3323" .
+    
+    bdr:NT0A9E80AC3C0C048D
+        a                   :Note ;
+        :contentLocationStatement  "p. 304" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "gelug monastery which was one of the bshad grwa of gsang phu\nfounded in the 15th century by gnyal rgod rin chen bsam 'grub, a student of tsong kha pa\nfollowed the yig cha of the 5th dalai lama (dbu phar mdzod) and paN chen bsod nams grags pa ('dul ba)\nat present only ruins"@en .
+    
+    bdr:NT55B0B0584D9F78C3
+        a                   :Note ;
+        :contentLocationStatement  "P.304" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "changed location from stod lung rdzong to chu shur rdzong (see in w23664 P.303)"@en .
+    
+    bdr:NT966124FCE4BE9EF3
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 92-93" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description:\nis this monastery located in the stod lung bde chen rdzong or in the chu shur dzong?"@en .
+}

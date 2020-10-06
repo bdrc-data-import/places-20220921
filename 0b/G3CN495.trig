@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN495 {
+    bda:G3CN495  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN495 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "0b/G3CN495.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN495 ;
+        adm:logEntry        bda:LG440DE88E411014ED , bda:LG8E0903649BBCEC62 , bda:LGEC57876D9326654D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG440DE88E411014ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T15:19:08.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8E0903649BBCEC62
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-22T15:17:12.957Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEC57876D9326654D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-23T09:33:28.442Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVFBE1A5460B4B4C49
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3CN495  a          :Place ;
+        skos:altLabel       "mal dro'i brdzen thang /"@bo-x-ewts ;
+        skos:prefLabel      "mal tro'i brdzen tang /"@bo-x-ewts , "Dzenthang"@en-x-mixed ;
+        :isRoot             true ;
+        :note               bdr:NT14891516590C5E0F ;
+        :placeEvent         bdr:EVFBE1A5460B4B4C49 ;
+        :placeLocatedIn     bdr:G2089 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NT14891516590C5E0F
+        a                   :Note ;
+        :contentLocationStatement  "p. 340, p. 344" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"རྟའི་ལོ་༦༩༤ལ་བཙན་པོ་མལ་ཏྲོའི་བརྫེན་ཏང་(མལ་དྲོའི་བརྫེན་ཐང་)ན་བཞུགས་ཤིང་། བློན་མང་ཉེན་བཞི་བཙན་གྱིས་འདུན་མ་ཟུ་སྤུག་གི་ཞོན་པར་བསྡུས་ཤིང་།\" ཞེས་གསལ།\nགཞན་ཡང་། \"མལ་དྲོ་བརྫེན་ཐང་ནི། མལ་དྲོ་གུང་དཀར་རྫོང་། འབྲི་གུང་ཏི་སྒྲོའི་ལུང་པའི་མདོ། རེབ་མདོ་སྒང་གི་ནུབ་ཕྱོགས་སུ་གནས།\" ཞེས་ས་གནས་འདི་གར་ཞབས་ཀྱིས་བཅག་མྱོང་ངེས་འབྲི་གུང་ཆེ་ཚང་རིན་པོ་ཆེས་གསུངས་སོ།"@bo .
+}

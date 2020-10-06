@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1328 {
+    bda:G1328  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1328 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "bc/G1328.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1328 ;
+        adm:logEntry        bda:LG01D6C3914E2CC30E , bda:LG28B73FF2310478DF , bda:LG5DF8683FEE17415B , bda:LG7374E7A01AAF90C5 , bda:LGB0C1509CED554FEB , bda:LGE3436B21516E072B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG01D6C3914E2CC30E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG28B73FF2310478DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-28T20:03:30.584Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5DF8683FEE17415B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-07T10:34:10.436Z"^^xsd:dateTime ;
+        adm:logMessage      "renamed & added all info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7374E7A01AAF90C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-10T09:38:22.76Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB0C1509CED554FEB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-09T14:58:26.578Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE3436B21516E072B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-11T12:15:11.134Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1328  a            :Place ;
+        skos:altLabel       "mdo smad sog sde/"@bo-x-ewts , "mtsho sngon sog sde/"@bo-x-ewts ;
+        skos:prefLabel      "mtsho skor sog ru/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeContains      bdr:G1049 , bdr:G1094 , bdr:G1108 , bdr:G1402 , bdr:G676 , bdr:G918 ;
+        :placeLocatedIn     bdr:G1202 ;
+        :placeType          bdr:PT0081 .
+}

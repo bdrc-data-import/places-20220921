@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1521 {
+    bda:G1521  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1521 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "73/G1521.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1521 ;
+        adm:logEntry        bda:LG217C63573915792B , bda:LG47D83B42A3412B97 , bda:LGC1D0618F07E19B52 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG217C63573915792B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T10:45:19.946Z"^^xsd:dateTime ;
+        adm:logMessage      "added english names & edited contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG47D83B42A3412B97
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T10:09:32.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added chinese name & place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC1D0618F07E19B52
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G1521  a            :Place ;
+        skos:altLabel       "bde chen bod rigs rang skyong khul/"@bo-x-ewts , "bde chen khul/"@bo-x-ewts , "Dechen Tibetan Autonomous Prefecture"@en , "迪庆州"@zh-hans , "diqing zangzu zizhi zhou"@zh-latn-pinyin-x-ndia , "diqing zhou"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bde chen rang skyong khul/"@bo-x-ewts , "Dechen Prefecture"@en , "迪庆藏族自治州"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT1983EFE387970B02 ;
+        :placeContains      bdr:G1520 , bdr:G1522 , bdr:G1523 ;
+        :placeLocatedIn     bdr:G2208 ;
+        :placeType          bdr:PT0002 .
+    
+    bdr:NT1983EFE387970B02
+        a                   :Note ;
+        :noteSource         bdr:MW20006 ;
+        :noteText           "autonomous tibetan prefecture in yunnan province\npinyin: diqingzhou\ncomprises three counties:\npinyin: zhongdian, deqian, weixi\nthe tibetan names are: rgyal thang, 'ba' lung, and bde chen\nthe tshig mdzod chen mo gives:\n'dzol\n'ba' lung\nrgyal thang\nfor the names of the three rdzong"@en .
+}

@@ -1,0 +1,57 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1137 {
+    bda:G1137  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1137 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "9b/G1137.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1137 ;
+        adm:logEntry        bda:LG05C145D26424BFD2 , bda:LG2734A6BB3A890968 , bda:LG91A3DE4F4E291ECC , bda:LG9DB0340B4170A8A6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:C2CN10963 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG05C145D26424BFD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-30T11:18:28.539Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrew note and added to C2CN10963"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG2734A6BB3A890968
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-06T10:27:26.249Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language encoding & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG91A3DE4F4E291ECC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9DB0340B4170A8A6
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-01-11T15:21:33.194Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of C2CN10963"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1137  a            :Place ;
+        skos:prefLabel      "'brong rtse lha gdung /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB8C13C88439B2150 .
+    
+    bdr:NTB8C13C88439B2150
+        a                   :Note ;
+        :noteText           "withdrawn in favor of C2CN10963"@en .
+}

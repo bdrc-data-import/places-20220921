@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G48 {
+    bda:G48  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G48 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "1c/G48.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G48 ;
+        adm:logEntry        bda:LG186F8D564BA67A4B , bda:LG339A76490D45C424 , bda:LG8139EE2769A3175C , bda:LGB59F6BF774E5C952 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542231101:542231107" ;
+        adm:place_id_lex    "542231101:542231107" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG186F8D564BA67A4B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG339A76490D45C424
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-08T15:48:36.541Z"^^xsd:dateTime ;
+        adm:logMessage      "addded names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8139EE2769A3175C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:52.71Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB59F6BF774E5C952
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:39:48.496Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV63D90F4B00D9ABCF
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionDrukpaKagyu .
+    
+    bdr:G48  a              :Place ;
+        skos:altLabel       "'brug dre'u lhas gser gyi chos 'khor/"@bo-x-ewts , "dre'u lhas/"@bo-x-ewts , "dre'u lhas dgon/"@bo-x-ewts , "gnyal dre'u lhas dgon/"@bo-x-ewts , "扎果寺"@zh-hans , "涅·查乌寺"@zh-hans , "chawu si"@zh-latn-pinyin-x-ndia , "nie chawu si"@zh-latn-pinyin-x-ndia , "zhaguo si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gnyal dre'u lhas dgon/"@bo-x-ewts , "Drinlay Gon"@en-x-mixed , "查乌寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE4011140298C6AD3 ;
+        :isRoot             true ;
+        :note               bdr:NT3C8C293DBEAA31A5 , bdr:NT887446C9B7427140 , bdr:NTB5C0F5DACB29C9CC , bdr:NTEA55596F4020BF16 ;
+        :placeContains      bdr:G2CN10884 ;
+        :placeEvent         bdr:EV63D90F4B00D9ABCF ;
+        :placeGonpaPerEcumen  "7.25" ;
+        :placeLat           "28.39562" ;
+        :placeLocatedIn     bdr:G1990 , bdr:G724 ;
+        :placeLong          "92.35266" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE4011140298C6AD3
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G48" .
+    
+    bdr:NT3C8C293DBEAA31A5
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 113-115" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NT887446C9B7427140
+        a                   :Note ;
+        :contentLocationStatement  "p. 325" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "kaH thog si tu notes that this monastery had turned dge lugs\ncalled the dre'u lhas gser gyi chos skor; known for its art work\nthe monastery possessed many artistic treasures which were not cared for"@en .
+    
+    bdr:NTB5C0F5DACB29C9CC
+        a                   :Note ;
+        :contentLocationStatement  "p. 726" ;
+        :noteSource         bdr:MW20916 ;
+        :noteText           "rnying ma pa ('brug pa dkar brgyud pa monastery) in gnyal\nthis was the seat of the incarnations of 'brug pa kun dga' legs pa"@en .
+    
+    bdr:NTEA55596F4020BF16
+        a                   :Note ;
+        :noteText           "spelled 'drin las' in 1950s gonpa list with 82 Drukpa monks"@en .
+}

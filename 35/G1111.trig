@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1111 {
+    bda:G1111  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1111 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "35/G1111.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1111 ;
+        adm:logEntry        bda:LG8CAC0EAFD2750A14 , bda:LG8D26EEE3D3E82DC3 , bda:LGF505014402AC00F3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG8CAC0EAFD2750A14
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8D26EEE3D3E82DC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-16T15:29:18.002Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & type with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF505014402AC00F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-03T16:41:31.182Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1111  a            :Place ;
+        skos:prefLabel      "mdo smad mdzod dge smad bse tshang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE7D36679491318E1 ;
+        :placeLocatedIn     bdr:G1132 ;
+        :placeType          bdr:PT0024 .
+    
+    bdr:NTE7D36679491318E1
+        a                   :Note ;
+        :noteText           "CORPORATION?"@en .
+}

@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN511 {
+    bda:G3CN511  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN511 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a3/G3CN511.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN511 ;
+        adm:logEntry        bda:LG3DE8D02CDC7361EF , bda:LGDBD028BFE499E973 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3DE8D02CDC7361EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-03T09:08:15.331Z"^^xsd:dateTime ;
+        adm:logMessage      "added time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDBD028BFE499E973
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-24T16:42:29.995Z"^^xsd:dateTime ;
+        adm:logMessage      "created record, added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV9FD3C288004DDCF9
+        a                   :PlaceEventNotSpecified ;
+        :onYear             "0707"^^xsd:gYear .
+    
+    bdr:G3CN511  a          :Place ;
+        skos:altLabel       "lhas gang tshal/"@bo-x-ewts ;
+        skos:prefLabel      "lhas gang tsal/"@bo-x-ewts , "Lhegang"@en ;
+        :isRoot             true ;
+        :note               bdr:NT5ADA9F19D49D83D6 ;
+        :placeEvent         bdr:EV9FD3C288004DDCF9 ;
+        :placeType          bdr:PT0051 .
+    
+    bdr:NT5ADA9F19D49D83D6
+        a                   :Note ;
+        :contentLocationStatement  "p. 373-374" ;
+        :noteSource         bdr:MW1KG6149 ;
+        :noteText           "\"ལུག་གི་ལོ་ ༧༠༧ ལ་བབ། དགུན་བཙན་པོ་བྲག་དམར་ན་བཞུགས་པ་ལས། ཕོ་བྲང་འཕོས་ཏེ། ཕྱི་དབོན་ལྷས་གང་ཙལ་༼ཚལ་༽ན་བཞུགས།\" ཞེས་གསལ།"@bo .
+}

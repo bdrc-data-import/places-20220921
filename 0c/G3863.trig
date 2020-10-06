@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3863 {
+    bda:G3863  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3863 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "0c/G3863.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3863 ;
+        adm:logEntry        bda:LG8DD1D64EFEF99C02 , bda:LG955E29F4D2A5199F , bda:LGC1417F568E1F5D69 , bda:LGF406244BB7956A97 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8DD1D64EFEF99C02
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-12T16:47:13.894Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & event"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG955E29F4D2A5199F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T12:37:25.494Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC1417F568E1F5D69
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-13T09:10:16.011Z"^^xsd:dateTime ;
+        adm:logMessage      "changed event & linked with founder"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF406244BB7956A97
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0731112B2C71B798
+        a                   :PlaceFounded ;
+        :notAfter           "1899"^^xsd:gYear ;
+        :notBefore          "1800"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV52FF0309FF0E8F8E
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2569 ;
+        :notAfter           "1899"^^xsd:gYear ;
+        :notBefore          "1800"^^xsd:gYear .
+    
+    bdr:G3863  a            :Place ;
+        skos:altLabel       "theg chen bshad sgrub phun tshogs chos sde dgon/"@bo-x-ewts ;
+        skos:prefLabel      "sa 'dul ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3E716712370CEAE3 ;
+        :placeEvent         bdr:EV0731112B2C71B798 , bdr:EV52FF0309FF0E8F8E ;
+        :placeLocatedIn     bdr:G2306 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT3E716712370CEAE3
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, p. 520" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs hermitage  in 'dab pa rdzong\ngangs dkar rnam rgyal gling (G3864) gi dgon lag yin"@en .
+}

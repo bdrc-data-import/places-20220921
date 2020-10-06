@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G760 {
+    bda:G760  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G760 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "fe/G760.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G760 ;
+        adm:logEntry        bda:LG06425260115A5387 , bda:LG0B2B7702BB988684 , bda:LG2922621D446623B2 , bda:LG2FB97BDB1110A444 , bda:LG7932D2AEC26DF8CD , bda:LGA077B12F042C883A , bda:LGF80DA54A06B0718B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG06425260115A5387
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-01T12:05:58.864Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0B2B7702BB988684
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2922621D446623B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-04T15:24:24.406Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type (need to withdraw G741 and add here)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2FB97BDB1110A444
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG7932D2AEC26DF8CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-24T12:54:31.573Z"^^xsd:dateTime ;
+        adm:logMessage      "changed name"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGA077B12F042C883A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-10T16:53:28.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF80DA54A06B0718B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-18T11:59:13.879Z"^^xsd:dateTime ;
+        adm:logMessage      "bod yig la bsgyur yod"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:G760  a             :Place ;
+        skos:prefLabel      "stod pa phan bde kha/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G54 ;
+        :placeType          bdr:PT0085 .
+}

@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3372 {
+    bda:G3372  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3372 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ab/G3372.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3372 ;
+        adm:logEntry        bda:LGC7C5AFD57951E8CF , bda:LGD4E607433A85E37E , bda:LGE85B8ABC47B32696 , bda:LGIM035E0028DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC7C5AFD57951E8CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T16:14:29.104Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD4E607433A85E37E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE85B8ABC47B32696
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T11:45:54.907Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM035E0028DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from zhangxiang to shang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3372  a            :Place ;
+        skos:prefLabel      "yer pa shang (stag rtse rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT57AA8DD63B242AC1 , bdr:NT9B292C65DF392774 ;
+        :placeContains      bdr:G3063 , bdr:G3064 , bdr:G3371 , bdr:G3376 , bdr:G3377 ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3016 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT57AA8DD63B242AC1
+        a                   :Note ;
+        :contentLocationStatement  "p. 30" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "one of the four kung hre (xiang) in 'brom thod chus, stag rtse county, lha sa prefecture\nthis kung hre had five ru khag and villages/monasteries\n1 grong mkhar sgang\nbenefice of yer pa grwa tshang\n2 bkra shis dpal 'byor, bkras khang, o kog, ca zur kog\nestage of smon grong and benefices of ser byes gnyer tshang and rgyud stod\n3 yer pa mda' gzhis ka\nbenefice of the yer pa grwa tshang\n4 glang ra\nbenefice of the rgyud smad grwa tshang\n5 'brog sde\nbenefice of yer pa grwa tshang and se ra byes; estate of the sger tsha rong"@en .
+    
+    bdr:NT9B292C65DF392774
+        a                   :Note ;
+        :contentLocationStatement  "p. 109" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "name of a shang in stag rtse rdzong"@en .
+}

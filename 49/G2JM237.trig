@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2JM237 {
+    bda:G2JM237  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2JM237 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "49/G2JM237.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2JM237 ;
+        adm:logEntry        bda:LG0D506A0F38720C60 , bda:LG412731E5474F22B5 , bda:LGC0565B184DAB5EFD , bda:LGCE2F0797BE246E97 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D506A0F38720C60
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-02T15:21:24.507Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG412731E5474F22B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T14:39:33.216Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC0565B184DAB5EFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:41:05.729Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from college to bshadGrwa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGCE2F0797BE246E97
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-11T17:07:30.733Z"^^xsd:dateTime ;
+        adm:logMessage      "added records and notes"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bdr:G2JM237  a          :Place ;
+        skos:prefLabel      "kaH thog bshad grwa nor bu lhun po/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE4E52CA59D47FFDF ;
+        :placeLocatedIn     bdr:G17 ;
+        :placeType          bdr:PT0038 .
+    
+    bdr:NTE4E52CA59D47FFDF
+        a                   :Note ;
+        :contentLocationStatement  "312" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "Celebrated college at KaH thog Monastery founded in 1907 at the behest of dpal sprul rin po che, 'jam mgon mi pham, dbin po bstan 'dzin nor bu and kaH thog si tu chos kyi rgya mtsho by mkhan chen kun bzang dpal ldan, who served as abbot for 3 years.   \n\n--In accordance with the vision of Situ Rinpoche, the curriculum centered around the \"bag chags 'jog pa'i gzhung rgya\" concerning academic topics; the \"sgro 'dogs bcad pa'i gzhung lnga\" concerning contemplation; and the nyams su len pa'i gzhung lnga\" concerning meditation. \n\n--Invited mkhan chen ngag dbang dpal bzang & glag bla chos grub as principle teachers in the early 20th C."@en .
+}

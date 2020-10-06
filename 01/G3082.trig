@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3082 {
+    bda:G3082  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3082 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "01/G3082.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3082 ;
+        adm:logEntry        bda:LG3E41B5832FE5F32F , bda:LG4D3E1DF22D62B768 , bda:LG6019FED9AEF600FE , bda:LG6674A5345158C929 , bda:LGAD8239AF902820C5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542232200:542232104" ;
+        adm:place_id_lex    "542232200:542232104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3E41B5832FE5F32F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG4D3E1DF22D62B768
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T09:28:24.757Z"^^xsd:dateTime ;
+        adm:logMessage      "checkout"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6019FED9AEF600FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-08T15:25:42.127Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & GIS ID"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6674A5345158C929
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-11-24T12:01:54.991Z"^^xsd:dateTime ;
+        adm:logMessage      "created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAD8239AF902820C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-09T16:12:31.329Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected pinyin & arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVE3A538ECFB23D78B
+        a                   :PlaceFounded ;
+        :onYear             "1447"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBodong .
+    
+    bdr:G3082  a            :Place ;
+        skos:altLabel       "lo ro sbyor ra dgon/"@bo-x-ewts , "juela si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sbyor ra dgon/"@bo-x-ewts , "Jora"@en , "觉拉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0C54A9F3F917C137 ;
+        :isRoot             true ;
+        :note               bdr:NT2AF41841E77D7B37 , bdr:NTEA8C6BDD4C84DE11 ;
+        :placeEvent         bdr:EVE3A538ECFB23D78B ;
+        :placeGonpaPerEcumen  "4.96" ;
+        :placeIsNear        bdr:G3JT12548 ;
+        :placeLat           "28.20194" ;
+        :placeLocatedIn     bdr:G2139 ;
+        :placeLong          "92.36406" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID0C54A9F3F917C137
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3082" .
+    
+    bdr:NT2AF41841E77D7B37
+        a                   :Note ;
+        :contentLocationStatement  "p. 726" ;
+        :noteSource         bdr:MW20916 ;
+        :noteText           "this monastery was founded as a seat of the bo dong pa tradition and was the seat of the sbyor sprul, the reembodiment of bo dong phyogs las rnam rgyal\nthe incarnation became rnying ma pa and by 1807 was regarded as a rnying ma pa monastery\nother masters connected with this monastery include kun mkhyen mkhyen rtse and sgom sprul rim po che"@en .
+    
+    bdr:NTEA8C6BDD4C84DE11
+        a                   :Note ;
+        :contentLocationStatement  "p. 141" ;
+        :noteSource         bdr:MW1KG4853 ;
+        :noteText           "seat of the sbyor ra sprul"@en .
+}

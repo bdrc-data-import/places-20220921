@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1981 {
+    bda:G1981  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1981 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "c0/G1981.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1981 ;
+        adm:logEntry        bda:LG12618CF7E6515E2D , bda:LG259D6109B15403DA , bda:LG7036E16A3097265D , bda:LG76358F2AE0BB9F26 , bda:LG79C553BBE345F2EE , bda:LGB3325905CE5F27EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG12618CF7E6515E2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-14T14:36:53.679Z"^^xsd:dateTime ;
+        adm:logMessage      "གནས་ཚུལ་གསར་དུ་བཅུག"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG259D6109B15403DA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7036E16A3097265D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-25T16:33:15.181Z"^^xsd:dateTime ;
+        adm:logMessage      "added note as withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG76358F2AE0BB9F26
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-25T15:14:49.779Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG79C553BBE345F2EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-15T15:29:53.74Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGB3325905CE5F27EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-25T20:23:01.866Z"^^xsd:dateTime ;
+        adm:logMessage      "status changed from released to withdrawn"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1981  a            :Place ;
+        skos:altLabel       "gzhis rtse khul/"@bo-x-ewts ;
+        skos:prefLabel      "gzhis ka rtse khul/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT348E1067A5A19464 , bdr:NT98860E208D46B2EE ;
+        :placeType          bdr:PT0057 .
+    
+    bdr:NT348E1067A5A19464
+        a                   :Note ;
+        :contentLocationStatement  "p. 357" ;
+        :noteSource         bdr:MW20170 ;
+        :noteText           "administrative taxation region equivent to a rdzong in the 1830 settlement document"@en .
+    
+    bdr:NT98860E208D46B2EE
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G2170"@en .
+}

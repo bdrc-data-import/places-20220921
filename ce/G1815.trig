@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1815 {
+    bda:G1815  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1815 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ce/G1815.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1815 ;
+        adm:logEntry        bda:LG6CE110FA069654F6 , bda:LGC9F3CCDF5BB37D5A , bda:LGED4C7C332D71DC8A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6CE110FA069654F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from dzong to sngarGyiRdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC9F3CCDF5BB37D5A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGED4C7C332D71DC8A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-07T10:46:07.772Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type to dgon pa & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1815  a            :Place ;
+        skos:prefLabel      "rdong rdzong dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT01A07CC2CB09BCC3 ;
+        :placeLocatedIn     bdr:G1700 , bdr:G1772 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT01A07CC2CB09BCC3
+        a                   :Note ;
+        :contentLocationStatement  "p. 169" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "rnying ma pa monastery of the rdzogs chen tradition  in gcig sgril rdzong in mgo log\nfounded 1821 by mdo mkhyen brtse ye shes rdo rje"@en .
+}

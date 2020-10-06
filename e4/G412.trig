@@ -1,0 +1,120 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G412 {
+    bda:G412  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G412 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "e4/G412.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G412 ;
+        adm:logEntry        bda:LG1106302CB892C85C , bda:LG1EF74D787A2ABB11 , bda:LG24EF8716001A6B31 , bda:LG8EA520345EE420BF , bda:LG91C981627725E56B , bda:LGD32EAC204F1736A9 , bda:LGDD01B553473EBB46 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542233100:542233104" ;
+        adm:place_id_lex    "542233100:542233104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1106302CB892C85C
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-11T15:06:02.893Z"^^xsd:dateTime ;
+        adm:logMessage      "added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1EF74D787A2ABB11
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-09T16:14:45.768Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings & arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG24EF8716001A6B31
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-19T14:34:00.626Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8EA520345EE420BF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG91C981627725E56B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-09T10:46:19.905Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD32EAC204F1736A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-06-17T14:18:13.554Z"^^xsd:dateTime ;
+        adm:logMessage      "updated founding date with notes"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGDD01B553473EBB46
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-15T11:46:42.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV1FF9C92CD13CE23F
+        a                   :PlaceFounded ;
+        :onYear             "1440"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBodong .
+    
+    bdr:G412  a             :Place ;
+        skos:altLabel       "bo dong bsam sdings/"@bo-x-ewts , "dpal mkha' 'gro 'du ba'i bsti gnas bsam grub chos kyi sde/"@bo-x-ewts , "yar 'brog bsam sdings/"@bo-x-ewts , "yar 'brog bsam sdings dpal mkha' 'gro 'du ba'i bsti gnas bsam grub chos kyi sde/"@bo-x-ewts , "sangding si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bsam sdings dgon pa/"@bo-x-ewts , "Samding Monastery"@en , "桑丁寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1B8BE68132A98384 ;
+        :contentLocationStatement  "Coordinates: latitude 28°58,442 longitude 90°28,364 Altitude: 4546(m) (sheehy_tibet_coordinates_2014)" ;
+        :isRoot             true ;
+        :note               bdr:NT53FC72A15A4F1B60 , bdr:NTE0D522B5CB7648E2 , bdr:NTFE72C9BDF35DB285 ;
+        :placeEvent         bdr:EV1FF9C92CD13CE23F ;
+        :placeGonpaPerEcumen  "5.73" ;
+        :placeLat           "28.97853" ;
+        :placeLocatedIn     bdr:G2136 , bdr:G4683 ;
+        :placeLong          "90.48091" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID1B8BE68132A98384
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G412" .
+    
+    bdr:NT53FC72A15A4F1B60
+        a                   :Note ;
+        :noteText           "1250 is an alternative date for founding of the monastery, source unknown."@en .
+    
+    bdr:NTE0D522B5CB7648E2
+        a                   :Note ;
+        :contentLocationStatement  "p. 726" ;
+        :noteSource         bdr:MW20916 ;
+        :noteText           "monastery at the edge of the yar 'brog mtsho connected with the tradition of the bo dong pa\nthe incarnates of this monastery were the bsam sdings rdo rje phag mo and the reembodiment of ras chen dpal 'byor bzang po"@en .
+    
+    bdr:NTFE72C9BDF35DB285
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp.. 141-146" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "detailed account of the monastery; gives founding date to be 1440."@en .
+}

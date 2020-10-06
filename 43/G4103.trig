@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4103 {
+    bda:G4103  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4103 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "43/G4103.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4103 ;
+        adm:logEntry        bda:LG51ABC771C6BE8DFA , bda:LG8DE53828D5B25899 , bda:LGAB375510B345A175 , bda:LGB3F2A360003E9CBF , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513326218:476" ;
+        adm:place_id_lex    "513326218:476" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG51ABC771C6BE8DFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-31T11:48:44.739Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8DE53828D5B25899
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAB375510B345A175
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-22T09:28:04.524Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB3F2A360003E9CBF
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-02-07T11:26:06.395Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2E02BCBEF1F135B0
+        a                   :PlaceFounded ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G4103  a            :Place ;
+        skos:altLabel       "rang shes dgon/"@bo-x-ewts , "ranxia si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rwa shel dgon/"@bo-x-ewts , "然吓寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCE4E08A07CCE7E06 ;
+        :isRoot             true ;
+        :note               bdr:NT8829E3A7F8AD5153 , bdr:NTB32AB09ADA1E6912 ;
+        :placeEvent         bdr:EV2E02BCBEF1F135B0 ;
+        :placeGonpaPerEcumen  "9.57" ;
+        :placeLat           "30.50000" ;
+        :placeLocatedIn     bdr:G2298 ;
+        :placeLong          "101.43333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDCE4E08A07CCE7E06
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4103" .
+    
+    bdr:NT8829E3A7F8AD5153
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 569-576" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery in rta'u rdzong\ndgon lag of rdzogs chen monastery"@en .
+    
+    bdr:NTB32AB09ADA1E6912
+        a                   :Note ;
+        :contentLocationStatement  "p. 331" ;
+        :noteSource         bdr:MW00EGS1017690 ;
+        :noteText           "nying ma monastery founded in the middle of the 17th cent in se ka xiang"@en .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2361 {
+    bda:G2361  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2361 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "0c/G2361.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2361 ;
+        adm:logEntry        bda:LG1D4D40EFFA2F9ABD , bda:LG498517CAC504509B , bda:LG8E05EB8D6AE0AB4B , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1D4D40EFFA2F9ABD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-14T16:34:22.675Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG498517CAC504509B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-22T15:29:56.951Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8E05EB8D6AE0AB4B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2361  a            :Place ;
+        skos:altLabel       "gtsang stod 'dar/"@bo-x-ewts , "mdar/"@bo-x-ewts ;
+        skos:prefLabel      "'dar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF75096EDAF6DF89C ;
+        :placeLocatedIn     bdr:G932 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NTF75096EDAF6DF89C
+        a                   :Note ;
+        :noteText           "toponymn in upper gtsang; the se lineage seems to have some control over the area; sometimes spelled mdar"@en .
+}

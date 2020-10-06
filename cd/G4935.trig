@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4935 {
+    bda:G4935  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4935 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "cd/G4935.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4935 ;
+        adm:logEntry        bda:LG1C243EE05A7C0909 , bda:LG920000461918D2F8 , bda:LG93EC2EE327789454 , bda:LGF01B5B002E202D79 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1C243EE05A7C0909
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:hermitage to riKhrod"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG920000461918D2F8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG93EC2EE327789454
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-27T11:45:21.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF01B5B002E202D79
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-10T15:50:45.803Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G4935  a            :Place ;
+        skos:altLabel       "dge 'phel ri khrod (jo nang)"@bo-x-ewts ;
+        skos:prefLabel      "dge 'phel ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTCB0C8F04056EEA4E ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NTCB0C8F04056EEA4E
+        a                   :Note ;
+        :noteText           "jo nang hermitage that had been the place of residence of 'ba' mda' dge legs rgya mtsho\n\n\"smra ba'i dbang phyug 'ba' mda' bzhugs pa'i gnas dge 'hel ri khrod\""@en .
+}

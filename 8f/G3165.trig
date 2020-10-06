@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3165 {
+    bda:G3165  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3165 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "8f/G3165.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3165 ;
+        adm:logEntry        bda:LG0AB530537060ED73 , bda:LG3248ADFE3DEFC06D , bda:LG61B531450E881124 , bda:LG921767FBE7E01C42 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0AB530537060ED73
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-18T15:05:29.657Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3248ADFE3DEFC06D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-19T16:45:54.091Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG61B531450E881124
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG921767FBE7E01C42
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-19T14:33:14.544Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3165  a            :Place ;
+        skos:altLabel       "pu rangs/"@bo-x-ewts , "spu hreng /"@bo-x-ewts , "spu rangs/"@bo-x-ewts ;
+        skos:prefLabel      "spu rang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT390E73D612016B8B , bdr:NTA971E6D226E41A06 ;
+        :placeLocatedIn     bdr:G3CN28 ;
+        :placeType          bdr:PT0027 .
+    
+    bdr:NT390E73D612016B8B
+        a                   :Note ;
+        :contentLocationStatement  "p. 21" ;
+        :noteSource         bdr:MW1GS56008 ;
+        :noteText           "སྤུ་རང་ཡང་ཞང་ཞུང་དང་ཡ་རྩེའི་སྐོར་ལ་གཏོགས་པ་གསལ།"@bo .
+    
+    bdr:NTA971E6D226E41A06
+        a                   :Note ;
+        :contentLocationStatement  "f. 2r" ;
+        :noteSource         bdr:MW6004 ;
+        :noteText           "one of the first three of the three part groupings of mnga' ris skor gsum, i. e. spu rang mang yul zangs dkar"@en .
+}

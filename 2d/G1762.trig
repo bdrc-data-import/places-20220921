@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1762 {
+    bda:G1762  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1762 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2d/G1762.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1762 ;
+        adm:logEntry        bda:LG797569E83551990D , bda:LGIM035E0028DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG797569E83551990D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM035E0028DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from zhangxiang to shang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1762  a            :Place ;
+        skos:prefLabel      "paN chen zhang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2CFEE69C532D083A ;
+        :placeContains      bdr:G1804 , bdr:G1805 , bdr:G1808 ;
+        :placeLocatedIn     bdr:G1719 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT2CFEE69C532D083A
+        a                   :Note ;
+        :contentLocationStatement  "p. 146" ;
+        :noteSource         bdr:MW20140 ;
+        :noteText           "located in padma rdzong\nthis zhang is the location of pan chen dgon, rgyud sde dgon, and ra ya dgon"@en .
+}

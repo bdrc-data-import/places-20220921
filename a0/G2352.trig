@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2352 {
+    bda:G2352  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2352 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a0/G2352.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2352 ;
+        adm:logEntry        bda:LG091C2F57A0219FF8 , bda:LGDA3448C45D45B2B2 , bda:LGE9D583355734AA8E , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG091C2F57A0219FF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-05T12:02:04.337Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDA3448C45D45B2B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-14T15:43:14.899Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE9D583355734AA8E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2352  a            :Place ;
+        skos:altLabel       "dbus stod rgya ra gung /"@bo-x-ewts , "rgya ra gung /"@bo-x-ewts ;
+        skos:prefLabel      "rgya ra gur/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT59AD7B023E02B435 ;
+        :placeLocatedIn     bdr:G928 ;
+        :placeType          bdr:PT0085 .
+    
+    bdr:NT59AD7B023E02B435
+        a                   :Note ;
+        :contentLocationStatement  "p. 61" ;
+        :noteSource         bdr:MW20212 ;
+        :noteText           "birthplace of the 16th dga' ldan khri chos skyong rgya mtsho\nis the place name rgya ra gung or rgya ra gur?"@en .
+}

@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11100 {
+    bda:G2CN11100  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11100 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6c/G2CN11100.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11100 ;
+        adm:logEntry        bda:LG9A2767BB6C8A8240 , bda:LGAAF9FE40DA16611E , bda:LGDC7AF7017EAB0610 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9A2767BB6C8A8240
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-06-26T12:04:02.424Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAAF9FE40DA16611E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-26T12:16:21.76Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDC7AF7017EAB0610
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-26T12:21:41.086Z"^^xsd:dateTime ;
+        adm:logMessage      "edited note and place contained"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV13F2880827E98B9B
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P815 ;
+        :notAfter           "1599"^^xsd:gYear ;
+        :notBefore          "1500"^^xsd:gYear .
+    
+    bdr:EVAB8FF255519C79F6
+        a                   :PlaceFounded ;
+        :notAfter           "1599"^^xsd:gYear ;
+        :notBefore          "1500"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G2CN11100  a        :Place ;
+        skos:altLabel       "rin chen ri bo legs bshad gling /"@bo-x-ewts , "snyug la legs bshad gling /"@bo-x-ewts ;
+        skos:prefLabel      "smyug la legs bshad gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9090AA89DFE7F2B5 ;
+        :placeContains      bdr:G3JT12617 ;
+        :placeEvent         bdr:EV13F2880827E98B9B , bdr:EVAB8FF255519C79F6 ;
+        :placeLocatedIn     bdr:G2128 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT9090AA89DFE7F2B5
+        a                   :Note ;
+        :contentLocationStatement  "p. 652" ;
+        :noteSource         bdr:MW23435 ;
+        :noteText           "ཆོས་རྗེ་ཀརྨ་ཕྲིན་ལས་པས་བཞེངས་སྐོར་གསལ།"@bo .
+}

@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2199 {
+    bda:G2199  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2199 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "f2/G2199.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2199 ;
+        adm:logEntry        bda:LG09595FBD96CBC4C2 , bda:LG13565D5B27B4870E , bda:LG29E608455AC82DD5 , bda:LG48A416E0E3F012DC , bda:LG4EDC682E9302039F , bda:LG58F6EA891A8B403E , bda:LG8FD536A322822BA8 , bda:LG97ED854B0A80BB40 , bda:LGA02BE3833A35A354 , bda:LGB37A90B97EC7968D , bda:LGD08F94D0D66FB1B4 , bda:LGEC64B1788481FE04 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG09595FBD96CBC4C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T10:12:08.91Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG13565D5B27B4870E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-27T10:05:50.748Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG29E608455AC82DD5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-30T14:52:07.345Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG48A416E0E3F012DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T16:59:24.022Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4EDC682E9302039F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-18T14:58:52.775Z"^^xsd:dateTime ;
+        adm:logMessage      "takeout contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG58F6EA891A8B403E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-10T16:05:05.438Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8FD536A322822BA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T10:05:16.461Z"^^xsd:dateTime ;
+        adm:logMessage      "added english names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG97ED854B0A80BB40
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G4845"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGA02BE3833A35A354
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB37A90B97EC7968D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-11T13:32:38.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD08F94D0D66FB1B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-23T12:03:59.225Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup some contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEC64B1788481FE04
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-27T10:54:02.747Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2199  a            :Place ;
+        skos:altLabel       "kan lho bod rigs rang skyong khul/"@bo-x-ewts , "kan lho khul/"@bo-x-ewts , "Gannan Tibetan Autonomous Prefecture"@en , "甘南藏族自治州"@zh-hans , "gannan zangzu zizhi zhou"@zh-latn-pinyin-x-ndia , "gannan zhou"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "kan lho rang skyong khul/"@bo-x-ewts , "Gannan Prefecture"@en , "甘南州"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT2E46052357D50469 ;
+        :placeContains      bdr:G1961 , bdr:G2201 , bdr:G2202 , bdr:G2203 , bdr:G2204 , bdr:G2205 , bdr:G2206 , bdr:G2396 , bdr:G2744 , bdr:G2746 , bdr:G2748 , bdr:G356 , bdr:G4646 , bdr:G4699 , bdr:G471 , bdr:G4731 , bdr:G4835 , bdr:G4838 , bdr:G4845 , bdr:G4858 , bdr:G916 ;
+        :placeLocatedIn     bdr:G2207 ;
+        :placeType          bdr:PT0002 .
+    
+    bdr:NT2E46052357D50469
+        a                   :Note ;
+        :noteSource         bdr:MW20200 ;
+        :noteText           "tibetan autonomous prefecture located in southern gansu province\nthis prefecture is comprised of seven counties\nwas founded on 1 october 1953 and has 450,000 sq. km. and a population of 600,000\npinyin: gannanzhou"@en .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2945 {
+    bda:G2945  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2945 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "60/G2945.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2945 ;
+        adm:logEntry        bda:LG282E0D962219C4A9 , bda:LG301DBB6A98FF1A82 , bda:LG75F6F34F66CCF422 , bda:LG96BDB1039197FD9C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG282E0D962219C4A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-06T11:43:28.501Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG301DBB6A98FF1A82
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-07T19:17:13.309Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G2885 to G1KR1888"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG75F6F34F66CCF422
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-07T19:52:10.086Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G2886 to G1KR1889"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG96BDB1039197FD9C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2945  a            :Place ;
+        skos:prefLabel      "g.yu ri chus (spo bo rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD221F7A5B078BF53 ;
+        :placeContains      bdr:G1KR1888 , bdr:G1KR1889 , bdr:G2885 , bdr:G2887 , bdr:G2888 , bdr:G2889 , bdr:G2890 , bdr:G2891 , bdr:G2892 , bdr:G2893 , bdr:G2894 ;
+        :placeLocatedIn     bdr:G2944 .
+    
+    bdr:NTD221F7A5B078BF53
+        a                   :Note ;
+        :contentLocationStatement  "p. 124" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "one of the 8 administrative units (communes) of spo bo county"@en .
+}

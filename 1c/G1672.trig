@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1672 {
+    bda:G1672  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1672 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "1c/G1672.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1672 ;
+        adm:logEntry        bda:LG1861C889CE350135 , bda:LG9D7BBEDFF351CE5B , bda:LGC6115DDE22242EA0 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330215:122" ;
+        adm:place_id_lex    "513330215:122" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1861C889CE350135
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-06T15:53:12.256Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from sde dge political history"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9D7BBEDFF351CE5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T09:24:14.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC6115DDE22242EA0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV303D0FD7CD83E142
+        a                   :PlaceFounded ;
+        :onYear             "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1672  a            :Place ;
+        skos:altLabel       "rdza dgon gsar bkra shis dga' ldan chos 'phel gling /"@bo-x-ewts , "sde dge dgon gsar dgon/"@bo-x-ewts , "gengsha si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dgon gsar dgon/"@bo-x-ewts , "更沙寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID63AD4670D2D11050 ;
+        :isRoot             true ;
+        :note               bdr:NT47AAEB034AB34B83 , bdr:NTF9438A2A92AAB845 ;
+        :placeEvent         bdr:EV303D0FD7CD83E142 ;
+        :placeGonpaPerEcumen  "20.75" ;
+        :placeLat           "32.00000" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "99.48333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID63AD4670D2D11050
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1672" .
+    
+    bdr:NT47AAEB034AB34B83
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 643-645" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "dge lugs pa monastery\nདགོན་འདིའི་ལོ་རྒྱུས་མདོར་བསྡུས་གསལ།"@en .
+    
+    bdr:NTF9438A2A92AAB845
+        a                   :Note ;
+        :contentLocationStatement  "p. 150" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "dge lugs monastery in sde dge territory founded about 1660 by hor chos rje ngag dbang phun tshogs; formerly it had more than 540 monks"@en .
+}

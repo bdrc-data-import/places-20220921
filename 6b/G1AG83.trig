@@ -1,0 +1,40 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1AG83 {
+    bda:G1AG83  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1AG83 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6b/G1AG83.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1AG83 ;
+        adm:logEntry        bda:LG7941539B2CF8D91F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7941539B2CF8D91F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-04T13:14:29.219Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:G1AG83  a           :Place ;
+        skos:prefLabel      "chos lung byang rtse/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE48CBC6D95752FAF ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTE48CBC6D95752FAF
+        a                   :Note ;
+        :noteText           "jo nang monastery where taranatha was enthroned as the reincarnation of kun dga grol mchog. taranatha later wrote several kalacakra text there. it was converted to dge lugs in the seventeenth century."@en .
+}

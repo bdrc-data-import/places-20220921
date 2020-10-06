@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4180 {
+    bda:G4180  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4180 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "95/G4180.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4180 ;
+        adm:logEntry        bda:LG2DE2702F9FBE6205 , bda:LG32CF4316560C16C9 , bda:LG85B60AF214BDADAB , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2DE2702F9FBE6205
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-18T16:18:38.413Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG32CF4316560C16C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-24T09:31:45.304Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG85B60AF214BDADAB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4180  a            :Place ;
+        skos:altLabel       "yar stod skyam phu/"@bo-x-ewts ;
+        skos:prefLabel      "skyam phu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA0938F2AF5AB3917 ;
+        :placeLocatedIn     bdr:G4802 ;
+        :placeType          bdr:PT0082 .
+    
+    bdr:NTA0938F2AF5AB3917
+        a                   :Note ;
+        :contentLocationStatement  "p. 258" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "place in the upper yar lung valley where there is located the e ka dza ti bla mtsho;\nmentioned but not visited by kaH thog si tu"@en .
+}

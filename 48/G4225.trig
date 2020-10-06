@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4225 {
+    bda:G4225  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4225 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "48/G4225.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4225 ;
+        adm:logEntry        bda:LG441789DAF40832AC , bda:LGB0D10E3B6C93A15E , bda:LGB8BF1BB551C3CE78 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221100:542221107" ;
+        adm:place_id_lex    "542221100:542221107" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG441789DAF40832AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:13:34.89Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB0D10E3B6C93A15E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-03T10:54:35.305Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB8BF1BB551C3CE78
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVDBA2FBBCEA5C70CB
+        a                   :PlaceFounded ;
+        :onYear             "1350"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:G4225  a            :Place ;
+        skos:altLabel       "ban gtsang dgon/"@bo-x-ewts , "sne'u gdong ban gtsang /"@bo-x-ewts , "sne gdong ban gtsang /"@bo-x-ewts , "thub bstan shes rab bshad sgrub 'phel rgyas gling /"@bo-x-ewts , "Bantshang Gon"@bo-x-phon-en , "bencang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ban tshang dgon/"@bo-x-ewts , "本仓寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4AF9F0E2E68F29A5 ;
+        :isRoot             true ;
+        :note               bdr:NT15B9E2D59495B963 , bdr:NTF3A3BFCA355DE605 ;
+        :placeEvent         bdr:EVDBA2FBBCEA5C70CB ;
+        :placeGonpaPerEcumen  "60.8" ;
+        :placeLat           "29.21278" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.79312" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID4AF9F0E2E68F29A5
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4225" .
+    
+    bdr:NT15B9E2D59495B963
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 45-46" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "སྣེ་གདོང་རྩེ་ཚོགས་པའི་གཡས་ངོས་རི་སྣའི་སྟེང་དགོན་དེ་ཆགས་ཡོད། ཐོག་མར་འགྲོ་མགོན་ཕག་གྲུའི་གདན་ས་ཡིན་ཅིང་རིམ་བཞིན་བླ་ཐོག་བཅུ་གསུམ་ཙམ་བྱུང་། དེ་རྗེས་སྡེ་པ་ཀུན་བཟང་རྩེའི་དགོན་སྡེར་གྱུར། དགེ་འདུན་ཞལ་གྲངས་བདུན་ཅུ་ཙམ་ཟིན། སྔོན་དགོན་དེར་གསེར་ཟངས་སོགས་ཀྱི་སྐུ་བརྙན་མང་པོ་ཡོད་པ་ལ། གཙོ་ཆེ་བ་ཡར་རྗེ་ཨོ་རྒྱན་གླིང་པའི་སྐུ་ཤ་སྐྱེ་བདུན་མ་ཞེས་པའི་གདུང་རྟེན་དེ་མཇལ་རྒྱུ་ཡོད།"@bo .
+    
+    bdr:NTF3A3BFCA355DE605
+        a                   :Note ;
+        :contentLocationStatement  "pp. 234-237" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "description\nkaH thog si tu notes that there were about 50 monks here"@en .
+}

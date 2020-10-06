@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4424 {
+    bda:G4424  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4424 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b8/G4424.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4424 ;
+        adm:logEntry        bda:LG06AF51AEFAD0B81A , bda:LG20DBD69E0D290D79 , bda:LG64362CFD08091AF2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG06AF51AEFAD0B81A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T12:08:52.29Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG20DBD69E0D290D79
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG64362CFD08091AF2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G4424  a            :Place ;
+        skos:prefLabel      "kha rag dgon chung /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0ECE5E07B2E0A453 ;
+        :placeLocatedIn     bdr:G2129 , bdr:G3290 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NT0ECE5E07B2E0A453
+        a                   :Note ;
+        :contentLocationStatement  "p. 45" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "nyingma nunnery in gzhu smad shang of snye mo rdzong\ndate of founding and founder unknown\nadministered by gtsang stag sna dgon\n12 nuns"@en .
+}

@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11147 {
+    bda:G2CN11147  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11147 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4c/G2CN11147.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11147 ;
+        adm:logEntry        bda:LG3F09E82351E6F40A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3F09E82351E6F40A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-18T11:05:00.491Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EVF46362C17592E0BD
+        a                   :PlaceFounded ;
+        :onYear             "2001"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G2CN11147  a        :Place ;
+        skos:prefLabel      "mon ri zur gsum/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3544C7B54793F210 ;
+        :placeEvent         bdr:EVF46362C17592E0BD ;
+        :placeLat           "29.071645" ;
+        :placeLocatedIn     bdr:G4450 ;
+        :placeLong          "82.708402" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT3544C7B54793F210
+        a                   :Note ;
+        :noteText           "Mon ri zur gsum. Name is derived from a nearby mountain and pilgrimage place that is said to have been opened by Ha ra ci par. A stupa marks the site of the original temple founded by Ha ra ci par. \n\nLocated in Khaliban (Kha legs ‘bum) at Nepal"@en .
+}

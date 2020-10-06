@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4486 {
+    bda:G4486  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4486 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "00/G4486.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4486 ;
+        adm:logEntry        bda:LG3942598DF929FEA1 , bda:LG8E95F08A95D355FD , bda:LGBDA65BF768F9EE11 , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542338200:542338101" ;
+        adm:place_id_lex    "542338200:542338101" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3942598DF929FEA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-12T10:36:19.183Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8E95F08A95D355FD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBDA65BF768F9EE11
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:25:06.7Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from stupa to mchodRten"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV205194545E6C7D9D
+        a                   :PlaceFounded ;
+        :onYear             "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G4486  a            :Place ;
+        skos:altLabel       "qudian nima si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mchod rten nyi ma/"@bo-x-ewts , "Chorten Nyima"@en-x-mixed , "曲典尼玛寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF37029786868814B ;
+        :isRoot             true ;
+        :note               bdr:NT2E7BF783419B9FE6 ;
+        :placeEvent         bdr:EV205194545E6C7D9D ;
+        :placeGonpaPerEcumen  "2.89" ;
+        :placeLat           "28.06667" ;
+        :placeLocatedIn     bdr:G2168 ;
+        :placeLong          "88.25000" ;
+        :placeType          bdr:PT0072 .
+    
+    bdr:IDF37029786868814B
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4486" .
+    
+    bdr:NT2E7BF783419B9FE6
+        a                   :Note ;
+        :noteSource         bdr:MW28814 ;
+        :noteText           "pilgrimage site located on the tibetan and sikkimese border"@en .
+}

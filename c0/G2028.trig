@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2028 {
+    bda:G2028  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2028 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "c0/G2028.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2028 ;
+        adm:logEntry        bda:LG99CE89DF25D03DBD , bda:LGE2780B4A334BBB7C , bda:LGIM035E0028DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG99CE89DF25D03DBD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE2780B4A334BBB7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-26T14:51:55.409Z"^^xsd:dateTime ;
+        adm:logMessage      "seeAlso rid changed from G2070 to G405"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM035E0028DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:49:53.482Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from zhangxiang to shang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2028  a            :Place ;
+        skos:prefLabel      "sbrang mda' shang (mal gro gung dkar rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB6DED7716BFB4FF9 ;
+        :placeContains      bdr:G2055 , bdr:G2071 , bdr:G405 ;
+        :placeLocatedIn     bdr:G2014 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NTB6DED7716BFB4FF9
+        a                   :Note ;
+        :contentLocationStatement  "p. 38" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "modern zhang located in mal gro gung dkar rdzong--1997"@en .
+}

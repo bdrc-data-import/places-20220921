@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4183 {
+    bda:G4183  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4183 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "ec/G4183.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4183 ;
+        adm:logEntry        bda:LG07EBC73365D2AD72 , bda:LG69F96FE4A151E687 , bda:LG8E093FC0E17BF1D0 , bda:LGD3EFA3F97765FF66 , bda:LGD7EE9FF330CCBD7D , bda:LGFD7B315E42D8A8B4 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07EBC73365D2AD72
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG69F96FE4A151E687
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-19T09:44:19.211Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8E093FC0E17BF1D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-24T09:34:58.774Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD3EFA3F97765FF66
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-02T09:05:50.63Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD7EE9FF330CCBD7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-11T17:02:02.154Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G4774"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFD7B315E42D8A8B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-22T15:25:44.865Z"^^xsd:dateTime ;
+        adm:logMessage      "added affiliation"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVC8C647D62CA7CBEE
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionBodong .
+    
+    bdr:G4183  a            :Place ;
+        skos:altLabel       "bo dong ba'i dgon chung /"@bo-x-ewts , "lho brag bo dong dgon chung /"@bo-x-ewts ;
+        skos:prefLabel      "bo dong dgon chung /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4974CB0A8E1FAB4E , bdr:NTC37AACF7E8B84DE9 ;
+        :placeEvent         bdr:EVC8C647D62CA7CBEE ;
+        :placeLocatedIn     bdr:G2133 , bdr:G2134 , bdr:G3CN58 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT4974CB0A8E1FAB4E
+        a                   :Note ;
+        :contentLocationStatement  "p. 214" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "a small bo dong monastery located near smra bo cog in the lho brag area; when kaH thog si tu visited here there were quite splendid art objects"@en .
+    
+    bdr:NTC37AACF7E8B84DE9
+        a                   :Note ;
+        :contentLocationStatement  "p. 268" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "description\nconnected with bo dong paN chen"@en .
+}

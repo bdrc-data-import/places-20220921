@@ -1,0 +1,88 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2840 {
+    bda:G2840  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2840 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "37/G2840.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2840 ;
+        adm:logEntry        bda:LG052CF4E0F1311FC5 , bda:LG5B0289550F6EB5FF , bda:LGFDD49442D400419E , bda:LGIM61A98BA6 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542323202:542323119" ;
+        adm:place_id_lex    "542323202:542323119" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG052CF4E0F1311FC5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5B0289550F6EB5FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-29T13:59:20.931Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGFDD49442D400419E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-15T16:40:44.316Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized & added sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV659476A9047F1FC7
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G2840  a            :Place ;
+        skos:altLabel       "dpal chen lha khang /"@bo-x-ewts , "Zurlung Palchen"@en-x-mixed , "sulong baqing lakang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "zur lung dpal chen lha khang /"@bo-x-ewts , "Zurlung Palchen Lhakang"@en , "苏隆巴庆拉康"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1D6012D864A63B21 ;
+        :isRoot             true ;
+        :note               bdr:NT0191C54ED2E68331 , bdr:NT808873AE1270897B ;
+        :placeEvent         bdr:EV659476A9047F1FC7 ;
+        :placeGonpaPerEcumen  "4.74" ;
+        :placeLat           "29.16667" ;
+        :placeLocatedIn     bdr:G2175 ;
+        :placeLong          "89.60000" ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:ID1D6012D864A63B21
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2840" .
+    
+    bdr:NT0191C54ED2E68331
+        a                   :Note ;
+        :noteText           "founding date of 1050 based on phyi dar period art and founders described by Situ.  Location on Survey of India map likely as above a 'Kabsho Zhikha' and Situ states it was above khal kha dkar shod."@en .
+    
+    bdr:NT808873AE1270897B
+        a                   :Note ;
+        :contentLocationStatement  "p. 402" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "ancient temple of the rnying ma pa begun by zur chung shes rab grags pa\nlocated at khal kha dkar shod gong (mkhar kha dkar shod gong)\nthere was supposedly here an image of a lama with long hair (ral pa) and wearing a red chu pa identified as man lung gu ru"@en .
+}

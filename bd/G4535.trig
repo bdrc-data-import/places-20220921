@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4535 {
+    bda:G4535  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4535 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "bd/G4535.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4535 ;
+        adm:logEntry        bda:LG5DF3F53047A150EA , bda:LGA09BBC5617F10081 , bda:LGA8D8265F0DBB722F , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "630122220:299" ;
+        adm:place_id_lex    "630122220:287" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5DF3F53047A150EA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA09BBC5617F10081
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-31T11:18:44.633Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA8D8265F0DBB722F
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-23T18:40:53.907Z"^^xsd:dateTime ;
+        adm:logMessage      "chinese added"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV8EC25FFCDECC8CD9
+        a                   :PlaceFounded ;
+        :onYear             "1777"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4535  a            :Place ;
+        skos:altLabel       "dga' ldan 'gro phan gling /"@bo-x-ewts , "gser tog dgon mkhas btsun dar rgyas gling /"@bo-x-ewts , "mkhas btsun dar rgyas gling /"@bo-x-ewts , "xiakou si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gser tog dgon/"@bo-x-ewts , "Sertok Gon"@en-x-mixed , "峡口寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID235553563B276A99 ;
+        :isRoot             true ;
+        :note               bdr:NT55CFD4F235F52B6F ;
+        :placeEvent         bdr:EV8EC25FFCDECC8CD9 ;
+        :placeGonpaPerEcumen  "7.63" ;
+        :placeLat           "36.86185" ;
+        :placeLocatedIn     bdr:G2350 ;
+        :placeLong          "101.36035" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID235553563B276A99
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4535" .
+    
+    bdr:NT55CFD4F235F52B6F
+        a                   :Note ;
+        :contentLocationStatement  "p. 165" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "gser tog dgon mkhas btsun dar rgyas gling ... thog mar ri khrod pa bstan 'dzin gyis btab zer la/ gser tog sku thog dang po lan jus or tsho ba chos rje ngag dbang 'phrin las rgya mtshos ra mo che'i gser tog bzhengs pas gzhung gis gser tog ta'i ching gi cho lo gnang/ de'i sku skye han stag lung pa blo bzang 'phrin las rnam rgyal/ de'i sprul sku mtsho sngon pa no mon han ngag dbang bstan pa'i rgyal mtshan/ de'i sprul sku mtsho sngon be si phyag rdor skyabs kyi sras ngag dbang 'jam dpal rdo rje chu bzang gong mas rab byung bsgrubs/ dbus la phebs pa lha sar gshegs/ de'i sprul sku ye shes thub bstan rgya mtsho sku na rim gyi gzhis dgon 'dzin skyong legs shing/ lo ltar sku 'bum rgyud pa dbyar gnas chos bar la phebs; according to one source founded in 1777"@en .
+}

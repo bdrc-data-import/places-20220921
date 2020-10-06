@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2836 {
+    bda:G2836  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2836 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "da/G2836.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2836 ;
+        adm:logEntry        bda:LG0B9AC6F9C492C4AF , bda:LGABFF9F294A784FBB , bda:LGC45C1E8180D9C899 , bda:LGD2BA2342F8A519CF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B9AC6F9C492C4AF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGABFF9F294A784FBB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:09:33.646Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from estate to gzhisKa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC45C1E8180D9C899
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:20:02.105Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain: \"par khang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD2BA2342F8A519CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T09:42:39.81Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2836  a            :Place ;
+        skos:altLabel       "zhol khang gzims shag ('phyong rgyas)"@bo-x-ewts ;
+        skos:prefLabel      "'phyongs rgyas zhol khang gzhis ka"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT6F9801C9D5528CD4 , bdr:NT9D38F278D9B8C4C0 ;
+        :placeContains      bdr:G2CN10929 ;
+        :placeLocatedIn     bdr:G848 ;
+        :placeType          bdr:PT0015 .
+    
+    bdr:NT6F9801C9D5528CD4
+        a                   :Note ;
+        :contentLocationStatement  "p. 208" ;
+        :noteSource         bdr:MW21611 ;
+        :noteText           "aristocratic estate located in the 'phyong rgyas valley"@en .
+    
+    bdr:NT9D38F278D9B8C4C0
+        a                   :Note ;
+        :contentLocationStatement  "p. 260" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "description\nlocated in the lower part of the 'phyong rgyas valley;\nthe western estate of the zhol khang family; important sets of thangkas when kah thog si tu visited"@en .
+}

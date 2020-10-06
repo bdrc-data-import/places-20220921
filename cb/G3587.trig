@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3587 {
+    bda:G3587  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3587 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cb/G3587.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3587 ;
+        adm:logEntry        bda:LG7917B9A16D23312B , bda:LG7DFE3E9B4DB6D6BA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7917B9A16D23312B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-08T17:03:25.471Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7DFE3E9B4DB6D6BA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G3587  a            :Place ;
+        skos:prefLabel      "dud sna shang (gro mo)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7435A9F58596FC06 ;
+        :placeGB2260-2013   "542334201" ;
+        :placeLocatedIn     bdr:G2172 ;
+        :placeType          bdr:PT0077 .
+    
+    bdr:NT7435A9F58596FC06
+        a                   :Note ;
+        :contentLocationStatement  "p. 52" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "name of a township seat in gro mo rdzong"@en .
+}

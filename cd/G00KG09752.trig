@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G00KG09752 {
+    bda:G00KG09752  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G00KG09752 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "cd/G00KG09752.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G00KG09752 ;
+        adm:logEntry        bda:LG070A81E24789C819 , bda:LG3D5FBCCC9D4FE323 , bda:LG6897F53D7E53B00D , bda:LG88D06279EE790F92 , bda:LGC4666CF5F5497202 , bda:LGDCDA6F8DAE74C2D3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG070A81E24789C819
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-15T12:07:51.287Z"^^xsd:dateTime ;
+        adm:logMessage      "edited list fo names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3D5FBCCC9D4FE323
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:43:00.025Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from country to phyiRgyal"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6897F53D7E53B00D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-12T12:57:10.826Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from phyiRgyal to country"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG88D06279EE790F92
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-15T12:01:45.623Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC4666CF5F5497202
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T11:33:05.017Z"^^xsd:dateTime ;
+        adm:logMessage      "added names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDCDA6F8DAE74C2D3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-06-11T14:52:54.723Z"^^xsd:dateTime ;
+        adm:logMessage      "created country name"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:G00KG09752  a       :Place ;
+        skos:altLabel       "'jar pan/"@bo-x-ewts , "ri pin/"@bo-x-ewts , "日本"@zh-hans , "ri ben"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "nyi hong /"@bo-x-ewts , "Japan"@en , "日本"@zh-hans ;
+        :isRoot             true ;
+        :placeType          bdr:PT0010 .
+}

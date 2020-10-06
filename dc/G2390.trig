@@ -1,0 +1,112 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2390 {
+    bda:G2390  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2390 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "dc/G2390.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2390 ;
+        adm:logEntry        bda:LG017B46F87FF5710C , bda:LG3DCF2FAF98A73E4A , bda:LG7E4BA6E511680397 , bda:LG97F912466FA04BF1 , bda:LG9CAFF1D73C1A01D6 , bda:LGBE6C97E5E24BA4EC , bda:LGD7D99C2A5D05809E , bda:LGDA7427CC49578C81 , bda:LGEA24E073F8FFF77F , bda:LGF90B2DE24CD8F29E , bda:LGIM0A2D5DA707 , bda:LGIMA37A954E21 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG017B46F87FF5710C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-30T10:45:06.473Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3DCF2FAF98A73E4A
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-25T11:42:33.992Z"^^xsd:dateTime ;
+        adm:logMessage      "edited note, added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7E4BA6E511680397
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-08-25T11:50:17.182Z"^^xsd:dateTime ;
+        adm:logMessage      "moved location G# for temporary needs"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG97F912466FA04BF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-27T16:13:09.149Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:sngarGyiRdzong to rdzong"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9CAFF1D73C1A01D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-11T09:58:00.211Z"^^xsd:dateTime ;
+        adm:logMessage      "added traditioanal location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBE6C97E5E24BA4EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T13:08:16.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & location & place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD7D99C2A5D05809E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-19T12:53:24.44Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDA7427CC49578C81
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEA24E073F8FFF77F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:county to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF90B2DE24CD8F29E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-15T09:54:59.604Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0A2D5DA707
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rdzong to sngarGyiRdzong"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMA37A954E21
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-20T22:30:59.465Z"^^xsd:dateTime ;
+        adm:logMessage      "populating gis from G9GBX..."@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G2390  a            :Place ;
+        rdfs:comment        "1976lor mtsho gnyis don gcod khru'u btsugs/ 1993lor mtsho gnyis dmigs bsal srid 'dzin khul btsugs/ 1997lor mtsho gnyis dmigs bsal khul du ming bsgyur byas/ 2012lor mtsho gnyis rdzong dngos su btsugs shing grong rdal gcig dang shang drug yod pa da bar rang sor gnas/" ;
+        skos:altLabel       "mtshe'u gnyis rdzong /"@bo-x-ewts , "mtsho gnyis don gcod khru'u/"@bo-x-ewts , "Shuanghu County"@en , "Shuanghu Special District"@en , "双湖特别区"@zh-hans , "shuanghu tebiequ"@zh-latn-pinyin-x-ndia , "shuanghu xian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mtsho gnyis rdzong /"@bo-x-ewts , "Tshonyi County"@en , "双湖县"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT65D2B9100E4EA1CE ;
+        :placeGB2260-2013   "542431000" ;
+        :placeIsNear        bdr:G4358 ;
+        :placeLocatedIn     bdr:G2141 ;
+        :placeType          bdr:PT0011 .
+    
+    bdr:NT65D2B9100E4EA1CE
+        a                   :Note ;
+        :noteText           "Currently is a county in the Nagchu Prefecture in TAR. 1993-2012, administrative unit or a Special District in the TAR."@en .
+}

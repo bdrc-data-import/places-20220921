@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1510 {
+    bda:G1510  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1510 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "62/G1510.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1510 ;
+        adm:logEntry        bda:LG6372F9F846957665 , bda:LG9412776C7A1A3345 , bda:LGB67CC4381EB0AFDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6372F9F846957665
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9412776C7A1A3345
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-02-04T11:15:14.636Z"^^xsd:dateTime ;
+        adm:logMessage      "added note with G1510"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB67CC4381EB0AFDB
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T17:44:53.622Z"^^xsd:dateTime ;
+        adm:logMessage      "english"@en ;
+        adm:logWho          bdu:U00002 .
+    
+    bdr:G1510  a            :Place ;
+        skos:altLabel       "seng rdzong /"@bo-x-ewts , "seng rdzong khul/"@bo-x-ewts ;
+        skos:prefLabel      "seng+ge rdzong /"@bo-x-ewts , "Sengge Dzong"@en ;
+        :isRoot             true ;
+        :note               bdr:NT66B3C075DD4DD492 , bdr:NT87A63EF9898D4786 ;
+        :placeType          bdr:PT0057 .
+    
+    bdr:NT66B3C075DD4DD492
+        a                   :Note ;
+        :noteText           "G4194 'di gnyis gcig yin par dwogs pa mu mthud dpyad rgyu/"@en .
+    
+    bdr:NT87A63EF9898D4786
+        a                   :Note ;
+        :contentLocationStatement  "p. 241" ;
+        :noteSource         bdr:MW20170 ;
+        :noteText           "administrative taxation region equivent to a rdzong in the 1830 settlement document"@en .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3297 {
+    bda:G3297  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3297 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "de/G3297.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3297 ;
+        adm:logEntry        bda:LG55EE3563800AA5F6 , bda:LG61025E44152CB47E , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG55EE3563800AA5F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-22T15:57:41.287Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG61025E44152CB47E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3297  a            :Place ;
+        skos:altLabel       "snye mo dbu chu dgon/"@bo-x-ewts ;
+        skos:prefLabel      "dbu chu dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB17049DAF4A92680 ;
+        :placeLocatedIn     bdr:G2129 , bdr:G3286 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTB17049DAF4A92680
+        a                   :Note ;
+        :contentLocationStatement  "p. 325" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "restored drigung kargyu mixed monastery and nunnery with 5 monks and 3 nuns after restoration"@en .
+}

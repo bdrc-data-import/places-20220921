@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR795 {
+    bda:G1KR795  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR795 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "93/G1KR795.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR795 ;
+        adm:logEntry        bda:LG0A7D0703C35057E8 , bda:LGD826B73A63638CCB , bda:LGE65FCEA2F12C661D , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "533422201:6" ;
+        adm:place_id_lex    "533422201:6" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A7D0703C35057E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-04-02T12:50:29.643Z"^^xsd:dateTime ;
+        adm:logMessage      "added Tibetan names & info from G1524"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD826B73A63638CCB
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-04-02T13:08:42.746Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup old info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE65FCEA2F12C661D
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-04-02T13:04:40.989Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV0B376797B6CF00F3
+        a                   :PlaceFounded ;
+        :onYear             "1514"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:EV5E20CDACD4676B68
+        a                   :PlaceConverted ;
+        :onYear             "1676"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1KR795  a          :Place ;
+        skos:altLabel       "sngo phu dga' ldan yangs pa can/"@bo-x-ewts , "红坡噶丹羊八井林"@zh-hans , "红坡噶丹羊八景林"@zh-hans , "Hongpogadanyangbajing lin"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sngo phu dgon/"@bo-x-ewts , "Hongphu Monastery"@en , "红坡寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7907F1B78E5B146B ;
+        :isRoot             true ;
+        :note               bdr:NT79F4CFE082D4B97C ;
+        :placeEvent         bdr:EV0B376797B6CF00F3 , bdr:EV5E20CDACD4676B68 ;
+        :placeGonpaPerEcumen  "1.44" ;
+        :placeLat           "28.28333" ;
+        :placeLocatedIn     bdr:G1522 ;
+        :placeLong          "98.90000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID7907F1B78E5B146B
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR795" .
+    
+    bdr:NT79F4CFE082D4B97C
+        a                   :Note ;
+        :contentLocationStatement  "20" ;
+        :noteSource         bdr:MW20006 ;
+        :noteText           "dge lugs pa (originally bka' brgyud pa)\nfounded in 1574 under the patronage of the ruler of 'jang, bsod nams rab brtan, by two bka' brgyud pa lamas.\ngiven name hor dgon pa 'phel rgyas gling.\n1674 converted to a dge lugs pa establishment and given the name dga' ldan yangs pa can.\nbefore 1959 had more than 120 monk and 1 sprul sku.\n1989. restored. now has one sprul sku and more than 35 monks."@en .
+}

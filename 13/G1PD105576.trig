@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1PD105576 {
+    bda:G1PD105576  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1PD105576 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "13/G1PD105576.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1PD105576 ;
+        adm:logEntry        bda:LG4CF5D0C92B24AEE9 , bda:LGCC72CDA8DA8346DC , bda:LGF5644DC17C92F36E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G1PD105573 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG4CF5D0C92B24AEE9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-06-21T11:51:13.578Z"^^xsd:dateTime ;
+        adm:logMessage      "gsar du bcug"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCC72CDA8DA8346DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-01T09:21:55.241Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF5644DC17C92F36E
+        a                   adm:WithdrawData ;
+        adm:logDate         "2010-10-05T10:47:48.395Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1PD105573"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1PD105576  a       :Place ;
+        skos:prefLabel      "nag bza'"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT69A1FAB5B8507227 ;
+        :placeLocatedIn     bdr:G1518 .
+    
+    bdr:NT69A1FAB5B8507227
+        a                   :Note ;
+        :contentLocationStatement  "p. 16" ;
+        :noteSource         bdr:MW25113 .
+}

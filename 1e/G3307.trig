@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3307 {
+    bda:G3307  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3307 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1e/G3307.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3307 ;
+        adm:logEntry        bda:LG3B602C179F01996D , bda:LG525748A3316E23FE , bda:LGF8C25D7BD3135B68 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3B602C179F01996D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG525748A3316E23FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-25T09:52:38.082Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF8C25D7BD3135B68
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-19T16:50:49.388Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVBCA062273F21C3E2
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G3307  a            :Place ;
+        skos:prefLabel      "smin grub mthong smon gling dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTFE69952097399739 ;
+        :placeEvent         bdr:EVBCA062273F21C3E2 ;
+        :placeLocatedIn     bdr:G2129 , bdr:G3292 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTFE69952097399739
+        a                   :Note ;
+        :contentLocationStatement  "p. 323" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "restored bon monastery with 14 practitioners after restoration"@en .
+}

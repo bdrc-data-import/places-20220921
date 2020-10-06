@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4668 {
+    bda:G4668  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4668 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "64/G4668.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4668 ;
+        adm:logEntry        bda:LGE4677B4765AC4355 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGE4677B4765AC4355
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4668  a            :Place ;
+        skos:prefLabel      "pha nang so dgon pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTECF2FB4D19777168 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTECF2FB4D19777168
+        a                   :Note ;
+        :contentLocationStatement  "pp. 400-405" ;
+        :noteSource         bdr:MW29401 ;
+        :noteText           "monastery founded by the 12th lab skyabs mgon"@en .
+}

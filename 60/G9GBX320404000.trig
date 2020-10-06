@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX320404000 {
+    bda:G9GBX320404000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX320404000 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "60/G9GBX320404000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX320404000 ;
+        adm:logEntry        bda:LGE3BD3D1373536F47 , bda:LGIME5430EC046 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGE3BD3D1373536F47
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME5430EC046
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-27T19:58:07.021Z"^^xsd:dateTime ;
+        adm:logMessage      "updating geometry for modern county"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX320404000
+        a                   :Place ;
+        skos:altLabel       "zhong lou qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Clock Tower District"@en , "钟楼区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX320404001 , bdr:G9GBX320404002 , bdr:G9GBX320404003 , bdr:G9GBX320404004 , bdr:G9GBX320404005 , bdr:G9GBX320404006 , bdr:G9GBX320404007 ;
+        :placeGB2260-2013   "320404000" ;
+        :placeLat           "31.7823108" ;
+        :placeLocatedIn     bdr:G9GBX320400000 ;
+        :placeLong          "119.9482799" ;
+        :placeRegionPoly    "{\"type\":\"Feature\",\"geometry\": { \"type\": \"Polygon\", \"coordinates\": [ [ [ 119.957153319901749, 31.771663665822874 ], [ 119.947097777493781, 31.778278350890531 ], [ 119.93994903611204, 31.781717300065615 ], [ 119.943389893293016, 31.786479949825221 ], [ 119.941009521003053, 31.788331985320188 ], [ 119.944526672473359, 31.792156218971446 ], [ 119.948677062684666, 31.784627913633784 ], [ 119.957153319901749, 31.771663665822874 ] ] ] } }" ;
+        :placeType          bdr:PT0011 ;
+        :placeWB2000        "228647" ;
+        :placeWB2010        "475551" ;
+        :placeWBArea        "1.073395" .
+}

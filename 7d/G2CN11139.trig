@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11139 {
+    bda:G2CN11139  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11139 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7d/G2CN11139.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11139 ;
+        adm:logEntry        bda:LG37A5F8D30A5FE1A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG37A5F8D30A5FE1A4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-10-17T12:03:43.582Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV50FF66AC9D85D669
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G2CN11139  a        :Place ;
+        skos:altLabel       "mthong grol phun tshogs gling /"@bo-x-ewts ;
+        skos:prefLabel      "yang dgon mthong grol gling /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3171B8736FA9EC22 ;
+        :placeEvent         bdr:EV50FF66AC9D85D669 ;
+        :placeLat           "29.091498" ;
+        :placeLocatedIn     bdr:G4450 ;
+        :placeLong          "83.413814" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT3171B8736FA9EC22
+        a                   :Note ;
+        :noteText           "Founded by Bkra shis bstan ‘dzin, a scholar from Sman ri in Dolanji.\n\n16 nuns, 22 ngakpas\n\nlocated in Chharka (tshar ka), Nepal"@en .
+}

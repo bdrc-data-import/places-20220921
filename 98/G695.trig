@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G695 {
+    bda:G695  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G695 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "98/G695.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G695 ;
+        adm:logEntry        bda:LG076631923BCD32D6 , bda:LG5DFA5CE1A6042F6E , bda:LG7ADC83542C095764 , bda:LG9AA6647EC7625004 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG076631923BCD32D6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5DFA5CE1A6042F6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-04T09:32:25.85Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language setings & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7ADC83542C095764
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9AA6647EC7625004
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T11:37:51.765Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G695  a             :Place ;
+        skos:prefLabel      "rwa ke bar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTECBF3A7C10E9D577 ;
+        :placeType          bdr:PT0078 .
+    
+    bdr:NTECBF3A7C10E9D577
+        a                   :Note ;
+        :contentLocationStatement  "p. 774-775" ;
+        :noteSource         bdr:MW19801 ;
+        :noteText           "སྟོང་འཁོར་ཐུབ་བསྟན་འཇིགས་མེད་རྒྱ་མཚོའི་འཁྲུངས་གནས་ཏེ། མདོ་སྨད་དུ་ཡིན་ཚོད་ལས་ཡུལ་ལུང་བྱེ་བྲག་གང་དུ་གཏོགས་ཚུལ་ངེས་གཏན་མ་ཤེས་པ་མུ་མཐུད་རྩད་ཞིབ་བྱ་རྒྱུ།"@bo .
+}

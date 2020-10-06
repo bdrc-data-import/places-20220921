@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1036 {
+    bda:G1036  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1036 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "58/G1036.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1036 ;
+        adm:logEntry        bda:LG25318C03BC9BA1DE , bda:LG4630569C48D9A0AE , bda:LG4AB3BB9D885A71FF , bda:LG5E42A2877200C571 , bda:LG5F88DE80143F2DF3 , bda:LGBECFB632C16CF409 , bda:LGEBF5F909EF8CD3BF , bda:LGFD40EF43DC8DB997 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG25318C03BC9BA1DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-04T10:06:03.562Z"^^xsd:dateTime ;
+        adm:logMessage      "reused from withdrawn & added new name and info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4630569C48D9A0AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-07T10:35:53.1Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4AB3BB9D885A71FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-27T15:37:02.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & contains \"snubs yul rong\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5E42A2877200C571
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5F88DE80143F2DF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-04-02T11:51:01.105Z"^^xsd:dateTime ;
+        adm:logMessage      "takeout \"spe'u yul\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBECFB632C16CF409
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-28T12:01:46.96Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEBF5F909EF8CD3BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-20T14:13:46.541Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFD40EF43DC8DB997
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-03T14:33:45.989Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1036  a            :Place ;
+        skos:prefLabel      "gtsang rong /"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeContains      bdr:G1095 , bdr:G1334 , bdr:G2CN11074 , bdr:G3497 , bdr:G3506 , bdr:G555 ;
+        :placeLocatedIn     bdr:G3175 ;
+        :placeType          bdr:PT0005 .
+}

@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2LS582 {
+    bda:G2LS582  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2LS582 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c2/G2LS582.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2LS582 ;
+        adm:logEntry        bda:LG657506F0B6C00F80 , bda:LGIM7555E0C976 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG657506F0B6C00F80
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-29T15:55:40.972Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM7555E0C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:29:31.108Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from temple to lhaKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2LS582  a          :Place ;
+        skos:prefLabel      "ri pa'i ma Ni lha khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTF9099E78BCB93C1B ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeType          bdr:PT0074 .
+    
+    bdr:NTF9099E78BCB93C1B
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 83" ;
+        :noteSource         bdr:MW23847 .
+}

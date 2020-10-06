@@ -1,0 +1,95 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3688 {
+    bda:G3688  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3688 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "6e/G3688.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3688 ;
+        adm:logEntry        bda:LG6186C75C19820B55 , bda:LGAA059544A8451ED3 , bda:LGD0679661EACB3DE0 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542329209:542329108" ;
+        adm:place_id_lex    "542329209:542329108" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6186C75C19820B55
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAA059544A8451ED3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-14T09:15:35.576Z"^^xsd:dateTime ;
+        adm:logMessage      "normalizd names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD0679661EACB3DE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-18T12:12:25.134Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, note & sources"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV141B117B32618A17
+        a                   :PlaceFounded ;
+        :onYear             "1700"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3688  a            :Place ;
+        skos:altLabel       "pa snam dpal ri dgon/"@bo-x-ewts , "smin gling dpal ri dgon/"@bo-x-ewts , "白朗白日寺"@zh-hans , "bailang bairi si"@zh-latn-pinyin-x-ndia , "bairi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpal ri dgon/"@bo-x-ewts , "Pelri Gon"@en-x-mixed , "白日寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA2B85B6399DEA7EA ;
+        :isRoot             true ;
+        :note               bdr:NT53D835304E92A544 , bdr:NT75B1C10BD7C3BF20 , bdr:NTBD7C3B25B88912C2 ;
+        :placeEvent         bdr:EV141B117B32618A17 ;
+        :placeGonpaPerEcumen  "20.62" ;
+        :placeLat           "29.18333" ;
+        :placeLocatedIn     bdr:G2174 ;
+        :placeLong          "89.25000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDA2B85B6399DEA7EA
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3688" .
+    
+    bdr:NT53D835304E92A544
+        a                   :Note ;
+        :noteText           "only listed in Situ's Guide, 1700 date only so that this gonpa will at least appear on the Ganden Podrang period atlas plate."@en .
+    
+    bdr:NT75B1C10BD7C3BF20
+        a                   :Note ;
+        :contentLocationStatement  "p. 373" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "\"smin gling dpal ri dgon\" zhes pa zhig pa snam cog ro'i pha ri'i phyogs su gnas pa gsal/"@bo-x-ewts .
+    
+    bdr:NTBD7C3B25B88912C2
+        a                   :Note ;
+        :contentLocationStatement  "p. 167" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "a subsidiary monastery of kaH thog in 'the south\" according to the list of kaH thog si tu chos kyi rgya mtsho; is this identical with dpal ri chos sde in 'phyongs rgyas?"@en .
+}

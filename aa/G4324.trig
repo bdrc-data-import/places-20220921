@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4324 {
+    bda:G4324  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4324 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "aa/G4324.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4324 ;
+        adm:logEntry        bda:LG86F3D0F65F477308 , bda:LG95BFCFCF3DEB64EC , bda:LGFFBCB5A47689B27A , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG86F3D0F65F477308
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-21T16:38:46.565Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & edited list of names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG95BFCFCF3DEB64EC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGFFBCB5A47689B27A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-26T14:34:26.318Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4324  a            :Place ;
+        skos:altLabel       "rgyal rong so mang /"@bo-x-ewts , "rgyal rong so mang zings dkar bar ma/"@bo-x-ewts ;
+        skos:prefLabel      "so mang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8D5DC5F8C39561B1 ;
+        :placeLocatedIn     bdr:G1272 ;
+        :placeType          bdr:PT0027 .
+    
+    bdr:NT8D5DC5F8C39561B1
+        a                   :Note ;
+        :noteText           "toponymn in the territory of so mang rgyal po of rgyal rong"@en .
+}

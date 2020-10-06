@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2983 {
+    bda:G2983  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2983 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f0/G2983.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2983 ;
+        adm:logEntry        bda:LG561A69862CAB9CE1 , bda:LG639DE23C7CDE4F89 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG561A69862CAB9CE1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-14T16:23:21.399Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG639DE23C7CDE4F89
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2983  a            :Place ;
+        skos:prefLabel      "yag mo tsho ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2C75194D728DAE84 ;
+        :placeLocatedIn     bdr:G2315 , bdr:G2974 ;
+        :placeType          bdr:PT0068 .
+    
+    bdr:NT2C75194D728DAE84
+        a                   :Note ;
+        :contentLocationStatement  "p. 226" ;
+        :noteSource         bdr:MW20197 ;
+        :noteText           "one of 8 tsho ba in khyon rgyas zhang, rkang tsha county, mtsho byang prefecture\nthe list, however, lists only 7 tsho ba; obviously one has been omitted"@en .
+}

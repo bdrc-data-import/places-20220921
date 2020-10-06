@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3953 {
+    bda:G3953  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3953 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "6c/G3953.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3953 ;
+        adm:logEntry        bda:LG9C2E72436694290F , bda:LG9DC32E36EEA39A77 , bda:LGA4753F04176CFB5D , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513332219:385" ;
+        adm:place_id_lex    "513332219:385" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9C2E72436694290F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-15T11:24:31.184Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title brackets"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9DC32E36EEA39A77
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-16T11:45:53.593Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA4753F04176CFB5D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2CB5B7918B845997
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P8326 ;
+        :onYear             "1182"^^xsd:gYear .
+    
+    bdr:EV5D02D0E99BB182AD
+        a                   :PlaceFounded ;
+        :onYear             "1182"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G3953  a            :Place ;
+        skos:altLabel       "e cha si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mgo tshwa dgon/"@bo-x-ewts , "俄查寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD8623694EF1A2319 ;
+        :isRoot             true ;
+        :note               bdr:NT3BEE4198015C3759 ;
+        :placeEvent         bdr:EV2CB5B7918B845997 , bdr:EV5D02D0E99BB182AD ;
+        :placeGonpaPerEcumen  "3.24" ;
+        :placeLat           "32.58333" ;
+        :placeLocatedIn     bdr:G2301 ;
+        :placeLong          "98.88333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD8623694EF1A2319
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3953" .
+    
+    bdr:NT3BEE4198015C3759
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 235-237" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery in ser shul rdzong belonging to the byang gter\nvery ancient first founded by mgo tsha kun dga' byams pa rgyal mtshan in about 1182\nthe monastery is relatively large and enjoys the patronage of 565 families of the wa shul tribe"@en .
+}

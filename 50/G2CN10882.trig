@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10882 {
+    bda:G2CN10882  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10882 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "50/G2CN10882.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10882 ;
+        adm:logEntry        bda:LG04602D4C7CB470A4 , bda:LG1E31049E4144ADAB , bda:LG1EA023ADC702F5FF , bda:LG69876ED57423CF61 , bda:LG6A1CB2DF9996FED0 , bda:LG818ED61B566966F7 , bda:LGA0AA82849DD49E37 , bda:LGC3FE5FDE14AB462D , bda:LGCB3EE461625C33DA , bda:LGD8EB02F0E4C4AAE9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04602D4C7CB470A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-03T16:56:27.041Z"^^xsd:dateTime ;
+        adm:logMessage      "added date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG1E31049E4144ADAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T15:05:09.866Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains in info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG1EA023ADC702F5FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-04T09:46:45.902Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG69876ED57423CF61
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-02T11:34:36.491Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6A1CB2DF9996FED0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2134"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG818ED61B566966F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T14:48:04.861Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains in info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGA0AA82849DD49E37
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-25T14:39:13.387Z"^^xsd:dateTime ;
+        adm:logMessage      "delete G2134"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC3FE5FDE14AB462D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T11:57:29.284Z"^^xsd:dateTime ;
+        adm:logMessage      "added as par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGCB3EE461625C33DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-22T16:04:13.083Z"^^xsd:dateTime ;
+        adm:logMessage      "added regions"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGD8EB02F0E4C4AAE9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-17T10:43:11.33Z"^^xsd:dateTime ;
+        adm:logMessage      "added founded date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bdr:EV8F5F8ED6126C0D0F
+        a                   :PlaceFounded ;
+        :notAfter           "1699"^^xsd:gYear ;
+        :notBefore          "1600"^^xsd:gYear .
+    
+    bdr:G2CN10882  a        :Place ;
+        skos:prefLabel      "lho brag lha lung dgon gyi par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTEEA2271B7300F082 ;
+        :placeEvent         bdr:EV8F5F8ED6126C0D0F ;
+        :placeLocatedIn     bdr:G2134 , bdr:G389 ;
+        :placeType          bdr:PT0059 .
+    
+    bdr:NTEEA2271B7300F082
+        a                   :Note ;
+        :contentLocationStatement  "p. 310" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "པར་ཁང་ནང་། དུད་སོལ་མ། ལེའུ་བདུན་མ། དྲི་མེད་བཤགས་རྒྱུད། རིག་འཛིན་ཐུགས་ཐིག། འཁོར་བ་དབྱིངས་སྒྲོལ། རྒྱ་ཅན་གྲོ་ལོད། ལོ་གྱོན། སྒྲོལ་ཆོག། ལམ་ཟབ་ལེའུ་བདུན། ཟུང་འཇུག་སྙེ་མ། ཀུན་བཟང་དགོངས་འདུས་སྙིང་པོ་རབ་གསལ་ཁྲིད། ཀློང་ཆེན་རྣམ་ཐར་སོགས། ཐེག་མཆོག་མཛོད། དཔའ་བོ་གཙུག་ལག་སྤྱོད་འཇུག་འགྲེལ་པ། ཆོས་འབྱུང་། བཀའ་འབུམ་འཐོར་བུ། བསྟོད་ཚོགས། མགུར། རྣམ་ཐར་པད་གླིང་ཚེ་སྒྲུབ། ཐུགས་ཆེན། ཀུན་བཟང་དགོངས་འདུས། བཀའ་བརྒྱད། ནོར་རྒྱབ་སྒྲུབ་ཁོག་བཅས། གུར་དྲག་གཤིན་རྗེ་དྲེགས་འཇོམས། ཆོས་སྤྱོད། བཀའ་ཐང་ཤེལ་བྲག་མ་བཅས་བཞུགས༎"@bo .
+}

@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3172 {
+    bda:G3172  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3172 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "56/G3172.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3172 ;
+        adm:logEntry        bda:LG34005DB6454F61C6 , bda:LG389D90BAAE576C2A , bda:LG5FC0498F2ED626D4 , bda:LG6A86EEE3A77D751C , bda:LG8086ADB6F9AD1F1F , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG34005DB6454F61C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-09-19T16:47:51.636Z"^^xsd:dateTime ;
+        adm:logMessage      "changed location to zhangzhung ru"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG389D90BAAE576C2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T10:46:16.676Z"^^xsd:dateTime ;
+        adm:logMessage      "added 5 stongSde"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5FC0498F2ED626D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-02T13:56:35.788Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & time"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6A86EEE3A77D751C
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-19T16:10:37.353Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8086ADB6F9AD1F1F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVF54A5EEAAB1F87FE
+        a                   :PlaceFounded ;
+        :notAfter           "0699"^^xsd:gYear ;
+        :notBefore          "0600"^^xsd:gYear .
+    
+    bdr:G3172  a            :Place ;
+        skos:altLabel       "khri te smad/"@bo-x-ewts , "zhang zhung smad/"@bo-x-ewts ;
+        skos:prefLabel      "khri sde smad/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT40E3C832ABF7F7B8 , bdr:NT832F402BBF097D82 ;
+        :placeContains      bdr:G3CN86 , bdr:G3CN87 , bdr:G3CN88 , bdr:G3CN89 , bdr:G3CN90 ;
+        :placeEvent         bdr:EVF54A5EEAAB1F87FE ;
+        :placeLocatedIn     bdr:G3CN403 ;
+        :placeType          bdr:PT0032 .
+    
+    bdr:NT40E3C832ABF7F7B8
+        a                   :Note ;
+        :contentLocationStatement  "p. 259" ;
+        :noteSource         bdr:MW21784 ;
+        :noteText           "ཁྲི་སྡེ་སྟོད་སྨད་གཉིས་ནི་ཞང་ཞུང་གི་ས་ཁོངས་སྟོད་སྨད་གཉིས་ཡིན་ཏེ། ཁྲི་སྡེ་སྟོད་ནི་བོད་དང་གྲུ་གུའི་མཚམས་ན་ཡོད་ཅིང་། ཁྲི་སྡེ་སྨད་ནི་བོད་དང་སུམ་པའི་མཚམས་ན་ཡོད་ཅིང་། དེ་གཉིས་ལ་ཁྱོན་སྟོང་སྡེ་བཅུ་ཡོད་པར་གསལ་བ་ལས། ཞིབ་ཆའི་ས་མཚམས་གང་ཡིན་རྒྱུ་ཆ་རྙེད་རིམ་བཞིན་ཁ་སྣོན་བྱ་རྒྱུ།"@bo .
+    
+    bdr:NT832F402BBF097D82
+        a                   :Note ;
+        :contentLocationStatement  "f. 2v" ;
+        :noteSource         bdr:MW6004 ;
+        :noteText           "one of the third three of the three part groupings of mnga' ris skor gsum, i. e. zhang zhung, khri te stod, khri te smad"@en .
+}

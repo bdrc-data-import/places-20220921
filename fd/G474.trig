@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G474 {
+    bda:G474  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G474 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "fd/G474.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G474 ;
+        adm:logEntry        bda:LG11834D0CD92A8753 , bda:LG3775EBB6B627C3F2 , bda:LG7DED6656363CE13B , bda:LGC051DDFCA225DD68 , bda:LGF71D204FD6A4453D , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632122222:35" ;
+        adm:place_id_lex    "632122222:126" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG11834D0CD92A8753
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T12:28:31.32Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG3775EBB6B627C3F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-24T16:44:03.071Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7DED6656363CE13B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-02-16T15:45:15.577Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGC051DDFCA225DD68
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF71D204FD6A4453D
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-24T16:38:27.195Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV0EB65C6B70FB6E46
+        a                   :PlaceFounded ;
+        :onYear             "1619"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVC36C87E7C271CFFA
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P165 ;
+        :onYear             "1619"^^xsd:gYear .
+    
+    bdr:G474  a             :Place ;
+        skos:altLabel       "thang ring dgon dga' ldan bshad sgrub gling /"@bo-x-ewts , "thang ring dgon pa/"@bo-x-ewts , "塘尔恒寺"@zh-hans , "松山寺"@zh-hans , "汤尔源寺"@zh-hans , "滩儿寺"@zh-hans , "隆合寺"@zh-hans , "隆和寺"@zh-hans , "龙合寺"@zh-hans , "longhe si"@zh-latn-pinyin-x-ndia , "long he si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "thang ring dgon pa/"@bo-x-ewts , "龙合寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF540D1D3A1EB9D1D ;
+        :isRoot             true ;
+        :note               bdr:NT028995744ED3C023 , bdr:NT07F832673B036004 , bdr:NT93710B4D5410526F ;
+        :placeEvent         bdr:EV0EB65C6B70FB6E46 , bdr:EVC36C87E7C271CFFA ;
+        :placeGonpaPerEcumen  "25.14" ;
+        :placeLat           "36.20132" ;
+        :placeLocatedIn     bdr:G1PD95976 ;
+        :placeLong          "102.57462" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF540D1D3A1EB9D1D
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G474" .
+    
+    bdr:NT028995744ED3C023
+        a                   :Note ;
+        :contentLocationStatement  "p. 24" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "དགོན་འདི་1571ལོར་བཏབ།"@en .
+    
+    bdr:NT07F832673B036004
+        a                   :Note ;
+        :contentLocationStatement  "p. 88" ;
+        :noteSource         bdr:MW20115 ;
+        :noteText           "monastery founded by dga' ldan khri 37 thang ring pa dge 'dun rin chen rgyal mtshan"@en .
+    
+    bdr:NT93710B4D5410526F
+        a                   :Note ;
+        :noteText           "dge lugs monastery in a mdo"@en .
+}

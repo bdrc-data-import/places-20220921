@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G848 {
+    bda:G848  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G848 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "4e/G848.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G848 ;
+        adm:logEntry        bda:LG02C1E2449FB9B4BB , bda:LG2090C8AC69256101 , bda:LG687962EBB3158B47 , bda:LG8211336D9E1E0CDF , bda:LG9ED676ABA8847050 , bda:LGC76009BBC795CD9B , bda:LGFF5921E9A5FE425E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02C1E2449FB9B4BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-15T15:51:29.559Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2090C8AC69256101
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG687962EBB3158B47
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-20T10:24:03.398Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8211336D9E1E0CDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-21T11:44:53.73Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9ED676ABA8847050
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-20T10:28:34.95Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G846 (dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC76009BBC795CD9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-12T15:04:44.279Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rgyalKhab to phyiRgyal"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGFF5921E9A5FE425E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:22:12.981Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from principality to rgyalKhab"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G848  a             :Place ;
+        skos:altLabel       "yar klungs 'phyong rgyas/"@bo-x-ewts , "yar lung 'phyong rgyas/"@bo-x-ewts ;
+        skos:prefLabel      "'phyong rgyas/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT1CF320550FB802BF ;
+        :placeContains      bdr:G2836 , bdr:G399 , bdr:G4657 ;
+        :placeLocatedIn     bdr:G1145 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT1CF320550FB802BF
+        a                   :Note ;
+        :contentLocationStatement  "p. 2324" ;
+        :noteSource         bdr:MW26372 ;
+        :noteText           "1570. yar rgyab pa dang sku rab pa gnyis bsdebs nas 'phyog rgyas su dmag drangs"@en .
+}

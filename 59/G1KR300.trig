@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR300 {
+    bda:G1KR300  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR300 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "59/G1KR300.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR300 ;
+        adm:logEntry        bda:LG04B522E33599BD73 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513323210:5" ;
+        adm:place_id_lex    "513323210:5" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04B522E33599BD73
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-08T10:19:36.115Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVB67DCD9EC361F2D0
+        a                   :PlaceFounded ;
+        :onYear             "1872"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G1KR300  a          :Place ;
+        skos:altLabel       "rdza 'go dgon_[?]"@bo-x-ewts , "sha la ke si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sha 'go dgon/"@bo-x-ewts , "沙拉科寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAB0C7B03D6A04AE1 ;
+        :isRoot             true ;
+        :note               bdr:NT095FE04668005148 ;
+        :placeEvent         bdr:EVB67DCD9EC361F2D0 ;
+        :placeGonpaPerEcumen  "40.29" ;
+        :placeLat           "30.90000" ;
+        :placeLocatedIn     bdr:G2310 ;
+        :placeLong          "101.93333" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDAB0C7B03D6A04AE1
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR300" .
+    
+    bdr:NT095FE04668005148
+        a                   :Note ;
+        :noteText           "missing original name in tibetan & added name from pinyin to tibetan"@en .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2996 {
+    bda:G2996  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2996 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "fd/G2996.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2996 ;
+        adm:logEntry        bda:LG42EA44142E7D1153 , bda:LG54A0DE9FF36168D4 , bda:LG702AEEFFB5A63A4B , bda:LG98273FA2E79E8714 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG42EA44142E7D1153
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-14T16:50:17.895Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG54A0DE9FF36168D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-08T15:27:09.764Z"^^xsd:dateTime ;
+        adm:logMessage      "added \" tsho ba\" in name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG702AEEFFB5A63A4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:31:18.489Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from tos to tshoBa"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG98273FA2E79E8714
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2996  a            :Place ;
+        skos:prefLabel      "yung hphun tsho ba/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT3094B4366658AA07 ;
+        :placeLocatedIn     bdr:G2315 , bdr:G2976 ;
+        :placeType          bdr:PT0068 .
+    
+    bdr:NT3094B4366658AA07
+        a                   :Note ;
+        :contentLocationStatement  "p. 226" ;
+        :noteSource         bdr:MW20197 ;
+        :noteText           "one of six tsho ba listed in the source as under the control of 'om chu zhang, rkang tsha county, mtsho byang prefecture\nthis source indicates that there are 4 tsho ba in this zhang and two han settlements have the administrative status of tsho ba\nthis is the first of the han settlements enumerated"@en .
+}

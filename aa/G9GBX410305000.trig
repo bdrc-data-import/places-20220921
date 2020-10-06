@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX410305000 {
+    bda:G9GBX410305000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX410305000 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "aa/G9GBX410305000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX410305000 ;
+        adm:logEntry        bda:LGC8179B6931512484 , bda:LGIME5430EC046 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGC8179B6931512484
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME5430EC046
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-27T19:58:07.021Z"^^xsd:dateTime ;
+        adm:logMessage      "updating geometry for modern county"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX410305000
+        a                   :Place ;
+        skos:altLabel       "jian xi qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Jianxi District"@en , "涧西区"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX410305001 , bdr:G9GBX410305002 , bdr:G9GBX410305003 , bdr:G9GBX410305004 , bdr:G9GBX410305005 , bdr:G9GBX410305006 , bdr:G9GBX410305007 , bdr:G9GBX410305008 , bdr:G9GBX410305009 , bdr:G9GBX410305010 , bdr:G9GBX410305011 , bdr:G9GBX410305012 , bdr:G9GBX410305060 , bdr:G9GBX410305062 ;
+        :placeGB2260-2013   "410305000" ;
+        :placeLat           "34.6578161" ;
+        :placeLocatedIn     bdr:G9GBX410300000 ;
+        :placeLong          "112.3958659" ;
+        :placeRegionPoly    "{\"type\":\"Feature\",\"geometry\": { \"type\": \"Polygon\", \"coordinates\": [ [ [ 112.310279845848626, 34.680809021249857 ], [ 112.3333511348158, 34.679389954340039 ], [ 112.350944518807225, 34.675392151345932 ], [ 112.359855652117943, 34.674285888910383 ], [ 112.363914490114013, 34.671966552762221 ], [ 112.366233826359135, 34.671386718618109 ], [ 112.373184204424362, 34.667331696286041 ], [ 112.38574218702405, 34.660594940275871 ], [ 112.402740479463148, 34.659797667940069 ], [ 112.407958983559524, 34.65863800011023 ], [ 112.416763305944727, 34.643917084057691 ], [ 112.41374969518354, 34.636035918984334 ], [ 112.398681640446895, 34.622707366714764 ], [ 112.375503539443969, 34.619808197118836 ], [ 112.359275817559592, 34.620388030823392 ], [ 112.348846436112623, 34.620967865386213 ], [ 112.331459045194308, 34.62096786460932 ], [ 112.315231323401093, 34.621547698637478 ], [ 112.288574218583832, 34.623867035013149 ], [ 112.261940001938783, 34.627117156593172 ], [ 112.270812988342314, 34.629455565608041 ], [ 112.280227661120705, 34.633625030652496 ], [ 112.287712096834326, 34.635726928927234 ], [ 112.294067383432164, 34.640110015894265 ], [ 112.296531676846826, 34.644931793287491 ], [ 112.295623779290437, 34.65545654273518 ], [ 112.300247191864329, 34.667617797718172 ], [ 112.30603027286827, 34.675430298193703 ], [ 112.310279845848626, 34.680809021249857 ] ] ] } }" ;
+        :placeType          bdr:PT0011 ;
+        :placeWB2000        "388935" ;
+        :placeWB2010        "535606" ;
+        :placeWBArea        "60.563908" .
+}

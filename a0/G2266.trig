@@ -1,0 +1,100 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2266 {
+    bda:G2266  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2266 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "a0/G2266.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2266 ;
+        adm:logEntry        bda:LG44FEDFE7B8192E30 , bda:LG54CF1AC02D0D82AA , bda:LG7980C1885CC2DDE0 , bda:LGBAB7869C6CD913E0 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542524100:72" ;
+        adm:place_id_lex    "542524100:72" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG44FEDFE7B8192E30
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T12:39:16.374Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG54CF1AC02D0D82AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-19T13:53:38.318Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG7980C1885CC2DDE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T15:37:43.438Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBAB7869C6CD913E0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV687AAB216A3F708F
+        a                   :PlaceConverted ;
+        :onYear             "1680"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVCFD3CC4A7184FBA6
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2266  a            :Place ;
+        skos:altLabel       "bkra shis chos gling dgon/"@bo-x-ewts , "ru thog bkra shis chos gling dgon/"@bo-x-ewts , "Lhundrub Chuding"@en-x-mixed , "伦珠曲典寺"@zh-hans , "lunzhu qudan si"@zh-latn-pinyin-x-ndia , "lunzhu quding si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lhun grub chos sdings dgon/"@bo-x-ewts , "Rutok Tashi Choling"@en , "伦珠曲丁寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCD0C5563EEE3F8B7 ;
+        :isRoot             true ;
+        :note               bdr:NT8F54D399747C54B9 , bdr:NTF3749F1B4F911DA1 ;
+        :placeEvent         bdr:EV687AAB216A3F708F , bdr:EVCFD3CC4A7184FBA6 ;
+        :placeGonpaPerEcumen  "0.26" ;
+        :placeLat           "33.41000" ;
+        :placeLocatedIn     bdr:G2156 , bdr:G2291 ;
+        :placeLong          "79.64000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDCD0C5563EEE3F8B7
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2266" .
+    
+    bdr:NT8F54D399747C54B9
+        a                   :Note ;
+        :contentLocationStatement  "p. 10" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "dge lugs pa monastery in ru thog chus khongs, ru thog rdzong, mnga' ris prefecture\nconnected with 'brug pa kun legs and the dge lugs pa bla ma yon tan rgya mtsho, both of whom manifested signes of yogic achievement here\n\"da yod bla grwa lnga/ slad grwa tshad bcu gsum mo\""@en .
+    
+    bdr:NTF3749F1B4F911DA1
+        a                   :Note ;
+        :contentLocationStatement  "p. 118" ;
+        :noteSource         bdr:MW20279 ;
+        :noteText           "one of the ten affiliated monasteries belonging to se ra byes college and to which religious teachers and administrators were sent"@en .
+}

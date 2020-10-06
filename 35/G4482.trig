@@ -1,0 +1,107 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4482 {
+    bda:G4482  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4482 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "35/G4482.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4482 ;
+        adm:logEntry        bda:LG044190D9720D7A5E , bda:LG133C63BB0774C32E , bda:LG1F2EDB9BFFF5D702 , bda:LG430D1589188B0873 , bda:LG5B1B7C6A801BB110 , bda:LGD8880605403B0357 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632126208:136" ;
+        adm:place_id_lex    "632126208:279" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG044190D9720D7A5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-09T10:39:41.785Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG133C63BB0774C32E
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-01-13T15:48:31.778Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG1F2EDB9BFFF5D702
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-09T10:37:47.35Z"^^xsd:dateTime ;
+        adm:logMessage      "རྒྱ་ཡིག་གི་མིང་སོགས་ཁ་སྣོན་བཏབ།"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG430D1589188B0873
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5B1B7C6A801BB110
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-09T11:50:38.21Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD8880605403B0357
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-12T10:32:41.539Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVDAF8276D3776385E
+        a                   :PlaceFounded ;
+        :onYear             "1777"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4482  a            :Place ;
+        skos:altLabel       "chos lung dge 'phel gling /"@bo-x-ewts , "mang 'dus ri khrod chos lung dge 'phel gling /"@bo-x-ewts , "馒头寺"@zh-hans , "mantou si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mang 'dus ri khrod/"@bo-x-ewts , "曼头寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0417830D04D70E79 ;
+        :isRoot             true ;
+        :note               bdr:NT4CB02BFF2ACFD09D , bdr:NT7FD1717CD7E8C666 ;
+        :placeEvent         bdr:EVDAF8276D3776385E ;
+        :placeGonpaPerEcumen  "13.5" ;
+        :placeLat           "36.84459" ;
+        :placeLocatedIn     bdr:G1PD96101 ;
+        :placeLong          "102.16550" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID0417830D04D70E79
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4482" .
+    
+    bdr:NT4CB02BFF2ACFD09D
+        a                   :Note ;
+        :contentLocationStatement  "p. 82" ;
+        :noteSource         bdr:MW1PD95675 ;
+        :noteText           "曼头寺"@zh-hans .
+    
+    bdr:NT7FD1717CD7E8C666
+        a                   :Note ;
+        :contentLocationStatement  "p. 85" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "མང་འདུས་རི་ཁྲོད་ཆོས་ལུང་དགེ་འཕེལ་གླིང་ནི། ལི་ཀྱཱ་སྨོན་རམས་པས་བཏབ་པ་དང་། ཕྱིས་སུ་ཐུའུ་བཀྭན་རིན་པོ་ཆེས་འདུ་ཁང་གསར་བཞེངས་སུ་སློབ་ཆུང་ལི་ཀྱཱ་ཆོས་རྗེས་བཞེངས་པའི་ཐུའུ་བཀྭན་འདྲ་སྐུ་བཞེངས། ལི་ཀྱཱ་ཆོས་རྗེའི་རྗེས་སུ་མཱ་ཀྱཱ་རབ་འབྱམས་པ་ངག་དབང་བཟང་པོ་བཞུགས། དགོན་འདིའི་་གྲུབ་མཐའ་དགེ་ལུགས་པ། མ་དགོན་དགོན་ལུང་བྱམས་པ་གླིང་ཡིན།"@bo .
+}

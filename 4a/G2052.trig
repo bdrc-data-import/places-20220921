@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2052 {
+    bda:G2052  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2052 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "4a/G2052.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2052 ;
+        adm:logEntry        bda:LG9C3710E8853E2BC3 , bda:LGA6792E7A69C5D6E7 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9C3710E8853E2BC3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA6792E7A69C5D6E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T09:47:06.002Z"^^xsd:dateTime ;
+        adm:logMessage      "added lineage"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVFC8D899FF43BEA99
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G2052  a            :Place ;
+        skos:prefLabel      "dwags pa dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTB20DBBCD7137FD54 ;
+        :placeEvent         bdr:EVFC8D899FF43BEA99 ;
+        :placeLocatedIn     bdr:G2033 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTB20DBBCD7137FD54
+        a                   :Note ;
+        :contentLocationStatement  "p. 40" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "dge lugs pa monastery located in dwags pa shang of mal gro gung dkar rdzong\nfounded by skyes bu ye shes rdo rje\naffiliated to se ra smad\nhad 75 monks in 1959"@en .
+}

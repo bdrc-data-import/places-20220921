@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR1762 {
+    bda:G1KR1762  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR1762 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "62/G1KR1762.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR1762 ;
+        adm:logEntry        bda:LG310A09B0C17E06C5 , bda:LGA40AF80166FCB3E3 , bda:LGC05F5EE0DB139A0D , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542430211:493" ;
+        adm:place_id_lex    "542430211:493" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG310A09B0C17E06C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-04T16:25:38.201Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G4516(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA40AF80166FCB3E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-23T12:18:17.628Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & event & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC05F5EE0DB139A0D
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-04T16:21:37.859Z"^^xsd:dateTime ;
+        adm:logMessage      "added Gis Coords"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV09AF227C13212936
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P9310 ;
+        :onYear             "1880"^^xsd:gYear .
+    
+    bdr:EV9F050675CB8D2C96
+        a                   :PlaceFounded ;
+        :onYear             "1890"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1KR1762  a         :Place ;
+        skos:altLabel       "'on bu bsam gtan gling /"@bo-x-ewts , "文部寺"@zh-hans , "玉珠桑登林寺"@zh-hans , "wenbu si"@zh-latn-pinyin-x-ndia , "yuzhu sangdenglin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'om bu bsam gtan gling /"@bo-x-ewts , "文布寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF6F8DD794C5B7A54 ;
+        :isRoot             true ;
+        :note               bdr:NT39DCBF691FE7A325 , bdr:NTC5B143F74953ADA5 , bdr:NTF8392F281AA51314 ;
+        :placeEvent         bdr:EV09AF227C13212936 , bdr:EV9F050675CB8D2C96 ;
+        :placeGonpaPerEcumen  "0.94" ;
+        :placeLat           "31.341992" ;
+        :placeLocatedIn     bdr:G2377 ;
+        :placeLong          "86.759005" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDF6F8DD794C5B7A54
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR1762" .
+    
+    bdr:NT39DCBF691FE7A325
+        a                   :Note ;
+        :contentLocationStatement  "p. 74-75" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "འོམ་བུ་ཤང་ཏེ་དྭངས་ར་གཡུ་མཚོའི་བྱང་མཐར་གནས། ༡༨༩༠ལོར་བླ་མ་བསོད་ནམས་གཡུང་དྲུང་གིས་ཕྱག་བཏབ། ནང་རྟེན་དུ་དེ་སྔ་བྱ་རྒོད་མཆུ་བྲིས་ཞེས་པའི་དཔེ་རྙིང་གལ་ཆེན་ཞིག་ཡོད་ཟེར་བ་སོགས་གསལ།"@bo .
+    
+    bdr:NTC5B143F74953ADA5
+        a                   :Note ;
+        :contentLocationStatement  "p. 300" ;
+        :noteText           "bon monastery founded in 1880 by bla ma bsod nams g.yung drung"@en .
+    
+    bdr:NTF8392F281AA51314
+        a                   :Note ;
+        :noteText           "Founded by Bsod rnams g,yung drung.\nConsidered a branch of Ra lag g.yung drung gling. \n\n1 lama -  10 monks"@en .
+}

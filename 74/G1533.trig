@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1533 {
+    bda:G1533  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1533 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "74/G1533.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1533 ;
+        adm:logEntry        bda:LG863F24BAA4917BF7 , bda:LG8DBCA16EB63936BC , bda:LGB57159E7B3AB1AD4 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG863F24BAA4917BF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-05T09:41:19.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8DBCA16EB63936BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-05T09:26:37.024Z"^^xsd:dateTime ;
+        adm:logMessage      "added event & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB57159E7B3AB1AD4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV12F2FD632A2EEC38
+        a                   :PlaceDestroyed ;
+        :onYear             "1976"^^xsd:gYear .
+    
+    bdr:EV6FDFAAFFC5BB7BA8
+        a                   :PlaceFounded ;
+        :notAfter           "1599"^^xsd:gYear ;
+        :notBefore          "1500"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionTaklungKagyu .
+    
+    bdr:EVD48CC9B3EFBEB20F
+        a                   :PlaceRebuilt ;
+        :notAfter           "2099"^^xsd:gYear ;
+        :notBefore          "2000"^^xsd:gYear .
+    
+    bdr:G1533  a            :Place ;
+        skos:prefLabel      "sngags 'phel dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTE745EFF1D2146273 ;
+        :placeEvent         bdr:EV12F2FD632A2EEC38 , bdr:EV6FDFAAFFC5BB7BA8 , bdr:EVD48CC9B3EFBEB20F ;
+        :placeLocatedIn     bdr:G1520 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTE745EFF1D2146273
+        a                   :Note ;
+        :contentLocationStatement  "22" ;
+        :noteSource         bdr:MW20006 ;
+        :noteText           "stag lung bka' brgyud pa monastery. said to be about 400 years old.\noriginally home to about 70 monks.\n1976. destroyed.\nrecently restored."@en .
+}

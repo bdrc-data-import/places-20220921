@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2271 {
+    bda:G2271  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2271 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "b1/G2271.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2271 ;
+        adm:logEntry        bda:LG237202B2EBFCD768 , bda:LG3BA2DCC76B47875D , bda:LG5BC940254B030EE6 , bda:LG700B50B56A94DA9A , bda:LGAB8460BC5C80F733 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542525203:76" ;
+        adm:place_id_lex    "542525203:76" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG237202B2EBFCD768
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T12:48:07.737Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3BA2DCC76B47875D
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-21T16:53:28.215Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5BC940254B030EE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-28T11:53:54.364Z"^^xsd:dateTime ;
+        adm:logMessage      "aaded names & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG700B50B56A94DA9A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAB8460BC5C80F733
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2289"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV435A3DABC5948B26
+        a                   :PlaceFounded ;
+        :onYear             "1805"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKarmaKagyu .
+    
+    bdr:G2271  a            :Place ;
+        skos:altLabel       "brag skya sgrub brgyud bstan dar gling /"@bo-x-ewts , "brag skya sgrub brgyud dar rgyas gling /"@bo-x-ewts , "brag skya shel ri rdzong /"@bo-x-ewts , "dge rgyas brag skya dgon/"@bo-x-ewts , "zhajia si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "brag skya dgon/"@bo-x-ewts , "扎加寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID81983390D338E6E5 ;
+        :isRoot             true ;
+        :note               bdr:NT65D452F12419E5AA , bdr:NT6D203C5C2C3D0159 , bdr:NT9E0119419DA11828 ;
+        :placeEvent         bdr:EV435A3DABC5948B26 ;
+        :placeGonpaPerEcumen  "0.37" ;
+        :placeLat           "31.88000" ;
+        :placeLocatedIn     bdr:G2155 , bdr:G2288 , bdr:G2289 ;
+        :placeLong          "81.22000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID81983390D338E6E5
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2271" .
+    
+    bdr:NT65D452F12419E5AA
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 115-117" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "དགོན་མིང་སྣ་ཚོགས་སོགས་ལོ་རྒྱུས་གསལ།"@bo .
+    
+    bdr:NT6D203C5C2C3D0159
+        a                   :Note ;
+        :contentLocationStatement  "p. 552" ;
+        :noteSource         bdr:MW20850 ;
+        :noteText           "dgon lag of mtshur phu monastery: brag skya dgon"@en .
+    
+    bdr:NT9E0119419DA11828
+        a                   :Note ;
+        :contentLocationStatement  "p. 11" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "karma bka' brgyud pa monastery located in tshwa kha chus of dge rgyas rdzong, mnga' ris prefecture\nfounded in the early half of the 19th century by the 'brong pa zhwa chen dpon mo bsod nams mtsho mo and given to mtshur phu as a dgon lag\n\"da yod bla grwa bcu bdun/ slad grwa tshad bco brgyad\""@en .
+}

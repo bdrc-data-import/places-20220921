@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3635 {
+    bda:G3635  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3635 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "f7/G3635.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3635 ;
+        adm:logEntry        bda:LG33E18D7BCCF34AA0 , bda:LG6346F9ECCA597F14 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513331211:349" ;
+        adm:place_id_lex    "513331211:349" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG33E18D7BCCF34AA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-10T08:47:58.816Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6346F9ECCA597F14
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2DFA3969DFB1A810
+        a                   :PlaceFounded ;
+        :onYear             "1275"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G3635  a            :Place ;
+        skos:altLabel       "changgen si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "khrom dge dgon/"@bo-x-ewts , "昌根寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID18BA762042424337 ;
+        :isRoot             true ;
+        :note               bdr:NT3742CE4260D711AA , bdr:NTCAD40FDBB730563B ;
+        :placeEvent         bdr:EV2DFA3969DFB1A810 ;
+        :placeGonpaPerEcumen  "1.74" ;
+        :placeLat           "30.90000" ;
+        :placeLocatedIn     bdr:G2300 ;
+        :placeLong          "99.65000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID18BA762042424337
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3635" .
+    
+    bdr:NT3742CE4260D711AA
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, pp. 147-157" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery in dpal yul rdzong"@en .
+    
+    bdr:NTCAD40FDBB730563B
+        a                   :Note ;
+        :contentLocationStatement  "p. 166" ;
+        :noteSource         bdr:MW20396 ;
+        :noteText           "a subsidiary monastery of kaH thog in 'the center\"  according to the list of kaH thog si tu chos kyi rgya mtsho"@en .
+}

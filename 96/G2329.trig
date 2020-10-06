@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2329 {
+    bda:G2329  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2329 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "96/G2329.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2329 ;
+        adm:logEntry        bda:LG05CF05AAC7B3573A , bda:LG32D19096AC5E1E8E , bda:LG674EC98E2217B5D1 , bda:LGD0663593195CECC1 , bda:LGEA1BC7A5CA29C623 , bda:LGIM0A2D5DA707 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG05CF05AAC7B3573A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from county to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG32D19096AC5E1E8E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG674EC98E2217B5D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-28T09:25:09.465Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:sngarGyiRdzong to rdzong"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD0663593195CECC1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-09-25T15:21:58.567Z"^^xsd:dateTime ;
+        adm:logMessage      "added pinyin & chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEA1BC7A5CA29C623
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-13T09:27:14.835Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0A2D5DA707
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rdzong to sngarGyiRdzong"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2329  a            :Place ;
+        skos:altLabel       "zhiduo xian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'bri stod rdzong /"@bo-x-ewts , "治多县"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT4B839794634FD492 ;
+        :placeContains      bdr:G2573 ;
+        :placeLocatedIn     bdr:G2324 ;
+        :placeType          bdr:PT0011 .
+    
+    bdr:NT4B839794634FD492
+        a                   :Note ;
+        :noteText           "one of the six counties (rdzong) of yus hru'u prefecture of qinghai province"@en .
+}

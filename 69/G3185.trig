@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3185 {
+    bda:G3185  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3185 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "69/G3185.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3185 ;
+        adm:logEntry        bda:LG00666AB117CFDECC , bda:LG53026E07990AB3B4 , bda:LG6E8E3AD78990758B , bda:LGA1910700B582DAA3 , bda:LGA8161D166E2A1B7E , bda:LGAD5E949B45019ACD , bda:LGB13F2A8DE9FB3A50 , bda:LGC0ABF4C1B3AB3889 , bda:LGDDD5A85C30944382 , bda:LGIM0A2D5DA707 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00666AB117CFDECC
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-08-01T09:55:28.084Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected pinyin & added chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG53026E07990AB3B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR2480"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG6E8E3AD78990758B
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-28T10:32:40.631Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:sngarGyiRdzong to rdzong"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA1910700B582DAA3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGA8161D166E2A1B7E
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from county to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGAD5E949B45019ACD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR2479"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGB13F2A8DE9FB3A50
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR2481"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGC0ABF4C1B3AB3889
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-13T21:14:56.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains G1KR2478"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGDDD5A85C30944382
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-31T14:48:15.554Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized & arranged list of contains"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0A2D5DA707
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rdzong to sngarGyiRdzong"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G3185  a            :Place ;
+        skos:altLabel       "g.yu sgang nyin/"@bo-x-ewts , "rma lho sog rdzong /"@bo-x-ewts , "rma lho sog rigs rang skyong rdzong /"@bo-x-ewts , "yul rgan rdzong /"@bo-x-ewts , "河南县"@zh-hans , "henan xian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rma lho rdzong /"@bo-x-ewts , "河南蒙古族自治县"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT001C6E4606B57303 ;
+        :placeContains      bdr:G1KR2478 , bdr:G1KR2479 , bdr:G1KR2480 , bdr:G1KR2481 ;
+        :placeLocatedIn     bdr:G1697 ;
+        :placeType          bdr:PT0011 .
+    
+    bdr:NT001C6E4606B57303
+        a                   :Note ;
+        :noteText           "one of the four counties of the rma lho bod rigs rang skyong khul of qinghai province"@en .
+}

@@ -1,0 +1,76 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2375 {
+    bda:G2375  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2375 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "66/G2375.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2375 ;
+        adm:logEntry        bda:LG312375251A9F5BDD , bda:LG51FEC04A37BEBE09 , bda:LG727232F097D35B4A , bda:LG8210A41B3077BE7C , bda:LGF83C6F3ADB3A4109 , bda:LGIM0A2D5DA707 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG312375251A9F5BDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-28T15:43:09.782Z"^^xsd:dateTime ;
+        adm:logMessage      "added names in chinese & pinyin"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG51FEC04A37BEBE09
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG727232F097D35B4A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-25T12:12:43.278Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:sngarGyiRdzong to rdzong"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8210A41B3077BE7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from county to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF83C6F3ADB3A4109
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-30T14:36:25.776Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0A2D5DA707
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:08:33.797Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:rdzong to sngarGyiRdzong"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2375  a            :Place ;
+        skos:altLabel       "gor mo rdzong /"@bo-x-ewts , "格尔木县"@zh-hans , "ge'ermu shi"@zh-latn-pinyin-x-ndia , "ge'ermu xian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gor mo grong khyer/"@bo-x-ewts , "格尔木市"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT1AE0042799D6F40D , bdr:NT439AFEFC7089D520 ;
+        :placeLocatedIn     bdr:G2323 ;
+        :placeType          bdr:PT0008 .
+    
+    bdr:NT1AE0042799D6F40D
+        a                   :Note ;
+        :noteText           "༡༩༦༠ལོར་གོར་མོ་གྲོང་ཁྱེར་བཙུགས། ༡༩༦༥ལོར་གོར་མོ་རྫོང་དུ་བསྒྱུར། སླར་༡༩༨༠ལོར་གོར་མོ་གྲོང་ཁྱེར་དུ་བསྒྱུར། མཚོ་ནུབ་ཁུལ་ལ་གཏོགས།"@bo .
+    
+    bdr:NT439AFEFC7089D520
+        a                   :Note ;
+        :noteText           "city in west kokonor prefecture of qinghai province"@en .
+}

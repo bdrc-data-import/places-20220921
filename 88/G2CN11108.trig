@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11108 {
+    bda:G2CN11108  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11108 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "88/G2CN11108.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11108 ;
+        adm:logEntry        bda:LG8315E917CE7B2AD9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8315E917CE7B2AD9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-09-04T15:22:16.544Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G2CN11108  a        :Place ;
+        skos:altLabel       "gnas mchog ma Ni ska mgo"@bo-x-ewts , "ma Ni gad mgo"@bo-x-ewts ;
+        skos:prefLabel      "gnas mchog ma Ni rang byon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT4841EFA43A8C3DD2 ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeType          bdr:PT0053 .
+    
+    bdr:NT4841EFA43A8C3DD2
+        a                   :Note ;
+        :contentLocationStatement  "p. 152-171" ;
+        :noteSource         bdr:MW29295 ;
+        :noteText           "གནས་འདིའི་ཁ་བྱང་དཀར་ཆག་བཞུགས།"@bo .
+}

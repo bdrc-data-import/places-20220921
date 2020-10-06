@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1444 {
+    bda:G1444  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1444 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1d/G1444.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1444 ;
+        adm:logEntry        bda:LG22DDD1C5FC1982EC , bda:LG2B86B53B88C7F1C5 , bda:LG4E97B72C76ACA34B , bda:LG5517F8F37360F6A4 , bda:LG72282FC59D070C69 , bda:LGC4072A8FC65FB7EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG22DDD1C5FC1982EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T16:32:10.695Z"^^xsd:dateTime ;
+        adm:logMessage      "new place type assigned"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG2B86B53B88C7F1C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-16T10:15:33.208Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language encoding & added place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4E97B72C76ACA34B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-08T10:08:50.254Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5517F8F37360F6A4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG72282FC59D070C69
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC4072A8FC65FB7EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-31T09:11:11.297Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized name & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G1444  a            :Place ;
+        skos:altLabel       "dwags stod mgar yul dag gseb/"@bo-x-ewts ;
+        skos:prefLabel      "mgar yul dag gseb/"@bo-x-ewts ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G1390 ;
+        :placeType          bdr:PT0085 .
+}

@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2623 {
+    bda:G2623  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2623 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "15/G2623.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2623 ;
+        adm:logEntry        bda:LGD0662FA5642467AE , bda:LGD49F50072D6F2447 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD0662FA5642467AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-07T10:51:58.031Z"^^xsd:dateTime ;
+        adm:logMessage      "added location & names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD49F50072D6F2447
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2623  a            :Place ;
+        skos:altLabel       "bkra shis rdzogs chen chos gling /"@bo-x-ewts , "gze rdzogs khyam dgon bkra shis rdzogs chen gling /"@bo-x-ewts , "扎西佐钦求楞"@zh-hans , "saizuoqiang si"@zh-latn-pinyin-x-ndia , "zhaxi zuoqin qiuleng"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gze rdzogs khyam dgon/"@bo-x-ewts , "赛佐强寺"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NTF3D9DBB27B44398B ;
+        :placeLocatedIn     bdr:G1467 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NTF3D9DBB27B44398B
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 47" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "karma bka' brgyud pa monastery in yus hru'u prefecture, qinghai province"@en .
+}

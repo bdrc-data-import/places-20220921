@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G596 {
+    bda:G596  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G596 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "5b/G596.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G596 ;
+        adm:logEntry        bda:LG13B9C9A41CAD1557 , bda:LG47C42458CAA9A504 , bda:LGF2C7C7EFE1640E1E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG13B9C9A41CAD1557
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-14T12:05:20.938Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG47C42458CAA9A504
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-21T10:17:42.71Z"^^xsd:dateTime ;
+        adm:logMessage      "added type, location & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2C7C7EFE1640E1E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:EVBDAAAB957A706B94
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G596  a             :Place ;
+        skos:prefLabel      "nyag bla sgar/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT838B08F68C1E2CCB , bdr:NTA97DA49CFF60C037 ;
+        :placeEvent         bdr:EVBDAAAB957A706B94 ;
+        :placeLocatedIn     bdr:G2182 , bdr:G670 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT838B08F68C1E2CCB
+        a                   :Note ;
+        :contentLocationStatement  "p. 1022" ;
+        :noteSource         bdr:MW19803 ;
+        :noteText           "located chab mdo go 'jo rdzong ra chu rka mdo"@en .
+    
+    bdr:NTA97DA49CFF60C037
+        a                   :Note ;
+        :noteText           "G1KR1088 འདི་གཉིས་དགོན་པ་གཅིག་ཡིན་མིན་དཔྱད་རྒྱུ།"@en .
+}

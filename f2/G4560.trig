@@ -1,0 +1,81 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4560 {
+    bda:G4560  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4560 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "f2/G4560.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4560 ;
+        adm:logEntry        bda:LG088224ABE8C05E2A , bda:LG0FA13E4E0C8E82B6 , bda:LG165C0BFCA8D0424C , bda:LG55EA4F723D0B5186 , bda:LG6FB3700171C321E4 , bda:LG7E44F8A13B3E849B , bda:LGCDAB23E7C1548ADD , bda:LGD73D3F4CC0EFEB79 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG088224ABE8C05E2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-21T10:05:04.903Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG0FA13E4E0C8E82B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-20T09:12:39.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, place type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG165C0BFCA8D0424C
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-16T12:16:51.19Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG55EA4F723D0B5186
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-02T10:26:53.518Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6FB3700171C321E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-11-05T10:57:52.201Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & note, asossiated works"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7E44F8A13B3E849B
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-16T12:29:23.622Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCDAB23E7C1548ADD
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-21T10:01:26.585Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD73D3F4CC0EFEB79
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G4560  a            :Place ;
+        skos:altLabel       "ma'o rdzong /"@bo-x-ewts , "茂汶羌族自治县"@zh-hans , "mao wen qiang zu zi zhi xian"@zh-latn-pinyin-x-ndia , "mao xian"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dmar thang rdzong /"@bo-x-ewts , "茂县"@zh-hans ;
+        :isRoot             true ;
+        :note               bdr:NT5E861E119DDF1C79 ;
+        :placeLocatedIn     bdr:G636 ;
+        :placeType          bdr:PT0011 .
+    
+    bdr:NT5E861E119DDF1C79
+        a                   :Note ;
+        :noteText           "GBcode: 513223\nCoords: 102°56′～104°10′E, 31°25′～32°16′ N"@en .
+}

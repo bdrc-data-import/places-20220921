@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4140 {
+    bda:G4140  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4140 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "09/G4140.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4140 ;
+        adm:logEntry        bda:LG2C7C1427CF2B134A , bda:LG86A93BCA586007BF , bda:LGA89F47D12FB3766A , bda:LGD247C587909277DE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C7C1427CF2B134A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG86A93BCA586007BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-26T12:24:01.341Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & place type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA89F47D12FB3766A
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD247C587909277DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-18T12:20:51.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added names, type, location & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G4140  a            :Place ;
+        skos:altLabel       "gling ba/"@bo-x-ewts , "mdo smad gling pa/"@bo-x-ewts , "mdzod dge gling dkar stod/"@bo-x-ewts ;
+        skos:prefLabel      "gling pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2C8DFD389B56465B , bdr:NT5520CF38E80E3ED2 ;
+        :placeLocatedIn     bdr:G1132 ;
+        :placeType          bdr:PT0048 .
+    
+    bdr:NT2C8DFD389B56465B
+        a                   :Note ;
+        :contentLocationStatement  "v. 6, p. 207" ;
+        :noteSource         bdr:MW19805 ;
+        :noteText           "birthplace of the 75th dga' ldan khri pa\nbod smad phyogs kyi gling pa"@en .
+    
+    bdr:NT5520CF38E80E3ED2
+        a                   :Note ;
+        :contentLocationStatement  "p. 2" ;
+        :noteSource         bdr:MW21980 ;
+        :noteText           "གླིང་པ་ནི་མཛོད་དགེ་ཤོག་བཅུ་གཉིས་ཀྱི་གཙོ་གྲས་ཡིན་ཅིང་། དམུ་དགེ་བསམ་གཏན་གྱིས་ཀྱང་\"མཛོད་དགེ་གླིང་དཀར་སྟོད་\"ཞེས་པའི་འབྲོག་སྡེ་འདི་ནི། གླིང་གི་སྡེ་ལྷག་ངོ་མ་ཞིག་ཡིན་ཚུལ་གསུངས་ཡོད་པ་སོགས་ཟུར་ཙམ་གསལ།"@bo .
+}

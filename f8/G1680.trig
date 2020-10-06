@@ -1,0 +1,106 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1680 {
+    bda:G1680  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1680 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "f8/G1680.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1680 ;
+        adm:logEntry        bda:LG8B651D5B112FF5D3 , bda:LG96A71633C58DE8C6 , bda:LGBA3FFDB57438E300 , bda:LGEA0B034C82178473 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330217:165" ;
+        adm:place_id_lex    "513330217:165" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8B651D5B112FF5D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-21T17:02:28.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG96A71633C58DE8C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-15T17:31:34.068Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBA3FFDB57438E300
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEA0B034C82178473
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-21T16:49:27.434Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV971F46456C953713
+        a                   :PlaceFounded ;
+        :onYear             "1742"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVA91C66688A614C30
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P6006 ;
+        :onYear             "1742"^^xsd:gYear .
+    
+    bdr:G1680  a            :Place ;
+        skos:altLabel       "rgyal rong rtag brtan rnam par rgyal ba'i gling /"@bo-x-ewts , "sde dge rgyal rong dgon/"@bo-x-ewts , "jiarong si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyal rong dgon/"@bo-x-ewts , "加绒寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID9D98037E61EBA3C7 ;
+        :isRoot             true ;
+        :note               bdr:NT17C3A72E6A352288 , bdr:NT483F5FB9FA35823B , bdr:NTDE61F514BD136553 ;
+        :placeEvent         bdr:EV971F46456C953713 , bdr:EVA91C66688A614C30 ;
+        :placeGonpaPerEcumen  "4.83" ;
+        :placeLat           "32.01667" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "99.11667" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID9D98037E61EBA3C7
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1680" .
+    
+    bdr:NT17C3A72E6A352288
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 545" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery"@en .
+    
+    bdr:NT483F5FB9FA35823B
+        a                   :Note ;
+        :noteText           "founded by rdzogs chen dbon bla ma padma kun grol in 1743.\nsee guru bkra shis p. 817, mkhyen brtse'i rgyal rabs pp. 346-347"@en .
+    
+    bdr:NTDE61F514BD136553
+        a                   :Note ;
+        :contentLocationStatement  "p. 130" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "rnying ma monastery in sde dge territory; founded in 1742 (rab byung chu khyi) by grub dbang pad+ma kun grol rnam rgyal bzang po in his 37th year (this suggests he was born in 1706)\n\nsde dge chos rgyal rim byon gis thugs khur gzigs skyong 'og/ rdza stod shog kha'i sa zhing dang rdza smad phyogs kha'i sa zhing de dag dgon sde ba yid lhung spyi'i khongs gtogs mdzad/ de'i skabs su rdzong dkar dmar gnyis su dbye/ rdzong dkar po ni yid lhung lha ru tshang dang/ rjes su dpon po bya rgod tshang/ rdzong dmar po ni snga ma rgyal rong tshang yin/ dkar dmar gnyis kyis bstan pa dar rgyas su btang/\"\n\nthere are more than 200 monks."@en .
+}

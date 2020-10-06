@@ -1,0 +1,130 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G11 {
+    bda:G11  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G11 ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "62/G11.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G11 ;
+        adm:logEntry        bda:LG056A8C2254B8F41B , bda:LG588572729A9ADE63 , bda:LG5F298E5FC730291B , bda:LG81529BC182053491 , bda:LGA71E68AEB0BFDDF3 , bda:LGDFBFB28749083755 , bda:LGECD8BA5E09391465 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542223202:542223107" ;
+        adm:place_id_lex    "542223202:542223107" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG056A8C2254B8F41B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-11T11:42:17.395Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG588572729A9ADE63
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-08T16:06:04.689Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5F298E5FC730291B
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-12T12:19:28.714Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain: \"par khang\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG81529BC182053491
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-18T10:07:35.075Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA71E68AEB0BFDDF3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDFBFB28749083755
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-04T15:10:51.321Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGECD8BA5E09391465
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-01T10:53:11.773Z"^^xsd:dateTime ;
+        adm:logMessage      "changed language settings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4D60602F7AD086BA
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P639 ;
+        :onYear             "1632"^^xsd:gYear .
+    
+    bdr:EV78A0ADC386E1698D
+        a                   :PlaceFounded ;
+        :onYear             "1650"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G11  a              :Place ;
+        skos:altLabel       "byang rdo rje brag"@bo-x-ewts , "e waM lcog sgar/"@bo-x-ewts , "thub bstan rdo rje brag e waM lcog sgar/"@bo-x-ewts , "Dorje Drak Ewam Chogar"@en , "土登多吉扎寺"@zh-hans , "duojizha si"@zh-latn-pinyin-x-ndia , "tudeng duojizha si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdo rje brag"@bo-x-ewts , "Dorje Drak"@en-x-mixed , "多吉扎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2DA3D92ADA572AE6 ;
+        :isRoot             true ;
+        :note               bdr:NT0CFF8C4B605FFC58 , bdr:NT463529C919CEB635 , bdr:NTA8E4A2D727E0220C , bdr:NTADDC6C32C751773D ;
+        :placeContains      bdr:G2CN10891 ;
+        :placeEvent         bdr:EV4D60602F7AD086BA , bdr:EV78A0ADC386E1698D ;
+        :placeGonpaPerEcumen  "8.31" ;
+        :placeLat           "29.35536" ;
+        :placeLocatedIn     bdr:G2135 ;
+        :placeLong          "91.13459" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID2DA3D92ADA572AE6
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G11" .
+    
+    bdr:NT0CFF8C4B605FFC58
+        a                   :Note ;
+        :contentLocationStatement  "p. 602" ;
+        :noteSource         bdr:MW20115 ;
+        :noteText           "rnying ma pa monastery established in 1632 by byang bdag rig 'dzin ngag gi dbang po (citing gdong thog)"@en .
+    
+    bdr:NT463529C919CEB635
+        a                   :Note ;
+        :noteText           "sacked by Dzungars in 1717"@en .
+    
+    bdr:NTA8E4A2D727E0220C
+        a                   :Note ;
+        :contentLocationStatement  "p. 46, fn. 175" ;
+        :noteSource         bdr:MW20166 ;
+        :noteText           "one of the two major rnying ma pa monasteries of central tibet"@en .
+    
+    bdr:NTADDC6C32C751773D
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 10-12" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "དབུས་གཙང་གི་རྙིང་དགོན་གྲགས་ཅན་རྡོར་སྨིན་གཉིས་ལས་གཅིག་ཏེ་བྱང་གཏེར་གྱི་གདན་སར་གྲགས། ཐོག་མར་མངའ་རིས་པཎྜི་ཏ་པད་མ་དབང་རྒྱལ་གྱིས་གུར་ཕུབ་ནས་གསང་ཆེན་གྱི་འདུས་སྡེ་ཆུང་ངུ་ཞིག་བཙུགས། དེ་ནས་སྐུ་ཕྲེང་གསུམ་པ་རིག་འཛིན་ངག་གི་དབང་པོས་དུས་རབས་བཅུ་བདུན་ཙམ་༼༡༦༣༢ལོ་༽ལ་དགོན་དེ་བཏབ། སྐུ་ཕྲེང་བཞི་པ་ཀུན་བཟང་པད་མ་འཕྲིན་ལས་བཞུགས་ཁྲིར་འཁོད་རྗེས་རྒྱལ་མཆོག་ལྔ་པ་ཆེན་པོ་དང་ཆོས་ཡོན་གྱི་བདག་རྐྱེན་དང་བཅས་འཕེལ་རྒྱས་བྱུང་ཞིང་། རྙིང་མ་བྱང་གཏེར་གྱི་གདན་ས་ཆེན་པོར་གྱུར་བར་འཁོད། དུས་རབས་བཅོ་བརྒྱད་པའི་དུས་འགོར་ཇུན་གར་དམག་གིས་དགོན་དེ་མགོན་ཁང་མ་གཏོགས་ཧ་ལམ་རྨེག་མེད་དུ་བཟོས་ཀྱང་རིག་འཛིན་སྐུ་ཕྲེང་ལྔ་པས་ཞིག་གསོས་མཛད་པ་སོགས་འཁོད།"@bo .
+}

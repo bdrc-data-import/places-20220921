@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1652 {
+    bda:G1652  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1652 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "84/G1652.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1652 ;
+        adm:logEntry        bda:LG64C6B2D3CAF47131 , bda:LGAAF9F62BA80A962A , bda:LGB28AE4394FD4BA4B , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513330206:150" ;
+        adm:place_id_lex    "513330206:150" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG64C6B2D3CAF47131
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-07-04T08:45:54.377Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from w1kg5539"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGAAF9F62BA80A962A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-19T12:53:34.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & events"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB28AE4394FD4BA4B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV2EB6D66455DD0112
+        a                   :PlaceConverted ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EV82D0BE896A52BEC5
+        a                   :PlaceConverted ;
+        :onYear             "1275"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionSakya .
+    
+    bdr:EVCD4F348A98A756C4
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G1652  a            :Place ;
+        skos:altLabel       "dbon stod dgon/"@bo-x-ewts , "sde dge dbon ston dgon/"@bo-x-ewts , "wang dui si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dbon ston dgon/"@bo-x-ewts , "汪堆寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6682CD41A3B8CEF0 ;
+        :isRoot             true ;
+        :note               bdr:NT854AEC7C3861CF64 , bdr:NTBF5B5F2A94AC7A1B ;
+        :placeEvent         bdr:EV2EB6D66455DD0112 , bdr:EV82D0BE896A52BEC5 , bdr:EVCD4F348A98A756C4 ;
+        :placeGonpaPerEcumen  "18.74" ;
+        :placeLat           "31.85000" ;
+        :placeLocatedIn     bdr:G1539 ;
+        :placeLong          "98.45000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID6682CD41A3B8CEF0
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1652" .
+    
+    bdr:NT854AEC7C3861CF64
+        a                   :Note ;
+        :contentLocationStatement  "p. 122" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "sa skya monastery; this was originally said to be a bon establishment; later became a rnying ma; converted to a sa skya establishment at the time of 'gro mgon 'phags pa when he was returning from china; through the support of bla chen byams pa phun tshogs the 116 pillar gtsug lag khang was built; now has 58 monka and bla mas"@en .
+    
+    bdr:NTBF5B5F2A94AC7A1B
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 455" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "sa skya pa monastery"@en .
+}

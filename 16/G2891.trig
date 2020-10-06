@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2891 {
+    bda:G2891  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2891 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "16/G2891.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2891 ;
+        adm:logEntry        bda:LG97BDB7C831D73FE7 , bda:LG9DB8DCD08C2B58EE , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG97BDB7C831D73FE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-06T10:11:50.355Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanedup & added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9DB8DCD08C2B58EE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2891  a            :Place ;
+        skos:prefLabel      "be thang dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT8D2072CB1090A4F8 ;
+        :placeLocatedIn     bdr:G2944 , bdr:G2945 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT8D2072CB1090A4F8
+        a                   :Note ;
+        :contentLocationStatement  "p. 124" ;
+        :noteSource         bdr:MW20520 ;
+        :noteText           "rnying ma pa monastery in g.yu ri chus of spo bo rdzong"@en .
+}

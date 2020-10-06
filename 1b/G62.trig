@@ -1,0 +1,116 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G62 {
+    bda:G62  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G62 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "1b/G62.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G62 ;
+        adm:logEntry        bda:LG6D79D1B236F6D805 , bda:LG9A26BBB436F5A636 , bda:LGA39B2AC491650649 , bda:LGCE037F3CC6AF332D , bda:LGF38349D66D1F44D5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540127203:540127104" ;
+        adm:place_id_lex    "540127203:540127104" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6D79D1B236F6D805
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-16T15:30:28.804Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A26BBB436F5A636
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-14T13:59:01.508Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA39B2AC491650649
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCE037F3CC6AF332D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-23T14:58:14.236Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF38349D66D1F44D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-10-03T09:37:27.92Z"^^xsd:dateTime ;
+        adm:logMessage      "added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV708533F239ED28C9
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P416 ;
+        :onYear             "1681"^^xsd:gYear .
+    
+    bdr:EV7A33DB7D350D2BC0
+        a                   :PlaceFounded ;
+        :onYear             "1681"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionDrigungKagyu .
+    
+    bdr:G62  a              :Place ;
+        skos:altLabel       "羊玛日寺/艾玛日寺"@zh-hans , "yangmari si/aimari si"@zh-latn-pinyin-x-ndia , "yangrigang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "yang ri sgar/"@bo-x-ewts , "Yangri Gar"@en-x-mixed , "羊日岗寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE2433B3A264637B3 ;
+        :isRoot             true ;
+        :note               bdr:NTA69C05BF9AFA9FD3 , bdr:NTAE5E7B8AE55F8138 , bdr:NTB6D9B03A3D7BF464 , bdr:NTDE1B13514268CAEA ;
+        :placeContains      bdr:G2CN10876 ;
+        :placeEvent         bdr:EV708533F239ED28C9 , bdr:EV7A33DB7D350D2BC0 ;
+        :placeGonpaPerEcumen  "9.17" ;
+        :placeLat           "30.00055" ;
+        :placeLocatedIn     bdr:G2014 , bdr:G2020 ;
+        :placeLong          "91.98757" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE2433B3A264637B3
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G62" .
+    
+    bdr:NTA69C05BF9AFA9FD3
+        a                   :Note ;
+        :contentLocationStatement  "p. 36" ;
+        :noteSource         bdr:MW20169 ;
+        :noteText           "'bri gung bka' brgyud pa monastery in sangs ri sgang shang in mal gro gung dkar rdzong\n\n-- founded in 1681 by 'bri gung 'phrin las bzang po and don grub chos rgyal and under the control of the 'bri gung bla brang"@en .
+    
+    bdr:NTAE5E7B8AE55F8138
+        a                   :Note ;
+        :noteText           "alternative founding date, 1550"@en .
+    
+    bdr:NTB6D9B03A3D7BF464
+        a                   :Note ;
+        :noteText           "had 350 monks in 1959"@en .
+    
+    bdr:NTDE1B13514268CAEA
+        a                   :Note ;
+        :contentLocationStatement  "v. 2,, p. 209" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+}

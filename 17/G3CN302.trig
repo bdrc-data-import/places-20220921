@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3CN302 {
+    bda:G3CN302  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3CN302 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "17/G3CN302.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3CN302 ;
+        adm:logEntry        bda:LG07C67D0E0C24FAE0 , bda:LG511AA52EACE3592B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07C67D0E0C24FAE0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-15T15:01:30.329Z"^^xsd:dateTime ;
+        adm:logMessage      "crated record & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG511AA52EACE3592B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-10T14:09:41.621Z"^^xsd:dateTime ;
+        adm:logMessage      "edited note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3CN302  a          :Place ;
+        skos:prefLabel      "sgo bzhi ri thang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT62974405B71AD9FB ;
+        :placeLocatedIn     bdr:G971 ;
+        :placeType          bdr:PT0055 .
+    
+    bdr:NT62974405B71AD9FB
+        a                   :Note ;
+        :contentLocationStatement  "p. 365" ;
+        :noteSource         bdr:MW27524 ;
+        :noteText           "རྒྱལ་རྩེ་གླིང་ཕུ་དགོན་པ་དང་ཐག་ཉེ་བའི་མྱང་ཆུ་ཕར་ཀ་ན་སྒོ་བཞི་རི་ཐང་བྱ་བ་ཡོད་ཅིང་། དེར་གཡུ་ཐོག་ཞེས་པའི་མི་ཚང་རྙིང་པ་ཞིག་ཡོད་པའང་དེང་སང་གྲོང་ཚོ་ཞིག་གི་མིང་དུ་གྱུར་ཡོད་པ་ནི་ཡོན་ཏན་མགོན་པོའི་འཁྲུངས་གཞིས་ཡིན་ལ། སྔར་མི་ཚང་དེར་གཡུ་ཐོག་པའི་སྨན་གཞོང་ཞིག་ཡོད་པ་འདིར་ཡང་འཁོད་མོད་དེང་སང་ནི་གླིང་ཕུ་དགོན་པའི་ནང་རྟེན་ཁྲོད་དུ་་བཞུགས་སོ།།"@bo .
+}

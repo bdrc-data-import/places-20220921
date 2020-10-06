@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G81 {
+    bda:G81  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G81 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "27/G81.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G81 ;
+        adm:logEntry        bda:LG1F3B3B49DC7A2BD0 , bda:LGIM454E022964 , bda:LGIMAF5F209484 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1F3B3B49DC7A2BD0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM454E022964
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-13T17:05:29.03Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:gzimsKhang to khamsTshan"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIMAF5F209484
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:21:51.251Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from residentialHouse to gzimsKhang"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G81  a              :Place ;
+        skos:prefLabel      "tsha ba khams tshan (dga' ldan byang rtse)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT2A49C9A21900DEA5 ;
+        :placeLocatedIn     bdr:G77 ;
+        :placeType          bdr:PT0039 .
+    
+    bdr:NT2A49C9A21900DEA5
+        a                   :Note ;
+        :contentLocationStatement  "p. 29, 38" ;
+        :noteSource         bdr:MW20212 ;
+        :noteText           "residential college of dga' ldan byang rtse\nthis khams tshan comprised of 6 mi tshan:\nsmad tsha\n'brog mi\ngdan bzhi\n'phan po\nbrag sog\nspyil bu\nthe intake of this mi tshan came from:\nsmad tsha mi tshan: tsha ba rong pa\n'brog mi mi tshan: rdza yul pa rnams\ngdan bzhi mi tshan: dwags po and spo bo rnams\n'phan po mi tshan: 'phan po\nbrag sog mi tshan: brag sog ri khrod kyi dge long sum cu\nspyil bu mi tshan: mal gro spyil bu dgon pa'i grwa pa rnams and stag rtse rdzong khongs lo phu'i lung tshan zhig"@en .
+}

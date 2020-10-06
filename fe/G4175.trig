@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4175 {
+    bda:G4175  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4175 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "fe/G4175.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4175 ;
+        adm:logEntry        bda:LGD2D7148D4EDB6B46 , bda:LGF3D73080E3845B58 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542327101:542327102" ;
+        adm:place_id_lex    "542327101:542327102" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD2D7148D4EDB6B46
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-11-27T11:52:26.019Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF3D73080E3845B58
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV20386BF8BB4E43B8
+        a                   :PlaceFounded ;
+        :onYear             "1500"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EVEDF0D47AB2718430
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P8773 .
+    
+    bdr:G4175  a            :Place ;
+        skos:altLabel       "Osaling Drupde"@bo-x-phon-en , "weishalin si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'od gsal gling sgrub sde/"@bo-x-ewts , "维沙林寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID17B19CEE3D3F5B9C ;
+        :isRoot             true ;
+        :note               bdr:NTB12A496453138FF7 , bdr:NTF977538CBC61A389 ;
+        :placeEvent         bdr:EV20386BF8BB4E43B8 , bdr:EVEDF0D47AB2718430 ;
+        :placeGonpaPerEcumen  "3.31" ;
+        :placeLat           "29.41667" ;
+        :placeLocatedIn     bdr:G2162 ;
+        :placeLong          "86.71667" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID17B19CEE3D3F5B9C
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4175" .
+    
+    bdr:NTB12A496453138FF7
+        a                   :Note ;
+        :contentLocationStatement  "p. 280" ;
+        :noteSource         bdr:MW27401 ;
+        :noteText           "hermitage founded by 'od gsal klong yangs"@en .
+    
+    bdr:NTF977538CBC61A389
+        a                   :Note ;
+        :noteText           "no known date, so list as 1500 for now as most other Nyingma sites in region were founded after the Yuan but before Ganden Podrang period."@en .
+}

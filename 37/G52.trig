@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G52 {
+    bda:G52  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G52 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "37/G52.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G52 ;
+        adm:logEntry        bda:LG1A790CCB1243F57A , bda:LG3FF13E51AA756614 , bda:LGCFD4D3312DE6F3F3 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1A790CCB1243F57A
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-13T09:47:39.082Z"^^xsd:dateTime ;
+        adm:logMessage      "added name"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3FF13E51AA756614
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCFD4D3312DE6F3F3
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-13T09:20:33.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added name & location, linked to the outline"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVF46355B0CE7B54C6
+        a                   :PlaceEventNotSpecified ;
+        :placeEventAffiliation  bdr:TraditionDrukpaKagyu .
+    
+    bdr:G52  a              :Place ;
+        skos:altLabel       "khams pa'i dgon lag mtshan nyid dgon/"@bo-x-ewts , "mtshan nyid grwa tshang rnam rgyal chos 'khor gling /"@bo-x-ewts ;
+        skos:prefLabel      "mtshan nyid dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT12B8CA15E2617B6A , bdr:NT67D5FE02EBD561DA , bdr:NTFE3E3E6E662EDB2D ;
+        :placeEvent         bdr:EVF46355B0CE7B54C6 ;
+        :placeLocatedIn     bdr:G2185 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT12B8CA15E2617B6A
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 139" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "'brug pa dkar brgyud pa monastery in yus hru'u prefecture, founded by the fourth khams sprul, bstan 'dzin chos kyi nyi ma"@en .
+    
+    bdr:NT67D5FE02EBD561DA
+        a                   :Note ;
+        :contentLocationStatement  "p. 12" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "'brug pa bka' brgyud pa monastery, visited by kaH thog si tu in 1918 and described as a dgon lag of khams pa sgar"@en .
+    
+    bdr:NTFE3E3E6E662EDB2D
+        a                   :Note ;
+        :contentLocationStatement  "v. 18, p. 259" ;
+        :noteSource         bdr:MW19813 ;
+        :noteText           "'brug pa dkar brgyud monastery regarded as an affiliate of chab mdo byams pa gling"@en .
+}

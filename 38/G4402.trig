@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4402 {
+    bda:G4402  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4402 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "38/G4402.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4402 ;
+        adm:logEntry        bda:LG2A7883F5FAD2F84F , bda:LG2BDAB2AFCB6699F2 , bda:LGCBFAA9062621A8E8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2A7883F5FAD2F84F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-01T09:34:18.002Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2BDAB2AFCB6699F2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCBFAA9062621A8E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:17:52.373Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from nunnery to btsunDgon"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G4402  a            :Place ;
+        skos:prefLabel      "mtshams khang dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTA17CC106624F4DA0 ;
+        :placeLocatedIn     bdr:G3597 ;
+        :placeType          bdr:PT0050 .
+    
+    bdr:NTA17CC106624F4DA0
+        a                   :Note ;
+        :contentLocationStatement  "p. 41" ;
+        :noteSource         bdr:MW19856 ;
+        :noteText           "gelug nunnery in dar grong grong rdal in snye mo rdzong; the name of the founder or when it was founded are unknown; under the control of the rtse yig tshang; sanctioned complement 15 nuns"@en .
+}

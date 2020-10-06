@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3056 {
+    bda:G3056  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3056 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "10/G3056.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3056 ;
+        adm:logEntry        bda:LG561A6CC5C211A82A , bda:LG6B5E41F5F36831C9 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "540126201:540126103" ;
+        adm:place_id_lex    "540126201:540126103" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG561A6CC5C211A82A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6B5E41F5F36831C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-23T16:21:01.156Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVDBBDE3FB5D677923
+        a                   :PlaceFounded ;
+        :onYear             "1050"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:EVE7459B2060DE0493
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P1575 ;
+        :notAfter           "0999"^^xsd:gYear ;
+        :notBefore          "0900"^^xsd:gYear .
+    
+    bdr:G3056  a            :Place ;
+        skos:altLabel       "tsher seb dgon/"@bo-x-ewts , "casai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "tsher gseb dgon/"@bo-x-ewts , "Tserseb Gon"@en-x-mixed , "擦赛寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD2ECC4E999BE8AF5 ;
+        :isRoot             true ;
+        :note               bdr:NT063128C67DF43F20 , bdr:NT707A0F55C99F1354 , bdr:NTA4B462A30E10846D ;
+        :placeEvent         bdr:EVDBBDE3FB5D677923 , bdr:EVE7459B2060DE0493 ;
+        :placeGonpaPerEcumen  "19.01" ;
+        :placeLat           "29.77641" ;
+        :placeLocatedIn     bdr:G1516 , bdr:G3370 ;
+        :placeLong          "91.55293" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDD2ECC4E999BE8AF5
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3056" .
+    
+    bdr:NT063128C67DF43F20
+        a                   :Note ;
+        :contentLocationStatement  "p. 52" ;
+        :noteSource         bdr:MW20233 ;
+        :noteText           "dge lugs pa monastery located in grong tsho lnga pa, la mo shang, stag rtse county, lha sa prefecture\nfounded by klu mes in about 900\nfromerly had 40 monks administered by the la mo gzhung rkyang\nrestored"@en .
+    
+    bdr:NT707A0F55C99F1354
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, pp. 232-233" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "description"@en .
+    
+    bdr:NTA4B462A30E10846D
+        a                   :Note ;
+        :contentLocationStatement  "p. 110" ;
+        :noteSource         bdr:MW23664 ;
+        :noteText           "restored gelug monastery\ninhabited for many years by dge bshes po to ba\nin 1959 had 40 monks\nadministered by the la mo gzhung rkyang"@en .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN11085 {
+    bda:G2CN11085  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN11085 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "ef/G2CN11085.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN11085 ;
+        adm:logEntry        bda:LG45563182645AE50B , bda:LGF90162DD4E214877 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG45563182645AE50B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-08-06T17:08:56.737Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGF90162DD4E214877
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-06-12T11:12:41.659Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:EV87BCD655677CE95B
+        a                   :PlaceFounded ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionShangpaKagyu .
+    
+    bdr:EVD855038C5658613E
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P39 ;
+        :notAfter           "1199"^^xsd:gYear ;
+        :notBefore          "1100"^^xsd:gYear .
+    
+    bdr:G2CN11085  a        :Place ;
+        skos:altLabel       "'jog mda' 'chad kha dgon/"@bo-x-ewts , "'phan yul 'chad kha dgon/"@bo-x-ewts ;
+        skos:prefLabel      "'chad kha dgon/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT9DC48F7547472470 ;
+        :placeEvent         bdr:EV87BCD655677CE95B , bdr:EVD855038C5658613E ;
+        :placeLat           "29.5117" ;
+        :placeLocatedIn     bdr:G1116 ;
+        :placeLong          "91.1543" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT9DC48F7547472470
+        a                   :Note ;
+        :contentLocationStatement  "p. 35-40" ;
+        :noteSource         bdr:MW20441 ;
+        :noteText           "ཤངས་པ་བཀའ་བརྒྱུད་པའི་དགོན་རྙིང་བཏབ་སྔ་ཤོས་ཤིག་ཏེ། མཁས་གྲུབ་ཁྱུང་པོ་རྣལ་འབྱོར་གྱིས་གླང་ཐང་པ་ལས་བསྙེན་རྫོགས་བྱས་ནས་འཕན་ཡུལ་འཇོག་པོའི་རི་ལ་སྒྲུབ་པ་བྱས་དུས། ཆོས་སྐྱོང་འབོད་པ་ལས་ཟས་ནོར་ཚན་ཆེན་འདུས་ཤིང་། གྲྭ་པ་མ་ཤོང་པར་འཇོག་པོའི་མདའ་ཡི་འཆད་ཁར་དགོན་པ་བཏབ་ནས་སློབ་མ་ཉིས་སྟོང་ཙམ་འདུས། ལོ་ངོ་བཞི་ཙམ་ཞིག་དེར་བཞུགས་རྗེས་ཌཱ་ཀིའི་ལུང་བསྟན་ལྟར་ཤངས་སུ་ཕེབས་ནས་ཞོང་ཞོང་དགོན་སོགས་ཕྱག་བཏབ་པར་གསལ།"@bo .
+}

@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3830 {
+    bda:G3830  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3830 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "6a/G3830.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3830 ;
+        adm:logEntry        bda:LG192D7B539247E313 , bda:LG5FE38593EDD5AD8F , bda:LG740D690007298201 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513331207:352" ;
+        adm:place_id_lex    "513331207:352" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG192D7B539247E313
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-09T09:35:43.049Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG5FE38593EDD5AD8F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG740D690007298201
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-12T10:25:05.925Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV5C3BD64A033A2892
+        a                   :PlaceFounded ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G3830  a            :Place ;
+        skos:altLabel       "dpal gshen bstan kha rag g.yung drung bde chen gling /"@bo-x-ewts , "g.yung drung bde chen gling /"@bo-x-ewts , "kare si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "kha rag dgon/"@bo-x-ewts , "卡热寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID11911EB94D133921 ;
+        :isRoot             true ;
+        :note               bdr:NT414253C040544DCD , bdr:NT8D7D6F409AEE1C8D , bdr:NTCFD84EEE5491E5E4 ;
+        :placeEvent         bdr:EV5C3BD64A033A2892 ;
+        :placeGonpaPerEcumen  "9.42" ;
+        :placeLat           "31.48333" ;
+        :placeLocatedIn     bdr:G2300 ;
+        :placeLong          "99.30000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID11911EB94D133921
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3830" .
+    
+    bdr:NT414253C040544DCD
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, pp. 316-321" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "bon monastery in dpal yul rdzong"@en .
+    
+    bdr:NT8D7D6F409AEE1C8D
+        a                   :Note ;
+        :contentLocationStatement  "p. 157" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "bon monastery founded in 1017 by bla yi gdung sprul do zho tshul khrims rgyal mtshan."@en .
+    
+    bdr:NTCFD84EEE5491E5E4
+        a                   :Note ;
+        :contentLocationStatement  "pp. 396-400" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "description of the monastery"@en .
+}

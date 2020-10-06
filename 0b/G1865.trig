@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1865 {
+    bda:G1865  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1865 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "0b/G1865.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1865 ;
+        adm:logEntry        bda:LG00AFCB0A9BF47598 , bda:LG4A4781A78C8B9832 , bda:LG65C3363DDB3442F9 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG00AFCB0A9BF47598
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-16T14:55:31.644Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4A4781A78C8B9832
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG65C3363DDB3442F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T16:06:14.638Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1865  a            :Place ;
+        skos:altLabel       "dgon gsar rin chen dge 'phel gling /"@bo-x-ewts , "rin chen dge 'phel gling /"@bo-x-ewts ;
+        skos:prefLabel      "khri ka dgon gsar dgon/"@bo-x-ewts , "Trika Gonsar Rinchen Gepeling"@en ;
+        :isRoot             true ;
+        :note               bdr:NT072E4E13EB03E386 , bdr:NTC71D42AF2B28BB7F ;
+        :placeLocatedIn     bdr:G1715 ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:NT072E4E13EB03E386
+        a                   :Note ;
+        :contentLocationStatement  "p. 170" ;
+        :noteSource         bdr:MW20214 ;
+        :noteText           "dge lugs pa monastery in khri ka rdzong, mtsho lho bod rigs rang skyong khul\nlocated 28 km"@en .
+    
+    bdr:NTC71D42AF2B28BB7F
+        a                   :Note ;
+        :contentLocationStatement  "p. 302" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "blo bzang bstan dar 'jigs med ... mgar rtse stag ring du yab tshe thar 'bum dang yum lha mo thar gyis sras su lcags stag (1830) la 'khrungs/ bde chen du thugs gnyer gnang/ thar shul dpon slob kyi bka' bzhin gshong mo che dang nye bar dgon pa spos te rje de nyid la phul par/ rin chen dge 'phel zhes pa'i mtshan bstsal/"@bo-x-ewts .
+}

@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G8LS1428 {
+    bda:G8LS1428  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G8LS1428 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cc/G8LS1428.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G8LS1428 ;
+        adm:logEntry        bda:LG2E3C6A33E768B9E3 , bda:LG411C07A86B17F81B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G8LS1429 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG2E3C6A33E768B9E3
+        a                   adm:WithdrawData ;
+        adm:logDate         "2011-01-05T14:47:28.71Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG411C07A86B17F81B
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-05-20T15:56:04.337Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G8LS1429"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G8LS1428  a         :Place ;
+        skos:prefLabel      "'dod rgu thang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT78016D0AA22574A1 ;
+        :placeLocatedIn     bdr:G8LS1429 .
+    
+    bdr:NT78016D0AA22574A1
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G8LS1429"@en .
+}

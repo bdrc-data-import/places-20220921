@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4460 {
+    bda:G4460  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4460 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c6/G4460.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4460 ;
+        adm:logEntry        bda:LG428EDE5DD8C52CF1 , bda:LG9F5B8D247DABE566 , bda:LGE4D9AD60C7794F2C , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542221204:542221111" ;
+        adm:place_id_lex    "542221204:542221111" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG428EDE5DD8C52CF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:25:06.7Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from stupa to mchodRten"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG9F5B8D247DABE566
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-05-18T16:17:20.38Z"^^xsd:dateTime ;
+        adm:logMessage      "added GIS ID & note in tib"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE4D9AD60C7794F2C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV24B96E2FC03245F8
+        a                   :PlaceFounded ;
+        :onYear             "0750"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionRime .
+    
+    bdr:EV2EA84AA496769B2F
+        a                   :PlaceConverted ;
+        :onYear             "1150"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKadam .
+    
+    bdr:G4460  a            :Place ;
+        skos:altLabel       "mchod rten bkra shis 'od 'bar/"@bo-x-ewts , "rtag spyan 'bum pa/"@bo-x-ewts , "Takchim Bumpa"@bo-x-phon-en , "Takchim Bumpa"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rtag spyan 'bum pa/"@bo-x-ewts , "达金塔"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2A22BE3BB27E5131 ;
+        :isRoot             true ;
+        :note               bdr:NT338A664400F8A5E7 , bdr:NT6CFAC08C698923CC ;
+        :placeEvent         bdr:EV24B96E2FC03245F8 , bdr:EV2EA84AA496769B2F ;
+        :placeGonpaPerEcumen  "11.4" ;
+        :placeLat           "29.13934" ;
+        :placeLocatedIn     bdr:G1513 ;
+        :placeLong          "91.85827" ;
+        :placeType          bdr:PT0072 .
+    
+    bdr:ID2A22BE3BB27E5131
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4460" .
+    
+    bdr:NT338A664400F8A5E7
+        a                   :Note ;
+        :noteText           "chorten; one of 3 Tensum Chorten in Yarlung"@en .
+    
+    bdr:NT6CFAC08C698923CC
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, pp. 50-51" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "ཡུམ་བུ་བརླ་མཁར་ནས་མུ་མཐུད་ཕྱིན་ན་སྤུ་རིང་གྲོང་གི་རི་ལྡེབས་སུ་མཆོད་རྟེན་དེ་གནས་ཡོད། འབུམ་པ་དེ་ནི་བཀའ་གདམས་པའི་བླ་མ་བྱ་བྲལ་འདུལ་བ་འཛིན་པས་ཕྱག་བཏབ་ལ། མཆོད་རྟེན་གྱི་རྟེན་དུ་ཆོས་རྒྱལ་ཁྲི་སྲོང་གི་ཐུགས་དམ་རྟེན་ཤེལ་གྱི་མཆོད་རྟེན་ཁྲུ་གང་པ་ཞིང་དང་། བྱང་ཆུབ་སེམས་པ་རྟག་ཏུ་ངུའི་སྤྱན་གཡོན་མ། སངས་རྒྱས་འོད་སྲུང་གི་འཕེལ་གདུང་སྲན་མ་ཙམ་གཉིས་བཞུགས་པ་སོགས་འཁོད།"@bo .
+}

@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G9GBX652800000 {
+    bda:G9GBX652800000
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G9GBX652800000 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "d7/G9GBX652800000.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G9GBX652800000 ;
+        adm:logEntry        bda:LGC09C4E48C5E11B28 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusProvisional .
+    
+    bda:LGC09C4E48C5E11B28
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2015-10-20T20:09:21.854Z"^^xsd:dateTime ;
+        adm:logMessage      "Added place from GB 2260-2013"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G9GBX652800000
+        a                   :Place ;
+        skos:altLabel       "ba yin guo leng meng gu zi zhi zhou"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "Bayinguoleng Mongol Autonomous Prefecture"@en , "巴音郭楞蒙古自治州"@zh-hans ;
+        :isRoot             true ;
+        :placeContains      bdr:G9GBX652801000 , bdr:G9GBX652822000 , bdr:G9GBX652823000 , bdr:G9GBX652824000 , bdr:G9GBX652825000 , bdr:G9GBX652826000 , bdr:G9GBX652827000 , bdr:G9GBX652828000 , bdr:G9GBX652829000 ;
+        :placeGB2260-2013   "652800000" ;
+        :placeLat           "41.8973579" ;
+        :placeLocatedIn     bdr:G9GBX650000000 ;
+        :placeLong          "86.1827338" ;
+        :placeType          bdr:PT0057 .
+}

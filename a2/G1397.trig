@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1397 {
+    bda:G1397  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1397 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a2/G1397.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1397 ;
+        adm:logEntry        bda:LG47EC425A40CF52AB , bda:LG994D056598AD88E8 , bda:LGC7EC2B4C08C57C76 , bda:LGE2AE2DB91292512E , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG47EC425A40CF52AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-11T16:17:55.216Z"^^xsd:dateTime ;
+        adm:logMessage      "new place type assigned"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG994D056598AD88E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-22T17:16:29.146Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC7EC2B4C08C57C76
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE2AE2DB91292512E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-23T09:04:01.413Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1397  a            :Place ;
+        skos:prefLabel      "cha ris/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT65E3F70172E57882 ;
+        :placeLocatedIn     bdr:G986 ;
+        :placeType          bdr:PT0068 .
+    
+    bdr:NT65E3F70172E57882
+        a                   :Note ;
+        :contentLocationStatement  "p. 142" ;
+        :noteSource         bdr:MW21017 ;
+        :noteText           "noted as the birthplace of the 6th rnga rgod skal bzang bstan pa rgya mtsho and described as \"chos 'khor tsho ba bcu gnyis kyi char gtogs\""@en .
+}

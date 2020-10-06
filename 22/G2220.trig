@@ -1,0 +1,106 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2220 {
+    bda:G2220  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2220 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "22/G2220.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2220 ;
+        adm:logEntry        bda:LG360BFECB4F26BE3F , bda:LG9B05B15A6AF25413 , bda:LGB3DF78A4D07F3B59 , bda:LGD800C64BB487F735 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542522204:41" ;
+        adm:place_id_lex    "542522204:41" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG360BFECB4F26BE3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-06-22T09:57:06.583Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9B05B15A6AF25413
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-06-06T10:21:48.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G2LS536 (withdrawn)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB3DF78A4D07F3B59
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-02-27T11:30:04.12Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD800C64BB487F735
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV4041A5F171FD5DD7
+        a                   :PlaceConverted ;
+        :onYear             "1450"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EVD5CFA75A317CE7D2
+        a                   :PlaceFounded ;
+        :note               bdr:NT09784A00351A2B56 ;
+        :onYear             "1050"^^xsd:gYear .
+    
+    bdr:G2220  a            :Place ;
+        skos:altLabel       "byang chub gling dgon/"@bo-x-ewts , "ma nam byang chub gling dgon/"@bo-x-ewts , "玛囊寺"@zh-hans , "manang si"@zh-latn-pinyin-x-ndia , "mangnang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "ma nam dgon/"@bo-x-ewts , "芒囊寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4D011B2C183424C1 ;
+        :isRoot             true ;
+        :note               bdr:NT9B3ECBBBFFC99C83 , bdr:NTDC42C5BFB4D10156 ;
+        :placeEvent         bdr:EV4041A5F171FD5DD7 , bdr:EVD5CFA75A317CE7D2 ;
+        :placeGonpaPerEcumen  "0.71" ;
+        :placeLat           "31.34278" ;
+        :placeLocatedIn     bdr:G2152 ;
+        :placeLong          "79.78000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID4D011B2C183424C1
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G2220" .
+    
+    bdr:NT09784A00351A2B56
+        a                   :Note ;
+        :noteText           "gsang sngags gsar ma/"@bo-x-ewts .
+    
+    bdr:NT9B3ECBBBFFC99C83
+        a                   :Note ;
+        :contentLocationStatement  "v. 4, p. 52" ;
+        :noteSource         bdr:MW23847 ;
+        :noteText           "Another name of this monastery is Manam jangchub ling. This is the place where Atisha composed Bodhipradipada or Jangchub lamdron, the fundamental text of Lamrim teaching"@en .
+    
+    bdr:NTDC42C5BFB4D10156
+        a                   :Note ;
+        :contentLocationStatement  "p. 3" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "dge lugs pa monastery located in rtsa rang khongs of rtsa mda' rdzong\nsaid to have been founded by lha bla ma byang chub 'od\n\"dkon gnyer mi skya gcig/ slad grwa tshad bzhi'o\""@en .
+}

@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2CN10921 {
+    bda:G2CN10921  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2CN10921 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "18/G2CN10921.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2CN10921 ;
+        adm:logEntry        bda:LG3636F7421CAB7233 , bda:LG46D7BF79F56D596B , bda:LG4A412A47EB0CA765 , bda:LG5A296FD8A8C7A5AD , bda:LG6708F61047900CEF , bda:LG699E06996C3B1DB4 , bda:LG8C110B6B7452D023 , bda:LGA21F5A6B223230A8 , bda:LGA691A8314759FD1F , bda:LGD21BA39E3E7E4896 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3636F7421CAB7233
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-12-05T09:47:29.451Z"^^xsd:dateTime ;
+        adm:logMessage      "edited contains info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG46D7BF79F56D596B
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T14:29:46.57Z"^^xsd:dateTime ;
+        adm:logMessage      "edited place contained info"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG4A412A47EB0CA765
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-30T09:35:59.326Z"^^xsd:dateTime ;
+        adm:logMessage      "added date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG5A296FD8A8C7A5AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-29T09:09:27.496Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG6708F61047900CEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-19T16:50:57.464Z"^^xsd:dateTime ;
+        adm:logMessage      "added as par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG699E06996C3B1DB4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-22T17:56:16.532Z"^^xsd:dateTime ;
+        adm:logMessage      "added regions"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG8C110B6B7452D023
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-10-12T15:28:19.573Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA21F5A6B223230A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-23T14:25:29.862Z"^^xsd:dateTime ;
+        adm:logMessage      "delete g1325"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGA691A8314759FD1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G1325"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGD21BA39E3E7E4896
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-09T14:14:51.283Z"^^xsd:dateTime ;
+        adm:logMessage      "edited place contained in"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVE87117C49EAE9848
+        a                   :PlaceFounded ;
+        :notAfter           "1399"^^xsd:gYear ;
+        :notBefore          "1200"^^xsd:gYear .
+    
+    bdr:G2CN10921  a        :Place ;
+        skos:prefLabel      "stod lung mtshur phu'i par khang /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT90DDFB953CA3D682 , bdr:NT9D8E9C3203DDE97B ;
+        :placeEvent         bdr:EVE87117C49EAE9848 ;
+        :placeLocatedIn     bdr:G1325 , bdr:G33 ;
+        :placeType          bdr:PT0059 .
+    
+    bdr:NT90DDFB953CA3D682
+        a                   :Note ;
+        :contentLocationStatement  "p. 115-116" ;
+        :noteSource         bdr:MW20850 ;
+        :noteText           "སྟོད་ལུང་མཚུར་ཕུའི་པར་ཁང་ལ་རྩེའམ་སྟེང་པར་ཁང་ཞེས་པ་གཅིག་དང་། པར་ཁང་ཤོད་ཅེས་པ་གཉིས་བཞུགས་ཡོད་པ་ལས། གཉིས་པ་སྒར་ཆེན་གྱི་པར་ཁང་ཤོད་ཟེར་གུ་ཀ་བ་བཞི་ཡི་ས་ལམཐའ་འཁོར་ཀུན་དགའ་ར་བ་རང་གཤོམ་ནང་གསུང་རྟེན་གྲས། ཕྱག་ཆེན་སྔོན་འགྲོ་འཕགས་ལམ་བགྲོད་པའི་ཤིང་རྟ། ཕྱག་ཆེན་ཁྲིད་ཡིག་རྒྱས་པ་ངེས་དོན་རྒྱ་མཚོ། འབྲིང་པོ་ཆོས་སྐུ་མཛུབ་ཚུག། བསྡུས་པ་མ་རིག་མུན་སེལ་རྣམས་རྗེ་དགུ་པ་དབང་ཕྱུག་རྡོ་རྗེའི་གསུང་སོགས་་་་་་་་་་་་པར་ཤིང་ཞལ་བྱང་ངེས་པ་དང་མ་ངེས་པ་བསྡོམས་པར་ཤིང་ངོ་གྲངས་སྟོང་ཕྲག་བརྒྱད་ལྷག་ཙམ་བཅས་བཞུགས།།"@bo .
+    
+    bdr:NT9D8E9C3203DDE97B
+        a                   :Note ;
+        :contentLocationStatement  "p. 59-65" ;
+        :noteSource         bdr:MW20850 ;
+        :noteText           "སྟོད་ལུང་མཚུར་ཕུའི་པར་ཁང་ལ་རྩེའམ་སྟེང་པར་ཁང་ཞེས་པ་གཅིག་དང་། པར་ཁང་ཤོད་ཅེས་པ་གཉིས་བཞུགས་ཡོད་པ་ལས། དང་པོ་རྩེའམ་སྟེང་པར་ཁང་། 《སྟེང་པར་ཁང་》ཞེས་པ་སྒར་ཆེན་གྱི་གཏེར་མཛོད་པར་ཁང་ཀ་ཐུང་བཅུ་གཉིས་དང་། དཀར་སེལ་གཡབ་ཅན་ཀ་རིང་གཉིས་ཀྱི་ས་ལ། ནང་བཞུགས་སྐུ་རྟེན་གསེར་ཟངས་ལས་གྲུབ་པའི་གུ་རུ་སྣང་སྲིད་ཟིལ་གནོན་གྱི་སྐུ་མི་ཚད་ཙམ་དང་། སྐུ་རྒྱུ་དང་སྐུ་ཚད་གོང་མཚུངས་ཀྱི་རྗེ་བཙུན་སྒྲོལ་ལྗང་གི་སྐུ་གཅིག། ཐུགས་རྟེན་དུ་དངུལ་གྱི་བྱང་ཆུབ་མཆོད་རྟེན་མི་ཚད་ཙམ་བཅས་དང་། འཁོར་ཡུག་གི་ཀུན་དགའ་རྭ་བའི་ནང་རིན་ཆེན་གཏེར་མཛོད་ཆེན་མོའི་ཤིང་པར་སོགས་་་་་་་་་་་་་པར་ཤིང་ཞལ་བྱང་ངེས་པ་དང་མ་ངེས་པ་ཁྱོན་ཆེན་བཅས་པ་བྱུར་ཁེངས་སུ་བཞུགས།།"@bo .
+}

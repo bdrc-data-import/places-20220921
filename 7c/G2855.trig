@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2855 {
+    bda:G2855  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2855 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7c/G2855.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2855 ;
+        adm:logEntry        bda:LGB8A0C4DB23F29652 , bda:LGF47F851C9A11236F , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGB8A0C4DB23F29652
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF47F851C9A11236F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-16T11:14:11.733Z"^^xsd:dateTime ;
+        adm:logMessage      "added nmae"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G2855  a            :Place ;
+        skos:altLabel       "g.yas ru gsar ma grwa tshang gi sba mgo ri khrod/"@bo-x-ewts ;
+        skos:prefLabel      "sba mgo ri khrod/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT7723A24BC716ED6E ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:NT7723A24BC716ED6E
+        a                   :Note ;
+        :contentLocationStatement  "p. 41" ;
+        :noteSource         bdr:MW9668 ;
+        :noteText           "gsar ma pa hermitage affiliated with ri bo che\nhad about 20 monks at the time of kaH thog si tu"@en .
+}

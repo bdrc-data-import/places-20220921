@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3553 {
+    bda:G3553  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3553 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8f/G3553.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3553 ;
+        adm:logEntry        bda:LG6A3876E856D07753 , bda:LG79C3BA3867AF481A , bda:LGD262A17C1A171AB2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6A3876E856D07753
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG79C3BA3867AF481A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-24T10:06:06.225Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD262A17C1A171AB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-04T11:21:05.099Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3553  a            :Place ;
+        skos:prefLabel      "'u yug ma chu/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT827C6AA23D761EEC ;
+        :placeLocatedIn     bdr:G2171 , bdr:G3CN137 ;
+        :placeType          bdr:PT0065 .
+    
+    bdr:NT827C6AA23D761EEC
+        a                   :Note ;
+        :contentLocationStatement  "p. 47" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "river flowing through rnam gling rdzong"@en .
+}

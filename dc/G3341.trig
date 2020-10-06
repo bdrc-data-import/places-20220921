@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3341 {
+    bda:G3341  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3341 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "dc/G3341.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3341 ;
+        adm:logEntry        bda:LG97C10FB1D1A60BD7 , bda:LG9A83FF9B7BCBF363 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:G3328 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG97C10FB1D1A60BD7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9A83FF9B7BCBF363
+        a                   adm:WithdrawData ;
+        adm:logDate         "2013-11-21T14:32:21.321Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G3328"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bdr:G3341  a            :Place ;
+        skos:prefLabel      "gnas chung chus (stod lung bde chen rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTD99BEBA3F3188A68 , bdr:NTE29D2CFFB9C6E55B ;
+        :placeLocatedIn     bdr:G1325 ;
+        :placeType          bdr:PT0012 .
+    
+    bdr:NTD99BEBA3F3188A68
+        a                   :Note ;
+        :contentLocationStatement  "p. 249" ;
+        :noteSource         bdr:MW23664 .
+    
+    bdr:NTE29D2CFFB9C6E55B
+        a                   :Note ;
+        :noteText           "withdrawn in favor of G3328"@en .
+}

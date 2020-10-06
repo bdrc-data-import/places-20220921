@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3583 {
+    bda:G3583  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3583 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "35/G3583.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3583 ;
+        adm:logEntry        bda:LG0DF6D647EBBB1EAB , bda:LG2FF1CCE56CA90AF4 , bda:LG9256275123BD1FB5 , bda:LGE30E370801B0B535 , bda:LGEA3141F17B72E474 , bda:LGIMA37A954E21 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0DF6D647EBBB1EAB
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:56:28.997Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from placeTypes:countySeats to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG2FF1CCE56CA90AF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-05T12:38:33.926Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"rgyal rtse grong rdal\" & added place type with location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9256275123BD1FB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-17T11:04:39.572Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type as \"grong rdal\""@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE30E370801B0B535
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-11-28T15:44:53.171Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from countyseats to rdzong"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGEA3141F17B72E474
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIMA37A954E21
+        a                   adm:UpdateData ;
+        adm:logDate         "2015-10-20T22:30:59.465Z"^^xsd:dateTime ;
+        adm:logMessage      "populating gis from G9GBX..."@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bdr:G3583  a            :Place ;
+        skos:prefLabel      "rgyal rtse grong rdal/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT70173D03F3F0B582 ;
+        :placeGB2260-2013   "542323100" ;
+        :placeLocatedIn     bdr:G2175 ;
+        :placeType          bdr:PT0045 .
+    
+    bdr:NT70173D03F3F0B582
+        a                   :Note ;
+        :contentLocationStatement  "p. 49" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "county seat of rgyal rtse rdzong"@en .
+}

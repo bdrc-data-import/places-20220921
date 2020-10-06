@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1313 {
+    bda:G1313  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1313 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a2/G1313.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1313 ;
+        adm:logEntry        bda:LG1E0C18D92D32E580 , bda:LG792B2C2C1833AAC0 , bda:LGD545454944DFE28F , bda:LGIM6B07AF7F36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1E0C18D92D32E580
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-01-28T12:35:03.823Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected typo"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG792B2C2C1833AAC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-07T10:53:34.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added type & note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD545454944DFE28F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM6B07AF7F36
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:G1313  a            :Place ;
+        skos:altLabel       "srug gan pa ba/"@bo-x-ewts ;
+        skos:prefLabel      "srug gan pa/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT5DB3F981A94B4A8B , bdr:NTF08A7BF110C6E1A6 ;
+        :placeType          bdr:PT0083 .
+    
+    bdr:NT5DB3F981A94B4A8B
+        a                   :Note ;
+        :noteText           "gtsang stod phyogs su yin tshod tsam las nges gtan ma rnyed pa mu mthud rtsad rgyu/"@bo-x-ewts .
+    
+    bdr:NTF08A7BF110C6E1A6
+        a                   :Note ;
+        :noteText           "a traditional place name"@en .
+}

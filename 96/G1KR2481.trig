@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2481 {
+    bda:G1KR2481  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2481 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "96/G1KR2481.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2481 ;
+        adm:logEntry        bda:LG836F6442608196D4 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632324204:640" ;
+        adm:place_id_lex    "632324204:408" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG836F6442608196D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-01-10T16:32:46.533Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EV8A316362E09B7D19
+        a                   :PlaceFounded ;
+        :onYear             "1905"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G1KR2481  a         :Place ;
+        skos:altLabel       "shing bza' dgon bkra shis bde legs 'khyil/"@bo-x-ewts , "stag lung dgon/"@bo-x-ewts , "stag lung dgon bkra shis bde legs 'khyil/"@bo-x-ewts , "德隆寺"@zh-hans , "delong si"@zh-latn-pinyin-x-ndia , "xiangzha si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "shing bza' dgon/"@bo-x-ewts , "香扎寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8D5175E3FE4375AC ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV8A316362E09B7D19 ;
+        :placeGonpaPerEcumen  "0.99" ;
+        :placeLat           "34.21000" ;
+        :placeLocatedIn     bdr:G3185 ;
+        :placeLong          "101.55000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID8D5175E3FE4375AC
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2481" .
+}

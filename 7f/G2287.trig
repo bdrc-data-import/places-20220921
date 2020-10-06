@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2287 {
+    bda:G2287  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2287 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7f/G2287.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2287 ;
+        adm:logEntry        bda:LG25B5ABC4032B7652 , bda:LGF98E2E3C7E167C99 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG25B5ABC4032B7652
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T16:23:52.589Z"^^xsd:dateTime ;
+        adm:logMessage      "re added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF98E2E3C7E167C99
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bdr:G2287  a            :Place ;
+        skos:prefLabel      "stong mtsho chus (sger rtse rdzong)"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT0B4B3911A5DFE774 ;
+        :placeContains      bdr:G2277 , bdr:G2278 ;
+        :placeLocatedIn     bdr:G2157 ;
+        :placeType          bdr:PT0012 .
+    
+    bdr:NT0B4B3911A5DFE774
+        a                   :Note ;
+        :contentLocationStatement  "p. 12" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "chus in sger rtse rdzong, mnga' ris prefecture"@en .
+}

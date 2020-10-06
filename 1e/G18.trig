@@ -1,0 +1,138 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G18 {
+    bda:G18  a              adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G18 ;
+        adm:facetIndex      18 ;
+        adm:gitPath         "1e/G18.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G18 ;
+        adm:logEntry        bda:LG0C1EACEA4366CE76 , bda:LG200D8A7F88C3033D , bda:LG5452AF9934B02B98 , bda:LG698A5D7223D88A07 , bda:LG6F686B7E80CA7B42 , bda:LG9890DBFF20CA07D8 , bda:LGCD827844389C94C2 , bda:LGD73EFE57AB365428 , bda:LGF426523EAFF8A4CA , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "513331100:334" ;
+        adm:place_id_lex    "513331100:334" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0C1EACEA4366CE76
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-08-15T14:35:19.42Z"^^xsd:dateTime ;
+        adm:logMessage      "note added from khams sde dge rgyal po'i srid don lo rgyus"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG200D8A7F88C3033D
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T14:51:52.364Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG5452AF9934B02B98
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-07-11T17:07:13.736Z"^^xsd:dateTime ;
+        adm:logMessage      "added records and notes"@en ;
+        adm:logWho          bdu:U00015 .
+    
+    bda:LG698A5D7223D88A07
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-05T10:24:48.584Z"^^xsd:dateTime ;
+        adm:logMessage      "added dpal yul dgon gyi par khang"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG6F686B7E80CA7B42
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9890DBFF20CA07D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-03-18T11:52:32.715Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names & added contain"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCD827844389C94C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-08-09T08:54:46.623Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & events"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD73EFE57AB365428
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-03T16:19:00.822Z"^^xsd:dateTime ;
+        adm:logMessage      "edited title, reviewed"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LGF426523EAFF8A4CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T14:24:48.188Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup G2JM241 in contains, added description"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV10B214A95DC72771
+        a                   :PlaceRebuilt ;
+        :notAfter           "1699"^^xsd:gYear ;
+        :notBefore          "1600"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:EV873B44B81B3D8A25
+        a                   :PlaceFounded ;
+        :onYear             "1165"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionNyingma .
+    
+    bdr:G18  a              :Place ;
+        rdfs:comment        "rgya gar dpal yul bshad grwa ni ang rtags G2JM241 nang gsal/" ;
+        skos:altLabel       "dpal yul rnam rgyal byang chub chos gling /"@bo-x-ewts , "dpal yul rnam rgyal byang chub gling /"@bo-x-ewts , "rnam rgyal byang chub gling /"@bo-x-ewts , "rnam rgyal rtse (sngar yod dgon chung)"@bo-x-ewts , "baiyu si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dpal yul dgon/"@bo-x-ewts , "Palyul Gonpa Namgyal Jangchubling"@en , "白玉寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE382E6221DD371E7 ;
+        :isRoot             true ;
+        :note               bdr:NT093795EF2B66B06A , bdr:NT529D7F0A1D295836 , bdr:NT9E5AD2C95F73ABDE ;
+        :placeContains      bdr:G2JM240 , bdr:G3JT12568 ;
+        :placeEvent         bdr:EV10B214A95DC72771 , bdr:EV873B44B81B3D8A25 ;
+        :placeGonpaPerEcumen  "13.12" ;
+        :placeLat           "31.21667" ;
+        :placeLocatedIn     bdr:G2300 ;
+        :placeLong          "98.83334" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDE382E6221DD371E7
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G18" .
+    
+    bdr:NT093795EF2B66B06A
+        a                   :Note ;
+        :contentLocationStatement  "v. 3, pp. 248-282" ;
+        :noteSource         bdr:MW19997 ;
+        :noteText           "rnying ma monastery in dpal yul rdzong"@en .
+    
+    bdr:NT529D7F0A1D295836
+        a                   :Note ;
+        :noteText           "one of the six great rnying ma pa monasteries of tibet"@en .
+    
+    bdr:NT9E5AD2C95F73ABDE
+        a                   :Note ;
+        :contentLocationStatement  "p. 128" ;
+        :noteSource         bdr:MW1KG5539 ;
+        :noteText           "rnying ma monastery in the sde dge territory founded in 1665 (rab byung 11 shing sbrul) at the behest of the ruler of sde dge by rig 'dzin kun bzang shes rab; there was a smaller older monastery here called rnam rgyal rtse (sngon byon grub brnyes mang po'i gdan sa rnam rgyal rtse zhes pa'i dgon chung zhig yod pa der phebs nas); the name given to the new monastery was dpal yul rnam rgyal byang chub chos gling; formerly there were 11 incarnated lamas, 6 mkhan po, and more than 500 monks; now there are 4 incarnations and 135 monks."@en .
+}

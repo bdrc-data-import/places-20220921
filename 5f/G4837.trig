@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G4837 {
+    bda:G4837  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G4837 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "5f/G4837.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G4837 ;
+        adm:logEntry        bda:LG22A1EA47B7A6F6F8 , bda:LG86BA07EFEE5DC40E , bda:LGC4F9C39FE3854602 , bda:LGF20A5DA3AA7D775F , bda:LGFCBABF113BC22D60 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "623024207:623024131" ;
+        adm:place_id_lex    "623024207:623024131" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG22A1EA47B7A6F6F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-06-14T15:11:32.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added isLocatedIn G2199"@en ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG86BA07EFEE5DC40E
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-05-23T12:00:28.084Z"^^xsd:dateTime ;
+        adm:logMessage      "cleanup"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC4F9C39FE3854602
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-08T09:25:21.825Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF20A5DA3AA7D775F
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-06T12:45:12.969Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFCBABF113BC22D60
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EVFD2B1AC4C5E11871
+        a                   :PlaceFounded ;
+        :onYear             "1799"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:G4837  a            :Place ;
+        skos:altLabel       "dpal ldan chos 'khor gling /"@bo-x-ewts , "ra tsa dgon/"@bo-x-ewts , "rdo ri ra rtsa dgon dpal ldan chos 'khor gling /"@bo-x-ewts , "多儿然子寺"@zh-hans , "duo'er ranzi si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rdo ri ra rtsa dgon/"@bo-x-ewts , "多尔然子寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2257E211BD001988 ;
+        :isRoot             true ;
+        :note               bdr:NT7229E93AB5C73BC4 ;
+        :placeEvent         bdr:EVFD2B1AC4C5E11871 ;
+        :placeGonpaPerEcumen  "5.4" ;
+        :placeLat           "33.79242" ;
+        :placeLocatedIn     bdr:G2205 ;
+        :placeLong          "103.88073" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:ID2257E211BD001988
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G4837" .
+    
+    bdr:NT7229E93AB5C73BC4
+        a                   :Note ;
+        :contentLocationStatement  "v. 2, p. 148" ;
+        :noteSource         bdr:MW20379 ;
+        :noteText           "monastery in the kan lho autonomous tibetan prefecture"@en .
+}

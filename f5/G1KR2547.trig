@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1KR2547 {
+    bda:G1KR2547  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1KR2547 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "f5/G1KR2547.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1KR2547 ;
+        adm:logEntry        bda:LG0B171E1C486D0B51 , bda:LG76BBE844C10C465F , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "632523201:647" ;
+        adm:place_id_lex    "632523201:380" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B171E1C486D0B51
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-03T15:58:10.541Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG76BBE844C10C465F
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-02-03T16:18:11.434Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5E940A373A
+        a                   adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "created by monastery import"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bdr:EVEAF69FFC1A489702
+        a                   :PlaceFounded ;
+        :onYear             "1880"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon , bdr:TraditionGeluk .
+    
+    bdr:G1KR2547  a         :Place ;
+        skos:altLabel       "khri ka yul lha lha khang /"@bo-x-ewts , "尤拉康"@zh-hans , "guide wenchang miao"@zh-latn-pinyin-x-ndia , "youla kang"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "wen khrang lha khang /"@bo-x-ewts , "贵德文昌庙"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCC2CFF3DFC7888BE ;
+        :isRoot             true ;
+        :note               bdr:NT89E88BB9FDE8FB3C ;
+        :placeEvent         bdr:EVEAF69FFC1A489702 ;
+        :placeGonpaPerEcumen  "59.24" ;
+        :placeLat           "36.03000" ;
+        :placeLocatedIn     bdr:G1715 ;
+        :placeLong          "101.38000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDCC2CFF3DFC7888BE
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G1KR2547" .
+    
+    bdr:NT89E88BB9FDE8FB3C
+        a                   :Note ;
+        :noteText           "need to withdraw in favor of G1KR2546\nལྷ་ཁང་འདི་གཉིས་དོན་ཏུ་གཅིག་ཡིན་པས་བསྐུངས་དགོས་སོ།"@en .
+}

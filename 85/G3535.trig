@@ -1,0 +1,116 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G3535 {
+    bda:G3535  a            adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G3535 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "85/G3535.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G3535 ;
+        adm:logEntry        bda:LG28D9B2C89BDF1CD6 , bda:LG4413B97305BB5826 , bda:LGEB09EF9CF8C9F30E , bda:LGF8153821B35A102F , bda:LGFD61F752F6E41AA7 , bda:LGIM61A98BA6 , bda:LGIMCC004DCEF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "542335200:542335108" ;
+        adm:place_id_lex    "542335200:542335108" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG28D9B2C89BDF1CD6
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-07-02T11:33:51.627Z"^^xsd:dateTime ;
+        adm:logMessage      "added dbus gtsang"@en ;
+        adm:logWho          bdu:U00018 .
+    
+    bda:LG4413B97305BB5826
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-09-20T11:27:45.468Z"^^xsd:dateTime ;
+        adm:logMessage      "added names & event & notes"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEB09EF9CF8C9F30E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF8153821B35A102F
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-10-03T10:06:48.792Z"^^xsd:dateTime ;
+        adm:logMessage      "added Gis Coords"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFD61F752F6E41AA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-04T10:33:22.547Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC004DCEF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:10:22.531Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from hermitage to riKhrod"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV3C9EFBB905421459
+        a                   :PlaceFounded ;
+        :onYear             "1234"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:EV46A78D3DF1A63980
+        a                   :PlaceFounded ;
+        :onYear             "1060"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G3535  a            :Place ;
+        skos:altLabel       "la stod lho'i la phug bde chen sgang /"@bo-x-ewts , "ri khud yang dben bde chen sgang /"@bo-x-ewts , "Palha phuk"@en-x-mixed , "deqing gang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bde chen sgang /"@bo-x-ewts , "Dechengang"@en-x-mixed , "德清岗寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID14F8B7E8D7132576 ;
+        :isRoot             true ;
+        :note               bdr:NT1E277ABE8E904796 , bdr:NT9FBE29443FE374A5 , bdr:NTBF491DF367B50160 , bdr:NTCF6C439333B12105 ;
+        :placeEvent         bdr:EV3C9EFBB905421459 , bdr:EV46A78D3DF1A63980 ;
+        :placeGonpaPerEcumen  "0.82" ;
+        :placeLat           "28.898370" ;
+        :placeLocatedIn     bdr:G2161 , bdr:G3186 ;
+        :placeLong          "85.653916" ;
+        :placeType          bdr:PT0021 .
+    
+    bdr:ID14F8B7E8D7132576
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G3535" .
+    
+    bdr:NT1E277ABE8E904796
+        a                   :Note ;
+        :contentLocationStatement  "p. 40" ;
+        :noteSource         bdr:MW23886 ;
+        :noteText           "bonpo hermitage founded in the 11th century by spa ston dpal mchog; located in  skyid grong rdzong"@en .
+    
+    bdr:NT9FBE29443FE374A5
+        a                   :Note ;
+        :noteText           "One monk and four ser khyim"@en .
+    
+    bdr:NTBF491DF367B50160
+        a                   :Note ;
+        :contentLocationStatement  "p. 29" ;
+        :noteSource         bdr:MW25095 ;
+        :noteText           "༡༢༣༤ལོར་སྤ་སྟོན་རྒྱལ་བ་ཤེས་རབ་ཀྱིས་ཕྱག་བཏབ་ཟེར། ཕྱིས་གདུང་རྒྱུད་དགོན་བཅས་རིམ་ཉམས་བྱུང་ཚུལ་སོགས་གནས་ཚུལ་ཉུང་བསྡུས་གསལ།"@bo .
+    
+    bdr:NTCF6C439333B12105
+        a                   :Note ;
+        :noteText           "in Osaka Bon volume"@en .
+}

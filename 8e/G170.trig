@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G170 {
+    bda:G170  a             adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G170 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "8e/G170.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G170 ;
+        adm:logEntry        bda:LG4E248DA74670A184 , bda:LG8A0D15D9FF82867B , bda:LG8C54ECE1D68EAF78 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:place_id_TBRC   "622326201:1" ;
+        adm:place_id_lex    "622326201:1" ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4E248DA74670A184
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8A0D15D9FF82867B
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-10-07T14:20:19.447Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00002 .
+    
+    bda:LG8C54ECE1D68EAF78
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-16T10:50:06.956Z"^^xsd:dateTime ;
+        adm:logMessage      "arranged names"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM61A98BA6  a     adm:UpdateData ;
+        adm:logAgent        "monastery import" ;
+        adm:logDate         "2012-12-25T01:09:21.507Z"^^xsd:dateTime ;
+        adm:logMessage      "updated place from monastery csv"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8BCFDFCA43
+        a                   adm:UpdateData ;
+        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
+        adm:logMessage      "type changed from monastery to dgonPa"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00020 .
+    
+    bdr:EV350E3C1B8B444816
+        a                   :PlaceConverted ;
+        :onYear             "1639"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionGeluk .
+    
+    bdr:EV70B27E3DFE8749BE
+        a                   :PlaceConverted ;
+        :onYear             "1360"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionKagyu .
+    
+    bdr:EVC06C1F9D6BBB2A55
+        a                   :PlaceFounded ;
+        :onYear             "0820"^^xsd:gYear ;
+        :placeEventAffiliation  bdr:TraditionBon .
+    
+    bdr:G170  a             :Place ;
+        skos:altLabel       "bkra shis dar rgyas gling /"@bo-x-ewts , "mchod rten thang bkra shis dar rgyas gling /"@bo-x-ewts , "Chortentang Monastery"@en , "tiantang si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mchod rten thang dgon/"@bo-x-ewts , "Chortentang Tashi Dargyeling"@en-x-mixed , "天堂寺"@zh-hans ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDEE80DF11B7E3B910 ;
+        :isRoot             true ;
+        :note               bdr:NT6C3D19255D3A88C9 , bdr:NTBCCDF9EEC22FDC65 ;
+        :placeEvent         bdr:EV350E3C1B8B444816 , bdr:EV70B27E3DFE8749BE , bdr:EVC06C1F9D6BBB2A55 ;
+        :placeGonpaPerEcumen  "3.52" ;
+        :placeLat           "36.95000" ;
+        :placeLocatedIn     bdr:G1052 ;
+        :placeLong          "102.50000" ;
+        :placeType          bdr:PT0037 .
+    
+    bdr:IDEE80DF11B7E3B910
+        a                   bdr:CHGISId ;
+        rdf:value           "TBRC_G170" .
+    
+    bdr:NT6C3D19255D3A88C9
+        a                   :Note ;
+        :noteText           "dge lugs pa establishment in a mdo"@en .
+    
+    bdr:NTBCCDF9EEC22FDC65
+        a                   :Note ;
+        :contentLocationStatement  "pp. 123-129" ;
+        :noteSource         bdr:MW28064 ;
+        :noteText           "description of this monastery"@en .
+}

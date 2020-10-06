@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G1TD35 {
+    bda:G1TD35  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G1TD35 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f5/G1TD35.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G1TD35 ;
+        adm:logEntry        bda:LG24489A5DAD5D972D , bda:LGD1FC26D08E705DF7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG24489A5DAD5D972D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-20T16:17:02.24Z"^^xsd:dateTime ;
+        adm:logMessage      "created record"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bda:LGD1FC26D08E705DF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-01-16T17:25:21.316Z"^^xsd:dateTime ;
+        adm:logMessage      "no changes"@en ;
+        adm:logWho          bdu:U00027 .
+    
+    bdr:EVAFEC7E513DE39504
+        a                   :PlaceFounded ;
+        :onYear             "1809"^^xsd:gYear .
+    
+    bdr:G1TD35  a           :Place ;
+        skos:altLabel       "bde ldan gling seng ge'i nga ro/"@bo-x-ewts , "Dedenling Sengge Ngaro/"@en ;
+        skos:prefLabel      "rgyal ba seng ge'i nga ro'i lha khang /"@bo-x-ewts , "Gyelwa Sengge Ngaro Lhakhang/"@en ;
+        :isRoot             true ;
+        :placeEvent         bdr:EVAFEC7E513DE39504 ;
+        :placeLat           "35.193306" ;
+        :placeLocatedIn     bdr:G162 ;
+        :placeLong          "102.506372" .
+}
