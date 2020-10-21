@@ -1,0 +1,42 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KG220149 {
+    bda:G2KG220149  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KG220149 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c2/G2KG220149.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KG220149 ;
+        adm:logEntry        bda:LG0F125B5AEB5BB0CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0F125B5AEB5BB0CE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-10-20T12:59:01.605Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:G2KG220149  a       :Place ;
+        skos:altLabel       "sbas yul skyid mo lung /"@bo-x-ewts ;
+        skos:prefLabel      "skyid mo lung /"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NT20916E0E994DC154 ;
+        :placeIsNear        bdr:G4450 ;
+        :placeType          bdr:PT0022 .
+    
+    bdr:NT20916E0E994DC154
+        a                   :Note ;
+        :noteText           "on the Tibet-Nepal border."@en .
+}
