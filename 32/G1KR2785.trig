@@ -15,15 +15,21 @@ bdg:G1KR2785 {
     bda:G1KR2785  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1KR2785 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "32/G1KR2785.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1KR2785 ;
-        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:logEntry        bda:LGAC717ECF6FE985D3 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "632723206:55" ;
         adm:place_id_lex    "632723206:55" ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGAC717ECF6FE985D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-10T15:50:20.322Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGIM5E940A373A
         a                   adm:UpdateData ;
@@ -38,12 +44,12 @@ bdg:G1KR2785 {
         adm:logMessage      "updated place from monastery csv"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bdr:EV070CE0FA825E054B
+    bdr:EV04B9E87CBF52F645
         a                   :PlaceConverted ;
         :onYear             "1252"^^xsd:gYear ;
         :placeEventAffiliation  bdr:TraditionSakya .
     
-    bdr:EVD91768D40665EAAB
+    bdr:EV070CE0FA825E054B
         a                   :PlaceFounded ;
         :placeEventAffiliation  bdr:TraditionBon .
     
@@ -51,21 +57,27 @@ bdg:G1KR2785 {
         skos:altLabel       "tudeng si"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "thub bstan dgon pa/"@bo-x-ewts , "土登寺"@zh-hans ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID83C761FEE1D537D1 ;
+            bdr:ID397CE1F4D334610C ;
         :isRoot             true ;
-        :note               bdr:NT28CA3182A69336B9 ;
-        :placeEvent         bdr:EV070CE0FA825E054B , bdr:EVD91768D40665EAAB ;
+        :note               bdr:NT28CA3182A69336B9 , bdr:NTD91768D40665EAAB ;
+        :placeEvent         bdr:EV04B9E87CBF52F645 , bdr:EV070CE0FA825E054B ;
         :placeGonpaPerEcumen  "26.81" ;
         :placeLat           "33.27071" ;
         :placeLocatedIn     bdr:G2325 ;
         :placeLong          "97.04208" ;
         :placeType          bdr:PT0037 .
     
-    bdr:ID83C761FEE1D537D1
+    bdr:ID397CE1F4D334610C
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G1KR2785" .
     
     bdr:NT28CA3182A69336B9
         a                   :Note ;
         :noteText           "changed from Bon"@en .
+    
+    bdr:NTD91768D40665EAAB
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 45" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "sa skya pa monastery in yus hru'u prefecture, qinghai province"@en .
 }

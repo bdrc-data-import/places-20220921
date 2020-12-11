@@ -15,18 +15,22 @@ bdg:G2553 {
     bda:G2553  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2553 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7b/G2553.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2553 ;
-        adm:logEntry        bda:LG0EB6D076D9A2F7C2 , bda:LG650EBE8BEA00BA25 , bda:LGBBD9B714DF6FBC44 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG0EB6D076D9A2F7C2 , bda:LG5473E55C5E29FC82 , bda:LG650EBE8BEA00BA25 , bda:LGBBD9B714DF6FBC44 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bda:LG0EB6D076D9A2F7C2
         a                   adm:UpdateData ;
         adm:logDate         "2010-10-27T12:47:28.167Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00002 .
+    
+    bda:LG5473E55C5E29FC82
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG650EBE8BEA00BA25
         a                   adm:UpdateData ;
@@ -35,8 +39,10 @@ bdg:G2553 {
         adm:logWho          bdu:U00007 .
     
     bda:LGBBD9B714DF6FBC44
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:WithdrawData ;
+        adm:logDate         "2020-12-10T15:41:32.237Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in faor of G2717"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGIM8BCFDFCA43
         a                   adm:UpdateData ;
@@ -50,7 +56,6 @@ bdg:G2553 {
         skos:prefLabel      "khri 'du dgon gsar dgon/"@bo-x-ewts , "Tridu Gonsar"@en ;
         :isRoot             true ;
         :note               bdr:NT96BC8593609A671D ;
-        :placeLocatedIn     bdr:G2325 ;
         :placeType          bdr:PT0037 .
     
     bdr:NT96BC8593609A671D
