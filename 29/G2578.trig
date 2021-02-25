@@ -15,11 +15,11 @@ bdg:G2578 {
     bda:G2578  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2578 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "29/G2578.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2578 ;
-        adm:logEntry        bda:LG1482E9CE80846E9A , bda:LG44AC487CEDEF08E6 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG1482E9CE80846E9A , bda:LG44AC487CEDEF08E6 , bda:LG876AC87B4B2F0F97 , bda:LGCC908FC439A78D80 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,21 +30,26 @@ bdg:G2578 {
         adm:logWho          bdu:U00007 .
     
     bda:LG44AC487CEDEF08E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-24T17:34:12.9Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and 2nd note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG876AC87B4B2F0F97
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGIM8BCFDFCA43
+    bda:LGCC908FC439A78D80
         a                   adm:UpdateData ;
-        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
-        adm:logMessage      "type changed from monastery to dgonPa"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00020 .
+        adm:logDate         "2021-02-24T21:41:37.807Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
     
     bdr:G2578  a            :Place ;
-        skos:altLabel       "'dam dkar dgon/"@bo-x-ewts , "'dam dkar lhun grub bde chen nges don chos 'khor gling /"@bo-x-ewts , "'dom dkar lhun grub bde chen sa don chos 'khor gling /"@bo-x-ewts , "lhun grub bde chen nges don chos 'khor gling /"@bo-x-ewts , "dangka si"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "'dom dkar dgon/"@bo-x-ewts , "当卡寺"@zh-hans ;
+        skos:altLabel       "'dam dkar lhun grub bde chen nges don chos 'khor gling /"@bo-x-ewts , "'dom dkar dgon/"@bo-x-ewts , "lhun grub bde chen nges don chos 'khor gling /"@bo-x-ewts ;
+        skos:prefLabel      "'dam dkar dgon/"@bo-x-ewts , "Damkar Monastery"@en , "当卡寺"@zh-hans ;
         :isRoot             true ;
-        :note               bdr:NT0A17BE63617E0605 ;
+        :note               bdr:NT0A17BE63617E0605 , bdr:NTF3AA11284EBB1588 ;
         :placeLocatedIn     bdr:G2326 ;
         :placeType          bdr:PT0037 .
     
@@ -53,4 +58,8 @@ bdg:G2578 {
         :contentLocationStatement  "v. 1, p. 46" ;
         :noteSource         bdr:MW18134 ;
         :noteText           "karma bka' brgyud pa monastery in yus hru'u prefecture, qinghai province"@en .
+    
+    bdr:NTF3AA11284EBB1588
+        a                   :Note ;
+        :noteText           "seat of dul mo 'ba sa ltag ldir"@en .
 }
