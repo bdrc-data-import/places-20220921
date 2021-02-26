@@ -15,11 +15,11 @@ bdg:G1085 {
     bda:G1085  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1085 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ba/G1085.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1085 ;
-        adm:logEntry        bda:LG18AE50609CADFC9A , bda:LG9A222E4021AB862C , bda:LGBE3E2AC5A14F484B , bda:LGE73C40449D1F0D68 ;
+        adm:logEntry        bda:LG18AE50609CADFC9A , bda:LG349C28FB61035CED , bda:LG9A222E4021AB862C , bda:LGBE3E2AC5A14F484B , bda:LGE73C40449D1F0D68 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,9 +29,15 @@ bdg:G1085 {
         adm:logMessage      "added language encoding & place type"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG9A222E4021AB862C
+    bda:LG349C28FB61035CED
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG9A222E4021AB862C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-25T18:30:36.319Z"^^xsd:dateTime ;
+        adm:logMessage      "added monastery"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGBE3E2AC5A14F484B
         a                   adm:UpdateData ;
@@ -49,6 +55,7 @@ bdg:G1085 {
         skos:altLabel       "la dwags sles/"@bo-x-ewts , "mang yul la dwags sles/"@bo-x-ewts , "sle/"@bo-x-ewts ;
         skos:prefLabel      "gle/"@bo-x-ewts , "Leh"@en ;
         :isRoot             true ;
+        :placeContains      bdr:G2KG221956 ;
         :placeLat           "34.145397" ;
         :placeLocatedIn     bdr:G3182 ;
         :placeLong          "77.567614" ;

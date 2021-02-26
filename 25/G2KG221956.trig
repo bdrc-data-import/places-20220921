@@ -1,0 +1,38 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KG221956 {
+    bda:G2KG221956  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KG221956 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "25/G2KG221956.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KG221956 ;
+        adm:logEntry        bda:LG3694966EE3CCE46C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3694966EE3CCE46C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-02-25T18:34:03.944Z"^^xsd:dateTime ;
+        adm:logMessage      "created new place record"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:G2KG221956  a       :Place ;
+        skos:altLabel       "bla ma g.yung drung dgon pa/"@bo-x-ewts , "thub bstan g.yung drung dgon/"@bo-x-ewts , "lamayuru monastery"@en ;
+        skos:prefLabel      "g.yung drung dgon/"@bo-x-ewts , "yuru monastery"@en ;
+        :isRoot             true ;
+        :placeLocatedIn     bdr:G1085 , bdr:G3182 ;
+        :placeType          bdr:PT0037 .
+}
