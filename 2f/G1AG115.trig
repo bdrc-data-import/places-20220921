@@ -15,13 +15,19 @@ bdg:G1AG115 {
     bda:G1AG115  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG115 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2f/G1AG115.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG115 ;
-        adm:logEntry        bda:LG3327BC3FD3F68E0E , bda:LGBC8423052A7FCD11 ;
+        adm:logEntry        bda:LG25FCC9601875ABB3 , bda:LG3327BC3FD3F68E0E , bda:LGBC8423052A7FCD11 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG25FCC9601875ABB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:32.513Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG3327BC3FD3F68E0E
         a                   adm:InitialDataCreation ;
@@ -38,7 +44,9 @@ bdg:G1AG115 {
     bdr:G1AG115  a          :Place ;
         skos:prefLabel      "shug chung dgon pa/"@bo-x-ewts ;
         :isRoot             true ;
-        :note               bdr:NTCFB277A40F5F6A7C .
+        :note               bdr:NTCFB277A40F5F6A7C ;
+        :placeLocatedIn     bdr:G2336 ;
+        :placeType          bdr:PT0037 .
     
     bdr:NTCFB277A40F5F6A7C
         a                   :Note ;

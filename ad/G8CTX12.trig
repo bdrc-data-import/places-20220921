@@ -15,11 +15,11 @@ bdg:G8CTX12 {
     bda:G8CTX12  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G8CTX12 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "ad/G8CTX12.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G8CTX12 ;
-        adm:logEntry        bda:LG76D0B131E9E90236 ;
+        adm:logEntry        bda:LG76D0B131E9E90236 , bda:LGBFAE7F2FCBE07EF4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,8 +29,14 @@ bdg:G8CTX12 {
         adm:logMessage      "add places for KDPP"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGBFAE7F2FCBE07EF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T13:44:17.509Z"^^xsd:dateTime ;
+        adm:logMessage      "added Tibetan & chinese"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bdr:G8CTX12  a          :Place ;
-        skos:prefLabel      "Cambodia"@en ;
+        skos:prefLabel      "kam po d+hi ya/"@bo-x-ewts , "Cambodia"@en , "柬埔寨"@zh-hans ;
         :isRoot             true ;
         :placeContains      bdr:G8CTX13 ;
         :placeType          bdr:PT0010 .

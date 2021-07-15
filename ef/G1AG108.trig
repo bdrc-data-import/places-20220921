@@ -15,24 +15,38 @@ bdg:G1AG108 {
     bda:G1AG108  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG108 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "ef/G1AG108.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG108 ;
-        adm:logEntry        bda:LG4CF98E6817D6C618 ;
+        adm:logEntry        bda:LG76DB17BEF0DDC0FD , bda:LGF8FB9D0CE895EB94 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG4CF98E6817D6C618
+    bda:LG76DB17BEF0DDC0FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:31.27Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF8FB9D0CE895EB94
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-06-06T12:40:50.317Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
         adm:logWho          bdu:U00002 .
     
+    bdr:EV4CF98E6817D6C618
+        a                   :PlaceEventNotSpecified ;
+        :notAfter           "1499"^^xsd:gYear ;
+        :notBefore          "1400"^^xsd:gYear .
+    
     bdr:G1AG108  a          :Place ;
         skos:prefLabel      "khwa char dgon/"@bo-x-ewts ;
         :isRoot             true ;
-        :note               bdr:NT677FA4B8C2B374D5 .
+        :note               bdr:NT677FA4B8C2B374D5 ;
+        :placeEvent         bdr:EV4CF98E6817D6C618 ;
+        :placeLocatedIn     bdr:G3165 ;
+        :placeType          bdr:PT0037 .
     
     bdr:NT677FA4B8C2B374D5
         a                   :Note ;

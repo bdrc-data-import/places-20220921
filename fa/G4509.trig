@@ -15,15 +15,21 @@ bdg:G4509 {
     bda:G4509  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G4509 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "fa/G4509.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G4509 ;
-        adm:logEntry        bda:LG0FCF6F6F2E17BC76 , bda:LG8C8CE1933B427EF7 , bda:LG9448D6B112BEBB73 ;
+        adm:logEntry        bda:LG0FCF6F6F2E17BC76 , bda:LG1F8E3150587E1F93 , bda:LG8C8CE1933B427EF7 , bda:LG9448D6B112BEBB73 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG0FCF6F6F2E17BC76
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T10:34:27.765Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type\nG2CN10992.place\nG2GS1025.place\nG2KG208037.place\nG2KG208038.place\nG2KG208039.place\nG2KG208040.place\nG2KG208041.place\nG2KT7.place\nG2KT8.place\nG2KT9.place\nG3CN21863.place\nG3PD993.place\nG4509.place"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG1F8E3150587E1F93
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -42,5 +48,6 @@ bdg:G4509 {
     bdr:G4509  a            :Place ;
         skos:altLabel       "Wit nam/"@bo-x-ewts ;
         skos:prefLabel      "b+hid nam/"@bo-x-ewts , "Vietnam"@en , "越南"@zh-hans ;
-        :isRoot             true .
+        :isRoot             true ;
+        :placeType          bdr:PT0010 .
 }

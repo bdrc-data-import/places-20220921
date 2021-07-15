@@ -15,13 +15,19 @@ bdg:G1AG109 {
     bda:G1AG109  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG109 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "8a/G1AG109.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG109 ;
-        adm:logEntry        bda:LG74079E78FFDE8C6C ;
+        adm:logEntry        bda:LG092E52FC85C039ED , bda:LG74079E78FFDE8C6C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG092E52FC85C039ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:31.751Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG74079E78FFDE8C6C
         a                   adm:InitialDataCreation ;
@@ -33,8 +39,8 @@ bdg:G1AG109 {
         skos:prefLabel      "thub chen dar rgyas gling /"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT3517B916E3C9AB92 ;
-        :placeLat           "29.18282" ;
-        :placeLong          "83.95691" .
+        :placeLocatedIn     bdr:G00EGS1017242 ;
+        :placeType          bdr:PT0037 .
     
     bdr:NT3517B916E3C9AB92
         a                   :Note ;

@@ -15,11 +15,11 @@ bdg:G3CN409 {
     bda:G3CN409  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3CN409 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "ea/G3CN409.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3CN409 ;
-        adm:logEntry        bda:LG4A23C4952F07A87D ;
+        adm:logEntry        bda:LG4A23C4952F07A87D , bda:LG78525B517C16D752 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,7 +29,14 @@ bdg:G3CN409 {
         adm:logMessage      "edited"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG78525B517C16D752
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T13:37:03.659Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bdr:G3CN409  a          :Place ;
         skos:prefLabel      "lho bal/"@bo-x-ewts ;
-        :isRoot             true .
+        :isRoot             true ;
+        :placeType          bdr:PT0029 .
 }

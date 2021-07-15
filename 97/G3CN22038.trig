@@ -15,11 +15,11 @@ bdg:G3CN22038 {
     bda:G3CN22038  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3CN22038 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "97/G3CN22038.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3CN22038 ;
-        adm:logEntry        bda:LG512FA53BD9D8F9C6 ;
+        adm:logEntry        bda:LG512FA53BD9D8F9C6 , bda:LG8121F89E7A51F1EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,13 +29,20 @@ bdg:G3CN22038 {
         adm:logMessage      "created record"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG8121F89E7A51F1EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T13:57:04.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bdr:G3CN22038  a        :Place ;
         skos:altLabel       "yar 'brog byang gling stong ra/"@bo-x-ewts ;
         skos:prefLabel      "stong ra/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NTFF1150184447DD95 ;
         :placeContains      bdr:G3CN21863 ;
-        :placeLocatedIn     bdr:G4683 .
+        :placeLocatedIn     bdr:G4683 ;
+        :placeType          bdr:PT0020 .
     
     bdr:NTFF1150184447DD95
         a                   :Note ;

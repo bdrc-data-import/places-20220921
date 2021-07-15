@@ -15,11 +15,11 @@ bdg:G1AG36 {
     bda:G1AG36  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG36 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c5/G1AG36.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG36 ;
-        adm:logEntry        bda:LG65A2EE1EC1660BCE , bda:LGD9B75E0DCD4572BF ;
+        adm:logEntry        bda:LG65A2EE1EC1660BCE , bda:LGD9B75E0DCD4572BF , bda:LGDC50544F5123C239 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,7 +34,13 @@ bdg:G1AG36 {
         adm:logDate         "2015-07-28T16:51:30.181Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00002 .
     
-    bdr:EVDC50544F5123C239
+    bda:LGDC50544F5123C239
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:33.323Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bdr:EV52AA4BFC3B08F42B
         a                   :PlaceFounded ;
         :eventWho           bdr:P2462 ;
         :notAfter           "1399"^^xsd:gYear ;
@@ -44,8 +50,9 @@ bdg:G1AG36 {
         skos:prefLabel      "nges don gyi chos gzhi dgon sde/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT4773027EC098B25C ;
-        :placeEvent         bdr:EVDC50544F5123C239 ;
-        :placeLocatedIn     bdr:G1033 .
+        :placeEvent         bdr:EV52AA4BFC3B08F42B ;
+        :placeLocatedIn     bdr:G1033 ;
+        :placeType          bdr:PT0037 .
     
     bdr:NT4773027EC098B25C
         a                   :Note ;

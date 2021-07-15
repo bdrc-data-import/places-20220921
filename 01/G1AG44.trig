@@ -15,11 +15,11 @@ bdg:G1AG44 {
     bda:G1AG44  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG44 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "01/G1AG44.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG44 ;
-        adm:logEntry        bda:LG9D8EA7E9B78083BB ;
+        adm:logEntry        bda:LG9D8EA7E9B78083BB , bda:LGAB2A88FF42CBEEBE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,18 +29,25 @@ bdg:G1AG44 {
         adm:logMessage      "connected P2417 to G1AG44"@en ;
         adm:logWho          bdu:U00002 .
     
-    bdr:EVAB2A88FF42CBEEBE
+    bda:LGAB2A88FF42CBEEBE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:34.213Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bdr:EV232DAA2A3A21270D
         a                   :PlaceFounded ;
         :eventWho           bdr:P2417 ;
         :notAfter           "1599"^^xsd:gYear ;
         :notBefore          "1500"^^xsd:gYear .
     
     bdr:G1AG44  a           :Place ;
-        skos:altLabel       "mdog sman sdeng /"@bo-x-ewts ;
+        skos:altLabel       "mdog sman sdeng /"@bo-x-ewts , "sman sding ri bo gru 'dzin/"@bo-x-ewts ;
         skos:prefLabel      "sman sding /"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT02FCFBD552D93567 ;
-        :placeEvent         bdr:EVAB2A88FF42CBEEBE .
+        :placeEvent         bdr:EV232DAA2A3A21270D ;
+        :placeType          bdr:PT0037 .
     
     bdr:NT02FCFBD552D93567
         a                   :Note ;

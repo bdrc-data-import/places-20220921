@@ -15,13 +15,19 @@ bdg:G1AG68 {
     bda:G1AG68  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG68 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "01/G1AG68.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG68 ;
-        adm:logEntry        bda:LG2C078C599D3BE122 ;
+        adm:logEntry        bda:LG03BECF19AD39594F , bda:LG2C078C599D3BE122 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG03BECF19AD39594F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:35.465Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG2C078C599D3BE122
         a                   adm:InitialDataCreation ;
@@ -29,9 +35,11 @@ bdg:G1AG68 {
         adm:logWho          bdu:U00002 .
     
     bdr:G1AG68  a           :Place ;
-        skos:prefLabel      "na la tse gnas po che/"@bo-x-ewts ;
+        skos:altLabel       "gung thang na la tse gnas po che/"@bo-x-ewts ;
+        skos:prefLabel      "na la tse gnas po che།"@bo-x-ewts ;
         :isRoot             true ;
-        :note               bdr:NTDE1613D79E434EC7 .
+        :note               bdr:NTDE1613D79E434EC7 ;
+        :placeType          bdr:PT0037 .
     
     bdr:NTDE1613D79E434EC7
         a                   :Note ;

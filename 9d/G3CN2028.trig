@@ -15,13 +15,19 @@ bdg:G3CN2028 {
     bda:G3CN2028  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3CN2028 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9d/G3CN2028.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3CN2028 ;
-        adm:logEntry        bda:LGB8780E171A7A1681 , bda:LGDFCCB1856BAB8E34 ;
+        adm:logEntry        bda:LG8E5A29BF0822AD7F , bda:LGB8780E171A7A1681 , bda:LGDFCCB1856BAB8E34 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG8E5A29BF0822AD7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T13:53:41.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added type"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGB8780E171A7A1681
         a                   adm:UpdateData ;
@@ -39,5 +45,6 @@ bdg:G3CN2028 {
         skos:altLabel       "sger rtse 'brong pa byang ma/"@bo-x-ewts ;
         skos:prefLabel      "'brong pa byang ma/"@bo-x-ewts ;
         :isRoot             true ;
-        :placeIsNear        bdr:G2159 .
+        :placeIsNear        bdr:G2159 ;
+        :placeType          bdr:PT0068 .
 }

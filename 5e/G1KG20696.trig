@@ -15,13 +15,19 @@ bdg:G1KG20696 {
     bda:G1KG20696  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1KG20696 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "5e/G1KG20696.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1KG20696 ;
-        adm:logEntry        bda:LGEC2102FB957C4B21 ;
+        adm:logEntry        bda:LG59A2E5F25BFABDAC , bda:LGEC2102FB957C4B21 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG59A2E5F25BFABDAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T10:34:22.516Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type\nG2CN10992.place\nG2GS1025.place\nG2KG208037.place\nG2KG208038.place\nG2KG208039.place\nG2KG208040.place\nG2KG208041.place\nG2KT7.place\nG2KT8.place\nG2KT9.place\nG3CN21863.place\nG3PD993.place\nG4509.place"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGEC2102FB957C4B21
         a                   adm:InitialDataCreation ;
@@ -30,7 +36,8 @@ bdg:G1KG20696 {
         adm:logWho          bdu:U00016 .
     
     bdr:G1KG20696  a        :Place ;
-        skos:prefLabel      "so lu gser logs bshad sgrub zung 'brel gling par khang /"@bo-x-ewts ;
+        skos:prefLabel      "so lu gser logs bshad sgrub zung 'brel gling par khang /"@bo-latn-wadegile ;
         :isRoot             true ;
-        :placeLocatedIn     bdr:G2490 .
+        :placeLocatedIn     bdr:G2490 ;
+        :placeType          bdr:PT0059 .
 }

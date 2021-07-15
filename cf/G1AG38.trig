@@ -15,11 +15,11 @@ bdg:G1AG38 {
     bda:G1AG38  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG38 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "cf/G1AG38.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG38 ;
-        adm:logEntry        bda:LG1D69C2E7B9A7683D ;
+        adm:logEntry        bda:LG1D69C2E7B9A7683D , bda:LGB4832F79BEEE6350 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,7 +29,13 @@ bdg:G1AG38 {
         adm:logMessage      "created P1AG38"@en ;
         adm:logWho          bdu:U00002 .
     
-    bdr:EVB4832F79BEEE6350
+    bda:LGB4832F79BEEE6350
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:33.802Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bdr:EVE169B936014E6F57
         a                   :PlaceFounded ;
         :eventWho           bdr:P4892 ;
         :notAfter           "1199"^^xsd:gYear ;
@@ -43,6 +49,7 @@ bdg:G1AG38 {
     bdr:G1AG38  a           :Place ;
         skos:prefLabel      "mkha' skyong brag"@bo-x-ewts ;
         :isRoot             true ;
-        :placeEvent         bdr:EVB4832F79BEEE6350 , bdr:EVEB42B71506C20111 ;
-        :placeLocatedIn     bdr:G1291 .
+        :placeEvent         bdr:EVE169B936014E6F57 , bdr:EVEB42B71506C20111 ;
+        :placeLocatedIn     bdr:G1291 ;
+        :placeType          bdr:PT0037 .
 }

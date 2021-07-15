@@ -15,11 +15,11 @@ bdg:G1TD43 {
     bda:G1TD43  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1TD43 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "9b/G1TD43.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1TD43 ;
-        adm:logEntry        bda:LG0484289A2014F7D8 ;
+        adm:logEntry        bda:LG0484289A2014F7D8 , bda:LG8383ED433CF3064F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,7 +29,13 @@ bdg:G1TD43 {
         adm:logMessage      "created record"@en ;
         adm:logWho          bdu:U00027 .
     
-    bdr:EV8383ED433CF3064F
+    bda:LG8383ED433CF3064F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:38.909Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bdr:EV127847273EE35041
         a                   :PlaceFounded ;
         :eventWho           bdr:P8067 ;
         :notAfter           "0699"^^xsd:gYear ;
@@ -44,6 +50,7 @@ bdg:G1TD43 {
         skos:altLabel       "skyer chu lha khang /"@bo-x-ewts , "Kyerchu Lhakhang/"@en ;
         skos:prefLabel      "skyid chu lha khang /"@bo-x-ewts , "Kyichu Lhakhang/"@en ;
         :isRoot             true ;
-        :placeEvent         bdr:EV8383ED433CF3064F , bdr:EVB43A94D94DAC906B ;
-        :placeLocatedIn     bdr:G836 .
+        :placeEvent         bdr:EV127847273EE35041 , bdr:EVB43A94D94DAC906B ;
+        :placeLocatedIn     bdr:G836 ;
+        :placeType          bdr:PT0074 .
 }

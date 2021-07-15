@@ -15,11 +15,11 @@ bdg:G1AG92 {
     bda:G1AG92  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG92 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "e1/G1AG92.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG92 ;
-        adm:logEntry        bda:LG586C148E71081F77 ;
+        adm:logEntry        bda:LG586C148E71081F77 , bda:LG90A766775412BAD0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,9 +29,16 @@ bdg:G1AG92 {
         adm:logMessage      "created G1AG92"@en ;
         adm:logWho          bdu:U00002 .
     
+    bda:LG90A766775412BAD0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:35.915Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bdr:G1AG92  a           :Place ;
         skos:altLabel       "zho 'ong la kha sngags grwa/"@bo-x-ewts ;
         skos:prefLabel      "zho 'ong sngags grwa/"@bo-x-ewts ;
         :isRoot             true ;
-        :placeLocatedIn     bdr:G2369 .
+        :placeLocatedIn     bdr:G2369 ;
+        :placeType          bdr:PT0040 .
 }

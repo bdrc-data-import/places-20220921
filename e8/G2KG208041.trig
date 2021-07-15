@@ -15,13 +15,19 @@ bdg:G2KG208041 {
     bda:G2KG208041  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2KG208041 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "e8/G2KG208041.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2KG208041 ;
-        adm:logEntry        bda:LGC0E00F12403A8C77 ;
+        adm:logEntry        bda:LG61DC5B8C635CFFAD , bda:LGC0E00F12403A8C77 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG61DC5B8C635CFFAD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T10:34:25.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type\nG2CN10992.place\nG2GS1025.place\nG2KG208037.place\nG2KG208038.place\nG2KG208039.place\nG2KG208040.place\nG2KG208041.place\nG2KT7.place\nG2KT8.place\nG2KT9.place\nG3CN21863.place\nG3PD993.place\nG4509.place"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGC0E00F12403A8C77
         a                   adm:InitialDataCreation ;
@@ -31,5 +37,6 @@ bdg:G2KG208041 {
     
     bdr:G2KG208041  a       :Place ;
         skos:prefLabel      "phur sgrub dgon/"@bo-x-ewts , "phurdrup monastery"@en ;
-        :isRoot             true .
+        :isRoot             true ;
+        :placeType          bdr:PT0037 .
 }

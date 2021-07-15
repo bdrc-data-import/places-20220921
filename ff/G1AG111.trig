@@ -15,13 +15,19 @@ bdg:G1AG111 {
     bda:G1AG111  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG111 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "ff/G1AG111.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG111 ;
-        adm:logEntry        bda:LG3D170A8B60F4162B ;
+        adm:logEntry        bda:LG1461C884B3E064E2 , bda:LG3D170A8B60F4162B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG1461C884B3E064E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:32.139Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG3D170A8B60F4162B
         a                   adm:InitialDataCreation ;
@@ -33,5 +39,6 @@ bdg:G1AG111 {
         rdfs:comment        "a castle 6 miles east of lhasa" ;
         skos:prefLabel      "gdong dkar rdzong /"@bo-x-ewts ;
         :isRoot             true ;
-        :placeLocatedIn     bdr:G1325 .
+        :placeLocatedIn     bdr:G1325 ;
+        :placeType          bdr:PT0011 .
 }

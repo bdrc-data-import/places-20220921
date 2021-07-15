@@ -15,11 +15,11 @@ bdg:G1AG96 {
     bda:G1AG96  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG96 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "7c/G1AG96.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG96 ;
-        adm:logEntry        bda:LG5A33F97CB2C5F3BE ;
+        adm:logEntry        bda:LG5A33F97CB2C5F3BE , bda:LGB79225A68DFE15CD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,11 +29,18 @@ bdg:G1AG96 {
         adm:logMessage      "created g1ag96"@en ;
         adm:logWho          bdu:U00002 .
     
+    bda:LGB79225A68DFE15CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:36.293Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bdr:G1AG96  a           :Place ;
         skos:prefLabel      "chab mdo gling stod grwa tshang /"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT58E14CCE57F7BC89 , bdr:NTE8A8B12409F3B91B ;
-        :placeLocatedIn     bdr:G180 .
+        :placeLocatedIn     bdr:G180 ;
+        :placeType          bdr:PT0037 .
     
     bdr:NT58E14CCE57F7BC89
         a                   :Note ;

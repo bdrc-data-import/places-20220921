@@ -15,11 +15,11 @@ bdg:G2GS1025 {
     bda:G2GS1025  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2GS1025 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d3/G2GS1025.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2GS1025 ;
-        adm:logEntry        bda:LG07D07EB03C12B382 , bda:LG2F3E0FEB66790451 , bda:LG9C70FCCD8377882C ;
+        adm:logEntry        bda:LG07D07EB03C12B382 , bda:LG2F3E0FEB66790451 , bda:LG42112A8F08B384DD , bda:LG9C70FCCD8377882C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,6 +35,12 @@ bdg:G2GS1025 {
         adm:logMessage      "type changed from dzong to sngarGyiRdzong"@en ;
         adm:logWho          bdu:U00020 .
     
+    bda:LG42112A8F08B384DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T10:34:23.703Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type\nG2CN10992.place\nG2GS1025.place\nG2KG208037.place\nG2KG208038.place\nG2KG208039.place\nG2KG208040.place\nG2KG208041.place\nG2KT7.place\nG2KT8.place\nG2KT9.place\nG3CN21863.place\nG3PD993.place\nG4509.place"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG9C70FCCD8377882C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2010-05-18T12:49:55.436Z"^^xsd:dateTime ;
@@ -44,7 +50,8 @@ bdg:G2GS1025 {
     bdr:G2GS1025  a         :Place ;
         skos:prefLabel      "g.yul rgyal rdzong /"@bo-x-ewts ;
         :isRoot             true ;
-        :note               bdr:NT2F2EA20F3D4DFE1F , bdr:NT4D2EA3B4542B5B4B .
+        :note               bdr:NT2F2EA20F3D4DFE1F , bdr:NT4D2EA3B4542B5B4B ;
+        :placeType          bdr:PT0011 .
     
     bdr:NT2F2EA20F3D4DFE1F
         a                   :Note ;

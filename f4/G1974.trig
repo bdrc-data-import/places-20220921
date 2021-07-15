@@ -15,17 +15,19 @@ bdg:G1974 {
     bda:G1974  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1974 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f4/G1974.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1974 ;
-        adm:logEntry        bda:LG07E54F38929263A7 , bda:LG69D7E668C204BF85 , bda:LG83FDB94CBAAC62B9 , bda:LGC2A709C808FE00DB ;
+        adm:logEntry        bda:LG07E54F38929263A7 , bda:LG69D7E668C204BF85 , bda:LG83FDB94CBAAC62B9 , bda:LGC2A709C808FE00DB , bda:LGD30A26B6CDCCDA58 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG07E54F38929263A7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:28:49.033Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and other name languge"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG69D7E668C204BF85
         a                   adm:UpdateData ;
@@ -45,9 +47,14 @@ bdg:G1974 {
         adm:logMessage      "added names"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGD30A26B6CDCCDA58
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bdr:G1974  a            :Place ;
         skos:altLabel       "ldum ra/"@bo-x-ewts , "nub ra/"@bo-x-ewts ;
         skos:prefLabel      "ldum rwa/"@bo-x-ewts , "Nubra Valley"@en ;
         :isRoot             true ;
-        :placeLocatedIn     bdr:G3182 .
+        :placeLocatedIn     bdr:G3182 ;
+        :placeType          bdr:PT0084 .
 }

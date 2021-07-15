@@ -15,11 +15,11 @@ bdg:G3CN21863 {
     bda:G3CN21863  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3CN21863 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "02/G3CN21863.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3CN21863 ;
-        adm:logEntry        bda:LG2971E7EFC3F16010 , bda:LGB831C06960E404D4 ;
+        adm:logEntry        bda:LG2971E7EFC3F16010 , bda:LGB831C06960E404D4 , bda:LGEB8F6E2E0B6F9F5A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,12 +35,19 @@ bdg:G3CN21863 {
         adm:logMessage      "added info"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGEB8F6E2E0B6F9F5A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T10:34:27.068Z"^^xsd:dateTime ;
+        adm:logMessage      "added place type\nG2CN10992.place\nG2GS1025.place\nG2KG208037.place\nG2KG208038.place\nG2KG208039.place\nG2KG208040.place\nG2KG208041.place\nG2KT7.place\nG2KT8.place\nG2KT9.place\nG3CN21863.place\nG3PD993.place\nG4509.place"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bdr:G3CN21863  a        :Place ;
         skos:altLabel       "stong ra ri do dgon/"@bo-x-ewts ;
         skos:prefLabel      "dpal ri do dgon/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT2A08EF9D36B690F6 ;
-        :placeLocatedIn     bdr:G2136 , bdr:G3CN22038 , bdr:G4683 .
+        :placeLocatedIn     bdr:G2136 , bdr:G3CN22038 , bdr:G4683 ;
+        :placeType          bdr:PT0037 .
     
     bdr:NT2A08EF9D36B690F6
         a                   :Note ;

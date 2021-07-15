@@ -15,24 +15,37 @@ bdg:G1AG107 {
     bda:G1AG107  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1AG107 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2a/G1AG107.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1AG107 ;
-        adm:logEntry        bda:LGEADAD0E9395369E2 ;
+        adm:logEntry        bda:LG85A661677CF7BF3C , bda:LG8EC086447819E5A6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGEADAD0E9395369E2
+    bda:LG85A661677CF7BF3C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-03-15T14:57:20.465Z"^^xsd:dateTime ;
         adm:logMessage      "created"@en ;
         adm:logWho          bdu:U00002 .
     
+    bda:LG8EC086447819E5A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-13T12:04:30.745Z"^^xsd:dateTime ;
+        adm:logMessage      "placeType, Associated Places , and  other name languge"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bdr:EVEADAD0E9395369E2
+        a                   :PlaceFounded ;
+        :notAfter           "1799"^^xsd:gYear ;
+        :notBefore          "1700"^^xsd:gYear .
+    
     bdr:G1AG107  a          :Place ;
         skos:prefLabel      "g.yu thog rnam rgyal gling /"@bo-x-ewts ;
         :isRoot             true ;
-        :note               bdr:NTFEEEAD2B9CE6DEEE .
+        :note               bdr:NTFEEEAD2B9CE6DEEE ;
+        :placeEvent         bdr:EVEADAD0E9395369E2 ;
+        :placeType          bdr:PT0037 .
     
     bdr:NTFEEEAD2B9CE6DEEE
         a                   :Note ;
