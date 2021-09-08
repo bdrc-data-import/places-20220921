@@ -15,15 +15,19 @@ bdg:G3516 {
     bda:G3516  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3516 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d1/G3516.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3516 ;
-        adm:logEntry        bda:LG545A54A7F6F2597C , bda:LG78193C07DCE230A6 , bda:LGC430F961B6BB981C , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG03C367ACD81F550D , bda:LG545A54A7F6F2597C , bda:LG78193C07DCE230A6 , bda:LG8EE797723100E1E6 , bda:LGC430F961B6BB981C , bda:LGIM61A98BA6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "542222202:542222102" ;
         adm:place_id_lex    "542222202:542222102" ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG03C367ACD81F550D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG545A54A7F6F2597C
         a                   adm:UpdateData ;
@@ -32,8 +36,16 @@ bdg:G3516 {
         adm:logWho          bdu:U00007 .
     
     bda:LG78193C07DCE230A6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-07T16:50:53.1Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8EE797723100E1E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-07T16:28:46.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added 3 names [sgrags sngags grwa/] and others"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGC430F961B6BB981C
         a                   adm:UpdateData ;
@@ -47,23 +59,16 @@ bdg:G3516 {
         adm:logMessage      "updated place from monastery csv"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bda:LGIM8BCFDFCA43
-        a                   adm:UpdateData ;
-        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
-        adm:logMessage      "type changed from monastery to dgonPa"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00020 .
-    
     bdr:EVA253F00A74D2ED05
         a                   :PlaceFounded ;
         :associatedTradition  bdr:TraditionKarmaKagyu ;
         :onYear             "1350"^^xsd:gYear .
     
     bdr:G3516  a            :Place ;
-        skos:altLabel       "Ngadra"@bo-x-phon-en , "觉卧阿札"@zh-hans , "Ngadra"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "mngag sgra dgon/"@bo-x-ewts , "阿札寺"@zh-hans ;
+        skos:altLabel       "mngag sgra dgon/"@bo-x-ewts , "rig 'dzin mkha' spyod gling /"@bo-x-ewts , "rig 'dzin rgyal byed tshal/"@bo-x-ewts , "觉卧阿札"@zh-hans , "Ngakdra Monastery"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "sgrags sngags grwa/"@bo-x-ewts , "阿札寺"@zh-hans ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID03C367ACD81F550D ;
+            bdr:IDD792DB4A1A5EDB26 ;
         :isRoot             true ;
         :note               bdr:NT4832629A8EA76600 , bdr:NTF66D83EF4340650C ;
         :placeEvent         bdr:EVA253F00A74D2ED05 ;
@@ -73,7 +78,7 @@ bdg:G3516 {
         :placeLong          "91.27723" ;
         :placeType          bdr:PT0037 .
     
-    bdr:ID03C367ACD81F550D
+    bdr:IDD792DB4A1A5EDB26
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G3516" .
     
