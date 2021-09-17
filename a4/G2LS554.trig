@@ -15,25 +15,31 @@ bdg:G2LS554 {
     bda:G2LS554  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2LS554 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "a4/G2LS554.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2LS554 ;
-        adm:logEntry        bda:LG7B96590BADDB678A , bda:LGB0A1BFD96EDC3749 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LGAAA5458072CFCEC7 , bda:LGB3CEE41B1B2D55CA , bda:LGFCDCF3BB3C56EF90 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "542522201:14" ;
         adm:place_id_lex    "542522201:14" ;
         adm:status          bda:StatusReleased .
     
-    bda:LG7B96590BADDB678A
+    bda:LGAAA5458072CFCEC7
         a                   adm:InitialDataCreation ;
         adm:logDate         "2010-03-29T15:55:29.063Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGB0A1BFD96EDC3749
+    bda:LGB3CEE41B1B2D55CA
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-19T10:54:14.983Z"^^xsd:dateTime ;
-        adm:logMessage      "arranged names"@en ;
+        adm:logMessage      "arranged names & added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFCDCF3BB3C56EF90
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-16T20:27:01.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGIM61A98BA6  a     adm:UpdateData ;
@@ -49,31 +55,31 @@ bdg:G2LS554 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00020 .
     
-    bdr:EVB8AE12A4F0E8CB8B
-        a                   :PlaceFounded ;
-        :associatedTradition  bdr:TraditionTodrukKagyu ;
-        :onYear             "1250"^^xsd:gYear .
-    
-    bdr:EVCD9AA38A1C917EC2
+    bdr:EV7B96590BADDB678A
         a                   :PlaceConverted ;
         :associatedTradition  bdr:TraditionGeluk ;
         :onYear             "1550"^^xsd:gYear .
     
+    bdr:EVCD9AA38A1C917EC2
+        a                   :PlaceFounded ;
+        :associatedTradition  bdr:TraditionTodrukKagyu ;
+        :onYear             "1250"^^xsd:gYear .
+    
     bdr:G2LS554  a          :Place ;
-        skos:altLabel       "bar kyog phun tshogs rab brtan gling /"@bo-x-ewts , "phun tshogs rab brtan gling /"@bo-x-ewts ;
-        skos:prefLabel      "bar kyog dgon/"@bo-x-ewts , "Barchok"@en-x-mixed ;
+        skos:altLabel       "bar kyog phun tshogs rab brtan dgon/"@bo-x-ewts , "bar kyog phun tshogs rab brtan gling /"@bo-x-ewts , "phun tshogs rab brtan gling /"@bo-x-ewts ;
+        skos:prefLabel      "bar kyog dgon/"@bo-x-ewts , "Barchok Monastery"@en-x-mixed ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:IDB3CEE41B1B2D55CA ;
+            bdr:ID54E5CBADF9315B38 ;
         :isRoot             true ;
-        :note               bdr:NTB217D095CFD1BEA7 ;
-        :placeEvent         bdr:EVB8AE12A4F0E8CB8B , bdr:EVCD9AA38A1C917EC2 ;
+        :note               bdr:NTB217D095CFD1BEA7 , bdr:NTB8AE12A4F0E8CB8B ;
+        :placeEvent         bdr:EV7B96590BADDB678A , bdr:EVCD9AA38A1C917EC2 ;
         :placeGonpaPerEcumen  "2.88" ;
         :placeLat           "32.20000" ;
         :placeLocatedIn     bdr:G2152 ;
         :placeLong          "78.58000" ;
         :placeType          bdr:PT0037 .
     
-    bdr:IDB3CEE41B1B2D55CA
+    bdr:ID54E5CBADF9315B38
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G2LS554" .
     
@@ -82,4 +88,10 @@ bdg:G2LS554 {
         :contentLocationStatement  "v. 4, p. 77" ;
         :noteSource         bdr:MW23847 ;
         :noteText           "Founded during the period canglung lama konchok gyaltshan, one of the disciple of Gotsang pa. Later became branch of Tholing monastery."@en .
+    
+    bdr:NTB8AE12A4F0E8CB8B
+        a                   :Note ;
+        :contentLocationStatement  "p. 2" ;
+        :noteSource         bdr:MW20198 ;
+        :noteText           "dge lugs pa monastery in rtsa mda' chu gsum khongs in mnga' ris prefecture\nfounded by one mkhan po legs spel before 1700\n\"da yod grwa pa gnyis/ dkon gnyer mi skya gcig/ slad grwa tshad bdun no\""@en .
 }

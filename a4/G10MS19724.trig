@@ -21,13 +21,14 @@ bdg:G10MS19724 {
         adm:graphId         bdg:G10MS19724 ;
         adm:logEntry        bda:LG3B48EC276235C8C1 , bda:LGF7BEBAB1D88D6E9F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:replaceWith     bdr:G1111 ;
+        adm:status          bda:StatusWithdrawn .
     
     bda:LG3B48EC276235C8C1
-        a                   adm:UpdateData ;
-        adm:logDate         "2015-10-21T20:23:25.294Z"^^xsd:dateTime ;
-        adm:logMessage      "populating gis from G9GBX..."@en ;
-        adm:logWho          bdu:U00006 .
+        a                   adm:WithdrawData ;
+        adm:logDate         "2021-09-16T18:31:54.198Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G1111."@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGF7BEBAB1D88D6E9F
         a                   adm:InitialDataCreation ;
@@ -37,10 +38,5 @@ bdg:G10MS19724 {
     
     bdr:G10MS19724  a       :Place ;
         skos:prefLabel      "khreng tu/"@bo-x-ewts , "chengdu"@en , "成都"@zh-hans ;
-        :isRoot             true ;
-        :placeGB2260-2013   "510100000" ;
-        :placeLat           "30.7105892" ;
-        :placeLocatedIn     bdr:G1473 , bdr:G3198 ;
-        :placeLong          "104.0886676" ;
-        :placeType          bdr:PT0008 .
+        :isRoot             true .
 }

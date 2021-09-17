@@ -15,17 +15,19 @@ bdg:G2208 {
     bda:G2208  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2208 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "1b/G2208.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2208 ;
-        adm:logEntry        bda:LG4B5C5366952E56CD , bda:LG86B578768C694F03 , bda:LGC47F5D5BC7C92389 ;
+        adm:logEntry        bda:LG4B5C5366952E56CD , bda:LG86B578768C694F03 , bda:LGC47F5D5BC7C92389 , bda:LGF2B0F44A38FE9366 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG4B5C5366952E56CD
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-16T20:31:09.163Z"^^xsd:dateTime ;
+        adm:logMessage      "added containIn"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LG86B578768C694F03
         a                   adm:UpdateData ;
@@ -39,10 +41,14 @@ bdg:G2208 {
         adm:logMessage      "type changed from province to zhingChen"@en ;
         adm:logWho          bdu:U00020 .
     
+    bda:LGF2B0F44A38FE9366
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bdr:G2208  a            :Place ;
         skos:altLabel       "yon nan zhing chen/"@bo-x-ewts ;
         skos:prefLabel      "yun nan zhing chen/"@bo-x-ewts ;
         :isRoot             true ;
-        :placeContains      bdr:G1521 , bdr:G2CN11116 ;
+        :placeContains      bdr:G1521 , bdr:G2222 , bdr:G2CN11116 ;
         :placeType          bdr:PT0060 .
 }
