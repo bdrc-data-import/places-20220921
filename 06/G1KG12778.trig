@@ -15,11 +15,11 @@ bdg:G1KG12778 {
     bda:G1KG12778  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1KG12778 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "06/G1KG12778.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1KG12778 ;
-        adm:logEntry        bda:LG5A92E4D7E7AE9493 , bda:LG63D994F253D69BEE , bda:LG76C63BC8042F4613 , bda:LGB10AF5BCE1319DB0 , bda:LGD142230660C175B6 , bda:LGE62588E0A9CCF2CC , bda:LGEF145479B3009049 ;
+        adm:logEntry        bda:LG5A92E4D7E7AE9493 , bda:LG63D994F253D69BEE , bda:LG76C63BC8042F4613 , bda:LGB10AF5BCE1319DB0 , bda:LGD142230660C175B6 , bda:LGE62588E0A9CCF2CC , bda:LGEF145479B3009049 , bda:LGFE55D7E68D5FBADF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -65,13 +65,19 @@ bdg:G1KG12778 {
         adm:logMessage      "reviewed"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGFE55D7E68D5FBADF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-18T14:19:11.078Z"^^xsd:dateTime ;
+        adm:logMessage      "added variant spelling"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bdr:EV89295C997001E85A
         a                   :PlaceFounded ;
         :notAfter           "1799"^^xsd:gYear ;
         :notBefore          "1700"^^xsd:gYear .
     
     bdr:G1KG12778  a        :Place ;
-        skos:altLabel       "'brug spungs thang par khang /"@bo-x-ewts ;
+        skos:altLabel       "'brug spungs thang par khang /"@bo-x-ewts , "'brug spung thang par khang /"@bo-x-ewts , "spung thang par khang /"@bo-x-ewts ;
         skos:prefLabel      "spungs thang par khang /"@bo-x-ewts , "punakha parkhang"@en ;
         :isRoot             true ;
         :placeEvent         bdr:EV89295C997001E85A ;
