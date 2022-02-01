@@ -15,13 +15,13 @@ bdg:G1KG15803 {
     bda:G1KG15803  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1KG15803 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "ea/G1KG15803.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1KG15803 ;
-        adm:logEntry        bda:LG60ACD03CCED45C07 ;
+        adm:logEntry        bda:LG60ACD03CCED45C07 , bda:LGBCD58D722D0F8156 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusEditing .
     
     bda:LG60ACD03CCED45C07
         a                   adm:InitialDataCreation ;
@@ -29,9 +29,12 @@ bdg:G1KG15803 {
         adm:logMessage      "created place"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGBCD58D722D0F8156
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-31T12:44:36.928Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bdr:G1KG15803  a        :Place ;
-        skos:altLabel       "golden temple/"@bo-x-ewts , "rnam gling gser gyi lha khang /"@bo-x-ewts ;
-        skos:prefLabel      "rnam grol gling /"@bo-x-ewts ;
         :isRoot             true ;
         :placeType          bdr:PT0037 .
 }

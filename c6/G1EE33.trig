@@ -15,11 +15,11 @@ bdg:G1EE33 {
     bda:G1EE33  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1EE33 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "c6/G1EE33.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1EE33 ;
-        adm:logEntry        bda:LG5973DD9CEF0CDCFC ;
+        adm:logEntry        bda:LG5973DD9CEF0CDCFC , bda:LGA7DB7633A5254D17 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,7 +28,14 @@ bdg:G1EE33 {
         adm:logDate         "2013-03-20T13:38:49.523Z"^^xsd:dateTime ;
         adm:logMessage      "newly created"@en .
     
+    bda:LGA7DB7633A5254D17
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-31T12:58:39.442Z"^^xsd:dateTime ;
+        adm:logMessage      "language"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bdr:G1EE33  a           :Place ;
-        skos:prefLabel      "aguyin keyid/"@bo-x-ewts ;
-        :isRoot             true .
+        skos:prefLabel      "aguyin keyid"@mn-x-trans ;
+        :isRoot             true ;
+        :placeType          bdr:PT0059 .
 }
