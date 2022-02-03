@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G8LS76579 {
+    bda:G8LS76579  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G8LS76579 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d0/G8LS76579.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G8LS76579 ;
+        adm:logEntry        bda:LG1AB06ECA0AD32BDF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1AB06ECA0AD32BDF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-02-02T14:54:00.796Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bdr:EV9B290A2B93445C0E
+        a                   :PlaceFounded ;
+        :onYear             "1809"^^xsd:gYear .
+    
+    bdr:G8LS76579  a        :Place ;
+        skos:prefLabel      "kun dga' chos gling grwa tshang /(sog yul)"@bo-x-ewts , "Kunga Choling Dratshang"@en , "Khotol bayasgalant nomiin sьm"@mn ;
+        :isRoot             true ;
+        :note               bdr:NT21098219F0E21992 ;
+        :placeEvent         bdr:EV9B290A2B93445C0E ;
+        :placeLocatedIn     bdr:G2KR132 , bdr:G584 ;
+        :placeType          bdr:PT0040 .
+    
+    bdr:NT21098219F0E21992
+        a                   :Note ;
+        :noteText           "Gьngaachoilin monastic school, Monastic school in the west\nestablished by the 4th Jetsun Dampa Hotokthu\n\nfor detail see:\nA Catalogue of the Tibetan Manuscripts and Block Prints in the Library of the Hungarian Academy of Sciences, p. 65-66"@en .
+}
