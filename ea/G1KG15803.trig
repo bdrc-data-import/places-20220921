@@ -19,22 +19,25 @@ bdg:G1KG15803 {
         adm:gitPath         "ea/G1KG15803.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1KG15803 ;
-        adm:logEntry        bda:LG60ACD03CCED45C07 , bda:LGBCD58D722D0F8156 ;
+        adm:logEntry        bda:LGBCD58D722D0F8156 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
-    
-    bda:LG60ACD03CCED45C07
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2014-02-20T11:59:59.42Z"^^xsd:dateTime ;
-        adm:logMessage      "created place"@en ;
-        adm:logWho          bdu:U00016 .
+        adm:status          bda:StatusReleased .
     
     bda:LGBCD58D722D0F8156
-        a                   adm:UpdateData ;
-        adm:logDate         "2022-01-31T12:44:36.928Z"^^xsd:dateTime ;
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-02-08T20:49:54.172Z"^^xsd:dateTime ;
+        adm:logMessage      "new place record"@en ;
         adm:logWho          bdu:U00016 .
     
+    bdr:EV60ACD03CCED45C07
+        a                   :PlaceFounded ;
+        :onYear             "1980"^^xsd:gYear .
+    
     bdr:G1KG15803  a        :Place ;
+        skos:altLabel       "mang sde tshang dgon rtsis gzhung rig gnas gsum zung 'brel o rgyan bshad sgrub gling /"@bo-x-ewts , "tshang kha bshad grwa/"@bo-x-ewts ;
+        skos:prefLabel      "mang sde tshang dgon rtsis gzhung rig gnas gsum zung 'brel/"@bo-x-ewts , "Tshangkha Shedra"@en ;
         :isRoot             true ;
-        :placeType          bdr:PT0037 .
+        :placeEvent         bdr:EV60ACD03CCED45C07 ;
+        :placeLocatedIn     bdr:G4713 ;
+        :placeType          bdr:PT0038 .
 }
