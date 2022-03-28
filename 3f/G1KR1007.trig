@@ -15,15 +15,21 @@ bdg:G1KR1007 {
     bda:G1KR1007  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1KR1007 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "3f/G1KR1007.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1KR1007 ;
-        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:logEntry        bda:LG2F14CBF2A8D220CC , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "542121210:22" ;
         adm:place_id_lex    "542121210:22" ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG2F14CBF2A8D220CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-26T18:46:56.548Z"^^xsd:dateTime ;
+        adm:logMessage      "added Tibetan name"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGIM5E940A373A
         a                   adm:UpdateData ;
@@ -43,10 +49,10 @@ bdg:G1KR1007 {
         :associatedTradition  bdr:TraditionKagyu .
     
     bdr:G1KR1007  a         :Place ;
-        skos:altLabel       "嘎来寺"@zh-hans , "Galai si"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "嘎莱寺"@zh-hans ;
+        skos:altLabel       "嘎来寺"@zh-hans , "嘎莱寺"@zh-hans ;
+        skos:prefLabel      "dkar leb dgon/"@bo-x-ewts , "Galai si"@zh-latn-pinyin-x-ndia ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID2F14CBF2A8D220CC ;
+            bdr:IDC324F871089DD39F ;
         :isRoot             true ;
         :placeEvent         bdr:EVF0F951503A8CB243 ;
         :placeGonpaPerEcumen  "2.61" ;
@@ -55,7 +61,7 @@ bdg:G1KR1007 {
         :placeLong          "97.41666" ;
         :placeType          bdr:PT0037 .
     
-    bdr:ID2F14CBF2A8D220CC
+    bdr:IDC324F871089DD39F
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G1KR1007" .
 }
