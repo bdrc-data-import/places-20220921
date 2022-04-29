@@ -15,23 +15,23 @@ bdg:G362 {
     bda:G362  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G362 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "82/G362.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G362 ;
-        adm:logEntry        bda:LG04F43EB932C094A1 , bda:LG7151E2350A157099 , bda:LG7B4718DBA198A36F , bda:LG7FA5790959B3D49B , bda:LGAA44F0C1390AD751 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG04F43EB932C094A1 , bda:LG7151E2350A157099 , bda:LG7B4718DBA198A36F , bda:LG7FA5790959B3D49B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG04F43EB932C094A1
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-08-06T10:04:24.618Z"^^xsd:dateTime ;
-        adm:logWho          bdu:U00020 .
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG7151E2350A157099
         a                   adm:UpdateData ;
-        adm:logDate         "2014-08-04T11:31:41.525Z"^^xsd:dateTime ;
-        adm:logWho          bdu:U00020 .
+        adm:logDate         "2022-04-28T17:55:06.537Z"^^xsd:dateTime ;
+        adm:logMessage      "added note: located @ neck of mountain \"jo mo sman btsun\""@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LG7B4718DBA198A36F
         a                   adm:UpdateData ;
@@ -45,18 +45,7 @@ bdg:G362 {
         adm:logMessage      "added event"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGAA44F0C1390AD751
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
-    bda:LGIM8BCFDFCA43
-        a                   adm:UpdateData ;
-        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
-        adm:logMessage      "type changed from monastery to dgonPa"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00020 .
-    
-    bdr:EV5604FC0F8E0B4E24
+    bdr:EV4BA5CA9AF7A14471
         a                   :PlaceFounded ;
         :associatedTradition  bdr:TraditionShangpaKagyu ;
         :notAfter           "1299"^^xsd:gYear ;
@@ -65,12 +54,16 @@ bdg:G362 {
     bdr:G362  a             :Place ;
         skos:prefLabel      "bsam sdings dgon/"@bo-x-ewts ;
         :isRoot             true ;
-        :note               bdr:NT462418DE4D0097FA ;
-        :placeEvent         bdr:EV5604FC0F8E0B4E24 ;
+        :note               bdr:NT462418DE4D0097FA , bdr:NT5604FC0F8E0B4E24 ;
+        :placeEvent         bdr:EV4BA5CA9AF7A14471 ;
         :placeLocatedIn     bdr:G2174 ;
         :placeType          bdr:PT0037 .
     
     bdr:NT462418DE4D0097FA
         a                   :Note ;
         :noteText           "name of a monastery connected with the shangs pa bka' brgyud tradition"@en .
+    
+    bdr:NT5604FC0F8E0B4E24
+        a                   :Note ;
+        :noteText           "zur mkhar blo rgyal gyi snyan gzhung brstams sa ste de'i mjug byang du shangs brgyud kyi sgrub sde chen po 'di jo mo sman btsun gyi mgul du yod ces gsal ba las gnas yul kynag gsal bar shes so//"@en .
 }
