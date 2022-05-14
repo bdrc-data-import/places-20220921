@@ -15,13 +15,20 @@ bdg:G2KR38 {
     bda:G2KR38  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2KR38 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "11/G2KR38.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2KR38 ;
-        adm:logEntry        bda:LGIM335E72436E ;
+        adm:logEntry        bda:LGE4A0AEA3BA97E57D , bda:LGIM335E72436E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:replaceWith     bdr:G355 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LGE4A0AEA3BA97E57D
+        a                   adm:WithdrawData ;
+        adm:logDate         "2022-05-12T21:17:50.343Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G355"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIM335E72436E
         a                   adm:UpdateData ;

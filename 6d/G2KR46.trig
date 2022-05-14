@@ -15,11 +15,11 @@ bdg:G2KR46 {
     bda:G2KR46  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2KR46 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "6d/G2KR46.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2KR46 ;
-        adm:logEntry        bda:LG4932E59606B7ADC5 , bda:LGIM335E72436E ;
+        adm:logEntry        bda:LG4932E59606B7ADC5 , bda:LGF37FB4FE509B9356 , bda:LGIM335E72436E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,6 +29,12 @@ bdg:G2KR46 {
         adm:logMessage      "added info"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGF37FB4FE509B9356
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-13T16:50:26.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added Tibetan and Chinese name"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM335E72436E
         a                   adm:UpdateData ;
         adm:logAgent        "mongol import" ;
@@ -36,21 +42,21 @@ bdg:G2KR46 {
         adm:logMessage      "created by mongol import"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bdr:EV8FEF8895915E49A8
-        a                   :PlaceFounded ;
-        :onYear             "1585"^^xsd:gYear .
-    
-    bdr:EVF37FB4FE509B9356
+    bdr:EV32AFB0E06F4BB02E
         a                   :PlaceFounded ;
         :eventWho           bdr:P6554 ;
         :onYear             "1586"^^xsd:gYear .
     
+    bdr:EV8FEF8895915E49A8
+        a                   :PlaceFounded ;
+        :onYear             "1585"^^xsd:gYear .
+    
     bdr:G2KR46  a           :Place ;
-        skos:altLabel       "Erdene zuu khiid"@mn-x-trans , "erdeni job-a"@mn-x-trans ;
-        skos:prefLabel      "er te ni jo bo/"@bo-x-ewts , "Erdene zuu"@mn-x-trans ;
+        skos:altLabel       "lhun grub bde chen gling /"@bo-x-ewts , "Эрдэнэ Зуу хийд"@mn , "Erdene zuu khiid"@mn-x-trans , "erdeni job-a"@mn-x-trans ;
+        skos:prefLabel      "er te ni jo bo/"@bo-x-ewts , "Erdene zuu"@mn-x-trans , "光顯寺"@zh-hant ;
         :isRoot             true ;
         :note               bdr:NT51B07FE83845A8DE ;
-        :placeEvent         bdr:EV8FEF8895915E49A8 , bdr:EVF37FB4FE509B9356 ;
+        :placeEvent         bdr:EV32AFB0E06F4BB02E , bdr:EV8FEF8895915E49A8 ;
         :placeLat           "47.2022833333" ;
         :placeLocatedIn     bdr:G1395 ;
         :placeLong          "102.8433" ;

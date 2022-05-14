@@ -15,13 +15,20 @@ bdg:G2KR4 {
     bda:G2KR4  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2KR4 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9e/G2KR4.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2KR4 ;
-        adm:logEntry        bda:LGIM335E72436E ;
+        adm:logEntry        bda:LG135E5C5BBFFD3F41 , bda:LGIM335E72436E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:replaceWith     bdr:G3250 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG135E5C5BBFFD3F41
+        a                   adm:WithdrawData ;
+        adm:logDate         "2022-05-12T21:17:00.525Z"^^xsd:dateTime ;
+        adm:logMessage      "Withdrawn in favor of G3250"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIM335E72436E
         a                   adm:UpdateData ;
