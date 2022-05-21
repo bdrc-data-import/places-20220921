@@ -15,25 +15,37 @@ bdg:G2CN11046 {
     bda:G2CN11046  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2CN11046 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "4d/G2CN11046.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2CN11046 ;
-        adm:logEntry        bda:LGE0BB270B7A51D4C6 ;
+        adm:logEntry        bda:LG601DAD7E3C5C7627 , bda:LGE6896C0A1FEC26C0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGE0BB270B7A51D4C6
+    bda:LG601DAD7E3C5C7627
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-05-23T12:41:01.922Z"^^xsd:dateTime ;
         adm:logMessage      "created record"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGE6896C0A1FEC26C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-20T11:15:46.151Z"^^xsd:dateTime ;
+        adm:logMessage      "added date and contained"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:EVE0BB270B7A51D4C6
+        a                   :PlaceFounded ;
+        :onYear             "1810"^^xsd:gYear .
+    
     bdr:G2CN11046  a        :Place ;
-        skos:prefLabel      "a go dgon/"@bo-x-ewts , "a go'i dgon pa"@en ;
+        skos:altLabel       "a go'i dgon pa/"@bo-x-ewts ;
+        skos:prefLabel      "a go dgon/"@bo-x-ewts , "Aga monatery"@en ;
         :isRoot             true ;
         :note               bdr:NT3F106CE63A7B4667 ;
-        :placeContains      bdr:G3JT12545 ;
+        :placeContains      bdr:G1KG12672 ;
+        :placeEvent         bdr:EVE0BB270B7A51D4C6 ;
         :placeLocatedIn     bdr:G584 ;
         :placeType          bdr:PT0037 .
     

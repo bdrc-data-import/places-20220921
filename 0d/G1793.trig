@@ -15,19 +15,25 @@ bdg:G1793 {
     bda:G1793  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1793 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "0d/G1793.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1793 ;
-        adm:logEntry        bda:LG5E767312D515ADB5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG0E0DF77E816DF954 , bda:LG5E767312D515ADB5 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "632622204:516" ;
         adm:place_id_lex    "632622204:340" ;
         adm:status          bda:StatusReleased .
     
-    bda:LG5E767312D515ADB5
+    bda:LG0E0DF77E816DF954
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG5E767312D515ADB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-20T11:09:45.659Z"^^xsd:dateTime ;
+        adm:logMessage      "removed duplicate name"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIM61A98BA6  a     adm:UpdateData ;
         adm:logAgent        "monastery import" ;
@@ -47,26 +53,26 @@ bdg:G1793 {
         :associatedTradition  bdr:TraditionNyingma ;
         :onYear             "1840"^^xsd:gYear .
     
-    bdr:EVDDD7426B5FF7A4F8
+    bdr:EVC72C32A5554B0259
         a                   :PlaceFounded ;
         :eventWho           bdr:P6486 ;
         :onYear             "1935"^^xsd:gYear .
     
     bdr:G1793  a            :Place ;
-        skos:altLabel       "brag dkar lha ri dgon/"@bo-x-ewts , "mdo gong ma dgon/"@bo-x-ewts , "多贡麻寺"@zh-hans , "duo gongma si"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "brag dkar lha ri dgon/"@bo-x-ewts , "多贡麻寺"@zh-hans , "duo gongma si"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mdo gong ma dgon/"@bo-x-ewts , "多贡玛寺"@zh-hans ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID0E0DF77E816DF954 ;
+            bdr:IDDDD7426B5FF7A4F8 ;
         :isRoot             true ;
         :note               bdr:NTB36043BEDDC84254 ;
-        :placeEvent         bdr:EV03D8FB837FCF6870 , bdr:EVDDD7426B5FF7A4F8 ;
+        :placeEvent         bdr:EV03D8FB837FCF6870 , bdr:EVC72C32A5554B0259 ;
         :placeGonpaPerEcumen  "5.89" ;
         :placeLat           "33.08000" ;
         :placeLocatedIn     bdr:G1722 ;
         :placeLong          "100.60000" ;
         :placeType          bdr:PT0037 .
     
-    bdr:ID0E0DF77E816DF954
+    bdr:IDDDD7426B5FF7A4F8
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G1793" .
     

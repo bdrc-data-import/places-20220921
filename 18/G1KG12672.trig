@@ -15,35 +15,55 @@ bdg:G1KG12672 {
     bda:G1KG12672  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1KG12672 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "18/G1KG12672.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1KG12672 ;
-        adm:logEntry        bda:LG26D4556C6C32915B , bda:LG60DCEF54042CA2BD ;
+        adm:logEntry        bda:LG04F3C7601A4EA6FE , bda:LG26D4556C6C32915B , bda:LG31584C3D78BFA76E , bda:LG896E0F9D4A45E7D1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG26D4556C6C32915B
+    bda:LG04F3C7601A4EA6FE
         a                   adm:UpdateData ;
-        adm:logDate         "2013-07-17T10:42:55.227Z"^^xsd:dateTime ;
-        adm:logMessage      "added founded date"@en ;
-        adm:logWho          bdu:U00013 .
+        adm:logDate         "2022-05-20T11:18:38.325Z"^^xsd:dateTime ;
+        adm:logMessage      "added other name and note from G3JT12545"@en ;
+        adm:logWho          bdu:U00016 .
     
-    bda:LG60DCEF54042CA2BD
+    bda:LG26D4556C6C32915B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-04-23T16:20:05.691Z"^^xsd:dateTime ;
         adm:logMessage      "added par khang"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:EVB6D4768BCA6E77B1
+    bda:LG31584C3D78BFA76E
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-07-17T10:42:55.227Z"^^xsd:dateTime ;
+        adm:logMessage      "added founded date"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG896E0F9D4A45E7D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-20T11:24:01.583Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:EV60DCEF54042CA2BD
         a                   :PlaceFounded ;
         :notAfter           "1899"^^xsd:gYear ;
         :notBefore          "1800"^^xsd:gYear .
     
     bdr:G1KG12672  a        :Place ;
+        skos:altLabel       "a go bde chen lhun grub gling par khang /"@bo-x-ewts , "a go dgon gyi par khang /"@bo-x-ewts ;
         skos:prefLabel      "bde chen lhun grub gling par khang /"@bo-x-ewts ;
         :isRoot             true ;
-        :placeEvent         bdr:EVB6D4768BCA6E77B1 ;
-        :placeLocatedIn     bdr:G584 ;
+        :note               bdr:NTB6D4768BCA6E77B1 ;
+        :placeEvent         bdr:EV60DCEF54042CA2BD ;
+        :placeLocatedIn     bdr:G1395 , bdr:G2CN11046 , bdr:G584 ;
         :placeType          bdr:PT0059 .
+    
+    bdr:NTB6D4768BCA6E77B1
+        a                   :Note ;
+        :contentLocationStatement  "p. 1 & 589" ;
+        :noteSource         bdr:MW2CZ7915 ;
+        :noteText           "པར་ཁང་འདི་ནི་ཧོར་ཡུལ་གྱི་ཨ་གོ་དགོན་ན་ཡོད་པར་གསལ་ཏེ། པོ་ཏི་འདིའི་ཁ་ཤོག་ནང་མའི་དབྱིན་ཡིག་གི་གསལ་བཤད་ནང་། \"reproduced from prints from the Mongolian A-go Dgon blocks\"ཞེས་གསལ་བ་དང་། ཡང་པོ་ཏི་འདིའི་མཇུག་བྱང་ནང་\"ཨ་གོའི་དགོན་པར་དཔར་དུ་བསྒྲུབས་པ་དགེ\"ཞེས་པ་ལས་ཀྱང་ཤེས་སོ།"@en .
 }

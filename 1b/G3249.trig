@@ -15,29 +15,35 @@ bdg:G3249 {
     bda:G3249  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3249 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "1b/G3249.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3249 ;
-        adm:logEntry        bda:LG7B6718A09E9C9D3D , bda:LG8AB3C41090CD0393 , bda:LGA51B2BEA3C094788 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG52AF28AA03E27057 , bda:LG8AB3C41090CD0393 , bda:LGA51B2BEA3C094788 , bda:LGC356778E11C9D42A , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG7B6718A09E9C9D3D
+    bda:LG52AF28AA03E27057
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8AB3C41090CD0393
         a                   adm:UpdateData ;
         adm:logDate         "2013-02-13T14:13:51.543Z"^^xsd:dateTime ;
         adm:logMessage      "added ri bo dge rgyas dga' ldan bshad sgrub gling gi par khang"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG8AB3C41090CD0393
+    bda:LGA51B2BEA3C094788
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-21T16:08:57.266Z"^^xsd:dateTime ;
         adm:logMessage      "added location & arranged names"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGA51B2BEA3C094788
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LGC356778E11C9D42A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-20T10:57:56.749Z"^^xsd:dateTime ;
+        adm:logMessage      "added other name and note from G00AG02558"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIM8BCFDFCA43
         a                   adm:UpdateData ;
@@ -47,15 +53,19 @@ bdg:G3249 {
         adm:logWho          bdu:U00020 .
     
     bdr:G3249  a            :Place ;
-        skos:altLabel       "dga' ldan bshad sgrub gling /"@bo-x-ewts , "u rge ri bo dge rgyas dga' ldan bshad sgrub gling /"@bo-x-ewts ;
+        skos:altLabel       "dga' ldan bshad sgrub gling /"@bo-x-ewts , "hal ha'i yul gyi ri bo dge rgyas gling /"@bo-x-ewts , "ri bo dge rgyas gling /"@bo-x-ewts , "u rge ri bo dge rgyas dga' ldan bshad sgrub gling /"@bo-x-ewts ;
         skos:prefLabel      "ri bo dge rgyas dgon/"@bo-x-ewts ;
         :isRoot             true ;
-        :note               bdr:NTE62EFB53EF78D7FC ;
+        :note               bdr:NTDB877A0B0000DEF9 , bdr:NTE62EFB53EF78D7FC ;
         :placeContains      bdr:G3JT12519 , bdr:G8LS76579 ;
-        :placeLocatedIn     bdr:G584 ;
+        :placeLocatedIn     bdr:G1395 , bdr:G584 ;
         :placeType          bdr:PT0037 .
+    
+    bdr:NTDB877A0B0000DEF9
+        a                   :Note ;
+        :noteText           "A Gelug monastery in mongolia, hal ha'i yul; according to mkhyen brtse (gdan rabs p. 484) it was the largest monastery in mongolia. it was founded by blo bzang bstan rgyas, the incarnation of tA ra nA tha"@en .
     
     bdr:NTE62EFB53EF78D7FC
         a                   :Note ;
-        :noteText           "a monastery located in the capital of mongolia, ulan bator (urga)\nthere was a great maitreya image built and consecrated her in 1833 by the 5th rje btsun dam pa blo bzang tshul khrims 'jigs med bstan pa'i rgyal mtshan"@en .
+        :noteText           "A monastery located in the capital of mongolia, ulan bator (urga)\nthere was a great maitreya image built and consecrated her in 1833 by the 5th rje btsun dam pa blo bzang tshul khrims 'jigs med bstan pa'i rgyal mtshan."@en .
 }
