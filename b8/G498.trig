@@ -15,15 +15,21 @@ bdg:G498 {
     bda:G498  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G498 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b8/G498.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G498 ;
-        adm:logEntry        bda:LG0E16093ACE2EC9E6 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG81067AD1983787A1 , bda:LG9CA03446C0EA4FC7 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG0E16093ACE2EC9E6
+    bda:LG81067AD1983787A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-23T06:27:54.127Z"^^xsd:dateTime ;
+        adm:logMessage      "added name and note from G2KR145"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9CA03446C0EA4FC7
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,11 +40,21 @@ bdg:G498 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00020 .
     
+    bdr:EVACAC3DC6EEE613EB
+        a                   :PlaceFounded ;
+        :onYear             "1723"^^xsd:gYear .
+    
     bdr:G498  a             :Place ;
+        rdfs:seeAlso        "https://mongoliantemples.org/mn/component/domm/1517?view=oldtempleen"^^xsd:anyURI , "https://mongoliantemples.org/mn/component/domm/497?view=oldtemplemn"^^xsd:anyURI ;
+        skos:altLabel       "jasagtu qan ayimag-un ilagugsan qutugtu-yin keyid"@mn-x-ewts , "Zasagt khan aimgiin Yalguusan khutagtiin khiid"@mn-x-ewts ;
         skos:prefLabel      "yil go san khu ri ye/"@bo-x-ewts , "i la gug san khu ri ye"@mn-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT241D7066BD3E3F0B ;
+        :placeAccuracy      "97.4845" ;
+        :placeEvent         bdr:EVACAC3DC6EEE613EB ;
+        :placeLat           "48.1187833333" ;
         :placeLocatedIn     bdr:G584 ;
+        :placeLong          "97.4845" ;
         :placeType          bdr:PT0037 .
     
     bdr:NT241D7066BD3E3F0B

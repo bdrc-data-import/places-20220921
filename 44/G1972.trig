@@ -15,11 +15,11 @@ bdg:G1972 {
     bda:G1972  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1972 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "44/G1972.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1972 ;
-        adm:logEntry        bda:LG0A9D893A34A35B12 , bda:LG6DAB6ABD5E0A9A4B , bda:LG9B4D8EAA6AC8EB5E , bda:LGA0F36380D9110975 ;
+        adm:logEntry        bda:LG0A9D893A34A35B12 , bda:LG3C583E837EA7BC01 , bda:LG6DAB6ABD5E0A9A4B , bda:LG9B4D8EAA6AC8EB5E , bda:LGA0F36380D9110975 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,9 +29,15 @@ bdg:G1972 {
         adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
         adm:logWho          bdu:U00020 .
     
-    bda:LG6DAB6ABD5E0A9A4B
+    bda:LG3C583E837EA7BC01
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG6DAB6ABD5E0A9A4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-09T14:15:55.985Z"^^xsd:dateTime ;
+        adm:logMessage      "added note and approximate coordinates."@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG9B4D8EAA6AC8EB5E
         a                   adm:UpdateData ;
@@ -45,7 +51,7 @@ bdg:G1972 {
         adm:logMessage      "added place type"@en ;
         adm:logWho          bdu:U00007 .
     
-    bdr:EV3C583E837EA7BC01
+    bdr:EV6181FFCBBEAC979E
         a                   :PlaceFounded ;
         :eventWho           bdr:P6549 ;
         :onYear             "1579"^^xsd:gYear .
@@ -60,13 +66,15 @@ bdg:G1972 {
         skos:prefLabel      "byang chen dgon/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT14CA83658351647C ;
-        :placeEvent         bdr:EV3C583E837EA7BC01 , bdr:EV61882F6DC17DB97C ;
+        :placeEvent         bdr:EV6181FFCBBEAC979E , bdr:EV61882F6DC17DB97C ;
+        :placeLat           "37.0" ;
         :placeLocatedIn     bdr:G1395 ;
+        :placeLong          "100.5" ;
         :placeType          bdr:PT0037 .
     
     bdr:NT14CA83658351647C
         a                   :Note ;
         :contentLocationStatement  "p. 601" ;
         :noteSource         bdr:MW20115 ;
-        :noteText           "dge lugs pa monastery in the hal ha lands founded by the 3rd dalai lama with the patronage of al than rgyal po in 1579"@en .
+        :noteText           "Gelukpa monastery founded in Čabčiyal, the site of the meeting between Altai Khan and the 3rd Dalai Lama in 1579, on the east of the Qinghai lake (G2DB25462). It was then destroyed by the Ming in 1591. The coordinates are very approximate."@en .
 }
