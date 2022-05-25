@@ -15,11 +15,11 @@ bdg:G3JT12593 {
     bda:G3JT12593  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3JT12593 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "72/G3JT12593.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3JT12593 ;
-        adm:logEntry        bda:LG04E89797CCFEBCF6 , bda:LG21D5AA51EE8EFDF4 , bda:LG2392F44FD1911654 , bda:LG7E893D96C809A1CA ;
+        adm:logEntry        bda:LG04E89797CCFEBCF6 , bda:LG21D5AA51EE8EFDF4 , bda:LG2392F44FD1911654 , bda:LG42CF3F3091C33EDC , bda:LG7E893D96C809A1CA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,6 +40,12 @@ bdg:G3JT12593 {
         adm:logMessage      "added date"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG42CF3F3091C33EDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-24T14:54:57.002Z"^^xsd:dateTime ;
+        adm:logMessage      "added names from G3JT12519"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG7E893D96C809A1CA
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-03T08:55:28.888Z"^^xsd:dateTime ;
@@ -51,12 +57,13 @@ bdg:G3JT12593 {
         :onYear             "1908"^^xsd:gYear .
     
     bdr:G3JT12593  a        :Place ;
-        skos:altLabel       "ur ga par khang /"@bo-x-ewts ;
+        skos:altLabel       "hu re'i par khang /"@bo-x-ewts , "ri bo dge rgyas dga' ldan bshad sgrub gling gi par khang /"@bo-x-ewts , "ur ga par khang /"@bo-x-ewts , "u rge ri bo dge rgyas dga' ldan bshad sgrub gling gi par khang /"@bo-x-ewts ;
         skos:prefLabel      "urga par khang /"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT859365BBCF0812CC , bdr:NTCB4B82CF1FE18100 ;
+        :placeContains      bdr:G3249 ;
         :placeEvent         bdr:EVF01CCCBD5DB3229C ;
-        :placeLocatedIn     bdr:G584 ;
+        :placeLocatedIn     bdr:G3249 , bdr:G584 ;
         :placeType          bdr:PT0059 .
     
     bdr:NT859365BBCF0812CC

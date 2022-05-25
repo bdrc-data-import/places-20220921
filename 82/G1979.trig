@@ -15,13 +15,18 @@ bdg:G1979 {
     bda:G1979  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1979 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "82/G1979.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1979 ;
-        adm:logEntry        bda:LGAA72D92A867E72DC , bda:LGBE85ED9E55B5DD09 , bda:LGC1841AB86F914E6A , bda:LGE7F8689770FC0082 ;
+        adm:logEntry        bda:LG95B60D180F545BB8 , bda:LGAA72D92A867E72DC , bda:LGBE85ED9E55B5DD09 , bda:LGC1841AB86F914E6A , bda:LGE7F8689770FC0082 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:replaceWith     bdr:G3249 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG95B60D180F545BB8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGAA72D92A867E72DC
         a                   adm:UpdateData ;
@@ -35,8 +40,10 @@ bdg:G1979 {
         adm:logWho          bdu:U00007 .
     
     bda:LGC1841AB86F914E6A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:WithdrawData ;
+        adm:logDate         "2022-05-24T13:30:40.475Z"^^xsd:dateTime ;
+        adm:logMessage      "Withdrawn in favor of G3249"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGE7F8689770FC0082
         a                   adm:UpdateData ;
