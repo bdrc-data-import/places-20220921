@@ -15,11 +15,11 @@ bdg:G3206 {
     bda:G3206  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3206 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "91/G3206.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3206 ;
-        adm:logEntry        bda:LG615A71ED62D610ED , bda:LG912FA9BC1E2519FB , bda:LG9F1F5FF5A58534E3 , bda:LGF13019096D7689BD ;
+        adm:logEntry        bda:LG615A71ED62D610ED , bda:LG912FA9BC1E2519FB , bda:LG9F1F5FF5A58534E3 , bda:LGDD00693AA4E8B056 , bda:LGF13019096D7689BD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -41,16 +41,22 @@ bdg:G3206 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGF13019096D7689BD
+    bda:LGDD00693AA4E8B056
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGF13019096D7689BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-25T08:21:01.397Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed GIS coordinates format"@en ;
+        adm:logWho          bdu:U00016 .
     
     bdr:G3206  a            :Place ;
         skos:altLabel       "nan jiabawa feng"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gnam lcags 'bar ba/"@bo-x-ewts , "Namjak Varwa"@en , "南迦巴瓦峰"@zh-hans ;
         :isRoot             true ;
-        :placeLat           "29 37 50 N" ;
+        :placeLat           "29.630555556" ;
         :placeLocatedIn     bdr:G1977 , bdr:G2122 , bdr:G2387 ;
-        :placeLong          "95 03 19 E" ;
+        :placeLong          "95.055277778" ;
         :placeType          bdr:PT0042 .
 }
