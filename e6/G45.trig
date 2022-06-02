@@ -15,11 +15,11 @@ bdg:G45 {
     bda:G45  a              adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G45 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "e6/G45.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G45 ;
-        adm:logEntry        bda:LG2B33537FE71C9753 , bda:LG69DB4DE69B78990F , bda:LG69F54E6797E1D2A0 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG2B33537FE71C9753 , bda:LG69DB4DE69B78990F , bda:LG69F54E6797E1D2A0 , bda:LGA1FBE5A4CB7F648C , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "540124200:540124104" ;
         adm:place_id_lex    "540124200:540124104" ;
@@ -32,14 +32,20 @@ bdg:G45 {
         adm:logWho          bdu:U00007 .
     
     bda:LG69DB4DE69B78990F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-01T13:46:23.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added gnam 'brug dgon"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG69F54E6797E1D2A0
         a                   adm:UpdateData ;
         adm:logDate         "2012-10-12T12:20:51.999Z"^^xsd:dateTime ;
         adm:logMessage      "added contain"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGA1FBE5A4CB7F648C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM61A98BA6  a     adm:UpdateData ;
         adm:logAgent        "monastery import" ;
@@ -60,10 +66,10 @@ bdg:G45 {
         :onYear             "1150"^^xsd:gYear .
     
     bdr:G45  a              :Place ;
-        skos:altLabel       "'brug byang chub chos gling /"@bo-x-ewts , "gnam 'brug se ba byang chub gling /"@bo-x-ewts , "se ba byang chub gling /"@bo-x-ewts , "jiangqulin si"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "'brug byang chub chos gling /"@bo-x-ewts , "gnam 'brug dgon/"@bo-x-ewts , "gnam 'brug se ba byang chub gling /"@bo-x-ewts , "se ba byang chub gling /"@bo-x-ewts , "jiangqulin si"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "byang chub gling /"@bo-x-ewts , "降曲林寺"@zh-hans ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:IDA1FBE5A4CB7F648C ;
+            bdr:ID4E8DED3E175C2791 ;
         :isRoot             true ;
         :note               bdr:NT476105FF43A6545E , bdr:NT76FAB220E1A89C50 , bdr:NTC70A8F9870E4F902 ;
         :placeContains      bdr:G2CN10922 ;
@@ -74,7 +80,7 @@ bdg:G45 {
         :placeLong          "90.82605" ;
         :placeType          bdr:PT0037 .
     
-    bdr:IDA1FBE5A4CB7F648C
+    bdr:ID4E8DED3E175C2791
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G45" .
     

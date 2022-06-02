@@ -15,15 +15,19 @@ bdg:G219 {
     bda:G219  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G219 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "59/G219.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G219 ;
-        adm:logEntry        bda:LG2F998154A2DD26BC , bda:LG5CA9645B6E273632 , bda:LGB41A9614E75A5FF5 , bda:LGE0C363A02977F476 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG1269930BF9A65599 , bda:LG2F998154A2DD26BC , bda:LG5CA9645B6E273632 , bda:LGB41A9614E75A5FF5 , bda:LGE0C363A02977F476 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "540102006:540101124" ;
         adm:place_id_lex    "540102006:540101124" ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG1269930BF9A65599
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG2F998154A2DD26BC
         a                   adm:UpdateData ;
@@ -31,8 +35,10 @@ bdg:G219 {
         adm:logWho          bdu:U00002 .
     
     bda:LG5CA9645B6E273632
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-01T11:30:58.2Z"^^xsd:dateTime ;
+        adm:logMessage      "added full name"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGB41A9614E75A5FF5
         a                   adm:UpdateData ;
@@ -65,10 +71,10 @@ bdg:G219 {
         :onYear             "1650"^^xsd:gYear .
     
     bdr:G219  a             :Place ;
-        skos:altLabel       "Kundeling"@bo-x-phon-en , "gongdelin si"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "brtan bzhugs chos 'khor gling dgon/"@bo-x-ewts , "Kundeling"@bo-x-phon-en , "gongdelin si"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "kun bde gling /"@bo-x-ewts , "Kunde Ling"@en , "功德林寺"@zh-hans ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID1269930BF9A65599 ;
+            bdr:ID9C79DA78F8243988 ;
         :isRoot             true ;
         :note               bdr:NT7A7C23FC77A4FE21 ;
         :placeContains      bdr:G2CN10868 ;
@@ -79,7 +85,7 @@ bdg:G219 {
         :placeLong          "91.10567" ;
         :placeType          bdr:PT0037 .
     
-    bdr:ID1269930BF9A65599
+    bdr:ID9C79DA78F8243988
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G219" .
     

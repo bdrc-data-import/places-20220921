@@ -15,13 +15,17 @@ bdg:G217 {
     bda:G217  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G217 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "0b/G217.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G217 ;
-        adm:logEntry        bda:LG8FE0BB00A41DC688 , bda:LG91AC1F2547657671 , bda:LGB92E6C94C7A37436 , bda:LGBB8924B6837DDD6E , bda:LGE949C84E476A7D61 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG2CAF726DD7B995DF , bda:LG8FE0BB00A41DC688 , bda:LG91AC1F2547657671 , bda:LGB92E6C94C7A37436 , bda:LGBB8924B6837DDD6E , bda:LGE949C84E476A7D61 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG2CAF726DD7B995DF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG8FE0BB00A41DC688
         a                   adm:UpdateData ;
@@ -30,8 +34,10 @@ bdg:G217 {
         adm:logWho          bdu:U00007 .
     
     bda:LG91AC1F2547657671
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-01T13:03:39.23Z"^^xsd:dateTime ;
+        adm:logMessage      "added date and sgang sngon bkra shis chos rdzong"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGB92E6C94C7A37436
         a                   adm:UpdateData ;
@@ -57,24 +63,26 @@ bdg:G217 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00020 .
     
-    bdr:EV2CAF726DD7B995DF
+    bdr:EV595D7EFA373014A0
         a                   :PlaceFounded ;
         :eventWho           bdr:P466 .
     
     bdr:EVAFB0D2AA208DDF66
-        a                   :PlaceEventNotSpecified ;
-        :associatedTradition  bdr:TraditionDrigungKagyu .
+        a                   :PlaceFounded ;
+        :associatedTradition  bdr:TraditionDrigungKagyu ;
+        :onYear             "1515"^^xsd:gYear .
     
     bdr:G217  a             :Place ;
+        skos:altLabel       "'bri gung bkra shis gling /"@bo-x-ewts , "sgang sngon bkra shis chos rdzong /"@bo-x-ewts , "phyang monastery"@en ;
         skos:prefLabel      "la dwags sgang sngon dgon/"@bo-x-ewts , "Gang-ngon Gon"@en ;
         :isRoot             true ;
         :note               bdr:NT97753CE49295CA9E ;
         :placeContains      bdr:G3JT12583 ;
-        :placeEvent         bdr:EV2CAF726DD7B995DF , bdr:EVAFB0D2AA208DDF66 ;
+        :placeEvent         bdr:EV595D7EFA373014A0 , bdr:EVAFB0D2AA208DDF66 ;
         :placeLocatedIn     bdr:G3182 ;
         :placeType          bdr:PT0037 .
     
     bdr:NT97753CE49295CA9E
         a                   :Note ;
-        :noteText           "major seat of the 'bri gung bka' brgyud in la dwags"@en .
+        :noteText           "major seat of the 'bri gung bka' brgyud in ladakh."@en .
 }

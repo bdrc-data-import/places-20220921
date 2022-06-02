@@ -15,25 +15,31 @@ bdg:G3521 {
     bda:G3521  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3521 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "21/G3521.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3521 ;
-        adm:logEntry        bda:LG133009724D3E6353 , bda:LG792923432FCFB272 , bda:LGE55ECC145F4AB2D0 , bda:LGF69B5087DC2D4B3F , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG133009724D3E6353 , bda:LG792923432FCFB272 , bda:LG828EE0E12C77E577 , bda:LGE55ECC145F4AB2D0 , bda:LGF69B5087DC2D4B3F , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "542222201:542222122" ;
         adm:place_id_lex    "542222201:542222122" ;
         adm:status          bda:StatusReleased .
     
     bda:LG133009724D3E6353
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-01T13:14:38.003Z"^^xsd:dateTime ;
+        adm:logMessage      "added gra nang rgyal gling tshogs pa/"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG792923432FCFB272
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-18T15:44:17.324Z"^^xsd:dateTime ;
         adm:logMessage      "added name & note"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG828EE0E12C77E577
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGE55ECC145F4AB2D0
         a                   adm:UpdateData ;
@@ -60,32 +66,32 @@ bdg:G3521 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00020 .
     
+    bdr:EV1F768EEF879564B8
+        a                   :PlaceFounded ;
+        :eventWho           bdr:P2624 ;
+        :onYear             "1224"^^xsd:gYear .
+    
     bdr:EV2C692E719D08E606
         a                   :PlaceFounded ;
         :associatedTradition  bdr:TraditionNyingma ;
         :onYear             "1224"^^xsd:gYear .
     
-    bdr:EVAF7560433FE7AFBD
-        a                   :PlaceFounded ;
-        :eventWho           bdr:P2624 ;
-        :onYear             "1224"^^xsd:gYear .
-    
     bdr:G3521  a            :Place ;
-        skos:altLabel       "gyang gling tshogs pa/"@bo-x-ewts , "Gyaling Chokpa"@bo-x-phon-en , "jielin cuoba si"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "gra nang rgyal gling tshogs pa/"@bo-x-ewts , "gyang gling tshogs pa/"@bo-x-ewts , "Gyaling Chokpa"@bo-x-phon-en , "jielin cuoba si"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "rgyal gling tshogs pa/"@bo-x-ewts , "结林措巴寺"@zh-hans ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID828EE0E12C77E577 ;
+            bdr:IDAF7560433FE7AFBD ;
         :isRoot             true ;
         :note               bdr:NT0181A5300F12C907 , bdr:NT374CB4A019E52AE6 , bdr:NTAC1825BFE1747BAA , bdr:NTFFA1E063A3307940 ;
         :placeContains      bdr:G2CN10889 ;
-        :placeEvent         bdr:EV2C692E719D08E606 , bdr:EVAF7560433FE7AFBD ;
+        :placeEvent         bdr:EV1F768EEF879564B8 , bdr:EV2C692E719D08E606 ;
         :placeGonpaPerEcumen  "12.25" ;
         :placeLat           "29.19799" ;
         :placeLocatedIn     bdr:G799 ;
         :placeLong          "91.30387" ;
         :placeType          bdr:PT0037 .
     
-    bdr:ID828EE0E12C77E577
+    bdr:IDAF7560433FE7AFBD
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G3521" .
     
