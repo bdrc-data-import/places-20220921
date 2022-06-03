@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KG235411 {
+    bda:G2KG235411  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KG235411 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "f3/G2KG235411.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KG235411 ;
+        adm:logEntry        bda:LG18408154CC18B35D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18408154CC18B35D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-02T16:41:04.306Z"^^xsd:dateTime ;
+        adm:logMessage      "created new place record"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:G2KG235411  a       :Place ;
+        skos:altLabel       "gzhE hO/"@bo-x-ewts , "khren te'e"@bo-x-ewts , "khrin ton/"@bo-x-ewts , "zhi ho/"@bo-x-ewts , "zhi ho'o"@bo-x-ewts , "Chengde"@en , "Rehe"@en , "承德"@zh-hans ;
+        skos:prefLabel      "zhe ho/"@bo-x-ewts , "Jehol"@en , "热河"@zh-hans ;
+        :isRoot             true ;
+        :placeGB2260-2013   "130000000" ;
+        :placeLat           "41.0299509" ;
+        :placeLocatedIn     bdr:G9GBX130800000 ;
+        :placeLong          "117.8852105" ;
+        :placeType          bdr:PT0008 .
+}

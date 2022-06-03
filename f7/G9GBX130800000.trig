@@ -16,11 +16,11 @@ bdg:G9GBX130800000 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G9GBX130800000 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f7/G9GBX130800000.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G9GBX130800000 ;
-        adm:logEntry        bda:LG5A54B8276AC5CF25 ;
+        adm:logEntry        bda:LG5A54B8276AC5CF25 , bda:LG5AE4E8F0E8F119D2 , bda:LGC2F3E9CD5AC95A38 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusProvisional .
     
@@ -30,12 +30,24 @@ bdg:G9GBX130800000 {
         adm:logMessage      "Added place from GB 2260-2013"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LG5AE4E8F0E8F119D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-02T11:21:10.47Z"^^xsd:dateTime ;
+        adm:logMessage      "added containedIn (tradition place name)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC2F3E9CD5AC95A38
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-02T16:40:42.665Z"^^xsd:dateTime ;
+        adm:logMessage      "added city"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bdr:G9GBX130800000
         a                   :Place ;
         skos:altLabel       "cheng de shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "Chengde City"@en , "承德市"@zh-hans ;
         :isRoot             true ;
-        :placeContains      bdr:G9GBX130801000 , bdr:G9GBX130802000 , bdr:G9GBX130803000 , bdr:G9GBX130804000 , bdr:G9GBX130821000 , bdr:G9GBX130822000 , bdr:G9GBX130823000 , bdr:G9GBX130824000 , bdr:G9GBX130825000 , bdr:G9GBX130826000 , bdr:G9GBX130827000 , bdr:G9GBX130828000 ;
+        :placeContains      bdr:G2746 , bdr:G2KG235411 , bdr:G9GBX130801000 , bdr:G9GBX130802000 , bdr:G9GBX130803000 , bdr:G9GBX130804000 , bdr:G9GBX130821000 , bdr:G9GBX130822000 , bdr:G9GBX130823000 , bdr:G9GBX130824000 , bdr:G9GBX130825000 , bdr:G9GBX130826000 , bdr:G9GBX130827000 , bdr:G9GBX130828000 ;
         :placeGB2260-2013   "130800000" ;
         :placeLat           "41.0299509" ;
         :placeLocatedIn     bdr:G9GBX130000000 ;
