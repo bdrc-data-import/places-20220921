@@ -15,25 +15,31 @@ bdg:G2628 {
     bda:G2628  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2628 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "fe/G2628.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2628 ;
-        adm:logEntry        bda:LG605C23BCABA0AF21 , bda:LGEDB3C148C4740BAE , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG72B070ADCB420907 , bda:LGEC344924BE5FAD17 , bda:LGEDB3C148C4740BAE , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "632725208:152" ;
         adm:place_id_lex    "632725208:152" ;
         adm:status          bda:StatusReleased .
     
-    bda:LG605C23BCABA0AF21
+    bda:LG72B070ADCB420907
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-15T21:02:12.708Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEC344924BE5FAD17
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGEDB3C148C4740BAE
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-07T11:33:45.124Z"^^xsd:dateTime ;
         adm:logMessage      "added location & arranged names"@en ;
         adm:logWho          bdu:U00007 .
-    
-    bda:LGEDB3C148C4740BAE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM61A98BA6  a     adm:UpdateData ;
         adm:logAgent        "monastery import" ;
@@ -48,31 +54,31 @@ bdg:G2628 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00020 .
     
-    bdr:EVDF472966C455E77C
-        a                   :PlaceFounded ;
-        :associatedTradition  bdr:TraditionYelpaKagyu ;
-        :onYear             "1068"^^xsd:gYear .
-    
-    bdr:EVEC344924BE5FAD17
+    bdr:EV2C7174B1F8A4C7DE
         a                   :PlaceFounded ;
         :eventWho           bdr:P5132 ;
         :onYear             "1188"^^xsd:gYear .
+    
+    bdr:EV5D3D3222A254CB3A
+        a                   :PlaceFounded ;
+        :associatedTradition  bdr:TraditionYelpaKagyu ;
+        :onYear             "1068"^^xsd:gYear .
     
     bdr:G2628  a            :Place ;
         skos:altLabel       "byang rta rna dgon pa/"@bo-x-ewts , "rta rna seng+ge'i gnam rdzong /"@bo-x-ewts , "seng+ge gnam rdzong /"@bo-x-ewts , "dana si"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "rta rna dgon/"@bo-x-ewts , "达那寺"@zh-hans ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID72B070ADCB420907 ;
+            bdr:ID187D4174E5393682 ;
         :isRoot             true ;
-        :note               bdr:NTA823605B005BC77D , bdr:NTB49B35E42B89B8EA ;
-        :placeEvent         bdr:EVDF472966C455E77C , bdr:EVEC344924BE5FAD17 ;
+        :note               bdr:NTA823605B005BC77D , bdr:NTB49B35E42B89B8EA , bdr:NTDF472966C455E77C ;
+        :placeEvent         bdr:EV2C7174B1F8A4C7DE , bdr:EV5D3D3222A254CB3A ;
         :placeGonpaPerEcumen  "10.08" ;
         :placeLat           "32.06366" ;
         :placeLocatedIn     bdr:G1467 ;
         :placeLong          "96.00464" ;
         :placeType          bdr:PT0037 .
     
-    bdr:ID72B070ADCB420907
+    bdr:ID187D4174E5393682
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G2628" .
     
@@ -87,4 +93,10 @@ bdg:G2628 {
         :contentLocationStatement  "p. 552" ;
         :noteSource         bdr:MW20850 ;
         :noteText           "affiliated to mtshur phu: de snga'i grwa rgyun yong khungs gsar pa: nang chen rta  na dgon pa"@en .
+    
+    bdr:NTDF472966C455E77C
+        a                   :Note ;
+        :contentLocationStatement  "p. 267" ;
+        :noteSource         bdr:MW1KG1891 ;
+        :noteText           "ཡེལ་པ་བཀའ་བརྒྱུད་ཀྱི་གདན་ས་ཡིན་མོད། དེང་ཀཾ་ཚང་གི་ལུགས་གཙོ་བོར་ཆགས་པ་གསལ།"@bo .
 }

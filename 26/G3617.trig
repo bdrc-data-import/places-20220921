@@ -19,13 +19,19 @@ bdg:G3617 {
         adm:gitPath         "26/G3617.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3617 ;
-        adm:logEntry        bda:LGA344ADBC4D0A8596 , bda:LGD1DB3E6A358EB5B0 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG47EA6617E3CBA1E7 , bda:LGA344ADBC4D0A8596 , bda:LGD1DB3E6A358EB5B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGA344ADBC4D0A8596
+    bda:LG47EA6617E3CBA1E7
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-09T10:17:09.822Z"^^xsd:dateTime ;
+        adm:logMessage      "added location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA344ADBC4D0A8596
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-15T20:22:40.108Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00007 .
     
@@ -33,25 +39,18 @@ bdg:G3617 {
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGIM8BCFDFCA43
-        a                   adm:UpdateData ;
-        adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
-        adm:logMessage      "type changed from monastery to dgonPa"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00020 .
-    
     bdr:EV47656D9AD320F89D
         a                   :PlaceFounded ;
         :eventWho           bdr:P1400 ;
         :onYear             "1164"^^xsd:gYear .
     
     bdr:G3617  a            :Place ;
-        skos:altLabel       "chab mdo kam po gnas nang dgon/"@bo-x-ewts ;
+        skos:altLabel       "kam po gangs ra/"@bo-x-ewts ;
         skos:prefLabel      "kam po gnas nang dgon/"@bo-x-ewts ;
         :isRoot             true ;
         :note               bdr:NT63F54A70E4ED20E2 , bdr:NTDD2A97EBAEB8AAE5 ;
         :placeEvent         bdr:EV47656D9AD320F89D ;
-        :placeLocatedIn     bdr:G2186 ;
+        :placeLocatedIn     bdr:G2186 , bdr:G2304 , bdr:G2CN11114 ;
         :placeType          bdr:PT0037 .
     
     bdr:NT63F54A70E4ED20E2
