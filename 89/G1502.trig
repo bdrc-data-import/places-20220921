@@ -15,11 +15,11 @@ bdg:G1502 {
     bda:G1502  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1502 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "89/G1502.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1502 ;
-        adm:logEntry        bda:LG4825C2B59619DB55 , bda:LGD7DAE984035B35AA , bda:LGF9347DE8B5B4B639 , bda:LGFDB0215A5C282C56 ;
+        adm:logEntry        bda:LG4825C2B59619DB55 , bda:LGC5A31AB5E412A282 , bda:LGD7DAE984035B35AA , bda:LGF9347DE8B5B4B639 , bda:LGFDB0215A5C282C56 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,6 +28,10 @@ bdg:G1502 {
         adm:logDate         "2014-10-28T12:14:08.961Z"^^xsd:dateTime ;
         adm:logMessage      "readded names"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGC5A31AB5E412A282
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGD7DAE984035B35AA
         a                   adm:UpdateData ;
@@ -42,12 +46,14 @@ bdg:G1502 {
         adm:logWho          bdu:U00007 .
     
     bda:LGFDB0215A5C282C56
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-18T19:57:08.102Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names"@en ;
+        adm:logWho          bdu:U00007 .
     
     bdr:G1502  a            :Place ;
-        skos:altLabel       "ba yan ha la/"@bo-x-ewts , "bA yan ri rgyud/"@bo-x-ewts ;
-        skos:prefLabel      "ba yan ha ri'i rgyud/"@bo-x-ewts ;
+        skos:altLabel       "ba yan ha ri rgyud/"@bo-x-ewts , "bA yan ri rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "ba yan ha la/"@bo-x-ewts ;
         :isRoot             true ;
         :placeLocatedIn     bdr:G1202 ;
         :placeType          bdr:PT0044 .

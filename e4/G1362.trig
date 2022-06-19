@@ -15,11 +15,11 @@ bdg:G1362 {
     bda:G1362  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1362 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "e4/G1362.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1362 ;
-        adm:logEntry        bda:LG061ECF24CF7475A6 , bda:LG3BA384634ABED16F , bda:LG44EA0B6599852175 , bda:LG82DF39560D8C3EBC , bda:LGCD1DFDA6AF284A72 ;
+        adm:logEntry        bda:LG061ECF24CF7475A6 , bda:LG3BA384634ABED16F , bda:LG44EA0B6599852175 , bda:LG580B0CA9445A300C , bda:LG82DF39560D8C3EBC , bda:LGCD1DFDA6AF284A72 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -41,9 +41,15 @@ bdg:G1362 {
         adm:logMessage      "added type"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG82DF39560D8C3EBC
+    bda:LG580B0CA9445A300C
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG82DF39560D8C3EBC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-18T22:14:49.826Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGCD1DFDA6AF284A72
         a                   adm:UpdateData ;
@@ -52,7 +58,8 @@ bdg:G1362 {
         adm:logWho          bdu:U00007 .
     
     bdr:G1362  a            :Place ;
-        skos:prefLabel      "byar gyi rong yul/"@bo-x-ewts ;
+        skos:altLabel       "byar gyi rong yul/"@bo-x-ewts ;
+        skos:prefLabel      "byar rong /"@bo-x-ewts ;
         :isRoot             true ;
         :placeLocatedIn     bdr:G843 ;
         :placeType          bdr:PT0083 .
