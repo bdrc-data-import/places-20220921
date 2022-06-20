@@ -15,15 +15,19 @@ bdg:G2720 {
     bda:G2720  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G2720 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "1b/G2720.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G2720 ;
-        adm:logEntry        bda:LGC6AED037BC28799F , bda:LGD8D2D28F2E961735 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG81BAD390A707DC4A , bda:LGC6AED037BC28799F , bda:LGD8D2D28F2E961735 , bda:LGIM61A98BA6 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "632723205:58" ;
         adm:place_id_lex    "632723205:58" ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG81BAD390A707DC4A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGC6AED037BC28799F
         a                   adm:UpdateData ;
@@ -32,8 +36,10 @@ bdg:G2720 {
         adm:logWho          bdu:U00007 .
     
     bda:LGD8D2D28F2E961735
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-19T15:08:55.616Z"^^xsd:dateTime ;
+        adm:logMessage      "corected typo"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGIM61A98BA6  a     adm:UpdateData ;
         adm:logAgent        "monastery import" ;
@@ -59,9 +65,9 @@ bdg:G2720 {
     
     bdr:G2720  a            :Place ;
         skos:altLabel       "seb mda' 'o phom dgon/"@bo-x-ewts , "seb mda' theg chen dar rgyas gling /"@bo-x-ewts , "下赛巴寺"@zh-hans , "saida si"@zh-latn-pinyin-x-ndia , "xia saiba si"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "seb mda' 'dgon pa/"@bo-x-ewts , "赛达寺"@zh-hans ;
+        skos:prefLabel      "seb mda' dgon pa/"@bo-x-ewts , "赛达寺"@zh-hans ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID81BAD390A707DC4A ;
+            bdr:ID36618D6FF3D68A04 ;
         :isRoot             true ;
         :note               bdr:NT105C1D37693AAFE7 , bdr:NT95E2281742931A58 ;
         :placeEvent         bdr:EVA1733EB8D44A5E66 , bdr:EVD8A06BB92C749D1A ;
@@ -71,7 +77,7 @@ bdg:G2720 {
         :placeLong          "97.29864" ;
         :placeType          bdr:PT0037 .
     
-    bdr:ID81BAD390A707DC4A
+    bdr:ID36618D6FF3D68A04
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G2720" .
     

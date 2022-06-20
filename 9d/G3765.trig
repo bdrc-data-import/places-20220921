@@ -15,54 +15,77 @@ bdg:G3765 {
     bda:G3765  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3765 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "9d/G3765.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3765 ;
-        adm:logEntry        bda:LG8C788941250A2B98 , bda:LGA2A014F257F7815A , bda:LGDF904EE65011A2D3 , bda:LGE142DD6AA8FD8C1E , bda:LGF242452A056038B9 , bda:LGIM6B07AF7F36 ;
+        adm:logEntry        bda:LG1F1EDD10F7FE277F , bda:LG6F60CA4905E28628 , bda:LG8C788941250A2B98 , bda:LGA2A014F257F7815A , bda:LGA80742903827000E , bda:LGE142DD6AA8FD8C1E , bda:LGF242452A056038B9 , bda:LGF9EFC68449CB9043 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG8C788941250A2B98
+    bda:LG1F1EDD10F7FE277F
         a                   adm:UpdateData ;
-        adm:logDate         "2014-04-02T13:02:09.502Z"^^xsd:dateTime ;
-        adm:logMessage      "changed type"@en ;
+        adm:logDate         "2022-06-19T12:44:33.299Z"^^xsd:dateTime ;
+        adm:logMessage      "added name: gser thang & normalized name list"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGA2A014F257F7815A
+    bda:LG6F60CA4905E28628
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8C788941250A2B98
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-02T11:16:52.058Z"^^xsd:dateTime ;
         adm:logMessage      "added type & location"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGDF904EE65011A2D3
+    bda:LGA2A014F257F7815A
         a                   adm:UpdateData ;
         adm:logDate         "2013-02-01T15:07:41.129Z"^^xsd:dateTime ;
         adm:logMessage      "added contain"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGA80742903827000E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-19T21:18:32.071Z"^^xsd:dateTime ;
+        adm:logMessage      "added names with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGE142DD6AA8FD8C1E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-06-04T16:36:29.987Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGF242452A056038B9
         a                   adm:UpdateData ;
-        adm:logDate         "2014-06-04T16:36:29.987Z"^^xsd:dateTime ;
-        adm:logMessage      "added type"@en ;
+        adm:logDate         "2014-04-02T13:02:09.502Z"^^xsd:dateTime ;
+        adm:logMessage      "changed type"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGIM6B07AF7F36
+    bda:LGF9EFC68449CB9043
         a                   adm:UpdateData ;
-        adm:logDate         "2012-12-11T17:39:05.287Z"^^xsd:dateTime ;
-        adm:logMessage      "type changed from traditionalPlaceName to srolRgyunGyiSaMing"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00020 .
+        adm:logDate         "2022-06-19T13:53:05.45Z"^^xsd:dateTime ;
+        adm:logMessage      "added note"@en ;
+        adm:logWho          bdu:U00007 .
     
     bdr:G3765  a            :Place ;
-        skos:altLabel       "dbal shul gser rta/"@bo-x-ewts , "gser thal/"@bo-x-ewts , "gser thar/"@bo-x-ewts ;
-        skos:prefLabel      "gser rta/"@bo-x-ewts ;
+        skos:altLabel       "dbal shul gser rta/"@bo-x-ewts , "gser gzhung /"@bo-x-ewts , "gser rta/"@bo-x-ewts , "gser thal/"@bo-x-ewts , "gser thar/"@bo-x-ewts , "mgo log gser thal/"@bo-x-ewts ;
+        skos:prefLabel      "gser thang /"@bo-x-ewts ;
         :isRoot             true ;
+        :note               bdr:NT56AF011997D363DD , bdr:NTDF904EE65011A2D3 ;
         :placeContains      bdr:G2CN11109 ;
         :placeLocatedIn     bdr:G1326 ;
         :placeType          bdr:PT0070 .
+    
+    bdr:NT56AF011997D363DD
+        a                   :Note ;
+        :noteSource         bdr:MW8LS15815 ;
+        :noteText           "དཔེ་དེབ་འདིར་གསེར་ཐང་ཞེས་འཁོད་པ་ལྟར་དེ་ནི་དོན་དང་མཐུན་པའི་ས་མིང་ཞིག་ཡིན་ངེས་ཏེ། བོད་ཀྱི་ས་མིང་ཀྱི་སྤྱི་འགྲོས་ལ་རྩེད་ཐང་ལི་ཐང་འཛམ་ཐང་སོགས་ཐང་མིང་ཅན་མང་བ་ལ་བསམ་ན་གོ་སླ་ཏེ། གསེར་རྟ་དང་གསེར་ཐལ་སོགས་ནི་སྒྲ་གདངས་འདྲ་བའི་ཐ་སྙད་རྒྱུན་འབྱམས་སུ་བཀོལ་བ་ཞིག་ལས་དོན་ལ་འགྲིག་པའི་ཐ་སྙད་ཞིག་ཨེ་ཡིན་སྙམ་པ་དཔྱད་བྱའོ།།"@bo .
+    
+    bdr:NTDF904EE65011A2D3
+        a                   :Note ;
+        :contentLocationStatement  "p. 19" ;
+        :noteSource         bdr:MW1KG5737 ;
+        :noteText           "འདི་ནི་མགོ་ལོག་གསེར་ཐལ་གྱི་གནས་ལ་འགོ་བའི་ཡུལ་སྐྱོངས། ཤར་རྒྱལ་མོ་རོང་གི་འཕྲུ་ཏོག ཁམས་གསེར་གཞུང་མི་སྡེའི་རྟེན་ཕུར། གནས་ལས་མིང་བཏགས་པ་གསེར་གྱི་འབྲོང་རི་སྨུག་པོ་སྟེ། ཞེས་གསལ་བ་ལས་གསེར་རྟ་ཁུལ་དེར་\"མགོ་ལོག་གསེར་ཐལ་\"དང་\"གསེར་གཞུང་\"ཞེས་ཀྱང་འབོད་ལ་\"ཁམས་\"ཀྱི་ས་ཁོངས་སུ་འཇོག་པ་སོགས་ཤེས་རྒྱུ་མང་ངོ་།།"@bo .
 }
