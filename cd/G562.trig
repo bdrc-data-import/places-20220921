@@ -15,47 +15,53 @@ bdg:G562 {
     bda:G562  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G562 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "cd/G562.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G562 ;
-        adm:logEntry        bda:LG301BDEF25E5C3A94 , bda:LG6BEE22DC413D1AD5 , bda:LG84C8E2A448772530 , bda:LG8B87BA933E215B37 , bda:LG990213BC9025D1D5 , bda:LGEBE213A68366484D , bda:LGIM6B07AF7F36 ;
+        adm:logEntry        bda:LG0CCA3D6DF56A9BD8 , bda:LG301BDEF25E5C3A94 , bda:LG84C8E2A448772530 , bda:LG8B87BA933E215B37 , bda:LG990213BC9025D1D5 , bda:LGB217D49592305ECA , bda:LGEBE213A68366484D , bda:LGIM6B07AF7F36 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0CCA3D6DF56A9BD8
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-24T15:11:42.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added name \"skyid rong\" with note"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG301BDEF25E5C3A94
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-03-14T09:25:56.233Z"^^xsd:dateTime ;
-        adm:logMessage      "added contains & location"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LG6BEE22DC413D1AD5
-        a                   adm:UpdateData ;
-        adm:logDate         "2013-05-14T09:43:16.793Z"^^xsd:dateTime ;
-        adm:logMessage      "added info from G2111(dup.)"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LG84C8E2A448772530
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-03-27T13:59:12.523Z"^^xsd:dateTime ;
-        adm:logMessage      "added contains"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LG8B87BA933E215B37
         a                   adm:UpdateData ;
         adm:logDate         "2013-11-19T13:33:35.263Z"^^xsd:dateTime ;
         adm:logMessage      "added contains"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG990213BC9025D1D5
+    bda:LG84C8E2A448772530
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-14T09:25:56.233Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains & location"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8B87BA933E215B37
         a                   adm:UpdateData ;
         adm:logDate         "2013-05-14T09:55:58.514Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGEBE213A68366484D
+    bda:LG990213BC9025D1D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-05-14T09:43:16.793Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from G2111(dup.)"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB217D49592305ECA
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGEBE213A68366484D
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-03-27T13:59:12.523Z"^^xsd:dateTime ;
+        adm:logMessage      "added contains"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGIM6B07AF7F36
         a                   adm:UpdateData ;
@@ -65,10 +71,10 @@ bdg:G562 {
         adm:logWho          bdu:U00020 .
     
     bdr:G562  a             :Place ;
-        skos:altLabel       "gtsang stod skyid grong /"@bo-x-ewts , "skyid grong khul/"@bo-x-ewts ;
-        skos:prefLabel      "skyid grong /"@bo-x-ewts ;
+        skos:altLabel       "gtsang stod skyid grong /"@bo-x-ewts , "skyid grong /"@bo-x-ewts , "skyid grong khul/"@bo-x-ewts ;
+        skos:prefLabel      "skyid rong /"@bo-x-ewts ;
         :isRoot             true ;
-        :note               bdr:NT42E92837FF3A130F ;
+        :note               bdr:NT42E92837FF3A130F , bdr:NT8A3F8E2E9E52808F ;
         :placeContains      bdr:G3244 , bdr:G551 , bdr:G803 ;
         :placeLocatedIn     bdr:G4794 , bdr:G932 ;
         :placeType          bdr:PT0057 .
@@ -78,4 +84,10 @@ bdg:G562 {
         :contentLocationStatement  "p. 336" ;
         :noteSource         bdr:MW20170 ;
         :noteText           "administrative taxation region equivent to a rdzong in the 1830 settlement document"@en .
+    
+    bdr:NT8A3F8E2E9E52808F
+        a                   :Note ;
+        :contentLocationStatement  "176-178 p." ;
+        :noteSource         bdr:MW23940 ;
+        :noteText           "མ་ཡིག་བྲིས་མ་འདིར་\"སྐྱིད་རོང་\"ཞེས་གསལ་བར་འཁོད་པ་དཔྱད་གཞིའོ།།"@bo .
 }
