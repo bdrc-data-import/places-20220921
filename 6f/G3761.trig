@@ -15,23 +15,29 @@ bdg:G3761 {
     bda:G3761  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G3761 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "6f/G3761.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G3761 ;
-        adm:logEntry        bda:LG6AF01AC747A8BE96 , bda:LG7BD70EA3FFA9FF36 , bda:LGIM8BCFDFCA43 ;
+        adm:logEntry        bda:LG3CEAEA75882F9D97 , bda:LG7BD70EA3FFA9FF36 , bda:LGA7A81214C66C77B7 , bda:LGIM8BCFDFCA43 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG6AF01AC747A8BE96
+    bda:LG3CEAEA75882F9D97
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7BD70EA3FFA9FF36
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-11T08:46:52.508Z"^^xsd:dateTime ;
         adm:logMessage      "cleanup name"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG7BD70EA3FFA9FF36
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LGA7A81214C66C77B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-10T12:32:09.48Z"^^xsd:dateTime ;
+        adm:logMessage      "added name, location & note"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGIM8BCFDFCA43
         a                   adm:UpdateData ;
@@ -41,10 +47,11 @@ bdg:G3761 {
         adm:logWho          bdu:U00020 .
     
     bdr:G3761  a            :Place ;
+        skos:altLabel       "rtse khog hor gter ston dgon/"@bo-x-ewts ;
         skos:prefLabel      "hor gter ston chos sgar/"@bo-x-ewts ;
         :isRoot             true ;
-        :note               bdr:NT21B8FE8EE5D6C470 ;
-        :placeLocatedIn     bdr:G2369 ;
+        :note               bdr:NT21B8FE8EE5D6C470 , bdr:NTAAB27935F3B1F9C5 ;
+        :placeLocatedIn     bdr:G2341 , bdr:G2369 ;
         :placeType          bdr:PT0037 .
     
     bdr:NT21B8FE8EE5D6C470
@@ -52,4 +59,8 @@ bdg:G3761 {
         :contentLocationStatement  "p. 72" ;
         :noteSource         bdr:MW24572 ;
         :noteText           "list of various teachers associated with this place given"@en .
+    
+    bdr:NTAAB27935F3B1F9C5
+        a                   :Note ;
+        :noteText           "དགོན་པ་འདི་ནི་་རྡོ་བརྐོས་«བཀའ་འགྱུར།»དང«བསྟན་འགྱུར»གཉིས་ཀྱི་ཕ་ས་ཡིན་པར་མ་ཟད་མདོ་སྨད་ཡུལ་འདིའི་རྡོ་བརྐོའི་སྒྱུ་རྩལ་གྱི་འབྱུང་ཁུངས་ཡིན་པ་སོགས་བཤད་སྲོལ་ཡོད་པ་དཔྱད་གཞིའོ།།"@bo .
 }
