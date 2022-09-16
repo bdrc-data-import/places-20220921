@@ -15,15 +15,21 @@ bdg:G1KR2839 {
     bda:G1KR2839  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1KR2839 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "29/G1KR2839.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1KR2839 ;
-        adm:logEntry        bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
+        adm:logEntry        bda:LG96280B7AE564BB01 , bda:LGIM5E940A373A , bda:LGIM61A98BA6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:place_id_TBRC   "632725205:168" ;
         adm:place_id_lex    "632725205:168" ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG96280B7AE564BB01
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-15T15:24:23.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added info from withdrwn record: G2689"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGIM5E940A373A
         a                   adm:UpdateData ;
@@ -38,25 +44,32 @@ bdg:G1KR2839 {
         adm:logMessage      "updated place from monastery csv"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bdr:EV23ACE32991EF3692
+    bdr:EV16F639FA1DE6ABA8
         a                   :PlaceFounded ;
         :associatedTradition  bdr:TraditionNyingma ;
         :onYear             "1831"^^xsd:gYear .
     
     bdr:G1KR2839  a         :Place ;
-        skos:altLabel       "deqin gai si"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "bde chen sting dge dgon pa/"@bo-x-ewts , "德钦改寺"@zh-hans ;
+        skos:altLabel       "bde chen sting dge dgon pa/"@bo-x-ewts , "deqin gai si"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bde chen steng dge dgon pa/"@bo-x-ewts , "德钦改寺"@zh-hans ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:IDC476E1B41E5CC4E6 ;
+            bdr:ID881DFC592CEF482B ;
         :isRoot             true ;
-        :placeEvent         bdr:EV23ACE32991EF3692 ;
+        :note               bdr:NT23ACE32991EF3692 ;
+        :placeEvent         bdr:EV16F639FA1DE6ABA8 ;
         :placeGonpaPerEcumen  "11.11" ;
         :placeLat           "32.30849" ;
         :placeLocatedIn     bdr:G1467 ;
         :placeLong          "95.60799" ;
         :placeType          bdr:PT0037 .
     
-    bdr:IDC476E1B41E5CC4E6
+    bdr:ID881DFC592CEF482B
         a                   bdr:CHGISId ;
         rdf:value           "TBRC_G1KR2839" .
+    
+    bdr:NT23ACE32991EF3692
+        a                   :Note ;
+        :contentLocationStatement  "v. 1, p. 45" ;
+        :noteSource         bdr:MW18134 ;
+        :noteText           "rnying ma pa monastery in yus hru'u prefecture, qinghai province"@en .
 }
