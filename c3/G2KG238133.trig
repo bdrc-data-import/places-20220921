@@ -1,0 +1,42 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:G2KG238133 {
+    bda:G2KG238133  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:G2KG238133 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c3/G2KG238133.trig" ;
+        adm:gitRepo         bda:GR0005 ;
+        adm:graphId         bdg:G2KG238133 ;
+        adm:logEntry        bda:LGFDBD02CA77202162 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGFDBD02CA77202162
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-10-05T11:53:03.23Z"^^xsd:dateTime ;
+        adm:logMessage      "new place record"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bdr:EV44E7E7279CD530A9
+        a                   :PlaceFounded ;
+        :onYear             "1991"^^xsd:gYear .
+    
+    bdr:G2KG238133  a       :Place ;
+        skos:prefLabel      "bod kyi mtho rim slob gnyer khang /"@bo-x-ewts , "college for higher tibetan studies"@en ;
+        :isRoot             true ;
+        :placeEvent         bdr:EV44E7E7279CD530A9 ;
+        :placeLocatedIn     bdr:G2KG238132 ;
+        :placeType          bdr:PT0067 .
+}
