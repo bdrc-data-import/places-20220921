@@ -15,39 +15,54 @@ bdg:G1393 {
     bda:G1393  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:G1393 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "54/G1393.trig" ;
         adm:gitRepo         bda:GR0005 ;
         adm:graphId         bdg:G1393 ;
-        adm:logEntry        bda:LG3CCB325CEBF2A730 , bda:LG94E98BDEAFB754A2 , bda:LGA897E3180502B5DD , bda:LGE8C4F12574E71A16 ;
+        adm:logEntry        bda:LG330C0F4EE7364897 , bda:LG8F9D6BB14033F836 , bda:LG94E98BDEAFB754A2 , bda:LGA897E3180502B5DD , bda:LGF71CDF790B786CF5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:G3122 ;
         adm:status          bda:StatusWithdrawn .
     
-    bda:LG3CCB325CEBF2A730
+    bda:LG330C0F4EE7364897
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8F9D6BB14033F836
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T12:39:55.642Z"^^xsd:dateTime ;
+        adm:logMessage      "released for newEditer"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG94E98BDEAFB754A2
         a                   adm:UpdateData ;
         adm:logDate         "2012-11-15T10:20:58.187Z"^^xsd:dateTime ;
         adm:logMessage      "changed language setings & added place type"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG94E98BDEAFB754A2
-        a                   adm:WithdrawData ;
-        adm:logDate         "2018-05-14T11:02:30.689Z"^^xsd:dateTime ;
-        adm:logMessage      "withdrawn in favor of G3122"@en ;
-        adm:logWho          bdu:U00007 .
-    
     bda:LGA897E3180502B5DD
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
-    bda:LGE8C4F12574E71A16
         a                   adm:UpdateData ;
         adm:logDate         "2012-12-11T17:11:51.984Z"^^xsd:dateTime ;
         adm:logMessage      "type changed from placeTypes:monastery to dgonPa"@en ;
         adm:logWho          bdu:U00020 .
     
+    bda:LGF71CDF790B786CF5
+        a                   adm:WithdrawData ;
+        adm:logDate         "2018-05-14T11:02:30.689Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of G3122"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bdr:G1393  a            :Place ;
         skos:prefLabel      "gtsang lha gdong dgon/"@bo-x-ewts ;
         :isRoot             true ;
+        :note               bdr:NT3CCB325CEBF2A730 , bdr:NTE8C4F12574E71A16 ;
         :placeType          bdr:PT0037 .
+    
+    bdr:NT3CCB325CEBF2A730
+        a                   :Note ;
+        :noteText           "krung go'i shes rig dpe skrun khang /khren tu'u/2020/In Tibetan/tbrc holds digitally scanned images, tiffs and pdf files/par gzhi dang po/ par thengs dang po/\n\n\n[s.n.]-[s.l.]-[n.d.]-In Tibetan/1 v./tbrc holds digitally scanned images, tiffs and pdf files\n\npar gzhi dang po/"@en .
+    
+    bdr:NTE8C4F12574E71A16
+        a                   :Note ;
+        :noteText           "bod ljongs bod yig dpe rnying dpe skrun khang /lha sa/2017/9787805899510/par gzhi dang po/\n\nbka' brgyud bla ma'i 'bangs kyis brtsams/ 'bri gung bka' brgyud rig gzhung srung spel mnyam tshogs kyis dpar du bskrun/rdzogs pa'i sangs rgyas 'bri gung pa mya ngan 'das nas lo brgyad brgya lon pa'i rjes dran/deb phreng dgu pa/"@bo-x-ewts .
 }
